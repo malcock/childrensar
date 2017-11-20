@@ -37,10 +37,12 @@ public class PenguinController : MonoBehaviour
     {
 
 
-        anim.Play("IDLE_01", -1, Random.Range(0f, 1f));
+        anim.Play("IDLE_02", -1, Random.Range(0f, 1f));
 
         doll = GetComponent<RagdollHelper>();
         doll.onCollision.AddListener(OnCollision);
+        doll.onTrigger.AddListener(OnTrigger);
+
         interactableObj.OnDragStart.AddListener(StartedDrag);
     }
 
@@ -109,6 +111,8 @@ public class PenguinController : MonoBehaviour
         }
     }
 
+
+
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -137,6 +141,15 @@ public class PenguinController : MonoBehaviour
 
     }
 
+    private void OnTrigger(Collider other, GameObject obj)
+    {
+        if(other.tag=="Water"){
+            Debug.Log("ragdoll hit water");
+            //make a splash?
+            GameObject splash = Instantiate(Resources.Load("Splash",typeof(GameObject)),obj.transform.position,Quaternion.identity) as GameObject;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!interactableObj.isDragging)
@@ -144,7 +157,15 @@ public class PenguinController : MonoBehaviour
             Debug.Log(name + " landed?");
 
             doll.ragdolled = false;
+
+
         }
+        //make a splash?
+        if(other.tag=="Water"){
+            Debug.Log(GetComponent<Rigidbody>().velocity);
+        }
+
+
     }
 
     private void OnTriggerStay(Collider other)

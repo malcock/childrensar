@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 837e7f2282c524d98872359dae1fb41d
-timeCreated: 1507230072
+guid: 4b48e3f821e614ca8ba83858dfe73bc2
+timeCreated: 1510933791
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Octopus
+    4300000: Torus001
   materials:
     importMaterials: 1
     materialName: 0

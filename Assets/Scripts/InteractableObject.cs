@@ -14,6 +14,8 @@ public class InteractableObject : MonoBehaviour
     protected float tapDownTime = 0;
     public Vector2 lastPos = new Vector2();
 
+    int touchNumber = -1;
+
     float longtapTime = 1f;
 
     public UnityEvent OnTap;
@@ -41,7 +43,10 @@ public class InteractableObject : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Debug.Log("tapped");
-            var touch = Input.GetTouch(0);
+            if(!selected){
+                touchNumber = Input.touchCount - 1;
+            }
+            var touch = Input.GetTouch(touchNumber);
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Ended)
             {
                 RaycastHit hit;
@@ -101,6 +106,7 @@ public class InteractableObject : MonoBehaviour
                     }
                     selected = false;
                     isDragging = false;
+                    touchNumber = -1;
                 }
                
             }

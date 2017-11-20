@@ -127,13 +127,14 @@ public class RagdollHelper : MonoBehaviour
     //Declare a list of body parts, initialized in Start()
     List<BodyPart> bodyParts = new List<BodyPart>();
 
-    int collisionCount = 0;
+    int collisionCount =0, triggerCount = 0;
 
     //Declare an Animator member variable, initialized in Start to point to this gameobject's Animator component.
     Animator anim;
     public Transform mainTransform;
 
     public UnityEvent onCollision;
+    public TriggerEvent onTrigger;
 
 
     private Rigidbody mainBody;
@@ -181,6 +182,7 @@ public class RagdollHelper : MonoBehaviour
                 {
                     RagdollBone r = c.gameObject.AddComponent<RagdollBone>();
                     r.onCollisionStay.AddListener(CheckCollisions);
+                    r.onTriggerEnter.AddListener(CheckTriggers);
                     totalMass += c.GetComponent<Rigidbody>().mass;
                 }
             }
@@ -200,6 +202,7 @@ public class RagdollHelper : MonoBehaviour
     void Update()
     {
         if (collisionCount > 0) collisionCount--;
+        if (triggerCount > 0) triggerCount--;
     }
 
     void CheckCollisions()
@@ -214,6 +217,15 @@ public class RagdollHelper : MonoBehaviour
                 Debug.Log("LOL WAT");
                 if (onCollision != null) onCollision.Invoke();
                 //ragdolled = false;
+            }
+        }
+    }
+
+    void CheckTriggers(Collider other, GameObject obj){
+        if(state==RagdollState.ragdolled){
+            triggerCount++;
+            if(triggerCount>bodyParts.Count/4){
+                if (onTrigger != null) onTrigger.Invoke(other,obj);
             }
         }
     }
