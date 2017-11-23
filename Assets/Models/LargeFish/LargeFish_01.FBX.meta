@@ -1,46 +1,45 @@
 fileFormatVersion: 2
-guid: 76c89282ce88244a3b3fc26216254b5a
-timeCreated: 1510933790
+guid: 3dbae0131dfddf340806c7bd7b35bdbd
+timeCreated: 1511448936
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: HumpBack-RIGHead
-    100002: HumpBack-RIGHeadBone001
-    100004: HumpBack-RIGLArm1
-    100006: HumpBack-RIGLArm2
-    100008: HumpBack-RIGNeck
-    100010: HumpBack-RIGPelvis
-    100012: HumpBack-RIGRArm1
-    100014: HumpBack-RIGRArm2
-    100016: HumpBack-RIGRibcage
-    100018: HumpBack-RIGSpine1
-    100020: HumpBack-RIGSpine2
-    100022: HumpBack-RIGTail1
-    100024: HumpBack-RIGTail2
-    100026: HumpBack-RIGTail3
-    100028: //RootNode
-    100030: Humpback_01
-    400000: HumpBack-RIGHead
-    400002: HumpBack-RIGHeadBone001
-    400004: HumpBack-RIGLArm1
-    400006: HumpBack-RIGLArm2
-    400008: HumpBack-RIGNeck
-    400010: HumpBack-RIGPelvis
-    400012: HumpBack-RIGRArm1
-    400014: HumpBack-RIGRArm2
-    400016: HumpBack-RIGRibcage
-    400018: HumpBack-RIGSpine1
-    400020: HumpBack-RIGSpine2
-    400022: HumpBack-RIGTail1
-    400024: HumpBack-RIGTail2
-    400026: HumpBack-RIGTail3
-    400028: //RootNode
-    400030: Humpback_01
-    4300000: Humpback_01
-    7400000: Take 001
+    100000: fish
+    100002: joint1
+    100004: joint10
+    100006: joint11
+    100008: joint12
+    100010: joint13
+    100012: joint14
+    100014: joint2
+    100016: joint3
+    100018: joint4
+    100020: joint5
+    100022: joint6
+    100024: joint7
+    100026: joint8
+    100028: joint9
+    100030: //RootNode
+    400000: fish
+    400002: joint1
+    400004: joint10
+    400006: joint11
+    400008: joint12
+    400010: joint13
+    400012: joint14
+    400014: joint2
+    400016: joint3
+    400018: joint4
+    400020: joint5
+    400022: joint6
+    400024: joint7
+    400026: joint8
+    400028: joint9
+    400030: //RootNode
+    4300000: fish
     9500000: //RootNode
-    13700000: Humpback_01
+    13700000: fish
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,7 +67,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.35
+    globalScale: 0.25
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -91,7 +90,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
