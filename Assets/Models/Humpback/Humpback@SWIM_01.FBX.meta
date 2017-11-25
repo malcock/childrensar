@@ -21,6 +21,7 @@ ModelImporter:
     100026: HumpBack-RIGTail3
     100028: //RootNode
     100030: Humpback_01
+    100032: Whale_01
     400000: HumpBack-RIGHead
     400002: HumpBack-RIGHeadBone001
     400004: HumpBack-RIGLArm1
@@ -37,10 +38,13 @@ ModelImporter:
     400026: HumpBack-RIGTail3
     400028: //RootNode
     400030: Humpback_01
+    400032: Whale_01
     4300000: Humpback_01
+    4300002: Whale_01
     7400000: Take 001
     9500000: //RootNode
     13700000: Humpback_01
+    13700002: Whale_01
   materials:
     importMaterials: 1
     materialName: 0

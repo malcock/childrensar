@@ -21,6 +21,28 @@ ModelImporter:
     100026: HumpBack-RIGTail3
     100028: //RootNode
     100030: Humpback_01
+    100032: Dummy001
+    100034: Dummy002
+    100036: Dummy003
+    100038: Dummy004
+    100040: Dummy005
+    100042: HumpBack-RIG
+    100044: HumpBack-RIGHeadBone001Gizmo
+    100046: HumpBack-RIGHeadGizmo
+    100048: HumpBack-RIGLArm1Gizmo
+    100050: HumpBack-RIGLArm2Gizmo
+    100052: HumpBack-RIGPelvisGizmo
+    100054: HumpBack-RIGRArm1Gizmo
+    100056: HumpBack-RIGRArm2Gizmo
+    100058: HumpBack-RIGRibcageGizmo
+    100060: HumpBack-RIGTail1Gizmo
+    100062: HumpBack-RIGTail2Gizmo
+    100064: HumpBack-RIGTail3Gizmo
+    100066: Line001
+    100068: PhysCamera001
+    100070: PhysCamera001.Target
+    100072: Plane001
+    100074: Whale_01
     400000: HumpBack-RIGHead
     400002: HumpBack-RIGHeadBone001
     400004: HumpBack-RIGLArm1
@@ -37,10 +59,37 @@ ModelImporter:
     400026: HumpBack-RIGTail3
     400028: //RootNode
     400030: Humpback_01
+    400032: Dummy001
+    400034: Dummy002
+    400036: Dummy003
+    400038: Dummy004
+    400040: Dummy005
+    400042: HumpBack-RIG
+    400044: HumpBack-RIGHeadBone001Gizmo
+    400046: HumpBack-RIGHeadGizmo
+    400048: HumpBack-RIGLArm1Gizmo
+    400050: HumpBack-RIGLArm2Gizmo
+    400052: HumpBack-RIGPelvisGizmo
+    400054: HumpBack-RIGRArm1Gizmo
+    400056: HumpBack-RIGRArm2Gizmo
+    400058: HumpBack-RIGRibcageGizmo
+    400060: HumpBack-RIGTail1Gizmo
+    400062: HumpBack-RIGTail2Gizmo
+    400064: HumpBack-RIGTail3Gizmo
+    400066: Line001
+    400068: PhysCamera001
+    400070: PhysCamera001.Target
+    400072: Plane001
+    400074: Whale_01
+    2300000: Plane001
+    3300000: Plane001
     4300000: Humpback_01
-    7400000: Take 001
+    4300002: Plane001
+    4300004: Whale_01
+    7400000: RISE_01
     9500000: //RootNode
     13700000: Humpback_01
+    13700002: Whale_01
   materials:
     importMaterials: 1
     materialName: 0
@@ -64,7 +113,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RISE_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
