@@ -131,6 +131,9 @@ public class RagdollHelper : MonoBehaviour
 
     //Declare an Animator member variable, initialized in Start to point to this gameobject's Animator component.
     Animator anim;
+
+    public float totalMass = 0;
+
     public Transform mainTransform;
 
     public UnityEvent onCollision;
@@ -169,7 +172,7 @@ public class RagdollHelper : MonoBehaviour
         //Find all the transforms in the character, assuming that this script is attached to the root
         Component[] components = GetComponentsInChildren(typeof(Transform));
 
-        float totalMass = 0;
+        totalMass = 0;
         //For each of the transforms, create a BodyPart instance and store the transform 
         foreach (Component c in components)
         {
@@ -189,7 +192,7 @@ public class RagdollHelper : MonoBehaviour
         }
 
         //set weight to the sum of the body parts
-        mainBody.mass = 0.5f;
+        mainBody.mass = totalMass;
         mainBody.drag = 1;
         mainBody.angularDrag = 5;
 
@@ -214,7 +217,7 @@ public class RagdollHelper : MonoBehaviour
             if (collisionCount > bodyParts.Count / 2)
             {
 
-                Debug.Log("LOL WAT");
+
                 if (onCollision != null) onCollision.Invoke();
                 //ragdolled = false;
             }

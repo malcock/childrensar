@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2594679953	PenguinSqueak			\Default Work Unit\PenguinSqueak	
+	3719585952	PenguinQuack			\Default Work Unit\PenguinQuack	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	196803574	quack	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\iOS\SFX\quack_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\quack		55230
+	628658610	sqeak	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\iOS\SFX\sqeak_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\sqeak		10096
+

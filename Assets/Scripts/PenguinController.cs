@@ -17,9 +17,6 @@ public class PenguinController : MonoBehaviour
 
     RagdollHelper doll;
 
-    List<float> audioData = new List<float>();
-
-    public AudioClip quack, squeak;
 
     bool firstFrame = false;
 
@@ -35,8 +32,6 @@ public class PenguinController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-
         anim.Play("IDLE_02", -1, Random.Range(0f, 1f));
 
         doll = GetComponent<RagdollHelper>();
@@ -50,53 +45,41 @@ public class PenguinController : MonoBehaviour
     void Update()
     {
         if (!firstFrame) doll.ragdolled = firstFrame = true;
-        if (Input.GetKeyUp(KeyCode.B)) doll.ragdolled = !doll.ragdolled;
+        if(!doll.ragdolled){
+            //find the camera and point the penguin at it
+            Vector3 relativePosition = Camera.main.transform.position - transform.position;
+            Quaternion rotation = Quaternion.LookRotation(relativePosition);
+            rotation.x = 0;
+            rotation.z = 0;
+            transform.rotation = rotation;
+        }
     }
 
     public void Quack()
     {
-        if (anim.GetBool("isCatching")) return;
-
-        anim.SetBool("isCatching", true);
+        anim.SetTrigger("Quack");
         //audioSource.clip = quack;
         //audioSource.Play();
-        PlaySound(quack);
-        StartCoroutine(EndQuack());
+        AkSoundEngine.PostEvent("PenguinQuack",gameObject);
+        //PlaySound(quack);
         //anim.SetBool("isCatching", false);
 
+
+    }
+
+    public void Eat(){
+        anim.SetTrigger("Catch");
+        Debug.Log(name + " nom!");
+        GetComponent<Rigidbody>().mass+=5;
     }
 
     private void StartedDrag()
     {
         doll.ragdolled = true;
+        AkSoundEngine.PostEvent("PenguinSqueak",gameObject);
     }
 
-    public void Squeak()
-    {
-        PlaySound(squeak);
-    }
 
-    public void PlaySound(AudioClip clip)
-    {
-        float[] samples = new float[clip.samples * clip.channels];
-
-        clip.GetData(samples, 0);
-
-        for (int i = 0; i < samples.Length; i++)
-        {
-            if (audioData.Count > i)
-            {
-                audioData[i] += samples[i];
-            }
-            else
-            {
-                audioData.Add(samples[i]);
-            }
-        }
-        audioData = samples.ToList();
-        Debug.Log(audioData.Count);
-
-    }
 
     private void OnCollision()
     {
@@ -104,6 +87,8 @@ public class PenguinController : MonoBehaviour
         {
             doll.ragdolled = false;
             //PlaySound(squeak);
+
+            AkSoundEngine.PostEvent("PenguinSqueak",gameObject);
         }
         else
         {
@@ -118,28 +103,8 @@ public class PenguinController : MonoBehaviour
 
     }
 
-    private void OnAudioFilterRead(float[] data, int channels)
-    {
-
-        for (int i = 0; i < data.Length - 1; i += 2)
-        {
-            if (audioData.Count <= 0)
-                return;
-            data[i] = audioData[0];
-            data[i + 1] = audioData[0];
-            audioData.RemoveAt(0);
 
 
-        }
-        Debug.Log(audioData.Count);
-    }
-
-    private IEnumerator EndQuack()
-    {
-        yield return new WaitForSeconds(0.25f);
-        anim.SetBool("isCatching", false);
-
-    }
 
     private void OnTrigger(Collider other, GameObject obj)
     {
@@ -197,7 +162,7 @@ public class PenguinController : MonoBehaviour
         if (other.tag == "Water")
         {
             anim.SetBool("isSwimming", false);
-            GetComponent<Rigidbody>().useGravity=true;;
+            GetComponent<Rigidbody>().useGravity=true;
             StopCoroutine(FindLand());
         }
     }
@@ -229,6 +194,7 @@ public class PenguinController : MonoBehaviour
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, 3, 1), ForceMode.Impulse);
             } else {
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, 10, 20), ForceMode.Force);
+                GetComponent<Rigidbody>().mass = doll.totalMass;
             }
 
             yield return new WaitForSeconds(1);

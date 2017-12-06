@@ -7,13 +7,61 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Inflate
+    100004: penguin
+    100006: Penguin-RIGHead
+    100008: Penguin-RIGHeadBone001
+    100010: Penguin-RIGLForearm
+    100012: Penguin-RIGLLeg2
+    100014: Penguin-RIGLLegDigit11
+    100016: Penguin-RIGLLegFoot
+    100018: Penguin-RIGLLegThigh
+    100020: Penguin-RIGLUpperarm
+    100022: Penguin-RIGNeck1
+    100024: Penguin-RIGNeck2
+    100026: Penguin-RIGPelvis
+    100028: Penguin-RIGR2
+    100030: Penguin-RIGRDigit11
+    100032: Penguin-RIGRFoot
+    100034: Penguin-RIGRForearm
+    100036: Penguin-RIGRibcage
+    100038: Penguin-RIGRThigh
+    100040: Penguin-RIGRUpperarm
+    100042: Penguin-RIGSpine1
+    100044: Penguin-RIGSpine2
+    100046: Penguin-RIGTail1
     400000: //RootNode
     400002: Inflate
+    400004: penguin
+    400006: Penguin-RIGHead
+    400008: Penguin-RIGHeadBone001
+    400010: Penguin-RIGLForearm
+    400012: Penguin-RIGLLeg2
+    400014: Penguin-RIGLLegDigit11
+    400016: Penguin-RIGLLegFoot
+    400018: Penguin-RIGLLegThigh
+    400020: Penguin-RIGLUpperarm
+    400022: Penguin-RIGNeck1
+    400024: Penguin-RIGNeck2
+    400026: Penguin-RIGPelvis
+    400028: Penguin-RIGR2
+    400030: Penguin-RIGRDigit11
+    400032: Penguin-RIGRFoot
+    400034: Penguin-RIGRForearm
+    400036: Penguin-RIGRibcage
+    400038: Penguin-RIGRThigh
+    400040: Penguin-RIGRUpperarm
+    400042: Penguin-RIGSpine1
+    400044: Penguin-RIGSpine2
+    400046: Penguin-RIGTail1
     2300000: //RootNode
     2300002: Inflate
     3300000: //RootNode
     3300002: Inflate
     4300000: Inflate
+    4300002: penguin
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: penguin
   materials:
     importMaterials: 1
     materialName: 0
@@ -41,7 +89,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.25
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

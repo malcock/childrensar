@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb417594ce17f4a3c98705ae7e1e55ed, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List:
+    - Name: PenguinQuack
+      Path: Default Work Unit/PenguinQuack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PenguinQuack
+        ObjectType: 3
+      ID: -575381344
+      Guid: c80b43c1329bd24ca457df72edca23ee
+      maxAttenuation: 0
+    - Name: PenguinSqueak
+      Path: Default Work Unit/PenguinSqueak
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PenguinSqueak
+        ObjectType: 3
+      ID: -1700287343
+      Guid: 75628716ccccfc4f88f27f1014864bda
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
+    m_lastTimePsrt1: -1122887296
+    m_lastTimePart2: -1999291773
+    List:
+    - Name: Polar
+      Path: Default Work Unit/Polar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Polar
+        ObjectType: 7
+      ID: -2100714417
+      Guid: 686920d76f6d244baad5275b45371462
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1387B60F-4C10-442C-B428-F462BE30D376}'
+    m_lastTimePsrt1: 1656981888
+    m_lastTimePart2: -1999291776
+    List: []
+  ExpandedItems:
+  - /ChildrensAR_WwiseProject
+  - /ChildrensAR_WwiseProject/Events
+  - /ChildrensAR_WwiseProject/Events/Default Work Unit
+  - /ChildrensAR_WwiseProject/SoundBanks
+  - /ChildrensAR_WwiseProject/SoundBanks/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}">
+					<ChildrenList>
+						<Action Name="" ID="{01E38C48-491A-4532-8FC1-6F808329FF2C}" ShortID="22169744">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="quack" ID="{3754DBCD-D428-4327-9635-8B32113EF545}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PenguinSqueak" ID="{16876275-CCCC-4FFC-88F2-7F1014864BDA}">
+					<ChildrenList>
+						<Action Name="" ID="{A2A6ECDD-E454-466F-BA71-3AA699093AFB}" ShortID="1010381710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sqeak" ID="{4FDCDA1D-83AC-45FC-857B-EE1CF9D49203}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

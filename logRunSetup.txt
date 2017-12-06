@@ -1,0 +1,2387 @@
+
+LICENSE SYSTEM [20171127 19:7:35] No start/stop license dates set
+
+LICENSE SYSTEM [20171127 19:7:35] Next license update check is after 2017-11-28T09:27:51
+
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Unity.app/Contents/MacOS/Unity
+-batchmode
+-nographics
+-logFile
+logRunSetup.txt
+-projectPath
+/Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp
+-executeMethod
+WwiseSetupWizard.RunModify
+Successfully changed project path to: /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp
+/Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp
+Loading GUID <-> Path mappings...0.000282 seconds
+Loading Asset Database...0.019699 seconds
+Audio: FMOD Profiler initialized on port 54900
+AssetDatabase consistency checks...0.076482 seconds
+Refreshing native plugins compatible for Editor in 304.47 ms, found 19 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2017.1.1f1 (5d30cf096e79)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0'
+Mono config path = '/Applications/Unity/Unity.app/Contents/Mono/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56637
+Begin MonoManager ReloadAssembly
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.DataContract.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Core.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.IvyParser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Configuration.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll (this message is harmless)
+Initializing Unity.PackageManager (PackageManager) v2017.1.1 for Unity v2017.1.1f1
+Setting Standalone:StandaloneOSXIntel v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
+Setting UnityAnalytics v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics
+  UnityEngine.Analytics.dll (Extension) GUID: 852E56802EB941638ACBB491814497B0
+  Editor/UnityEditor.Analytics.dll (Extension) GUID: 86f4de9468454445ac2f39e207fafa3a
+Setting TestRunner v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner
+  Editor/UnityEditor.TestRunner.dll (Extension) GUID: 4113173d5e95493ab8765d7b08371de4
+  UnityEngine.TestRunner.dll (Extension) GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+  net35/unity-custom/nunit.framework.dll (Extension) GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+  portable/nunit.framework.dll (Extension) GUID: 405b9b51bb344a128608d968297df79c
+Setting UNetHLAPI v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking
+  UnityEngine.Networking.dll (Extension) GUID: 870353891bb340e2b2a9c8707e7419ba
+  Standalone/UnityEngine.Networking.dll (Extension) GUID: dc443db3e92b4983b9738c1131f555cb
+  Editor/UnityEditor.Networking.dll (Extension) GUID: 5f32cd94baa94578a686d4b9d6b660f7
+Setting GUISystem v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem
+  UnityEngine.UI.dll (Extension) GUID: f5f67c52d1564df4a8936ccd202a3bd8
+  Standalone/UnityEngine.UI.dll (Extension) GUID: f70555f144d8491a825f0804e09c671c
+  Editor/UnityEditor.UI.dll (Extension) GUID: 80a3616ca19596e4da0f10f14d241e9f
+Setting Advertisements v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements
+  UnityEngine.Advertisements.dll (Extension) GUID: 739bbd9f364b4268874f9fd86ab3beef
+  Editor/UnityEditor.Advertisements.dll (Extension) GUID: 97decbdab0634cdd991f8d23ddf0dead
+Setting Timeline v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline
+  RuntimeEditor/UnityEngine.Timeline.dll (Extension) GUID: 844F815391DB42D49455CBF1A7BFC434
+  Runtime/UnityEngine.Timeline.dll (Extension) GUID: 6a10b2909283487f913b00d94cd3faf5
+  Editor/UnityEditor.Timeline.dll (Extension) GUID: 7668179ede524d6396c8b7d84461ea29
+Setting TreeEditor v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor
+  Editor/UnityEditor.TreeEditor.dll (Extension) GUID: adebbd281f1a4ef3a30be7f21937e02f
+Setting UnityHoloLens v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens
+  Editor/UnityEditor.HoloLens.dll (Extension) GUID: 12fd8a0055b84bb59e84c9835a37e333
+  Runtime/UnityEngine.HoloLens.dll (Extension) GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+  RuntimeEditor/UnityEngine.HoloLens.dll (Extension) GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+Setting UnityPurchasing v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing
+  UnityEngine.Purchasing.dll (Extension) GUID: 8E0CD8ED44D4412CBE0642067ABC9E44
+  Editor/UnityEditor.Purchasing.dll (Extension) GUID: 8382B2BB260241859771B69B7F377A8D
+Setting UnityVR v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR
+  Editor/UnityEditor.VR.dll (Extension) GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003587 seconds.
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/ExCSS.Unity.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 4.87 ms.
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Legacy.NRefactory.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.Linq.dll (this message is harmless)
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  2.081 seconds
+Registering platform support modules:
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Mono.Security.dll (this message is harmless)
+Registered platform support modules in: 0.236472s.
+Native extension for OSXStandalone target not found
+Loading native library: UnityEditor.iOS.Native at /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Native.dylib
+Native extension for iOS target not found
+Native extension for Android target not found
+Begin MonoManager ReloadAssembly
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll (this message is harmless)
+Registering precompiled user dll's ...
+Registered in 0.065993 seconds.
+Non platform assembly: /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll (this message is harmless)
+Loading /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll into Unity Child Domain
+Non platform assembly: /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll (this message is harmless)
+Loading /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll (this message is harmless)
+Loading /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Core.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/ExCSS.Unity.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.DataContract.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Legacy.NRefactory.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.Linq.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.IvyParser.dll (this message is harmless)
+Non platform assembly: /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Initializing Unity.PackageManager (PackageManager) v2017.1.1 for Unity v2017.1.1f1
+Setting Standalone:StandaloneOSXIntel v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
+Setting UnityAnalytics v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics
+  UnityEngine.Analytics.dll (Extension) GUID: 852E56802EB941638ACBB491814497B0
+  Editor/UnityEditor.Analytics.dll (Extension) GUID: 86f4de9468454445ac2f39e207fafa3a
+Setting TestRunner v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner
+  Editor/UnityEditor.TestRunner.dll (Extension) GUID: 4113173d5e95493ab8765d7b08371de4
+  UnityEngine.TestRunner.dll (Extension) GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+  net35/unity-custom/nunit.framework.dll (Extension) GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+  portable/nunit.framework.dll (Extension) GUID: 405b9b51bb344a128608d968297df79c
+Setting UNetHLAPI v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking
+  UnityEngine.Networking.dll (Extension) GUID: 870353891bb340e2b2a9c8707e7419ba
+  Standalone/UnityEngine.Networking.dll (Extension) GUID: dc443db3e92b4983b9738c1131f555cb
+  Editor/UnityEditor.Networking.dll (Extension) GUID: 5f32cd94baa94578a686d4b9d6b660f7
+Setting GUISystem v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem
+  UnityEngine.UI.dll (Extension) GUID: f5f67c52d1564df4a8936ccd202a3bd8
+  Standalone/UnityEngine.UI.dll (Extension) GUID: f70555f144d8491a825f0804e09c671c
+  Editor/UnityEditor.UI.dll (Extension) GUID: 80a3616ca19596e4da0f10f14d241e9f
+Setting Advertisements v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements
+  UnityEngine.Advertisements.dll (Extension) GUID: 739bbd9f364b4268874f9fd86ab3beef
+  Editor/UnityEditor.Advertisements.dll (Extension) GUID: 97decbdab0634cdd991f8d23ddf0dead
+Setting Timeline v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline
+  RuntimeEditor/UnityEngine.Timeline.dll (Extension) GUID: 844F815391DB42D49455CBF1A7BFC434
+  Runtime/UnityEngine.Timeline.dll (Extension) GUID: 6a10b2909283487f913b00d94cd3faf5
+  Editor/UnityEditor.Timeline.dll (Extension) GUID: 7668179ede524d6396c8b7d84461ea29
+Setting TreeEditor v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor
+  Editor/UnityEditor.TreeEditor.dll (Extension) GUID: adebbd281f1a4ef3a30be7f21937e02f
+Setting UnityHoloLens v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens
+  Editor/UnityEditor.HoloLens.dll (Extension) GUID: 12fd8a0055b84bb59e84c9835a37e333
+  Runtime/UnityEngine.HoloLens.dll (Extension) GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+  RuntimeEditor/UnityEngine.HoloLens.dll (Extension) GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+Setting UnityPurchasing v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing
+  UnityEngine.Purchasing.dll (Extension) GUID: 8E0CD8ED44D4412CBE0642067ABC9E44
+  Editor/UnityEditor.Purchasing.dll (Extension) GUID: 8382B2BB260241859771B69B7F377A8D
+Setting UnityVR v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR
+  Editor/UnityEditor.VR.dll (Extension) GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+Registering platform support modules:
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.Lang.dll (this message is harmless)
+Registered platform support modules in: 0.071894s.
+Native extension for OSXStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Validating Project structure ... 0.040528 seconds.
+Refresh: detecting if any assets need to be imported or removed ... 
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (4 files)
+  file read: 0.001 seconds (0.003 MB)
+  hash: 0.000 seconds
+----- Compute hash(es) for 2 asset(s).
+----- Asset named Assets/Wwise/Extensions/AkSoundEngine.extensions.cs is skipped as no actual change.
+
+Refresh: elapses 0.136459 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS - GUID: 37eb80e7437884c3397df7c1d8e5c63a...
+ done. [Time: 98.161125 ms] 
+Unloading 532 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 296.6 MB.
+System memory in use after: 296.8 MB.
+
+Unloading 159 unused Assets to reduce memory usage. Loaded Objects now: 2944.
+Total: 18.133976 ms (FindLiveObjects: 0.240351 ms CreateObjectMapping: 0.527635 ms MarkObjects: 17.315723 ms  DeleteObjects: 0.048499 ms)
+
+Updating Assets/Wwise/Editor/WwiseMenu/iOS - GUID: 8fb336cee300e4ecbbbfb7be6fe35329...
+ done. [Time: 5.032502 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP - GUID: 33b241615096c4ad0906268ed238d3ed...
+ done. [Time: 3.532193 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS - GUID: 864fcb71b86bc41adaee75b8e0f1ffff...
+ done. [Time: 2.832941 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Debug - GUID: 938d02be750df4570b10bb685191cf4e...
+ done. [Time: 4.172939 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Profile - GUID: e1508ecc709f84a649bea4988365ecc7...
+ done. [Time: 2.408762 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Release - GUID: f91d5a64fd2754d42b0178c7eca3bbed...
+ done. [Time: 2.259034 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkThreadProperties_iOS.cs - GUID: 39daf39b31e4745489e3ce0e8339ae6f...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkThreadProperties_iOS.cs.
+ done. [Time: 19.821108 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategoryOptions_iOS.cs - GUID: 446378347182a4c07902bf16e9c21a9d...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategoryOptions_iOS.cs.
+ done. [Time: 4.845732 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEngine_iOS.cs - GUID: 55b0f78f947dc44a4904711a5528fafd...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEngine_iOS.cs.
+ done. [Time: 13.696471 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEnginePINVOKE_iOS.cs - GUID: 5fb355a14f1984bd98532ee5dd59cf6a...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEnginePINVOKE_iOS.cs.
+ done. [Time: 11.940678 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionMode_iOS.cs - GUID: 5ff4c3361b37245849f617ead504d348...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionMode_iOS.cs.
+ done. [Time: 3.825764 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionSetActiveOptions_iOS.cs - GUID: 61bde14f3931e4c2c97d4a2f6ec97586...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionSetActiveOptions_iOS.cs.
+ done. [Time: 6.194514 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionProperties_iOS.cs - GUID: 63aa63b8206fb45c1bb84835ee551c22...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionProperties_iOS.cs.
+ done. [Time: 4.057880 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategory_iOS.cs - GUID: a3a7d908374ee4899815cd3fc172e57d...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategory_iOS.cs.
+ done. [Time: 3.592284 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkMemPoolAttributes_iOS.cs - GUID: aaecaa40ed927421081e0f7aa594ef6b...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkMemPoolAttributes_iOS.cs.
+ done. [Time: 4.066609 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkAudioOutputType_iOS.cs - GUID: b93570aa4251843bcabab5cd5f6a186f...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkAudioOutputType_iOS.cs.
+ done. [Time: 5.249770 ms] 
+Updating Assets/Wwise/Deployment/API/Generated/iOS/AkPlatformInitSettings_iOS.cs - GUID: e494355fdcb78403f9d398563b88de33...
+----- Compute hash for Assets/Wwise/Deployment/API/Generated/iOS/AkPlatformInitSettings_iOS.cs.
+ done. [Time: 4.648749 ms] 
+Updating Assets/Wwise/Editor/WwiseMenu/iOS/AkWwiseMenu_iOS.cs - GUID: e8db0ddca04874f3aaffcb375ae5086d...
+----- Compute hash for Assets/Wwise/Editor/WwiseMenu/iOS/AkWwiseMenu_iOS.cs.
+ done. [Time: 5.539370 ms] 
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+
+-----Compiler Commandline Arguments:
+Filename: /Applications/Unity/Unity.app/Contents/MonoBleedingEdge/bin/mono
+Arguments: '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.5/mcs.exe'  @Temp/UnityTempFile-6c680b6a7ddf74322ac6b0e1316d0918
+index: 81
+Responsefile: Temp/UnityTempFile-6c680b6a7ddf74322ac6b0e1316d0918 Contents: 
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:'Temp/Assembly-CSharp.dll'
+-unsafe
+-r:'/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_1_1
+-define:UNITY_2017_1
+-define:UNITY_2017
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_RUNTIME_NAVMESH_BUILDING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GAMECENTER
+-define:ENABLE_NETWORK
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING
+-define:PLAYERCONNECTION_LISTENS_FIXED_PORT
+-define:DEBUGGER_LISTENS_FIXED_PORT
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:SUPPORT_ENVIRONMENT_VARIABLES
+-define:PLATFORM_SUPPORTS_PROFILER
+-define:PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR
+-define:STRICTCPP_NEW_DELETE_SIGNATURES
+-define:HAS_NEON_SKINNIG
+-define:UNITY_GFX_USE_PLATFORM_VSYNC
+-define:UNITY_INPUT_SIMULATE_EVENTS
+-define:PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:PLATFORM_IOS
+-define:UNITY_IOS
+-define:PLATFORM_IPHONE
+-define:UNITY_IPHONE
+-define:UNITY_IPHONE_API
+-define:SUPPORT_MULTIPLE_DISPLAYS
+-define:ENABLE_IL2CPP
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:ENABLE_IOS_ON_DEMAND_RESOURCES
+-define:ENABLE_IOS_APP_SLICING
+-define:UNITY_HAS_GOOGLEVR
+'Assets/3rd Party/Buoyancy Toolkit/Core/BuoyancyForce.cs'
+'Assets/3rd Party/Buoyancy Toolkit/Core/FluidVolume.cs'
+'Assets/3rd Party/Buoyancy Toolkit/Core/Internal/IBuoyancyForce.cs'
+'Assets/3rd Party/Buoyancy Toolkit/Examples/Shared Assets/Scripts/CustomFluidVolume.cs'
+'Assets/3rd Party/Buoyancy Toolkit/Helpers/SetCenterOfMass.cs'
+'Assets/3rd Party/LowPolyWaterv2/Demos/Scripts/DemoFreeFlyCamera.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/LowPolyWaterScript.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWDepthEffect.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWDisplace.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWHiddenProps.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWNoise.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWNormalSolver.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWReflection.cs'
+'Assets/3rd Party/LowPolyWaterv2/Scripts/src/LPWWaterChunk.cs'
+'Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs'
+'Assets/CrossPlatformInput/Scripts/ButtonHandler.cs'
+'Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs'
+'Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs'
+'Assets/CrossPlatformInput/Scripts/Joystick.cs'
+'Assets/CrossPlatformInput/Scripts/MobileControlRig.cs'
+'Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs'
+'Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs'
+'Assets/CrossPlatformInput/Scripts/TiltInput.cs'
+'Assets/CrossPlatformInput/Scripts/TouchPad.cs'
+'Assets/CrossPlatformInput/Scripts/VirtualInput.cs'
+'Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs'
+'Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs'
+'Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs'
+'Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs'
+'Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs'
+'Assets/PostProcessing/Runtime/Components/BloomComponent.cs'
+'Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs'
+'Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs'
+'Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs'
+'Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs'
+'Assets/PostProcessing/Runtime/Components/DitheringComponent.cs'
+'Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs'
+'Assets/PostProcessing/Runtime/Components/FogComponent.cs'
+'Assets/PostProcessing/Runtime/Components/FxaaComponent.cs'
+'Assets/PostProcessing/Runtime/Components/GrainComponent.cs'
+'Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs'
+'Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs'
+'Assets/PostProcessing/Runtime/Components/TaaComponent.cs'
+'Assets/PostProcessing/Runtime/Components/UserLutComponent.cs'
+'Assets/PostProcessing/Runtime/Components/VignetteComponent.cs'
+'Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs'
+'Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs'
+'Assets/PostProcessing/Runtime/Models/BloomModel.cs'
+'Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs'
+'Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs'
+'Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs'
+'Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs'
+'Assets/PostProcessing/Runtime/Models/DitheringModel.cs'
+'Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs'
+'Assets/PostProcessing/Runtime/Models/FogModel.cs'
+'Assets/PostProcessing/Runtime/Models/GrainModel.cs'
+'Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs'
+'Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs'
+'Assets/PostProcessing/Runtime/Models/UserLutModel.cs'
+'Assets/PostProcessing/Runtime/Models/VignetteModel.cs'
+'Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs'
+'Assets/PostProcessing/Runtime/PostProcessingComponent.cs'
+'Assets/PostProcessing/Runtime/PostProcessingContext.cs'
+'Assets/PostProcessing/Runtime/PostProcessingModel.cs'
+'Assets/PostProcessing/Runtime/PostProcessingProfile.cs'
+'Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs'
+'Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs'
+'Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs'
+'Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs'
+'Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs'
+'Assets/PostProcessing/Utilities/FocusPuller.cs'
+'Assets/PostProcessing/Utilities/PostProcessingController.cs'
+'Assets/Scripts/CameraDepthFocus.cs'
+'Assets/Scripts/DraggableObject.cs'
+'Assets/Scripts/Flickable.cs'
+'Assets/Scripts/InteractableObject.cs'
+'Assets/Scripts/OctopusController.cs'
+'Assets/Scripts/PenguinController.cs'
+'Assets/Scripts/RagdollBone.cs'
+'Assets/Scripts/RagdollHelper.cs'
+'Assets/Scripts/SimpleRagdoll.cs'
+'Assets/Scripts/SmoothLookAt.cs'
+'Assets/Scripts/SmoothMouseLook.cs'
+'Assets/Scripts/Splash.cs'
+'Assets/Scripts/TouchParticles.cs'
+'Assets/StandardAssets/Utility/SimpleMouseRotator.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/ARKitRemoteConnection.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/ConnectionMessageIds.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/ConnectToEditor.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/EditorHitTest.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/ObjectSerializationExtension.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/SerializableObjects.cs'
+'Assets/UnityARKitPlugin/ARKitRemote/UnityRemoteVideo.cs'
+'Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/UnityARUserAnchorExample.cs'
+'Assets/UnityARKitPlugin/Examples/FocusSquare/FocusSquare.cs'
+'Assets/UnityARKitPlugin/Examples/UnityARBallz/BallMaker.cs'
+'Assets/UnityARKitPlugin/Examples/UnityARBallz/BallMover.cs'
+'Assets/UnityARKitPlugin/Examples/UnityARBallz/Ballz.cs'
+'Assets/UnityARKitPlugin/Examples/UnityARBallz/ModeSwitcher.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/Enums/ColorValues.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/Events/ColorChangedEvent.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/Events/HSVChangedEvent.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/Other/ColorPickerTester.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/Other/TiltWindow.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorImage.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorLabel.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorPicker.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorPresets.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorSlider.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/ColorSliderImage.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/HexColorField.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UI/SVBoxSlider.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UtilityScripts/BoxSlider.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/HSVPicker/UtilityScripts/HSVUtil.cs'
+'Assets/UnityARKitPlugin/Examples/UnityParticlePainter/ParticlePainter.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/AR3DOFCameraManager.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/ARPlaneAnchorGameObject.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/DontDestroyOnLoad.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/PointCloudParticleExample.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAmbient.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAnchorManager.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraManager.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraNearFar.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARGeneratePlane.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARHitTestExample.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARKitControl.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARMatrixOps.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUserAnchorComponent.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUtility.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARVideo.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityPointCloudExample.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARAnchor.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARCamera.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARErrorCode.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARFrame.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResult.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResultType.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARLightEstimate.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchor.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchorAlignment.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPoint.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARRect.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARSize.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTextureHandles.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingQuality.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingState.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingStateReason.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARUserAnchor.cs'
+'Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/UnityARSessionNativeInterface.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/_ArrayPoolDefault.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/_ArrayPoolLEngineDefault.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkActionOnEventType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAudioDeviceState.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAudioFormat.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAudioInterruptionCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAudioSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAudioSourceChangeCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAuxSendValue.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkAuxSendValueProxy.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkBankCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkBankContent.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkBusHierarchyFlags.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkCallbackSerializer.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkCallbackType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkChannelConfig.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkChannelConfigType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkChannelEmitter.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkChannelEmitterEx.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkChannelOrdering.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkConnectionType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkCurveInterpolation.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkDeviceSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkDurationCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkDynamicSequenceItemCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkEventCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkExternalSourceInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkGlobalCallbackLocation.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkGroupType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkInitSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMarkerCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMemSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMeteringFlags.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMIDIEventCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMIDIPost.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMonitoringCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMusicPlaylistCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMusicSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkMusicSyncCallbackInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkNodeType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkObjectInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkObstructionOcclusionValues.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkOutputSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPannerType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPanningRule.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPlaylistArray.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPluginType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPositioningInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkPositionSourceType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkRamp.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AKRESULT.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkSegmentInfo.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkSerializedCallbackHeader.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkSourceChannelOrdering.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkSourceSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkStreamMgrSettings.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkTransform.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/AkVector.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/DynamicSequenceType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/EnvelopePoint.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/ErrorCode.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/ErrorLevel.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/Iterator.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/MultiPositionType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/Playlist.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/PlaylistItem.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/PreparationType.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/RTPCValue_type.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/WwiseObjectID.cs'
+'Assets/Wwise/Deployment/API/Generated/Common/WwiseObjectIDext.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioOutputType_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategory_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionCategoryOptions_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionMode_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionProperties_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkAudioSessionSetActiveOptions_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkMemPoolAttributes_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkPlatformInitSettings_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEngine_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkSoundEnginePINVOKE_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/iOS/AkThreadProperties_iOS.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkAudioOutputType_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkMemPoolAttributes_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkPlatformInitSettings_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkSoundEngine_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkSoundEnginePINVOKE_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Mac/AkThreadProperties_Mac.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkAudioAPI_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkAudioOutputType_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkMemPoolAttributes_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkPlatformInitSettings_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkSoundEngine_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkSoundEnginePINVOKE_Windows.cs'
+'Assets/Wwise/Deployment/API/Generated/Windows/AkThreadProperties_Windows.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkAuxSendArray.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkBankManager.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkBasePathGetter.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkCallbackManager.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkChannelEmitterArray.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkPositionArray.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkSoundEngine.cs'
+'Assets/Wwise/Deployment/API/Handwritten/AkUtilities.cs'
+'Assets/Wwise/Deployment/API/Handwritten/WwiseTypes.cs'
+'Assets/Wwise/Deployment/Components/AkAmbient.cs'
+'Assets/Wwise/Deployment/Components/AkAudioListener.cs'
+'Assets/Wwise/Deployment/Components/AkBank.cs'
+'Assets/Wwise/Deployment/Components/AkDragDropHelper.cs'
+'Assets/Wwise/Deployment/Components/AkEnvironment.cs'
+'Assets/Wwise/Deployment/Components/AkEnvironmentPortal.cs'
+'Assets/Wwise/Deployment/Components/AkEvent.cs'
+'Assets/Wwise/Deployment/Components/AkEventCallbackData.cs'
+'Assets/Wwise/Deployment/Components/AkGameObj.cs'
+'Assets/Wwise/Deployment/Components/AkGameObjEnvironmentData.cs'
+'Assets/Wwise/Deployment/Components/AkGameObjListenerList.cs'
+'Assets/Wwise/Deployment/Components/AkGameObjPositionData.cs'
+'Assets/Wwise/Deployment/Components/AkGameObjPositionOffsetData.cs'
+'Assets/Wwise/Deployment/Components/AkGameObjPosOffsetData.cs'
+'Assets/Wwise/Deployment/Components/AkInitializer.cs'
+'Assets/Wwise/Deployment/Components/AkMemBankLoader.cs'
+'Assets/Wwise/Deployment/Components/AkState.cs'
+'Assets/Wwise/Deployment/Components/AkSwitch.cs'
+'Assets/Wwise/Deployment/Components/AkTerminator.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerBase.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerCollisionEnter.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerCollisionExit.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerDisable.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerEnable.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerEnter.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerExit.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerMouseDown.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerMouseEnter.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerMouseExit.cs'
+'Assets/Wwise/Deployment/Components/AkTriggerMouseUp.cs'
+'Assets/Wwise/Deployment/Components/AkUnityEventHandler.cs'
+'Assets/Wwise/Extensions/AkSoundEngine.extensions.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.Lang.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/Boo.Lang.dll'
+-sdk:unity
+
+-----CompilerOutput:-stdout--exitcode: 0--compilationhadfailure: False--outfile: Temp/Assembly-CSharp.dll
+Compilation succeeded - 10 warning(s)
+-----CompilerOutput:-stderr----------
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(48,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(48,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(55,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(55,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+Assets/Scripts/InteractableObject.cs(56,25): warning CS0219: The variable `point' is assigned but its value is never used
+Assets/Scripts/PenguinController.cs(149,24): warning CS0219: The variable `splash' is assigned but its value is never used
+Assets/Scripts/PenguinController.cs(227,21): warning CS0219: The variable `force' is assigned but its value is never used
+Assets/Scripts/DraggableObject.cs(24,19): warning CS0414: The private field `DraggableObject.magnitude' is assigned but its value is never used
+Assets/Scripts/PenguinController.cs(14,21): warning CS0414: The private field `PenguinController.dragObj' is assigned but its value is never used
+Assets/Scripts/PenguinController.cs(15,17): warning CS0414: The private field `PenguinController.audioSource' is assigned but its value is never used
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+WeaveUnetFromEditor Temp/Assembly-CSharp.dll
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.UNetWeaver.dll (this message is harmless)
+WeaveAssemblies unityPath= /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll
+WeaveAssemblies unetPath= /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.Pdb.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.Mdb.dll (this message is harmless)
+Symbols will be read from Temp/Assembly-CSharp.dll.mdb
+Script Module: Assembly-CSharp.dll
+Pass: 0 took 36 milliseconds
+Pass: 1 took 14 milliseconds
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+WeaveUnetFromEditor Temp/Assembly-CSharp-Editor.dll
+WeaveAssemblies unityPath= /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll
+WeaveAssemblies unetPath= /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(48,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+ 
+(Filename: Assets/CrossPlatformInput/Scripts/MobileControlRig.cs Line: 48)
+
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(48,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+ 
+(Filename: Assets/CrossPlatformInput/Scripts/MobileControlRig.cs Line: 48)
+
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(55,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+ 
+(Filename: Assets/CrossPlatformInput/Scripts/MobileControlRig.cs Line: 55)
+
+Assets/CrossPlatformInput/Scripts/MobileControlRig.cs(55,37): warning CS0618: `UnityEditor.EditorUserBuildSettings.activeBuildTargetChanged' is obsolete: `UnityEditor.activeBuildTargetChanged has been deprecated.Use UnityEditor.Build.IActiveBuildTargetChanged instead.'
+ 
+(Filename: Assets/CrossPlatformInput/Scripts/MobileControlRig.cs Line: 55)
+
+Assets/Scripts/InteractableObject.cs(56,25): warning CS0219: The variable `point' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/InteractableObject.cs Line: 56)
+
+Assets/Scripts/PenguinController.cs(149,24): warning CS0219: The variable `splash' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/PenguinController.cs Line: 149)
+
+Assets/Scripts/PenguinController.cs(227,21): warning CS0219: The variable `force' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/PenguinController.cs Line: 227)
+
+Assets/Scripts/DraggableObject.cs(24,19): warning CS0414: The private field `DraggableObject.magnitude' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/DraggableObject.cs Line: 24)
+
+Assets/Scripts/PenguinController.cs(14,21): warning CS0414: The private field `PenguinController.dragObj' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/PenguinController.cs Line: 14)
+
+Assets/Scripts/PenguinController.cs(15,17): warning CS0414: The private field `PenguinController.audioSource' is assigned but its value is never used
+ 
+(Filename: Assets/Scripts/PenguinController.cs Line: 15)
+
+Reloading assemblies after script compilation.
+Begin MonoManager ReloadAssembly
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll (this message is harmless)
+Non platform assembly: /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll (this message is harmless)
+Loading /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp.dll into Unity Child Domain
+Non platform assembly: /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll (this message is harmless)
+Loading /Users/martinalcock/Unity/ChildrensAR_WwiseIntegrationTemp/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PackageManager/Unity/PackageManager/2017.1.1/Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Non platform assembly: /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll (this message is harmless)
+Loading /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll into Unity Child Domain
+Non platform assembly: /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll (this message is harmless)
+Loading /Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll into Unity Child Domain
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Core.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/ExCSS.Unity.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 23.14 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Mono.Cecil.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.DataContract.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.Legacy.NRefactory.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/System.Xml.Linq.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Managed/Unity.IvyParser.dll (this message is harmless)
+Non platform assembly: /Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.897 seconds
+Initializing Unity.PackageManager (PackageManager) v2017.1.1 for Unity v2017.1.1f1
+Setting Standalone:StandaloneOSXIntel v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport
+Setting UnityAnalytics v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics
+  UnityEngine.Analytics.dll (Extension) GUID: 852E56802EB941638ACBB491814497B0
+  Editor/UnityEditor.Analytics.dll (Extension) GUID: 86f4de9468454445ac2f39e207fafa3a
+Setting TestRunner v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner
+  Editor/UnityEditor.TestRunner.dll (Extension) GUID: 4113173d5e95493ab8765d7b08371de4
+  UnityEngine.TestRunner.dll (Extension) GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+  net35/unity-custom/nunit.framework.dll (Extension) GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+  portable/nunit.framework.dll (Extension) GUID: 405b9b51bb344a128608d968297df79c
+Setting UNetHLAPI v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking
+  UnityEngine.Networking.dll (Extension) GUID: 870353891bb340e2b2a9c8707e7419ba
+  Standalone/UnityEngine.Networking.dll (Extension) GUID: dc443db3e92b4983b9738c1131f555cb
+  Editor/UnityEditor.Networking.dll (Extension) GUID: 5f32cd94baa94578a686d4b9d6b660f7
+Setting GUISystem v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem
+  UnityEngine.UI.dll (Extension) GUID: f5f67c52d1564df4a8936ccd202a3bd8
+  Standalone/UnityEngine.UI.dll (Extension) GUID: f70555f144d8491a825f0804e09c671c
+  Editor/UnityEditor.UI.dll (Extension) GUID: 80a3616ca19596e4da0f10f14d241e9f
+Setting Advertisements v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements
+  UnityEngine.Advertisements.dll (Extension) GUID: 739bbd9f364b4268874f9fd86ab3beef
+  Editor/UnityEditor.Advertisements.dll (Extension) GUID: 97decbdab0634cdd991f8d23ddf0dead
+Setting Timeline v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline
+  RuntimeEditor/UnityEngine.Timeline.dll (Extension) GUID: 844F815391DB42D49455CBF1A7BFC434
+  Runtime/UnityEngine.Timeline.dll (Extension) GUID: 6a10b2909283487f913b00d94cd3faf5
+  Editor/UnityEditor.Timeline.dll (Extension) GUID: 7668179ede524d6396c8b7d84461ea29
+Setting TreeEditor v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor
+  Editor/UnityEditor.TreeEditor.dll (Extension) GUID: adebbd281f1a4ef3a30be7f21937e02f
+Setting UnityHoloLens v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens
+  Editor/UnityEditor.HoloLens.dll (Extension) GUID: 12fd8a0055b84bb59e84c9835a37e333
+  Runtime/UnityEngine.HoloLens.dll (Extension) GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+  RuntimeEditor/UnityEngine.HoloLens.dll (Extension) GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+Setting UnityPurchasing v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing
+  UnityEngine.Purchasing.dll (Extension) GUID: 8E0CD8ED44D4412CBE0642067ABC9E44
+  Editor/UnityEditor.Purchasing.dll (Extension) GUID: 8382B2BB260241859771B69B7F377A8D
+Setting UnityVR v2017.1.1 for Unity v2017.1.1f1 to /Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR
+  Editor/UnityEditor.VR.dll (Extension) GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+Registering platform support modules:
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: /Applications/Unity/Unity.app/Contents/Mono/lib/mono/2.0/UnityScript.Lang.dll (this message is harmless)
+Registered platform support modules in: 0.044838s.
+Native extension for OSXStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWindFactory.h - GUID: 0141cdc9d95cf4b3dbf6def4b8dc5afd...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWindFactory.h.
+ done. [Time: 49.875883 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkStereoDelayFX.a - GUID: 06571a43701604a92bd5e6e331183bf3...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkStereoDelayFX.a.
+ done. [Time: 7.803504 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Debug/libAkSoundEngine.a - GUID: 0f980deeb708f479aac307a8c2c23bbb...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Debug/libAkSoundEngine.a.
+ done. [Time: 844.847548 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTimeStretchFX.a - GUID: 25f176fb6bbbe40adb38c1c8d8f51938...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTimeStretchFX.a.
+ done. [Time: 8.759826 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkGuitarDistortionFXFactory.h - GUID: 27f23b6a8053d4cd69a7afb81df0f229...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkGuitarDistortionFXFactory.h.
+ done. [Time: 3.551118 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkPitchShifterFXFactory.h - GUID: 3ce2780ad397d4f5385d6329b8ed637d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkPitchShifterFXFactory.h.
+ done. [Time: 2.373371 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a - GUID: 3ec575a94b385493cb5a8691028083e5...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a.
+ done. [Time: 787.420101 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkConvolutionReverbFXFactory.h - GUID: 41fdf9e8ddc8a4c13b40995aa809874a...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkConvolutionReverbFXFactory.h.
+ done. [Time: 2.777660 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/CrankcaseAudioREVModelPlayerFXFactory.h - GUID: 49d311bfecf274a10b8fb32dc70c289e...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/CrankcaseAudioREVModelPlayerFXFactory.h.
+ done. [Time: 2.053665 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPFutzBoxFX.a - GUID: 4e8e550bd064f4d24885489c26dc3df3...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPFutzBoxFX.a.
+ done. [Time: 49.948587 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkGuitarDistortionFX.a - GUID: 51a3f925f2f1a4ccf90f5a0cf0f5b16d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkGuitarDistortionFX.a.
+ done. [Time: 31.347054 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWind.a - GUID: 6393455279ca4477c944e2ac094e031d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWind.a.
+ done. [Time: 19.723304 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkRecorderFXFactory.h - GUID: 644659727621f45c7a10270e243558e8...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkRecorderFXFactory.h.
+ done. [Time: 2.120354 ms] 
+Updating Assets/WwiseSettings.xml - GUID: 66a4a4c0285dd4002919b5f420cd6a78...
+ done. [Time: 4.720709 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkPitchShifterFX.a - GUID: 7052a699187224ae9a84c27477d3b86c...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkPitchShifterFX.a.
+ done. [Time: 13.070912 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTremoloFXFactory.h - GUID: 713f8556058c940828957cd777dfb4f9...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTremoloFXFactory.h.
+ done. [Time: 2.517874 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPLimiterFX.a - GUID: 7d2f39cd26c324813bdc14aeef901f07...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPLimiterFX.a.
+ done. [Time: 34.688840 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSynthOne.a - GUID: 7f997d5ab62494760b8b2cec671f0205...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSynthOne.a.
+ done. [Time: 32.870463 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkRecorderFX.a - GUID: 84aa6a840d0f2461cae8901fd7efb520...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkRecorderFX.a.
+ done. [Time: 28.568508 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWooshFactory.h - GUID: 8835f0615f5214781a5013f69f8e03d9...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWooshFactory.h.
+ done. [Time: 2.497872 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPLimiterFXFactory.h - GUID: 897724506aadd47e698968f4c741baba...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPLimiterFXFactory.h.
+ done. [Time: 3.854617 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPFutzBoxFXFactory.h - GUID: 8f2daa806e2b449208a30d3b67485506...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPFutzBoxFXFactory.h.
+ done. [Time: 2.682573 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libCrankcaseAudioREVModelPlayerFX.a - GUID: 91b4a1d91dd1a4d629b78e04677675ad...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libCrankcaseAudioREVModelPlayerFX.a.
+ done. [Time: 21.296527 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTimeStretchFXFactory.h - GUID: 94152b4c6c0064c54abe588ea75cd5bc...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTimeStretchFXFactory.h.
+ done. [Time: 2.488587 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedImpactFX.a - GUID: a25f5409b1d3e4c3498541f2a99ee359...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedImpactFX.a.
+ done. [Time: 5.748659 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkFlangerFX.a - GUID: a9f64983b266e4700b6379f7b3515362...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkFlangerFX.a.
+ done. [Time: 6.533750 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkHarmonizerFXFactory.h - GUID: ab5638d4c54104698a83ca05a24fb463...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkHarmonizerFXFactory.h.
+ done. [Time: 2.291581 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSynthOneFactory.h - GUID: af6e5cd7295744ffb8c5bcda28dde065...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSynthOneFactory.h.
+ done. [Time: 2.066796 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWoosh.a - GUID: bb77da01e46eb43698098c4401bd64e1...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWoosh.a.
+ done. [Time: 13.099741 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedImpactFXFactory.h - GUID: d4d3a527442b04cb882731b05f7fe19a...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedImpactFXFactory.h.
+ done. [Time: 2.766271 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkConvolutionReverbFX.a - GUID: d779cc6a350bc4a8aad39ef598cd808f...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkConvolutionReverbFX.a.
+ done. [Time: 35.048241 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTremoloFX.a - GUID: e997853ca35e143a584f6c94d000ad8b...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTremoloFX.a.
+ done. [Time: 11.787443 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkHarmonizerFX.a - GUID: eab6a053aa08549488ccb05eb48cc458...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkHarmonizerFX.a.
+ done. [Time: 32.883993 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkStereoDelayFXFactory.h - GUID: f2b361d856e6d41b5b938363e1129d23...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkStereoDelayFXFactory.h.
+ done. [Time: 2.623494 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/Release/libAkSoundEngine.a - GUID: f2c36aa5ebef64b1ea4ff91f0c39aca0...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Release/libAkSoundEngine.a.
+ done. [Time: 752.885387 ms] 
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkFlangerFXFactory.h - GUID: fabafa10c254f4076bad7894af6fef75...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkFlangerFXFactory.h.
+ done. [Time: 3.771472 ms] 
+Unloading 108 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 291.9 MB.
+System memory in use after: 292.1 MB.
+
+Unloading 138 unused Assets to reduce memory usage. Loaded Objects now: 2960.
+Total: 4.785677 ms (FindLiveObjects: 0.193918 ms CreateObjectMapping: 0.040806 ms MarkObjects: 4.507866 ms  DeleteObjects: 0.042053 ms)
+
+Refreshing native plugins compatible for Editor in 31.62 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 8.036274s, AssetImport time: 7.908653s, Asset hashing: 2.691994s [1.14 GB, 435.383270 mb/s]
+
+Warming cache for 1241 main assets: 0.011879 seconds elapsed
+Initializing Unity extensions:
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll'  GUID: 12fd8a0055b84bb59e84c9835a37e333
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'  GUID: 852e56802eb941638acbb491814497b0
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll'  GUID: 6a10b2909283487f913b00d94cd3faf5
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/portable/nunit.framework.dll'  GUID: 405b9b51bb344a128608d968297df79c
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll'  GUID: f70555f144d8491a825f0804e09c671c
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'  GUID: f5f67c52d1564df4a8936ccd202a3bd8
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll'  GUID: 844f815391db42d49455cbf1a7bfc434
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll'  GUID: dc443db3e92b4983b9738c1131f555cb
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'  GUID: 5f32cd94baa94578a686d4b9d6b660f7
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll'  GUID: 86f4de9468454445ac2f39e207fafa3a
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Runtime/UnityEngine.HoloLens.dll'  GUID: f7b54ff4a43d4fcf81b4538b678e0bcc
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'  GUID: adebbd281f1a4ef3a30be7f21937e02f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'  GUID: 870353891bb340e2b2a9c8707e7419ba
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll'  GUID: 53ebcfaa2e1e4e2dbc85882cd5a73fa1
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'  GUID: 97decbdab0634cdd991f8d23ddf0dead
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll'  GUID: 4ba2329b63d54f0187bcaa12486b1b0f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll'  GUID: 8382b2bb260241859771b69b7f377a8d
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll'  GUID: 1c6d1fbb51834b64847b1b73a75bfc77
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'  GUID: 80a3616ca19596e4da0f10f14d241e9f
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll'  GUID: 4113173d5e95493ab8765d7b08371de4
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll'  GUID: 4b3fa4bde7f1451a8218c03ee6a8ded8
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll'  GUID: 8e0cd8ed44d4412cbe0642067abc9e44
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll'  GUID: 7668179ede524d6396c8b7d84461ea29
+ '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll'  GUID: 739bbd9f364b4268874f9fd86ab3beef
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Runtime/UnityEngine.HoloLens.dll' because we're compiling for Editor:Editor
+    Ignoring '/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll' because we're compiling for Editor:Editor
+Unloading 229 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 294.9 MB.
+System memory in use after: 295.0 MB.
+
+Unloading 192 unused Assets to reduce memory usage. Loaded Objects now: 2993.
+Total: 5.328089 ms (FindLiveObjects: 0.290822 ms CreateObjectMapping: 0.058531 ms MarkObjects: 4.928544 ms  DeleteObjects: 0.049129 ms)
+
+DisplayProgressbar: Remote
+Refreshing native plugins compatible for Editor in 19.56 ms, found 21 plugins.
+WwiseUnity: Running modify setup...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModify() (at Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:33)
+ 
+(Filename: Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 33)
+
+Unloading 101 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 292.9 MB.
+System memory in use after: 293.1 MB.
+
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2996.
+Total: 5.711345 ms (FindLiveObjects: 0.380092 ms CreateObjectMapping: 0.061991 ms MarkObjects: 5.236209 ms  DeleteObjects: 0.031888 ms)
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkFlangerFXFactory.h - GUID: fabafa10c254f4076bad7894af6fef75...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkFlangerFXFactory.h.
+ done. [Time: 81.877797 ms] 
+Refreshing native plugins compatible for Editor in 2.27 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.60 ms.
+
+----- Total AssetImport time: 0.161593s, AssetImport time: 0.128385s, Asset hashing: 0.000296s [4.8 KB, 15.841434 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPLimiterFXFactory.h - GUID: 897724506aadd47e698968f4c741baba...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPLimiterFXFactory.h.
+ done. [Time: 2.402937 ms] 
+Refreshing native plugins compatible for Editor in 2.32 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.66 ms.
+
+----- Total AssetImport time: 0.095309s, AssetImport time: 0.054895s, Asset hashing: 0.000406s [4.8 KB, 11.540885 mb/s]
+
+
+Hashing assets ... 0.012 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPFutzBoxFXFactory.h - GUID: 8f2daa806e2b449208a30d3b67485506...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/McDSPFutzBoxFXFactory.h.
+ done. [Time: 4.292409 ms] 
+Refreshing native plugins compatible for Editor in 2.08 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.084335s, AssetImport time: 0.042745s, Asset hashing: 0.012449s [4.8 KB, 0.377378 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.232 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTremolo.dll - GUID: 4343a9d0cd7f14366b9869fe675e50b4...
+ done. [Time: 3.080230 ms] 
+Refreshing native plugins compatible for Editor in 1.53 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.061402s, AssetImport time: 0.033952s, Asset hashing: 0.001960s [238.0 KB, 118.555489 mb/s]
+
+
+Hashing assets ... 0.006 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.005 seconds (2.865 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Debug/AkSoundEngine.dll - GUID: 11ebd6f0198c44b63b0e675c586dff92...
+ done. [Time: 1.980235 ms] 
+Refreshing native plugins compatible for Editor in 2.19 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+
+----- Total AssetImport time: 0.075456s, AssetImport time: 0.037387s, Asset hashing: 0.006334s [2.9 MB, 452.258362 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.281 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkConvolutionReverb.dll - GUID: 2967b5013e198439f96e047a4e07a0cd...
+ done. [Time: 3.545176 ms] 
+Refreshing native plugins compatible for Editor in 1.61 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.40 ms.
+
+----- Total AssetImport time: 0.072780s, AssetImport time: 0.038633s, Asset hashing: 0.002026s [288.0 KB, 138.829239 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.922 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWoosh.a - GUID: bb77da01e46eb43698098c4401bd64e1...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWoosh.a.
+ done. [Time: 7.149414 ms] 
+Refreshing native plugins compatible for Editor in 2.32 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 1.03 ms.
+
+----- Total AssetImport time: 0.104228s, AssetImport time: 0.065750s, Asset hashing: 0.006830s [3.8 MB, 562.832581 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWooshFactory.h - GUID: 8835f0615f5214781a5013f69f8e03d9...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWooshFactory.h.
+ done. [Time: 2.448981 ms] 
+Refreshing native plugins compatible for Editor in 1.42 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+
+----- Total AssetImport time: 0.076997s, AssetImport time: 0.045680s, Asset hashing: 0.000400s [4.8 KB, 11.753721 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.244 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedAir.dll - GUID: 391c178124f2940e8abb4dfa03479ac8...
+ done. [Time: 2.201331 ms] 
+Refreshing native plugins compatible for Editor in 1.40 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.076730s, AssetImport time: 0.036878s, Asset hashing: 0.002815s [249.5 KB, 86.544243 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.063 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkTremolo.bundle - GUID: a98199a1f2d064207ad30fd71204ff67...
+ done. [Time: 1.932476 ms] 
+Refreshing native plugins compatible for Editor in 2.19 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.062175s, AssetImport time: 0.035578s, Asset hashing: 0.001914s [64.5 KB, 32.922581 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.289 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/CrankcaseAudioREVModelPlayer.dll - GUID: 614c8fb1d65084c63a94fb96f4019a6b...
+ done. [Time: 1.920745 ms] 
+Refreshing native plugins compatible for Editor in 2.39 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.48 ms.
+
+----- Total AssetImport time: 0.063391s, AssetImport time: 0.030290s, Asset hashing: 0.001488s [296.0 KB, 194.322769 mb/s]
+
+
+Hashing assets ... 0.026 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.012 seconds (12.423 MB)
+  hash: 0.020 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAuro.bundle - GUID: 7d80b02205144461f84393abf039b053...
+ done. [Time: 5.551569 ms] 
+Refreshing native plugins compatible for Editor in 4.45 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.73 ms.
+
+----- Total AssetImport time: 0.120852s, AssetImport time: 0.049022s, Asset hashing: 0.025968s [12.4 MB, 478.400879 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.076 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkPitchShifter.bundle - GUID: 99bb5a22a5f314182a4af117d08f2282...
+ done. [Time: 2.675967 ms] 
+Refreshing native plugins compatible for Editor in 2.26 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+
+----- Total AssetImport time: 0.102292s, AssetImport time: 0.059028s, Asset hashing: 0.001305s [78.0 KB, 58.356728 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.249 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkReflect.dll - GUID: 9d23e052fab34476e81a544d44c5c477...
+ done. [Time: 1.841059 ms] 
+Refreshing native plugins compatible for Editor in 2.06 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.49 ms.
+
+----- Total AssetImport time: 0.086063s, AssetImport time: 0.042058s, Asset hashing: 0.001948s [254.5 KB, 127.571426 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (1.506 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWind.a - GUID: 6393455279ca4477c944e2ac094e031d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedWind.a.
+ done. [Time: 4.244640 ms] 
+Refreshing native plugins compatible for Editor in 3.39 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.95 ms.
+
+----- Total AssetImport time: 0.090982s, AssetImport time: 0.055684s, Asset hashing: 0.004623s [3.0 MB, 651.403931 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkRecorderFXFactory.h - GUID: 644659727621f45c7a10270e243558e8...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkRecorderFXFactory.h.
+ done. [Time: 2.729281 ms] 
+Refreshing native plugins compatible for Editor in 1.61 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.079392s, AssetImport time: 0.045013s, Asset hashing: 0.000330s [4.8 KB, 14.208138 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.428 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/McDSP.dll - GUID: f2f12a721bd924788ac4ef8459793716...
+ done. [Time: 1.778516 ms] 
+Refreshing native plugins compatible for Editor in 1.64 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.061582s, AssetImport time: 0.029387s, Asset hashing: 0.001814s [438.5 KB, 236.030273 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.205 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkMotion.dll - GUID: 7c38cc82c3ca04a3fb7ce12f58c80879...
+ done. [Time: 3.599826 ms] 
+Refreshing native plugins compatible for Editor in 2.00 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.068646s, AssetImport time: 0.034014s, Asset hashing: 0.001788s [209.5 KB, 114.407722 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.235 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkFlanger.dll - GUID: 3b3df003c808a41448ad909ec8da6253...
+ done. [Time: 2.277155 ms] 
+Refreshing native plugins compatible for Editor in 1.33 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.063191s, AssetImport time: 0.034678s, Asset hashing: 0.001600s [241.0 KB, 147.107315 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.180 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libCrankcaseAudioREVModelPlayer.bundle - GUID: d2e3bc33f40f34e68ad573138cd5bc88...
+ done. [Time: 1.974049 ms] 
+Refreshing native plugins compatible for Editor in 1.34 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.060899s, AssetImport time: 0.032650s, Asset hashing: 0.001484s [184.1 KB, 121.110474 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (1.325 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkStereoDelayFX.a - GUID: 06571a43701604a92bd5e6e331183bf3...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkStereoDelayFX.a.
+ done. [Time: 4.103379 ms] 
+Refreshing native plugins compatible for Editor in 2.04 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+
+----- Total AssetImport time: 0.073968s, AssetImport time: 0.040870s, Asset hashing: 0.003910s [2.7 MB, 677.906677 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.232 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkGuitarDistortion.dll - GUID: fdbd8a43a8a344e99b4446396750079b...
+ done. [Time: 1.921695 ms] 
+Refreshing native plugins compatible for Editor in 1.39 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.068027s, AssetImport time: 0.040067s, Asset hashing: 0.001586s [238.0 KB, 146.580322 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (2.457 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkHarmonizerFX.a - GUID: eab6a053aa08549488ccb05eb48cc458...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkHarmonizerFX.a.
+ done. [Time: 6.630651 ms] 
+Refreshing native plugins compatible for Editor in 2.04 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+
+----- Total AssetImport time: 0.079569s, AssetImport time: 0.045784s, Asset hashing: 0.006949s [4.9 MB, 707.177795 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Debug/AkSoundEngine.bundle - GUID: 21d2f163498374fc6af9452f8d198b74...
+ done. [Time: 3.093785 ms] 
+Refreshing native plugins compatible for Editor in 1.23 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.33 ms.
+
+----- Total AssetImport time: 0.069278s, AssetImport time: 0.043758s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (1.181 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkFlangerFX.a - GUID: a9f64983b266e4700b6379f7b3515362...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkFlangerFX.a.
+ done. [Time: 3.921613 ms] 
+Refreshing native plugins compatible for Editor in 2.45 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 1.00 ms.
+
+----- Total AssetImport time: 0.087347s, AssetImport time: 0.047151s, Asset hashing: 0.003556s [2.4 MB, 664.356689 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.226 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/SynthOne.dll - GUID: 7f8ba9932988d4530bac7e8e5d09cf7d...
+ done. [Time: 1.926696 ms] 
+Refreshing native plugins compatible for Editor in 1.61 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.063818s, AssetImport time: 0.035449s, Asset hashing: 0.001992s [231.0 KB, 113.246407 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.081 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkGuitarDistortion.bundle - GUID: d6059224444424ac4a4f225980ee4175...
+ done. [Time: 2.857822 ms] 
+Refreshing native plugins compatible for Editor in 1.36 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.44 ms.
+
+----- Total AssetImport time: 0.058761s, AssetImport time: 0.028688s, Asset hashing: 0.001178s [83.2 KB, 68.966385 mb/s]
+
+
+Hashing assets ... 0.007 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.005 seconds (3.392 MB)
+  hash: 0.005 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/Auro.dll - GUID: ad73563437da1418aa091d7ea391d753...
+ done. [Time: 3.179549 ms] 
+Refreshing native plugins compatible for Editor in 2.06 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.49 ms.
+
+----- Total AssetImport time: 0.069906s, AssetImport time: 0.030904s, Asset hashing: 0.006810s [3.4 MB, 498.048553 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (1.360 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkRecorderFX.a - GUID: 84aa6a840d0f2461cae8901fd7efb520...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkRecorderFX.a.
+ done. [Time: 3.937401 ms] 
+Refreshing native plugins compatible for Editor in 1.24 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.078009s, AssetImport time: 0.045439s, Asset hashing: 0.003947s [2.7 MB, 689.061523 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.004 seconds (1.843 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Profile/AkSoundEngine.dll - GUID: b6a7b1946b8ac4670b7b9aeb936ed52e...
+ done. [Time: 2.518866 ms] 
+Refreshing native plugins compatible for Editor in 1.97 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+
+----- Total AssetImport time: 0.069134s, AssetImport time: 0.031461s, Asset hashing: 0.004405s [1.8 MB, 418.530396 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.212 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkPitchShifter.dll - GUID: 383aae94a5ca746a5b7fa3b0d07434a1...
+ done. [Time: 1.766193 ms] 
+Refreshing native plugins compatible for Editor in 1.38 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.063219s, AssetImport time: 0.035626s, Asset hashing: 0.001321s [217.0 KB, 160.445541 mb/s]
+
+
+Hashing assets ... 0.000 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkHarmonizerFXFactory.h - GUID: ab5638d4c54104698a83ca05a24fb463...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkHarmonizerFXFactory.h.
+ done. [Time: 2.711665 ms] 
+Refreshing native plugins compatible for Editor in 1.20 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.070523s, AssetImport time: 0.045025s, Asset hashing: 0.000489s [4.8 KB, 9.625769 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (1.196 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkGuitarDistortionFX.a - GUID: 51a3f925f2f1a4ccf90f5a0cf0f5b16d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkGuitarDistortionFX.a.
+ done. [Time: 5.122988 ms] 
+Refreshing native plugins compatible for Editor in 1.31 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.40 ms.
+
+----- Total AssetImport time: 0.077015s, AssetImport time: 0.043540s, Asset hashing: 0.003924s [2.4 MB, 609.401672 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.221 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTimeStretch.dll - GUID: ae051f5512d194672b573bf80daf97cd...
+ done. [Time: 2.098670 ms] 
+Refreshing native plugins compatible for Editor in 2.18 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.56 ms.
+
+----- Total AssetImport time: 0.063618s, AssetImport time: 0.034825s, Asset hashing: 0.001653s [226.0 KB, 133.521149 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.233 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkHarmonizer.dll - GUID: ebdfb0653c95b465a9df4e5bd20852cb...
+ done. [Time: 1.812097 ms] 
+Refreshing native plugins compatible for Editor in 2.00 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+
+----- Total AssetImport time: 0.071848s, AssetImport time: 0.039829s, Asset hashing: 0.001705s [239.0 KB, 136.889938 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.083 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkFlanger.bundle - GUID: 36eaa285ce93f4307b215c3b680ef61d...
+ done. [Time: 2.315350 ms] 
+Refreshing native plugins compatible for Editor in 1.39 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.063809s, AssetImport time: 0.035002s, Asset hashing: 0.002339s [84.5 KB, 35.270481 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Release/AkSoundEngine.bundle - GUID: d31972a5cfb564df6af0331da64b762a...
+ done. [Time: 2.891768 ms] 
+Refreshing native plugins compatible for Editor in 1.35 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.071425s, AssetImport time: 0.046360s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/Wwise/Deployment/Plugins/Mac/Profile/AkSoundEngine.bundle - GUID: 697427a5a994644c6b9032c405f31c8a...
+ done. [Time: 3.447047 ms] 
+Refreshing native plugins compatible for Editor in 2.04 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.49 ms.
+
+----- Total AssetImport time: 0.074574s, AssetImport time: 0.041774s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.444 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.078 seconds (325.373 MB)
+  hash: 0.424 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/Release/libAkSoundEngine.a - GUID: f2c36aa5ebef64b1ea4ff91f0c39aca0...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Release/libAkSoundEngine.a.
+ done. [Time: 504.092841 ms] 
+Refreshing native plugins compatible for Editor in 2.57 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.52 ms.
+
+----- Total AssetImport time: 1.017098s, AssetImport time: 0.546813s, Asset hashing: 0.944890s [0.63 GB, 688.699463 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.214 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkStereoDelay.dll - GUID: 36e0c8c5f0110424eace51ce16c4ee4a...
+ done. [Time: 1.918711 ms] 
+Refreshing native plugins compatible for Editor in 2.67 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.52 ms.
+
+----- Total AssetImport time: 0.065326s, AssetImport time: 0.028466s, Asset hashing: 0.001261s [219.0 KB, 169.650909 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTremoloFXFactory.h - GUID: 713f8556058c940828957cd777dfb4f9...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTremoloFXFactory.h.
+ done. [Time: 3.099244 ms] 
+Refreshing native plugins compatible for Editor in 1.19 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.073734s, AssetImport time: 0.045019s, Asset hashing: 0.000809s [4.8 KB, 5.796000 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.282 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedAir.dll - GUID: 5f6bff7687ebb49bca6d590dae59cacd...
+ done. [Time: 2.117143 ms] 
+Refreshing native plugins compatible for Editor in 1.28 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.067228s, AssetImport time: 0.029411s, Asset hashing: 0.001129s [289.0 KB, 249.994080 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.055 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkSoundSeedImpact.bundle - GUID: bfadfef687ab14e54965f2e9be830740...
+ done. [Time: 3.308266 ms] 
+Refreshing native plugins compatible for Editor in 1.62 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.35 ms.
+
+----- Total AssetImport time: 0.069726s, AssetImport time: 0.033034s, Asset hashing: 0.001341s [55.9 KB, 40.744717 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedImpactFXFactory.h - GUID: d4d3a527442b04cb882731b05f7fe19a...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedImpactFXFactory.h.
+ done. [Time: 2.303224 ms] 
+Refreshing native plugins compatible for Editor in 1.35 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.53 ms.
+
+----- Total AssetImport time: 0.073884s, AssetImport time: 0.046163s, Asset hashing: 0.001248s [4.8 KB, 3.789697 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.225 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkReflect.dll - GUID: 0818aac7b32db45adbf5c0438b60b4cd...
+ done. [Time: 1.844342 ms] 
+Refreshing native plugins compatible for Editor in 2.04 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.76 ms.
+
+----- Total AssetImport time: 0.060393s, AssetImport time: 0.027368s, Asset hashing: 0.001427s [230.0 KB, 157.426178 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSynthOneFactory.h - GUID: af6e5cd7295744ffb8c5bcda28dde065...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSynthOneFactory.h.
+ done. [Time: 2.982829 ms] 
+Refreshing native plugins compatible for Editor in 1.19 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.076911s, AssetImport time: 0.044404s, Asset hashing: 0.000786s [4.7 KB, 5.885073 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.264 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkHarmonizer.dll - GUID: 1330cce7ac72c410e83b841e4263802b...
+ done. [Time: 2.147868 ms] 
+Refreshing native plugins compatible for Editor in 1.24 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.062392s, AssetImport time: 0.033277s, Asset hashing: 0.001607s [270.0 KB, 164.118652 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.208 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkTremolo.dll - GUID: 1b9b89f778cb646be9677e87a154e89b...
+ done. [Time: 2.797344 ms] 
+Refreshing native plugins compatible for Editor in 1.89 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+
+----- Total AssetImport time: 0.072365s, AssetImport time: 0.039091s, Asset hashing: 0.001284s [213.0 KB, 161.974503 mb/s]
+
+
+Hashing assets ... 0.007 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.005 seconds (3.605 MB)
+  hash: 0.005 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/Auro.dll - GUID: e1acd188671ed4f5b991b5371896e0b7...
+ done. [Time: 2.075398 ms] 
+Refreshing native plugins compatible for Editor in 1.57 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+
+----- Total AssetImport time: 0.070675s, AssetImport time: 0.036466s, Asset hashing: 0.007452s [3.6 MB, 483.848450 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.227 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkPitchShifter.dll - GUID: 7d80a0c855ceb4be492e7c0b341dabf6...
+ done. [Time: 2.269178 ms] 
+Refreshing native plugins compatible for Editor in 1.37 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.060587s, AssetImport time: 0.029735s, Asset hashing: 0.001313s [232.5 KB, 172.946136 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (1.219 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Release/AkSoundEngine.dll - GUID: 53a41ec89af0f48ee9f1d5ac960a5ecd...
+ done. [Time: 2.458220 ms] 
+Refreshing native plugins compatible for Editor in 1.99 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.071595s, AssetImport time: 0.034217s, Asset hashing: 0.003418s [1.2 MB, 356.592072 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkStereoDelayFXFactory.h - GUID: f2b361d856e6d41b5b938363e1129d23...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkStereoDelayFXFactory.h.
+ done. [Time: 2.581489 ms] 
+Refreshing native plugins compatible for Editor in 1.20 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.072100s, AssetImport time: 0.044828s, Asset hashing: 0.001242s [4.8 KB, 3.802015 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.242 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/SynthOne.dll - GUID: bb0956e81083d43a089a168661b3bbef...
+ done. [Time: 2.045820 ms] 
+Refreshing native plugins compatible for Editor in 1.57 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+
+----- Total AssetImport time: 0.065417s, AssetImport time: 0.030401s, Asset hashing: 0.001316s [248.0 KB, 184.045914 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkConvolutionReverbFXFactory.h - GUID: 41fdf9e8ddc8a4c13b40995aa809874a...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkConvolutionReverbFXFactory.h.
+ done. [Time: 3.170252 ms] 
+Refreshing native plugins compatible for Editor in 1.36 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.35 ms.
+
+----- Total AssetImport time: 0.070546s, AssetImport time: 0.042485s, Asset hashing: 0.000898s [4.9 KB, 5.305427 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.715 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedImpactFX.a - GUID: a25f5409b1d3e4c3498541f2a99ee359...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSoundSeedImpactFX.a.
+ done. [Time: 3.270801 ms] 
+Refreshing native plugins compatible for Editor in 1.88 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+
+----- Total AssetImport time: 0.080579s, AssetImport time: 0.041907s, Asset hashing: 0.003420s [1.4 MB, 418.435211 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (0.755 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/iZotope.dll - GUID: 158064595ee134307bcd04795927a9c5...
+ done. [Time: 2.605042 ms] 
+Refreshing native plugins compatible for Editor in 1.69 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+
+----- Total AssetImport time: 0.067255s, AssetImport time: 0.036522s, Asset hashing: 0.003619s [0.8 MB, 208.585678 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (1.218 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkPitchShifterFX.a - GUID: 7052a699187224ae9a84c27477d3b86c...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkPitchShifterFX.a.
+ done. [Time: 4.203910 ms] 
+Refreshing native plugins compatible for Editor in 2.68 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.62 ms.
+
+----- Total AssetImport time: 0.077949s, AssetImport time: 0.048504s, Asset hashing: 0.004659s [2.4 MB, 522.924377 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.175 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkRecorder.dll - GUID: 521f99992abed4f42b415050fbe6fb08...
+ done. [Time: 2.507907 ms] 
+Refreshing native plugins compatible for Editor in 2.85 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.48 ms.
+
+----- Total AssetImport time: 0.066557s, AssetImport time: 0.034915s, Asset hashing: 0.001044s [179.5 KB, 167.893250 mb/s]
+
+
+Hashing assets ... 0.572 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.091 seconds (396.501 MB)
+  hash: 0.536 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a - GUID: 3ec575a94b385493cb5a8691028083e5...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a.
+ done. [Time: 601.843605 ms] 
+Refreshing native plugins compatible for Editor in 1.40 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.40 ms.
+
+----- Total AssetImport time: 1.239847s, AssetImport time: 0.643006s, Asset hashing: 1.171050s [0.77 GB, 677.171082 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.144 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkHarmonizer.bundle - GUID: 4123a8b9a93ef436da89b3df9ff950ef...
+ done. [Time: 2.013084 ms] 
+Refreshing native plugins compatible for Editor in 1.68 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.060823s, AssetImport time: 0.029393s, Asset hashing: 0.001994s [147.2 KB, 72.111191 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.109 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkReflect.bundle - GUID: d6c636c96483c42f49d537d92f4852b2...
+ done. [Time: 1.878052 ms] 
+Refreshing native plugins compatible for Editor in 1.38 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.44 ms.
+
+----- Total AssetImport time: 0.061431s, AssetImport time: 0.035871s, Asset hashing: 0.001393s [111.7 KB, 78.271317 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.073 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkRecorder.bundle - GUID: c4d246c977dd347cea77b56b6533acfb...
+ done. [Time: 1.927496 ms] 
+Refreshing native plugins compatible for Editor in 1.44 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.056233s, AssetImport time: 0.028556s, Asset hashing: 0.001349s [74.9 KB, 54.215538 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWindFactory.h - GUID: 0141cdc9d95cf4b3dbf6def4b8dc5afd...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkSoundSeedWindFactory.h.
+ done. [Time: 2.521249 ms] 
+Refreshing native plugins compatible for Editor in 1.26 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.35 ms.
+
+----- Total AssetImport time: 0.066342s, AssetImport time: 0.039550s, Asset hashing: 0.001330s [4.8 KB, 3.531774 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.134 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkConvolutionReverb.bundle - GUID: 3f16fec9f78144ce588f28aa301efdd8...
+ done. [Time: 2.013551 ms] 
+Refreshing native plugins compatible for Editor in 1.36 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.058491s, AssetImport time: 0.031159s, Asset hashing: 0.002268s [137.4 KB, 59.181114 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (2.722 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libCrankcaseAudioREVModelPlayerFX.a - GUID: 91b4a1d91dd1a4d629b78e04677675ad...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libCrankcaseAudioREVModelPlayerFX.a.
+ done. [Time: 7.703270 ms] 
+Refreshing native plugins compatible for Editor in 2.04 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.39 ms.
+
+----- Total AssetImport time: 0.089460s, AssetImport time: 0.053252s, Asset hashing: 0.009564s [5.4 MB, 569.269958 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkPitchShifterFXFactory.h - GUID: 3ce2780ad397d4f5385d6329b8ed637d...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkPitchShifterFXFactory.h.
+ done. [Time: 2.256851 ms] 
+Refreshing native plugins compatible for Editor in 1.43 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.066823s, AssetImport time: 0.039175s, Asset hashing: 0.001075s [4.8 KB, 4.397027 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.004 seconds (1.408 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/Profile/AkSoundEngine.dll - GUID: 3e64a15ab2a104616bf1c3ccf2e13051...
+ done. [Time: 2.244380 ms] 
+Refreshing native plugins compatible for Editor in 1.26 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.058010s, AssetImport time: 0.030184s, Asset hashing: 0.003934s [1.4 MB, 357.984436 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (1.589 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Release/AkSoundEngine.dll - GUID: fe3f7c5a24d7248d380c60b1bddf4d18...
+ done. [Time: 1.786171 ms] 
+Refreshing native plugins compatible for Editor in 1.35 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.065128s, AssetImport time: 0.028251s, Asset hashing: 0.003657s [1.6 MB, 434.507660 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (1.732 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSynthOne.a - GUID: 7f997d5ab62494760b8b2cec671f0205...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkSynthOne.a.
+ done. [Time: 5.387890 ms] 
+Refreshing native plugins compatible for Editor in 2.02 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.55 ms.
+
+----- Total AssetImport time: 0.073220s, AssetImport time: 0.041507s, Asset hashing: 0.006349s [3.5 MB, 545.706970 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.000 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkGuitarDistortionFXFactory.h - GUID: 27f23b6a8053d4cd69a7afb81df0f229...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkGuitarDistortionFXFactory.h.
+ done. [Time: 2.378534 ms] 
+Refreshing native plugins compatible for Editor in 1.29 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.063386s, AssetImport time: 0.038424s, Asset hashing: 0.000799s [4.9 KB, 5.955810 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (2.337 MB)
+  hash: 0.003 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkConvolutionReverbFX.a - GUID: d779cc6a350bc4a8aad39ef598cd808f...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkConvolutionReverbFX.a.
+ done. [Time: 5.387000 ms] 
+Refreshing native plugins compatible for Editor in 1.24 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.64 ms.
+
+----- Total AssetImport time: 0.075470s, AssetImport time: 0.044290s, Asset hashing: 0.007705s [4.7 MB, 606.698242 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.181 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkSoundSeedAir.bundle - GUID: 19bac28ab201c417b93ef52e0d2903bb...
+ done. [Time: 2.119877 ms] 
+Refreshing native plugins compatible for Editor in 1.28 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.43 ms.
+
+----- Total AssetImport time: 0.055223s, AssetImport time: 0.028934s, Asset hashing: 0.002031s [185.5 KB, 89.185974 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (3.068 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPFutzBoxFX.a - GUID: 4e8e550bd064f4d24885489c26dc3df3...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPFutzBoxFX.a.
+ done. [Time: 7.210943 ms] 
+Refreshing native plugins compatible for Editor in 1.61 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.073071s, AssetImport time: 0.041861s, Asset hashing: 0.009819s [6.1 MB, 624.949951 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.107 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkTimeStretch.bundle - GUID: a18f241b7cb6b460b846b96cb57831b1...
+ done. [Time: 1.851329 ms] 
+Refreshing native plugins compatible for Editor in 1.99 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.72 ms.
+
+----- Total AssetImport time: 0.063257s, AssetImport time: 0.033539s, Asset hashing: 0.001847s [109.7 KB, 58.000618 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.250 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/CrankcaseAudioREVModelPlayer.dll - GUID: b98ebf2bbde36448a825d85f162d5a84...
+ done. [Time: 2.132350 ms] 
+Refreshing native plugins compatible for Editor in 1.33 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.056915s, AssetImport time: 0.029580s, Asset hashing: 0.002200s [255.5 KB, 113.397354 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.194 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkRecorder.dll - GUID: b6c7eb7bad9c642f294f5150c1884a8e...
+ done. [Time: 1.878517 ms] 
+Refreshing native plugins compatible for Editor in 1.32 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.054707s, AssetImport time: 0.028323s, Asset hashing: 0.001229s [198.5 KB, 157.703705 mb/s]
+
+
+Hashing assets ... 0.004 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (1.553 MB)
+  hash: 0.002 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTimeStretchFX.a - GUID: 25f176fb6bbbe40adb38c1c8d8f51938...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTimeStretchFX.a.
+ done. [Time: 6.432239 ms] 
+Refreshing native plugins compatible for Editor in 1.41 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.39 ms.
+
+----- Total AssetImport time: 0.074238s, AssetImport time: 0.045363s, Asset hashing: 0.007054s [3.1 MB, 440.255554 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.214 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkSoundSeedImpact.dll - GUID: 1041b31cf91a24e3eb38f0f91e983155...
+ done. [Time: 2.354726 ms] 
+Refreshing native plugins compatible for Editor in 1.54 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.073775s, AssetImport time: 0.034430s, Asset hashing: 0.001166s [219.5 KB, 183.902344 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.896 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTremoloFX.a - GUID: e997853ca35e143a584f6c94d000ad8b...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libAkTremoloFX.a.
+ done. [Time: 5.433409 ms] 
+Refreshing native plugins compatible for Editor in 1.30 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.076870s, AssetImport time: 0.046778s, Asset hashing: 0.005544s [1.8 MB, 323.292725 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (0.476 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libMcDSP.bundle - GUID: 38a75a4c86d6d4ec69cb36c9bb485d70...
+ done. [Time: 2.635618 ms] 
+Refreshing native plugins compatible for Editor in 1.97 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.49 ms.
+
+----- Total AssetImport time: 0.071009s, AssetImport time: 0.034038s, Asset hashing: 0.002999s [487.7 KB, 158.810715 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTimeStretchFXFactory.h - GUID: 94152b4c6c0064c54abe588ea75cd5bc...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkTimeStretchFXFactory.h.
+ done. [Time: 2.339660 ms] 
+Refreshing native plugins compatible for Editor in 1.22 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.083002s, AssetImport time: 0.046806s, Asset hashing: 0.001017s [4.8 KB, 4.639939 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.346 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/McDSP.dll - GUID: 0180fd4c342a94aaf87818775a9618a0...
+ done. [Time: 2.185621 ms] 
+Refreshing native plugins compatible for Editor in 1.33 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.063035s, AssetImport time: 0.030068s, Asset hashing: 0.002413s [354.5 KB, 143.447235 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.208 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkMotion.dll - GUID: 201ec46c6d1ca47d6b6b312b7794be67...
+ done. [Time: 2.062925 ms] 
+Refreshing native plugins compatible for Editor in 1.56 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.57 ms.
+
+----- Total AssetImport time: 0.058766s, AssetImport time: 0.030667s, Asset hashing: 0.001486s [213.0 KB, 139.946503 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.215 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkFlanger.dll - GUID: efc4c56c51fb7429180f24299c2e3102...
+ done. [Time: 3.346541 ms] 
+Refreshing native plugins compatible for Editor in 1.26 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.058838s, AssetImport time: 0.031723s, Asset hashing: 0.002047s [220.5 KB, 105.211281 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.235 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkStereoDelay.dll - GUID: a5d0249c82561437bb096a7b95e6f135...
+ done. [Time: 1.850781 ms] 
+Refreshing native plugins compatible for Editor in 2.34 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+
+----- Total AssetImport time: 0.057881s, AssetImport time: 0.029554s, Asset hashing: 0.001808s [240.5 KB, 129.883652 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.538 MB)
+  hash: 0.001 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/iZotope.dll - GUID: 75a2d7ec629e94614b01a0e995ac623c...
+ done. [Time: 2.791600 ms] 
+Refreshing native plugins compatible for Editor in 1.19 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.39 ms.
+
+----- Total AssetImport time: 0.055786s, AssetImport time: 0.028869s, Asset hashing: 0.002201s [0.5 MB, 244.498611 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.113 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libSynthOne.bundle - GUID: be2969ec9cadf45818a83c1a2c33703c...
+ done. [Time: 1.993778 ms] 
+Refreshing native plugins compatible for Editor in 1.29 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.063983s, AssetImport time: 0.036466s, Asset hashing: 0.001389s [115.7 KB, 81.381180 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.040 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkMotion.bundle - GUID: 85f7f03d0c23b43188acc042ca9c6df4...
+ done. [Time: 1.969817 ms] 
+Refreshing native plugins compatible for Editor in 1.27 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.057377s, AssetImport time: 0.031284s, Asset hashing: 0.001654s [41.0 KB, 24.197716 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.238 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/DSP/AkTimeStretch.dll - GUID: d685b18d77feb4367a2340f987bbeda5...
+ done. [Time: 1.794196 ms] 
+Refreshing native plugins compatible for Editor in 2.02 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.61 ms.
+
+----- Total AssetImport time: 0.055305s, AssetImport time: 0.027201s, Asset hashing: 0.001607s [243.5 KB, 147.975616 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.214 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkGuitarDistortion.dll - GUID: 1a6c52bd23bbd44a5aca9980593f4e32...
+ done. [Time: 2.678842 ms] 
+Refreshing native plugins compatible for Editor in 1.40 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.36 ms.
+
+----- Total AssetImport time: 0.056600s, AssetImport time: 0.030882s, Asset hashing: 0.001938s [219.5 KB, 110.620064 mb/s]
+
+
+Hashing assets ... 0.005 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (2.639 MB)
+  hash: 0.004 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPLimiterFX.a - GUID: 7d2f39cd26c324813bdc14aeef901f07...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/libMcDSPLimiterFX.a.
+ done. [Time: 6.271831 ms] 
+Refreshing native plugins compatible for Editor in 1.36 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.071589s, AssetImport time: 0.041737s, Asset hashing: 0.008383s [5.3 MB, 629.627014 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.002 seconds (0.212 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkSoundSeedImpact.dll - GUID: b338d34ea5af244ff85e8acb4ab06bda...
+ done. [Time: 1.957432 ms] 
+Refreshing native plugins compatible for Editor in 1.39 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.45 ms.
+
+----- Total AssetImport time: 0.057937s, AssetImport time: 0.028468s, Asset hashing: 0.001989s [217.5 KB, 106.801178 mb/s]
+
+
+Hashing assets ... 0.003 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.003 seconds (0.224 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkRoomVerb.bundle - GUID: f38b978e12bbc492584973ecf92bd452...
+ done. [Time: 1.961183 ms] 
+Refreshing native plugins compatible for Editor in 1.99 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.060443s, AssetImport time: 0.032402s, Asset hashing: 0.002886s [229.8 KB, 77.730537 mb/s]
+
+
+Hashing assets ... 0.561 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.108 seconds (422.043 MB)
+  hash: 0.549 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/Debug/libAkSoundEngine.a - GUID: 0f980deeb708f479aac307a8c2c23bbb...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Debug/libAkSoundEngine.a.
+ done. [Time: 628.967925 ms] 
+Refreshing native plugins compatible for Editor in 1.17 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.35 ms.
+
+----- Total AssetImport time: 1.257540s, AssetImport time: 0.671348s, Asset hashing: 1.187067s [0.82 GB, 711.069214 mb/s]
+
+
+Hashing assets ... 0.007 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.005 seconds (3.847 MB)
+  hash: 0.006 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86_64/Debug/AkSoundEngine.dll - GUID: 8d10482f0350c43efa284dc40dfdbcf0...
+ done. [Time: 1.913380 ms] 
+Refreshing native plugins compatible for Editor in 1.18 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.064728s, AssetImport time: 0.030881s, Asset hashing: 0.007405s [3.8 MB, 519.455444 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.257 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Windows/x86/DSP/AkConvolutionReverb.dll - GUID: 1ebb043f4187e470e800cbede19cb592...
+ done. [Time: 2.157086 ms] 
+Refreshing native plugins compatible for Editor in 1.20 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
+
+----- Total AssetImport time: 0.055807s, AssetImport time: 0.029884s, Asset hashing: 0.001310s [263.0 KB, 196.130737 mb/s]
+
+
+Hashing assets ... 0.002 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.078 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/Mac/DSP/libAkStereoDelay.bundle - GUID: 65c9054f746a941c484949bfea068c6a...
+ done. [Time: 1.944803 ms] 
+Refreshing native plugins compatible for Editor in 1.89 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+
+----- Total AssetImport time: 0.058430s, AssetImport time: 0.027350s, Asset hashing: 0.001736s [80.4 KB, 45.211792 mb/s]
+
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/CrankcaseAudioREVModelPlayerFXFactory.h - GUID: 49d311bfecf274a10b8fb32dc70c289e...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/CrankcaseAudioREVModelPlayerFXFactory.h.
+ done. [Time: 3.658240 ms] 
+Refreshing native plugins compatible for Editor in 1.51 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.37 ms.
+
+----- Total AssetImport time: 0.065328s, AssetImport time: 0.038506s, Asset hashing: 0.001039s [4.9 KB, 4.588811 mb/s]
+
+
+Hashing assets ... 0.536 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.091 seconds (396.501 MB)
+  hash: 0.514 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a - GUID: 3ec575a94b385493cb5a8691028083e5...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/Profile/libAkSoundEngine.a.
+ done. [Time: 601.544033 ms] 
+Refreshing native plugins compatible for Editor in 2.11 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.47 ms.
+
+----- Total AssetImport time: 1.205336s, AssetImport time: 0.640936s, Asset hashing: 1.133178s [0.77 GB, 699.802734 mb/s]
+
+WwiseUnity: Plugins successfully activated for Profile.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+AkPluginActivator:ActivatePlugins(String, Boolean) (at Assets/Wwise/Editor/WwiseSetupWizard/AkPluginActivator.cs:507)
+WwiseSetupWizard:ModifySetup() (at Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:298)
+WwiseSetupWizard:RunModify() (at Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:37)
+ 
+(Filename: Assets/Wwise/Editor/WwiseSetupWizard/AkPluginActivator.cs Line: 507)
+
+WwiseUnity: Refreshing asset database.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModify() (at Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:39)
+ 
+(Filename: Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 39)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.078426 seconds
+Updating Assets/Wwise/Deployment/Plugins/iOS/DSP/AkiOSPlugins.cpp - GUID: d84550203dc2d448889dfc378d9e3307...
+----- Compute hash for Assets/Wwise/Deployment/Plugins/iOS/DSP/AkiOSPlugins.cpp.
+ done. [Time: 3.087993 ms] 
+Refreshing native plugins compatible for Editor in 1.37 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.085670s, AssetImport time: 0.038565s, Asset hashing: 0.000985s [0.7 KB, 0.719468 mb/s]
+
+WwiseUnity: End of modify setup, exiting Unity.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+WwiseSetupWizard:RunModify() (at Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs:42)
+ 
+(Filename: Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseSetupWizard.cs Line: 42)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.039073 seconds (Nothing changed)
+
+Hashing assets ... 0.001 seconds
+  file open: 0.000 seconds (2 files)
+  file read: 0.001 seconds (0.002 MB)
+  hash: 0.000 seconds
+Updating Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset - GUID: 8a5d688c01415418e98e224e3828fc40...
+ done. [Time: 2.930542 ms] 
+Refreshing native plugins compatible for Editor in 1.25 ms, found 21 plugins.
+Preloading 1 native plugins for Editor in 0.41 ms.
+
+----- Total AssetImport time: 0.118382s, AssetImport time: 0.042036s, Asset hashing: 0.001543s [2.4 KB, 1.513953 mb/s]
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.044088 seconds (Nothing changed)
+Cleanup mono
+Callback unregistration failed. Callback not registered.
+ 
+(Filename: /Users/builduser/buildslave/unity/build/Runtime/Core/Callbacks/CallbackArray.h Line: 192)
+
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+##utp:{"type":"MemoryLeaks","allocatedMemory":101058,"memoryLabels":[{"Default":1668},{"Permanent":16768},{"Thread":584},{"Manager":2288},{"GfxDevice":5460},{"Physics":8},{"Serialization":15712},{"JobScheduler":144},{"Renderer":224},{"Terrain":224},{"STL":1024},{"String":20736},{"DynamicArray":11292},{"Curl":952},{"PoolAlloc":-224},{"ScriptManager":4040},{"Sprites":1184},{"VR":7796},{"EditorGui":12},{"EditorUtility":544},{"AssetImporter":24},{"RestService":64},{"License":574},{"UnityConnect":9232},{"Collab":728}]}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/.cache/iOS/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/GeneratedSoundBanks/iOS/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/GeneratedSoundBanks/iOS/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2194252879" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Polar</ObjectPath>
+			<ShortName>Polar</ShortName>
+			<Path>Polar.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3719585952" Name="PenguinQuack" ObjectPath="\Events\Default Work Unit\PenguinQuack"/>
+				<Event Id="2594679953" Name="PenguinSqueak" ObjectPath="\Events\Default Work Unit\PenguinSqueak"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="196803574" Language="SFX">
+					<ShortName>quack.wav</ShortName>
+					<Path>SFX/quack_1C9C67B2.wem</Path>
+				</File>
+				<File Id="628658610" Language="SFX">
+					<ShortName>sqeak.wav</ShortName>
+					<Path>SFX/sqeak_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -21,13 +21,13 @@ public class SimpleRagdoll : MonoBehaviour
     private bool _ragdolled;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
         {
             if(rb.transform != transform){
                 RagdollBone r = rb.gameObject.AddComponent<RagdollBone>();
-                r.onCollisionStay.AddListener(CheckCollisions);
+                r.onCollisionStay.AddListener(onCollisionStay);
             }
         }
     }
@@ -38,7 +38,7 @@ public class SimpleRagdoll : MonoBehaviour
 
     }
 
-    void CheckCollisions()
+    void onCollisionStay()
     {
 
     }
