@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: f2795476f044bbf4996ba4ba3de1a2f2
+timeCreated: 1511890914
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: penguin
+    100002: Penguin-RIGHead
+    100004: Penguin-RIGHeadBone001
+    100006: Penguin-RIGLForearm
+    100008: Penguin-RIGLLeg2
+    100010: Penguin-RIGLLegDigit11
+    100012: Penguin-RIGLLegFoot
+    100014: Penguin-RIGLLegThigh
+    100016: Penguin-RIGLUpperarm
+    100018: Penguin-RIGNeck1
+    100020: Penguin-RIGNeck2
+    100022: Penguin-RIGPelvis
+    100024: Penguin-RIGR2
+    100026: Penguin-RIGRDigit11
+    100028: Penguin-RIGRFoot
+    100030: Penguin-RIGRForearm
+    100032: Penguin-RIGRibcage
+    100034: Penguin-RIGRThigh
+    100036: Penguin-RIGRUpperarm
+    100038: Penguin-RIGSpine1
+    100040: Penguin-RIGSpine2
+    100042: Penguin-RIGTail1
+    100044: //RootNode
+    400000: penguin
+    400002: Penguin-RIGHead
+    400004: Penguin-RIGHeadBone001
+    400006: Penguin-RIGLForearm
+    400008: Penguin-RIGLLeg2
+    400010: Penguin-RIGLLegDigit11
+    400012: Penguin-RIGLLegFoot
+    400014: Penguin-RIGLLegThigh
+    400016: Penguin-RIGLUpperarm
+    400018: Penguin-RIGNeck1
+    400020: Penguin-RIGNeck2
+    400022: Penguin-RIGPelvis
+    400024: Penguin-RIGR2
+    400026: Penguin-RIGRDigit11
+    400028: Penguin-RIGRFoot
+    400030: Penguin-RIGRForearm
+    400032: Penguin-RIGRibcage
+    400034: Penguin-RIGRThigh
+    400036: Penguin-RIGRUpperarm
+    400038: Penguin-RIGSpine1
+    400040: Penguin-RIGSpine2
+    400042: Penguin-RIGTail1
+    400044: //RootNode
+    4300000: penguin
+    7400000: INFLATE
+    9500000: //RootNode
+    13700000: penguin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: INFLATE
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 814cef3eaa7444fca8eb93f7d6c93184,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

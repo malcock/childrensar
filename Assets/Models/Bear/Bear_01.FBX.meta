@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 5bb7ef59891fbd84b8bbeec9ef46a167
+timeCreated: 1512048564
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bear
+    100004: Bear-RIG_01Head
+    100006: Bear-RIG_01HeadBone001
+    100008: Bear-RIG_01LCalf
+    100010: Bear-RIG_01LFoot
+    100012: Bear-RIG_01LForearm
+    100014: Bear-RIG_01LPalm
+    100016: Bear-RIG_01LThigh
+    100018: Bear-RIG_01LUpperarm
+    100020: Bear-RIG_01Neck
+    100022: Bear-RIG_01Pelvis
+    100024: Bear-RIG_01RCalf
+    100026: Bear-RIG_01RFoot
+    100028: Bear-RIG_01RForearm
+    100030: Bear-RIG_01Ribcage
+    100032: Bear-RIG_01RPalm
+    100034: Bear-RIG_01RThigh
+    100036: Bear-RIG_01RUpperarm
+    100038: Bear-RIG_01Spine1
+    100040: Bear-RIG_01Spine2
+    100042: Bear-RIG_01
+    100044: Bear-RIG_01HeadBone001Gizmo
+    100046: Bear-RIG_01HeadGizmo
+    100048: Bear-RIG_01LCalfGizmo
+    100050: Bear-RIG_01LForearmGizmo
+    100052: Bear-RIG_01LIKTarget
+    100054: Bear-RIG_01LPalmGizmo
+    100056: Bear-RIG_01LPlatform
+    100058: Bear-RIG_01LThighGizmo
+    100060: Bear-RIG_01LUpperarmGizmo
+    100062: Bear-RIG_01PelvisGizmo
+    100064: Bear-RIG_01R
+    100066: Bear-RIG_01RCalfGizmo
+    100068: Bear-RIG_01RForearmGizmo
+    100070: Bear-RIG_01RibcageGizmo
+    100072: Bear-RIG_01RPalmGizmo
+    100074: Bear-RIG_01RPlatform
+    100076: Bear-RIG_01RThighGizmo
+    100078: Bear-RIG_01RUpperarmGizmo
+    100080: BearCub
+    400000: //RootNode
+    400002: Bear
+    400004: Bear-RIG_01Head
+    400006: Bear-RIG_01HeadBone001
+    400008: Bear-RIG_01LCalf
+    400010: Bear-RIG_01LFoot
+    400012: Bear-RIG_01LForearm
+    400014: Bear-RIG_01LPalm
+    400016: Bear-RIG_01LThigh
+    400018: Bear-RIG_01LUpperarm
+    400020: Bear-RIG_01Neck
+    400022: Bear-RIG_01Pelvis
+    400024: Bear-RIG_01RCalf
+    400026: Bear-RIG_01RFoot
+    400028: Bear-RIG_01RForearm
+    400030: Bear-RIG_01Ribcage
+    400032: Bear-RIG_01RPalm
+    400034: Bear-RIG_01RThigh
+    400036: Bear-RIG_01RUpperarm
+    400038: Bear-RIG_01Spine1
+    400040: Bear-RIG_01Spine2
+    400042: Bear-RIG_01
+    400044: Bear-RIG_01HeadBone001Gizmo
+    400046: Bear-RIG_01HeadGizmo
+    400048: Bear-RIG_01LCalfGizmo
+    400050: Bear-RIG_01LForearmGizmo
+    400052: Bear-RIG_01LIKTarget
+    400054: Bear-RIG_01LPalmGizmo
+    400056: Bear-RIG_01LPlatform
+    400058: Bear-RIG_01LThighGizmo
+    400060: Bear-RIG_01LUpperarmGizmo
+    400062: Bear-RIG_01PelvisGizmo
+    400064: Bear-RIG_01R
+    400066: Bear-RIG_01RCalfGizmo
+    400068: Bear-RIG_01RForearmGizmo
+    400070: Bear-RIG_01RibcageGizmo
+    400072: Bear-RIG_01RPalmGizmo
+    400074: Bear-RIG_01RPlatform
+    400076: Bear-RIG_01RThighGizmo
+    400078: Bear-RIG_01RUpperarmGizmo
+    400080: BearCub
+    2300000: //RootNode
+    2300002: Bear
+    2300004: Bear-RIG_01HeadBone001Gizmo
+    3300000: //RootNode
+    3300002: Bear
+    3300004: Bear-RIG_01HeadBone001Gizmo
+    4300000: polar-bear001
+    4300002: Bear
+    4300004: Bear-RIG_01HeadBone001Gizmo
+    4300006: BearCub
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Bear
+    13700002: BearCub
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

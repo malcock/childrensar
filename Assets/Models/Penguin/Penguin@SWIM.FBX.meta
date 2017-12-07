@@ -51,6 +51,8 @@ ModelImporter:
     400040: Penguin-RIGSpine2
     400042: Penguin-RIGTail1
     400044: //RootNode
+    2300000: penguin
+    3300000: penguin
     4300000: penguin
     7400000: SWIM
     9500000: //RootNode
@@ -71,7 +73,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -151,8 +153,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 814cef3eaa7444fca8eb93f7d6c93184,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
