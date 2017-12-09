@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: e4cf95fd5c3938a4bb5b0d2790cf2abd
+timeCreated: 1511803304
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: seagull
+    100004: Seagull-RIG_01Head
+    100006: Seagull-RIG_01LArm3
+    100008: Seagull-RIG_01LArm4
+    100010: Seagull-RIG_01LArmForearm
+    100012: Seagull-RIG_01LArmUpperarm
+    100014: Seagull-RIG_01Neck
+    100016: Seagull-RIG_01Pelvis
+    100018: Seagull-RIG_01R3
+    100020: Seagull-RIG_01R4
+    100022: Seagull-RIG_01RForearm
+    100024: Seagull-RIG_01Ribcage
+    100026: Seagull-RIG_01RUpperarm
+    100028: Seagull-RIG_01Spine
+    100030: Seagull-RIG_01Tail1
+    100032: duck
+    100034: Duck-RIG_01Head
+    100036: Duck-RIG_01LArm3
+    100038: Duck-RIG_01LArm4
+    100040: Duck-RIG_01LArmForearm
+    100042: Duck-RIG_01LArmUpperarm
+    100044: Duck-RIG_01Neck
+    100046: Duck-RIG_01Pelvis
+    100048: Duck-RIG_01R3
+    100050: Duck-RIG_01R4
+    100052: Duck-RIG_01RForearm
+    100054: Duck-RIG_01Ribcage
+    100056: Duck-RIG_01RUpperarm
+    100058: Duck-RIG_01Spine
+    100060: Duck-RIG_01Tail1
+    400000: //RootNode
+    400002: seagull
+    400004: Seagull-RIG_01Head
+    400006: Seagull-RIG_01LArm3
+    400008: Seagull-RIG_01LArm4
+    400010: Seagull-RIG_01LArmForearm
+    400012: Seagull-RIG_01LArmUpperarm
+    400014: Seagull-RIG_01Neck
+    400016: Seagull-RIG_01Pelvis
+    400018: Seagull-RIG_01R3
+    400020: Seagull-RIG_01R4
+    400022: Seagull-RIG_01RForearm
+    400024: Seagull-RIG_01Ribcage
+    400026: Seagull-RIG_01RUpperarm
+    400028: Seagull-RIG_01Spine
+    400030: Seagull-RIG_01Tail1
+    400032: duck
+    400034: Duck-RIG_01Head
+    400036: Duck-RIG_01LArm3
+    400038: Duck-RIG_01LArm4
+    400040: Duck-RIG_01LArmForearm
+    400042: Duck-RIG_01LArmUpperarm
+    400044: Duck-RIG_01Neck
+    400046: Duck-RIG_01Pelvis
+    400048: Duck-RIG_01R3
+    400050: Duck-RIG_01R4
+    400052: Duck-RIG_01RForearm
+    400054: Duck-RIG_01Ribcage
+    400056: Duck-RIG_01RUpperarm
+    400058: Duck-RIG_01Spine
+    400060: Duck-RIG_01Tail1
+    4300000: seagull
+    4300002: duck
+    7400000: FLIGHT_01
+    9500000: //RootNode
+    13700000: seagull
+    13700002: duck
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FLIGHT_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: fb6c9ed44a4b5584ba9f2e4817e5f1d6
+timeCreated: 1511958139
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Crab
+    100002: Crab-RIG_01body
+    100004: Crab-RIG_01LArm1
+    100006: Crab-RIG_01LArm2
+    100008: Crab-RIG_01LArmClawLLower1
+    100010: Crab-RIG_01LArmClawLUpper
+    100012: Crab-RIG_01LArmCollarbone
+    100014: Crab-RIG_01LBackLeg1
+    100016: Crab-RIG_01LBackLeg2
+    100018: Crab-RIG_01LBackLeg3
+    100020: Crab-RIG_01LBackLegPalm
+    100022: Crab-RIG_01LBackMiddleLeg1
+    100024: Crab-RIG_01LBackMiddleLeg2
+    100026: Crab-RIG_01LBackMiddleLeg3
+    100028: Crab-RIG_01LBackMiddleLegPalm
+    100030: Crab-RIG_01LFrontLeg1
+    100032: Crab-RIG_01LFrontLeg2
+    100034: Crab-RIG_01LFrontLeg3
+    100036: Crab-RIG_01LFrontLegPalm
+    100038: Crab-RIG_01LFrontMiddleLeg1
+    100040: Crab-RIG_01LFrontMiddleLeg2
+    100042: Crab-RIG_01LFrontMiddleLeg3
+    100044: Crab-RIG_01LFrontMiddleLegPalm
+    100046: Crab-RIG_01RArm1
+    100048: Crab-RIG_01RArm2
+    100050: Crab-RIG_01RArmClawLLower1
+    100052: Crab-RIG_01RArmClawLUpper
+    100054: Crab-RIG_01RArmCollarbone
+    100056: Crab-RIG_01RBackLeg1
+    100058: Crab-RIG_01RBackLeg2
+    100060: Crab-RIG_01RBackLeg3
+    100062: Crab-RIG_01RBackLegPalm
+    100064: Crab-RIG_01RBackMiddleLeg1
+    100066: Crab-RIG_01RBackMiddleLeg2
+    100068: Crab-RIG_01RBackMiddleLeg3
+    100070: Crab-RIG_01RBackMiddleLegPalm
+    100072: Crab-RIG_01RFrontLeg1
+    100074: Crab-RIG_01RFrontLeg2
+    100076: Crab-RIG_01RFrontLeg3
+    100078: Crab-RIG_01RFrontLegPalm
+    100080: Crab-RIG_01RFrontMiddleLeg1
+    100082: Crab-RIG_01RFrontMiddleLeg2
+    100084: Crab-RIG_01RFrontMiddleLeg3
+    100086: Crab-RIG_01RFrontMiddleLegPalm
+    100088: //RootNode
+    400000: Crab
+    400002: Crab-RIG_01body
+    400004: Crab-RIG_01LArm1
+    400006: Crab-RIG_01LArm2
+    400008: Crab-RIG_01LArmClawLLower1
+    400010: Crab-RIG_01LArmClawLUpper
+    400012: Crab-RIG_01LArmCollarbone
+    400014: Crab-RIG_01LBackLeg1
+    400016: Crab-RIG_01LBackLeg2
+    400018: Crab-RIG_01LBackLeg3
+    400020: Crab-RIG_01LBackLegPalm
+    400022: Crab-RIG_01LBackMiddleLeg1
+    400024: Crab-RIG_01LBackMiddleLeg2
+    400026: Crab-RIG_01LBackMiddleLeg3
+    400028: Crab-RIG_01LBackMiddleLegPalm
+    400030: Crab-RIG_01LFrontLeg1
+    400032: Crab-RIG_01LFrontLeg2
+    400034: Crab-RIG_01LFrontLeg3
+    400036: Crab-RIG_01LFrontLegPalm
+    400038: Crab-RIG_01LFrontMiddleLeg1
+    400040: Crab-RIG_01LFrontMiddleLeg2
+    400042: Crab-RIG_01LFrontMiddleLeg3
+    400044: Crab-RIG_01LFrontMiddleLegPalm
+    400046: Crab-RIG_01RArm1
+    400048: Crab-RIG_01RArm2
+    400050: Crab-RIG_01RArmClawLLower1
+    400052: Crab-RIG_01RArmClawLUpper
+    400054: Crab-RIG_01RArmCollarbone
+    400056: Crab-RIG_01RBackLeg1
+    400058: Crab-RIG_01RBackLeg2
+    400060: Crab-RIG_01RBackLeg3
+    400062: Crab-RIG_01RBackLegPalm
+    400064: Crab-RIG_01RBackMiddleLeg1
+    400066: Crab-RIG_01RBackMiddleLeg2
+    400068: Crab-RIG_01RBackMiddleLeg3
+    400070: Crab-RIG_01RBackMiddleLegPalm
+    400072: Crab-RIG_01RFrontLeg1
+    400074: Crab-RIG_01RFrontLeg2
+    400076: Crab-RIG_01RFrontLeg3
+    400078: Crab-RIG_01RFrontLegPalm
+    400080: Crab-RIG_01RFrontMiddleLeg1
+    400082: Crab-RIG_01RFrontMiddleLeg2
+    400084: Crab-RIG_01RFrontMiddleLeg3
+    400086: Crab-RIG_01RFrontMiddleLegPalm
+    400088: //RootNode
+    4300000: Crab
+    7400000: IDLE_01
+    9500000: //RootNode
+    13700000: Crab
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: IDLE_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
