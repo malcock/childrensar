@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>D:\ChildrensAR\ChildrensAR_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\ChildrensAR\ChildrensAR_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\ChildrensAR\ChildrensAR_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/martinalcock/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Unity/ChildrensAR/ChildrensAR_WwiseProject/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -32,155 +32,155 @@
 			<IncludedMemoryFiles>
 				<File Id="6446510" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_02.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_02_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="96214270" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_05_1C9C67B2.wem</Path>
 				</File>
 				<File Id="103457920" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="107949657" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="115382706" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_04.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_04_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="191463175" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="196803574" Language="SFX">
 					<ShortName>quack.wav</ShortName>
-					<Path>SFX\quack_1C9C67B2.wem</Path>
+					<Path>SFX/quack_1C9C67B2.wem</Path>
 				</File>
 				<File Id="218795275" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop_F17FB28C.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_fast_underwater_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="254142499" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_1.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_1_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="294338604" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="314412579" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="374899264" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_05_1C9C67B2.wem</Path>
 				</File>
 				<File Id="380445953" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="407423507" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_02.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_02_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_whale_spray_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="415002928" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="439643296" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop_F17FB28C.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_fast_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="455973186" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="485170043" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_01.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_01_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_whale_spray_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="516727642" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="542448978" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_underwater_loop.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_underwater_loop_F17FB28C.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_slow_underwater_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="554695072" Language="SFX">
 					<ShortName>Polar_ambient_music_V2.wav</ShortName>
-					<Path>SFX\Polar_ambient_music_V2_F17FB28C.wem</Path>
+					<Path>SFX/Polar_ambient_music_V2_F17FB28C.wem</Path>
 				</File>
 				<File Id="570090485" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_loop.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_loop_F17FB28C.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_slow_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="587308778" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_01.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_01_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="604599871" Language="SFX">
 					<ShortName>SCH_sfx_amb_polar_full_loop.wav</ShortName>
-					<Path>SFX\SCH_sfx_amb_polar_full_loop_F17FB28C.wem</Path>
+					<Path>SFX/SCH_sfx_amb_polar_full_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="628658610" Language="SFX">
 					<ShortName>sqeak.wav</ShortName>
-					<Path>SFX\sqeak_1C9C67B2.wem</Path>
+					<Path>SFX/sqeak_1C9C67B2.wem</Path>
 				</File>
 				<File Id="636586861" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_06.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_06_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_06_1C9C67B2.wem</Path>
 				</File>
 				<File Id="700427874" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_2.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_2_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="715659164" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="745403754" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="761073734" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="777827311" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="794621128" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="799059336" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="855954151" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_03.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_03_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="857533580" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="878697382" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="904789059" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1014331314" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02.wav</ShortName>
-					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02_1C9C67B2.wem</Path>
+					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_02_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

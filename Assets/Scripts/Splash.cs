@@ -10,6 +10,7 @@ public class Splash : MonoBehaviour {
 	void Start () {
         ps = GetComponent<ParticleSystem>();
         ps.Play();
+
 	}
 	
 	// Update is called once per frame

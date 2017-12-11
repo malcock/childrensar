@@ -7532,7 +7532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 511002972}
-  soundFx: WhaleFountain
+  soundFx: WhaleSpray
   timeOut: 2
 --- !u!114 &1126117199
 MonoBehaviour:

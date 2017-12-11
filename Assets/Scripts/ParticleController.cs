@@ -24,6 +24,8 @@ public class ParticleController : MonoBehaviour {
 
     public void ActivateParticles(){
         if(available){
+            if(soundFx!=string.Empty)
+                AkSoundEngine.PostEvent(soundFx,gameObject);
             particles.Play();
             available = false;
             StartCoroutine(Timeout());

@@ -60,7 +60,9 @@ public class PenguinController : MonoBehaviour
         anim.SetTrigger("Quack");
         //audioSource.clip = quack;
         //audioSource.Play();
+        AkSoundEngine.SetSwitch("PenguinQuack","QuackIdle",gameObject);
         AkSoundEngine.PostEvent("PenguinQuack",gameObject);
+
         //PlaySound(quack);
         //anim.SetBool("isCatching", false);
 
