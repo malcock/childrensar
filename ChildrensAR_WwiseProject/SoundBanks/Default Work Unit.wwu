@@ -5,8 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="Polar" ID="{D7206968-6D6F-4B24-AAD5-275B45371462}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Alpine" ID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}" WorkUnitID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Alpine" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" WorkUnitID="{8D000091-7B00-4A73-95D7-95A45927158B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Polar" ID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Polar" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
