@@ -1,25 +1,45 @@
 fileFormatVersion: 2
-guid: 34f6c5b6745a37046b05e2dad3141534
-timeCreated: 1511788315
+guid: 2455d3feec00ae748b9eed7972f4809c
+timeCreated: 1513009427
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Frog_01
-    100004: Lilly
+    100002: duck
+    100004: Duck-RIG_01Head
+    100006: Duck-RIG_01LArm3
+    100008: Duck-RIG_01LArm4
+    100010: Duck-RIG_01LArmForearm
+    100012: Duck-RIG_01LArmUpperarm
+    100014: Duck-RIG_01Neck
+    100016: Duck-RIG_01Pelvis
+    100018: Duck-RIG_01R3
+    100020: Duck-RIG_01R4
+    100022: Duck-RIG_01RForearm
+    100024: Duck-RIG_01Ribcage
+    100026: Duck-RIG_01RUpperarm
+    100028: Duck-RIG_01Spine
+    100030: Duck-RIG_01Tail1
     400000: //RootNode
-    400002: Frog_01
-    400004: Lilly
-    2300000: Frog_01
-    2300002: Lilly
-    2300004: //RootNode
-    3300000: Frog_01
-    3300002: Lilly
-    3300004: //RootNode
-    4300000: Frog_01
-    4300002: Lilly
+    400002: duck
+    400004: Duck-RIG_01Head
+    400006: Duck-RIG_01LArm3
+    400008: Duck-RIG_01LArm4
+    400010: Duck-RIG_01LArmForearm
+    400012: Duck-RIG_01LArmUpperarm
+    400014: Duck-RIG_01Neck
+    400016: Duck-RIG_01Pelvis
+    400018: Duck-RIG_01R3
+    400020: Duck-RIG_01R4
+    400022: Duck-RIG_01RForearm
+    400024: Duck-RIG_01Ribcage
+    400026: Duck-RIG_01RUpperarm
+    400028: Duck-RIG_01Spine
+    400030: Duck-RIG_01Tail1
+    4300000: duck
     9500000: //RootNode
+    13700000: duck
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +67,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
