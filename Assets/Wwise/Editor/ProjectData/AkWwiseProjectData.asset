@@ -34,7 +34,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1700287343
       Guid: 75628716ccccfc4f88f27f1014864bda
-      maxAttenuation: 0
+      maxAttenuation: 100
   - PhysicalPath: Events/Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
@@ -50,7 +50,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -575381344
       Guid: c80b43c1329bd24ca457df72edca23ee
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: PenguinSwim
       Path: Polar/PenguinSwim
       PathAndIcons:
@@ -60,7 +60,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -239666061
       Guid: d83c5fadb6b39f4492695018f5a4c51b
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: PolarAmbience
       Path: Polar/PolarAmbience
       PathAndIcons:
@@ -90,7 +90,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 777507535
       Guid: 4e382a63117141459e7200dc74119fca
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: WhaleSpray
       Path: Polar/WhaleSpray
       PathAndIcons:
@@ -100,7 +100,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 893632031
       Guid: 686254d2fdefb941a9f231bfe0fd5e30
-      maxAttenuation: 0
+      maxAttenuation: 100
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 

@@ -120,6 +120,7 @@ public class RagdollHelper : MonoBehaviour
         public Transform transform;
         public Vector3 storedPosition;
         public Quaternion storedRotation;
+        public Quaternion startRotation;
     }
     //Additional vectores for storing the pose the ragdoll ended up in.
     Vector3 ragdolledHipPosition, ragdolledHeadPosition, ragdolledFeetPosition;
@@ -178,6 +179,7 @@ public class RagdollHelper : MonoBehaviour
         {
             BodyPart bodyPart = new BodyPart();
             bodyPart.transform = c as Transform;
+            bodyPart.startRotation = bodyPart.transform.rotation;
             bodyParts.Add(bodyPart);
             if (c.GetComponent<Rigidbody>() && c.gameObject.layer == 8)
             {
@@ -307,6 +309,13 @@ public class RagdollHelper : MonoBehaviour
                 state = RagdollState.animated;
                 return;
             }
+        }
+    }
+
+    public void ResetRagdoll(){
+        foreach(BodyPart b in bodyParts){
+            b.transform.rotation = b.startRotation;
+
         }
     }
 

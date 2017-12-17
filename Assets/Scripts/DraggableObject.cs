@@ -114,7 +114,7 @@ public class DraggableObject : MonoBehaviour
                     if (hit.transform.gameObject.layer == 11)
                     {
 
-                        targetPos = ray.GetPoint(Vector3.Distance(Camera.main.transform.position, hit.point) - 0.5f);
+                        targetPos = ray.GetPoint(Vector3.Distance(Camera.main.transform.position, hit.point) - 1.5f);
 
                     }
                     if (hit.transform.tag == "Land")

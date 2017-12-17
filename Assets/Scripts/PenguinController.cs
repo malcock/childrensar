@@ -14,6 +14,7 @@ public class PenguinController : MonoBehaviour
     DraggableObject dragObj;
     AudioSource audioSource;
 
+    public GameObject myFloe;
 
     RagdollHelper doll;
 
@@ -45,7 +46,7 @@ public class PenguinController : MonoBehaviour
     void Update()
     {
         if (!firstFrame) doll.ragdolled = firstFrame = true;
-        if(!doll.ragdolled){
+        if(!doll.ragdolled && !anim.GetBool("isSwimming")){
             //find the camera and point the penguin at it
             Vector3 relativePosition = Camera.main.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(relativePosition);
@@ -57,6 +58,7 @@ public class PenguinController : MonoBehaviour
 
     public void Quack()
     {
+        Debug.Log(name + " quack");
         anim.SetTrigger("Quack");
         //audioSource.clip = quack;
         //audioSource.Play();
@@ -145,7 +147,8 @@ public class PenguinController : MonoBehaviour
                 if (!anim.GetBool("isSwimming"))
                 {
                     anim.SetBool("isSwimming", true);
-                    StartCoroutine(FindLand());
+                    doll.ResetRagdoll();
+                    StartCoroutine(Swim());
                 }
 
 
@@ -165,44 +168,113 @@ public class PenguinController : MonoBehaviour
         {
             anim.SetBool("isSwimming", false);
             GetComponent<Rigidbody>().useGravity=true;
+            GetComponent<Rigidbody>().isKinematic=false;
             StopCoroutine(FindLand());
+            StopAllCoroutines();
         }
+    }
+
+    IEnumerator Swim(){
+        //choose a random location to swim to and go to it before doing a come home
+        GameObject water = GameObject.FindWithTag("Water");
+        Bounds waterBounds = water.GetComponent<Collider>().bounds;
+        Vector3 pos = new Vector3(Random.Range(waterBounds.min.x, waterBounds.max.x),
+                                  Random.Range(waterBounds.min.y, waterBounds.max.y),
+                                  Random.Range(waterBounds.min.z, waterBounds.max.z));
+        pos *= 0.9f;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        float timeout = 4;
+        while(timeout>0){
+            rb.useGravity = false;
+            Vector3 direction = pos - transform.position;
+
+            Vector3 rot = Quaternion.LookRotation(direction, Vector3.up).eulerAngles;
+            rot.x = 90;
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime*2);
+            direction.y = 0;
+            direction = direction.normalized;
+            direction *= 8;
+            rb.AddForce(direction);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+
+        StartCoroutine(FindLand());
     }
 
     IEnumerator FindLand()
     {
+        Debug.Log("finding land...");
+        //find the closest landmass - need to tag suitable targets with "Land"
+        List<GameObject> gos = GameObject.FindGameObjectsWithTag("Land").ToList();
+        GameObject closest = gos[0];
 
-        while (anim.GetBool("isSwimming"))
+        List<KeyValuePair<GameObject, float>> distances = new List<KeyValuePair<GameObject, float>>();
+        foreach (GameObject g in gos)
         {
-            Debug.Log("finding land...");
-            //find the closest landmass - need to tag suitable targets with "Land"
-            List<GameObject> gos = GameObject.FindGameObjectsWithTag("Land").ToList();
-            GameObject closest = gos[0];
-
-            for (int g = 1; g < gos.Count; g++)
-            {
-                if (Vector3.Distance(transform.position, closest.transform.position) > Vector3.Distance(transform.position, gos[g].transform.position))
-                {
-                    closest = gos[g];
-                }
-            }
-            //we have the closest thing now, lets come up with a vector to it
-            Debug.Log(closest.name);
-            Quaternion lookRot = Quaternion.LookRotation(closest.transform.position - transform.position);
-            transform.rotation = lookRot;
-            GetComponent<Rigidbody>().useGravity = false;
-            Vector3 force = new Vector3(0, 10, 20);
-            if (Vector3.Distance(closest.transform.position, transform.position) < 0.75f){
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, 3, 1), ForceMode.Impulse);
-            } else {
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, 10, 20), ForceMode.Force);
-                GetComponent<Rigidbody>().mass = doll.totalMass;
-            }
-
-            yield return new WaitForSeconds(1);
+            distances.Add(new KeyValuePair<GameObject, float>(g,Vector3.Distance(transform.position,g.transform.position)));
+        }
+        //actually select the 2nd closest one
+        distances.Sort((a, b) => a.Value.CompareTo(b.Value));
+        if(distances[0].Value<0.25f){
+            closest = distances[1].Key;
+        } else {
+            closest = distances[0].Key;
         }
 
+        if(myFloe!=null){
+            closest = myFloe;
+        }
+
+        Rigidbody rb = GetComponent<Rigidbody>();
+        Debug.Log(closest.name);
+        float distance = Vector3.Distance(new Vector3(transform.position.x,0,transform.position.z), new Vector3(closest.transform.position.x,0,closest.transform.position.z));
+        while(distance>1f){
+            
+            rb.useGravity = false;
+            Vector3 direction = (closest.transform.position - transform.position);
+
+            Vector3 rot = Quaternion.LookRotation(direction, Vector3.up).eulerAngles;
+            rot.x = 90;
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime * 3);
+
+            direction.y = 0;
+            direction *= 10;
+            rb.AddForce(direction);
+            distance = Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(closest.transform.position.x, 0, closest.transform.position.z));
+            yield return null;
+        }
+        Debug.Log("land reached");
+        Vector3 targ = closest.transform.position;
+        targ.y += 1f;
+        rb.useGravity = true;
+        StartCoroutine(JumpToLand(targ));
+
+
         Debug.Log("No longer swimming");
+    }
+
+    IEnumerator JumpToLand(Vector3 position){
+        interactableObj.OnDragStart.Invoke();
+        interactableObj.locked = true;
+        interactableObj.selected = true;
+        interactableObj.isDragging = true;
+
+        Debug.Log(name + " attempting jump");
+        interactableObj.selected = true;
+        interactableObj.isDragging = true;
+        float timeout = 0.65f;
+        while(timeout>0){
+            dragObj.DragTo(position);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+
+        Debug.Log(name + " jumped");
+        interactableObj.locked = false;
+        interactableObj.selected = false;
+        interactableObj.isDragging = false;
     }
 
     private float BoundsContainedPercentage(Bounds obj, Bounds region)
