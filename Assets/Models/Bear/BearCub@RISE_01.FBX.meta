@@ -26,6 +26,9 @@ ModelImporter:
     100036: Bear-RIG_01Spine2
     100038: BearCub
     100040: //RootNode
+    100042: Bear-RIG_01LPlatform
+    100044: Bear-RIG_01PelvisGizmo
+    100046: Bear-RIG_01RPlatform
     400000: Bear-RIG_01Head
     400002: Bear-RIG_01HeadBone001
     400004: Bear-RIG_01LCalf
@@ -47,6 +50,9 @@ ModelImporter:
     400036: Bear-RIG_01Spine2
     400038: BearCub
     400040: //RootNode
+    400042: Bear-RIG_01LPlatform
+    400044: Bear-RIG_01PelvisGizmo
+    400046: Bear-RIG_01RPlatform
     4300000: BearCub
     7400000: Take 001
     9500000: //RootNode

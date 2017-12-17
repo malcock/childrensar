@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: 661d976a92ba9954f9c7d3496dc66154
+timeCreated: 1513010424
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: duck
+    100002: Duck-RIG_01Head
+    100004: Duck-RIG_01LArm3
+    100006: Duck-RIG_01LArm4
+    100008: Duck-RIG_01LArmForearm
+    100010: Duck-RIG_01LArmUpperarm
+    100012: Duck-RIG_01Neck
+    100014: Duck-RIG_01Pelvis
+    100016: Duck-RIG_01R3
+    100018: Duck-RIG_01R4
+    100020: Duck-RIG_01RForearm
+    100022: Duck-RIG_01Ribcage
+    100024: Duck-RIG_01RUpperarm
+    100026: Duck-RIG_01Spine
+    100028: Duck-RIG_01Tail1
+    100030: //RootNode
+    400000: duck
+    400002: Duck-RIG_01Head
+    400004: Duck-RIG_01LArm3
+    400006: Duck-RIG_01LArm4
+    400008: Duck-RIG_01LArmForearm
+    400010: Duck-RIG_01LArmUpperarm
+    400012: Duck-RIG_01Neck
+    400014: Duck-RIG_01Pelvis
+    400016: Duck-RIG_01R3
+    400018: Duck-RIG_01R4
+    400020: Duck-RIG_01RForearm
+    400022: Duck-RIG_01Ribcage
+    400024: Duck-RIG_01RUpperarm
+    400026: Duck-RIG_01Spine
+    400028: Duck-RIG_01Tail1
+    400030: //RootNode
+    4300000: duck
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: duck
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

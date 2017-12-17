@@ -28,6 +28,7 @@ ModelImporter:
     100040: Penguin-RIGSpine2
     100042: Penguin-RIGTail1
     100044: //RootNode
+    100046: Base HumanHeadBone001Gizmo
     400000: penguin
     400002: Penguin-RIGHead
     400004: Penguin-RIGHeadBone001
@@ -51,7 +52,11 @@ ModelImporter:
     400040: Penguin-RIGSpine2
     400042: Penguin-RIGTail1
     400044: //RootNode
+    400046: Base HumanHeadBone001Gizmo
+    2300000: Base HumanHeadBone001Gizmo
+    3300000: Base HumanHeadBone001Gizmo
     4300000: penguin
+    4300002: Base HumanHeadBone001Gizmo
     7400000: CATCH
     9500000: //RootNode
     13700000: penguin
@@ -83,7 +88,7 @@ ModelImporter:
       name: CATCH
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 32
+      lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -46,6 +46,8 @@ ModelImporter:
     100076: Bear-RIG_01RThighGizmo
     100078: Bear-RIG_01RUpperarmGizmo
     100080: BearCub
+    100082: Bear-RIG_01HeadBone002
+    100084: Bear-RIG_01HeadBone003
     400000: //RootNode
     400002: Bear
     400004: Bear-RIG_01Head
@@ -87,6 +89,8 @@ ModelImporter:
     400076: Bear-RIG_01RThighGizmo
     400078: Bear-RIG_01RUpperarmGizmo
     400080: BearCub
+    400082: Bear-RIG_01HeadBone002
+    400084: Bear-RIG_01HeadBone003
     2300000: //RootNode
     2300002: Bear
     2300004: Bear-RIG_01HeadBone001Gizmo

@@ -1,60 +1,66 @@
 fileFormatVersion: 2
-guid: f2795476f044bbf4996ba4ba3de1a2f2
-timeCreated: 1511890914
+guid: a54397c583f8431409adef9a29c7a05e
+timeCreated: 1512738068
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: penguin
-    100002: Penguin-RIGHead
-    100004: Penguin-RIGHeadBone001
-    100006: Penguin-RIGLForearm
-    100008: Penguin-RIGLLeg2
-    100010: Penguin-RIGLLegDigit11
-    100012: Penguin-RIGLLegFoot
-    100014: Penguin-RIGLLegThigh
-    100016: Penguin-RIGLUpperarm
-    100018: Penguin-RIGNeck1
-    100020: Penguin-RIGNeck2
-    100022: Penguin-RIGPelvis
-    100024: Penguin-RIGR2
-    100026: Penguin-RIGRDigit11
-    100028: Penguin-RIGRFoot
-    100030: Penguin-RIGRForearm
-    100032: Penguin-RIGRibcage
-    100034: Penguin-RIGRThigh
-    100036: Penguin-RIGRUpperarm
-    100038: Penguin-RIGSpine1
-    100040: Penguin-RIGSpine2
-    100042: Penguin-RIGTail1
-    100044: //RootNode
-    400000: penguin
-    400002: Penguin-RIGHead
-    400004: Penguin-RIGHeadBone001
-    400006: Penguin-RIGLForearm
-    400008: Penguin-RIGLLeg2
-    400010: Penguin-RIGLLegDigit11
-    400012: Penguin-RIGLLegFoot
-    400014: Penguin-RIGLLegThigh
-    400016: Penguin-RIGLUpperarm
-    400018: Penguin-RIGNeck1
-    400020: Penguin-RIGNeck2
-    400022: Penguin-RIGPelvis
-    400024: Penguin-RIGR2
-    400026: Penguin-RIGRDigit11
-    400028: Penguin-RIGRFoot
-    400030: Penguin-RIGRForearm
-    400032: Penguin-RIGRibcage
-    400034: Penguin-RIGRThigh
-    400036: Penguin-RIGRUpperarm
-    400038: Penguin-RIGSpine1
-    400040: Penguin-RIGSpine2
-    400042: Penguin-RIGTail1
-    400044: //RootNode
-    4300000: penguin
-    7400000: INFLATE
+    100000: Otter-RIGHead
+    100002: Otter-RIGHeadBone001
+    100004: Otter-RIGLArmForearm
+    100006: Otter-RIGLArmPalm
+    100008: Otter-RIGLArmUpperarm
+    100010: Otter-RIGLLeg2
+    100012: Otter-RIGLLegDigit11
+    100014: Otter-RIGLLegFoot
+    100016: Otter-RIGLLegThigh
+    100018: Otter-RIGNeck
+    100020: Otter-RIGPelvis
+    100022: Otter-RIGR2
+    100024: Otter-RIGRDigit11
+    100026: Otter-RIGRFoot
+    100028: Otter-RIGRForearm
+    100030: Otter-RIGRibcage
+    100032: Otter-RIGRPalm
+    100034: Otter-RIGRThigh
+    100036: Otter-RIGRUpperarm
+    100038: Otter-RIGSpine1
+    100040: Otter-RIGSpine2
+    100042: Otter-RIGTail1
+    100044: Otter-RIGTail2
+    100046: Otter-RIGTail3
+    100048: //RootNode
+    100050: Otter_01
+    400000: Otter-RIGHead
+    400002: Otter-RIGHeadBone001
+    400004: Otter-RIGLArmForearm
+    400006: Otter-RIGLArmPalm
+    400008: Otter-RIGLArmUpperarm
+    400010: Otter-RIGLLeg2
+    400012: Otter-RIGLLegDigit11
+    400014: Otter-RIGLLegFoot
+    400016: Otter-RIGLLegThigh
+    400018: Otter-RIGNeck
+    400020: Otter-RIGPelvis
+    400022: Otter-RIGR2
+    400024: Otter-RIGRDigit11
+    400026: Otter-RIGRFoot
+    400028: Otter-RIGRForearm
+    400030: Otter-RIGRibcage
+    400032: Otter-RIGRPalm
+    400034: Otter-RIGRThigh
+    400036: Otter-RIGRUpperarm
+    400038: Otter-RIGSpine1
+    400040: Otter-RIGSpine2
+    400042: Otter-RIGTail1
+    400044: Otter-RIGTail2
+    400046: Otter-RIGTail3
+    400048: //RootNode
+    400050: Otter_01
+    4300000: Otter_01
+    7400000: CATCH_01
     9500000: //RootNode
-    13700000: penguin
+    13700000: Otter_01
   materials:
     importMaterials: 1
     materialName: 0
@@ -80,10 +86,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: INFLATE
+      name: CATCH_01
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 149
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -134,7 +140,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human: []
@@ -149,10 +155,9 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 814cef3eaa7444fca8eb93f7d6c93184,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

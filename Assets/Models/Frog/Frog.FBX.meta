@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: 05458775344aecf409460be4563b4781
+timeCreated: 1512752439
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Frog-RIGHead
+    100004: Frog-RIGLCalf
+    100006: Frog-RIGLDigit11
+    100008: Frog-RIGLFoot
+    100010: Frog-RIGLForearm
+    100012: Frog-RIGLPalm
+    100014: Frog-RIGLThigh
+    100016: Frog-RIGLUpperarm
+    100018: Frog-RIGNeck
+    100020: Frog-RIGPelvis
+    100022: Frog-RIGRCalf
+    100024: Frog-RIGRDigit11
+    100026: Frog-RIGRFoot
+    100028: Frog-RIGRForearm
+    100030: Frog-RIGRibcage
+    100032: Frog-RIGRPalm
+    100034: Frog-RIGRThigh
+    100036: Frog-RIGRUpperarm
+    100038: Frog-RIGSpine
+    100040: Frog_01
+    400000: //RootNode
+    400002: Frog-RIGHead
+    400004: Frog-RIGLCalf
+    400006: Frog-RIGLDigit11
+    400008: Frog-RIGLFoot
+    400010: Frog-RIGLForearm
+    400012: Frog-RIGLPalm
+    400014: Frog-RIGLThigh
+    400016: Frog-RIGLUpperarm
+    400018: Frog-RIGNeck
+    400020: Frog-RIGPelvis
+    400022: Frog-RIGRCalf
+    400024: Frog-RIGRDigit11
+    400026: Frog-RIGRFoot
+    400028: Frog-RIGRForearm
+    400030: Frog-RIGRibcage
+    400032: Frog-RIGRPalm
+    400034: Frog-RIGRThigh
+    400036: Frog-RIGRUpperarm
+    400038: Frog-RIGSpine
+    400040: Frog_01
+    2300000: //RootNode
+    2300002: Frog_01
+    3300000: //RootNode
+    3300002: Frog_01
+    4300000: Frog_01
+    9500000: //RootNode
+    13700000: Frog_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.35
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
