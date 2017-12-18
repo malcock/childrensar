@@ -1744,9 +1744,10 @@ GameObject:
   - component: {fileID: 1324787945}
   - component: {fileID: 1324787944}
   - component: {fileID: 1324787943}
-  - component: {fileID: 1324787942}
   - component: {fileID: 1324787941}
   - component: {fileID: 1324787940}
+  - component: {fileID: 1324787946}
+  - component: {fileID: 1324787942}
   m_Layer: 0
   m_Name: KidView_01
   m_TagString: MainCamera
@@ -1796,13 +1797,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 26c24d20b946e5948ad40b0a51046feb, type: 2}
---- !u!81 &1324787942
-AudioListener:
+--- !u!114 &1324787942
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1324787938}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfcfa17865f38448ea128429cc89a653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!124 &1324787943
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1853,6 +1860,26 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!114 &1324787946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1324787938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb459767f22154c778d69c2187952400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &1325616695
 Prefab:
   m_ObjectHideFlags: 0
@@ -2984,6 +3011,69 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400048, guid: a173a50c34841da4eb89ad3fd93d3075, type: 3}
   m_PrefabInternal: {fileID: 1691145468}
+--- !u!1 &1677954241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1677954244}
+  - component: {fileID: 1677954243}
+  - component: {fileID: 1677954242}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1677954242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677954241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb4b64f567634001bd9e2ae36830840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  monitorPoolSize: 128
+  monitorQueuePoolSize: 64
+  callbackManagerBufferSize: 4
+  engineLogging: 1
+--- !u!114 &1677954243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677954241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec08519a92194168ad407e8a121f681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1677954244
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677954241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1691145468
 Prefab:
   m_ObjectHideFlags: 0

@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb417594ce17f4a3c98705ae7e1e55ed, type: 3}
+  m_Name: AkWwiseProjectData 2
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Alpine.wwu
+    ParentPhysicalPath: 
+    Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
+    m_lastTimePsrt1: -232509235
+    m_lastTimePart2: -1999288829
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: -232479210
+    m_lastTimePart2: -1999288829
+    List:
+    - Name: PenguinSqueak
+      Path: Default Work Unit\PenguinSqueak
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PenguinSqueak
+        ObjectType: 3
+      ID: -1700287343
+      Guid: 75628716ccccfc4f88f27f1014864bda
+      maxAttenuation: 0
+  - PhysicalPath: Events\Polar.wwu
+    ParentPhysicalPath: 
+    Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
+    m_lastTimePsrt1: -232444189
+    m_lastTimePart2: -1999288829
+    List:
+    - Name: PenguinQuack
+      Path: Polar\PenguinQuack
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: PenguinQuack
+        ObjectType: 3
+      ID: -575381344
+      Guid: c80b43c1329bd24ca457df72edca23ee
+      maxAttenuation: 0
+    - Name: PenguinSwim
+      Path: Polar\PenguinSwim
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: PenguinSwim
+        ObjectType: 3
+      ID: -239666061
+      Guid: d83c5fadb6b39f4492695018f5a4c51b
+      maxAttenuation: 0
+    - Name: PolarAmbience
+      Path: Polar\PolarAmbience
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: PolarAmbience
+        ObjectType: 3
+      ID: -187643689
+      Guid: 7239383fedf6b946b94cbbb7c70cf18b
+      maxAttenuation: 0
+    - Name: PolarMusic
+      Path: Polar\PolarMusic
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: PolarMusic
+        ObjectType: 3
+      ID: -1234699116
+      Guid: 7844a6fd2869214f8a6e66af0151f962
+      maxAttenuation: 0
+    - Name: WaterSplash
+      Path: Polar\WaterSplash
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: WaterSplash
+        ObjectType: 3
+      ID: 777507535
+      Guid: 4e382a63117141459e7200dc74119fca
+      maxAttenuation: 0
+    - Name: WhaleSpray
+      Path: Polar\WhaleSpray
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: WhaleSpray
+        ObjectType: 3
+      ID: 893632031
+      Guid: 686254d2fdefb941a9f231bfe0fd5e30
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
+    m_lastTimePsrt1: -223883123
+    m_lastTimePart2: -1999288829
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
+    m_lastTimePsrt1: -142473099
+    m_lastTimePart2: -1999288829
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
+    m_lastTimePsrt1: -142418060
+    m_lastTimePart2: -1999288829
+    List:
+    - Name: PenguinQuack
+      Path: Default Work Unit\PenguinQuack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PenguinQuack
+        ObjectType: 11
+      ID: -575381344
+      Guid: 073c4371b8e1364a84bcc2af745b8969
+      values:
+      - QuackIdle
+      - QuackPickedUp
+      ValueIcons:
+      - ElementName: QuackIdle
+        ObjectType: 10
+      - ElementName: QuackPickedUp
+        ObjectType: 10
+      valueIDs: 54511e650db21353
+      ValueGuids:
+      - bytes: 172c38222553fb4da16648a952d0e58c
+      - bytes: bd956e6774c3514fa8c75e8c35e37bfb
+    - Name: PenguinSwim
+      Path: Default Work Unit\PenguinSwim
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PenguinSwim
+        ObjectType: 11
+      ID: -239666061
+      Guid: 1ee6a8f4774352469bf7ae39ee4422ba
+      values:
+      - Fast
+      - FastUnderwater
+      - Slow
+      - SlowUnderwater
+      ValueIcons:
+      - ElementName: Fast
+        ObjectType: 10
+      - ElementName: FastUnderwater
+        ObjectType: 10
+      - ElementName: Slow
+        ObjectType: 10
+      - ElementName: SlowUnderwater
+        ObjectType: 10
+      valueIDs: 531cc0b00cb7c67a02e4f12ea5a366eb
+      ValueGuids:
+      - bytes: fb9cbff302c04d48a59e719b0c1931eb
+      - bytes: 3b85fdb937f7514f9a76333d67016701
+      - bytes: 67f9fe009923ed489b226b9a1561f823
+      - bytes: 4052e0e903471242b20746e56645923e
+    - Name: WaterSplash
+      Path: Default Work Unit\WaterSplash
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: WaterSplash
+        ObjectType: 11
+      ID: 777507535
+      Guid: ec8a3fa424a07c4fa06b80d65f17f6bd
+      values:
+      - Large
+      - Medium
+      - Small
+      - SmallSoft
+      ValueIcons:
+      - ElementName: Large
+        ObjectType: 10
+      - ElementName: Medium
+        ObjectType: 10
+      - ElementName: Small
+        ObjectType: 10
+      - ElementName: SmallSoft
+        ObjectType: 10
+      valueIDs: be065effb08bd2a91a41136eee9c1742
+      ValueGuids:
+      - bytes: bb75af3b81a9284792f87ab8080ed278
+      - bytes: c1e1b16b7964264c84f03c47e2f3580a
+      - bytes: af194433da1f8041b89a651bd4d4793d
+      - bytes: 3b84f738091a5c40b6d83267a63019b0
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
+    m_lastTimePsrt1: -142583181
+    m_lastTimePart2: -1999288829
+    List:
+    - Name: Polar
+      Path: Default Work Unit\Polar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Polar
+        ObjectType: 7
+      ID: -2100714417
+      Guid: 686920d76f6d244baad5275b45371462
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
+    m_lastTimePsrt1: -232404161
+    m_lastTimePart2: -1999288829
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1387B60F-4C10-442C-B428-F462BE30D376}'
+    m_lastTimePsrt1: -142333004
+    m_lastTimePart2: -1999288829
+    List: []
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4
