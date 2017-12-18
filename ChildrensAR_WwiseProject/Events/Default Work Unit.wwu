@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PenguinSqueak" ID="{16876275-CCCC-4FFC-88F2-7F1014864BDA}">
+					<ChildrenList>
+						<Action Name="" ID="{A2A6ECDD-E454-466F-BA71-3AA699093AFB}" ShortID="1010381710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

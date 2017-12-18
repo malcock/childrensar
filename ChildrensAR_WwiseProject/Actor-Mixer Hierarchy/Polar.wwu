@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Polar" ID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchContainer Name="WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" ShortID="762054867">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="WaterAttenuation" ID="{71FADDD6-0849-4FE9-977C-292FEF66DB88}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Water_Splash_Small" ID="{A79F9A2F-252D-461D-8B3D-41296D81AC75}" ShortID="1051086946">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_water_splash_small_1" ID="{5B24FD3B-9A9D-47CE-9F29-F8280E6B6AD8}" ShortID="1054187806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_small_1" ID="{49549FA3-E965-4323-9F9D-E753D75786CA}" ShortID="254142499">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_small_1" ID="{49549FA3-E965-4323-9F9D-E753D75786CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_small_2" ID="{114C92E2-939B-4C89-BC56-4433E4FC9342}" ShortID="406877517">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_small_2" ID="{E4CF009F-CD39-4CF9-95FC-C99EDBCE3089}" ShortID="700427874">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_small_2" ID="{E4CF009F-CD39-4CF9-95FC-C99EDBCE3089}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_small_3" ID="{41F82F4D-7716-496A-AC40-71F6CDE50D75}" ShortID="375071844">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_small_3" ID="{B533445F-E762-443D-B719-FD1FE665C01D}" ShortID="904789059">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_small_3" ID="{B533445F-E762-443D-B719-FD1FE665C01D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_small_4" ID="{C533C65C-1B6B-41DF-AF83-C6B625E72585}" ShortID="734372048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_small_4" ID="{ECF72090-9075-457B-9D9E-977F91D5D757}" ShortID="294338604">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_small_4" ID="{ECF72090-9075-457B-9D9E-977F91D5D757}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Water_Splash_Large" ID="{365CF09F-8959-4CDE-87F6-3BB2B3466711}" ShortID="169710074">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_water_splash_large_1" ID="{D3C33003-3310-443F-B33E-2835DBE81C53}" ShortID="3359397">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_large_1" ID="{93DB71A1-FAE2-464F-8EB9-2FAEEC32FB1A}" ShortID="103457920">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_large_1" ID="{93DB71A1-FAE2-464F-8EB9-2FAEEC32FB1A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_large_2" ID="{5D26B318-7CB5-4953-928F-E0B775B8FEA2}" ShortID="871141790">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_large_2" ID="{DE4BEBBA-D0A0-4556-AEDE-6E7F99573050}" ShortID="314412579">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_large_2" ID="{DE4BEBBA-D0A0-4556-AEDE-6E7F99573050}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_large_3" ID="{D1FD3DA2-DCE3-4D1F-88D6-E1521475C326}" ShortID="417372113">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_large_3" ID="{A29A4480-B35D-40E2-80C9-56B9D2EA46AF}" ShortID="516727642">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_large_3" ID="{A29A4480-B35D-40E2-80C9-56B9D2EA46AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_large_4" ID="{6189380A-3A5C-4CAB-890B-44BCEB5F0952}" ShortID="268931438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_large_4" ID="{B629CADA-9C84-40F1-818E-2938670ED42F}" ShortID="715659164">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_large_4" ID="{B629CADA-9C84-40F1-818E-2938670ED42F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Water_Splash_Med" ID="{849CE495-994B-4B51-85EE-2DA261E016CE}" ShortID="519490020">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_water_splash_med_01" ID="{A7496A66-AE3E-4F0C-BD0A-77562FC62D08}" ShortID="74230170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_med_01" ID="{F5C7BA76-5D17-4474-98C6-7EA8405183C1}" ShortID="415002928">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_med_01" ID="{F5C7BA76-5D17-4474-98C6-7EA8405183C1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_med_02" ID="{7E879443-79B5-4C42-9D04-2959D67BC420}" ShortID="277972444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_med_02" ID="{FC218AF3-BA1C-42D3-A3BB-1EBD9E8AE181}" ShortID="745403754">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_med_02" ID="{FC218AF3-BA1C-42D3-A3BB-1EBD9E8AE181}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_med_03" ID="{AEA8CE08-9F8E-420E-B4C8-4A57C9B22C44}" ShortID="753719676">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_med_03" ID="{9B988DF2-DD6D-4DC9-8F19-D08416EAE608}" ShortID="380445953">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_med_03" ID="{9B988DF2-DD6D-4DC9-8F19-D08416EAE608}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_med_04" ID="{B80698CB-21CD-4642-AB1B-1936347A0391}" ShortID="818518498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_med_04" ID="{9B8FC9AD-CE4A-456E-B683-83D0CDEAEBCA}" ShortID="115382706">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_med_04" ID="{9B8FC9AD-CE4A-456E-B683-83D0CDEAEBCA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Water_Splash_Soft" ID="{877B680C-E3B6-41C0-A2D1-49D318F0F654}" ShortID="916930391">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_water_splash_soft_01" ID="{0074CD6D-E6D2-4589-AD79-DE2DF1C4AF72}" ShortID="113482537">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_soft_01" ID="{23FE0843-D512-4CE6-9104-590589DDA41D}" ShortID="191463175">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_soft_01" ID="{23FE0843-D512-4CE6-9104-590589DDA41D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_soft_02" ID="{F36253B6-709E-40F1-91D4-983B92033A92}" ShortID="27089451">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_soft_02" ID="{3FA55C36-1520-46D0-B4C7-0F530B9E4253}" ShortID="6446510">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_soft_02" ID="{3FA55C36-1520-46D0-B4C7-0F530B9E4253}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_soft_03" ID="{37B5BD5D-7A10-40B8-B359-FE1BD58082BC}" ShortID="277588846">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_soft_03" ID="{64F5BCD3-3793-43A9-B3A1-AA0041E14775}" ShortID="777827311">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_soft_03" ID="{64F5BCD3-3793-43A9-B3A1-AA0041E14775}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_soft_04" ID="{7B672070-9AE3-4DBE-94FE-8664CB68D44A}" ShortID="557165795">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_soft_04" ID="{1EDCB8F3-627E-4ED4-92E2-95D0681FC6A5}" ShortID="761073734">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_soft_04" ID="{1EDCB8F3-627E-4ED4-92E2-95D0681FC6A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_splash_soft_05" ID="{57B0EA8A-2802-49E3-9F65-119BBF4E49EB}" ShortID="845635767">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_splash_soft_05" ID="{16C52E1E-4648-418E-AFB5-EB2470C8A7A1}" ShortID="96214270">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_splash_soft_05" ID="{16C52E1E-4648-418E-AFB5-EB2470C8A7A1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupRef Name="WaterSplash" ID="{A43F8AEC-A024-4F7C-A06B-80D65F17F6BD}"/>
+						<DefaultSwitchRef Name="Small" ID="{334419AF-1FDA-4180-B89A-651BD4D4793D}"/>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Water_Splash_Soft" ID="{877B680C-E3B6-41C0-A2D1-49D318F0F654}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Water_Splash_Small" ID="{A79F9A2F-252D-461D-8B3D-41296D81AC75}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Water_Splash_Med" ID="{849CE495-994B-4B51-85EE-2DA261E016CE}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Water_Splash_Large" ID="{365CF09F-8959-4CDE-87F6-3BB2B3466711}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="SmallSoft" ID="{38F7843B-1A09-405C-B6D8-3267A63019B0}"/>
+								<ItemList>
+									<ItemRef Name="Water_Splash_Soft" ID="{877B680C-E3B6-41C0-A2D1-49D318F0F654}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Small" ID="{334419AF-1FDA-4180-B89A-651BD4D4793D}"/>
+								<ItemList>
+									<ItemRef Name="Water_Splash_Small" ID="{A79F9A2F-252D-461D-8B3D-41296D81AC75}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+								<ItemList>
+									<ItemRef Name="Water_Splash_Large" ID="{365CF09F-8959-4CDE-87F6-3BB2B3466711}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Medium" ID="{6BB1E1C1-6479-4C26-84F0-3C47E2F3580A}"/>
+								<ItemList>
+									<ItemRef Name="Water_Splash_Med" ID="{849CE495-994B-4B51-85EE-2DA261E016CE}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Folder Name="Penguin" ID="{ECCE92E7-79F4-401C-BF67-D3DEEAC706B7}" ShortID="367051607">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Penguin_Footsteps" ID="{8F96228B-3458-4304-9F47-4C6EFBA6EB5E}" ShortID="742523463">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PenguinAttenuation" ID="{C0E1FBEE-44A0-469B-B1AF-84C7954D8FBE}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_penguin_footsteps_01" ID="{9232ED04-82E4-4482-A41D-C0F081E9A594}" ShortID="914181408">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_01" ID="{91E745A3-E4E3-42D2-956D-2F3FDD47268A}" ShortID="587308778">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_01" ID="{91E745A3-E4E3-42D2-956D-2F3FDD47268A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_penguin_footsteps_02" ID="{0167DD09-3300-4D78-8E4C-F55E98583E44}" ShortID="106214798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_02" ID="{FC4EE015-9E53-4E9A-AAEF-F16EAE80BEF4}" ShortID="1014331314">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_02" ID="{FC4EE015-9E53-4E9A-AAEF-F16EAE80BEF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_penguin_footsteps_03" ID="{43218EA7-E171-4D5C-B85D-21CC5304990A}" ShortID="749397737">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_03" ID="{DD9DC996-EEB8-4B0F-9D88-987546B6B050}" ShortID="855954151">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_03" ID="{DD9DC996-EEB8-4B0F-9D88-987546B6B050}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_penguin_footsteps_04" ID="{01940257-3FFC-4B5F-8108-5AC2F8689A2E}" ShortID="655861840">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_04" ID="{940F1694-FCC1-4B61-BAEA-F9F03F52D99D}" ShortID="455973186">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_04" ID="{940F1694-FCC1-4B61-BAEA-F9F03F52D99D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_penguin_footsteps_05" ID="{8A917E70-8446-4FEA-B89C-62581DD6A32E}" ShortID="441403187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_05" ID="{E845656E-EE96-4871-9D2D-7F3237A6D723}" ShortID="374899264">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_05" ID="{E845656E-EE96-4871-9D2D-7F3237A6D723}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_penguin_footsteps_06" ID="{68826C7A-91B1-4604-8206-FFD9D399A07D}" ShortID="135790408">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_penguin_footsteps_06" ID="{DF3D9588-BE74-4DF0-9A94-79FF28FC0368}" ShortID="636586861">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_penguin_footsteps_06" ID="{DF3D9588-BE74-4DF0-9A94-79FF28FC0368}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" ShortID="677101229">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PenguinAttenuation" ID="{C0E1FBEE-44A0-469B-B1AF-84C7954D8FBE}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}" ShortID="297596771">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_penguin_vocal_idle_1" ID="{51B15AE0-420A-4895-9D88-833693ABE55A}" ShortID="598841730">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_penguin_vocal_idle_1" ID="{E6705D35-6497-4ADB-B3E7-9780CC6B9B2A}" ShortID="799059336">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_penguin_vocal_idle_1" ID="{E6705D35-6497-4ADB-B3E7-9780CC6B9B2A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_penguin_vocal_idle_2" ID="{042C7A8B-637B-48F5-BBFD-5B4B1094DDF4}" ShortID="549624648">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_penguin_vocal_idle_2" ID="{5899396A-E3F5-463D-908D-431901F8D60F}" ShortID="794621128">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_penguin_vocal_idle_2" ID="{5899396A-E3F5-463D-908D-431901F8D60F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_penguin_vocal_idle_3" ID="{EFE29EEF-B339-40F7-B837-918471A49010}" ShortID="297032771">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_penguin_vocal_idle_3" ID="{F4F7DEDF-C522-4289-A7E8-961118D048DE}" ShortID="878697382">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_penguin_vocal_idle_3" ID="{F4F7DEDF-C522-4289-A7E8-961118D048DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_penguin_vocal_idle_4" ID="{0C2147ED-720E-4FBE-9AE3-F7F730E1F1DE}" ShortID="686176697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_penguin_vocal_idle_4" ID="{228D6E8E-ACDC-400D-9CBC-35960845D707}" ShortID="107949657">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_penguin_vocal_idle_4" ID="{228D6E8E-ACDC-400D-9CBC-35960845D707}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_penguin_vocal_idle_5" ID="{26BD9750-2649-46F5-9931-04A5EB4133B2}" ShortID="780063276">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_penguin_vocal_idle_5" ID="{E355AB71-243B-4CD2-9CB1-9500D5EB5887}" ShortID="857533580">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_penguin_vocal_idle_5" ID="{E355AB71-243B-4CD2-9CB1-9500D5EB5887}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="PenguinQuack" ID="{71433C07-E1B8-4A36-84BC-C2AF745B8969}"/>
+								<DefaultSwitchRef Name="QuackPickedUp" ID="{676E95BD-C374-4F51-A8C7-5E8C35E37BFB}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="QuackIdle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+										<ItemList>
+											<ItemRef Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Penguin_Swim" ID="{CD92626E-CA74-4CBE-8113-B28130AC0823}" ShortID="875878993">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PenguinAttenuation" ID="{C0E1FBEE-44A0-469B-B1AF-84C7954D8FBE}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_swim_fast_loop" ID="{EC293B90-3B06-4650-AA30-002630545ACF}" ShortID="561729178">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_swim_fast_loop" ID="{29A5F19F-1D3A-42D7-BDD0-BC5D9B7E32F6}" ShortID="439643296">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_swim_fast_loop" ID="{29A5F19F-1D3A-42D7-BDD0-BC5D9B7E32F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_swim_fast_underwater_loop" ID="{8E5062BD-AB46-4799-A7B5-7CF8E81FC2C8}" ShortID="241940164">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_swim_fast_underwater_loop" ID="{22609158-A498-4DEA-B6F7-9DB69285B587}" ShortID="218795275">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_swim_fast_underwater_loop" ID="{22609158-A498-4DEA-B6F7-9DB69285B587}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_swim_slow_loop" ID="{20073A87-343C-454A-83EB-DBB9BB47DD70}" ShortID="84509492">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_swim_slow_loop" ID="{303D030D-8EE7-4D59-BB2E-F20A576C4F3F}" ShortID="570090485">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_swim_slow_loop" ID="{303D030D-8EE7-4D59-BB2E-F20A576C4F3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_swim_slow_underwater_loop" ID="{28B4E09A-8123-4368-8A17-BEB2018C2DE1}" ShortID="336241424">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_swim_slow_underwater_loop" ID="{007F12E1-3102-41C5-A7F9-C39AD4109C90}" ShortID="542448978">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_underwater_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_swim_slow_underwater_loop" ID="{007F12E1-3102-41C5-A7F9-C39AD4109C90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="PenguinSwim" ID="{F4A8E61E-4377-4652-9BF7-AE39EE4422BA}"/>
+								<DefaultSwitchRef Name="Slow" ID="{00FEF967-2399-48ED-9B22-6B9A1561F823}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="sfx_swim_slow_loop" ID="{20073A87-343C-454A-83EB-DBB9BB47DD70}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sfx_swim_fast_loop" ID="{EC293B90-3B06-4650-AA30-002630545ACF}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sfx_swim_slow_underwater_loop" ID="{28B4E09A-8123-4368-8A17-BEB2018C2DE1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="sfx_swim_fast_underwater_loop" ID="{8E5062BD-AB46-4799-A7B5-7CF8E81FC2C8}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="FastUnderwater" ID="{B9FD853B-F737-4F51-9A76-333D67016701}"/>
+										<ItemList>
+											<ItemRef Name="sfx_swim_fast_underwater_loop" ID="{8E5062BD-AB46-4799-A7B5-7CF8E81FC2C8}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="SlowUnderwater" ID="{E9E05240-4703-4212-B207-46E56645923E}"/>
+										<ItemList>
+											<ItemRef Name="sfx_swim_slow_underwater_loop" ID="{28B4E09A-8123-4368-8A17-BEB2018C2DE1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Slow" ID="{00FEF967-2399-48ED-9B22-6B9A1561F823}"/>
+										<ItemList>
+											<ItemRef Name="sfx_swim_slow_loop" ID="{20073A87-343C-454A-83EB-DBB9BB47DD70}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+										<ItemList>
+											<ItemRef Name="sfx_swim_fast_loop" ID="{EC293B90-3B06-4650-AA30-002630545ACF}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="quack" ID="{3754DBCD-D428-4327-9635-8B32113EF545}" ShortID="940511145">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9E37DD84-7CA5-4914-8FFA-33E73CCBD8C2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-227"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="quack" ID="{F05EEA5E-ED3F-45A9-BF35-B4E6E1235E35}" ShortID="196803574">
+									<Language>SFX</Language>
+									<AudioFile>quack.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="quack" ID="{F05EEA5E-ED3F-45A9-BF35-B4E6E1235E35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sqeak" ID="{4FDCDA1D-83AC-45FC-857B-EE1CF9D49203}" ShortID="516326963">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7DA5E508-9955-4C1F-8720-C99385041592}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="278"/>
+													<Property Name="Min" Type="Real64" Value="-354"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sqeak" ID="{6212F4E5-4432-406A-BF16-E9A2F9CB0169}" ShortID="628658610">
+									<Language>SFX</Language>
+									<AudioFile>sqeak.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sqeak" ID="{6212F4E5-4432-406A-BF16-E9A2F9CB0169}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Whale" ID="{536B8D25-2B0A-484D-A42D-37E3A486A5A9}" ShortID="273199674">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Whale_Spray" ID="{31388BFE-F885-4DF7-95AF-913D74203BD2}" ShortID="824487390">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="WaterAttenuation" ID="{71FADDD6-0849-4FE9-977C-292FEF66DB88}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_water_whale_spray_01" ID="{ED65745D-A036-4023-A3C4-8D4C3E4C8CFB}" ShortID="397689683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_whale_spray_01" ID="{1F0E4DE0-A7EB-4973-A0B8-1749E74B3395}" ShortID="485170043">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_whale_spray_01" ID="{1F0E4DE0-A7EB-4973-A0B8-1749E74B3395}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_water_whale_spray_02" ID="{51A6F46C-F0CA-491B-9AF5-5D5E96A0C092}" ShortID="4858263">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_water_whale_spray_02" ID="{EDA5D7EE-DD34-43E9-9C55-D128C1677B4B}" ShortID="407423507">
+											<Language>SFX</Language>
+											<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_water_whale_spray_02" ID="{EDA5D7EE-DD34-43E9-9C55-D128C1677B4B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="SCH_sfx_amb_polar_full_loop" ID="{19E526F2-84A3-4A54-88B6-0FB9D63A4C2D}" ShortID="272914331">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SCH_sfx_amb_polar_full_loop" ID="{B42EF41F-0F90-4543-8E24-D50D0C57CAF0}" ShortID="604599871">
+							<Language>SFX</Language>
+							<AudioFile>SCH_sfx_amb_polar_full_loop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SCH_sfx_amb_polar_full_loop" ID="{B42EF41F-0F90-4543-8E24-D50D0C57CAF0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

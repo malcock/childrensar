@@ -120,6 +120,7 @@ public class RagdollHelper : MonoBehaviour
         public Transform transform;
         public Vector3 storedPosition;
         public Quaternion storedRotation;
+        public Quaternion startRotation;
     }
     //Additional vectores for storing the pose the ragdoll ended up in.
     Vector3 ragdolledHipPosition, ragdolledHeadPosition, ragdolledFeetPosition;
@@ -131,6 +132,9 @@ public class RagdollHelper : MonoBehaviour
 
     //Declare an Animator member variable, initialized in Start to point to this gameobject's Animator component.
     Animator anim;
+
+    public float totalMass = 0;
+
     public Transform mainTransform;
 
     public UnityEvent onCollision;
@@ -169,12 +173,13 @@ public class RagdollHelper : MonoBehaviour
         //Find all the transforms in the character, assuming that this script is attached to the root
         Component[] components = GetComponentsInChildren(typeof(Transform));
 
-        float totalMass = 0;
+        totalMass = 0;
         //For each of the transforms, create a BodyPart instance and store the transform 
         foreach (Component c in components)
         {
             BodyPart bodyPart = new BodyPart();
             bodyPart.transform = c as Transform;
+            bodyPart.startRotation = bodyPart.transform.rotation;
             bodyParts.Add(bodyPart);
             if (c.GetComponent<Rigidbody>() && c.gameObject.layer == 8)
             {
@@ -189,7 +194,7 @@ public class RagdollHelper : MonoBehaviour
         }
 
         //set weight to the sum of the body parts
-        mainBody.mass = 0.5f;
+        mainBody.mass = totalMass;
         mainBody.drag = 1;
         mainBody.angularDrag = 5;
 
@@ -214,7 +219,7 @@ public class RagdollHelper : MonoBehaviour
             if (collisionCount > bodyParts.Count / 2)
             {
 
-                Debug.Log("LOL WAT");
+
                 if (onCollision != null) onCollision.Invoke();
                 //ragdolled = false;
             }
@@ -304,6 +309,13 @@ public class RagdollHelper : MonoBehaviour
                 state = RagdollState.animated;
                 return;
             }
+        }
+    }
+
+    public void ResetRagdoll(){
+        foreach(BodyPart b in bodyParts){
+            b.transform.rotation = b.startRotation;
+
         }
     }
 

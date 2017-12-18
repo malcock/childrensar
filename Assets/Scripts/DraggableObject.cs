@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(InteractableObject))]
 public class DraggableObject : MonoBehaviour
 {
+    [Tooltip("only used if interactable object is locked and is on is a positive value, if negative it pins to the room objects")]
+    public float lockDistance = 1.2f;
 
     public bool isRagdoll = false;
     public Transform DragAnchor;
@@ -14,9 +16,12 @@ public class DraggableObject : MonoBehaviour
     private HingeJoint joint;
     private Rigidbody rb;
 
+    public bool dragOverride = false;
+    private Vector3 targetPos;
+
     private Vector3 dragVector;
 
-    private GameObject DragController;
+    public GameObject DragController;
 
     private InteractableObject interactableObj;
 
@@ -96,11 +101,40 @@ public class DraggableObject : MonoBehaviour
         //putting drag control in here should be more stable?
         if (interactableObj.isDragging)
         {
-            //draw a ray i guess
-            var ray = Camera.main.ScreenPointToRay(interactableObj.lastPos);
+            if (!dragOverride)
+            {
+                //draw a ray i guess
+                var ray = Camera.main.ScreenPointToRay(interactableObj.lastPos);
+
+                //need to do some cool shit where we check if there's a 'land' object under the cursor
+                RaycastHit hit;
+                targetPos = ray.GetPoint(1.2f);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.transform.gameObject.layer == 11)
+                    {
+
+                        targetPos = ray.GetPoint(Vector3.Distance(Camera.main.transform.position, hit.point) - 1.5f);
+
+                    }
+                    if (hit.transform.tag == "Land")
+                    {
+                        targetPos = hit.point;
+                        targetPos.y += 0.4f;
+                    }
+                    if (targetPos.y < -0.2f) targetPos.y = -0.2f;
+                }
+
+                if (interactableObj.locked && lockDistance > 0)
+                {
+                    targetPos = ray.GetPoint(lockDistance);
+                }
+            }
+
             if (isRagdoll)
             {
-                dragVector = ray.GetPoint(1.2f) - DragController.transform.position;
+                
+                dragVector = targetPos - DragController.transform.position;
 
                 dragVector = Vector3.ClampMagnitude(dragVector * 10, 2.5f);
                 magnitude = dragVector.magnitude;
@@ -108,7 +142,7 @@ public class DraggableObject : MonoBehaviour
             }
             else
             {
-                DragController.transform.position = ray.GetPoint(1.2f);
+                DragController.transform.position = targetPos;
             }
 
 
@@ -117,6 +151,8 @@ public class DraggableObject : MonoBehaviour
         {
             joint.connectedBody = null;
         }
+
+        dragOverride = false;
     }
 
     void DragStart()
@@ -149,21 +185,8 @@ public class DraggableObject : MonoBehaviour
 
     public void DragTo(Vector3 position)
     {
-        Debug.Log("is drag to being called?");
-        DragController.transform.position = DragAnchor.position;
-        if (isRagdoll)
-        {
-            joint.connectedBody = DragAnchor.GetComponent<Rigidbody>();
-        }
-        else
-        {
-            joint.connectedBody = GetComponent<Rigidbody>();
-        }
-        //set the connected anchor to be the difference between the root and the drag anchor
-        dragAnchorPosition = transform.TransformPoint(DragAnchor.position);
-
-        dragVector = position - DragController.transform.position;
-        GetComponent<Rigidbody>().AddForce(dragVector * 50);
+        dragOverride = true;
+        targetPos = position;
 
     }
 

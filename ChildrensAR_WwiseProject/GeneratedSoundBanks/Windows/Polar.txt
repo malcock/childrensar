@@ -1,0 +1,66 @@
+Event	ID	Name			Wwise Object Path	Notes
+	777507535	WaterSplash			\Polar\WaterSplash	
+	893632031	WhaleSpray			\Polar\WhaleSpray	
+	2594679953	PenguinSqueak			\Default Work Unit\PenguinSqueak	
+	3060268180	PolarMusic			\Polar\PolarMusic	
+	3719585952	PenguinQuack			\Polar\PenguinQuack	
+	4055301235	PenguinSwim			\Polar\PenguinSwim	
+	4107323607	PolarAmbience			\Polar\PolarAmbience	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	777507535	WaterSplash			\Default Work Unit\WaterSplash	
+	3719585952	PenguinQuack			\Default Work Unit\PenguinQuack	
+	4055301235	PenguinSwim			\Default Work Unit\PenguinSwim	
+
+Switch	ID	Name	Switch Group			Notes
+	1108843758	SmallSoft	WaterSplash			
+	1846755610	Small	WaterSplash			
+	2849147824	Medium	WaterSplash			
+	4284352190	Large	WaterSplash			
+	1393799693	QuackPickedUp	PenguinQuack			
+	1696485716	QuackIdle	PenguinQuack			
+	787604482	Slow	PenguinSwim			
+	2059843340	FastUnderwater	PenguinSwim			
+	2965380179	Fast	PenguinSwim			
+	3949372325	SlowUnderwater	PenguinSwim			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	6446510	sfx_water_splash_soft_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_02		118770
+	96214270	sfx_water_splash_soft_05	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_05		90408
+	103457920	sfx_water_splash_large_1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Large\sfx_water_splash_large_1		189636
+	107949657	sfx_penguin_vocal_idle_4	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\PenguinQuacks\Penguin_Quack_Idle\sfx_penguin_vocal_idle_4		116844
+	115382706	sfx_water_splash_med_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Med\sfx_water_splash_med_04		178958
+	191463175	sfx_water_splash_soft_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_01		109918
+	196803574	quack	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\quack_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\quack		55230
+	218795275	sfx_swim_fast_underwater_loop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Swim\sfx_swim_fast_underwater_loop		470944
+	254142499	sfx_water_splash_small_1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Small\sfx_water_splash_small_1		49126
+	294338604	sfx_water_splash_small_4	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Small\sfx_water_splash_small_4		46516
+	314412579	sfx_water_splash_large_2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Large\sfx_water_splash_large_2		185284
+	374899264	sfx_penguin_footsteps_05	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_05		2880
+	380445953	sfx_water_splash_med_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Med\sfx_water_splash_med_03		204044
+	407423507	sfx_water_whale_spray_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Whale\Whale_Spray\sfx_water_whale_spray_02		204506
+	415002928	sfx_water_splash_med_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Med\sfx_water_splash_med_01		196874
+	439643296	sfx_swim_fast_loop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Swim\sfx_swim_fast_loop		470944
+	455973186	sfx_penguin_footsteps_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_04		5366
+	485170043	sfx_water_whale_spray_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Whale\Whale_Spray\sfx_water_whale_spray_01		251640
+	516727642	sfx_water_splash_large_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Large\sfx_water_splash_large_3		158824
+	542448978	sfx_swim_slow_underwater_loop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_underwater_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Swim\sfx_swim_slow_underwater_loop		627144
+	554695072	Polar_ambient_music_V2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Polar_ambient_music_V2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\PolarMusic\Polar_ambient_music_V2\Polar_ambient_music_V2		29286216
+	570090485	sfx_swim_slow_loop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Swim\sfx_swim_slow_loop		627144
+	587308778	sfx_penguin_footsteps_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_01		3368
+	604599871	SCH_sfx_amb_polar_full_loop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\SCH_sfx_amb_polar_full_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\SCH_sfx_amb_polar_full_loop		29286124
+	628658610	sqeak	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\sqeak_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\sqeak		10096
+	636586861	sfx_penguin_footsteps_06	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_06_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_06		4854
+	700427874	sfx_water_splash_small_2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Small\sfx_water_splash_small_2		39504
+	715659164	sfx_water_splash_large_4	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Large\sfx_water_splash_large_4		158824
+	745403754	sfx_water_splash_med_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Med\sfx_water_splash_med_02		173530
+	761073734	sfx_water_splash_soft_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_04		147766
+	777827311	sfx_water_splash_soft_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_03		107148
+	794621128	sfx_penguin_vocal_idle_2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\PenguinQuacks\Penguin_Quack_Idle\sfx_penguin_vocal_idle_2		67844
+	799059336	sfx_penguin_vocal_idle_1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\PenguinQuacks\Penguin_Quack_Idle\sfx_penguin_vocal_idle_1		96144
+	855954151	sfx_penguin_footsteps_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_03		5346
+	857533580	sfx_penguin_vocal_idle_5	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\PenguinQuacks\Penguin_Quack_Idle\sfx_penguin_vocal_idle_5		103844
+	878697382	sfx_penguin_vocal_idle_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\PenguinQuacks\Penguin_Quack_Idle\sfx_penguin_vocal_idle_3		99444
+	904789059	sfx_water_splash_small_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\WaterSplash\Water_Splash_Small\sfx_water_splash_small_3		54566
+	1014331314	sfx_penguin_footsteps_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Penguin\Penguin_Footsteps\sfx_penguin_footsteps_02		4774
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Polar" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="WaterSplash" ID="{632A384E-7111-4541-9E72-00DC74119FCA}">
+					<ChildrenList>
+						<Action Name="" ID="{4D70A3BD-B0C8-425E-8CB4-34FBF872CB3A}" ShortID="164351559">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PenguinSwim" ID="{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}">
+					<ChildrenList>
+						<Action Name="" ID="{3D249C6F-B5DD-421C-9869-AFFC65C12D31}" ShortID="570617432">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Penguin_Swim" ID="{CD92626E-CA74-4CBE-8113-B28130AC0823}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WhaleSpray" ID="{D2546268-EFFD-41B9-A9F2-31BFE0FD5E30}">
+					<ChildrenList>
+						<Action Name="" ID="{B2A9832C-3014-4D3F-9759-91CD72562368}" ShortID="290993550">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whale_Spray" ID="{31388BFE-F885-4DF7-95AF-913D74203BD2}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PolarMusic" ID="{FDA64478-6928-4F21-8A6E-66AF0151F962}">
+					<ChildrenList>
+						<Action Name="" ID="{F8913EA2-AC1E-4D69-9CC7-598DB96B085B}" ShortID="306375260">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PolarMusic" ID="{4C7CB0C3-70E2-4D7F-84E2-73BCE4B3CF16}" WorkUnitID="{497C7563-ED91-4F00-909A-078983F3DEA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}">
+					<ChildrenList>
+						<Action Name="" ID="{01E38C48-491A-4532-8FC1-6F808329FF2C}" ShortID="22169744">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PolarAmbience" ID="{3F383972-F6ED-46B9-B94C-BBB7C70CF18B}">
+					<ChildrenList>
+						<Action Name="" ID="{0425D411-FF93-41A3-9EFC-D89D8D88EEC3}" ShortID="381077309">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SCH_sfx_amb_polar_full_loop" ID="{19E526F2-84A3-4A54-88B6-0FB9D63A4C2D}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

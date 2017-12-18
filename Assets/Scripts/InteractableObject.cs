@@ -8,7 +8,8 @@ using System;
 
 public class InteractableObject : MonoBehaviour
 {
-
+    [Tooltip("if active the tap interactions are ignored")]
+    public bool locked = false;
     public bool selected = false;
     public bool isDragging = false;
     protected float tapDownTime = 0;
@@ -39,6 +40,7 @@ public class InteractableObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (locked) return;
 //#if PLATFORM_IOS
         if (Input.touchCount > 0)
         {
