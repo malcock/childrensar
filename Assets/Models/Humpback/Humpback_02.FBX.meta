@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 76c89282ce88244a3b3fc26216254b5a
-timeCreated: 1510933790
+guid: 700557a9af4c0eb46a509eb7802c1221
+timeCreated: 1513612912
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -20,8 +20,7 @@ ModelImporter:
     100024: HumpBack-RIGTail2
     100026: HumpBack-RIGTail3
     100028: //RootNode
-    100030: Humpback_01
-    100032: Whale_01
+    100030: Whale_01
     400000: HumpBack-RIGHead
     400002: HumpBack-RIGHeadBone001
     400004: HumpBack-RIGLArm1
@@ -37,14 +36,10 @@ ModelImporter:
     400024: HumpBack-RIGTail2
     400026: HumpBack-RIGTail3
     400028: //RootNode
-    400030: Humpback_01
-    400032: Whale_01
-    4300000: Humpback_01
-    4300002: Whale_01
-    7400000: SWIM_01
+    400030: Whale_01
+    4300000: Whale_01
     9500000: //RootNode
-    13700000: Humpback_01
-    13700002: Whale_01
+    13700000: Whale_01
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,39 +63,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: SWIM_01
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 160
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.35
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
