@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 04b0470d359f96b4ba18ad2ec051f490
-timeCreated: 1513698368
+timeCreated: 1513771594
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -69,7 +69,7 @@ ModelImporter:
       name: SwimmingPATH_03
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 600
+      lastFrame: 1000
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

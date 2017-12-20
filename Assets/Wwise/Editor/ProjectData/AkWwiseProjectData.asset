@@ -13,20 +13,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events/Alpine.wwu
+  - PhysicalPath: Events\Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePsrt1: -364743296
-    m_lastTimePart2: -1999290148
+    m_lastTimePsrt1: -863124967
+    m_lastTimePart2: -1999288762
     List: []
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
-    m_lastTimePsrt1: -364743296
-    m_lastTimePart2: -1999290148
+    m_lastTimePsrt1: -862334411
+    m_lastTimePart2: -1999288762
     List:
     - Name: PenguinSqueak
-      Path: Default Work Unit/PenguinSqueak
+      Path: Default Work Unit\PenguinSqueak
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -34,15 +34,15 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1700287343
       Guid: 75628716ccccfc4f88f27f1014864bda
-      maxAttenuation: 100
-  - PhysicalPath: Events/Polar.wwu
+      maxAttenuation: 0
+  - PhysicalPath: Events\Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
-    m_lastTimePsrt1: -364743296
-    m_lastTimePart2: -1999290148
+    m_lastTimePsrt1: -862299386
+    m_lastTimePart2: -1999288762
     List:
     - Name: PenguinQuack
-      Path: Polar/PenguinQuack
+      Path: Polar\PenguinQuack
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -50,9 +50,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -575381344
       Guid: c80b43c1329bd24ca457df72edca23ee
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: PenguinSwim
-      Path: Polar/PenguinSwim
+      Path: Polar\PenguinSwim
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -60,9 +60,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -239666061
       Guid: d83c5fadb6b39f4492695018f5a4c51b
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: PolarAmbience
-      Path: Polar/PolarAmbience
+      Path: Polar\PolarAmbience
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -72,7 +72,7 @@ MonoBehaviour:
       Guid: 7239383fedf6b946b94cbbb7c70cf18b
       maxAttenuation: 0
     - Name: PolarMusic
-      Path: Polar/PolarMusic
+      Path: Polar\PolarMusic
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -82,7 +82,7 @@ MonoBehaviour:
       Guid: 7844a6fd2869214f8a6e66af0151f962
       maxAttenuation: 0
     - Name: WaterSplash
-      Path: Polar/WaterSplash
+      Path: Polar\WaterSplash
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -90,9 +90,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 777507535
       Guid: 4e382a63117141459e7200dc74119fca
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: WhaleSpray
-      Path: Polar/WhaleSpray
+      Path: Polar\WhaleSpray
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -100,30 +100,30 @@ MonoBehaviour:
         ObjectType: 3
       ID: 893632031
       Guid: 686254d2fdefb941a9f231bfe0fd5e30
-      maxAttenuation: 100
+      maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
-    m_lastTimePsrt1: -120964480
-    m_lastTimePart2: -1999290644
+    m_lastTimePsrt1: -847513905
+    m_lastTimePart2: -1999288762
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
-    m_lastTimePsrt1: -120964480
-    m_lastTimePart2: -1999290644
+    m_lastTimePsrt1: -740246299
+    m_lastTimePart2: -1999288762
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
-    m_lastTimePsrt1: -354743296
-    m_lastTimePart2: -1999290148
+    m_lastTimePsrt1: -740206275
+    m_lastTimePart2: -1999288762
     List:
     - Name: PenguinQuack
-      Path: Default Work Unit/PenguinQuack
+      Path: Default Work Unit\PenguinQuack
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -144,7 +144,7 @@ MonoBehaviour:
       - bytes: 172c38222553fb4da16648a952d0e58c
       - bytes: bd956e6774c3514fa8c75e8c35e37bfb
     - Name: PenguinSwim
-      Path: Default Work Unit/PenguinSwim
+      Path: Default Work Unit\PenguinSwim
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -173,7 +173,7 @@ MonoBehaviour:
       - bytes: 67f9fe009923ed489b226b9a1561f823
       - bytes: 4052e0e903471242b20746e56645923e
     - Name: WaterSplash
-      Path: Default Work Unit/WaterSplash
+      Path: Default Work Unit\WaterSplash
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -202,14 +202,14 @@ MonoBehaviour:
       - bytes: af194433da1f8041b89a651bd4d4793d
       - bytes: 3b84f738091a5c40b6d83267a63019b0
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
-    m_lastTimePsrt1: -354743296
-    m_lastTimePart2: -1999290148
+    m_lastTimePsrt1: -740321352
+    m_lastTimePart2: -1999288762
     List:
     - Name: Polar
-      Path: Default Work Unit/Polar
+      Path: Default Work Unit\Polar
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -218,18 +218,18 @@ MonoBehaviour:
       ID: -2100714417
       Guid: 686920d76f6d244baad5275b45371462
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
-    m_lastTimePsrt1: -120964480
-    m_lastTimePart2: -1999290644
+    m_lastTimePsrt1: -862264352
+    m_lastTimePart2: -1999288762
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1387B60F-4C10-442C-B428-F462BE30D376}'
-    m_lastTimePsrt1: -120964480
-    m_lastTimePart2: -1999290644
+    m_lastTimePsrt1: -740166242
+    m_lastTimePart2: -1999288762
     List: []
   ExpandedItems:
   - /ChildrensAR_WwiseProject
