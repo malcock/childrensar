@@ -6,6 +6,10 @@ public class OctopusController : MonoBehaviour {
 
     Animator animator;
 
+    enum State {Start, Begin,Active,End}
+    State state = State.Start;
+
+    public bool begin = false;
     public bool isActive = false;
 
     float time = 0;
@@ -22,7 +26,10 @@ public class OctopusController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if(begin){
+            animator.SetTrigger("Begin");
+            begin = false;
+        }
         if (isActive)
         {
             animator.SetBool("Active",true);
