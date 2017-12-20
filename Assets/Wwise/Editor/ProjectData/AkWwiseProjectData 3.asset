@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb417594ce17f4a3c98705ae7e1e55ed, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 3
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePsrt1: 2125290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 260528431
+    m_lastTimePart2: -1999288469
     List: []
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
-    m_lastTimePsrt1: 2125290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 260538410
+    m_lastTimePart2: -1999288469
     List:
     - Name: PenguinSqueak
       Path: Default Work Unit\PenguinSqueak
@@ -35,11 +35,11 @@ MonoBehaviour:
       ID: -1700287343
       Guid: 75628716ccccfc4f88f27f1014864bda
       maxAttenuation: 0
-  - PhysicalPath: Events/Polar.wwu
+  - PhysicalPath: Events\Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
-    m_lastTimePsrt1: 2125290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 260548442
+    m_lastTimePart2: -1999288469
     List:
     - Name: PenguinQuack
       Path: Polar\PenguinQuack
@@ -105,22 +105,22 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
-    m_lastTimePsrt1: 2125290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 284036807
+    m_lastTimePart2: -1999288469
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
-    m_lastTimePsrt1: 2145290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 375840749
+    m_lastTimePart2: -1999288469
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
-    m_lastTimePsrt1: 2145290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 375850766
+    m_lastTimePart2: -1999288469
     List:
     - Name: PenguinQuack
       Path: Default Work Unit\PenguinQuack
@@ -205,8 +205,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
-    m_lastTimePsrt1: 2145290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 375821001
+    m_lastTimePart2: -1999288469
     List:
     - Name: Polar
       Path: Default Work Unit\Polar
@@ -221,26 +221,21 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
-    m_lastTimePsrt1: 2125290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 260723795
+    m_lastTimePart2: -1999288469
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1387B60F-4C10-442C-B428-F462BE30D376}'
-    m_lastTimePsrt1: 2145290112
-    m_lastTimePart2: -1999288770
+    m_lastTimePsrt1: 375860877
+    m_lastTimePart2: -1999288469
     List: []
-  ExpandedItems:
-  - /ChildrensAR_WwiseProject
-  - /ChildrensAR_WwiseProject/Events
-  - /ChildrensAR_WwiseProject/Events/Default Work Unit
-  - /ChildrensAR_WwiseProject/Events/Polar
-  - /ChildrensAR_WwiseProject/SoundBanks
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
-  basePath: Audio/GeneratedSoundBanks
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
