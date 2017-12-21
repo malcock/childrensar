@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+									<ObjectRef Name="Interact_WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -81,7 +81,147 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SCH_sfx_amb_polar_full_loop" ID="{19E526F2-84A3-4A54-88B6-0FB9D63A4C2D}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+									<ObjectRef Name="amb_polar_main" ID="{BB842F19-396E-4943-AACD-802565A50204}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WhaleSwim" ID="{C7F925AA-E8E1-4E0D-9BA2-51C9BC043020}">
+					<ChildrenList>
+						<Action Name="" ID="{AF9E251C-764D-48BC-90BC-3579282D5AA3}" ShortID="1065484647">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_whale_swimming" ID="{6484856B-9C47-4F39-B531-D216A2661893}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OctopusAppearDisappear" ID="{E64A8600-A1D1-4C18-BFDE-FAA7CF035825}">
+					<ChildrenList>
+						<Action Name="" ID="{90675A0E-7344-4818-9398-2F664E379270}" ShortID="281934678">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Octopus_appear_disappear" ID="{41AE6B72-29E7-4F07-98E5-3F23B86BD9C2}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SeagullVocal" ID="{87BBC556-8454-4748-9870-93642E53DEA3}">
+					<ChildrenList>
+						<Action Name="" ID="{763BDD53-1D83-4454-AA66-385683FEDD91}" ShortID="53799794">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seagull_vocal" ID="{501DF781-882E-44C3-A78C-9A0B021CC3E4}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CrabMovement" ID="{B8C5FF4E-B8D7-4FB8-8C44-E488D619D8F4}">
+					<ChildrenList>
+						<Action Name="" ID="{E87BF760-0410-432B-BBCE-341F66DA8BC0}" ShortID="1064625870">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crab_movement" ID="{1F6C68D8-080C-4121-829B-9CE4BF29E969}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OctopusVocal" ID="{AA4BFF61-7146-4215-83B1-347DB6810910}">
+					<ChildrenList>
+						<Action Name="" ID="{16391F63-4E5F-4304-8A7A-C8ABF91C3CA3}" ShortID="59407532">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Octopus_vocal" ID="{265B12C2-4E95-4D82-A8DC-58F2988686E2}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WhaleBreach" ID="{30BA4A1D-436E-4C68-A7ED-95E67FD81748}">
+					<ChildrenList>
+						<Action Name="" ID="{0ED3F684-08F2-461A-A8ED-62BB2136CF1B}" ShortID="130032796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_whale_breach" ID="{8F36175C-683B-4A34-A400-EFC5CDAA20E4}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SeagullFly" ID="{9026C084-DB9C-4967-B692-67BD70E5BD79}">
+					<ChildrenList>
+						<Action Name="" ID="{4A8E1D15-95C8-4820-8E09-4E98A3FD8AE8}" ShortID="106444516">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seagull_fly" ID="{9B4C01E2-6F25-4115-987C-89C0EDFA1665}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SeagullPoop" ID="{4D00AC5E-EAF3-4AE9-A0F5-1B0FDEFF94B5}">
+					<ChildrenList>
+						<Action Name="" ID="{E4812D25-0726-43B9-A664-F2357C3B640D}" ShortID="73807750">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seagull_poop" ID="{E7874D33-5072-47F3-B153-8ED053A265D4}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractPenguinPickup" ID="{9F6B8985-EAFF-4178-836B-D244935EE513}">
+					<ChildrenList>
+						<Action Name="" ID="{D251F09C-4CC8-4327-8EFD-8E73C8840EB4}" ShortID="151147461">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Penguin_Pickup" ID="{9B28536B-8D30-4A29-BEC3-54F6B60A2BF5}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractPenguinDrop" ID="{B6225D6A-A8CB-4666-A880-7D94CA39EF71}">
+					<ChildrenList>
+						<Action Name="" ID="{C991B8C8-BEFF-4CDF-A1DA-ED789A184710}" ShortID="361797904">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Penguin_Drop" ID="{3FA5C4F8-5AD8-4E8E-B574-D5AC12B55B25}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

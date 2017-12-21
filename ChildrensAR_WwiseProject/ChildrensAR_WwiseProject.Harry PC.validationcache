@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Alpine.wwu" DateLow="3660806436" DateHigh="30633649"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2652773737" DateHigh="30634651"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Polar.wwu" DateLow="4264965047" DateHigh="30634655"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="4266855070" DateHigh="30634655"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Alpine.wwu" DateLow="4060371530" DateHigh="30636663"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4060316383" DateHigh="30636663"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Polar.wwu" DateLow="4060346479" DateHigh="30636663"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="2911321949" DateHigh="30636661"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3414351501" DateHigh="30633645"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.Harry PC.wsettings" DateLow="1170625417" DateHigh="30634657"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.wproj" DateLow="4264929951" DateHigh="30634655"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.Harry PC.wsettings" DateLow="614732364" DateHigh="30636664"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.wproj" DateLow="2228400676" DateHigh="30636469"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3414376570" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3414381583" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="3414381583" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3414386595" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Effects\Default Work Unit.wwu" DateLow="4266870111" DateHigh="30634655"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Effects\Factory Effects.wwu" DateLow="4265045260" DateHigh="30634655"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Alpine.wwu" DateLow="3060736511" DateHigh="30633654"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Default Work Unit.wwu" DateLow="2652763711" DateHigh="30634651"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Polar.wwu" DateLow="2652788777" DateHigh="30634651"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Alpine.wwu" DateLow="1954791891" DateHigh="30636662"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Default Work Unit.wwu" DateLow="1954641493" DateHigh="30636662"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Events\Polar.wwu" DateLow="1954671572" DateHigh="30636662"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3414401636" DateHigh="30633645"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2652813843" DateHigh="30634651"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3414476834" DateHigh="30633645"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4060391584" DateHigh="30636663"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4060296330" DateHigh="30636663"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3414481849" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3414486860" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3414511930" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3414511930" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Queries\Factory Queries.wwu" DateLow="3414516941" DateHigh="30633645"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="4020392890" DateHigh="30634652"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3414526969" DateHigh="30633645"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1399055635" DateHigh="30636655"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3664010136" DateHigh="30636662"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\States\Default Work Unit.wwu" DateLow="3414531984" DateHigh="30633645"/>
-	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Switches\Default Work Unit.wwu" DateLow="2652798803" DateHigh="30634651"/>
+	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3502797467" DateHigh="30636655"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3414536992" DateHigh="30633645"/>
 	<ValidationCacheItem File="D:\ChildrensAR\ChildrensAR_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="3414542009" DateHigh="30633645"/>
 </ValidationCache>

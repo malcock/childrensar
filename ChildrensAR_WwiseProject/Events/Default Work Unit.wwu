@@ -3,15 +3,43 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PenguinSqueak" ID="{16876275-CCCC-4FFC-88F2-7F1014864BDA}">
+				<Event Name="InteractWaterSplash" ID="{3392656C-72A1-44D3-9BA9-9704459AB26D}">
 					<ChildrenList>
-						<Action Name="" ID="{A2A6ECDD-E454-466F-BA71-3AA699093AFB}" ShortID="1010381710">
+						<Action Name="" ID="{971CFAB0-48F8-41A0-BEA4-B7BFBE2D0196}" ShortID="619829528">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+									<ObjectRef Name="Interact_WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishPickup" ID="{90C309DF-D9E6-4C1C-B8AE-57838CC9E99F}">
+					<ChildrenList>
+						<Action Name="" ID="{66678D24-CF49-45AF-B1BD-57BDBA3C5E24}" ShortID="33034277">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Fish_Pickup" ID="{047DFE09-2954-4FE0-9124-136597CFE9F1}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishPickupLoop" ID="{1B5CD573-4D15-4DF5-BB60-EA4800F0F7A8}">
+					<ChildrenList>
+						<Action Name="" ID="{66D3FBDE-A21F-44A0-94D7-DDE6BC96F456}" ShortID="492874778">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InteractFishPickupLoop" ID="{76637BF6-CA69-49A6-8DB3-4D49F0503065}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
