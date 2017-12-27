@@ -21,6 +21,7 @@
 			<ShortName>Polar</ShortName>
 			<Path>Polar.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2694280482" Name="BirdPoop" ObjectPath="\Events\Polar\BirdPoop"/>
 				<Event Id="3719585952" Name="PenguinQuack" ObjectPath="\Events\Polar\PenguinQuack" MaxAttenuation="100.000000"/>
 				<Event Id="2594679953" Name="PenguinSqueak" ObjectPath="\Events\Default Work Unit\PenguinSqueak" MaxAttenuation="100.000000"/>
 				<Event Id="4055301235" Name="PenguinSwim" ObjectPath="\Events\Polar\PenguinSwim" MaxAttenuation="100.000000"/>
@@ -102,6 +103,10 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_whale_spray_01.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_whale_spray_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="505372417" Language="SFX">
+					<ShortName>sfx_bird_poop_03.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="516727642" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_3_1C9C67B2.wem</Path>
@@ -142,6 +147,10 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_4_1C9C67B2.wem</Path>
 				</File>
+				<File Id="726070879" Language="SFX">
+					<ShortName>sfx_bird_poop_04.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="745403754" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_02_1C9C67B2.wem</Path>
@@ -178,9 +187,17 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="978230174" Language="SFX">
+					<ShortName>sfx_bird_poop_02.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="1014331314" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1042501355" Language="SFX">
+					<ShortName>sfx_bird_poop_01.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_01_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

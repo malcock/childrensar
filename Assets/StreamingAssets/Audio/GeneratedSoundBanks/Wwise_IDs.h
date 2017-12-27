@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BIRDPOOP = 2694280482U;
         static const AkUniqueID PENGUINQUACK = 3719585952U;
         static const AkUniqueID PENGUINSQUEAK = 2594679953U;
         static const AkUniqueID PENGUINSWIM = 4055301235U;

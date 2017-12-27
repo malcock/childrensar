@@ -7,7 +7,7 @@ using UnityEngine;
 public class PenguinController : MonoBehaviour
 {
 
-
+    public bool isHiding = false;
     Animator anim;
 
     InteractableObject interactableObj;
@@ -46,7 +46,8 @@ public class PenguinController : MonoBehaviour
     void Update()
     {
         if (!firstFrame) doll.ragdolled = firstFrame = true;
-        if(!doll.ragdolled && !anim.GetBool("isSwimming")){
+        if (!doll.ragdolled && !anim.GetBool("isSwimming"))
+        {
             //find the camera and point the penguin at it
             Vector3 relativePosition = Camera.main.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(relativePosition);
@@ -54,6 +55,9 @@ public class PenguinController : MonoBehaviour
             rotation.z = 0;
             transform.rotation = rotation;
         }
+        //if(!anim.GetBool("isSwimming") && isHiding && !interactableObj.isDragging){
+        //    Escape();
+        //}
     }
 
     public void Quack()
@@ -62,8 +66,8 @@ public class PenguinController : MonoBehaviour
         anim.SetTrigger("Quack");
         //audioSource.clip = quack;
         //audioSource.Play();
-        AkSoundEngine.SetSwitch("PenguinQuack","QuackIdle",gameObject);
-        AkSoundEngine.PostEvent("PenguinQuack",gameObject);
+        AkSoundEngine.SetSwitch("PenguinQuack", "QuackIdle", gameObject);
+        AkSoundEngine.PostEvent("PenguinQuack", gameObject);
 
         //PlaySound(quack);
         //anim.SetBool("isCatching", false);
@@ -71,16 +75,17 @@ public class PenguinController : MonoBehaviour
 
     }
 
-    public void Eat(){
+    public void Eat()
+    {
         anim.SetTrigger("Catch");
         Debug.Log(name + " nom!");
-        GetComponent<Rigidbody>().mass+=5;
+        GetComponent<Rigidbody>().mass += 5;
     }
 
     private void StartedDrag()
     {
         doll.ragdolled = true;
-        AkSoundEngine.PostEvent("PenguinSqueak",gameObject);
+        AkSoundEngine.PostEvent("PenguinSqueak", gameObject);
     }
 
 
@@ -92,7 +97,7 @@ public class PenguinController : MonoBehaviour
             doll.ragdolled = false;
             //PlaySound(squeak);
 
-            AkSoundEngine.PostEvent("PenguinSqueak",gameObject);
+            AkSoundEngine.PostEvent("PenguinSqueak", gameObject);
         }
         else
         {
@@ -112,10 +117,11 @@ public class PenguinController : MonoBehaviour
 
     private void OnTrigger(Collider other, GameObject obj)
     {
-        if(other.tag=="Water"){
+        if (other.tag == "Water")
+        {
             Debug.Log("ragdoll hit water");
             //make a splash?
-            GameObject splash = Instantiate(Resources.Load("Splash",typeof(GameObject)),obj.transform.position,Quaternion.identity) as GameObject;
+            GameObject splash = Instantiate(Resources.Load("Splash", typeof(GameObject)), obj.transform.position, Quaternion.identity) as GameObject;
         }
     }
 
@@ -130,7 +136,8 @@ public class PenguinController : MonoBehaviour
 
         }
         //make a splash?
-        if(other.tag=="Water"){
+        if (other.tag == "Water")
+        {
             Debug.Log(GetComponent<Rigidbody>().velocity);
         }
 
@@ -147,7 +154,7 @@ public class PenguinController : MonoBehaviour
                 if (!anim.GetBool("isSwimming"))
                 {
                     anim.SetBool("isSwimming", true);
-                    doll.ResetRagdoll();
+                    //doll.ResetRagdoll();
                     StartCoroutine(Swim());
                 }
 
@@ -167,31 +174,90 @@ public class PenguinController : MonoBehaviour
         if (other.tag == "Water")
         {
             anim.SetBool("isSwimming", false);
-            GetComponent<Rigidbody>().useGravity=true;
-            GetComponent<Rigidbody>().isKinematic=false;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().isKinematic = false;
             StopCoroutine(FindLand());
             StopAllCoroutines();
         }
     }
 
-    IEnumerator Swim(){
+    public void Escape()
+    {
+        isHiding = true;
+        if (!anim.GetBool("isSwimming"))
+        {
+            Debug.Log(name+ " escape!");
+            StartCoroutine(JumpInWater());
+
+        }
+    }
+
+    public void ReturnToLand(){
+        isHiding = false;
+        if(anim!=null){
+            
+                StartCoroutine(Swim());
+
+        }
+
+
+    }
+
+    IEnumerator JumpInWater()
+    {
+        yield return new WaitForSeconds(Random.value * 0.2f);
+        interactableObj.OnDragStart.Invoke();
+        interactableObj.locked = true;
+        interactableObj.selected = true;
+        interactableObj.isDragging = true;
+
+        Debug.Log(name + " attempting jump");
+        interactableObj.selected = true;
+        interactableObj.isDragging = true;
+        float timeout = 0.175f;
+        while (timeout > 0)
+        {
+            dragObj.DragTo(new Vector3(0,2f,1.3f));
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+
+        Debug.Log(name + " jumped");
+        interactableObj.locked = false;
+        interactableObj.selected = false;
+        interactableObj.isDragging = false;
+    }
+
+    IEnumerator Swim()
+    {
         //choose a random location to swim to and go to it before doing a come home
+
         GameObject water = GameObject.FindWithTag("Water");
         Bounds waterBounds = water.GetComponent<Collider>().bounds;
-        Vector3 pos = new Vector3(Random.Range(waterBounds.min.x, waterBounds.max.x),
+        Vector3 pos;
+        if (!isHiding)
+        {
+            pos = new Vector3(Random.Range(waterBounds.min.x, waterBounds.max.x),
                                   Random.Range(waterBounds.min.y, waterBounds.max.y),
                                   Random.Range(waterBounds.min.z, waterBounds.max.z));
+        }
+        else
+        {
+            pos = new Vector3(0, -0.5f, 0);
+        }
         pos *= 0.9f;
+
         Rigidbody rb = GetComponent<Rigidbody>();
         float timeout = 4;
-        while(timeout>0){
+        while (timeout > 0)
+        {
             rb.useGravity = false;
             Vector3 direction = pos - transform.position;
 
             Vector3 rot = Quaternion.LookRotation(direction, Vector3.up).eulerAngles;
             rot.x = 90;
 
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime*2);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime * 2);
             direction.y = 0;
             direction = direction.normalized;
             direction *= 8;
@@ -199,8 +265,9 @@ public class PenguinController : MonoBehaviour
             timeout -= Time.deltaTime;
             yield return null;
         }
+        if(!isHiding)
+            StartCoroutine(FindLand());
 
-        StartCoroutine(FindLand());
     }
 
     IEnumerator FindLand()
@@ -213,25 +280,30 @@ public class PenguinController : MonoBehaviour
         List<KeyValuePair<GameObject, float>> distances = new List<KeyValuePair<GameObject, float>>();
         foreach (GameObject g in gos)
         {
-            distances.Add(new KeyValuePair<GameObject, float>(g,Vector3.Distance(transform.position,g.transform.position)));
+            distances.Add(new KeyValuePair<GameObject, float>(g, Vector3.Distance(transform.position, g.transform.position)));
         }
         //actually select the 2nd closest one
         distances.Sort((a, b) => a.Value.CompareTo(b.Value));
-        if(distances[0].Value<0.25f){
+        if (distances[0].Value < 0.25f)
+        {
             closest = distances[1].Key;
-        } else {
+        }
+        else
+        {
             closest = distances[0].Key;
         }
 
-        if(myFloe!=null){
+        if (myFloe != null)
+        {
             closest = myFloe;
         }
 
         Rigidbody rb = GetComponent<Rigidbody>();
         Debug.Log(closest.name);
-        float distance = Vector3.Distance(new Vector3(transform.position.x,0,transform.position.z), new Vector3(closest.transform.position.x,0,closest.transform.position.z));
-        while(distance>1f){
-            
+        float distance = Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(closest.transform.position.x, 0, closest.transform.position.z));
+        while (distance > 1f)
+        {
+
             rb.useGravity = false;
             Vector3 direction = (closest.transform.position - transform.position);
 
@@ -255,7 +327,8 @@ public class PenguinController : MonoBehaviour
         Debug.Log("No longer swimming");
     }
 
-    IEnumerator JumpToLand(Vector3 position){
+    IEnumerator JumpToLand(Vector3 position)
+    {
         interactableObj.OnDragStart.Invoke();
         interactableObj.locked = true;
         interactableObj.selected = true;
@@ -265,7 +338,8 @@ public class PenguinController : MonoBehaviour
         interactableObj.selected = true;
         interactableObj.isDragging = true;
         float timeout = 0.65f;
-        while(timeout>0){
+        while (timeout > 0)
+        {
             dragObj.DragTo(position);
             timeout -= Time.deltaTime;
             yield return null;

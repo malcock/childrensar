@@ -3,10 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{9ECBAFB0-A607-4606-8C22-0F862E18F111}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Google Drive\Artfelt_AR_App\Sound\SFX\Characters\Character_Seagull"/>
 				<Property Name="Event Action List\{16876275-CCCC-4FFC-88F2-7F1014864BDA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F383972-F6ED-46B9-B94C-BBB7C70CF18B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{53E712C9-F819-4EFF-B686-DDF007BFD946}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{632A384E-7111-4541-9E72-00DC74119FCA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{70E28A3B-E2C5-4A02-BF25-8EC68DA2CB1E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{72C55520-70AF-4329-9B45-F955ED7E37D9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BE6E76D7-57B0-443C-B4F8-80E36EA113AC}\x64_Expand States" Type="string" Value=""/>
@@ -62,7 +64,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="55LO7PR5HEC/Z9Pe6scGt1iZTkBD75xEj01KBeqEapJQ492sdwwbRYsY6EeqPW/+rrlYxjpJk0a0/90uelOnkCWNa1MKK01IpC0346SGpakHFXB4/vC5SrHCeNL7FgFe58jYvT2+g0u1WsBN24l9lw=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="55LO7PR5HEC/Z9Pe6scGt1iZTkBD75xEj01KBeqEapJQ492sdwwbRYsY6EeqPW/+rrlYxjpJk0a0/90uelOnkCWNa1MKK01IpC0346SGpakHFXB4/vC5SrHCeNL7FgFe58jYvT2+g0u1WsBN24l9l/6LODGF+PdNla+RPXQgO9LIyElgQyifT4KVhs+U4rWT"/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="kQAAjQB7c0qV15WkWScVizsW6gJYwwRMlfCOp27D2TI="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="/Cvbo63si0OrBb+WqlEe4x7mqPR3Q1JGm/euOe5EIroHPENxuOE2SoS8wq90W4lp7Io/pCSgfE+ga4DWXxf2vQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>

@@ -8,6 +8,9 @@ public class Flickable : MonoBehaviour {
     private InteractableObject interactableObject;
     private DraggableObject draggableObject;
 
+    List<Vector2> lastPositions = new List<Vector2>();
+    public int flickTrackInterval = 10;
+
     public bool isActive = false;
 
     private Vector3 startPosition, endPosition;
@@ -22,15 +25,16 @@ public class Flickable : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if(isActive){
-            interactableObject.lastPos = new Vector2(Screen.width / 2, Screen.height / 2);
-
+            //interactableObject.lastPos = new Vector2(Screen.width / 2, Screen.height / 2);
+            lastPositions.Add(interactableObject.lastPos);
+            if (lastPositions.Count > flickTrackInterval) lastPositions.RemoveAt(0);
 
             if(Input.GetMouseButtonDown(0)){
-                startPosition = Input.mousePosition;
+                startPosition = lastPositions[0];
                 startTime = Time.time;
             }
             if(Input.GetMouseButtonUp(0)){
-                endPosition = Input.mousePosition;
+                endPosition = lastPositions[lastPositions.Count-1];
                 endTime = Time.time;
 
                 Debug.Log("start :" + startTime + " " + startPosition.ToString());
@@ -41,9 +45,9 @@ public class Flickable : MonoBehaviour {
 
 
 
-                float power = (endTime - startTime);
+                float power = Vector2.Distance(startPosition,endPosition);
 
-                Vector3 forceVector = (endRay.GetPoint(power) - startRay.GetPoint(0f))*10;
+                Vector3 forceVector = (endRay.GetPoint(power) - startRay.GetPoint(0f));
 
                 Debug.Log("force :" + forceVector.ToString());
 
@@ -63,13 +67,23 @@ public class Flickable : MonoBehaviour {
 	}
 
     IEnumerator Throw(Vector3 direction){
-        for (int t = 0; t < 10;t++){
-            if(draggableObject.isRagdoll){
+        interactableObject.OnDragStart.Invoke();
+        interactableObject.locked = true;
+        interactableObject.selected = true;
+        interactableObject.isDragging = true;
+
+        float timeout = 0.25f;
+        while(timeout>0){
+            if (draggableObject.isRagdoll)
+            {
                 draggableObject.DragTo(direction);
 
             }
+            Debug.Log("dragging to " + direction);
+            timeout -= Time.deltaTime;
             yield return null;
-        }   
+        }
+
 
         isActive = false;
         interactableObject.locked = false;
