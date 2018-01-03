@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	41979954	InteractPenguinDrop			\Polar\InteractPenguinDrop	
+	453755285	AlpineMusic			\Alpine\AlpineMusic	
 	513789297	SeagullVocal			\Polar\SeagullVocal	
 	566451541	InteractWaterSplash			\Default Work Unit\InteractWaterSplash	
 	777507535	WaterSplash			\Polar\WaterSplash	
@@ -85,6 +86,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	409497783	sfx_interaction_splash_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_splash_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_SmallMed\sfx_interaction_splash_02		260876
 	415002928	sfx_water_splash_med_01	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Med\sfx_water_splash_med_01		196874
 	417381702	Polar_ambient_main_loop_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Polar_ambient_main_loop_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Ambience\amb_polar_main\Polar_ambient_main_loop_02		17704
+	436268258	HospitalVR_ForestMusic_ FullMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\AlpineMusic\HospitalVR_ForestMusic_ FullMix_v1\HospitalVR_ForestMusic_ FullMix_v1		15876224
 	439643296	sfx_swim_fast_loop	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Polar\Characters\Character_Penguin\Penguin_Swim\sfx_swim_fast_loop		470944
 	443041719	sfx_interaction_penguin_pickup_05	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_penguin_pickup_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Characters\Character_Penguin\Interact_Penguin_Pickup\sfx_interaction_penguin_pickup_05		50816
 	455973186	sfx_penguin_footsteps_04	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Characters\Character_Penguin\Penguin_Footsteps\sfx_penguin_footsteps_04		5366
@@ -150,6 +152,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1072808373	sfx_seagulls_fly_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Seagull\sfx_seagulls_fly_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\Characters\Character_Seagull\Seagull_fly\sfx_seagulls_fly_03		96932
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	68176651	HospitalVR_ForestMusic_ SoftMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\HospitalVR_ForestMusic_ SoftMix_v1_F17FB28C.wem	68176651.wem	\Interactive Music Hierarchy\Default Work Unit\AlpineMusic\HospitalVR_ForestMusic_ SoftMix_v1\HospitalVR_ForestMusic_ SoftMix_v1	
 	178930447	Polar_ambient_main_loop_extra_layer_01	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Polar_ambient_main_loop_extra_layer_01_F17FB28C.wem	178930447.wem	\Actor-Mixer Hierarchy\Polar\Ambience\amb_polar_main\Polar_ambient_main_loop_extra_layer_01	
 	286615707	Polar_ambient_main_loop_extra_layer_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Polar_ambient_main_loop_extra_layer_03_F17FB28C.wem	286615707.wem	\Actor-Mixer Hierarchy\Polar\Ambience\amb_polar_main\Polar_ambient_main_loop_extra_layer_03	
 	366980405	Polar_ambient_main_loop_extra_layer_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Polar_ambient_main_loop_extra_layer_02_F17FB28C.wem	366980405.wem	\Actor-Mixer Hierarchy\Polar\Ambience\amb_polar_main\Polar_ambient_main_loop_extra_layer_02	

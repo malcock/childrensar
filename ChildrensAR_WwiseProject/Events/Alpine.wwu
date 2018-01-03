@@ -157,6 +157,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AlpineMusic" ID="{BEE41E65-1B6B-426C-9F48-B40BB02DF0CC}">
+					<ChildrenList>
+						<Action Name="" ID="{9806A79C-70AA-4660-83DE-D0CF764946F8}" ShortID="995353482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlpineMusic" ID="{1840E1D9-8037-4451-8EF4-E42C026FE038}" WorkUnitID="{497C7563-ED91-4F00-909A-078983F3DEA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
