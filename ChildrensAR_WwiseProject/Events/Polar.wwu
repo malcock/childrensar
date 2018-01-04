@@ -227,20 +227,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="BirdPoop" ID="{70E28A3B-E2C5-4A02-BF25-8EC68DA2CB1E}">
-					<ChildrenList>
-						<Action Name="" ID="{520351A5-234A-4AA7-ACC2-5FD7F38A966E}" ShortID="516509018">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Bird_Poop" ID="{1263220B-C075-4106-8CBF-0D01724ECC7A}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

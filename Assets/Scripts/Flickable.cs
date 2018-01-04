@@ -9,6 +9,7 @@ public class Flickable : MonoBehaviour {
     private DraggableObject draggableObject;
 
     List<Vector2> lastPositions = new List<Vector2>();
+    List<float> lastTime = new List<float>();
     public int flickTrackInterval = 10;
 
     public bool isActive = false;
@@ -23,22 +24,27 @@ public class Flickable : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
         if(isActive){
             //interactableObject.lastPos = new Vector2(Screen.width / 2, Screen.height / 2);
             lastPositions.Add(interactableObject.lastPos);
-            if (lastPositions.Count > flickTrackInterval) lastPositions.RemoveAt(0);
+            lastTime.Add(Time.time);
+            if (lastPositions.Count > flickTrackInterval)
+            {
+                lastPositions.RemoveAt(0);
+                lastTime.RemoveAt(0);
+            }
 
-            if(Input.GetMouseButtonDown(0)){
+            if(Input.GetMouseButton(0)){
                 startPosition = lastPositions[0];
-                startTime = Time.time;
+                startTime = lastTime[0];
             }
             if(Input.GetMouseButtonUp(0)){
                 endPosition = lastPositions[lastPositions.Count-1];
-                endTime = Time.time;
+                endTime = lastTime[lastTime.Count-1];
 
-                Debug.Log("start :" + startTime + " " + startPosition.ToString());
-                Debug.Log("end :" + endTime + " " + endPosition.ToString());
+                Debug.Log(name + " start :" + startTime + " " + startPosition.ToString());
+                Debug.Log(name + "end :" + endTime + " " + endPosition.ToString());
                 //need to project 2 rays different distances away
                 Ray startRay = Camera.main.ScreenPointToRay(startPosition);
                 Ray endRay = Camera.main.ScreenPointToRay(endPosition);
@@ -49,15 +55,43 @@ public class Flickable : MonoBehaviour {
 
                 Vector3 forceVector = (endRay.GetPoint(power) - startRay.GetPoint(0f));
 
-                Debug.Log("force :" + forceVector.ToString());
+                Debug.DrawLine(startPosition, startRay.GetPoint(0), Color.green, 5f);
+                Debug.DrawLine(endPosition, endRay.GetPoint(power), Color.red, 5f);
+                Debug.DrawLine(startPosition,endRay.GetPoint(power),Color.blue,5f);
+
+                Debug.Log(name + "power:" + power + "force :" + forceVector.ToString());
 
                 if(draggableObject.isRagdoll){
                     //draggableObject.DragController.GetComponent<Rigidbody>().AddForce(forceVector, ForceMode.Impulse);
-                    StartCoroutine(Throw(forceVector));
+                    draggableObject.Throw(forceVector,0.25f);
+                    //StartCoroutine(Throw(forceVector));
                 } else {
                     //draggableObject.DragController.transform
                 }
 
+                ////ok forget all that for now...
+                //startPosition = lastPositions[0];
+                //startTime = lastTime[0];
+                //endPosition = lastPositions[lastPositions.Count - 1];
+                //endTime = lastTime[lastTime.Count - 1];
+
+                //float distance = Vector2.Distance(startPosition, endPosition);
+
+                ////distance over time = speed
+                //    float speed = distance/ (endTime - startTime);
+
+                ////make a ray from the end position into the distance
+                //Ray endingRay  = Camera.main.ScreenPointToRay(endPosition);
+
+                ////make a ray from the start position to the end....
+                //Ray direction = new Ray(startPosition, endingRay.GetPoint(distance));
+
+                //Vector3 targetPosition = direction.GetPoint(speed);
+
+                //Debug.Log(name + " targetPosition:" + targetPosition.ToString());
+
+                //draggableObject.Throw(direction.GetPoint(speed),0.25f);
+                isActive = false;
 
 
 
@@ -79,7 +113,8 @@ public class Flickable : MonoBehaviour {
                 draggableObject.DragTo(direction);
 
             }
-            Debug.Log("dragging to " + direction);
+
+            //Debug.Log(name + "dragging to " + direction);
             timeout -= Time.deltaTime;
             yield return null;
         }

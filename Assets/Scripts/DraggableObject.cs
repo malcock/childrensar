@@ -25,7 +25,7 @@ public class DraggableObject : MonoBehaviour
 
     private InteractableObject interactableObj;
 
-
+    IEnumerator throwHandler;
     private float magnitude;
 
     void Awake()
@@ -190,5 +190,33 @@ public class DraggableObject : MonoBehaviour
 
     }
 
+    public void Throw(Vector3 direction, float throwTime){
+        if (throwHandler != null) StopCoroutine(throwHandler);
+        throwHandler = DoThrow(direction, throwTime);
+        StartCoroutine(throwHandler);
+    }
+
+    IEnumerator DoThrow(Vector3 direction,float throwTime)
+    {
+        Debug.Log(name + " throw for " + throwTime);
+        interactableObj.OnDragStart.Invoke();
+        interactableObj.locked = true;
+        interactableObj.selected = true;
+        interactableObj.isDragging = true;
+
+        float timeout = throwTime;
+        while (timeout > 0)
+        {
+            DragTo(direction);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+
+        Debug.Log(name + " thrown");
+        interactableObj.locked = false;
+        interactableObj.selected = false;
+        interactableObj.isDragging = false;
+        interactableObj.OnDragEnd.Invoke();
+    }
 
 }
