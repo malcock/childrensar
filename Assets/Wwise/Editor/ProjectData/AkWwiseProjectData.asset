@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePsrt1: -1761951277
-    m_lastTimePart2: -1999288179
+    m_lastTimePsrt1: 730417806
+    m_lastTimePart2: -1999285372
     List:
+    - Name: AlpineMusic
+      Path: Alpine\AlpineMusic
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: AlpineMusic
+        ObjectType: 3
+      ID: 453755285
+      Guid: 651ee4be6b1b6c429f48b40bb02df0cc
+      maxAttenuation: 0
     - Name: AmbientAlpine
       Path: Alpine\AmbientAlpine
       PathAndIcons:
@@ -335,8 +345,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
-    m_lastTimePsrt1: 343553162
-    m_lastTimePart2: -1999288177
+    m_lastTimePsrt1: -749049737
+    m_lastTimePart2: -1999285382
     List:
     - Name: Reverb
       Path: Default Work Unit\Master Audio Bus\SFX\Reverb
@@ -494,8 +504,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
-    m_lastTimePsrt1: 1977279763
-    m_lastTimePart2: -1999288186
+    m_lastTimePsrt1: 1416822287
+    m_lastTimePart2: -1999285372
     List:
     - Name: Alpine
       Path: Default Work Unit\Alpine

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C72D401E-19C2-4FBF-9285-045D286735A0}" SchemaVersion="80">
+	<InteractiveMusic>
+		<WorkUnit Name="Polar" ID="{C72D401E-19C2-4FBF-9285-045D286735A0}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="PolarMusic" ID="{69EC62EB-2B71-4AAF-B81C-7780CF63AF01}" ShortID="101034124">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" ShortID="705447405">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" ShortID="405210894">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="186000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" ShortID="776561418">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{D9EAD09B-F811-462E-9042-C196DFF39F8C}" ShortID="316728790">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{11D399FF-882A-4C39-AF2A-86E7FA5FDC82}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{28E01E82-E1E4-4828-8B2D-B76F7A0AF2FE}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{7D2956FE-0986-45F2-AF0A-AA9A86C63B3A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{D9EAD09B-F811-462E-9042-C196DFF39F8C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" ShortID="823304045">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{A20194EA-4D37-47A2-BD1E-4FBF8CE91546}" ShortID="689288195">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{390AECA3-0B59-4089-97E8-9F784332BACD}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{EF05AA98-5601-4DD8-9ECC-A1890F8DFB3C}" ShortID="437612142">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{648DAB6E-38A4-4606-8BB4-E67EA5E59A5B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F9A34183-70BF-47CD-85CA-ECCE76763741}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{9EAB35C2-5093-45C9-B419-7EDF74302B03}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{EF05AA98-5601-4DD8-9ECC-A1890F8DFB3C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" ShortID="603351106">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{2B2EFEA5-D55D-48E8-A81B-CDD9B6732FB1}" ShortID="298211297">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{3BC1E20F-3F0C-4A4C-A21B-7A176EFA2DA2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{840EAC44-E316-4F45-B983-3C6ED77FEEEC}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{E8826C7E-8E7B-428D-98F1-9E4E6BF119E4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{2B2EFEA5-D55D-48E8-A81B-CDD9B6732FB1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{3D77550A-71C5-4FA3-B725-A320A45C80C2}"/>
+										<MusicCue Name="Exit Cue" ID="{883BC5FF-E9B6-4277-BD2D-E96AFF759A92}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="186000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{896D5055-1E9E-45F3-9875-A2DDCA149031}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{5500F4BB-B3B9-4D67-98CB-EB74C57AE8AB}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{997C5BE0-3F1E-4B3E-AAD5-27D2D575F313}" ShortID="74875393">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9C0C2E16-A0C4-4A2F-8596-BD4473969D2B}" ShortID="462370267">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="PolarMusic2" ID="{E0314C43-9E9F-476B-BA63-39D8848FC2D8}" ShortID="237162277">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}" ShortID="494058516">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="218000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{94EB2983-2D1F-47B4-AB3B-00C1F9E43478}" ShortID="976537628">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{4CEF9FF2-0C49-4A64-9CFF-650FB1C863CF}" ShortID="464720112">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{737ED535-F2CC-4A8C-8328-52929670DF05}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EC46190D-A65D-445F-96BD-A0F6D11C8145}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{102579AC-3F12-46F6-8FDC-7A8F69BE7F85}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{4CEF9FF2-0C49-4A64-9CFF-650FB1C863CF}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{0B92F85A-A614-4AA0-8D0F-BA08587F1D11}" ShortID="445200551">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{A9F07290-FBCF-4EFD-A231-96096A1830A9}" ShortID="907428159">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{6E65BE2E-857C-433E-8E2D-EBD2533CEB78}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{DC608F45-D24E-4445-9377-50F41EBA636A}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{3F41B3E9-62C8-4FB9-826E-BEC1E5AA783C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{A9F07290-FBCF-4EFD-A231-96096A1830A9}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{1A5DD140-5C19-4E40-9815-8724408C6B76}" ShortID="86488579">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{9FA91776-96D8-40D4-B0DC-EA107512C620}" ShortID="662414403">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{42CA18C3-16D0-4299-A9B5-AB161A05A595}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{03AE2F45-FB69-4AE7-86F6-8F424B80AB63}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{C2827116-F9CF-4FFC-9093-70CB38DD3882}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{9FA91776-96D8-40D4-B0DC-EA107512C620}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{A357E42E-C447-4830-A356-56B7C22D38F8}"/>
+										<MusicCue Name="Exit Cue" ID="{8C1E6768-C423-46D0-9552-DBCCDDD75DD7}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="218000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{066D345E-6980-4DF6-BBE6-C74C84F6F4BE}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{16B9A140-C8CB-4918-A795-9021F5773C6B}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{8D8DBB86-C7C1-42C8-82DD-A82440599566}" ShortID="344506507"/>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="PolarMusic3" ID="{8FBAAF54-E67F-41A4-8AD4-A5D91E08745A}" ShortID="586276573">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" ShortID="429195503">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="214000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{819CDB1B-2753-4AFB-BFEA-34ECFED48A8E}" ShortID="900934638">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{D1B12610-B592-498C-8571-B5F60B59E922}" ShortID="286460554">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A389D5FA-B4C6-46C2-A091-0A122C7D21A2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{B37EC8EF-D8AA-4E03-A136-D940CE3795A9}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{E19DB173-53A8-499B-83A6-1BF65ED2FB69}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{D1B12610-B592-498C-8571-B5F60B59E922}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" ShortID="913582512">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{43CC5373-8BD2-4D97-9B44-2B931019339C}" ShortID="373173106">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4200A5AD-2C1F-4649-AD34-9EC35EE6E219}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{240959D8-6921-4DA2-ACEF-1F670592AF09}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{7DAC36F2-F945-4132-83D2-ABA91ADE574D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{43CC5373-8BD2-4D97-9B44-2B931019339C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" ShortID="841042573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{97ACC8F9-8998-416A-8AF9-12E1906E5FFD}" ShortID="834454837">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AE30F5D3-4AC1-43C1-8FBB-CD7057B20AA6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{819B6CAA-89F3-4A72-A24C-0A63F622BF06}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{FB3D8A46-260F-477E-84F3-3E3F1A4BE0FE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{97ACC8F9-8998-416A-8AF9-12E1906E5FFD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{D34C6063-744C-4840-B911-EAC880B2D526}"/>
+										<MusicCue Name="Exit Cue" ID="{3297F8FA-6382-4488-A7E0-194EC6BC4735}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="214000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{C3EAB67B-27C4-424F-99D6-B4EBB725CCC2}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{FD0CE180-5D26-46F9-8582-D34203D5850E}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{AAAA9083-6D68-486A-947D-40E3F0CCCD1D}" ShortID="304253845"/>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{2E04EEEB-170B-4C01-B56A-73B94E7D78FA}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{6E64F591-8776-42D1-AE5B-DA2C23CF33BF}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

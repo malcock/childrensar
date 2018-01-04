@@ -165,7 +165,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AlpineMusic" ID="{1840E1D9-8037-4451-8EF4-E42C026FE038}" WorkUnitID="{497C7563-ED91-4F00-909A-078983F3DEA5}"/>
+									<ObjectRef Name="AlpineMusic" ID="{1840E1D9-8037-4451-8EF4-E42C026FE038}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

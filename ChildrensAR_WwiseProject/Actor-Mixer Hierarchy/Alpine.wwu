@@ -1202,6 +1202,59 @@
 											<ValueList>
 												<Value>-13</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{558DCA44-0944-4710-90CD-78F2B30A6858}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{67F9B6C9-2E04-47D7-A3A8-0D086A373C50}" ShortID="72309330">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom CreatedFrom="{050AFBB6-4C58-4860-8365-8DD5C148B66A}">
+																<ModulatorLfo Name="ForestFrogLoop (Custom)" ID="{6EEED07B-F806-4963-A834-902D8EAB79C3}" ShortID="655652669">
+																	<PropertyList>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.06">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{D66B615E-1362-4B4A-8D89-DB7E9E8E54E1}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="0.4"/>
+																							<Property Name="Min" Type="Real64" Value="-0.06"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{05BEBFDA-3801-4AF7-A81B-0D508796E405}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>

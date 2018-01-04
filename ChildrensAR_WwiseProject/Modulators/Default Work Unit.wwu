@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}" SchemaVersion="80">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="ForestFrogLoop" ID="{050AFBB6-4C58-4860-8365-8DD5C148B66A}" ShortID="471058738">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="3.34"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" ShortID="940369406">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="94.7"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.36">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D1744F22-404C-4609-8E3A-FEC7B535715B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.3"/>
+											<Property Name="Min" Type="Real64" Value="-0.3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>
