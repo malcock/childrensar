@@ -30,23 +30,26 @@ public class DraggableObject : MonoBehaviour
 
     void Awake()
     {
+        if(!DragController)
+            {
 
-        DragController = new GameObject("dragController");
+            }
+                DragController = new GameObject("dragController");
 
-        //DragController = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        //DragController.transform.localScale = Vector3.one * 0.1f;
-        //DragController.name = "dragController";
-        //DragController.GetComponent<Collider>().enabled = false;
+                //DragController = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                //DragController.transform.localScale = Vector3.one * 0.1f;
+                //DragController.name = "dragController";
+                //DragController.GetComponent<Collider>().enabled = false;
 
-        DragController.transform.parent = transform;
-        joint = DragController.AddComponent<HingeJoint>();
-        //joint.spring = 5000;
-        //joint.damper = 100;
-        joint.axis = Vector3.one;
-        rb = DragController.GetComponent<Rigidbody>();
-        rb.mass = 5;
-        //rb.isKinematic = true;
-        rb.useGravity = false;
+                DragController.transform.parent = transform;
+                joint = DragController.AddComponent<HingeJoint>();
+                //joint.spring = 5000;
+                //joint.damper = 100;
+                joint.axis = Vector3.one;
+                rb = DragController.GetComponent<Rigidbody>();
+                rb.mass = 5;
+                //rb.isKinematic = true;
+                rb.useGravity = false;
 
 
 
