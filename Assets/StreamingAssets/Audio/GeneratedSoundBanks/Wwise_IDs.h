@@ -46,6 +46,21 @@ namespace AK
         static const AkUniqueID WHALESWIM = 1540104444U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace OCTOPUSMINIGAME
+        {
+            static const AkUniqueID GROUP = 610585235U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace OCTOPUSMINIGAME
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace BEARAPPEARDISAPPEAR
@@ -94,6 +109,15 @@ namespace AK
             } // namespace SWITCH
         } // namespace PENGUINSWIM
 
+        namespace POLARMUSICSWITCH
+        {
+            static const AkUniqueID GROUP = 631772696U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace POLARMUSICSWITCH
+
         namespace WATERSPLASH
         {
             static const AkUniqueID GROUP = 777507535U;
@@ -109,6 +133,11 @@ namespace AK
         } // namespace WATERSPLASH
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PENGUINSIZE = 145924928U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

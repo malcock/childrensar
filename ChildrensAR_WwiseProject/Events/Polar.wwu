@@ -53,7 +53,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PolarMusic" ID="{4C7CB0C3-70E2-4D7F-84E2-73BCE4B3CF16}" WorkUnitID="{497C7563-ED91-4F00-909A-078983F3DEA5}"/>
+									<ObjectRef Name="PolarMusic" ID="{69EC62EB-2B71-4AAF-B81C-7780CF63AF01}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

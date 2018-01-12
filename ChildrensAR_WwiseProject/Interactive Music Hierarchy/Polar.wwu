@@ -14,6 +14,36 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicPlaylistContainer Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" ShortID="705447405">
+							<PropertyList>
+								<Property Name="PlaybackSpeed" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{F4BDA48E-2504-4997-B3BE-98F768089EEA}" ShortID="455501462">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{DED977B0-B0FA-459A-AE4C-FD9A360E6834}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>1</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -37,6 +67,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" ShortID="776561418">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -73,6 +115,16 @@
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" ShortID="823304045">
 											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<RTPCList>
 														<RTPC Name="" ID="{A20194EA-4D37-47A2-BD1E-4FBF8CE91546}" ShortID="689288195">
@@ -141,6 +193,16 @@
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" ShortID="603351106">
 											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -195,43 +257,6 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{896D5055-1E9E-45F3-9875-A2DDCA149031}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{5500F4BB-B3B9-4D67-98CB-EB74C57AE8AB}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{997C5BE0-3F1E-4B3E-AAD5-27D2D575F313}" ShortID="74875393">
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{9C0C2E16-A0C4-4A2F-8596-BD4473969D2B}" ShortID="462370267">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="PolarMusic2" ID="{E0314C43-9E9F-476B-BA63-39D8848FC2D8}" ShortID="237162277">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
 								<MusicSegment Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}" ShortID="494058516">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="218000"/>
@@ -246,6 +271,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{94EB2983-2D1F-47B4-AB3B-00C1F9E43478}" ShortID="976537628">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -281,6 +318,18 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{0B92F85A-A614-4AA0-8D0F-BA08587F1D11}" ShortID="445200551">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -319,6 +368,18 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{1A5DD140-5C19-4E40-9815-8724408C6B76}" ShortID="86488579">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -367,34 +428,6 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{066D345E-6980-4DF6-BBE6-C74C84F6F4BE}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{16B9A140-C8CB-4918-A795-9021F5773C6B}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{8D8DBB86-C7C1-42C8-82DD-A82440599566}" ShortID="344506507"/>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="PolarMusic3" ID="{8FBAAF54-E67F-41A4-8AD4-A5D91E08745A}" ShortID="586276573">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
 								<MusicSegment Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" ShortID="429195503">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="214000"/>
@@ -410,6 +443,16 @@
 									<ChildrenList>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{819CDB1B-2753-4AFB-BFEA-34ECFED48A8E}" ShortID="900934638">
 											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-8</Value>
@@ -451,6 +494,18 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" ShortID="913582512">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -489,6 +544,18 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" ShortID="841042573">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -539,12 +606,12 @@
 								</MusicSegment>
 							</ChildrenList>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{C3EAB67B-27C4-424F-99D6-B4EBB725CCC2}">
+								<MusicTransition Name="Root" ID="{896D5055-1E9E-45F3-9875-A2DDCA149031}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{FD0CE180-5D26-46F9-8582-D34203D5850E}">
+										<MusicTransition Name="Transition" ID="{5500F4BB-B3B9-4D67-98CB-EB74C57AE8AB}">
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -552,7 +619,31 @@
 								</MusicTransition>
 							</TransitionList>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{AAAA9083-6D68-486A-947D-40E3F0CCCD1D}" ShortID="304253845"/>
+								<MusicPlaylistItem Name="" ID="{997C5BE0-3F1E-4B3E-AAD5-27D2D575F313}" ShortID="74875393">
+									<PropertyList>
+										<Property Name="PlayMode" Type="int16" Value="3"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9C0C2E16-A0C4-4A2F-8596-BD4473969D2B}" ShortID="462370267">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{113B98C1-D9BE-4566-88BD-D7EABFABD66E}" ShortID="770667920">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{97CF6593-25F6-4F3A-9D66-C5FCD34A6373}" ShortID="474216560">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
@@ -569,6 +660,19 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>

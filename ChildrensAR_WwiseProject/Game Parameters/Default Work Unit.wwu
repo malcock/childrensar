@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}" SchemaVersion="80">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

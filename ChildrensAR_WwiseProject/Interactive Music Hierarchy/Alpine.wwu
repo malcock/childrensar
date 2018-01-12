@@ -27,6 +27,18 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{BA7103E7-9D6E-4E05-98E8-661599F755AA}" ShortID="715317621">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -149,6 +161,11 @@
 								<MusicTrack Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{77157532-ED75-4AE0-93CA-4CF75B6F1DE7}" ShortID="220457175">
 									<PropertyList>
 										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>

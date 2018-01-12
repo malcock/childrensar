@@ -17,29 +17,69 @@
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_01.wav</ShortName>
 			<Path>SFX\Ambience\Polar_ambient_main_loop_extra_layer_01_F17FB28C.wem</Path>
 		</File>
+		<File Id="286460554" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPad_F17FB28C.wem</Path>
+		</File>
 		<File Id="286615707" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
 			<Path>SFX\Ambience\Polar_ambient_main_loop_extra_layer_03_F17FB28C.wem</Path>
+		</File>
+		<File Id="298211297" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPiano_F17FB28C.wem</Path>
+		</File>
+		<File Id="316728790" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPad_F17FB28C.wem</Path>
 		</File>
 		<File Id="366980405" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
 			<Path>SFX\Ambience\Polar_ambient_main_loop_extra_layer_02_F17FB28C.wem</Path>
 		</File>
+		<File Id="373173106" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPlink_F17FB28C.wem</Path>
+		</File>
 		<File Id="417381702" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_02.wav</ShortName>
 			<Path>SFX\Ambience\Polar_ambient_main_loop_02_1C9C67B2.wem</Path>
+		</File>
+		<File Id="436268258" Language="SFX">
+			<ShortName>HospitalVR_ForestMusic_ FullMix_v1.wav</ShortName>
+			<Path>SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem</Path>
+		</File>
+		<File Id="437612142" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPlinks_F17FB28C.wem</Path>
+		</File>
+		<File Id="464720112" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPad_F17FB28C.wem</Path>
 		</File>
 		<File Id="554695072" Language="SFX">
 			<ShortName>Polar_ambient_music_V2.wav</ShortName>
 			<Path>SFX\Polar_ambient_music_V2_F17FB28C.wem</Path>
 		</File>
+		<File Id="662414403" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPiano_F17FB28C.wem</Path>
+		</File>
 		<File Id="759797766" Language="SFX">
 			<ShortName>Ambience\Forest_ambient_main_loop_extra_layer_02.wav</ShortName>
 			<Path>SFX\Ambience\Forest_ambient_main_loop_extra_layer_02_F17FB28C.wem</Path>
 		</File>
+		<File Id="834454837" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPiano_F17FB28C.wem</Path>
+		</File>
 		<File Id="874980017" Language="SFX">
 			<ShortName>Ambience\Forest_ambient_main_loop_extra_layer_01.wav</ShortName>
 			<Path>SFX\Ambience\Forest_ambient_main_loop_extra_layer_01_F17FB28C.wem</Path>
+		</File>
+		<File Id="907428159" Language="SFX">
+			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</ShortName>
+			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPlink_F17FB28C.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -77,10 +117,19 @@
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="178930447"/>
+				<File Id="286460554"/>
 				<File Id="286615707"/>
+				<File Id="298211297"/>
+				<File Id="316728790"/>
 				<File Id="366980405"/>
+				<File Id="373173106"/>
 				<File Id="417381702"/>
+				<File Id="437612142"/>
+				<File Id="464720112"/>
 				<File Id="554695072"/>
+				<File Id="662414403"/>
+				<File Id="834454837"/>
+				<File Id="907428159"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="4410803" Language="SFX">
@@ -164,6 +213,11 @@
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_03.wav</ShortName>
 					<Path>SFX\PhysicsInteraction\sfx_interaction_penguin_pickup_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="286460554" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPad_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
+				</File>
 				<File Id="286615707" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
 					<Path>SFX\Ambience\Polar_ambient_main_loop_extra_layer_03_F17FB28C.wem</Path>
@@ -177,6 +231,11 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4.wav</ShortName>
 					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4_1C9C67B2.wem</Path>
 				</File>
+				<File Id="298211297" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPiano_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
+				</File>
 				<File Id="307823111" Language="SFX">
 					<ShortName>Characters\Characters_Penguin\sfx_penguin_vocal_04.wav</ShortName>
 					<Path>SFX\Characters\Characters_Penguin\sfx_penguin_vocal_04_1C9C67B2.wem</Path>
@@ -184,6 +243,11 @@
 				<File Id="314412579" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2.wav</ShortName>
 					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="316728790" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPad_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
 				</File>
 				<File Id="337655275" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_05.wav</ShortName>
@@ -197,6 +261,11 @@
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
 					<Path>SFX\Ambience\Polar_ambient_main_loop_extra_layer_02_F17FB28C.wem</Path>
 					<PrefetchSize>17704</PrefetchSize>
+				</File>
+				<File Id="373173106" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPlink_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
 				</File>
 				<File Id="374899264" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05.wav</ShortName>
@@ -223,6 +292,11 @@
 					<Path>SFX\Ambience\Polar_ambient_main_loop_02_1C9C67B2.wem</Path>
 					<PrefetchSize>17704</PrefetchSize>
 				</File>
+				<File Id="437612142" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPlinks_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
+				</File>
 				<File Id="439643296" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop.wav</ShortName>
 					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop_F17FB28C.wem</Path>
@@ -234,6 +308,11 @@
 				<File Id="455973186" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04.wav</ShortName>
 					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="464720112" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPad_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
 				</File>
 				<File Id="496957545" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_01.wav</ShortName>
@@ -308,6 +387,11 @@
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_02.wav</ShortName>
 					<Path>SFX\Characters\Character_Crab\sfx_crab_movement_02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="662414403" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPiano_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
+				</File>
 				<File Id="666609068" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_01.wav</ShortName>
 					<Path>SFX\Ambience\Polar_ambient_BG_oneshot_01_1C9C67B2.wem</Path>
@@ -380,6 +464,11 @@
 					<ShortName>Characters\Character_Seagull\sfx_bird_poop_01.wav</ShortName>
 					<Path>SFX\Characters\Character_Seagull\sfx_bird_poop_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="834454837" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPiano_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
+				</File>
 				<File Id="836911734" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_05.wav</ShortName>
 					<Path>SFX\PhysicsInteraction\sfx_interaction_fish_pickup_05_1C9C67B2.wem</Path>
@@ -427,6 +516,11 @@
 				<File Id="906400109" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_06.wav</ShortName>
 					<Path>SFX\Ambience\Polar_ambient_BG_oneshot_06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="907428159" Language="SFX">
+					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</ShortName>
+					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPlink_F17FB28C.wem</Path>
+					<PrefetchSize>17816</PrefetchSize>
 				</File>
 				<File Id="950960219" Language="SFX">
 					<ShortName>Characters\Character_Octopus\sfx_octopus_movement_disappear.wav</ShortName>
@@ -498,12 +592,12 @@
 				<Event Id="3615308082" Name="OtterMovement" ObjectPath="\Events\Alpine\OtterMovement" MaxAttenuation="100.000000"/>
 				<Event Id="3510304056" Name="OtterVocal" ObjectPath="\Events\Alpine\OtterVocal" MaxAttenuation="100.000000"/>
 				<Event Id="2594679953" Name="PenguinSqueak" ObjectPath="\Events\Alpine\PenguinSqueak" MaxAttenuation="100.000000"/>
-				<Event Id="3060268180" Name="PolarMusic" ObjectPath="\Events\Polar\PolarMusic"/>
 				<Event Id="3536762137" Name="SalmonScare" ObjectPath="\Events\Alpine\SalmonScare" MaxAttenuation="100.000000"/>
 				<Event Id="777507535" Name="WaterSplash" ObjectPath="\Events\Polar\WaterSplash" MaxAttenuation="100.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="68176651"/>
+				<File Id="436268258"/>
 				<File Id="554695072"/>
 				<File Id="759797766"/>
 				<File Id="874980017"/>
@@ -524,6 +618,11 @@
 				<File Id="62713228" Language="SFX">
 					<ShortName>Characters\Character_Otter\sfx_otter_vocal_03.wav</ShortName>
 					<Path>SFX\Characters\Character_Otter\sfx_otter_vocal_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="68176651" Language="SFX">
+					<ShortName>HospitalVR_ForestMusic_ SoftMix_v1.wav</ShortName>
+					<Path>SFX\HospitalVR_ForestMusic_ SoftMix_v1_F17FB28C.wem</Path>
+					<PrefetchSize>17864</PrefetchSize>
 				</File>
 				<File Id="91289404" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_06.wav</ShortName>
@@ -628,6 +727,7 @@
 				<File Id="436268258" Language="SFX">
 					<ShortName>HospitalVR_ForestMusic_ FullMix_v1.wav</ShortName>
 					<Path>SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem</Path>
+					<PrefetchSize>17864</PrefetchSize>
 				</File>
 				<File Id="456718688" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_04.wav</ShortName>

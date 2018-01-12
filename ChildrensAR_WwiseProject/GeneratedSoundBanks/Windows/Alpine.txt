@@ -9,7 +9,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1662606220	CrabMovement			\Polar\CrabMovement	
 	2594679953	PenguinSqueak			\Alpine\PenguinSqueak	
 	2920868259	InteractFishPickupLoop			\Default Work Unit\InteractFishPickupLoop	
-	3060268180	PolarMusic			\Polar\PolarMusic	
 	3180804649	DuckFly			\Alpine\DuckFly	
 	3182212785	DuckVocal			\Alpine\DuckVocal	
 	3337376526	AmbientAlpine			\Alpine\AmbientAlpine	
@@ -51,6 +50,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16739552	sfx_salmon_scare_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Salmon\sfx_salmon_scare_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_03		510752
 	46598994	sfx_otter_vocal_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Otter\sfx_otter_vocal_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_vocal\sfx_otter_vocal_02		177908
 	62713228	sfx_otter_vocal_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Otter\sfx_otter_vocal_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_vocal\sfx_otter_vocal_03		384264
+	68176651	HospitalVR_ForestMusic_ SoftMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\HospitalVR_ForestMusic_ SoftMix_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\HospitalVR_ForestMusic_ SoftMix_v1\HospitalVR_ForestMusic_ SoftMix_v1		17864
 	91289404	Forest_ambient_tree_rustle_oneshot_06	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Forest_ambient_tree_rustle_oneshot_06_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_rustle_oneshot\Forest_ambient_tree_rustle_oneshot_06		562554
 	96214270	sfx_water_splash_soft_05	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_05		90408
 	103457920	sfx_water_splash_large_1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Large\sfx_water_splash_large_1		189636
@@ -76,7 +76,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	415002928	sfx_water_splash_med_01	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Med\sfx_water_splash_med_01		196874
 	420584994	sfx_salmon_scare_01	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Salmon\sfx_salmon_scare_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_01		513568
 	426052603	sfx_frog_vocal_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Frog\sfx_frog_vocal_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Frog\Frog_vocal\sfx_frog_vocal_03		320720
-	436268258	HospitalVR_ForestMusic_ FullMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\HospitalVR_ForestMusic_ FullMix_v1\HospitalVR_ForestMusic_ FullMix_v1		15876224
+	436268258	HospitalVR_ForestMusic_ FullMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\HospitalVR_ForestMusic_ FullMix_v1\HospitalVR_ForestMusic_ FullMix_v1		17864
 	456718688	sfx_salmon_scare_04	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Salmon\sfx_salmon_scare_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_04		429268
 	470709025	sfx_otter_movement_03	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Otter\sfx_otter_movement_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_movement\sfx_otter_movement_03		74620
 	485096752	sfx_otter_movement_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Characters\Character_Otter\sfx_otter_movement_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_movement\sfx_otter_movement_02		76628
@@ -135,6 +135,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	68176651	HospitalVR_ForestMusic_ SoftMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\HospitalVR_ForestMusic_ SoftMix_v1_F17FB28C.wem	68176651.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\HospitalVR_ForestMusic_ SoftMix_v1\HospitalVR_ForestMusic_ SoftMix_v1	
+	436268258	HospitalVR_ForestMusic_ FullMix_v1	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\HospitalVR_ForestMusic_ FullMix_v1_F17FB28C.wem	436268258.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\HospitalVR_ForestMusic_ FullMix_v1\HospitalVR_ForestMusic_ FullMix_v1	
 	554695072	Polar_ambient_music_V2	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Polar_ambient_music_V2_F17FB28C.wem	554695072.wem	\Interactive Music Hierarchy\Default Work Unit\PolarMusic\Polar_ambient_music_V2\Polar_ambient_music_V2	
 	759797766	Forest_ambient_main_loop_extra_layer_02	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Ambience\Forest_ambient_main_loop_extra_layer_02_F17FB28C.wem	759797766.wem	\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_02	
 	874980017	Forest_ambient_main_loop_extra_layer_01	D:\ChildrensAR\ChildrensAR_WwiseProject\.cache\Windows\SFX\Ambience\Forest_ambient_main_loop_extra_layer_01_F17FB28C.wem	874980017.wem	\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_01	
