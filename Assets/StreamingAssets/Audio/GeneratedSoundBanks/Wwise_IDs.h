@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALPINEMUSIC = 453755285U;
         static const AkUniqueID AMBIENTALPINE = 3337376526U;
         static const AkUniqueID BEARAPPEARDISAPPEAR = 774343659U;
         static const AkUniqueID BEARSWAY = 851259619U;
@@ -44,6 +45,21 @@ namespace AK
         static const AkUniqueID WHALESPRAY = 893632031U;
         static const AkUniqueID WHALESWIM = 1540104444U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace OCTOPUSMINIGAME
+        {
+            static const AkUniqueID GROUP = 610585235U;
+
+            namespace STATE
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace OCTOPUSMINIGAME
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -93,6 +109,15 @@ namespace AK
             } // namespace SWITCH
         } // namespace PENGUINSWIM
 
+        namespace POLARMUSICSWITCH
+        {
+            static const AkUniqueID GROUP = 631772696U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace POLARMUSICSWITCH
+
         namespace WATERSPLASH
         {
             static const AkUniqueID GROUP = 777507535U;
@@ -108,6 +133,11 @@ namespace AK
         } // namespace WATERSPLASH
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PENGUINSIZE = 145924928U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -8,38 +8,7 @@
 						<Bus Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}">
 							<ChildrenList>
 								<AuxBus Name="Reverb" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}">
-									<ReferenceList>
-										<Reference Name="Effect0">
-											<Custom>
-												<Effect Name="Wwise Convolution Reverb (Custom)" ID="{FB5CDE0D-6270-4327-A615-1F5779C9A39C}" ShortID="775971267" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">													<PluginData>
-	<ConvolutionData>
-		<CurveList Version="1">
-			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{448E3EB2-4E03-4BC8-8A55-C98DCC704DC7}">
-					<PropertyList>
-						<Property Name="Flags" Type="int32" Value="19"/>
-					</PropertyList>
-					<PointList>
-						<Point>
-							<XPos>20</XPos>
-							<YPos>0</YPos>
-							<Flags>5</Flags>
-						</Point>
-						<Point>
-							<XPos>20000</XPos>
-							<YPos>0</YPos>
-							<Flags>37</Flags>
-						</Point>
-					</PointList>
-				</Curve>
-			</CurveInfo>
-		</CurveList>
-	</ConvolutionData>
-</PluginData>
-												</Effect>
-											</Custom>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 								</AuxBus>
 							</ChildrenList>
 						</Bus>

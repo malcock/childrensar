@@ -38,6 +38,7 @@
 						<Switch Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

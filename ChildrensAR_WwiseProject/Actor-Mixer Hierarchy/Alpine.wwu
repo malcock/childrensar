@@ -973,6 +973,11 @@
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1145,6 +1150,11 @@
 								</RandomSequenceContainer>
 								<Sound Name="Forest_ambient_main_loop_01" ID="{312516FC-AD58-4802-A8A8-F10946F9954D}" ShortID="664843109">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
@@ -1188,6 +1198,64 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{558DCA44-0944-4710-90CD-78F2B30A6858}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{67F9B6C9-2E04-47D7-A3A8-0D086A373C50}" ShortID="72309330">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom CreatedFrom="{050AFBB6-4C58-4860-8365-8DD5C148B66A}">
+																<ModulatorLfo Name="ForestFrogLoop (Custom)" ID="{6EEED07B-F806-4963-A834-902D8EAB79C3}" ShortID="655652669">
+																	<PropertyList>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.06">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{D66B615E-1362-4B4A-8D89-DB7E9E8E54E1}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="0.4"/>
+																							<Property Name="Min" Type="Real64" Value="-0.06"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{05BEBFDA-3801-4AF7-A81B-0D508796E405}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1220,6 +1288,11 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1239,6 +1312,234 @@
 										<ActiveSource Name="Forest_ambient_main_loop_extra_layer_02" ID="{ECBAB110-552D-4E04-A03C-54DCD9C7C41D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Forest_ambient_main_loop_02" ID="{3AA98BF7-B754-40BA-B133-2C430EF8ADFD}" ShortID="578043961">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_main_loop_02" ID="{4E152ECA-EB96-45F8-AEFD-D0F0A7FC7ECE}" ShortID="588215615">
+											<Language>SFX</Language>
+											<AudioFile>Forest_ambient_main_loop_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_main_loop_02" ID="{4E152ECA-EB96-45F8-AEFD-D0F0A7FC7ECE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Forest_ambient_tree_rustle_loop" ID="{786BCF8C-03A6-49F8-A34A-0960CD5D7B08}" ShortID="519901113">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_tree_rustle_loop" ID="{23B28C44-1E31-429F-AC1B-C742E3D117E7}" ShortID="138337933">
+											<Language>SFX</Language>
+											<AudioFile>Forest_ambient_tree_rustle_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_tree_rustle_loop" ID="{23B28C44-1E31-429F-AC1B-C742E3D117E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="amb_alpine_rustle_oneshot" ID="{E9D3EB23-9048-44DD-A2D6-6F79E21D2D52}" ShortID="929959026">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{34CE815D-AEE1-48E8-948A-5CECC3C2DE67}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_02" ID="{C49E4A88-DA43-46CA-9362-C4D38621171D}" ShortID="915906710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_02" ID="{7B8FE399-80CF-4559-93C2-78A8F5F0CC18}" ShortID="548270397">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_02" ID="{7B8FE399-80CF-4559-93C2-78A8F5F0CC18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_04" ID="{3EEFC436-E486-45E2-B09A-12BC6147E825}" ShortID="574675941">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_04" ID="{DF1F1CD0-3537-4CC9-BEC4-1139D4CDFDFA}" ShortID="644903426">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_04" ID="{DF1F1CD0-3537-4CC9-BEC4-1139D4CDFDFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_05" ID="{2776F025-CA99-4E5F-B403-F3374036F3DD}" ShortID="270609087">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_05" ID="{FBE1974D-9834-4759-8605-FC93A0CB3BFD}" ShortID="779381852">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_05" ID="{FBE1974D-9834-4759-8605-FC93A0CB3BFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_06" ID="{7E258951-B90E-49A2-AA4A-26F431206A26}" ShortID="336510366">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_06" ID="{6C96998A-FCC5-4DA0-9FFF-5DD1D6DBB4D4}" ShortID="91289404">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_06" ID="{6C96998A-FCC5-4DA0-9FFF-5DD1D6DBB4D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_03" ID="{D23DA1B3-0570-4DA8-814A-243B17E471C5}" ShortID="940353249">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_03" ID="{0AE0CCEC-3903-4F4A-8047-F1BD94E43CEC}" ShortID="114189091">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_03" ID="{0AE0CCEC-3903-4F4A-8047-F1BD94E43CEC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_01" ID="{6744ACC6-7107-415C-BEA2-5C8A89ADDD0D}" ShortID="600655870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_01" ID="{13A81341-289C-4740-9AAF-000E27FBBC9D}" ShortID="585601475">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_01" ID="{13A81341-289C-4740-9AAF-000E27FBBC9D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{369AF19D-D1F2-4D27-BA32-F906DE79A029}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="amb_polar_oneshot_Path" ID="{78A79178-A8EC-4F60-9538-A431EC47A00F}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="77"/>
+														<Property Name="RandomY" Type="Real64" Value="66"/>
+														<Property Name="RandomZ" Type="Real64" Value="51"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1.26583</XPos>
+															<YPos>8.59873</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
