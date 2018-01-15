@@ -22,6 +22,9 @@ public class MainCharacter : MonoBehaviour
     public Transform myFloat;
     public Transform EscapeLocation;
     public float swimTimeout = 4;
+    public int fishMax = 5;
+    public int fishEaten = 0;
+
     public Vector3 targetPosition = new Vector3();
 
     float swimTime;
@@ -31,8 +34,11 @@ public class MainCharacter : MonoBehaviour
     InteractableObject interactableObject;
     RagdollControl doll;
 
+    SkinnedMeshRenderer skinnedMeshRenderer;
+
     Collider mainCollider;
     Bounds waterBounds;
+
 
     bool firstFrame = false;
 
@@ -44,6 +50,9 @@ public class MainCharacter : MonoBehaviour
         doll = GetComponent<RagdollControl>();
         mainCollider = GetComponent<Collider>();
         waterBounds = GameObject.FindWithTag("Water").GetComponent<Collider>().bounds;
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+
+
     }
 
     // Use this for initialization
@@ -55,16 +64,36 @@ public class MainCharacter : MonoBehaviour
         doll.onCollisionStay.AddListener(HitLand);
         doll.onTriggerExit.AddListener(LeaveWater);
 
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if the character has fallen through the world somehow, we need to reset it 
+        if (transform.position.y < -50)
+        {
+            transform.position = new Vector3(0, 50, 0);
+        }
+        if(doll.hips.position.y<-50){
+            doll.hips.position = new Vector3(0, 50, 0);
+        }
+
         //drop character on start
         if (!firstFrame) doll.ragdolled = firstFrame = true;
         anim.SetBool("isSwimming", false);
         mainCollider.attachedRigidbody.useGravity = true;
 
+        //if character set to flee when full, force swim and flee mode
+        if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Leave)
+        {
+            if (fishEaten >= fishMax)
+            {
+                if (state != State.Swimming)
+                    state = State.Escape;
+                swimState = SwimState.Escape;
+            }
+        }
 
         //basic controls for the penguin states
         switch (state)
@@ -96,6 +125,10 @@ public class MainCharacter : MonoBehaviour
                     {
                         state = State.Swimming;
                         //should stopping this state be controlled elsewhere though?
+                    }
+                    else
+                    {
+                        state = State.Idle;
                     }
                 }
                 break;
@@ -143,14 +176,29 @@ public class MainCharacter : MonoBehaviour
                             {
                                 targetPosition = myFloat.transform.position;
                             }
+                            //if we've been swimming ages, maybe we got stuck - lets try being free again for a bit
+                            if (swimTime + (swimTimeout * 3) < Time.time)
+                                swimState = SwimState.Free;
 
                             break;
                         case SwimState.Jumping:
 
                             break;
                         case SwimState.Interval:
+
                             if (swimTime + swimTimeout < Time.time)
-                                swimState = SwimState.Return;
+                            {
+                                Debug.Log("interval reset fish");
+                                if(GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay){
+                                    fishEaten = 0;
+                                    swimState = SwimState.Return;
+                                } else {
+                                    if (fishEaten < fishMax) swimState = SwimState.Return;
+                                }
+
+
+
+                            }
 
 
                             break;
@@ -226,8 +274,9 @@ public class MainCharacter : MonoBehaviour
                 Quaternion rota = Quaternion.LookRotation(relDir);
                 rota.x = 0;
                 rota.z = 0;
-                transform.rotation = Quaternion.Slerp(transform.rotation,rota,Time.deltaTime*3);
-                if(doll.state== RagdollControl.RagdollState.animated){
+                transform.rotation = Quaternion.Slerp(transform.rotation, rota, Time.deltaTime * 3);
+                if (doll.state == RagdollControl.RagdollState.animated)
+                {
                     if (Quaternion.Angle(transform.rotation, rota) < 15f)
                     {
                         relDir.y += 3;
@@ -250,6 +299,15 @@ public class MainCharacter : MonoBehaviour
 
         }
 
+        //handle the blendshape and mass using the fish eaten values
+        float mass = doll.totalMass + (((float)fishEaten / (float)fishMax) * (fishMax * 10));
+        mass = doll.totalMass + (fishEaten * 8);
+        mainCollider.attachedRigidbody.mass = Mathf.Lerp(mainCollider.attachedRigidbody.mass, mass, Time.deltaTime);
+
+        float curWeight = skinnedMeshRenderer.GetBlendShapeWeight(0);
+        float newWeight = fishEaten > 0 ? ((float)(fishEaten + 1) / (float)fishMax) * 100 : 0;
+
+        skinnedMeshRenderer.SetBlendShapeWeight(0, Mathf.Lerp(curWeight, newWeight, Time.deltaTime * 10));
 
 
     }
@@ -279,6 +337,18 @@ public class MainCharacter : MonoBehaviour
         //state = State.Swimming;
 
         MakeSplash(other, obj);
+
+        //drop all fish to return fatness to normal
+        if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
+        {
+            Debug.Log("hit water reset fish");
+            fishEaten = 0;
+        }
+        else
+        {
+
+        }
+
 
     }
 
@@ -351,6 +421,16 @@ public class MainCharacter : MonoBehaviour
 
                 break;
         }
+        anim.SetTrigger("Speak");
+    }
+
+    public void Catch()
+    {
+        anim.SetTrigger("Catch");
+        Speak();
+        fishEaten++;
+        if (fishEaten >= fishMax) state = State.Escape;
+        //mainCollider.attachedRigidbody.mass = doll.totalMass + (fishEaten);
     }
 
     private float BoundsContainedPercentage(Bounds obj, Bounds region)

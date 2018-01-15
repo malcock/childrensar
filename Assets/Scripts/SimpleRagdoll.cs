@@ -26,8 +26,7 @@ public class SimpleRagdoll : MonoBehaviour
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
         {
             if(rb.transform != transform){
-                RagdollBone r = rb.gameObject.AddComponent<RagdollBone>();
-                r.onCollisionStay.AddListener(onCollisionStay);
+                RagBone r = rb.gameObject.AddComponent<RagBone>();
             }
         }
     }
@@ -38,8 +37,5 @@ public class SimpleRagdoll : MonoBehaviour
 
     }
 
-    void onCollisionStay()
-    {
 
-    }
 }

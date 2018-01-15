@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114784166195455470}
   - component: {fileID: 114484747857994694}
   - component: {fileID: 114337971265635506}
+  - component: {fileID: 114550053455999142}
   m_Layer: 0
   m_Name: FlickFish
   m_TagString: Untagged
@@ -300,6 +301,17 @@ MonoBehaviour:
   centerOfMass: {x: 0, y: 0, z: 0}
   dragOverride: 0
   DragController: {fileID: 0}
+--- !u!114 &114550053455999142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1705237565527564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a278b63f4a9e40339da5edfd02ffe6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114784166195455470
 MonoBehaviour:
   m_ObjectHideFlags: 1

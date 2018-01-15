@@ -8,20 +8,27 @@ public class OctopusController : MonoBehaviour {
 
     public enum State {Start, Begin,Active,End}
     public State state = State.Start;
-    PolarManager manager;
+    public float wobbleAmount = 20;
+
 
     float time = 0;
 
     public float gameTime = 240;
 
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
+        {
+            //box.gameObject.AddComponent<OctoBone>();
+            //box.isTrigger = true;
+        }
     }
 
     // Use this for initialization
     void Start () {
-        manager = FindObjectOfType<PolarManager>();
+        
 	}
 	
     public void BeginGame(){
@@ -32,19 +39,35 @@ public class OctopusController : MonoBehaviour {
         yield return new WaitForSeconds(1);
         state = State.Begin;
         animator.SetTrigger("Begin");
+        AkSoundEngine.SetSwitch("OctopusAppearDisappear", "Appear", gameObject);
+        AkSoundEngine.PostEvent("OctopusAppearDisappear", gameObject);
+
         yield return new WaitForSeconds(2);
+        AkSoundEngine.PostEvent("OctopusVocal",gameObject);
         state = State.Active;
         yield return new WaitForSeconds(gameTime);
         state = State.End;
-        manager.RestartOctopus();
+        AkSoundEngine.SetSwitch("OctopusAppearDisappear", "Disappear", gameObject);
+        AkSoundEngine.PostEvent("OctopusAppearDisappear", gameObject);
+        AkSoundEngine.PostEvent("OctopusVocal", gameObject);
     }
+
+    public void StopGame(){
+        StopAllCoroutines();
+        state = State.End;
+    }
+
     // Update is called once per frame
 	void Update () {
         switch(state){
             case State.Start:
+                
                 break;
             case State.Begin:
-                
+                foreach (Ring r in GetComponentsInChildren<Ring>())
+                {
+                    Destroy(r.gameObject);
+                }
                 break;
             case State.Active:
                 animator.SetBool("Active", true);
@@ -53,6 +76,11 @@ public class OctopusController : MonoBehaviour {
                     animator.SetLayerWeight(l, Mathf.Abs(Mathf.Sin(time + (l * 20))));
                     time += Time.deltaTime * 0.25f;
                 }
+                //rotate the octopus slightly
+                Vector3 rotation = transform.eulerAngles;
+                float newY = 180 + Mathf.Sin(Time.time) * wobbleAmount;
+                rotation.y = Mathf.Lerp(rotation.y, newY, Time.deltaTime);
+                transform.eulerAngles = rotation;
                 break;
             case State.End:
                 int layersReady = animator.layerCount - 1;

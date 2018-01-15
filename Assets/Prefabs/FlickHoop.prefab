@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4627160235753182}
   - component: {fileID: 54663019453316584}
   - component: {fileID: 59030040138281778}
+  - component: {fileID: 114882087056123434}
   m_Layer: 0
   m_Name: Anchor
   m_TagString: Untagged
@@ -39,6 +40,7 @@ GameObject:
   - component: {fileID: 114757791856939100}
   - component: {fileID: 114420804555942582}
   - component: {fileID: 114363894698872158}
+  - component: {fileID: 114139431100676908}
   - component: {fileID: 114383853717859472}
   m_Layer: 0
   m_Name: FlickHoop
@@ -58,7 +60,8 @@ GameObject:
   - component: {fileID: 33384240800760894}
   - component: {fileID: 23886554953477396}
   - component: {fileID: 54529692171753524}
-  - component: {fileID: 64245657709557924}
+  - component: {fileID: 65224398512411834}
+  - component: {fileID: 114120270756672312}
   m_Layer: 0
   m_Name: Hoop
   m_TagString: Untagged
@@ -72,8 +75,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983684920363554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.112, z: 0}
+  m_LocalRotation: {x: -0.00013660443, y: -0.002309393, z: -0.0015824889, w: 0.99999607}
+  m_LocalPosition: {x: -0.00033278385, y: -0.1119888, z: 0.00039856395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4627160235753182}
@@ -99,8 +102,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466437757354568}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.112, z: 0}
+  m_LocalRotation: {x: -0.0002121925, y: 0.00032030782, z: 0.0018538672, w: 0.9999982}
+  m_LocalPosition: {x: -0.00029125754, y: 0.11225894, z: -0.33622885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4060800676177710}
@@ -120,7 +123,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 357ff08a2b8d7445c930cda132ce9f1d, type: 2}
+  - {fileID: 2100000, guid: 9d7e49f7458be4058bcd8eed3992932e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,7 +189,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 1, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.11200003, z: 0}
+  m_ConnectedAnchor: {x: -0.000023432629, y: 0.111989416, z: -0.00036874143}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -210,8 +213,8 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!64 &64245657709557924
-MeshCollider:
+--- !u!65 &65224398512411834
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -220,10 +223,34 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 4b48e3f821e614ca8ba83858dfe73bc2, type: 3}
+  m_Size: {x: 0.2, y: 0.2, z: 0.02}
+  m_Center: {x: -2.3283064e-10, y: -0.000000009487849, z: -0.000000059604645}
+--- !u!114 &114120270756672312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983684920363554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForceSize: SmallSoft
+--- !u!114 &114139431100676908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764958974460716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d93a7b72b2ba4d94a179f05d751705e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinTime: 1
+  isActive: 1
+  fadeOutTime: 5
 --- !u!114 &114363894698872158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -235,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0999444c69fd4e4ca83fc19779f3f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flickTrackInterval: 10
   isActive: 0
 --- !u!114 &114383853717859472
 MonoBehaviour:
@@ -258,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5537fb8d5ceb4c70a82f97a84a1beeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockDistance: 0.1
+  lockDistance: 0.3
   isRagdoll: 1
   DragAnchor: {fileID: 4627160235753182}
   centerOfMass: {x: 0, y: 0, z: 0}
@@ -326,3 +354,41 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114882087056123434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1466437757354568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eeee928b817b47ae897087fbfa57a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollisionEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: CollisionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onCollisionStay:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: CollisionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onCollisionExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: CollisionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggerEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  onTriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggerEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: TriggerEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

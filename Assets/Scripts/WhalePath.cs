@@ -7,6 +7,7 @@ public class WhalePath : MonoBehaviour {
     public float timeout = 10;
 
     Animator animator;
+    public bool OctoOut = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,12 +23,19 @@ public class WhalePath : MonoBehaviour {
 
     public void Reset(){
         Debug.Log(name + " reset");
+        AkSoundEngine.StopAll(gameObject);
         StartCoroutine(DoTimeout());
     }
 
     IEnumerator DoTimeout(){
         yield return new WaitForSeconds(timeout);
-        animator.SetTrigger("NextAnim");
+        if(!OctoOut){
+            animator.SetTrigger("NextAnim");
+            AkSoundEngine.PostEvent("WhaleSwim",gameObject);
+        } else {
+            Reset();
+        }
+
 
     }
 

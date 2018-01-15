@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePsrt1: -121464064
-    m_lastTimePart2: -1999286990
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: AmbientAlpine
       Path: Alpine/AmbientAlpine
@@ -132,8 +132,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
-    m_lastTimePsrt1: -121464064
-    m_lastTimePart2: -1999286990
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: InteractFishPickup
       Path: Default Work Unit/InteractFishPickup
@@ -168,8 +168,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
-    m_lastTimePsrt1: -1471499776
-    m_lastTimePart2: -1999285768
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: CrabMovement
       Path: Polar/CrabMovement
@@ -335,8 +335,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
-    m_lastTimePsrt1: -111464064
-    m_lastTimePart2: -1999286990
+    m_lastTimePsrt1: 395240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: Reverb
       Path: Default Work Unit/Master Audio Bus/SFX/Reverb
@@ -362,8 +362,8 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
-    m_lastTimePsrt1: -101464064
-    m_lastTimePart2: -1999286990
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: BearAppearDisappear
       Path: Default Work Unit/BearAppearDisappear
@@ -494,8 +494,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
-    m_lastTimePsrt1: -101464064
-    m_lastTimePart2: -1999286990
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
     List:
     - Name: Alpine
       Path: Default Work Unit/Alpine
@@ -531,8 +531,16 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /ChildrensAR_WwiseProject
+  - /ChildrensAR_WwiseProject/Auxiliary Busses
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus/SFX
   - /ChildrensAR_WwiseProject/Events
   - /ChildrensAR_WwiseProject/Events/Polar
+  - /ChildrensAR_WwiseProject/SoundBanks
+  - /ChildrensAR_WwiseProject/SoundBanks/Default Work Unit
+  - /ChildrensAR_WwiseProject/Switches
+  - /ChildrensAR_WwiseProject/Switches/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
