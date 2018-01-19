@@ -1052,6 +1052,7 @@ MonoBehaviour:
   leftFoot: {fileID: 4010249744949988}
   rightFoot: {fileID: 4128333095208496}
   ragdollToMecanimBlendTime: 0.5
+  totalMass: 0
   mainTransform: {fileID: 4976137457391040}
   onCollision:
     m_PersistentCalls:
@@ -1168,6 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba67b9fa94db499aaa090fdbf17414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myFloe: {fileID: 0}
 --- !u!135 &135025792840897052
 SphereCollider:
   m_ObjectHideFlags: 1
