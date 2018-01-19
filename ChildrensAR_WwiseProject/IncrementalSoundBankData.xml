@@ -3,6 +3,7 @@
 	<Platform GUID="{36A20F43-2A2B-440A-B564-E9A2B0DBFE11}">
 		<Banks>
 			<Language ID="393239870">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="Alpine" Hash="343213497" Timestamp="131583473222607587"/>
 				<File Name="Init" Hash="567672812" Timestamp="131595405943128303"/>
@@ -14,21 +15,32 @@
 				<File Name="Penguin" Hash="3761444498" Timestamp="131568012862992237"/>
 				<File Name="Polar" Hash="3629066476" Timestamp="131602296238263705"/>
 >>>>>>> master
+=======
+				<File Name="Alpine" Hash="3736623768" Timestamp="131608503975590026"/>
+				<File Name="Init" Hash="1178158419" Timestamp="131602296238318850"/>
+				<File Name="Penguin" Hash="3761444498" Timestamp="131568012862992237"/>
+				<File Name="Polar" Hash="3761774025" Timestamp="131602407612434805"/>
+>>>>>>> Stashed changes
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="" Hash="3558192382" Timestamp="131595405943179039"/>
 =======
 				<File Name="" Hash="3861217035" Timestamp="131602296238343918"/>
 >>>>>>> master
+=======
+				<File Name="" Hash="1749995126" Timestamp="131608503976156537"/>
+>>>>>>> Stashed changes
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
 		<Banks>
 			<Language ID="393239870">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="Alpine" Hash="343213497" Timestamp="131583473191063352"/>
 				<File Name="Init" Hash="2580979190" Timestamp="131595405905989919"/>
@@ -38,21 +50,31 @@
 				<File Name="Init" Hash="1956053825" Timestamp="131602296074598446"/>
 				<File Name="Polar" Hash="3629066476" Timestamp="131602296074548311"/>
 >>>>>>> master
+=======
+				<File Name="Alpine" Hash="3736623768" Timestamp="131608503789289637"/>
+				<File Name="Init" Hash="1956053825" Timestamp="131602296074598446"/>
+				<File Name="Polar" Hash="3761774025" Timestamp="131602407540774226"/>
+>>>>>>> Stashed changes
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="" Hash="2653804802" Timestamp="131595405906039331"/>
 =======
 				<File Name="" Hash="4103760379" Timestamp="131602296074618499"/>
 >>>>>>> master
+=======
+				<File Name="" Hash="2257929702" Timestamp="131608503792412940"/>
+>>>>>>> Stashed changes
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
 		<Banks>
 			<Language ID="393239870">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="Alpine" Hash="343213497" Timestamp="131583473206645147"/>
 				<File Name="Init" Hash="874062910" Timestamp="131595405924617889"/>
@@ -64,15 +86,25 @@
 				<File Name="Penguin" Hash="3761444498" Timestamp="131568012859555265"/>
 				<File Name="Polar" Hash="3629066476" Timestamp="131602296124285582"/>
 >>>>>>> master
+=======
+				<File Name="Alpine" Hash="3736623768" Timestamp="131608503850081264"/>
+				<File Name="Init" Hash="2183596497" Timestamp="131602296124340732"/>
+				<File Name="Penguin" Hash="3761444498" Timestamp="131568012859555265"/>
+				<File Name="Polar" Hash="3761774025" Timestamp="131602407577000569"/>
+>>>>>>> Stashed changes
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 				<File Name="" Hash="3304342088" Timestamp="131595405924667329"/>
 =======
 				<File Name="" Hash="3580768641" Timestamp="131602296124360785"/>
 >>>>>>> master
+=======
+				<File Name="" Hash="2717598764" Timestamp="131608503850617694"/>
+>>>>>>> Stashed changes
 			</Language>
 		</XMLInfo>
 	</Platform>

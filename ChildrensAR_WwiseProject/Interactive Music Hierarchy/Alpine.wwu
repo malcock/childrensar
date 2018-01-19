@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Alpine" ID="{2F313F0F-A54E-4558-AB69-23A59393805D}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicPlaylistContainer Name="AlpineMusic" ID="{1840E1D9-8037-4451-8EF4-E42C026FE038}" ShortID="852194532">
+				<MusicSwitchContainer Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" ShortID="631412987">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -13,10 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{4405A76F-3007-4598-8D67-9AB7F7C9D09B}" ShortID="1026513073">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="77861.8421052632"/>
-							</PropertyList>
+						<MusicPlaylistContainer Name="AlpineMusic_Container" ID="{4D79CAE8-B662-400D-A8BD-BE55E6F41019}" ShortID="498846831">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -26,275 +23,417 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{BA7103E7-9D6E-4E05-98E8-661599F755AA}" ShortID="715317621">
+								<MusicSegment Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{0A3D5799-BA6B-400B-B2BB-41F01BD30DE8}" ShortID="717434868">
 									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsZeroLantency" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
+										<Property Name="EndPosition" Type="Real64" Value="286406.235827664"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{627EA09F-2901-4E1C-8DC8-BCE3F351372D}" ShortID="436268258">
-											<Language>SFX</Language>
-											<AudioFile>HospitalVR_ForestMusic_ FullMix_v1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{6083DEBF-FD58-4FD8-AFB5-23EA71DEED3D}">
+										<MusicTrack Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{E05A2185-451F-4EFF-B620-51AD5A8BCF0B}" ShortID="890546214">
 											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{4575741F-2552-462E-8A52-24A342620AA2}">
-											<ClipList>
-												<MusicClip Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{9BACC937-158F-403C-9CB9-643B3A996C64}">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{0C4ACC11-1166-4447-A72C-783BFF77CBFE}" ShortID="852610933">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E718A4F0-DF72-424F-AF4A-E921B5603422}">
 													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="6315.78947368421"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="84177.6315789473"/>
-														<Property Name="FadeInDuration" Type="Real64" Value="493.42105263158"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1973.68421052632"/>
-														<Property Name="PlayAt" Type="Real64" Value="-6315.78947368421"/>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<AudioSourceRef Name="HospitalVR_ForestMusic_ FullMix_v1" ID="{627EA09F-2901-4E1C-8DC8-BCE3F351372D}"/>
-													<PropertyCurveList>
-														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{A1CFD6F6-621D-4337-9A5B-6632A42B921B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>6.31579</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>84.17763</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{7034DE43-D8D5-4B33-B704-9B2AE9BBA609}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>6.31579</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>84.17763</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{293E1B7B-D59E-4A60-8516-2DD80CD5FB73}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>6.31579</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>84.17763</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-													</PropertyCurveList>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-							</ChildrenList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{5651EB71-25B9-449E-BFAE-261473BE3B04}"/>
-								<MusicCue Name="Exit Cue" ID="{BF8792CB-0033-4173-8E1C-4895E65B0C54}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{7BB5E8DE-E3DA-48E9-8C3D-682635C8B8E9}">
+													<ClipList>
+														<MusicClip Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{6B96A717-CB3E-48F2-9413-5240855E7B61}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{0C4ACC11-1166-4447-A72C-783BFF77CBFE}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1" ID="{B1C8D0F6-387E-4092-B6ED-43E174E28057}" ShortID="719410433">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1" ID="{8C5802C4-51CB-4111-B080-6E43A5B360C0}" ShortID="548845387">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4627D14B-828D-4095-9DA0-B3B73A10F3F5}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1DD5B06B-A12D-423C-89A3-4AE30F314C24}">
+													<ClipList>
+														<MusicClip Name="01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1" ID="{7B4346C5-5D40-44D5-80F6-F1EFFF015B08}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1" ID="{8C5802C4-51CB-4111-B080-6E43A5B360C0}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1" ID="{26AF5D76-5245-413E-8622-60EB418BD3D7}" ShortID="457640450">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1" ID="{F4113FAA-BF33-40D8-8530-33BB8C363851}" ShortID="843148672">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AEA5FBC0-0B7E-4BD1-8DBE-30A12DBD6DF7}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1EA1989E-8C40-4AA6-99D7-C39B21F34C41}">
+													<ClipList>
+														<MusicClip Name="02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1" ID="{640263A4-4355-40A8-886C-8BB326CDD9AE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1" ID="{F4113FAA-BF33-40D8-8530-33BB8C363851}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="03-HospitalAR_2_Additional-Base-Layer_v1" ID="{F3648AD0-D750-42D8-9FA5-92759497834E}" ShortID="659759087">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="03-HospitalAR_2_Additional-Base-Layer_v1" ID="{0F0DB1EE-5815-4C99-8445-BC3D7B3B83E1}" ShortID="897899858">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DB8DCB3E-CEA8-4F91-9C12-1DB2559FBF8B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{1084D7EC-EAF2-44AA-A863-5E57F7AADC02}">
+													<ClipList>
+														<MusicClip Name="03-HospitalAR_2_Additional-Base-Layer_v1" ID="{B9AAF033-4280-40E3-AAC7-C0DE80C320ED}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="03-HospitalAR_2_Additional-Base-Layer_v1" ID="{0F0DB1EE-5815-4C99-8445-BC3D7B3B83E1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="04-HospitalAR_3_Melody-Layer_v1" ID="{9C2B07A6-8EF0-496B-93CF-0A95266695DD}" ShortID="136979782">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="04-HospitalAR_3_Melody-Layer_v1" ID="{B27B08E3-8F75-4478-98F5-4B8C6CEEC4BC}" ShortID="444334270">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{68B5D9FA-9832-42E9-BE57-DEF772CDD4BD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{89ED01A8-9BAF-4962-A574-F823B0D7C0DD}">
+													<ClipList>
+														<MusicClip Name="04-HospitalAR_3_Melody-Layer_v1" ID="{96B9DD4F-A2E6-40E6-81E0-FEDC413DF846}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="04-HospitalAR_3_Melody-Layer_v1" ID="{B27B08E3-8F75-4478-98F5-4B8C6CEEC4BC}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{4DBC27FA-2EF2-4783-A865-CB1DD03F8E3C}"/>
+										<MusicCue Name="Exit Cue" ID="{798BDD14-E625-4470-84CE-E728B311ED2B}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="286406.235827664"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="06-HospitalAR_5_Full-Mix_v1" ID="{1D6C75E7-DCEB-4D22-A7C2-0D6D80A97774}" ShortID="704382303">
 									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="77861.8421052632"/>
-									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
-						<MusicSegment Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{9AD3B7A7-4AFD-43DF-9142-07BD044E833D}" ShortID="27696721">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="73125.9067875059"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{77157532-ED75-4AE0-93CA-4CF75B6F1DE7}" ShortID="220457175">
-									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsZeroLantency" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
+										<Property Name="EndPosition" Type="Real64" Value="286406.235827664"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{84CDBEE6-5DB3-47BF-8778-1180B5D3DA32}" ShortID="68176651">
-											<Language>SFX</Language>
-											<AudioFile>HospitalVR_ForestMusic_ SoftMix_v1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{FE43B71A-C0B9-4CFD-AFDA-CBFA078CC6FD}">
+										<MusicTrack Name="06-HospitalAR_5_Full-Mix_v1" ID="{3E5583F5-8193-4326-82A7-714C4966BCBD}" ShortID="983510364">
 											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="06-HospitalAR_5_Full-Mix_v1" ID="{D5DF367E-E0D7-449A-9ED5-E5A5AC74BD2C}" ShortID="545719001">
+													<Language>SFX</Language>
+													<AudioFile>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5CC4145C-B30B-4F15-AA7F-CCBE92CEDAAF}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{B8006B2E-518B-48CC-9B1F-85470EC85CEA}">
+													<ClipList>
+														<MusicClip Name="06-HospitalAR_5_Full-Mix_v1" ID="{1647ED92-D033-4FD2-ABA9-1137BEF9788C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="286406.235827664"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="06-HospitalAR_5_Full-Mix_v1" ID="{D5DF367E-E0D7-449A-9ED5-E5A5AC74BD2C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{4766C014-A04C-4204-9C53-771D8D022C8B}"/>
+										<MusicCue Name="Exit Cue" ID="{146720EA-6F9F-4A76-9986-B72A1B5C285A}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="286406.235827664"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{C3302F9D-1A73-4E63-B7FA-E1956A9167A8}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{D0139528-3CA5-4A13-BE8F-BCECDA4474AB}">
 											<TransitionInfo/>
 										</MusicTransition>
-									</TransitionList>
-									<SequenceList>
-										<MusicTrackSequence Name="" ID="{C37A506E-E968-4A14-AA76-695CF9E56D9B}">
-											<ClipList>
-												<MusicClip Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{9D2E1534-A797-4EAF-A622-C40DFC114D8C}">
-													<PropertyList>
-														<Property Name="BeginTrimOffset" Type="Real64" Value="7002.99067354777"/>
-														<Property Name="EndTrimOffset" Type="Real64" Value="80028.9449198901"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-														<Property Name="PlayAt" Type="Real64" Value="-7002.99067354777"/>
-													</PropertyList>
-													<AudioSourceRef Name="HospitalVR_ForestMusic_ SoftMix_v1" ID="{84CDBEE6-5DB3-47BF-8778-1180B5D3DA32}"/>
-													<PropertyCurveList>
-														<PropertyCurve PropertyName="Highpass">
-															<Curve Name="" ID="{31C775D5-DB62-4B79-881B-B8C318FA2B4A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>7.00299</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>80.02894</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-														<PropertyCurve PropertyName="Lowpass">
-															<Curve Name="" ID="{0A597C99-DC37-447E-8D00-F5E0423EBEE9}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>7.00299</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>80.02894</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-														<PropertyCurve PropertyName="Volume">
-															<Curve Name="" ID="{4D3E717A-ECBA-462E-B053-B3BC6F9A9F47}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>7.00299</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>80.02894</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</PropertyCurve>
-													</PropertyCurveList>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
-									</SequenceList>
-								</MusicTrack>
-							</ChildrenList>
-							<CueList>
-								<MusicCue Name="Entry Cue" ID="{7F306D4E-5971-4065-94BB-15D725CCCCD6}"/>
-								<MusicCue Name="Exit Cue" ID="{63BA60FA-85BC-4649-BA83-19179F440BF0}">
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{8052819E-28AC-4628-A828-B2F585B31980}" ShortID="883999744">
 									<PropertyList>
-										<Property Name="CueType" Type="int16" Value="1"/>
-										<Property Name="TimeMs" Type="Real64" Value="73025.9542463423"/>
+										<Property Name="PlayMode" Type="int16" Value="3"/>
 									</PropertyList>
-								</MusicCue>
-							</CueList>
-						</MusicSegment>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{1EAA41F7-D503-459C-9CBA-4183BDE17289}" ShortID="977083311">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="05-HospitalAR_4_Excitement-Layer_v1" ID="{0A3D5799-BA6B-400B-B2BB-41F01BD30DE8}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{43EA7CFF-AFA6-4D2C-AF86-F1AAE69AD7B9}" ShortID="536668299">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="06-HospitalAR_5_Full-Mix_v1" ID="{1D6C75E7-DCEB-4D22-A7C2-0D6D80A97774}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
-						<MusicTransition Name="Root" ID="{C66D74B9-12CF-4AEC-BA9C-3E4A61778D23}">
+						<MusicTransition Name="Root" ID="{FEEAD428-B185-4CC4-AE4A-162EEBA3AA5A}">
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{382DBFBA-2047-411F-847E-F3A15DE4B0A6}">
+								<MusicTransition Name="Transition" ID="{1F131FA2-6736-4962-8C03-5F468241EF21}">
 									<TransitionInfo/>
 								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<Playlist>
-						<MusicPlaylistItem Name="" ID="{BF8B355E-0C6B-4BF0-BBBA-769B0A5E3B8C}" ShortID="38597820"/>
-					</Playlist>
-				</MusicPlaylistContainer>
+					<ArgumentList>
+						<ArgumentRef Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="AlpineMusic_Container" ID="{4D79CAE8-B662-400D-A8BD-BE55E6F41019}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

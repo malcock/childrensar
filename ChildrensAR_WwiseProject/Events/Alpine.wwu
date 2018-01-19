@@ -17,20 +17,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PenguinSqueak" ID="{16876275-CCCC-4FFC-88F2-7F1014864BDA}">
-					<ChildrenList>
-						<Action Name="" ID="{A2A6ECDD-E454-466F-BA71-3AA699093AFB}" ShortID="1010381710">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="SalmonScare" ID="{C6F39AE0-828C-4EB2-9BC8-32E3C4CF010A}">
 					<ChildrenList>
 						<Action Name="" ID="{E2A5281F-1EAB-4940-9A63-451B49FBBCD0}" ShortID="325277754">
@@ -165,7 +151,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AlpineMusic" ID="{1840E1D9-8037-4451-8EF4-E42C026FE038}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+									<ObjectRef Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
