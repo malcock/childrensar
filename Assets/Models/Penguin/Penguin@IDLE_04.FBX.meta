@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a5aaf653c3d5b4fc1b76359c6447e08e
-timeCreated: 1510257899
+guid: aad2e572c006b814c800cb642208fa07
+timeCreated: 1516280366
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -28,7 +28,6 @@ ModelImporter:
     100040: Penguin-RIGSpine2
     100042: Penguin-RIGTail1
     100044: //RootNode
-    100046: Base HumanHeadBone001Gizmo
     400000: penguin
     400002: Penguin-RIGHead
     400004: Penguin-RIGHeadBone001
@@ -52,12 +51,8 @@ ModelImporter:
     400040: Penguin-RIGSpine2
     400042: Penguin-RIGTail1
     400044: //RootNode
-    400046: Base HumanHeadBone001Gizmo
-    2300000: Base HumanHeadBone001Gizmo
-    3300000: Base HumanHeadBone001Gizmo
     4300000: penguin
-    4300002: Base HumanHeadBone001Gizmo
-    7400000: CATCH
+    7400000: Take 001
     9500000: //RootNode
     13700000: penguin
   materials:
@@ -83,35 +78,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: CATCH
-      takeName: Take 001
-      firstFrame: 10
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -139,7 +106,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human: []
@@ -154,10 +121,9 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 814cef3eaa7444fca8eb93f7d6c93184,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

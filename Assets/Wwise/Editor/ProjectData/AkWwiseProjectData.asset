@@ -17,6 +17,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_lastTimePsrt1: 385240960
     m_lastTimePart2: -1999285408
     List:
@@ -25,6 +26,16 @@ MonoBehaviour:
 =======
     m_lastTimePsrt1: 730417806
     m_lastTimePart2: -1999285372
+=======
+    m_lastTimePsrt1: -639395830
+    m_lastTimePart2: -1999282574
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: -639370817
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List:
     - Name: AlpineMusic
       Path: Alpine\AlpineMusic
@@ -255,8 +266,13 @@ MonoBehaviour:
   - PhysicalPath: Events\Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1762071596
     m_lastTimePart2: -1999288179
+=======
+    m_lastTimePsrt1: -639335792
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List:
     - Name: CrabMovement
       Path: Polar\CrabMovement
@@ -460,6 +476,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_lastTimePsrt1: 395240960
     m_lastTimePart2: -1999285408
     List:
@@ -483,17 +500,28 @@ MonoBehaviour:
         ObjectType: 1
       ID: 348963605
       Guid: b1024f50e474e74d811101bd03c8ddd4
+=======
+    m_lastTimePsrt1: -615551573
+    m_lastTimePart2: -1999282574
+    List: []
+>>>>>>> arthur
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 2145290112
     m_lastTimePart2: -1999288770
+=======
+    m_lastTimePsrt1: -615381461
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_lastTimePsrt1: 405240960
     m_lastTimePart2: -1999285408
@@ -503,6 +531,10 @@ MonoBehaviour:
 =======
     m_lastTimePsrt1: -213945701
     m_lastTimePart2: -1999288186
+=======
+    m_lastTimePsrt1: -615331430
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List:
     - Name: BearAppearDisappear
       Path: Default Work Unit\BearAppearDisappear
@@ -639,6 +671,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_lastTimePsrt1: 405240960
     m_lastTimePart2: -1999285408
     List:
@@ -647,6 +680,10 @@ MonoBehaviour:
 =======
     m_lastTimePsrt1: 1416822287
     m_lastTimePart2: -1999285372
+=======
+    m_lastTimePsrt1: -615471525
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List:
     - Name: Alpine
       Path: Default Work Unit\Alpine
@@ -671,8 +708,13 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 2125290112
     m_lastTimePart2: -1999288770
+=======
+    m_lastTimePsrt1: -639315769
+    m_lastTimePart2: -1999282574
+>>>>>>> arthur
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu

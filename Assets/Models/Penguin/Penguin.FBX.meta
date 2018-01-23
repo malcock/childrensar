@@ -28,6 +28,7 @@ ModelImporter:
     100040: Penguin-RIGSpine1
     100042: Penguin-RIGSpine2
     100044: Penguin-RIGTail1
+    100046: penguin001
     400000: //RootNode
     400002: penguin
     400004: Penguin-RIGHead
@@ -51,10 +52,13 @@ ModelImporter:
     400040: Penguin-RIGSpine1
     400042: Penguin-RIGSpine2
     400044: Penguin-RIGTail1
+    400046: penguin001
     4300000: penguin
+    4300002: penguin001
     7400000: Inflate_01
     9500000: //RootNode
     13700000: penguin
+    13700002: penguin001
   materials:
     importMaterials: 1
     materialName: 0
