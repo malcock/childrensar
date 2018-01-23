@@ -1313,7 +1313,7 @@ MonoBehaviour:
   CharacterBehaviour: 0
   FlickBehaviour: 0
   gametimeA: 240
-  gametimeB: 240
+  gametimeB: 180
 --- !u!1 &447541963
 GameObject:
   m_ObjectHideFlags: 0

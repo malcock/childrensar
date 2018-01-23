@@ -75,7 +75,7 @@ public class FloatControl : MonoBehaviour
         if(lockInPlace){
             Vector3 direction = startPosition - myTransform.position;
             direction.y = 0;
-            constantForce.force = direction * 10;
+            constantForce.force = direction * 50;
 
         } else {
             //move away from the play area if the octopus/bears are in play

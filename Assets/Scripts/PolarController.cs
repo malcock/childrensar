@@ -32,7 +32,7 @@ public class PolarController : MonoBehaviour {
                     break;
                 case State.Return:
 
-                    if (octopus.state != OctopusController.State.End) octopus.StopGame();
+                    //if (octopus.state != OctopusController.State.End) octopus.StopGame();
                     whale.OctoOut = false;
                     timeout = changeover;
                     break;

@@ -3590,7 +3590,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 11818609}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39c972a79d45b49a58b1080b95cdcec7, type: 3}
   m_Name: 
@@ -4729,8 +4729,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2c35c01dacbd36241ac51537a412f881, type: 2}
-  - {fileID: 2100000, guid: b47e599a2604273409131aa8f58d285c, type: 2}
+  - {fileID: 2100000, guid: 1fc8202bdbc454355884c67d1a11d71f, type: 2}
+  - {fileID: 2100000, guid: 1fc8202bdbc454355884c67d1a11d71f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5616,7 +5616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19109c9c593c749d982f593879fce751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeout: 10
+  timeout: 60
   OctoOut: 0
 --- !u!1 &478013549 stripped
 GameObject:
@@ -6526,7 +6526,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214069642587422, guid: 8ce7d6271a01a4274a00066492aed04a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ce7d6271a01a4274a00066492aed04a, type: 2}
@@ -14076,7 +14076,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2725e516a4f27f34a973bc6b4f203931, type: 2}
+  - {fileID: 2100000, guid: 1fc8202bdbc454355884c67d1a11d71f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24082,7 +24082,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f9b569bff074ac9419065187a0aa1379, type: 2}
+  - {fileID: 2100000, guid: 1fc8202bdbc454355884c67d1a11d71f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26188,6 +26188,16 @@ Prefab:
         type: 2}
       propertyPath: FlickBehaviour
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680569409627172, guid: 5bdbf013313294f12821a69158b30a28,
+        type: 2}
+      propertyPath: gametimeA
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680569409627172, guid: 5bdbf013313294f12821a69158b30a28,
+        type: 2}
+      propertyPath: gametimeB
+      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bdbf013313294f12821a69158b30a28, type: 2}
