@@ -1,55 +1,24 @@
 fileFormatVersion: 2
-guid: 5b37dd67848476049b8643a8ec674fcc
-timeCreated: 1512389582
+guid: dbb99c4e27c183e4a9aae4024d0dfe2d
+timeCreated: 1516622192
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Bucket_01
-    100002: Fish_002
-    100004: Fish_003
-    100006: Fish_004
-    100008: Fish_005
-    100010: Fish_006
-    100012: Fish_007
-    100014: //RootNode
-    100016: Bucket-BONE
-    100018: Fish-BONE
-    100020: Handle-BONE
-    400000: Bucket_01
-    400002: Fish_002
-    400004: Fish_003
-    400006: Fish_004
-    400008: Fish_005
-    400010: Fish_006
-    400012: Fish_007
-    400014: //RootNode
-    400016: Bucket-BONE
-    400018: Fish-BONE
-    400020: Handle-BONE
-    2300000: Bucket_01
-    2300002: Fish_002
-    2300004: Fish_003
-    2300006: Fish_004
-    2300008: Fish_005
-    2300010: Fish_006
-    2300012: Fish_007
-    3300000: Bucket_01
-    3300002: Fish_002
-    3300004: Fish_003
-    3300006: Fish_004
-    3300008: Fish_005
-    3300010: Fish_006
-    3300012: Fish_007
-    4300000: Fish_006
-    4300002: Fish_007
-    4300004: Fish_003
-    4300006: Fish_002
-    4300008: Bucket_01
-    4300010: Fish_004
-    4300012: Fish_005
-    7400000: Take 001
+    100000: Bucket-BONE
+    100002: Bucket_01
+    100004: Fish-BONE
+    100006: //RootNode
+    100008: Handle-BONE
+    400000: Bucket-BONE
+    400002: Bucket_01
+    400004: Fish-BONE
+    400006: //RootNode
+    400008: Handle-BONE
+    4300000: Bucket_01
+    7400000: FB-IDLE_01
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Bucket_01
   materials:
     importMaterials: 1
@@ -74,7 +43,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FB-IDLE_01
+      takeName: Take 001
+      firstFrame: 52
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -102,7 +99,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -119,7 +116,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5b37dd67848476049b8643a8ec674fcc,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

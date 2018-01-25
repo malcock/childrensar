@@ -1,56 +1,66 @@
 fileFormatVersion: 2
-guid: 5b37dd67848476049b8643a8ec674fcc
-timeCreated: 1512389582
+guid: 85f1c652ea0153c41a461cebe3c8b3b8
+timeCreated: 1516807840
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Bucket_01
-    100002: Fish_002
-    100004: Fish_003
-    100006: Fish_004
-    100008: Fish_005
-    100010: Fish_006
-    100012: Fish_007
-    100014: //RootNode
-    100016: Bucket-BONE
-    100018: Fish-BONE
-    100020: Handle-BONE
-    400000: Bucket_01
-    400002: Fish_002
-    400004: Fish_003
-    400006: Fish_004
-    400008: Fish_005
-    400010: Fish_006
-    400012: Fish_007
-    400014: //RootNode
-    400016: Bucket-BONE
-    400018: Fish-BONE
-    400020: Handle-BONE
-    2300000: Bucket_01
-    2300002: Fish_002
-    2300004: Fish_003
-    2300006: Fish_004
-    2300008: Fish_005
-    2300010: Fish_006
-    2300012: Fish_007
-    3300000: Bucket_01
-    3300002: Fish_002
-    3300004: Fish_003
-    3300006: Fish_004
-    3300008: Fish_005
-    3300010: Fish_006
-    3300012: Fish_007
-    4300000: Fish_006
-    4300002: Fish_007
-    4300004: Fish_003
-    4300006: Fish_002
-    4300008: Bucket_01
-    4300010: Fish_004
-    4300012: Fish_005
+    100000: Otter-RIGHead
+    100002: Otter-RIGHeadBone001
+    100004: Otter-RIGLArmForearm
+    100006: Otter-RIGLArmPalm
+    100008: Otter-RIGLArmUpperarm
+    100010: Otter-RIGLLeg2
+    100012: Otter-RIGLLegDigit11
+    100014: Otter-RIGLLegFoot
+    100016: Otter-RIGLLegThigh
+    100018: Otter-RIGNeck
+    100020: Otter-RIGPelvis
+    100022: Otter-RIGR2
+    100024: Otter-RIGRDigit11
+    100026: Otter-RIGRFoot
+    100028: Otter-RIGRForearm
+    100030: Otter-RIGRibcage
+    100032: Otter-RIGRPalm
+    100034: Otter-RIGRThigh
+    100036: Otter-RIGRUpperarm
+    100038: Otter-RIGSpine1
+    100040: Otter-RIGSpine2
+    100042: Otter-RIGTail1
+    100044: Otter-RIGTail2
+    100046: Otter-RIGTail3
+    100048: //RootNode
+    100050: Otter_01
+    400000: Otter-RIGHead
+    400002: Otter-RIGHeadBone001
+    400004: Otter-RIGLArmForearm
+    400006: Otter-RIGLArmPalm
+    400008: Otter-RIGLArmUpperarm
+    400010: Otter-RIGLLeg2
+    400012: Otter-RIGLLegDigit11
+    400014: Otter-RIGLLegFoot
+    400016: Otter-RIGLLegThigh
+    400018: Otter-RIGNeck
+    400020: Otter-RIGPelvis
+    400022: Otter-RIGR2
+    400024: Otter-RIGRDigit11
+    400026: Otter-RIGRFoot
+    400028: Otter-RIGRForearm
+    400030: Otter-RIGRibcage
+    400032: Otter-RIGRPalm
+    400034: Otter-RIGRThigh
+    400036: Otter-RIGRUpperarm
+    400038: Otter-RIGSpine1
+    400040: Otter-RIGSpine2
+    400042: Otter-RIGTail1
+    400044: Otter-RIGTail2
+    400046: Otter-RIGTail3
+    400048: //RootNode
+    400050: Otter_01
+    4300000: Otter_01
     7400000: Take 001
     9500000: //RootNode
-    13700000: Bucket_01
+    13700000: Otter_01
   materials:
     importMaterials: 1
     materialName: 0
@@ -67,7 +77,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -82,7 +92,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
+    importBlendShapes: 0
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
@@ -90,7 +100,7 @@ ModelImporter:
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
-    weldVertices: 1
+    weldVertices: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -102,7 +112,7 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -119,7 +129,8 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d7bf3426c667d20449c582603390e2fe,
+    type: 3}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1a0d52e285208dc4f9f8d3276b54c047
-timeCreated: 1512738065
+guid: 8d8a4e4408b603041b8aa77ca98d3dd8
+timeCreated: 1516807841
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -58,7 +58,7 @@ ModelImporter:
     400048: //RootNode
     400050: Otter_01
     4300000: Otter_01
-    7400000: WALK_01
+    7400000: IDLE_02
     9500000: //RootNode
     13700000: Otter_01
   materials:
@@ -86,17 +86,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: WALK_01
+      name: IDLE_02
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 50
+      lastFrame: 75
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
