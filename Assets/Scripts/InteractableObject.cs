@@ -25,10 +25,12 @@ public class InteractableObject : MonoBehaviour
     public UnityEvent OnDrag;
     public UnityEvent OnDragEnd;
 
+    LayerMask layerMask;
+
     void Awake()
     {
         Debug.Log(name + " initialised");
-
+        layerMask = LayerMask.GetMask("Default","Actor","Incedental","Ragdoll");
     }
 
     // Use this for initialization
@@ -40,7 +42,7 @@ public class InteractableObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (locked) return;
+        //if (locked && GameControl.Instance.FlickBehaviour==GameControl.FlickMode.Tap) return;
 //#if PLATFORM_IOS
         if (Input.touchCount > 0)
         {
@@ -62,7 +64,7 @@ public class InteractableObject : MonoBehaviour
                 };
 
 
-                if (Physics.Raycast(screenPosition, out hit))
+                if (Physics.Raycast(screenPosition, out hit,100,layerMask))
                 {
                     if (hit.transform == transform)
                     {
@@ -139,7 +141,7 @@ public class InteractableObject : MonoBehaviour
         {
             RaycastHit hit;
             Ray screenPosition = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(screenPosition, out hit))
+            if (Physics.Raycast(screenPosition, out hit,100,layerMask))
             {
                 
                 bool isHit = false;

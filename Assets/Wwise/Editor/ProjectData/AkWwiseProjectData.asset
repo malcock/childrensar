@@ -13,9 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events\Alpine.wwu
+  - PhysicalPath: Events/Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -639395830
     m_lastTimePart2: -1999282574
     List: []
@@ -24,25 +25,324 @@ MonoBehaviour:
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
     m_lastTimePsrt1: -639370817
     m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
     List:
-    - Name: PenguinSqueak
-      Path: Default Work Unit\PenguinSqueak
+    - Name: AmbientAlpine
+      Path: Alpine/AmbientAlpine
+=======
+    m_lastTimePsrt1: 730417806
+    m_lastTimePart2: -1999285372
+>>>>>>> master
+    List:
+    - Name: AlpineMusic
+      Path: Alpine\AlpineMusic
       PathAndIcons:
-      - ElementName: Default Work Unit
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: AlpineMusic
+        ObjectType: 3
+      ID: 453755285
+      Guid: 651ee4be6b1b6c429f48b40bb02df0cc
+      maxAttenuation: 0
+    - Name: AmbientAlpine
+      Path: Alpine\AmbientAlpine
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: AmbientAlpine
+        ObjectType: 3
+      ID: -957590770
+      Guid: c5f7ae65668bc242a2bac2a0a371dd7c
+      maxAttenuation: 0
+    - Name: BearAppearDisappear
+<<<<<<< HEAD
+      Path: Alpine/BearAppearDisappear
+=======
+      Path: Alpine\BearAppearDisappear
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: BearAppearDisappear
+        ObjectType: 3
+      ID: 774343659
+      Guid: 1d071c6e3778264cb61466ed38a94af4
+      maxAttenuation: 0
+    - Name: BearSway
+<<<<<<< HEAD
+      Path: Alpine/BearSway
+=======
+      Path: Alpine\BearSway
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: BearSway
+        ObjectType: 3
+      ID: 851259619
+      Guid: 40a8061d1086734991498d7efd1a73cf
+      maxAttenuation: 0
+    - Name: BearVocal
+<<<<<<< HEAD
+      Path: Alpine/BearVocal
+=======
+      Path: Alpine\BearVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: BearVocal
+        ObjectType: 3
+      ID: 1343055514
+      Guid: 2cbe55ee9a624c44bbd1a94f3ac31216
+      maxAttenuation: 0
+    - Name: DuckFly
+<<<<<<< HEAD
+      Path: Alpine/DuckFly
+=======
+      Path: Alpine\DuckFly
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: DuckFly
+        ObjectType: 3
+      ID: -1114162647
+      Guid: c4bc6e38621bb344a25169a0e7a1915b
+      maxAttenuation: 0
+    - Name: DuckVocal
+<<<<<<< HEAD
+      Path: Alpine/DuckVocal
+=======
+      Path: Alpine\DuckVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: DuckVocal
+        ObjectType: 3
+      ID: -1112754511
+      Guid: be9474a28a77a14b9bd825098102d6a1
+      maxAttenuation: 0
+    - Name: FrogVocal
+<<<<<<< HEAD
+      Path: Alpine/FrogVocal
+=======
+      Path: Alpine\FrogVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: FrogVocal
+        ObjectType: 3
+      ID: 1123537534
+      Guid: 2e57b4278f52564e9e561d809cb32938
+      maxAttenuation: 0
+    - Name: OtterMovement
+<<<<<<< HEAD
+      Path: Alpine/OtterMovement
+=======
+      Path: Alpine\OtterMovement
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: OtterMovement
+        ObjectType: 3
+      ID: -679659214
+      Guid: 8f2fb47c0405044290b6796f47f9d741
+      maxAttenuation: 0
+    - Name: OtterVocal
+<<<<<<< HEAD
+      Path: Alpine/OtterVocal
+=======
+      Path: Alpine\OtterVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: OtterVocal
+        ObjectType: 3
+      ID: -784663240
+      Guid: 4e75d31e402b274bb250ba5a607aac0a
+      maxAttenuation: 0
+    - Name: PenguinSqueak
+<<<<<<< HEAD
+      Path: Alpine/PenguinSqueak
+=======
+      Path: Alpine\PenguinSqueak
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
         ObjectType: 12
       - ElementName: PenguinSqueak
         ObjectType: 3
       ID: -1700287343
       Guid: 75628716ccccfc4f88f27f1014864bda
       maxAttenuation: 0
+    - Name: SalmonScare
+<<<<<<< HEAD
+      Path: Alpine/SalmonScare
+=======
+      Path: Alpine\SalmonScare
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Alpine
+        ObjectType: 12
+      - ElementName: SalmonScare
+        ObjectType: 3
+      ID: -758205159
+      Guid: e09af3c68c82b24e9bc832e3c4cf010a
+      maxAttenuation: 0
+<<<<<<< HEAD
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
+    List:
+    - Name: InteractFishPickup
+      Path: Default Work Unit/InteractFishPickup
+=======
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: -1762101675
+    m_lastTimePart2: -1999288179
+    List:
+    - Name: InteractFishPickup
+      Path: Default Work Unit\InteractFishPickup
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractFishPickup
+        ObjectType: 3
+      ID: -313129607
+      Guid: df09c390e6d91c4cb8ae57838cc9e99f
+      maxAttenuation: 0
+    - Name: InteractFishPickupLoop
+<<<<<<< HEAD
+      Path: Default Work Unit/InteractFishPickupLoop
+=======
+      Path: Default Work Unit\InteractFishPickupLoop
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractFishPickupLoop
+        ObjectType: 3
+      ID: -1374099037
+      Guid: 73d55c1b154df54dbb60ea4800f0f7a8
+      maxAttenuation: 0
+    - Name: InteractWaterSplash
+<<<<<<< HEAD
+      Path: Default Work Unit/InteractWaterSplash
+=======
+      Path: Default Work Unit\InteractWaterSplash
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractWaterSplash
+        ObjectType: 3
+      ID: 566451541
+      Guid: 6c659233a172d3449ba99704459ab26d
+      maxAttenuation: 0
+<<<<<<< HEAD
+  - PhysicalPath: Events/Polar.wwu
+    ParentPhysicalPath: 
+    Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
+    List:
+    - Name: CrabMovement
+      Path: Polar/CrabMovement
+=======
   - PhysicalPath: Events\Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -639335792
     m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: -1762071596
+    m_lastTimePart2: -1999288179
+>>>>>>> master
     List:
+    - Name: CrabMovement
+      Path: Polar\CrabMovement
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: CrabMovement
+        ObjectType: 3
+      ID: 1662606220
+      Guid: 4effc5b8d7b8b84f8c44e488d619d8f4
+      maxAttenuation: 0
+    - Name: InteractPenguinDrop
+<<<<<<< HEAD
+      Path: Polar/InteractPenguinDrop
+=======
+      Path: Polar\InteractPenguinDrop
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: InteractPenguinDrop
+        ObjectType: 3
+      ID: 41979954
+      Guid: 6a5d22b6cba86646a8807d94ca39ef71
+      maxAttenuation: 0
+    - Name: InteractPenguinPickup
+<<<<<<< HEAD
+      Path: Polar/InteractPenguinPickup
+=======
+      Path: Polar\InteractPenguinPickup
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: InteractPenguinPickup
+        ObjectType: 3
+      ID: -1203181403
+      Guid: 85896b9fffea7841836bd244935ee513
+      maxAttenuation: 0
+    - Name: OctopusAppearDisappear
+<<<<<<< HEAD
+      Path: Polar/OctopusAppearDisappear
+=======
+      Path: Polar\OctopusAppearDisappear
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: OctopusAppearDisappear
+        ObjectType: 3
+      ID: 1938830774
+      Guid: 00864ae6d1a1184cbfdefaa7cf035825
+      maxAttenuation: 0
+    - Name: OctopusVocal
+<<<<<<< HEAD
+      Path: Polar/OctopusVocal
+=======
+      Path: Polar\OctopusVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: OctopusVocal
+        ObjectType: 3
+      ID: -1130192625
+      Guid: 61ff4baa4671154283b1347db6810910
+      maxAttenuation: 0
     - Name: PenguinQuack
-      Path: Polar\PenguinQuack
+      Path: Polar/PenguinQuack
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -52,7 +352,7 @@ MonoBehaviour:
       Guid: c80b43c1329bd24ca457df72edca23ee
       maxAttenuation: 0
     - Name: PenguinSwim
-      Path: Polar\PenguinSwim
+      Path: Polar/PenguinSwim
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -62,7 +362,7 @@ MonoBehaviour:
       Guid: d83c5fadb6b39f4492695018f5a4c51b
       maxAttenuation: 0
     - Name: PolarAmbience
-      Path: Polar\PolarAmbience
+      Path: Polar/PolarAmbience
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -72,7 +372,7 @@ MonoBehaviour:
       Guid: 7239383fedf6b946b94cbbb7c70cf18b
       maxAttenuation: 0
     - Name: PolarMusic
-      Path: Polar\PolarMusic
+      Path: Polar/PolarMusic
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -81,8 +381,50 @@ MonoBehaviour:
       ID: -1234699116
       Guid: 7844a6fd2869214f8a6e66af0151f962
       maxAttenuation: 0
+    - Name: SeagullFly
+<<<<<<< HEAD
+      Path: Polar/SeagullFly
+=======
+      Path: Polar\SeagullFly
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: SeagullFly
+        ObjectType: 3
+      ID: 1191252457
+      Guid: 84c026909cdb6749b69267bd70e5bd79
+      maxAttenuation: 0
+    - Name: SeagullPoop
+<<<<<<< HEAD
+      Path: Polar/SeagullPoop
+=======
+      Path: Polar\SeagullPoop
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: SeagullPoop
+        ObjectType: 3
+      ID: -19386916
+      Guid: 5eac004df3eae94aa0f51b0fdeff94b5
+      maxAttenuation: 0
+    - Name: SeagullVocal
+<<<<<<< HEAD
+      Path: Polar/SeagullVocal
+=======
+      Path: Polar\SeagullVocal
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: SeagullVocal
+        ObjectType: 3
+      ID: 513789297
+      Guid: 56c5bb8754844847987093642e53dea3
+      maxAttenuation: 0
     - Name: WaterSplash
-      Path: Polar\WaterSplash
+      Path: Polar/WaterSplash
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -91,8 +433,22 @@ MonoBehaviour:
       ID: 777507535
       Guid: 4e382a63117141459e7200dc74119fca
       maxAttenuation: 0
+    - Name: WhaleBreach
+<<<<<<< HEAD
+      Path: Polar/WhaleBreach
+=======
+      Path: Polar\WhaleBreach
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: WhaleBreach
+        ObjectType: 3
+      ID: -1361037753
+      Guid: 1d4aba306e43684ca7ed95e67fd81748
+      maxAttenuation: 0
     - Name: WhaleSpray
-      Path: Polar\WhaleSpray
+      Path: Polar/WhaleSpray
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -101,29 +457,134 @@ MonoBehaviour:
       ID: 893632031
       Guid: 686254d2fdefb941a9f231bfe0fd5e30
       maxAttenuation: 0
+    - Name: WhaleSwim
+<<<<<<< HEAD
+      Path: Polar/WhaleSwim
+=======
+      Path: Polar\WhaleSwim
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Polar
+        ObjectType: 12
+      - ElementName: WhaleSwim
+        ObjectType: 3
+      ID: 1540104444
+      Guid: aa25f9c7e1e80d4e9ba251c9bc043020
+      maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -615551573
     m_lastTimePart2: -1999282574
     List: []
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 395240960
+    m_lastTimePart2: -1999285408
+    List:
+    - Name: Reverb
+      Path: Default Work Unit/Master Audio Bus/SFX/Reverb
+=======
+    m_lastTimePsrt1: -749049737
+    m_lastTimePart2: -1999285382
+    List:
+    - Name: Reverb
+      Path: Default Work Unit\Master Audio Bus\SFX\Reverb
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      ID: 348963605
+      Guid: b1024f50e474e74d811101bd03c8ddd4
+>>>>>>> master
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -615381461
     m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: 2145290112
+    m_lastTimePart2: -1999288770
+>>>>>>> master
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -615331430
     m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
     List:
+    - Name: BearAppearDisappear
+      Path: Default Work Unit/BearAppearDisappear
+=======
+    m_lastTimePsrt1: -213945701
+    m_lastTimePart2: -1999288186
+>>>>>>> master
+    List:
+    - Name: BearAppearDisappear
+      Path: Default Work Unit\BearAppearDisappear
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BearAppearDisappear
+        ObjectType: 11
+      ID: 774343659
+      Guid: ef48bba0f9bc164681a15b0246a0fcae
+      values:
+      - Appear
+      - Disappear
+      ValueIcons:
+      - ElementName: Appear
+        ObjectType: 10
+      - ElementName: Disappear
+        ObjectType: 10
+      valueIDs: 06dab2b4f84d5992
+      ValueGuids:
+      - bytes: 05163aff58a85042ae1ef1191eda0922
+      - bytes: 63ee6bd81c803344af1f59383d9106e8
+    - Name: OctopusAppearDisappear
+<<<<<<< HEAD
+      Path: Default Work Unit/OctopusAppearDisappear
+=======
+      Path: Default Work Unit\OctopusAppearDisappear
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OctopusAppearDisappear
+        ObjectType: 11
+      ID: 1938830774
+      Guid: 4eb86cbbf29923499577f42377f4421b
+      values:
+      - Appear
+      - Disappear
+      ValueIcons:
+      - ElementName: Appear
+        ObjectType: 10
+      - ElementName: Disappear
+        ObjectType: 10
+      valueIDs: 06dab2b4f84d5992
+      ValueGuids:
+      - bytes: 688a3ccb875c1a418418c51d77545d3e
+      - bytes: ac663d5ead6fb64a9a6d064911f1b3a3
     - Name: PenguinQuack
-      Path: Default Work Unit\PenguinQuack
+      Path: Default Work Unit/PenguinQuack
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -144,7 +605,7 @@ MonoBehaviour:
       - bytes: 172c38222553fb4da16648a952d0e58c
       - bytes: bd956e6774c3514fa8c75e8c35e37bfb
     - Name: PenguinSwim
-      Path: Default Work Unit\PenguinSwim
+      Path: Default Work Unit/PenguinSwim
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -173,7 +634,7 @@ MonoBehaviour:
       - bytes: 67f9fe009923ed489b226b9a1561f823
       - bytes: 4052e0e903471242b20746e56645923e
     - Name: WaterSplash
-      Path: Default Work Unit\WaterSplash
+      Path: Default Work Unit/WaterSplash
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -185,6 +646,7 @@ MonoBehaviour:
       - Large
       - Medium
       - Small
+      - SmallMed
       - SmallSoft
       ValueIcons:
       - ElementName: Large
@@ -193,23 +655,48 @@ MonoBehaviour:
         ObjectType: 10
       - ElementName: Small
         ObjectType: 10
+      - ElementName: SmallMed
+        ObjectType: 10
       - ElementName: SmallSoft
         ObjectType: 10
-      valueIDs: be065effb08bd2a91a41136eee9c1742
+      valueIDs: be065effb08bd2a91a41136eb04d7cbfee9c1742
       ValueGuids:
       - bytes: bb75af3b81a9284792f87ab8080ed278
       - bytes: c1e1b16b7964264c84f03c47e2f3580a
       - bytes: af194433da1f8041b89a651bd4d4793d
+      - bytes: 0d6ded195afc9e408dac05a9ad9acd84
       - bytes: 3b84f738091a5c40b6d83267a63019b0
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -615471525
     m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
     List:
+    - Name: Alpine
+      Path: Default Work Unit/Alpine
+=======
+    m_lastTimePsrt1: 1416822287
+    m_lastTimePart2: -1999285372
+>>>>>>> master
+    List:
+    - Name: Alpine
+      Path: Default Work Unit\Alpine
+>>>>>>> master
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Alpine
+        ObjectType: 7
+      ID: -513220612
+      Guid: 285d860ed6c55c4bb5f50e2830b66f29
     - Name: Polar
-      Path: Default Work Unit\Polar
+      Path: Default Work Unit/Polar
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -218,25 +705,36 @@ MonoBehaviour:
       ID: -2100714417
       Guid: 686920d76f6d244baad5275b45371462
   RtpcWwu:
-  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -639315769
     m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: 2125290112
+    m_lastTimePart2: -1999288770
+>>>>>>> master
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers\Default Work Unit.wwu
+  - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1387B60F-4C10-442C-B428-F462BE30D376}'
-    m_lastTimePsrt1: -740166242
-    m_lastTimePart2: -1999288762
+    m_lastTimePsrt1: 2145290112
+    m_lastTimePart2: -1999288770
     List: []
   ExpandedItems:
   - /ChildrensAR_WwiseProject
+  - /ChildrensAR_WwiseProject/Auxiliary Busses
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
+  - /ChildrensAR_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus/SFX
   - /ChildrensAR_WwiseProject/Events
-  - /ChildrensAR_WwiseProject/Events/Default Work Unit
   - /ChildrensAR_WwiseProject/Events/Polar
   - /ChildrensAR_WwiseProject/SoundBanks
+  - /ChildrensAR_WwiseProject/SoundBanks/Default Work Unit
+  - /ChildrensAR_WwiseProject/Switches
+  - /ChildrensAR_WwiseProject/Switches/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

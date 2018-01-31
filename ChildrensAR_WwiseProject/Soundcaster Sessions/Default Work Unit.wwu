@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FA5F26D5-A882-45BC-AD80-DD81E2E063ED}" SchemaVersion="80">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{FA5F26D5-A882-45BC-AD80-DD81E2E063ED}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FA5F26D5-A882-45BC-AD80-DD81E2E063ED}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="PolarMix" ID="{0D9EA453-5176-4490-BB66-AD08A6AF1A18}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Ambience" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Characters" ID="{44207DFA-721F-4D04-B825-855466714081}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
+						<CurrentSwitchRef Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

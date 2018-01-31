@@ -9,6 +9,7 @@
 						<Switch Name="Small" ID="{334419AF-1FDA-4180-B89A-651BD4D4793D}"/>
 						<Switch Name="Medium" ID="{6BB1E1C1-6479-4C26-84F0-3C47E2F3580A}"/>
 						<Switch Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+						<Switch Name="SmallMed" ID="{19ED6D0D-FC5A-409E-8DAC-05A9AD9ACD84}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="PenguinSwim" ID="{F4A8E61E-4377-4652-9BF7-AE39EE4422BA}">
@@ -21,10 +22,28 @@
 				</SwitchGroup>
 				<SwitchGroup Name="PenguinQuack" ID="{71433C07-E1B8-4A36-84BC-C2AF745B8969}">
 					<ChildrenList>
-						<Switch Name="QuackIdle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
-						<Switch Name="QuackPickedUp" ID="{676E95BD-C374-4F51-A8C7-5E8C35E37BFB}"/>
+						<Switch Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+						<Switch Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
+						<Switch Name="Climb" ID="{2867D66B-05F1-4A7D-87A5-E8EDBEFE850B}"/>
+						<Switch Name="Eat" ID="{82E8C6D4-AF3C-46D1-9C2F-BAB81E9863D3}"/>
+						<Switch Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
+						<Switch Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="BearAppearDisappear" ID="{A0BB48EF-BCF9-4616-81A1-5B0246A0FCAE}">
+					<ChildrenList>
+						<Switch Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<Switch Name="Disappear" ID="{D86BEE63-801C-4433-AF1F-59383D9106E8}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="OctopusAppearDisappear" ID="{BB6CB84E-99F2-4923-9577-F42377F4421B}">
+					<ChildrenList>
+						<Switch Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
+						<Switch Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
+				<SwitchGroup Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

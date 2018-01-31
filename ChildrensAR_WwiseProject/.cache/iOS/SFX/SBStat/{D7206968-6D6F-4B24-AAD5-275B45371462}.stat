@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
-	<Timestamp>131575020610000000</Timestamp>
-	<DataSize>64010646</DataSize>
-	<FileSize>64014613</FileSize>
-	<DecodedSize>64010392</DecodedSize>
-	<SFXPreFetchSize>0</SFXPreFetchSize>
-	<SFXInMemorySize>34724176</SFXInMemorySize>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+	<Timestamp>131595405900000000</Timestamp>
+	<DataSize>23693780</DataSize>
+	<FileSize>23703540</FileSize>
+	<DecodedSize>23693156</DecodedSize>
+=======
+	<Timestamp>131602296070000000</Timestamp>
+	<DataSize>23854196</DataSize>
+	<FileSize>23865906</FileSize>
+	<DecodedSize>23853500</DecodedSize>
+>>>>>>> master
+=======
+	<Timestamp>131602407540000000</Timestamp>
+	<DataSize>26515348</DataSize>
+	<FileSize>26528653</FileSize>
+	<DecodedSize>26514544</DecodedSize>
+>>>>>>> Stashed changes
+	<SFXPreFetchSize>70816</SFXPreFetchSize>
+	<SFXInMemorySize>26265600</SFXInMemorySize>
 	<SFXMissingFiles>0</SFXMissingFiles>
-	<MusicPreFetchSize>0</MusicPreFetchSize>
-	<MusicInMemorySize>29286216</MusicInMemorySize>
+	<MusicPreFetchSize>178128</MusicPreFetchSize>
+	<MusicInMemorySize>0</MusicInMemorySize>
 	<MusicMissingFiles>0</MusicMissingFiles>
 	<VoicePreFetchSize>0</VoicePreFetchSize>
 	<VoiceInMemorySize>0</VoiceInMemorySize>

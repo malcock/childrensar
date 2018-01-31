@@ -35,9 +35,9 @@
 						<Value Platform="Mac">256</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
-				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\"/>
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
+				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" />
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="Z:/Users/martinalcock/Unity/ChildrensAR/Assets/StreamingAssets/Audio/GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
@@ -80,7 +80,7 @@
 						<Value Platform="Mac">-80</Value>
 					</ValueList>
 				</Property>
-				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2017.1|Build=6377|VersionName=v2017.1.3|Config=Release"/>
+				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2017.1|Build=6377|VersionName=v2017.1.3|Config=Release" />
 			</PropertyList>
 			<MiscSettings>
 				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>

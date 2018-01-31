@@ -39,6 +39,8 @@ public class ColliderToFit : MonoBehaviour
 
 
 
+
+
     [MenuItem("My Tools/Collider/Destroy Colliders")]
     static void DestroyColliders()
     {

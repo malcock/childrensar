@@ -7,6 +7,8 @@ public class Splashable : MonoBehaviour {
 
     Rigidbody rb;
 
+    public string ForceSize = string.Empty;
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
@@ -21,12 +23,35 @@ public class Splashable : MonoBehaviour {
     {
         if (other.tag == "Water")
         {
-            if(rb!=null){
-                
+            string splashSize = "SmallSoft";
+            if (ForceSize == string.Empty)
+            {
+                if (rb != null)
+                {
+                    float intensity = rb.velocity.normalized.magnitude;
+                    if (intensity > 0.75f)
+                    {
+                        splashSize = "Large";
+                    }
+                    else if (intensity > 0.5f)
+                    {
+                        splashSize = "Medium";
+                    }
+                    else if (intensity > 0.15f)
+                    {
+                        splashSize = "Small";
+                    }
+                    else
+                    {
+                        splashSize = "SmallSoft";
+                    }
+                }
+            } else {
+                splashSize = ForceSize;
             }
-            AkSoundEngine.SetSwitch("WaterSplash", "SmallSoft", gameObject);
-            AkSoundEngine.PostEvent("WaterSplash", gameObject);
-            GameObject splash = Instantiate(Resources.Load("Splash", typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;
+
+            Splash splash = Instantiate(Resources.Load("Splash", typeof(Splash)), transform.position, Quaternion.identity) as Splash;
+            splash.splashSize = splashSize;
         }
     }
     private void OnTriggerExit(Collider other)
