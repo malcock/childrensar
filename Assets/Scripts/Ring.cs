@@ -52,6 +52,10 @@ public class Ring : MonoBehaviour
             }
             success = true;
             PlaceRing(position, parent);
+
+            //send a signal to the octopus parent to say it's been caught
+            hasBone.GetComponentInParent<OctopusController>().boringLegState = OctopusController.BoringLegMode.End;
+
             //play a sound?
 
             //particle effects?
@@ -63,6 +67,8 @@ public class Ring : MonoBehaviour
     }
 
     void PlaceRing(Vector3 position, Transform parent){
+        
+
         //turn off all the things and reset everything to 0s
         foreach(Rigidbody rb in GetComponentsInChildren<Rigidbody>()){
             rb.isKinematic = true;

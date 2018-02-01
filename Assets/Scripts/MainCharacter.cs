@@ -64,7 +64,31 @@ public class MainCharacter : MonoBehaviour
         doll.onCollisionStay.AddListener(HitLand);
         doll.onTriggerExit.AddListener(LeaveWater);
 
+        StartCoroutine(Blink(Random.Range(5f,10f),Random.Range(1,3),Random.Range(2f,10f)));
 
+    }
+
+    IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed){
+        Debug.Log(name + " blink: wait:" + waitTime + " count:" +blinkCount + " speed:" + blinkSpeed);
+        yield return new WaitForSeconds(waitTime);
+        for (int times = 0; times < blinkCount;times++){
+            float blinkAmount = 0;
+            while(blinkAmount<100){
+                //Debug.Log(name + "blink:" + blinkAmount);
+                skinnedMeshRenderer.SetBlendShapeWeight(2,blinkAmount);
+                blinkAmount += blinkSpeed;
+                yield return null;
+            }
+            while(blinkAmount>0){
+                skinnedMeshRenderer.SetBlendShapeWeight(2,blinkAmount);
+                blinkAmount -= blinkSpeed;
+                yield return null;
+            }
+
+            yield return null;
+        }
+
+        StartCoroutine(Blink(Random.Range(5f, 10f), Random.Range(1, 3), Random.Range(2f, 10f)));
     }
 
     // Update is called once per frame

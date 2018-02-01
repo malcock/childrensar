@@ -13,6 +13,10 @@ public class GameControl : MonoBehaviour {
 
     public FlickMode FlickBehaviour = FlickMode.Drag;
 
+    public enum OctoMode {Crazy,Boring}
+
+    public OctoMode OctoBehaviour = OctoMode.Crazy;
+
     public float gametimeA = 240, gametimeB = 240;
 
     public static GameControl Instance = null;
@@ -42,6 +46,10 @@ public class GameControl : MonoBehaviour {
 
     public void SetFlickBehaviour(int val){
         Instance.FlickBehaviour = (GameControl.FlickMode)val;
+    }
+
+    public void SetOctoBehaviour(int val){
+        Instance.OctoBehaviour = (GameControl.OctoMode)val;
     }
 
     public void SetGameATime(string val)

@@ -5,6 +5,7 @@ public class OctoBone : MonoBehaviour
 {
 
     public OctoBone TargetBone;
+    public int LimbNum;
 	// Use this for initialization
 	void Start()
 	{
