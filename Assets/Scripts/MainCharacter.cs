@@ -24,6 +24,7 @@ public class MainCharacter : MonoBehaviour
     public float swimTimeout = 4;
     public int fishMax = 5;
     public int fishEaten = 0;
+    public AnimationCurve massAnim;
 
     public Vector3 targetPosition = new Vector3();
 
@@ -39,6 +40,7 @@ public class MainCharacter : MonoBehaviour
     Collider mainCollider;
     Bounds waterBounds;
 
+    public float bellyAmount = 0;
 
     bool firstFrame = false;
 
@@ -64,23 +66,27 @@ public class MainCharacter : MonoBehaviour
         doll.onCollisionStay.AddListener(HitLand);
         doll.onTriggerExit.AddListener(LeaveWater);
 
-        StartCoroutine(Blink(Random.Range(5f,10f),Random.Range(1,3),Random.Range(2f,10f)));
+        StartCoroutine(Blink(Random.Range(5f, 10f), Random.Range(1, 3), Random.Range(2f, 10f)));
 
     }
 
-    IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed){
-        Debug.Log(name + " blink: wait:" + waitTime + " count:" +blinkCount + " speed:" + blinkSpeed);
+    IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
+    {
+        Debug.Log(name + " blink: wait:" + waitTime + " count:" + blinkCount + " speed:" + blinkSpeed);
         yield return new WaitForSeconds(waitTime);
-        for (int times = 0; times < blinkCount;times++){
+        for (int times = 0; times < blinkCount; times++)
+        {
             float blinkAmount = 0;
-            while(blinkAmount<100){
+            while (blinkAmount < 100)
+            {
                 //Debug.Log(name + "blink:" + blinkAmount);
-                skinnedMeshRenderer.SetBlendShapeWeight(2,blinkAmount);
+                skinnedMeshRenderer.SetBlendShapeWeight(2, blinkAmount);
                 blinkAmount += blinkSpeed;
                 yield return null;
             }
-            while(blinkAmount>0){
-                skinnedMeshRenderer.SetBlendShapeWeight(2,blinkAmount);
+            while (blinkAmount > 0)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(2, blinkAmount);
                 blinkAmount -= blinkSpeed;
                 yield return null;
             }
@@ -99,7 +105,8 @@ public class MainCharacter : MonoBehaviour
         {
             transform.position = new Vector3(0, 50, 0);
         }
-        if(doll.hips.position.y<-50){
+        if (doll.hips.position.y < -50)
+        {
             doll.hips.position = new Vector3(0, 50, 0);
         }
 
@@ -213,10 +220,13 @@ public class MainCharacter : MonoBehaviour
                             if (swimTime + swimTimeout < Time.time)
                             {
                                 Debug.Log("interval reset fish");
-                                if(GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay){
+                                if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
+                                {
                                     fishEaten = 0;
                                     swimState = SwimState.Return;
-                                } else {
+                                }
+                                else
+                                {
                                     if (fishEaten < fishMax) swimState = SwimState.Return;
                                 }
 
@@ -328,10 +338,10 @@ public class MainCharacter : MonoBehaviour
         mass = doll.totalMass + (fishEaten * 8);
         mainCollider.attachedRigidbody.mass = Mathf.Lerp(mainCollider.attachedRigidbody.mass, mass, Time.deltaTime);
 
-        float curWeight = skinnedMeshRenderer.GetBlendShapeWeight(0);
+
         float newWeight = fishEaten > 0 ? ((float)(fishEaten + 1) / (float)fishMax) * 100 : 0;
 
-        skinnedMeshRenderer.SetBlendShapeWeight(0, Mathf.Lerp(curWeight, newWeight, Time.deltaTime * 10));
+        skinnedMeshRenderer.SetBlendShapeWeight(0, bellyAmount);
 
 
     }
@@ -453,8 +463,29 @@ public class MainCharacter : MonoBehaviour
         anim.SetTrigger("Catch");
         Speak();
         fishEaten++;
+        StartCoroutine(AnimateWeight(1f, fishEaten * 20));
         if (fishEaten >= fishMax) state = State.Escape;
         //mainCollider.attachedRigidbody.mass = doll.totalMass + (fishEaten);
+    }
+
+    IEnumerator AnimateWeight(float timeout, float stop)
+    {
+        float t = timeout;
+        float start = bellyAmount;
+        Debug.Log(start + ", " + stop);
+        Debug.Log(name + " weight " + bellyAmount);
+        while (t > 0)
+        {
+            float p = 1 - (t / timeout);
+            float e = massAnim.Evaluate(p);
+            //Debug.Log(e);
+            float val = start + (e * stop);
+            bellyAmount = val;
+            Debug.Log(p + "/" + e + " - " + val + " : " + bellyAmount);
+            t -= Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log(name + " weight: " + skinnedMeshRenderer.GetBlendShapeWeight(0));
     }
 
     private float BoundsContainedPercentage(Bounds obj, Bounds region)

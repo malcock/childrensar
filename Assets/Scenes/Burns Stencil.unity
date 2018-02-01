@@ -5487,7 +5487,32 @@ MonoBehaviour:
   swimTimeout: 4
   fishMax: 5
   fishEaten: 0
+  massAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 8.1882715
+      outSlope: 8.1882715
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4150708
+      value: 1.1812606
+      inSlope: -3.6873622
+      outSlope: -3.6873622
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99209595
+      value: 0.35976344
+      inSlope: 0.0810696
+      outSlope: 0.0810696
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   targetPosition: {x: 0, y: 0, z: 0}
+  bellyAmount: 0
 --- !u!1001 &433434806
 Prefab:
   m_ObjectHideFlags: 0
@@ -7223,7 +7248,32 @@ MonoBehaviour:
   swimTimeout: 4
   fishMax: 5
   fishEaten: 0
+  massAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 8.1882715
+      outSlope: 8.1882715
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4150708
+      value: 1.1812606
+      inSlope: -3.6873622
+      outSlope: -3.6873622
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99209595
+      value: 0.35976344
+      inSlope: 0.0810696
+      outSlope: 0.0810696
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   targetPosition: {x: 0, y: 0, z: 0}
+  bellyAmount: 0
 --- !u!1 &685362712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,6 +9133,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 634747689}
     m_Modifications:
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 137773412693990366, guid: 99b71eeff2c884d948b21312751ce292,
         type: 2}
       propertyPath: m_BlendShapeWeights.Array.size
@@ -9144,6 +9199,61 @@ Prefab:
         type: 2}
       propertyPath: m_ConnectedAnchor.z
       value: 0.045893878
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[0].inSlope
+      value: 8.1882715
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[0].outSlope
+      value: 8.1882715
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[1].time
+      value: 0.4150708
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[1].value
+      value: 1.1812606
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[1].inSlope
+      value: -3.6873622
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[1].outSlope
+      value: -3.6873622
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[2].time
+      value: 0.99209595
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[2].value
+      value: 0.35976344
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[2].inSlope
+      value: 0.0810696
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_Curve.Array.data[2].outSlope
+      value: 0.0810696
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554661942615842, guid: 99b71eeff2c884d948b21312751ce292,
+        type: 2}
+      propertyPath: massAnim.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99b71eeff2c884d948b21312751ce292, type: 2}
@@ -14567,7 +14677,32 @@ MonoBehaviour:
   swimTimeout: 4
   fishMax: 5
   fishEaten: 0
+  massAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 8.1882715
+      outSlope: 8.1882715
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4150708
+      value: 1.1812606
+      inSlope: -3.6873622
+      outSlope: -3.6873622
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99209595
+      value: 0.35976344
+      inSlope: 0.0810696
+      outSlope: 0.0810696
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   targetPosition: {x: 0, y: 0, z: 0}
+  bellyAmount: 0
 --- !u!1 &1275217630
 GameObject:
   m_ObjectHideFlags: 0
@@ -15394,7 +15529,32 @@ MonoBehaviour:
   swimTimeout: 4
   fishMax: 5
   fishEaten: 0
+  massAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 8.1882715
+      outSlope: 8.1882715
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.4150708
+      value: 1.1812606
+      inSlope: -3.6873622
+      outSlope: -3.6873622
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.99209595
+      value: 0.35976344
+      inSlope: 0.0810696
+      outSlope: 0.0810696
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   targetPosition: {x: 0, y: 0, z: 0}
+  bellyAmount: 0
 --- !u!1 &1420732586
 GameObject:
   m_ObjectHideFlags: 0
@@ -16075,7 +16235,6 @@ GameObject:
   - component: {fileID: 1536710101}
   - component: {fileID: 1536710100}
   - component: {fileID: 1536710099}
-  - component: {fileID: 1536710102}
   m_Layer: 11
   m_Name: Wall_01
   m_TagString: Untagged
@@ -16154,18 +16313,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1536710097}
   m_Mesh: {fileID: 4300026, guid: db3f32eafffbc074aa532a19c1404269, type: 3}
---- !u!114 &1536710102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1536710097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f14a62e4fd6414faef5b3f63b5d1c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: 1
 --- !u!4 &1540231633 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4521852490015306, guid: f1760e49b60a54e298e5bea14415b5e5,
@@ -17152,7 +17299,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 812054860
+  randomSeed: -375066156
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -20565,7 +20712,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1421666052
+  randomSeed: -106770023
   InitialModule:
     serializedVersion: 3
     enabled: 1
