@@ -369,7 +369,7 @@ public class MainCharacter : MonoBehaviour
         if (swimState != SwimState.Escape)
             swimState = (state == State.Escape) ? SwimState.Escape : SwimState.Free;
         //state = State.Swimming;
-
+        Debug.Log(obj.name + " splash");
         MakeSplash(other, obj);
 
         //drop all fish to return fatness to normal
