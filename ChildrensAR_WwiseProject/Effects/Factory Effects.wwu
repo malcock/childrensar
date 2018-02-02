@@ -586,7 +586,34 @@
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="60"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="2938">
+											<RTPCList>
+												<RTPC Name="" ID="{99CA0A6F-C782-44B0-910A-DF11B0BBE688}" ShortID="808720242">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{19CD5C8F-CA0B-415D-A8AA-4A373A77AC6B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>20</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>3067.59961</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 									</PropertyList>
@@ -1507,9 +1534,9 @@
 							<ChildrenList>
 								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="1"/>
-										<Property Name="Density" Type="Real32" Value="50"/>
-										<Property Name="ERLevel" Type="Real32" Value="-18"/>
+										<Property Name="DecayTime" Type="Real32" Value="2.8"/>
+										<Property Name="Density" Type="Real32" Value="100"/>
+										<Property Name="ERLevel" Type="Real32" Value="-12"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
@@ -1519,11 +1546,12 @@
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
-										<Property Name="PreDelay" Type="Real32" Value="145"/>
+										<Property Name="PreDelay" Type="Real32" Value="200"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
-										<Property Name="RoomSize" Type="Real32" Value="73"/>
-										<Property Name="StereoWidth" Type="Real32" Value="28"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-26"/>
+										<Property Name="RoomShape" Type="Real32" Value="23"/>
+										<Property Name="RoomSize" Type="Real32" Value="100"/>
+										<Property Name="StereoWidth" Type="Real32" Value="82"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>

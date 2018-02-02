@@ -4,12 +4,24 @@
 		<WorkUnit Name="Polar" ID="{C72D401E-19C2-4FBF-9285-045D286735A0}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="PolarMusic" ID="{69EC62EB-2B71-4AAF-B81C-7780CF63AF01}" ShortID="101034124">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{159013B1-1ABC-4FD0-A775-8B1C7A6198D1}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+							<ObjectRef Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -43,6 +55,13 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0031F147-8701-4087-A432-2409CC51738F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -56,6 +75,18 @@
 								<MusicSegment Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" ShortID="405210894">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="186000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{431AC2E7-3939-4024-848C-696D46521CF2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-24"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -68,6 +99,34 @@
 									<ChildrenList>
 										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" ShortID="776561418">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{691A85B3-FAE6-47C3-8357-61B2C92FFA01}" ShortID="513062756">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{11730B3F-4AEC-4A28-BE3E-3DF994F89F29}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>51</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="IsStreamingEnabled" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -78,8 +137,52 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{145D9FA0-669E-4C77-A11C-D605E7D6DDC3}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{85A6939A-7C76-49CF-9835-265FD77A9226}" ShortID="1005987816">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AAB348DB-14E5-45D1-B991-DFF39C8CF243}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-19.521</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{E86F9C90-43F9-456D-A1C4-58B96F135EA7}" ShortID="720757223" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 												</Reference>
@@ -125,22 +228,33 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B3909307-D20C-4B80-B7F6-99F452A9EAB9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 													<RTPCList>
-														<RTPC Name="" ID="{A20194EA-4D37-47A2-BD1E-4FBF8CE91546}" ShortID="689288195">
+														<RTPC Name="" ID="{158CD2A0-2E3B-4148-B054-D15ACBEFA5BE}" ShortID="197978583">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{390AECA3-0B59-4089-97E8-9F784332BACD}">
+															<Curve Name="" ID="{1EFF8657-71AB-4621-A57B-6CE82907DA7B}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-30</YPos>
 																		<Flags>21</Flags>
 																	</Point>
 																	<Point>
@@ -157,6 +271,11 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{B7BC792C-3578-4422-A87E-7EA4DECD0C3A}" ShortID="1060160743" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -203,15 +322,85 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{CD01E885-00AB-4E10-A022-A9234F103FF9}" ShortID="204201110">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{679C40DF-44D0-4A69-A654-B9B36C0E67FF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>75</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E7768EA6-E1E6-4B7B-AEA4-8DE77E195BB9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{02A6C3AD-1041-4541-BB34-B9A89451FC85}" ShortID="85959610">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{03B58D26-B985-4817-A901-BCEA1A746F66}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{C436227C-FFFE-4DE4-9C7E-AFDF293BD0C8}" ShortID="517731547" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -248,18 +437,29 @@
 										</MusicTrack>
 									</ChildrenList>
 									<CueList>
-										<MusicCue Name="Entry Cue" ID="{3D77550A-71C5-4FA3-B725-A320A45C80C2}"/>
+										<MusicCue Name="Entry Cue" ID="{3D77550A-71C5-4FA3-B725-A320A45C80C2}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{883BC5FF-E9B6-4277-BD2D-E96AFF759A92}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="186000"/>
+												<Property Name="TimeMs" Type="Real64" Value="168000"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
 								<MusicSegment Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}" ShortID="494058516">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="218000"/>
+										<Property Name="EndPosition" Type="Real64" Value="226000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{438196AE-AA55-4569-A66A-D76DD34A0306}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -282,8 +482,26 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B2DE553A-043B-4843-B0E1-B8BA669347F9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{9C3C638A-30B2-48F4-ADEC-3DF0B9B1708D}" ShortID="400690232" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 												</Reference>
@@ -329,10 +547,28 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3B8C20CC-A4E2-4002-B936-D9D6328E285D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{9EE52F0A-1F59-44AA-826A-C6C92D066D3C}" ShortID="594936311" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -379,10 +615,28 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4EEFBD29-0333-4CE7-8F1C-F316672BF9E2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{04A90453-6E9C-402E-BF15-F174DC8528B1}" ShortID="204423235" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -419,11 +673,15 @@
 										</MusicTrack>
 									</ChildrenList>
 									<CueList>
-										<MusicCue Name="Entry Cue" ID="{A357E42E-C447-4830-A356-56B7C22D38F8}"/>
+										<MusicCue Name="Entry Cue" ID="{A357E42E-C447-4830-A356-56B7C22D38F8}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{8C1E6768-C423-46D0-9552-DBCCDDD75DD7}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="218000"/>
+												<Property Name="TimeMs" Type="Real64" Value="208000"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -431,6 +689,13 @@
 								<MusicSegment Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" ShortID="429195503">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="214000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3FEAE3F9-B84F-4D7D-B283-086D6D876037}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -453,13 +718,29 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-8</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{55855864-16DB-4C9A-9F6A-14ACC73DCB0B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{2645BCF1-FD9C-401B-BBA3-54C17C818D5E}" ShortID="592723197" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 												</Reference>
@@ -505,10 +786,28 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D8BE6CAC-B90D-4515-8FA5-6A6E7305FB9E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{30110168-C129-4FAB-ADCE-7377D0E1F57A}" ShortID="812909281" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -555,10 +854,28 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{15FA4415-A63F-4C1F-9784-9FEF20EE4170}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{E4086EC8-A271-4479-B7B7-34E8DD307DFA}" ShortID="166985185" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -595,11 +912,15 @@
 										</MusicTrack>
 									</ChildrenList>
 									<CueList>
-										<MusicCue Name="Entry Cue" ID="{D34C6063-744C-4840-B911-EAC880B2D526}"/>
+										<MusicCue Name="Entry Cue" ID="{D34C6063-744C-4840-B911-EAC880B2D526}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
 										<MusicCue Name="Exit Cue" ID="{3297F8FA-6382-4488-A7E0-194EC6BC4735}">
 											<PropertyList>
 												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="214000"/>
+												<Property Name="TimeMs" Type="Real64" Value="208000"/>
 											</PropertyList>
 										</MusicCue>
 									</CueList>
@@ -621,23 +942,27 @@
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{997C5BE0-3F1E-4B3E-AAD5-27D2D575F313}" ShortID="74875393">
 									<PropertyList>
-										<Property Name="PlayMode" Type="int16" Value="3"/>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="2"/>
 									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{9C0C2E16-A0C4-4A2F-8596-BD4473969D2B}" ShortID="462370267">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}"/>
 										</MusicPlaylistItem>
 										<MusicPlaylistItem Name="" ID="{113B98C1-D9BE-4566-88BD-D7EABFABD66E}" ShortID="770667920">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}"/>
 										</MusicPlaylistItem>
 										<MusicPlaylistItem Name="" ID="{97CF6593-25F6-4F3A-9D66-C5FCD34A6373}" ShortID="474216560">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}"/>
@@ -660,14 +985,8 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ArgumentList>
-						<ArgumentRef Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
-					</ArgumentList>
 					<EntryList>
 						<Entry>
-							<Path>
-								<PathElementRef Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
-							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}" Platform="Linked"/>
 							</AudioNodeInfo>

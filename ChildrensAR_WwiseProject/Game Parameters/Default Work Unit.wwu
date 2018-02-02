@@ -3,7 +3,21 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+				<GameParameter Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicRampUp" ID="{D2B03541-0513-4DA1-A83E-F66B1E0B2F2C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

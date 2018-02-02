@@ -6,26 +6,59 @@
 				<SoundcasterSession Name="PolarMix" ID="{0D9EA453-5176-4490-BB66-AD08A6AF1A18}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Ambience" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<ObjectRef Name="Ambience_Polar" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Characters" ID="{44207DFA-721F-4D04-B825-855466714081}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<ObjectRef Name="Characters_Polar" ID="{44207DFA-721F-4D04-B825-855466714081}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic" ID="{FDA64478-6928-4F21-8A6E-66AF0151F962}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarAmbience" ID="{3F383972-F6ED-46B9-B94C-BBB7C70CF18B}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="6" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="7" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicRampUp" ID="{D2B03541-0513-4DA1-A83E-F66B1E0B2F2C}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
 						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
 						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
-						<CurrentSwitchRef Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+						<CurrentSwitchRef Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
 						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

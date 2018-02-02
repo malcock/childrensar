@@ -57,6 +57,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{DA05D91E-92C5-4099-811B-38261EE65995}" ShortID="710296133">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="32"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}">
@@ -82,6 +92,42 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="amb_polar_main" ID="{BB842F19-396E-4943-AACD-802565A50204}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{19974342-5940-474D-B68F-1D13AF14E3B6}" ShortID="397977348">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{78FAA65A-5563-4CDA-B757-F1A37C6414DD}" ShortID="490060887">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}" WorkUnitID="{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C348C089-7CC3-40CA-A96B-39EE92412DEE}" ShortID="820825926">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

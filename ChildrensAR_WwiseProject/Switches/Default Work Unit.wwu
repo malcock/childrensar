@@ -42,7 +42,12 @@
 						<Switch Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}"/>
+				<SwitchGroup Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}">
+					<ChildrenList>
+						<Switch Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
+						<Switch Name="Octopus" ID="{CDA24685-FDF6-46E0-A585-29CC4D8784F8}"/>
+					</ChildrenList>
+				</SwitchGroup>
 				<SwitchGroup Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
 			</ChildrenList>
 		</WorkUnit>
