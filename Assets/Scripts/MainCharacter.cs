@@ -43,6 +43,7 @@ public class MainCharacter : MonoBehaviour
     public float bellyAmount = 0;
 
     bool firstFrame = false;
+    public bool isGettingOutOfWater = false;
 
     void Awake()
     {
@@ -66,8 +67,22 @@ public class MainCharacter : MonoBehaviour
         doll.onCollisionStay.AddListener(HitLand);
         doll.onTriggerExit.AddListener(LeaveWater);
 
-        StartCoroutine(Blink(Random.Range(5f, 10f), Random.Range(1, 3), Random.Range(2f, 10f)));
 
+        //start random behaviours
+        StartCoroutine(Blink(Random.Range(5f, 10f), Random.Range(1, 3), Random.Range(2f, 10f)));
+        StartCoroutine(IdleSound(Random.Range(20, 80)));
+    }
+
+    IEnumerator IdleSound(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
+
+        string eventName = (characterType==CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        AkSoundEngine.SetSwitch(eventName,"Idle",gameObject);
+        AkSoundEngine.PostEvent(eventName,gameObject);
+
+        StartCoroutine(IdleSound(Random.Range(20,30)));
     }
 
     IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
@@ -269,6 +284,7 @@ public class MainCharacter : MonoBehaviour
                                 swimState = SwimState.Return;
                                 break;
                             case SwimState.Return:
+                                isGettingOutOfWater = true;
                                 if (useLongJump)
                                 {
                                     //jump only a little, but long time
@@ -355,10 +371,18 @@ public class MainCharacter : MonoBehaviour
     {
         doll.ragdolled = true;
         state = State.Dragging;
+        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        AkSoundEngine.SetSwitch(eventName, "Tapped", gameObject);
+        AkSoundEngine.PostEvent(eventName, gameObject);
     }
     void EndDrag()
     {
         state = State.Dropped;
+        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        string switchName = isGettingOutOfWater ? "Climb" : "Thrown";
+        AkSoundEngine.SetSwitch(eventName, switchName, gameObject);
+        AkSoundEngine.PostEvent(eventName, gameObject);
+        isGettingOutOfWater = false;
     }
 
     void HitWater(Collider other, GameObject obj)
@@ -445,23 +469,20 @@ public class MainCharacter : MonoBehaviour
 
     public void Speak()
     {
-        switch (characterType)
-        {
-            case CharacterType.Penguin:
-                AkSoundEngine.SetSwitch("PenguinQuack", "QuackIdle", gameObject);
-                AkSoundEngine.PostEvent("PenguinQuack", gameObject);
-                break;
-            case CharacterType.Otter:
-
-                break;
-        }
+        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        AkSoundEngine.SetSwitch(eventName, "Call", gameObject);
+        AkSoundEngine.PostEvent(eventName, gameObject);
         anim.SetTrigger("Speak");
     }
 
     public void Catch()
     {
         anim.SetTrigger("Catch");
-        Speak();
+
+        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        AkSoundEngine.SetSwitch(eventName, "Eat", gameObject);
+        AkSoundEngine.PostEvent(eventName, gameObject);
+
         fishEaten++;
         StartCoroutine(AnimateWeight(1f, fishEaten * 20));
         if (fishEaten >= fishMax) state = State.Escape;

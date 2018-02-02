@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePsrt1: -695619072
-    m_lastTimePart2: -1999283142
+    m_lastTimePsrt1: 1976624768
+    m_lastTimePart2: -1999279556
     List:
     - Name: AlpineMusic
       Path: Alpine/AlpineMusic
@@ -119,16 +119,6 @@ MonoBehaviour:
       ID: -784663240
       Guid: 4e75d31e402b274bb250ba5a607aac0a
       maxAttenuation: 0
-    - Name: PenguinSqueak
-      Path: Alpine/PenguinSqueak
-      PathAndIcons:
-      - ElementName: Alpine
-        ObjectType: 12
-      - ElementName: PenguinSqueak
-        ObjectType: 3
-      ID: -1700287343
-      Guid: 75628716ccccfc4f88f27f1014864bda
-      maxAttenuation: 0
     - Name: SalmonScare
       Path: Alpine/SalmonScare
       PathAndIcons:
@@ -142,9 +132,19 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
-    m_lastTimePsrt1: 385240960
-    m_lastTimePart2: -1999285408
+    m_lastTimePsrt1: 1976624768
+    m_lastTimePart2: -1999279556
     List:
+    - Name: InteractFishImpact
+      Path: Default Work Unit/InteractFishImpact
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractFishImpact
+        ObjectType: 3
+      ID: 774803507
+      Guid: fd570ec38d3a4b4f984c7f4e3f482c13
+      maxAttenuation: 0
     - Name: InteractFishPickup
       Path: Default Work Unit/InteractFishPickup
       PathAndIcons:
@@ -165,6 +165,56 @@ MonoBehaviour:
       ID: -1374099037
       Guid: 73d55c1b154df54dbb60ea4800f0f7a8
       maxAttenuation: 0
+    - Name: InteractFishPickupLoopStop
+      Path: Default Work Unit/InteractFishPickupLoopStop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractFishPickupLoopStop
+        ObjectType: 3
+      ID: 1252589715
+      Guid: 88245953175ccc40b85f0e1b3e2bdd84
+      maxAttenuation: 0
+    - Name: InteractFishThrow
+      Path: Default Work Unit/InteractFishThrow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractFishThrow
+        ObjectType: 3
+      ID: 353446631
+      Guid: 2537b2d2e72da44fa4eeb6dc536581ad
+      maxAttenuation: 0
+    - Name: InteractRingSuccessL1
+      Path: Default Work Unit/InteractRingSuccessL1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingSuccessL1
+        ObjectType: 3
+      ID: -1223188625
+      Guid: 3f5b4ac8344637439c390864d458fc25
+      maxAttenuation: 0
+    - Name: InteractRingSuccessL2
+      Path: Default Work Unit/InteractRingSuccessL2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingSuccessL2
+        ObjectType: 3
+      ID: -1223188628
+      Guid: 7043590015919c4789d3cc5d492cfded
+      maxAttenuation: 0
+    - Name: InteractRingSuccessL3
+      Path: Default Work Unit/InteractRingSuccessL3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingSuccessL3
+        ObjectType: 3
+      ID: -1223188627
+      Guid: 2d6ee83a5fa63045a32b849b4d677000
+      maxAttenuation: 0
     - Name: InteractWaterSplash
       Path: Default Work Unit/InteractWaterSplash
       PathAndIcons:
@@ -178,8 +228,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Polar.wwu
     ParentPhysicalPath: 
     Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
-    m_lastTimePsrt1: -695619072
-    m_lastTimePart2: -1999283142
+    m_lastTimePsrt1: 1976624768
+    m_lastTimePart2: -1999279556
     List:
     - Name: CrabMovement
       Path: Polar/CrabMovement
@@ -345,11 +395,11 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
-    m_lastTimePsrt1: -665619072
-    m_lastTimePart2: -1999283142
+    m_lastTimePsrt1: 2006624768
+    m_lastTimePart2: -1999279556
     List:
-    - Name: Reverb
-      Path: Default Work Unit/Master Audio Bus/SFX/Reverb
+    - Name: Reverb_Polar
+      Path: Default Work Unit/Master Audio Bus/SFX/Reverb_Polar
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -357,9 +407,9 @@ MonoBehaviour:
         ObjectType: 2
       - ElementName: SFX
         ObjectType: 2
-      - ElementName: Reverb
+      - ElementName: Reverb_Polar
         ObjectType: 1
-      ID: 348963605
+      ID: -1212971340
       Guid: b1024f50e474e74d811101bd03c8ddd4
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -397,9 +447,22 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
-    m_lastTimePsrt1: -655619072
-    m_lastTimePart2: -1999283142
+    m_lastTimePsrt1: 2036624768
+    m_lastTimePart2: -1999279556
     List:
+    - Name: AlpineMusicSwitch
+      Path: Default Work Unit/AlpineMusicSwitch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AlpineMusicSwitch
+        ObjectType: 11
+      ID: -283971755
+      Guid: 595f607c51422e4fb2c3e5936fcf4c0f
+      values: []
+      ValueIcons: []
+      valueIDs: 
+      ValueGuids: []
     - Name: BearAppearDisappear
       Path: Default Work Unit/BearAppearDisappear
       PathAndIcons:
@@ -452,17 +515,33 @@ MonoBehaviour:
       ID: -575381344
       Guid: 073c4371b8e1364a84bcc2af745b8969
       values:
-      - QuackIdle
-      - QuackPickedUp
+      - Call
+      - Climb
+      - Eat
+      - Idle
+      - Tapped
+      - Thrown
       ValueIcons:
-      - ElementName: QuackIdle
+      - ElementName: Call
         ObjectType: 10
-      - ElementName: QuackPickedUp
+      - ElementName: Climb
         ObjectType: 10
-      valueIDs: 54511e650db21353
+      - ElementName: Eat
+        ObjectType: 10
+      - ElementName: Idle
+        ObjectType: 10
+      - ElementName: Tapped
+        ObjectType: 10
+      - ElementName: Thrown
+        ObjectType: 10
+      valueIDs: f599b6df98c1716cc913932eff60b76f4b1da10b6f32b886
       ValueGuids:
+      - bytes: 0e56f61962b9424285cf4148efea9af9
+      - bytes: 6bd66728f1057d4a87a5e8edbefe850b
+      - bytes: d4c6e8823cafd1469c2fbab81e9863d3
       - bytes: 172c38222553fb4da16648a952d0e58c
-      - bytes: bd956e6774c3514fa8c75e8c35e37bfb
+      - bytes: bad2d02b2ad8924cab39741586956162
+      - bytes: f908238d2e545e47afd91e4893a0965d
     - Name: PenguinSwim
       Path: Default Work Unit/PenguinSwim
       PathAndIcons:
@@ -501,10 +580,18 @@ MonoBehaviour:
         ObjectType: 11
       ID: 631772696
       Guid: fa2c011132960a468f3d7847574faf23
-      values: []
-      ValueIcons: []
-      valueIDs: 
-      ValueGuids: []
+      values:
+      - Ambient
+      - Octopus
+      ValueIcons:
+      - ElementName: Ambient
+        ObjectType: 10
+      - ElementName: Octopus
+        ObjectType: 10
+      valueIDs: a3daa504242ee964
+      ValueGuids:
+      - bytes: 3f8cef822b5af94e9bca21b9e9466e50
+      - bytes: 8546a2cdf6fde046a58529cc4d8784f8
     - Name: WaterSplash
       Path: Default Work Unit/WaterSplash
       PathAndIcons:
@@ -567,9 +654,27 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
-    m_lastTimePsrt1: -695619072
-    m_lastTimePart2: -1999283142
+    m_lastTimePsrt1: 1976624768
+    m_lastTimePart2: -1999279556
     List:
+    - Name: MusicEnvelope
+      Path: Default Work Unit/MusicEnvelope
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicEnvelope
+        ObjectType: 13
+      ID: 1842210006
+      Guid: c6311d09b1831540868a73bec53c095b
+    - Name: MusicRampUp
+      Path: Default Work Unit/MusicRampUp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicRampUp
+        ObjectType: 13
+      ID: 1553932209
+      Guid: 4135b0d21305a14da83ef66b1e0b2f2c
     - Name: PenguinSize
       Path: Default Work Unit/PenguinSize
       PathAndIcons:

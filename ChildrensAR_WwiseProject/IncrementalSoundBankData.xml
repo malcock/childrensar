@@ -3,14 +3,42 @@
 	<Platform GUID="{36A20F43-2A2B-440A-B564-E9A2B0DBFE11}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="3241511909" Timestamp="131620465739288857"/>
-				<File Name="Init" Hash="3881487301" Timestamp="131619821250769719"/>
-				<File Name="Polar" Hash="3082427607" Timestamp="131620465726675316"/>
+				<File Name="Alpine" Hash="2877252002" Timestamp="131620511281168682"/>
+				<File Name="Init" Hash="1469483335" Timestamp="131620511281237330"/>
+				<File Name="Polar" Hash="2195215245" Timestamp="131620544367817789"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3187743659" Timestamp="131620465739750081"/>
+				<File Name="" Hash="3221413757" Timestamp="131620544368032270"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Alpine" Hash="2877252002" Timestamp="131620510933510659"/>
+				<File Name="Init" Hash="2608209501" Timestamp="131620510933584445"/>
+				<File Name="Polar" Hash="2195215245" Timestamp="131620544354031566"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="3562568353" Timestamp="131620544354249964"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Alpine" Hash="2877252002" Timestamp="131620511103992573"/>
+				<File Name="Init" Hash="3146026189" Timestamp="131620511104064264"/>
+				<File Name="Polar" Hash="2195215245" Timestamp="131620544361201026"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="3579375623" Timestamp="131620544361371073"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
