@@ -10,6 +10,7 @@
 						<Switch Name="Medium" ID="{6BB1E1C1-6479-4C26-84F0-3C47E2F3580A}"/>
 						<Switch Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 						<Switch Name="SmallMed" ID="{19ED6D0D-FC5A-409E-8DAC-05A9AD9ACD84}"/>
+						<Switch Name="ObjectSubmerge" ID="{FB7EBE4A-77B9-49F1-BE99-C4D0673F6980}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="PenguinSwim" ID="{F4A8E61E-4377-4652-9BF7-AE39EE4422BA}">

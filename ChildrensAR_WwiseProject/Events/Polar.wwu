@@ -273,6 +273,134 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PenguinFootsteps" ID="{96486E8F-29CB-44B4-8B33-0D2AA6CC0023}">
+					<ChildrenList>
+						<Action Name="" ID="{E4C41985-2C7B-41F5-8FBA-CBD344D83545}" ShortID="1047415166">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_penguin_footstep_sequence" ID="{B83F12E8-E739-45C5-848F-0E04C1DA8A77}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingSuccessL3" ID="{3AE86E2D-A65F-4530-A32B-849B4D677000}">
+					<ChildrenList>
+						<Action Name="" ID="{85486938-50BB-4752-B5F8-97415B9F4185}" ShortID="573302335">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ring_success_level_3" ID="{5C0AD21F-845F-4FF8-85D7-A2B79407E0EF}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6A20349B-3570-4D81-8031-55A043C79390}" ShortID="159309220">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingSuccessL1" ID="{C84A5B3F-4634-4337-9C39-0864D458FC25}">
+					<ChildrenList>
+						<Action Name="" ID="{6804C8E5-5220-4273-B6B1-0AA63EB93F8C}" ShortID="800997346">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ring_success_level_1" ID="{F44D0D8D-1E39-445B-8944-19D5500174B7}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BE0ACA24-E3F2-4B34-A735-B4273240E13F}" ShortID="527529627">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingSuccessL2" ID="{00594370-9115-479C-89D3-CC5D492CFDED}">
+					<ChildrenList>
+						<Action Name="" ID="{6B256BDD-E397-4BA9-B0BA-49C3605A11E5}" ShortID="8756715">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ring_success_level_2" ID="{8937D6A2-BEAA-4440-8C8D-5526FE0B7B77}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9ECB92AF-D790-453E-9CDB-8B2FEE59A4C3}" ShortID="587234824">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingImpactMiss" ID="{0E78C693-3BDD-4EF3-8CE1-3794EF66A5A0}">
+					<ChildrenList>
+						<Action Name="" ID="{6AB439CD-A836-4732-AD5C-A2BB71518060}" ShortID="369534356">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact_Miss" ID="{AABC9447-E48F-4FEC-B33D-4AF446ACA194}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingPickup" ID="{1A7093AD-B07B-4D11-B61B-D10FF62FDB4D}">
+					<ChildrenList>
+						<Action Name="" ID="{6525865A-6C05-4645-B82F-F98D342299D3}" ShortID="399321067">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Pickup" ID="{F32BC72D-5CE0-4189-9959-A098E935972D}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingThrow" ID="{6BFA28BD-8F23-4A27-B65D-1A1ADB0AC83C}">
+					<ChildrenList>
+						<Action Name="" ID="{4483486C-5E8B-4B19-BCF6-550B1C617F46}" ShortID="307168279">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

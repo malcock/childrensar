@@ -3311,6 +3311,97 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Interact_Ring_Impact_Miss" ID="{AABC9447-E48F-4FEC-B33D-4AF446ACA194}" ShortID="1072075003">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1200</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_impact_C" ID="{CF73E82A-4C9C-41DE-84C3-379A1810F21E}" ShortID="869561858">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_C" ID="{E778AEAF-312E-4AE0-9A9C-F06C209DC727}" ShortID="189024257">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.679310009718174"/>
+												<Property Name="FadeOutShape" Type="int16" Value="0"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.679310009718174"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_C.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_C" ID="{E778AEAF-312E-4AE0-9A9C-F06C209DC727}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_impact_D" ID="{FA22FED8-9FA3-4001-BA14-D7060631912F}" ShortID="37863231">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_D" ID="{E571CD6C-142A-489D-BCA5-5D550F144909}" ShortID="225509094">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.818532555879494"/>
+												<Property Name="FadeOutShape" Type="int16" Value="0"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.818532555879494"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_D.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_D" ID="{E571CD6C-142A-489D-BCA5-5D550F144909}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_impact_E" ID="{2C754367-E183-4A43-A558-096AF5276411}" ShortID="580766110">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_E" ID="{62EC9BDA-0F31-49C6-8E45-420C7DFFCC93}" ShortID="810333420">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.912147716229349"/>
+												<Property Name="FadeOutShape" Type="int16" Value="0"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.912147716229349"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_E.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_E" ID="{62EC9BDA-0F31-49C6-8E45-420C7DFFCC93}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
