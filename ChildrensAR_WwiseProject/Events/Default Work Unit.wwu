@@ -175,6 +175,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BirdPoopSplatFloor" ID="{BE3131CC-B998-4520-8A37-D0E27BD781D1}">
+					<ChildrenList>
+						<Action Name="" ID="{312103EF-BE5F-4B32-963D-FD5DF0960D76}" ShortID="821309051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Floor" ID="{0093C19D-B80C-4D23-8437-ECA4F666C2DE}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdPoopSplatScreen" ID="{38DB9845-AE5F-4CE2-9DF9-950989B27293}">
+					<ChildrenList>
+						<Action Name="" ID="{19BE7E5A-17F1-4C69-8EF2-57861A3AF188}" ShortID="660614827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Screen" ID="{A501F90E-E54A-41B3-84B7-C6498AF41C15}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdPoopSplatWater" ID="{0DAA9F14-6C6B-4C3E-A3D7-58FFCBD6B1A5}">
+					<ChildrenList>
+						<Action Name="" ID="{E9ED9A96-76D6-42B6-8D8F-1F94A81571F7}" ShortID="1072418267">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Water" ID="{1C47B12F-AE8C-4063-BBBE-C0902CBC3BDF}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FishBucketAppear" ID="{01C42852-60A5-4DCF-8BDC-E5E50910638F}">
+					<ChildrenList>
+						<Action Name="" ID="{DDE3EA28-0944-49BB-ADF8-C577DEBCD982}" ShortID="556762176">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_fish_bucket_appear" ID="{9AB38CA2-C9A9-458A-A187-36287957A16F}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
