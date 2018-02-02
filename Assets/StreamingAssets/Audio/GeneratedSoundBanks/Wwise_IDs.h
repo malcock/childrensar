@@ -32,7 +32,6 @@ namespace AK
         static const AkUniqueID OTTERMOVEMENT = 3615308082U;
         static const AkUniqueID OTTERVOCAL = 3510304056U;
         static const AkUniqueID PENGUINQUACK = 3719585952U;
-        static const AkUniqueID PENGUINSQUEAK = 2594679953U;
         static const AkUniqueID PENGUINSWIM = 4055301235U;
         static const AkUniqueID POLARAMBIENCE = 4107323607U;
         static const AkUniqueID POLARMUSIC = 3060268180U;
@@ -63,6 +62,15 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ALPINEMUSICSWITCH
+        {
+            static const AkUniqueID GROUP = 4010995541U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace ALPINEMUSICSWITCH
+
         namespace BEARAPPEARDISAPPEAR
         {
             static const AkUniqueID GROUP = 774343659U;
@@ -91,8 +99,12 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID QUACKIDLE = 1696485716U;
-                static const AkUniqueID QUACKPICKEDUP = 1393799693U;
+                static const AkUniqueID CALL = 3753286133U;
+                static const AkUniqueID CLIMB = 1819394456U;
+                static const AkUniqueID EAT = 781390793U;
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID TAPPED = 195108171U;
+                static const AkUniqueID THROWN = 2260218479U;
             } // namespace SWITCH
         } // namespace PENGUINQUACK
 

@@ -10,20 +10,38 @@
 				</ModulatorLfo>
 				<ModulatorLfo Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" ShortID="940369406">
 					<PropertyList>
-						<Property Name="LfoDepth" Type="Real64" Value="94.7"/>
-						<Property Name="LfoFrequency" Type="Real64" Value="0.36">
+						<Property Name="LfoFrequency" Type="Real64" Value="0.5">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{D1744F22-404C-4609-8E3A-FEC7B535715B}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="0.3"/>
-											<Property Name="Min" Type="Real64" Value="-0.3"/>
+											<Property Name="Max" Type="Real64" Value="0.02"/>
+											<Property Name="Min" Type="Real64" Value="-0.03"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" ShortID="346558255">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.2">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D9FF57D5-EA01-4E74-9D3C-8FA5279E6600}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.01"/>
+											<Property Name="Min" Type="Real64" Value="-0.01"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="2"/>
 					</PropertyList>
 				</ModulatorLfo>
 			</ChildrenList>

@@ -3,7 +3,21 @@
 	<AudioObjects>
 		<WorkUnit Name="Polar" ID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Ambience" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" ShortID="269486378">
+				<ActorMixer Name="Ambience_Polar" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" ShortID="269486378">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5AB44E52-EACA-4621-B925-B115D91E9236}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -328,8 +342,21 @@
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Characters" ID="{44207DFA-721F-4D04-B825-855466714081}" ShortID="1145605">
+				<ActorMixer Name="Characters_Polar" ID="{44207DFA-721F-4D04-B825-855466714081}" ShortID="1145605">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B6E409EB-47AB-4A84-8164-012364D362AA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
@@ -342,9 +369,21 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Character_Octopus" ID="{A195C262-0C2C-449F-A6A4-71DB40A4249B}" ShortID="463443212">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9A7C705F-86CB-4A20-A4B0-9B06C5CD0ACD}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -522,12 +561,24 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Seagull_poop" ID="{E7874D33-5072-47F3-B153-8ED053A265D4}" ShortID="90426439">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C0E50794-8EFA-4F3F-A7F8-6B9E32C3DC4A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{11BC54E1-A13D-4F29-90D5-7007681C5C1A}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -540,6 +591,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="sfx_bird_poop_01" ID="{D6759A6C-B112-4561-A8E6-EDC29939B670}" ShortID="64847176">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{71496F20-1309-43CD-A470-3A4E4873798C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -619,6 +679,19 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Seagull_fly" ID="{9B4C01E2-6F25-4115-987C-89C0EDFA1665}" ShortID="169965038">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{28072B43-D57F-44D6-9F72-7FF91850E3CB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="278"/>
+															<Property Name="Min" Type="Real64" Value="-227"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -626,6 +699,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -754,6 +828,8 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Seagull_vocal" ID="{501DF781-882E-44C3-A78C-9A0B021CC3E4}" ShortID="573512649">
 									<PropertyList>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -761,13 +837,83 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{0C0596F0-1D25-472C-BB92-5B6368F8C7E5}" ShortID="128625093">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{77C2CF9A-8B33-4FC6-8C13-A90A85A07653}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeWetGame" ID="{E24EFAB5-9101-4450-8C2F-2227B747D1D9}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>-6.12102</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -833,12 +979,22 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Penguin" ID="{2FDECE36-001A-4720-AB71-8E13A4B3D2D7}" ShortID="1072661656">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6111406F-41F2-40A8-BC9F-7029B7F07CC1}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+									<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -987,6 +1143,50 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" ShortID="677101229">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E91E0432-CCD9-4C67-88D3-47FA5AE5BAF7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{0428B87E-1F66-4359-8041-54D9028F6539}" ShortID="897080722">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CB5044C7-055A-418A-8218-2F3161C2946C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-500</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1005,6 +1205,7 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1015,83 +1216,918 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="sfx_penguin_vocal_idle_1" ID="{51B15AE0-420A-4895-9D88-833693ABE55A}" ShortID="598841730">
+												<Sound Name="sfx_penguin_vocal_idle_4" ID="{820E561A-7973-42E7-B837-EF5EA54E1214}" ShortID="215738708">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_idle_1" ID="{E6705D35-6497-4ADB-B3E7-9780CC6B9B2A}" ShortID="799059336">
+														<AudioFileSource Name="sfx_penguin_vocal_idle_4" ID="{90098044-5EF1-4DE6-B1C8-A99A0EC33B3A}" ShortID="492613240">
 															<Language>SFX</Language>
-															<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1.wav</AudioFile>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_idle_4.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_idle_1" ID="{E6705D35-6497-4ADB-B3E7-9780CC6B9B2A}" Platform="Linked"/>
+														<ActiveSource Name="sfx_penguin_vocal_idle_4" ID="{90098044-5EF1-4DE6-B1C8-A99A0EC33B3A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_penguin_vocal_idle_2" ID="{042C7A8B-637B-48F5-BBFD-5B4B1094DDF4}" ShortID="549624648">
+												<Sound Name="sfx_penguin_vocal_idle_1" ID="{33EDE0DC-0A55-4FB7-9675-4E964DC8865C}" ShortID="810731947">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_idle_2" ID="{5899396A-E3F5-463D-908D-431901F8D60F}" ShortID="794621128">
+														<AudioFileSource Name="sfx_penguin_vocal_idle_1" ID="{C1895F33-47CD-4042-8EF4-ADEA4B6B1C67}" ShortID="600841742">
 															<Language>SFX</Language>
-															<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2.wav</AudioFile>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_idle_1.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_idle_2" ID="{5899396A-E3F5-463D-908D-431901F8D60F}" Platform="Linked"/>
+														<ActiveSource Name="sfx_penguin_vocal_idle_1" ID="{C1895F33-47CD-4042-8EF4-ADEA4B6B1C67}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_penguin_vocal_idle_3" ID="{EFE29EEF-B339-40F7-B837-918471A49010}" ShortID="297032771">
+												<Sound Name="sfx_penguin_vocal_idle_3" ID="{DFA0E8B9-7717-4E7A-82EE-90C9329F6292}" ShortID="464210428">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_idle_3" ID="{F4F7DEDF-C522-4289-A7E8-961118D048DE}" ShortID="878697382">
+														<AudioFileSource Name="sfx_penguin_vocal_idle_3" ID="{84EA464E-C13C-44C0-B780-AA68303AFF5C}" ShortID="745467183">
 															<Language>SFX</Language>
-															<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3.wav</AudioFile>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_idle_3.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_idle_3" ID="{F4F7DEDF-C522-4289-A7E8-961118D048DE}" Platform="Linked"/>
+														<ActiveSource Name="sfx_penguin_vocal_idle_3" ID="{84EA464E-C13C-44C0-B780-AA68303AFF5C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_penguin_vocal_idle_4" ID="{0C2147ED-720E-4FBE-9AE3-F7F730E1F1DE}" ShortID="686176697">
+												<Sound Name="sfx_penguin_vocal_idle_2" ID="{AF80945D-EA11-49F4-BE56-36306124FA75}" ShortID="723756716">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_idle_4" ID="{228D6E8E-ACDC-400D-9CBC-35960845D707}" ShortID="107949657">
+														<AudioFileSource Name="sfx_penguin_vocal_idle_2" ID="{149D4112-F920-4E1C-B8E9-10ADEB17214E}" ShortID="457245713">
 															<Language>SFX</Language>
-															<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4.wav</AudioFile>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_idle_2.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_idle_4" ID="{228D6E8E-ACDC-400D-9CBC-35960845D707}" Platform="Linked"/>
+														<ActiveSource Name="sfx_penguin_vocal_idle_2" ID="{149D4112-F920-4E1C-B8E9-10ADEB17214E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_penguin_vocal_idle_5" ID="{26BD9750-2649-46F5-9931-04A5EB4133B2}" ShortID="780063276">
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Vocal_Climb" ID="{28C1FE8C-718A-4CE7-BA07-CA174E0AF065}" ShortID="15415495">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_climb_1" ID="{A48FDDA4-F840-49A0-9D0E-DE34F7297A82}" ShortID="127092958">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_climb_1" ID="{311AB2BE-907F-4286-8685-C9FA2BE43730}" ShortID="906227756">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_climb_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_climb_1" ID="{311AB2BE-907F-4286-8685-C9FA2BE43730}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_climb_2" ID="{09F2E4FF-33A7-467F-B262-E715B9555A4B}" ShortID="152835140">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_climb_2" ID="{392743A0-DAB5-4024-B3FD-896CE9484819}" ShortID="563686037">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_climb_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_climb_2" ID="{392743A0-DAB5-4024-B3FD-896CE9484819}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}" ShortID="569624980">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F10AA34E-19FC-4954-9C44-EFC8FB5F558B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_eat_1" ID="{58660102-F8B2-4A20-AA5B-6B6EC27A1870}" ShortID="987389476">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{33DD0CF2-1CC4-4A4F-84B2-0C980F8E735B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" ShortID="161517213">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_eat_2" ID="{DDA1815E-95BD-4D5A-B8CD-9DBC33BCC036}" ShortID="918914411">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D41456B1-62F8-4866-81B8-2A894E7F0695}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" ShortID="771536258">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_eat_3" ID="{7923EE25-3912-467D-9A3D-14651ABFDBAC}" ShortID="238112040">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1A4272A0-78EC-4247-953A-DAA821C805DC}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" ShortID="727342031">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_eat_4" ID="{23F18E0C-EC19-49BD-8AA2-C4A6C202CEDF}" ShortID="111480552">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3307FB7C-8EB9-42DC-A222-E45893094F17}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" ShortID="771606138">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_eat_5" ID="{174973B5-B995-49DC-8B2A-34F661F855D7}" ShortID="321523999">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6AC0D270-3C98-4EFC-8763-E17A1FFF8414}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" ShortID="548974580">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Quack_Call" ID="{48EFD124-F003-4EE1-B3DD-2812DDCE078B}" ShortID="834481349">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AA976474-63DD-4F72-8378-79BE2A4AEA5F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_call_1" ID="{6F6CBB00-82F4-4617-BC85-6D599972CBCA}" ShortID="626954738">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_call_1" ID="{54A96AD8-4663-401E-BA32-22D4A8FBB46F}" ShortID="174252406">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_call_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_call_1" ID="{54A96AD8-4663-401E-BA32-22D4A8FBB46F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_call_2" ID="{AE263799-6602-4F1C-BC9E-3CC1A55DF924}" ShortID="871811540">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_call_2" ID="{93DB22DB-996A-4260-BAE6-60B87F1B4E11}" ShortID="735088202">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_call_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_call_2" ID="{93DB22DB-996A-4260-BAE6-60B87F1B4E11}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_call_3" ID="{FF897D67-BB6B-40A1-85D8-38544E7B6314}" ShortID="464331825">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_call_3" ID="{CCFEA33E-4A0C-4FE7-BAF7-7E67DB1A77D6}" ShortID="270110655">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_call_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_call_3" ID="{CCFEA33E-4A0C-4FE7-BAF7-7E67DB1A77D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_call_4" ID="{D2E052A6-A1B5-4FE5-AE6C-3C972CBD53D3}" ShortID="295999336">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_call_4" ID="{E8505825-978D-4B2B-B8F2-03CC7F946638}" ShortID="906759097">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_call_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_call_4" ID="{E8505825-978D-4B2B-B8F2-03CC7F946638}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_call_5" ID="{52469A3F-7C31-4595-BFD3-21BA8F3683F8}" ShortID="579038436">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_call_5" ID="{9ED477DF-9DBE-4FB6-9491-387166F9DCE6}" ShortID="166262248">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_call_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_call_5" ID="{9ED477DF-9DBE-4FB6-9491-387166F9DCE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Vocal_Thrown" ID="{471C806D-E45C-44F6-A22A-09ABAA72851E}" ShortID="601192220">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_throw_1" ID="{70C3807A-1F9F-401A-B0B4-0645E4A92D23}" ShortID="118321642">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_throw_1" ID="{35700EE8-3EDA-459F-BC1B-D0C811274370}" ShortID="192502381">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_throw_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_throw_1" ID="{35700EE8-3EDA-459F-BC1B-D0C811274370}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_throw_2" ID="{61EFFDA1-67EC-4087-B597-C5903BF72FEC}" ShortID="4556628">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_throw_2" ID="{4B4397E2-F6F8-45E6-9D67-8CE56C66B411}" ShortID="872709766">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_throw_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_throw_2" ID="{4B4397E2-F6F8-45E6-9D67-8CE56C66B411}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_throw_3" ID="{5EC6CDCC-ABF3-4C85-ACC8-68C66412F7BC}" ShortID="318818465">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_throw_3" ID="{10A4BA6F-1590-4C2D-93A3-AE8878636347}" ShortID="918186337">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_throw_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_throw_3" ID="{10A4BA6F-1590-4C2D-93A3-AE8878636347}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_throw_4" ID="{296DBD81-17DB-4B8B-AE06-CE1F3DEB3200}" ShortID="157722403">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_throw_4" ID="{B61B3E35-FCA5-4810-AA6B-66C9A390F5FC}" ShortID="217233969">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_throw_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_throw_4" ID="{B61B3E35-FCA5-4810-AA6B-66C9A390F5FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Vocal_Tapped" ID="{C5BF4425-1562-4530-B935-8A64F3595B98}" ShortID="144591287">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_tap_1" ID="{D28FB0B5-169B-4333-8E13-85A8B562CA83}" ShortID="626188791">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_1" ID="{8F9B8884-4C63-45AA-8089-24B5A41D2B74}" ShortID="551336699">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_1" ID="{8F9B8884-4C63-45AA-8089-24B5A41D2B74}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_2" ID="{FD4621F3-FFE7-453D-B95B-67C6FF635532}" ShortID="625055643">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_2" ID="{7D1BFC85-7E00-4709-B33E-0C6285E3FB2A}" ShortID="665894272">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_2" ID="{7D1BFC85-7E00-4709-B33E-0C6285E3FB2A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_3" ID="{AA867422-FCD8-4C00-A6A9-33093D01DE9B}" ShortID="833310823">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_3" ID="{F8833758-7C3A-4C43-B5DF-FFEF21BBCC80}" ShortID="931281975">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_3" ID="{F8833758-7C3A-4C43-B5DF-FFEF21BBCC80}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_4" ID="{3BCC35B5-9235-4C4B-B91F-F17E0EE57B6E}" ShortID="121166909">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_4" ID="{06077B07-BC5A-4A69-BF78-2D22429805FF}" ShortID="1056436036">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_4" ID="{06077B07-BC5A-4A69-BF78-2D22429805FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_5" ID="{C3F85FE7-522C-4639-90A5-DCEA03893588}" ShortID="306796102">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_5" ID="{70900D6A-9C75-474B-8D02-4658A71163D7}" ShortID="71854061">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_5" ID="{70900D6A-9C75-474B-8D02-4658A71163D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_6" ID="{FD5B5FD4-014E-471F-B096-75888EEA13A0}" ShortID="306456693">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_6" ID="{4CAF47DA-AF8C-4E87-91D0-7CB614539C0A}" ShortID="198548363">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_6.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_6" ID="{4CAF47DA-AF8C-4E87-91D0-7CB614539C0A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_7" ID="{6329086F-18DF-47B2-B59B-3C7D07854EC8}" ShortID="926395416">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_7" ID="{5DD68E14-A6E4-43C1-81A9-A97A17AE0B8F}" ShortID="456030998">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_7.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_7" ID="{5DD68E14-A6E4-43C1-81A9-A97A17AE0B8F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_8" ID="{C7057C51-D50A-47EF-9B54-261C8CEBDEFF}" ShortID="8209643">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_8" ID="{D93018A6-3800-4D4B-9834-DB327657C3C9}" ShortID="566892715">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_8.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_8" ID="{D93018A6-3800-4D4B-9834-DB327657C3C9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_tap_9" ID="{E399AE88-7F26-466A-A873-DC1F22ECBE36}" ShortID="327502062">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_tap_9" ID="{F10F9A44-16AF-4FF5-9AC8-DDDDFABCC362}" ShortID="623946642">
+															<Language>SFX</Language>
+															<AudioFile>Penguin SFX\sfx_penguin_vocal_tap_9.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_tap_9" ID="{F10F9A44-16AF-4FF5-9AC8-DDDDFABCC362}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_vocal_distant" ID="{D75493F2-E5B6-4804-B138-40C863194A0C}" ShortID="1059408313">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{78D8E561-85E6-4D61-9274-07D97EBE2D45}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_penguin_vocal_01" ID="{5C6FD842-CAD5-4922-9336-70953465CB43}" ShortID="417410709">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1101,13 +2137,70 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_idle_5" ID="{E355AB71-243B-4CD2-9CB1-9500D5EB5887}" ShortID="857533580">
+														<AudioFileSource Name="sfx_penguin_vocal_01" ID="{79E5EEF6-7013-4526-8C9F-30DC9F0A7885}" ShortID="246916669">
 															<Language>SFX</Language>
-															<AudioFile>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5.wav</AudioFile>
+															<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_idle_5" ID="{E355AB71-243B-4CD2-9CB1-9500D5EB5887}" Platform="Linked"/>
+														<ActiveSource Name="sfx_penguin_vocal_01" ID="{79E5EEF6-7013-4526-8C9F-30DC9F0A7885}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_02" ID="{F84A8630-B93D-4BAB-A3E9-06EA5353D072}" ShortID="441577264">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_02" ID="{BD79A338-8F91-44F3-A457-D33429FB4921}" ShortID="981871126">
+															<Language>SFX</Language>
+															<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_02" ID="{BD79A338-8F91-44F3-A457-D33429FB4921}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_03" ID="{11FBA0C3-E748-4D48-A1FE-FC563F55ECEB}" ShortID="436012219">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_03" ID="{55C30395-E33A-4B69-8457-29C9C0435D8A}" ShortID="626474259">
+															<Language>SFX</Language>
+															<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_03" ID="{55C30395-E33A-4B69-8457-29C9C0435D8A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_penguin_vocal_04" ID="{CA04E617-112B-4C05-A621-99E10BDCF65B}" ShortID="270502131">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_penguin_vocal_04" ID="{8EDE072D-3827-49D5-BF9B-98654D83C371}" ShortID="307823111">
+															<Language>SFX</Language>
+															<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_penguin_vocal_04" ID="{8EDE072D-3827-49D5-BF9B-98654D83C371}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1115,17 +2208,65 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="PenguinQuack" ID="{71433C07-E1B8-4A36-84BC-C2AF745B8969}"/>
-										<DefaultSwitchRef Name="QuackPickedUp" ID="{676E95BD-C374-4F51-A8C7-5E8C35E37BFB}"/>
+										<DefaultSwitchRef Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
+												<ItemRef Name="Penguin_Quack_Call" ID="{48EFD124-F003-4EE1-B3DD-2812DDCE078B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_Vocal_Tapped" ID="{C5BF4425-1562-4530-B935-8A64F3595B98}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_Vocal_Thrown" ID="{471C806D-E45C-44F6-A22A-09ABAA72851E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_Vocal_Climb" ID="{28C1FE8C-718A-4CE7-BA07-CA174E0AF065}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_vocal_distant" ID="{D75493F2-E5B6-4804-B138-40C863194A0C}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
-												<SwitchRef Name="QuackIdle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+												<SwitchRef Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
+												<ItemList>
+													<ItemRef Name="Penguin_Quack_Call" ID="{48EFD124-F003-4EE1-B3DD-2812DDCE078B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
 												<ItemList>
 													<ItemRef Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Climb" ID="{2867D66B-05F1-4A7D-87A5-E8EDBEFE850B}"/>
+												<ItemList>
+													<ItemRef Name="Penguin_Vocal_Climb" ID="{28C1FE8C-718A-4CE7-BA07-CA174E0AF065}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
+												<ItemList>
+													<ItemRef Name="Penguin_Vocal_Tapped" ID="{C5BF4425-1562-4530-B935-8A64F3595B98}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Eat" ID="{82E8C6D4-AF3C-46D1-9C2F-BAB81E9863D3}"/>
+												<ItemList>
+													<ItemRef Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
+												<ItemList>
+													<ItemRef Name="Penguin_Vocal_Thrown" ID="{471C806D-E45C-44F6-A22A-09ABAA72851E}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -1152,6 +2293,13 @@
 								</Sound>
 								<RandomSequenceContainer Name="Penguin_Footsteps" ID="{8F96228B-3458-4304-9F47-4C6EFBA6EB5E}" ShortID="742523463">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AC9038D7-8BD5-4E58-9FF3-751DAD2FDC2D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
@@ -1537,103 +2685,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Penguin_vocal_distant" ID="{D75493F2-E5B6-4804-B138-40C863194A0C}" ShortID="1059408313">
-									<PropertyList>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{78D8E561-85E6-4D61-9274-07D97EBE2D45}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_penguin_vocal_01" ID="{5C6FD842-CAD5-4922-9336-70953465CB43}" ShortID="417410709">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_penguin_vocal_01" ID="{79E5EEF6-7013-4526-8C9F-30DC9F0A7885}" ShortID="246916669">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_penguin_vocal_01" ID="{79E5EEF6-7013-4526-8C9F-30DC9F0A7885}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_penguin_vocal_02" ID="{F84A8630-B93D-4BAB-A3E9-06EA5353D072}" ShortID="441577264">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_penguin_vocal_02" ID="{BD79A338-8F91-44F3-A457-D33429FB4921}" ShortID="981871126">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_penguin_vocal_02" ID="{BD79A338-8F91-44F3-A457-D33429FB4921}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_penguin_vocal_03" ID="{11FBA0C3-E748-4D48-A1FE-FC563F55ECEB}" ShortID="436012219">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_penguin_vocal_03" ID="{55C30395-E33A-4B69-8457-29C9C0435D8A}" ShortID="626474259">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_penguin_vocal_03" ID="{55C30395-E33A-4B69-8457-29C9C0435D8A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_penguin_vocal_04" ID="{CA04E617-112B-4C05-A621-99E10BDCF65B}" ShortID="270502131">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_penguin_vocal_04" ID="{8EDE072D-3827-49D5-BF9B-98654D83C371}" ShortID="307823111">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Characters_Penguin\sfx_penguin_vocal_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_penguin_vocal_04" ID="{8EDE072D-3827-49D5-BF9B-98654D83C371}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Penguin_Movement" ID="{2852B2C7-B5E7-44E9-8393-7CD9524752C7}" ShortID="896546652">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1817,6 +2868,427 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="InteractionSFX_Polar" ID="{AB692BFD-E9D1-47D4-B481-6D697D563D50}" ShortID="616222730">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{10A2657B-ABA9-4D59-BC47-E2A2B2FA93C7}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" ShortID="24841718">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A2A37502-716A-4725-8C6F-DD20C28AC4E0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_throw_01" ID="{00EF2699-B679-4AA2-BAE6-63D0500F7345}" ShortID="95686779">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_throw_01" ID="{985B3D34-EEC9-49A8-B9EC-63754D46AC89}" ShortID="428850957">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_throw_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_throw_01" ID="{985B3D34-EEC9-49A8-B9EC-63754D46AC89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_throw_02" ID="{04700F00-CE6D-4440-9BAE-862FB86690FE}" ShortID="693052267">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_throw_02" ID="{33177313-9894-4D6B-B70A-599CD9590EAC}" ShortID="404223908">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_throw_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_throw_02" ID="{33177313-9894-4D6B-B70A-599CD9590EAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_throw_03" ID="{E872F3A4-9A66-4F95-9106-416882144908}" ShortID="377669020">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_throw_03" ID="{15FC5631-6160-40C4-8844-46D63A798953}" ShortID="530939695">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_throw_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_throw_03" ID="{15FC5631-6160-40C4-8844-46D63A798953}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Interact_Ring_Pickup" ID="{F32BC72D-5CE0-4189-9959-A098E935972D}" ShortID="139393478">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_pickup_01" ID="{6E969BE9-DFF2-46D3-A4EA-D61B92662F11}" ShortID="153192415">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_pickup_01" ID="{F7CFC7ED-08DF-4954-889F-3DB2F6E6FADC}" ShortID="1044081569">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_pickup_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_pickup_01" ID="{F7CFC7ED-08DF-4954-889F-3DB2F6E6FADC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_pickup_02" ID="{15711E6F-33D3-4CD3-AE3B-477895C7D941}" ShortID="394338256">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_pickup_02" ID="{EE7AFDB5-B1D0-4744-8F55-73AD64E60911}" ShortID="905204739">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_pickup_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_pickup_02" ID="{EE7AFDB5-B1D0-4744-8F55-73AD64E60911}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_pickup_03" ID="{2878D1C9-4AF3-4F93-B4DA-E2D75CB9FAB0}" ShortID="937235894">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_pickup_03" ID="{87BA0232-3230-46B1-B5AE-C9863C2C4338}" ShortID="362441150">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_pickup_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_pickup_03" ID="{87BA0232-3230-46B1-B5AE-C9863C2C4338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_pickup_04" ID="{D62C9247-CA24-4D6A-9B99-469D57FE59C2}" ShortID="253084637">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_pickup_04" ID="{412D3A87-EAA1-4566-9E8B-193403E9D61B}" ShortID="450086935">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_pickup_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_pickup_04" ID="{412D3A87-EAA1-4566-9E8B-193403E9D61B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<ActorMixer Name="Interact_Ring_Success_Level1" ID="{12E3DECC-A730-416F-9A12-26589AF0A509}" ShortID="562469478">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_success_level_1" ID="{F44D0D8D-1E39-445B-8944-19D5500174B7}" ShortID="517267728">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_success_level_1" ID="{BE721457-8E4A-4FC8-96A5-81A841813A15}" ShortID="520897157">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_success_level_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_success_level_1" ID="{BE721457-8E4A-4FC8-96A5-81A841813A15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Interact_Ring_Success_Level2" ID="{F98058EA-D1A9-4F43-9FC1-6596D28F586C}" ShortID="851017833">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_success_level_2" ID="{8937D6A2-BEAA-4440-8C8D-5526FE0B7B77}" ShortID="543257820">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_success_level_2" ID="{DB324F38-4768-4B93-9DBA-701407B72E5B}" ShortID="748618340">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_success_level_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_success_level_2" ID="{DB324F38-4768-4B93-9DBA-701407B72E5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Interact_Ring_Success_Level3" ID="{E397A7F8-7B8C-4571-A0AC-8159CC9267E3}" ShortID="1005063537">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_success_level_3" ID="{5C0AD21F-845F-4FF8-85D7-A2B79407E0EF}" ShortID="618221836">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_success_level_3" ID="{B145EE46-5931-4773-AC00-8ABD046BC41C}" ShortID="798331421">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_success_level_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_success_level_3" ID="{B145EE46-5931-4773-AC00-8ABD046BC41C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<RandomSequenceContainer Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" ShortID="110602872">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_ring_impact_C" ID="{6EED7B1E-3665-4F7D-A6CA-37BC717EB72B}" ShortID="348255226">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_C" ID="{60071793-5FC3-42F8-9F13-5AB6AF0C0CD2}" ShortID="1046665551">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_C.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_C" ID="{60071793-5FC3-42F8-9F13-5AB6AF0C0CD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_impact_D" ID="{D95A8A7B-BDB4-472E-8313-936885620214}" ShortID="775547174">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_D" ID="{616D13A0-8993-49EE-B532-290FAD509FCB}" ShortID="631819814">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_D.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_D" ID="{616D13A0-8993-49EE-B532-290FAD509FCB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_ring_impact_E" ID="{0096FE90-F53C-4EDA-8328-F26EDECCAF7C}" ShortID="410780023">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ring_impact_E" ID="{A0D30DF5-DF1E-452D-8B4D-6CE5B2F82F33}" ShortID="293381835">
+											<Language>SFX</Language>
+											<AudioFile>sfx_ring_impact_E.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ring_impact_E" ID="{A0D30DF5-DF1E-452D-8B4D-6CE5B2F82F33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
