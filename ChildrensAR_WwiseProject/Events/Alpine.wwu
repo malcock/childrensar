@@ -15,6 +15,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{3DA85C4B-DD55-469C-B344-E6326CAE895C}" ShortID="347207652">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="SalmonScare" ID="{C6F39AE0-828C-4EB2-9BC8-32E3C4CF010A}">

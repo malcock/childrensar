@@ -115,22 +115,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{C348C089-7CC3-40CA-A96B-39EE92412DEE}" ShortID="820825926">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="38"/>
-								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="WhaleSwim" ID="{C7F925AA-E8E1-4E0D-9BA2-51C9BC043020}">
@@ -198,6 +182,26 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Octopus_vocal" ID="{265B12C2-4E95-4D82-A8DC-58F2988686E2}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F565536-3089-45DC-92DE-DC21059BA42B}" ShortID="1305227">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ring_success_level_1" ID="{F44D0D8D-1E39-445B-8944-19D5500174B7}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5470A96A-8A2A-45C5-A32B-6E52F742F0B8}" ShortID="854214434">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
