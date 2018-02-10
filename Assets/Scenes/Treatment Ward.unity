@@ -3039,7 +3039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb4b64f567634001bd9e2ae36830840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePath: Audio/GeneratedSoundBanks
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
@@ -4231,6 +4231,10 @@ Prefab:
     - target: {fileID: 100000, guid: 5bb7ef59891fbd84b8bbeec9ef46a167, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 5bb7ef59891fbd84b8bbeec9ef46a167, type: 3}
+      propertyPath: m_Quality
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bb7ef59891fbd84b8bbeec9ef46a167, type: 3}

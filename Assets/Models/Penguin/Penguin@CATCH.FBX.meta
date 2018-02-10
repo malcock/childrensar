@@ -29,6 +29,40 @@ ModelImporter:
     100042: Penguin-RIGTail1
     100044: //RootNode
     100046: Base HumanHeadBone001Gizmo
+    100048: Base HumanHeadGizmo
+    100050: Base HumanLForearmGizmo
+    100052: Base HumanLUpperarmGizmo
+    100054: Base HumanPelvisGizmo
+    100056: Base HumanRForearmGizmo
+    100058: Base HumanRibcageGizmo
+    100060: Base HumanRUpperarmGizmo
+    100062: Base HumanTail1Gizmo
+    100064: BigMouth
+    100066: Bucket_01
+    100068: Camera001
+    100070: Camera001.Target
+    100072: Fish-BASIC_01
+    100074: Fish-RIG_01
+    100076: Fish-RIG_01Pelvis
+    100078: Fish-RIG_01PelvisGizmo
+    100080: Fish-RIG_01Tail1
+    100082: Fish-RIG_01Tail2
+    100084: Fish-RIG_01Tail2Gizmo
+    100086: Fish-RIG_01Tail3
+    100088: Fish-RIG_01Tail3Gizmo
+    100090: Fish-RIG_01Tail3Gizmo 1
+    100092: Fish_003
+    100094: Fish_008
+    100096: Fish_01
+    100098: Inflate
+    100100: Inflate-OLD
+    100102: Line001
+    100104: Penguin-BLINK
+    100106: Penguin-RIG
+    100108: Penguin-RIGLIKTarget
+    100110: Penguin-RIGLLegPlatform
+    100112: Penguin-RIGRIKTarget
+    100114: Penguin-RIGRPlatform
     400000: penguin
     400002: Penguin-RIGHead
     400004: Penguin-RIGHeadBone001
@@ -53,13 +87,148 @@ ModelImporter:
     400042: Penguin-RIGTail1
     400044: //RootNode
     400046: Base HumanHeadBone001Gizmo
+    400048: Base HumanHeadGizmo
+    400050: Base HumanLForearmGizmo
+    400052: Base HumanLUpperarmGizmo
+    400054: Base HumanPelvisGizmo
+    400056: Base HumanRForearmGizmo
+    400058: Base HumanRibcageGizmo
+    400060: Base HumanRUpperarmGizmo
+    400062: Base HumanTail1Gizmo
+    400064: BigMouth
+    400066: Bucket_01
+    400068: Camera001
+    400070: Camera001.Target
+    400072: Fish-BASIC_01
+    400074: Fish-RIG_01
+    400076: Fish-RIG_01Pelvis
+    400078: Fish-RIG_01PelvisGizmo
+    400080: Fish-RIG_01Tail1
+    400082: Fish-RIG_01Tail2
+    400084: Fish-RIG_01Tail2Gizmo
+    400086: Fish-RIG_01Tail3
+    400088: Fish-RIG_01Tail3Gizmo
+    400090: Fish-RIG_01Tail3Gizmo 1
+    400092: Fish_003
+    400094: Fish_008
+    400096: Fish_01
+    400098: Inflate
+    400100: Inflate-OLD
+    400102: Line001
+    400104: Penguin-BLINK
+    400106: Penguin-RIG
+    400108: Penguin-RIGLIKTarget
+    400110: Penguin-RIGLLegPlatform
+    400112: Penguin-RIGRIKTarget
+    400114: Penguin-RIGRPlatform
     2300000: Base HumanHeadBone001Gizmo
+    2300002: BigMouth
+    2300004: Bucket_01
+    2300006: Fish-BASIC_01
+    2300008: Fish-RIG_01Pelvis
+    2300010: Fish-RIG_01Tail1
+    2300012: Fish-RIG_01Tail2
+    2300014: Fish-RIG_01Tail3
+    2300016: Fish_003
+    2300018: Fish_008
+    2300020: Inflate
+    2300022: Inflate-OLD
+    2300024: Penguin-BLINK
+    2300026: Penguin-RIGHead
+    2300028: Penguin-RIGHeadBone001
+    2300030: Penguin-RIGLForearm
+    2300032: Penguin-RIGLLeg2
+    2300034: Penguin-RIGLLegDigit11
+    2300036: Penguin-RIGLLegFoot
+    2300038: Penguin-RIGLLegThigh
+    2300040: Penguin-RIGLUpperarm
+    2300042: Penguin-RIGNeck1
+    2300044: Penguin-RIGNeck2
+    2300046: Penguin-RIGPelvis
+    2300048: Penguin-RIGR2
+    2300050: Penguin-RIGRDigit11
+    2300052: Penguin-RIGRFoot
+    2300054: Penguin-RIGRForearm
+    2300056: Penguin-RIGRibcage
+    2300058: Penguin-RIGRThigh
+    2300060: Penguin-RIGRUpperarm
+    2300062: Penguin-RIGSpine1
+    2300064: Penguin-RIGSpine2
+    2300066: Penguin-RIGTail1
     3300000: Base HumanHeadBone001Gizmo
+    3300002: BigMouth
+    3300004: Bucket_01
+    3300006: Fish-BASIC_01
+    3300008: Fish-RIG_01Pelvis
+    3300010: Fish-RIG_01Tail1
+    3300012: Fish-RIG_01Tail2
+    3300014: Fish-RIG_01Tail3
+    3300016: Fish_003
+    3300018: Fish_008
+    3300020: Inflate
+    3300022: Inflate-OLD
+    3300024: Penguin-BLINK
+    3300026: Penguin-RIGHead
+    3300028: Penguin-RIGHeadBone001
+    3300030: Penguin-RIGLForearm
+    3300032: Penguin-RIGLLeg2
+    3300034: Penguin-RIGLLegDigit11
+    3300036: Penguin-RIGLLegFoot
+    3300038: Penguin-RIGLLegThigh
+    3300040: Penguin-RIGLUpperarm
+    3300042: Penguin-RIGNeck1
+    3300044: Penguin-RIGNeck2
+    3300046: Penguin-RIGPelvis
+    3300048: Penguin-RIGR2
+    3300050: Penguin-RIGRDigit11
+    3300052: Penguin-RIGRFoot
+    3300054: Penguin-RIGRForearm
+    3300056: Penguin-RIGRibcage
+    3300058: Penguin-RIGRThigh
+    3300060: Penguin-RIGRUpperarm
+    3300062: Penguin-RIGSpine1
+    3300064: Penguin-RIGSpine2
+    3300066: Penguin-RIGTail1
     4300000: penguin
     4300002: Base HumanHeadBone001Gizmo
+    4300004: Penguin-RIGPelvis
+    4300006: Penguin-RIGRThigh
+    4300008: Penguin-RIGR2
+    4300010: Penguin-RIGRFoot
+    4300012: Penguin-RIGRDigit11
+    4300014: Penguin-RIGSpine1
+    4300016: Penguin-RIGSpine2
+    4300018: Penguin-RIGRibcage
+    4300020: Penguin-RIGNeck1
+    4300022: Penguin-RIGNeck2
+    4300024: Penguin-RIGHead
+    4300026: Penguin-RIGHeadBone001
+    4300028: Penguin-RIGRUpperarm
+    4300030: Penguin-RIGRForearm
+    4300032: Penguin-RIGLUpperarm
+    4300034: Penguin-RIGLForearm
+    4300036: Penguin-RIGLLegThigh
+    4300038: Penguin-RIGLLeg2
+    4300040: Penguin-RIGLLegFoot
+    4300042: Penguin-RIGLLegDigit11
+    4300044: Penguin-RIGTail1
+    4300046: Fish_01
+    4300048: Fish-RIG_01Pelvis
+    4300050: Fish-RIG_01Tail1
+    4300052: Fish-RIG_01Tail2
+    4300054: Fish-RIG_01Tail3
+    4300056: Inflate-OLD
+    4300058: Fish_008
+    4300060: Fish-BASIC_01
+    4300062: Fish_003
+    4300064: Bucket_01
+    4300066: BigMouth
+    4300068: Inflate
+    4300070: Penguin-BLINK
     7400000: CATCH
     9500000: //RootNode
     13700000: penguin
+    13700002: Fish_01
   materials:
     importMaterials: 1
     materialName: 0
