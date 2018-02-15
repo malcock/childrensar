@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 0a08cdabf63a0eb45bb1378b4a4338dd
+timeCreated: 1518696199
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Bed_01
+    100002: BedHead_01
+    100004: Box003
+    100006: Box006
+    100008: Box_01
+    100010: Cabinet_01
+    100012: Ceiling_01
+    100014: Chair_01
+    100016: Clock_01
+    100018: Computer_01
+    100020: Cupboard_01
+    100022: Curtains_01
+    100024: DarkWall_01
+    100026: Door_01
+    100028: Door_02
+    100030: Floor_01
+    100032: LightFitting_01
+    100034: Plugs_01
+    100036: Print_01
+    100038: Print_02
+    100040: Railing_01
+    100042: Sink_01
+    100044: Taps_01
+    100046: Trolley_01
+    100048: Wall_01
+    100050: WallObjects_01
+    100052: WallUnit_01
+    100054: //RootNode
+    100056: Window_01
+    400000: Bed_01
+    400002: BedHead_01
+    400004: Box003
+    400006: Box006
+    400008: Box_01
+    400010: Cabinet_01
+    400012: Ceiling_01
+    400014: Chair_01
+    400016: Clock_01
+    400018: Computer_01
+    400020: Cupboard_01
+    400022: Curtains_01
+    400024: DarkWall_01
+    400026: Door_01
+    400028: Door_02
+    400030: Floor_01
+    400032: LightFitting_01
+    400034: Plugs_01
+    400036: Print_01
+    400038: Print_02
+    400040: Railing_01
+    400042: Sink_01
+    400044: Taps_01
+    400046: Trolley_01
+    400048: Wall_01
+    400050: WallObjects_01
+    400052: WallUnit_01
+    400054: //RootNode
+    400056: Window_01
+    2300000: Bed_01
+    2300002: BedHead_01
+    2300004: Box003
+    2300006: Box006
+    2300008: Box_01
+    2300010: Cabinet_01
+    2300012: Ceiling_01
+    2300014: Chair_01
+    2300016: Clock_01
+    2300018: Computer_01
+    2300020: Cupboard_01
+    2300022: Curtains_01
+    2300024: DarkWall_01
+    2300026: Door_01
+    2300028: Door_02
+    2300030: Floor_01
+    2300032: LightFitting_01
+    2300034: Plugs_01
+    2300036: Print_01
+    2300038: Print_02
+    2300040: Railing_01
+    2300042: Sink_01
+    2300044: Taps_01
+    2300046: Trolley_01
+    2300048: Wall_01
+    2300050: WallObjects_01
+    2300052: WallUnit_01
+    2300054: Window_01
+    3300000: Bed_01
+    3300002: BedHead_01
+    3300004: Box003
+    3300006: Box006
+    3300008: Box_01
+    3300010: Cabinet_01
+    3300012: Ceiling_01
+    3300014: Chair_01
+    3300016: Clock_01
+    3300018: Computer_01
+    3300020: Cupboard_01
+    3300022: Curtains_01
+    3300024: DarkWall_01
+    3300026: Door_01
+    3300028: Door_02
+    3300030: Floor_01
+    3300032: LightFitting_01
+    3300034: Plugs_01
+    3300036: Print_01
+    3300038: Print_02
+    3300040: Railing_01
+    3300042: Sink_01
+    3300044: Taps_01
+    3300046: Trolley_01
+    3300048: Wall_01
+    3300050: WallObjects_01
+    3300052: WallUnit_01
+    3300054: Window_01
+    4300000: DarkWall_01
+    4300002: WallUnit_01
+    4300004: Plugs_01
+    4300006: Window_01
+    4300008: Box006
+    4300010: Box003
+    4300012: Floor_01
+    4300014: Wall_01
+    4300016: Chair_01
+    4300018: Trolley_01
+    4300020: Sink_01
+    4300022: BedHead_01
+    4300024: Print_01
+    4300026: Computer_01
+    4300028: LightFitting_01
+    4300030: Railing_01
+    4300032: Door_01
+    4300034: Cupboard_01
+    4300036: Cabinet_01
+    4300038: Door_02
+    4300040: Box_01
+    4300042: Print_02
+    4300044: WallObjects_01
+    4300046: Bed_01
+    4300048: Taps_01
+    4300050: Curtains_01
+    4300052: Clock_01
+    4300054: Ceiling_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

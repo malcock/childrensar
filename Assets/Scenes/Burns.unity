@@ -274,7 +274,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb606a9c3f6d492da00f4bbefa89361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockInPlace: 1
+  floatCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sinkCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  delay: 0
+  changeTime: 0
 --- !u!4 &54759718 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4b48e3f821e614ca8ba83858dfe73bc2, type: 3}
@@ -421,6 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!54 &80291708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1300,6 +1314,8 @@ MonoBehaviour:
   myFloat: {fileID: 2132167125}
   EscapeLocation: {fileID: 0}
   swimTimeout: 4
+  fishMax: 5
+  fishEaten: 0
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &175065175 stripped
 GameObject:
@@ -1316,6 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!54 &175065178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2073,6 +2090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!1 &392424034 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: 700557a9af4c0eb46a509eb7802c1221, type: 3}
@@ -2116,6 +2134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!1 &418828473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +2233,7 @@ Prefab:
         type: 2}
       propertyPath: material
       value: 
-      objectReference: {fileID: 2100000, guid: cad24a1af3897504cbd623425c0710a1, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e032fd01e474bd489ed0c14822501bc, type: 2}
     - target: {fileID: 65263168390091782, guid: 0598dafdf1c3146f095984c22abd7dd7,
         type: 2}
       propertyPath: m_Size.x
@@ -2268,6 +2287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeout: 5
+  OctoOut: 0
 --- !u!1 &458316179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!54 &513378370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2653,7 +2674,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb606a9c3f6d492da00f4bbefa89361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockInPlace: 1
+  floatCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sinkCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  delay: 0
+  changeTime: 0
 --- !u!1 &531141374 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1575474968255964, guid: d2ed6e37d8c2e43de8242a533f81f03f,
@@ -2670,7 +2704,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb606a9c3f6d492da00f4bbefa89361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockInPlace: 1
+  floatCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sinkCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  delay: 0
+  changeTime: 0
 --- !u!1 &533302314
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,7 +3079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb4b64f567634001bd9e2ae36830840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePath: Audio/GeneratedSoundBanks
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
@@ -3238,9 +3285,14 @@ MonoBehaviour:
   penguinTime: 10
   octopusTime: 10
   changeover: 5
+  fadeTime: 3
+  timeout: 0
   _state: 0
   penguins: []
   floats: []
+  bucket: {fileID: 0}
+  hoops: {fileID: 0}
+  flickSwapParticles: {fileID: 0}
   octopus: {fileID: 1102614798}
   whale: {fileID: 0}
 --- !u!1001 &634907879
@@ -3537,6 +3589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!54 &739539492
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4690,6 +4743,8 @@ MonoBehaviour:
   myFloat: {fileID: 1673876140}
   EscapeLocation: {fileID: 0}
   swimTimeout: 4
+  fishMax: 5
+  fishEaten: 0
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &934266499
 MonoBehaviour:
@@ -5129,7 +5184,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb606a9c3f6d492da00f4bbefa89361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockInPlace: 1
+  floatCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sinkCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  delay: 0
+  changeTime: 0
 --- !u!1001 &988547618
 Prefab:
   m_ObjectHideFlags: 0
@@ -5759,6 +5827,8 @@ MonoBehaviour:
   myFloat: {fileID: 2062129292}
   EscapeLocation: {fileID: 0}
   swimTimeout: 4
+  fishMax: 5
+  fishEaten: 0
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1002428146
 MonoBehaviour:
@@ -10218,7 +10288,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb606a9c3f6d492da00f4bbefa89361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockInPlace: 1
+  floatCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  sinkCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  delay: 0
+  changeTime: 0
 --- !u!198 &1194123754 stripped
 ParticleSystem:
   m_PrefabParentObject: {fileID: 19800000, guid: 3d61e9fc0623c854c8052210f97f5edc,
@@ -10465,6 +10548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!1 &1231955079
 GameObject:
   m_ObjectHideFlags: 0
@@ -11384,6 +11468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!1001 &1457665576
 Prefab:
   m_ObjectHideFlags: 0
@@ -11515,6 +11600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!54 &1491462919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11873,6 +11959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!136 &1541281689
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12179,6 +12266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!1 &1625835334
 GameObject:
   m_ObjectHideFlags: 0
@@ -13653,6 +13741,8 @@ MonoBehaviour:
   myFloat: {fileID: 1495845666}
   EscapeLocation: {fileID: 0}
   swimTimeout: 4
+  fishMax: 5
+  fishEaten: 0
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1836566032
 GameObject:
