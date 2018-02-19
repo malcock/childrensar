@@ -7,14 +7,21 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Fish-BASIC_01
     100002: //RootNode
+    100004: Fish-Bone_01
+    100006: Fish-Bone_02
+    100008: Fish-TAIL
     400000: Fish-BASIC_01
     400002: //RootNode
+    400004: Fish-Bone_01
+    400006: Fish-Bone_02
+    400008: Fish-TAIL
     2300000: Fish-BASIC_01
     3300000: Fish-BASIC_01
     4300000: Fish-BASIC_01
     7400000: ATTRACT_01
     9500000: //RootNode
     11100000: //RootNode
+    13700000: Fish-BASIC_01
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,8 +49,8 @@ ModelImporter:
     - serializedVersion: 16
       name: ATTRACT_01
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 360
+      firstFrame: 299
+      lastFrame: 571
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
