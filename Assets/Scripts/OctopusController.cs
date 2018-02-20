@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class OctopusController : MonoBehaviour {
+public class OctopusController : MonoBehaviour
+{
 
     Animator animator;
 
-    public enum State {Start, Begin,Active,End}
+    public enum State { Start, Begin, Active, End }
     public State state = State.Start;
     public float wobbleAmount = 20;
 
-    public enum BoringLegMode {Pre,Start,Middle,End}
+    public enum BoringLegMode { Pre, Start, Middle, End }
     public BoringLegMode boringLegState = BoringLegMode.Pre;
 
     public int boringLeg = 0;
@@ -19,8 +20,11 @@ public class OctopusController : MonoBehaviour {
     public Dictionary<int, bool> octoArms = new Dictionary<int, bool>();
 
     float time = 0;
+    float finalLegTime = 3.33f;
 
     public float gameTime = 240;
+
+    bool gameSuccess = false;
 
     IEnumerator playGame;
 
@@ -32,31 +36,37 @@ public class OctopusController : MonoBehaviour {
             //box.gameObject.AddComponent<OctoBone>();
             //box.isTrigger = true;
         }
-        for (int l = 1;l < animator.layerCount;l++){
-            octoArms.Add(l,false);
+        for (int l = 1; l < animator.layerCount; l++)
+        {
+            octoArms.Add(l, false);
         }
     }
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         ResetArms();
-	}
+    }
 
-    public void ResetArms(){
+    public void ResetArms()
+    {
         var keys = new List<int>(octoArms.Keys);
-
-        foreach(int k in keys){
+        gameSuccess = false;
+        foreach (int k in keys)
+        {
             octoArms[k] = false;
         }
     }
-	
-    public void BeginGame(){
+
+    public void BeginGame()
+    {
         if (playGame != null) StopCoroutine(playGame);
         playGame = PlayGame();
         StartCoroutine(playGame);
     }
 
-    IEnumerator PlayGame(){
+    IEnumerator PlayGame()
+    {
         yield return new WaitForSeconds(1);
         state = State.Begin;
         animator.SetTrigger("Begin");
@@ -64,7 +74,7 @@ public class OctopusController : MonoBehaviour {
         AkSoundEngine.PostEvent("OctopusAppearDisappear", gameObject);
 
         yield return new WaitForSeconds(2);
-        AkSoundEngine.PostEvent("OctopusVocal",gameObject);
+        AkSoundEngine.PostEvent("OctopusVocal", gameObject);
         state = State.Active;
         yield return new WaitForSeconds(gameTime);
         state = State.End;
@@ -73,23 +83,31 @@ public class OctopusController : MonoBehaviour {
         AkSoundEngine.PostEvent("OctopusVocal", gameObject);
     }
 
-    public void StopGame(){
+    public void StopGame()
+    {
         StopAllCoroutines();
         state = State.End;
     }
 
     // Update is called once per frame
-	void Update () {
-        if (GameControl.Instance.OctoBehaviour == GameControl.OctoMode.Crazy){
+    void Update()
+    {
+        if (GameControl.Instance.OctoBehaviour == GameControl.OctoMode.Crazy)
+        {
             CrazyLegs();
+        }
+        else if(GameControl.Instance.OctoBehaviour == GameControl.OctoMode.Final)
+        {
+            FinalLegs();
         } else {
             BoringLegs();
         }
 
 
-	}
+    }
 
-    void BoringLegs(){
+    void BoringLegs()
+    {
         switch (state)
         {
             case State.Start:
@@ -102,12 +120,14 @@ public class OctopusController : MonoBehaviour {
                 }
                 break;
             case State.Active:
-                switch(boringLegState){
+                switch (boringLegState)
+                {
                     case BoringLegMode.Pre:
                         //Find an available arm and choose it
-                        KeyValuePair<int,bool>[] arms = octoArms.Where(x => x.Value == false).ToArray();
+                        KeyValuePair<int, bool>[] arms = octoArms.Where(x => x.Value == false).ToArray();
                         //choose random arm
-                        if(arms.Length==0){
+                        if (arms.Length == 0)
+                        {
                             state = State.End;
                             break;
                         }
@@ -143,16 +163,19 @@ public class OctopusController : MonoBehaviour {
 
                     case BoringLegMode.End:
                         //a ring has been tossed on this tentacle, we need to lower it and start the cycle again
-                        if(animator.GetLayerWeight(boringLeg)>0){
-                            animator.SetLayerWeight(boringLeg,animator.GetLayerWeight(boringLeg)-Time.deltaTime);
-                        } else {
+                        if (animator.GetLayerWeight(boringLeg) > 0)
+                        {
+                            animator.SetLayerWeight(boringLeg, animator.GetLayerWeight(boringLeg) - Time.deltaTime);
+                        }
+                        else
+                        {
                             octoArms[boringLeg] = true;
                             animator.SetBool("Active", false);
                             boringLegState = BoringLegMode.Pre;
                         }
 
                         break;
-                        
+
                 }
 
 
@@ -186,14 +209,103 @@ public class OctopusController : MonoBehaviour {
                     animator.SetBool("Active", false);
                     animator.SetTrigger("Celebrate");
                     state = State.Start;
+                    FindObjectOfType<PolarController>().state = PolarController.State.Return;
                 }
                 break;
 
         }
     }
 
+    void FinalLegs()
+    {
+        switch (state)
+        {
+            case State.Start:
 
-    void CrazyLegs(){
+                break;
+            case State.Begin:
+                foreach (Ring r in GetComponentsInChildren<Ring>())
+                {
+                    Destroy(r.gameObject);
+                }
+                break;
+            case State.Active:
+                //every 3.33 seconds, choose a different leg to raise from those that are still available
+                animator.SetBool("Active", true);
+
+                finalLegTime += Time.deltaTime;
+                if (finalLegTime > 3.33f)
+                {
+                    KeyValuePair<int, bool>[] arms = octoArms.Where(x => x.Value == false).ToArray();
+                    //choose random arm
+                    if (arms.Length == 0)
+                    {
+                        state = State.End;
+                        gameSuccess = true;
+                        break;
+                    }
+
+                    boringLeg = arms[Random.Range(0, arms.Length - 1)].Key;
+
+                    for (int l = 1; l < animator.layerCount; l++)
+                    {
+                        animator.SetLayerWeight(l, 0);
+                    }
+                    //set the weighting to max
+                    animator.SetLayerWeight(boringLeg, 1);
+
+                    finalLegTime = 0;
+                }
+
+
+
+
+
+                Vector3 rotation = transform.eulerAngles;
+                float newY = 180 + Mathf.Sin(Time.time) * wobbleAmount;
+                rotation.y = Mathf.Lerp(rotation.y, newY, Time.deltaTime);
+                transform.eulerAngles = rotation;
+                break;
+            case State.End:
+                
+
+                int layersReady = animator.layerCount - 1;
+                time = 0;
+                for (int l = 1; l < animator.layerCount; l++)
+                {
+                    if (animator.GetLayerWeight(l) > 0.05f)
+                    {
+                        animator.SetLayerWeight(l, Mathf.Lerp(animator.GetLayerWeight(l), 0, Time.deltaTime));
+                    }
+                    else
+                    {
+                        animator.SetLayerWeight(l, 0);
+                        layersReady--;
+                    }
+
+                }
+                if (layersReady == 0)
+                {
+                    StopCoroutine(playGame);
+                    animator.SetBool("Active", false);
+                    if (gameSuccess){
+                        animator.SetTrigger("Celebrate");
+                    } else {
+                        animator.SetTrigger("Done");
+                    }
+                    ResetArms();
+                    state = State.Start;
+                    FindObjectOfType<PolarController>().state = PolarController.State.Return;
+                }
+
+
+                break;
+
+        }
+    }
+
+    void CrazyLegs()
+    {
 
 
         switch (state)

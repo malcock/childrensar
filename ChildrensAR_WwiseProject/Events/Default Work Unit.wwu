@@ -175,6 +175,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="InteractRingPickup" ID="{28B845A3-BC4C-47F8-80D8-22248362FF2D}">
+					<ChildrenList>
+						<Action Name="" ID="{5D937EEB-9C2E-4CEA-83F3-74AD7B356641}" ShortID="674740680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Pickup" ID="{F32BC72D-5CE0-4189-9959-A098E935972D}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingThrow" ID="{A2FBB36F-D1A1-4411-9E61-2340989AEC14}">
+					<ChildrenList>
+						<Action Name="" ID="{6F62F3C4-0FEF-417C-822E-4D403B14C0D9}" ShortID="753462670">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingImpact" ID="{01FD4CAC-0167-49E2-B27C-A4DE01059166}">
+					<ChildrenList>
+						<Action Name="" ID="{FCFB4342-E4E9-41FE-9C9E-F6B2162157D7}" ShortID="896704827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

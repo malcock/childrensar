@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 23562146794727162}
   - component: {fileID: 54191049616446292}
   - component: {fileID: 136713228075349170}
+  - component: {fileID: 114761134377574954}
   m_Layer: 0
   m_Name: Fish-BASIC_01
   m_TagString: Untagged
@@ -87,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1705237565527564}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.15340278, y: -0.101, z: 0.365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4294637505303510}
@@ -187,7 +188,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 1, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: -0.0563}
+  m_ConnectedAnchor: {x: 0, y: 0, z: -0.060000014}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -312,6 +313,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a278b63f4a9e40339da5edfd02ffe6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114761134377574954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1870413805059554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df557950b1454b6997d39f4fc98a174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ForceSize: 
 --- !u!114 &114784166195455470
 MonoBehaviour:
   m_ObjectHideFlags: 1

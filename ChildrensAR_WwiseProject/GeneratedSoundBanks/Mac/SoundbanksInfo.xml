@@ -118,9 +118,12 @@
 				<Event Id="353446631" Name="InteractFishThrow" ObjectPath="\Events\Default Work Unit\InteractFishThrow" MaxAttenuation="100.000000"/>
 				<Event Id="41979954" Name="InteractPenguinDrop" ObjectPath="\Events\Polar\InteractPenguinDrop" MaxAttenuation="100.000000"/>
 				<Event Id="3091785893" Name="InteractPenguinPickup" ObjectPath="\Events\Polar\InteractPenguinPickup" MaxAttenuation="100.000000"/>
+				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
+				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
 				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
 				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
 				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
+				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="1938830774" Name="OctopusAppearDisappear" ObjectPath="\Events\Polar\OctopusAppearDisappear" MaxAttenuation="100.000000"/>
 				<Event Id="3164774671" Name="OctopusVocal" ObjectPath="\Events\Polar\OctopusVocal" MaxAttenuation="100.000000"/>
@@ -808,9 +811,12 @@
 				<Event Id="2920868259" Name="InteractFishPickupLoop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoop" MaxAttenuation="100.000000"/>
 				<Event Id="1252589715" Name="InteractFishPickupLoopStop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoopStop" MaxAttenuation="0.000000"/>
 				<Event Id="353446631" Name="InteractFishThrow" ObjectPath="\Events\Default Work Unit\InteractFishThrow" MaxAttenuation="100.000000"/>
+				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
+				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
 				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
 				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
 				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
+				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="3615308082" Name="OtterMovement" ObjectPath="\Events\Alpine\OtterMovement" MaxAttenuation="100.000000"/>
 				<Event Id="3510304056" Name="OtterVocal" ObjectPath="\Events\Alpine\OtterVocal" MaxAttenuation="100.000000"/>
@@ -949,6 +955,10 @@
 					<ShortName>sfx_interaction_fish_pickupV2_03.wav</ShortName>
 					<Path>SFX/sfx_interaction_fish_pickupV2_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="362441150" Language="SFX">
+					<ShortName>sfx_ring_pickup_03.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="380445953" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_03_1C9C67B2.wem</Path>
@@ -960,6 +970,10 @@
 				<File Id="394475566" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_vocal_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="404223908" Language="SFX">
+					<ShortName>sfx_ring_throw_02.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="407173997" Language="SFX">
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_01.wav</ShortName>
@@ -985,10 +999,18 @@
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Frog/sfx_frog_vocal_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="428850957" Language="SFX">
+					<ShortName>sfx_ring_throw_01.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="444334270" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1.wav</ShortName>
 					<Path>SFX/Forest_Music_Stems_v1/04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
+				</File>
+				<File Id="450086935" Language="SFX">
+					<ShortName>sfx_ring_pickup_04.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="456718688" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_04.wav</ShortName>
@@ -1021,6 +1043,10 @@
 				<File Id="523747903" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_splash_disappear.wav</ShortName>
 					<Path>SFX/Characters/Character_Bear/sfx_bear_splash_disappear_1C9C67B2.wem</Path>
+				</File>
+				<File Id="530939695" Language="SFX">
+					<ShortName>sfx_ring_throw_03.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="545719001" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</ShortName>
@@ -1230,6 +1256,10 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="905204739" Language="SFX">
+					<ShortName>sfx_ring_pickup_02.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="924287429" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_vocal_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Bear/sfx_bear_vocal_01_1C9C67B2.wem</Path>
@@ -1249,6 +1279,10 @@
 				<File Id="1039634106" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_05.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_fly_05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1044081569" Language="SFX">
+					<ShortName>sfx_ring_pickup_01.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1046665551" Language="SFX">
 					<ShortName>sfx_ring_impact_C.wav</ShortName>

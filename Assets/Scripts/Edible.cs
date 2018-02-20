@@ -7,20 +7,42 @@ using UnityEngine.Events;
 /// Edible. 
 /// Applied to an object that will be eaten by a creature - could it be a fish? or can I make it work for a ring toss too?
 /// </summary>
+[RequireComponent(typeof(InteractableObject))]
 public class Edible : MonoBehaviour {
 
     bool hasOwnCollider = false;
-
+    InteractableObject interactableObj;
 	// Use this for initialization
 	void Start () {
         if(GetComponent<SimpleRagdoll>()!=null){
-            foreach(RagdollBone bone in GetComponentsInChildren<RagdollBone>()){
+            foreach(RagBone bone in GetComponentsInChildren<RagBone>()){
                 bone.onCollisionEnter.AddListener(EatMe);
                 bone.onTriggerEnter.AddListener(InWater);
             }
+
         }
+        interactableObj = GetComponent<InteractableObject>();
+
+        interactableObj.OnDragStart.AddListener(DragStart);
+        interactableObj.OnDrag.AddListener(Drag);
+        interactableObj.OnDragEnd.AddListener(DragEnd);
 	}
 	
+    void DragStart(){
+        AkSoundEngine.PostEvent("InteractFishPickup",gameObject);
+        AkSoundEngine.PostEvent("InteractFishPickupLoop",gameObject);
+    }
+
+    void Drag(){
+        
+    }
+
+    void DragEnd(){
+        AkSoundEngine.PostEvent("InteractFishPickupLoopStop",gameObject);
+        AkSoundEngine.PostEvent("InteractFishThrow",gameObject);
+        StartCoroutine(timeout());
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -30,6 +52,7 @@ public class Edible : MonoBehaviour {
         if (other.tag == "Water")
         {
             Destroy(gameObject);
+
         }
     }
 
@@ -38,9 +61,12 @@ public class Edible : MonoBehaviour {
         Eater eater = collision.gameObject.GetComponent<Eater>();
         if(eater !=null){
             if (eater.OnFoodReceived != null) eater.OnFoodReceived.Invoke();
-            Destroy(gameObject);
+            Destroy(gameObject,0.05f);
         }
     }
 
-
+    IEnumerator timeout(){
+        yield return new WaitForSeconds(10);
+        Destroy(gameObject);
+    }
 }

@@ -10,7 +10,7 @@ public class PolarController : MonoBehaviour {
 
     public float timeout;
 
-    public enum State {Penguins, Escape, Octopus, Return }
+    public enum State {Penguins, Escape, FloatDrop, Octopus, Return }
     [SerializeField]
     private State _state = State.Penguins;
     public State state {
@@ -28,6 +28,9 @@ public class PolarController : MonoBehaviour {
                     
 
                     whale.OctoOut = true;
+                    timeout = changeover;
+                    break;
+                case State.FloatDrop:
                     timeout = changeover;
                     break;
                 case State.Return:
@@ -121,10 +124,14 @@ public class PolarController : MonoBehaviour {
                             break;
                     }
 
-                    floats[p].lockInPlace = false;
                 }
 
 
+                break;
+            case State.FloatDrop:
+                for (int f = 0; f < floats.Count;f++){
+                    floats[f].lockInPlace = false;
+                }
                 break;
             case State.Octopus:
                 

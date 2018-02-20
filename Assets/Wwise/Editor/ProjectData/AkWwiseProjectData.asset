@@ -132,8 +132,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
-    m_lastTimePsrt1: 1976624768
-    m_lastTimePart2: -1999279556
+    m_lastTimePsrt1: -109497600
+    m_lastTimePart2: -1999278674
     List:
     - Name: InteractFishImpact
       Path: Default Work Unit/InteractFishImpact
@@ -185,6 +185,26 @@ MonoBehaviour:
       ID: 353446631
       Guid: 2537b2d2e72da44fa4eeb6dc536581ad
       maxAttenuation: 0
+    - Name: InteractRingImpact
+      Path: Default Work Unit/InteractRingImpact
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingImpact
+        ObjectType: 3
+      ID: 195906091
+      Guid: ac4cfd016701e249b27ca4de01059166
+      maxAttenuation: 0
+    - Name: InteractRingPickup
+      Path: Default Work Unit/InteractRingPickup
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingPickup
+        ObjectType: 3
+      ID: -2014247183
+      Guid: a345b8284cbcf84780d822248362ff2d
+      maxAttenuation: 0
     - Name: InteractRingSuccessL1
       Path: Default Work Unit/InteractRingSuccessL1
       PathAndIcons:
@@ -214,6 +234,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1223188627
       Guid: 2d6ee83a5fa63045a32b849b4d677000
+      maxAttenuation: 0
+    - Name: InteractRingThrow
+      Path: Default Work Unit/InteractRingThrow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InteractRingThrow
+        ObjectType: 3
+      ID: -130833393
+      Guid: 6fb3fba2a1d111449e612340989aec14
       maxAttenuation: 0
     - Name: InteractWaterSplash
       Path: Default Work Unit/InteractWaterSplash
@@ -691,7 +721,10 @@ MonoBehaviour:
     m_lastTimePsrt1: 2145290112
     m_lastTimePart2: -1999288770
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /ChildrensAR_WwiseProject
+  - /ChildrensAR_WwiseProject/Events
+  - /ChildrensAR_WwiseProject/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
