@@ -3,15 +3,26 @@
 	<Events>
 		<WorkUnit Name="Alpine" ID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="AmbientAlpine" ID="{65AEF7C5-8B66-42C2-A2BA-C2A0A371DD7C}">
+				<Event Name="AlpineAmbience" ID="{65AEF7C5-8B66-42C2-A2BA-C2A0A371DD7C}">
 					<ChildrenList>
 						<Action Name="" ID="{49611725-3C75-4D25-AED6-8349A53504C2}" ShortID="1018823701">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_alpine" ID="{060B7DF0-4B73-4991-BB4F-4A41A1D8394B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3DA85C4B-DD55-469C-B344-E6326CAE895C}" ShortID="347207652">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="amb_alpine" ID="{060B7DF0-4B73-4991-BB4F-4A41A1D8394B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+									<ObjectRef Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

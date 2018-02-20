@@ -1207,12 +1207,23 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Bird_Poop" ID="{A9B3CBD6-C794-4B1E-991E-B69ED67128F4}" ShortID="709741901">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
