@@ -57,7 +57,79 @@ ModelImporter:
     400046: Otter-RIGTail3
     400048: //RootNode
     400050: Otter_01
+    2300000: Otter-RIGHead
+    2300002: Otter-RIGHeadBone001
+    2300004: Otter-RIGLArmForearm
+    2300006: Otter-RIGLArmPalm
+    2300008: Otter-RIGLArmUpperarm
+    2300010: Otter-RIGLLeg2
+    2300012: Otter-RIGLLegDigit11
+    2300014: Otter-RIGLLegFoot
+    2300016: Otter-RIGLLegThigh
+    2300018: Otter-RIGNeck
+    2300020: Otter-RIGPelvis
+    2300022: Otter-RIGR2
+    2300024: Otter-RIGRDigit11
+    2300026: Otter-RIGRFoot
+    2300028: Otter-RIGRForearm
+    2300030: Otter-RIGRibcage
+    2300032: Otter-RIGRPalm
+    2300034: Otter-RIGRThigh
+    2300036: Otter-RIGRUpperarm
+    2300038: Otter-RIGSpine1
+    2300040: Otter-RIGSpine2
+    2300042: Otter-RIGTail1
+    2300044: Otter-RIGTail2
+    2300046: Otter-RIGTail3
+    3300000: Otter-RIGHead
+    3300002: Otter-RIGHeadBone001
+    3300004: Otter-RIGLArmForearm
+    3300006: Otter-RIGLArmPalm
+    3300008: Otter-RIGLArmUpperarm
+    3300010: Otter-RIGLLeg2
+    3300012: Otter-RIGLLegDigit11
+    3300014: Otter-RIGLLegFoot
+    3300016: Otter-RIGLLegThigh
+    3300018: Otter-RIGNeck
+    3300020: Otter-RIGPelvis
+    3300022: Otter-RIGR2
+    3300024: Otter-RIGRDigit11
+    3300026: Otter-RIGRFoot
+    3300028: Otter-RIGRForearm
+    3300030: Otter-RIGRibcage
+    3300032: Otter-RIGRPalm
+    3300034: Otter-RIGRThigh
+    3300036: Otter-RIGRUpperarm
+    3300038: Otter-RIGSpine1
+    3300040: Otter-RIGSpine2
+    3300042: Otter-RIGTail1
+    3300044: Otter-RIGTail2
+    3300046: Otter-RIGTail3
     4300000: Otter_01
+    4300002: Otter-RIGPelvis
+    4300004: Otter-RIGRThigh
+    4300006: Otter-RIGR2
+    4300008: Otter-RIGRFoot
+    4300010: Otter-RIGRDigit11
+    4300012: Otter-RIGSpine1
+    4300014: Otter-RIGSpine2
+    4300016: Otter-RIGRibcage
+    4300018: Otter-RIGNeck
+    4300020: Otter-RIGHead
+    4300022: Otter-RIGHeadBone001
+    4300024: Otter-RIGRUpperarm
+    4300026: Otter-RIGRForearm
+    4300028: Otter-RIGRPalm
+    4300030: Otter-RIGLArmUpperarm
+    4300032: Otter-RIGLArmForearm
+    4300034: Otter-RIGLArmPalm
+    4300036: Otter-RIGLLegThigh
+    4300038: Otter-RIGLLeg2
+    4300040: Otter-RIGLLegFoot
+    4300042: Otter-RIGLLegDigit11
+    4300044: Otter-RIGTail1
+    4300046: Otter-RIGTail2
+    4300048: Otter-RIGTail3
     7400000: SWIM_01
     9500000: //RootNode
     13700000: Otter_01

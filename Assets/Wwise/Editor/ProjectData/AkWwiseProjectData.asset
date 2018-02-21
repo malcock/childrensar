@@ -16,8 +16,31 @@ MonoBehaviour:
   - PhysicalPath: Events/Alpine.wwu
     ParentPhysicalPath: 
     Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1976624768
     m_lastTimePart2: -1999279556
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -639395830
+    m_lastTimePart2: -1999282574
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8D000091-7B00-4A73-95D7-95A45927158B}'
+    m_lastTimePsrt1: -639370817
+    m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 385240960
+    m_lastTimePart2: -1999285408
+    List:
+    - Name: AmbientAlpine
+      Path: Alpine/AmbientAlpine
+=======
+    m_lastTimePsrt1: 730417806
+    m_lastTimePart2: -1999285372
+>>>>>>> master
+>>>>>>> arthur
     List:
     - Name: AlpineMusic
       Path: Alpine/AlpineMusic
@@ -263,6 +286,24 @@ MonoBehaviour:
     List:
     - Name: CrabMovement
       Path: Polar/CrabMovement
+<<<<<<< HEAD
+=======
+=======
+  - PhysicalPath: Events\Polar.wwu
+    ParentPhysicalPath: 
+    Guid: '{02EA163B-C358-4C04-95F0-8EA76EC3D932}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -639335792
+    m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: -1762071596
+    m_lastTimePart2: -1999288179
+>>>>>>> master
+    List:
+    - Name: CrabMovement
+      Path: Polar\CrabMovement
+>>>>>>> master
+>>>>>>> arthur
       PathAndIcons:
       - ElementName: Polar
         ObjectType: 12
@@ -425,8 +466,19 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{46395F96-2F91-43B6-85B0-F0CD8B401AE7}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 2006624768
     m_lastTimePart2: -1999279556
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -615551573
+    m_lastTimePart2: -1999282574
+    List: []
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 395240960
+    m_lastTimePart2: -1999285408
+>>>>>>> arthur
     List:
     - Name: Reverb_Polar
       Path: Default Work Unit/Master Audio Bus/SFX/Reverb_Polar
@@ -441,10 +493,15 @@ MonoBehaviour:
         ObjectType: 1
       ID: -1212971340
       Guid: b1024f50e474e74d811101bd03c8ddd4
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> arthur
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B379223A-4666-49EE-8A9A-C1BDC26777B6}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -655619072
     m_lastTimePart2: -1999283142
     List:
@@ -473,12 +530,32 @@ MonoBehaviour:
       - bytes: 16f94b9eed7a684596d6e552745cb6d3
       - bytes: c20a4cbecc47bf48b7c540efc31b4355
       - bytes: 207d0678f6d2a04e8bed34e0db64ff23
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -615381461
+    m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: 2145290112
+    m_lastTimePart2: -1999288770
+>>>>>>> master
+    List: []
+>>>>>>> arthur
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 2036624768
     m_lastTimePart2: -1999279556
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -615331430
+    m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
+>>>>>>> arthur
     List:
     - Name: AlpineMusicSwitch
       Path: Default Work Unit/AlpineMusicSwitch
@@ -495,6 +572,17 @@ MonoBehaviour:
       ValueGuids: []
     - Name: BearAppearDisappear
       Path: Default Work Unit/BearAppearDisappear
+<<<<<<< HEAD
+=======
+=======
+    m_lastTimePsrt1: -213945701
+    m_lastTimePart2: -1999288186
+>>>>>>> master
+    List:
+    - Name: BearAppearDisappear
+      Path: Default Work Unit\BearAppearDisappear
+>>>>>>> master
+>>>>>>> arthur
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -659,11 +747,32 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1D4CCE88-D94B-4B58-B50C-95C11D6D3B0E}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -655619072
     m_lastTimePart2: -1999283142
     List:
     - Name: Alpine
       Path: Default Work Unit/Alpine
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -615471525
+    m_lastTimePart2: -1999282574
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: 405240960
+    m_lastTimePart2: -1999285408
+    List:
+    - Name: Alpine
+      Path: Default Work Unit/Alpine
+=======
+    m_lastTimePsrt1: 1416822287
+    m_lastTimePart2: -1999285372
+>>>>>>> master
+    List:
+    - Name: Alpine
+      Path: Default Work Unit\Alpine
+>>>>>>> master
+>>>>>>> arthur
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -684,6 +793,7 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3ABAA341-BAED-4239-80BB-CE7EDC286608}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1976624768
     m_lastTimePart2: -1999279556
     List:
@@ -714,6 +824,16 @@ MonoBehaviour:
         ObjectType: 13
       ID: 145924928
       Guid: d187f1b57e3c1d4b8abcc11929d560b9
+=======
+<<<<<<< HEAD
+    m_lastTimePsrt1: -639315769
+    m_lastTimePart2: -1999282574
+=======
+    m_lastTimePsrt1: 2125290112
+    m_lastTimePart2: -1999288770
+>>>>>>> master
+    List: []
+>>>>>>> arthur
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 

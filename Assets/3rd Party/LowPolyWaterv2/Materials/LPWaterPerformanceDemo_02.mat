@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: LPWaterPerformanceDemo_02
   m_Shader: {fileID: 4800000, guid: 8165be4dd0b12774d80426d906df9c38, type: 3}
-  m_ShaderKeywords: _CULL_ON _EMISSION _LIGHTABS_ON _SHADING_FLAT _WAVES_LOWQUALITY
+  m_ShaderKeywords: _CULL_ON _EMISSION _SHADING_FLAT _WAVES_OFF _ZWRITE_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -42,7 +42,7 @@ Material:
     m_Floats:
     - _Absorption: 0.7
     - _BumpScale: 35
-    - _BumpScale_: 1.09375
+    - _BumpScale_: 0.875
     - _BumpSpeed: 0.2
     - _Cull: 1
     - _Cull_: 0
@@ -55,43 +55,43 @@ Material:
     - _FoamScale: 20
     - _FoamSpeed: 0.3
     - _FoamSpread: 1
-    - _FresPower: 0.82
+    - _FresPower: 1.08
     - _HQFoam: 0
     - _Height: 1.08
-    - _Height_: 0.03375
+    - _Height_: 0.027
     - _Length: 8
-    - _LightAbs: 1
+    - _LightAbs: 0
     - _NormalOffset: 0
     - _Opacity: 0
     - _PointLights: 0
     - _RHeight: -0.19
-    - _RHeight_: -0.0059375
+    - _RHeight_: -0.00475
     - _RSpeed: 0.2
-    - _RSpeed_: 0.00625
+    - _RSpeed_: 0.0050000004
     - _Reflection: 0.56
     - _Refraction: 2
     - _Scale: 0.25
-    - _Scale_: 0.03125
+    - _Scale_: 0.025
     - _Shading: 0
     - _Shadow: 0.6
     - _ShoreDistance: 0.07
     - _ShoreIntensity: 1
     - _Specular: 300
     - _Speed: 0.56
-    - _Speed_: 0.0175
+    - _Speed_: 0.014
     - _Steepness: 0
     - _Stretch: 7.1
-    - _TexSize_: 2
+    - _TexSize_: 1.6
     - _Time_: 0
-    - _TransformScale_: 0.125
-    - _Waves: 1
+    - _TransformScale_: 0.1
+    - _Waves: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.6006591, b: 0.75735295, a: 1}
+    - _Color: {r: 0, g: 0.7931032, b: 1, a: 1}
     - _DeepColor: {r: 0, g: 0.21323529, b: 0.42647058, a: 0.275}
     - _Direction_: {r: -0.48480955, g: 0.8746197, b: -0, a: 0}
-    - _FresColor: {r: 0.2588668, g: 0.33540744, b: 0.5588235, a: 1}
+    - _FresColor: {r: 0.22794116, g: 0.42494914, b: 1, a: 1}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 0.975}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Sun: {r: 0.2822725, g: 0.8857377, b: -0.36849827, a: 0}
-    - _SunColor: {r: 1, g: 0.9408178, b: 0.7794118, a: 1}
+    - _Sun: {r: -0.05725068, g: 0.9983562, b: -0.0026831962, a: 0}
+    - _SunColor: {r: 1, g: 0.98421806, b: 0.9411765, a: 1}

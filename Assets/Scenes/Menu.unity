@@ -1217,6 +1217,11 @@ Prefab:
       propertyPath: noise
       value: 0.564
       objectReference: {fileID: 0}
+    - target: {fileID: 114206466647068866, guid: 8627503fc6d5a45d69e8fc90eb7ab9da,
+        type: 2}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e032fd01e474bd489ed0c14822501bc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8627503fc6d5a45d69e8fc90eb7ab9da, type: 2}
   m_IsPrefabParent: 0
@@ -6046,7 +6051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb4b64f567634001bd9e2ae36830840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePath: Audio/GeneratedSoundBanks
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
