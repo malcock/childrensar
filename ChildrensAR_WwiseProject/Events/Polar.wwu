@@ -378,7 +378,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="InteractRingPickup" ID="{1A7093AD-B07B-4D11-B61B-D10FF62FDB4D}">
+				<Event Name="InteractRingPickup_01" ID="{1A7093AD-B07B-4D11-B61B-D10FF62FDB4D}">
 					<ChildrenList>
 						<Action Name="" ID="{6525865A-6C05-4645-B82F-F98D342299D3}" ShortID="399321067">
 							<PropertyList>
@@ -392,7 +392,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="InteractRingThrow" ID="{6BFA28BD-8F23-4A27-B65D-1A1ADB0AC83C}">
+				<Event Name="InteractRingThrow_01" ID="{6BFA28BD-8F23-4A27-B65D-1A1ADB0AC83C}">
 					<ChildrenList>
 						<Action Name="" ID="{4483486C-5E8B-4B19-BCF6-550B1C617F46}" ShortID="307168279">
 							<PropertyList>

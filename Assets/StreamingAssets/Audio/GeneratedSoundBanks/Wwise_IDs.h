@@ -13,14 +13,18 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALPINEAMBIENCE = 785926108U;
         static const AkUniqueID ALPINEMUSIC = 453755285U;
-        static const AkUniqueID AMBIENTALPINE = 3337376526U;
         static const AkUniqueID BEARAPPEARDISAPPEAR = 774343659U;
         static const AkUniqueID BEARSWAY = 851259619U;
         static const AkUniqueID BEARVOCAL = 1343055514U;
+        static const AkUniqueID BIRDPOOPSPLATFLOOR = 2678875368U;
+        static const AkUniqueID BIRDPOOPSPLATSCREEN = 4009218062U;
+        static const AkUniqueID BIRDPOOPSPLATWATER = 3796593211U;
         static const AkUniqueID CRABMOVEMENT = 1662606220U;
         static const AkUniqueID DUCKFLY = 3180804649U;
         static const AkUniqueID DUCKVOCAL = 3182212785U;
+        static const AkUniqueID FISHBUCKETAPPEAR = 1237768798U;
         static const AkUniqueID FROGVOCAL = 1123537534U;
         static const AkUniqueID INTERACTFISHIMPACT = 774803507U;
         static const AkUniqueID INTERACTFISHPICKUP = 3981837689U;
@@ -30,16 +34,20 @@ namespace AK
         static const AkUniqueID INTERACTPENGUINDROP = 41979954U;
         static const AkUniqueID INTERACTPENGUINPICKUP = 3091785893U;
         static const AkUniqueID INTERACTRINGIMPACT = 195906091U;
+        static const AkUniqueID INTERACTRINGIMPACTMISS = 783174639U;
         static const AkUniqueID INTERACTRINGPICKUP = 2280720113U;
+        static const AkUniqueID INTERACTRINGPICKUP_01 = 4221344317U;
         static const AkUniqueID INTERACTRINGSUCCESSL1 = 3071778671U;
         static const AkUniqueID INTERACTRINGSUCCESSL2 = 3071778668U;
         static const AkUniqueID INTERACTRINGSUCCESSL3 = 3071778669U;
         static const AkUniqueID INTERACTRINGTHROW = 4164133903U;
+        static const AkUniqueID INTERACTRINGTHROW_01 = 1219306835U;
         static const AkUniqueID INTERACTWATERSPLASH = 566451541U;
         static const AkUniqueID OCTOPUSAPPEARDISAPPEAR = 1938830774U;
         static const AkUniqueID OCTOPUSVOCAL = 3164774671U;
         static const AkUniqueID OTTERMOVEMENT = 3615308082U;
         static const AkUniqueID OTTERVOCAL = 3510304056U;
+        static const AkUniqueID PENGUINFOOTSTEPS = 1977719452U;
         static const AkUniqueID PENGUINQUACK = 3719585952U;
         static const AkUniqueID PENGUINSWIM = 4055301235U;
         static const AkUniqueID POLARAMBIENCE = 4107323607U;
@@ -149,6 +157,7 @@ namespace AK
             {
                 static const AkUniqueID LARGE = 4284352190U;
                 static const AkUniqueID MEDIUM = 2849147824U;
+                static const AkUniqueID OBJECTSUBMERGE = 3001469674U;
                 static const AkUniqueID SMALL = 1846755610U;
                 static const AkUniqueID SMALLMED = 3212594608U;
                 static const AkUniqueID SMALLSOFT = 1108843758U;

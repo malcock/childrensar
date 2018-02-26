@@ -12891,6 +12891,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 634747689}
     m_Modifications:
+    - target: {fileID: 137892225399033490, guid: 9786ef11ad7944db280ca2eaddb90f22,
+        type: 2}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4168970506220358, guid: 9786ef11ad7944db280ca2eaddb90f22, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.19742641
@@ -13174,6 +13179,11 @@ Prefab:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95184917822904314, guid: 9786ef11ad7944db280ca2eaddb90f22,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2b7789278fca043dbbef6b354315aff7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9786ef11ad7944db280ca2eaddb90f22, type: 2}
   m_IsPrefabParent: 0
@@ -14788,7 +14798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1289948468
 Transform:
   m_ObjectHideFlags: 0
@@ -19674,7 +19684,7 @@ Prefab:
     - target: {fileID: 114680569409627172, guid: 5bdbf013313294f12821a69158b30a28,
         type: 2}
       propertyPath: gametimeA
-      value: 30
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 114680569409627172, guid: 5bdbf013313294f12821a69158b30a28,
         type: 2}

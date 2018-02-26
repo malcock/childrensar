@@ -11,7 +11,7 @@
 	<StreamedFiles>
 		<File Id="178930447" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_01.wav</ShortName>
-			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_01_F17FB28C.wem</Path>
+			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_01_557711C9.wem</Path>
 		</File>
 		<File Id="286460554" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</ShortName>
@@ -19,7 +19,7 @@
 		</File>
 		<File Id="286615707" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
-			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_03_F17FB28C.wem</Path>
+			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_03_557711C9.wem</Path>
 		</File>
 		<File Id="298211297" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</ShortName>
@@ -31,7 +31,7 @@
 		</File>
 		<File Id="366980405" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
-			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_02_F17FB28C.wem</Path>
+			<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_02_557711C9.wem</Path>
 		</File>
 		<File Id="373173106" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
@@ -39,7 +39,7 @@
 		</File>
 		<File Id="417381702" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_02.wav</ShortName>
-			<Path>SFX/Ambience/Polar_ambient_main_loop_02_1C9C67B2.wem</Path>
+			<Path>SFX/Ambience/Polar_ambient_main_loop_02_557711C9_99D31092.wem</Path>
 		</File>
 		<File Id="437612142" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</ShortName>
@@ -52,10 +52,6 @@
 		<File Id="464720112" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</ShortName>
 			<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPad_557711C9.wem</Path>
-		</File>
-		<File Id="545719001" Language="SFX">
-			<ShortName>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</ShortName>
-			<Path>SFX/Forest_Music_Stems_v1/06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="548845387" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1.wav</ShortName>
@@ -110,7 +106,11 @@
 			<ShortName>Polar</ShortName>
 			<Path>Polar.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2678875368" Name="BirdPoopSplatFloor" ObjectPath="\Events\Default Work Unit\BirdPoopSplatFloor" MaxAttenuation="100.000000"/>
+				<Event Id="4009218062" Name="BirdPoopSplatScreen" ObjectPath="\Events\Default Work Unit\BirdPoopSplatScreen" MaxAttenuation="100.000000"/>
+				<Event Id="3796593211" Name="BirdPoopSplatWater" ObjectPath="\Events\Default Work Unit\BirdPoopSplatWater" MaxAttenuation="100.000000"/>
 				<Event Id="1662606220" Name="CrabMovement" ObjectPath="\Events\Polar\CrabMovement" MaxAttenuation="100.000000"/>
+				<Event Id="1237768798" Name="FishBucketAppear" ObjectPath="\Events\Default Work Unit\FishBucketAppear" MaxAttenuation="100.000000"/>
 				<Event Id="774803507" Name="InteractFishImpact" ObjectPath="\Events\Default Work Unit\InteractFishImpact" MaxAttenuation="100.000000"/>
 				<Event Id="3981837689" Name="InteractFishPickup" ObjectPath="\Events\Default Work Unit\InteractFishPickup" MaxAttenuation="100.000000"/>
 				<Event Id="2920868259" Name="InteractFishPickupLoop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoop" MaxAttenuation="100.000000"/>
@@ -119,21 +119,25 @@
 				<Event Id="41979954" Name="InteractPenguinDrop" ObjectPath="\Events\Polar\InteractPenguinDrop" MaxAttenuation="100.000000"/>
 				<Event Id="3091785893" Name="InteractPenguinPickup" ObjectPath="\Events\Polar\InteractPenguinPickup" MaxAttenuation="100.000000"/>
 				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
+				<Event Id="783174639" Name="InteractRingImpactMiss" ObjectPath="\Events\Polar\InteractRingImpactMiss"/>
 				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
-				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
-				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
-				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
+				<Event Id="4221344317" Name="InteractRingPickup_01" ObjectPath="\Events\Polar\InteractRingPickup_01"/>
+				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Polar\InteractRingSuccessL1"/>
+				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Polar\InteractRingSuccessL2"/>
+				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Polar\InteractRingSuccessL3"/>
 				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
+				<Event Id="1219306835" Name="InteractRingThrow_01" ObjectPath="\Events\Polar\InteractRingThrow_01"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="1938830774" Name="OctopusAppearDisappear" ObjectPath="\Events\Polar\OctopusAppearDisappear" MaxAttenuation="100.000000"/>
-				<Event Id="3164774671" Name="OctopusVocal" ObjectPath="\Events\Polar\OctopusVocal" MaxAttenuation="100.000000"/>
+				<Event Id="3164774671" Name="OctopusVocal" ObjectPath="\Events\Polar\OctopusVocal"/>
+				<Event Id="1977719452" Name="PenguinFootsteps" ObjectPath="\Events\Polar\PenguinFootsteps" MaxAttenuation="100.000000"/>
 				<Event Id="3719585952" Name="PenguinQuack" ObjectPath="\Events\Polar\PenguinQuack" MaxAttenuation="100.000000"/>
 				<Event Id="4055301235" Name="PenguinSwim" ObjectPath="\Events\Polar\PenguinSwim" MaxAttenuation="100.000000"/>
 				<Event Id="4107323607" Name="PolarAmbience" ObjectPath="\Events\Polar\PolarAmbience"/>
 				<Event Id="3060268180" Name="PolarMusic" ObjectPath="\Events\Polar\PolarMusic"/>
 				<Event Id="1191252457" Name="SeagullFly" ObjectPath="\Events\Polar\SeagullFly" MaxAttenuation="100.000000"/>
 				<Event Id="4275580380" Name="SeagullPoop" ObjectPath="\Events\Polar\SeagullPoop" MaxAttenuation="100.000000"/>
-				<Event Id="513789297" Name="SeagullVocal" ObjectPath="\Events\Polar\SeagullVocal" MaxAttenuation="100.000000"/>
+				<Event Id="513789297" Name="SeagullVocal" ObjectPath="\Events\Polar\SeagullVocal" MaxAttenuation="0.000000"/>
 				<Event Id="777507535" Name="WaterSplash" ObjectPath="\Events\Polar\WaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="2933929543" Name="WhaleBreach" ObjectPath="\Events\Polar\WhaleBreach" MaxAttenuation="100.000000"/>
 				<Event Id="893632031" Name="WhaleSpray" ObjectPath="\Events\Polar\WhaleSpray" MaxAttenuation="100.000000"/>
@@ -234,8 +238,8 @@
 				</File>
 				<File Id="178930447" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_01.wav</ShortName>
-					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_01_F17FB28C.wem</Path>
-					<PrefetchSize>17704</PrefetchSize>
+					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_01_557711C9.wem</Path>
+					<PrefetchSize>2449</PrefetchSize>
 				</File>
 				<File Id="182568730" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_02.wav</ShortName>
@@ -244,6 +248,10 @@
 				<File Id="182665926" Language="SFX">
 					<ShortName>sfx_bird_poop_splat_floor_01.wav</ShortName>
 					<Path>SFX/sfx_bird_poop_splat_floor_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="189024257" Language="SFX">
+					<ShortName>sfx_ring_impact_C.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_C_DD0074E5.wem</Path>
 				</File>
 				<File Id="191463175" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01.wav</ShortName>
@@ -264,6 +272,10 @@
 				<File Id="218795275" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_fast_underwater_loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="225509094" Language="SFX">
+					<ShortName>sfx_ring_impact_D.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_D_50ABE4A5.wem</Path>
 				</File>
 				<File Id="229340210" Language="SFX">
 					<ShortName>sfx_interaction_fish_pickupV2_01.wav</ShortName>
@@ -292,8 +304,12 @@
 				</File>
 				<File Id="286615707" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
-					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_03_F17FB28C.wem</Path>
-					<PrefetchSize>17704</PrefetchSize>
+					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_03_557711C9.wem</Path>
+					<PrefetchSize>2234</PrefetchSize>
+				</File>
+				<File Id="291289910" Language="SFX">
+					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_01.wav</ShortName>
+					<Path>SFX/Characters/Character_Seagull/sfx_seagull_vocal_01_B67EFC5B.wem</Path>
 				</File>
 				<File Id="291663779" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_bird_poop_03.wav</ShortName>
@@ -325,6 +341,10 @@
 					<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPad_557711C9.wem</Path>
 					<PrefetchSize>4064</PrefetchSize>
 				</File>
+				<File Id="330130671" Language="SFX">
+					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_03.wav</ShortName>
+					<Path>SFX/Characters/Character_Seagull/sfx_seagull_vocal_03_B67EFC5B.wem</Path>
+				</File>
 				<File Id="337655275" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_05.wav</ShortName>
 					<Path>SFX/Ambience/Polar_ambient_BG_oneshot_05_1C9C67B2.wem</Path>
@@ -343,8 +363,8 @@
 				</File>
 				<File Id="366980405" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
-					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_02_F17FB28C.wem</Path>
-					<PrefetchSize>17704</PrefetchSize>
+					<Path>SFX/Ambience/Polar_ambient_main_loop_extra_layer_02_557711C9.wem</Path>
+					<PrefetchSize>1961</PrefetchSize>
 				</File>
 				<File Id="373173106" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
@@ -385,8 +405,8 @@
 				</File>
 				<File Id="417381702" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_02.wav</ShortName>
-					<Path>SFX/Ambience/Polar_ambient_main_loop_02_1C9C67B2.wem</Path>
-					<PrefetchSize>17704</PrefetchSize>
+					<Path>SFX/Ambience/Polar_ambient_main_loop_02_557711C9_99D31092.wem</Path>
+					<PrefetchSize>2651</PrefetchSize>
 				</File>
 				<File Id="428850957" Language="SFX">
 					<ShortName>sfx_ring_throw_01.wav</ShortName>
@@ -588,6 +608,10 @@
 					<ShortName>sfx_bird_poop_splat_water_01.wav</ShortName>
 					<Path>SFX/sfx_bird_poop_splat_water_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="731761909" Language="SFX">
+					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_02.wav</ShortName>
+					<Path>SFX/Characters/Character_Seagull/sfx_seagull_vocal_02_B67EFC5B.wem</Path>
+				</File>
 				<File Id="732081659" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Seagull/sfx_seagull_vocal_03_1C9C67B2.wem</Path>
@@ -643,6 +667,10 @@
 				<File Id="798331421" Language="SFX">
 					<ShortName>sfx_ring_success_level_3.wav</ShortName>
 					<Path>SFX/sfx_ring_success_level_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="810333420" Language="SFX">
+					<ShortName>sfx_ring_impact_E.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_E_FFB4B445.wem</Path>
 				</File>
 				<File Id="831179574" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_bird_poop_01.wav</ShortName>
@@ -797,14 +825,18 @@
 			<ShortName>Alpine</ShortName>
 			<Path>Alpine.bnk</Path>
 			<IncludedEvents>
+				<Event Id="785926108" Name="AlpineAmbience" ObjectPath="\Events\Alpine\AlpineAmbience"/>
 				<Event Id="453755285" Name="AlpineMusic" ObjectPath="\Events\Alpine\AlpineMusic"/>
-				<Event Id="3337376526" Name="AmbientAlpine" ObjectPath="\Events\Alpine\AmbientAlpine"/>
 				<Event Id="774343659" Name="BearAppearDisappear" ObjectPath="\Events\Alpine\BearAppearDisappear" MaxAttenuation="100.000000"/>
 				<Event Id="851259619" Name="BearSway" ObjectPath="\Events\Alpine\BearSway" MaxAttenuation="100.000000"/>
 				<Event Id="1343055514" Name="BearVocal" ObjectPath="\Events\Alpine\BearVocal" MaxAttenuation="100.000000"/>
+				<Event Id="2678875368" Name="BirdPoopSplatFloor" ObjectPath="\Events\Default Work Unit\BirdPoopSplatFloor" MaxAttenuation="100.000000"/>
+				<Event Id="4009218062" Name="BirdPoopSplatScreen" ObjectPath="\Events\Default Work Unit\BirdPoopSplatScreen" MaxAttenuation="100.000000"/>
+				<Event Id="3796593211" Name="BirdPoopSplatWater" ObjectPath="\Events\Default Work Unit\BirdPoopSplatWater" MaxAttenuation="100.000000"/>
 				<Event Id="1662606220" Name="CrabMovement" ObjectPath="\Events\Polar\CrabMovement" MaxAttenuation="100.000000"/>
 				<Event Id="3180804649" Name="DuckFly" ObjectPath="\Events\Alpine\DuckFly" MaxAttenuation="100.000000"/>
 				<Event Id="3182212785" Name="DuckVocal" ObjectPath="\Events\Alpine\DuckVocal" MaxAttenuation="100.000000"/>
+				<Event Id="1237768798" Name="FishBucketAppear" ObjectPath="\Events\Default Work Unit\FishBucketAppear" MaxAttenuation="100.000000"/>
 				<Event Id="1123537534" Name="FrogVocal" ObjectPath="\Events\Alpine\FrogVocal" MaxAttenuation="100.000000"/>
 				<Event Id="774803507" Name="InteractFishImpact" ObjectPath="\Events\Default Work Unit\InteractFishImpact" MaxAttenuation="100.000000"/>
 				<Event Id="3981837689" Name="InteractFishPickup" ObjectPath="\Events\Default Work Unit\InteractFishPickup" MaxAttenuation="100.000000"/>
@@ -813,9 +845,6 @@
 				<Event Id="353446631" Name="InteractFishThrow" ObjectPath="\Events\Default Work Unit\InteractFishThrow" MaxAttenuation="100.000000"/>
 				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
 				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
-				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
-				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
-				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
 				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="3615308082" Name="OtterMovement" ObjectPath="\Events\Alpine\OtterMovement" MaxAttenuation="100.000000"/>
@@ -825,7 +854,6 @@
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="444334270"/>
-				<File Id="545719001"/>
 				<File Id="548845387"/>
 				<File Id="554695072"/>
 				<File Id="759797766"/>
@@ -1032,10 +1060,6 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_3_1C9C67B2.wem</Path>
 				</File>
-				<File Id="520897157" Language="SFX">
-					<ShortName>sfx_ring_success_level_1.wav</ShortName>
-					<Path>SFX/sfx_ring_success_level_1_1C9C67B2.wem</Path>
-				</File>
 				<File Id="522450115" Language="SFX">
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_04.wav</ShortName>
 					<Path>SFX/Characters/Character_Frog/sfx_frog_vocal_04_1C9C67B2.wem</Path>
@@ -1047,11 +1071,6 @@
 				<File Id="530939695" Language="SFX">
 					<ShortName>sfx_ring_throw_03.wav</ShortName>
 					<Path>SFX/sfx_ring_throw_03_1C9C67B2.wem</Path>
-				</File>
-				<File Id="545719001" Language="SFX">
-					<ShortName>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</ShortName>
-					<Path>SFX/Forest_Music_Stems_v1/06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
-					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="547278234" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_02.wav</ShortName>
@@ -1151,10 +1170,6 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_02_1C9C67B2.wem</Path>
 				</File>
-				<File Id="748618340" Language="SFX">
-					<ShortName>sfx_ring_success_level_2.wav</ShortName>
-					<Path>SFX/sfx_ring_success_level_2_1C9C67B2.wem</Path>
-				</File>
 				<File Id="757364306" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_vocal_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_vocal_01_1C9C67B2.wem</Path>
@@ -1179,10 +1194,6 @@
 				<File Id="785298120" Language="SFX">
 					<ShortName>sfx_bird_poop_splat_water_02.wav</ShortName>
 					<Path>SFX/sfx_bird_poop_splat_water_02_1C9C67B2.wem</Path>
-				</File>
-				<File Id="798331421" Language="SFX">
-					<ShortName>sfx_ring_success_level_3.wav</ShortName>
-					<Path>SFX/sfx_ring_success_level_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="808604161" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_02.wav</ShortName>

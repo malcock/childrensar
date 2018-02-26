@@ -25,6 +25,9 @@ public class BirdPoop : MonoBehaviour
     {
         if(other.name=="PoopDetector"){
             poopSplatControl.ShowSplat();
+            AkSoundEngine.PostEvent("BirdPoopSplatScreen", gameObject);
+        } else {
+            AkSoundEngine.PostEvent("BirdPoopSplatFloor", gameObject);
         }
     }
 
@@ -43,7 +46,8 @@ public class BirdPoop : MonoBehaviour
                 
                 ParticleSystem.Particle pa = entered[p];
                 Splash splash = Instantiate(Resources.Load("SplashTiny", typeof(Splash)), pa.position, Quaternion.identity) as Splash;
-                splash.splashSize = "SmallSoft";
+                splash.splashSize = "";
+                AkSoundEngine.PostEvent("BirdPoopSplatWater", gameObject);
 
                 pa.remainingLifetime = 0;
                 entered[p] = pa;

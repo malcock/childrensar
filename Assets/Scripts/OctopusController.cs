@@ -38,7 +38,7 @@ public class OctopusController : MonoBehaviour
         }
         for (int l = 1; l < animator.layerCount; l++)
         {
-            octoArms.Add(l, false);
+            octoArms.Add(l-1, false);
         }
     }
 
@@ -234,7 +234,7 @@ public class OctopusController : MonoBehaviour
                 animator.SetBool("Active", true);
 
                 finalLegTime += Time.deltaTime;
-                if (finalLegTime > 3.33f)
+                if (finalLegTime > 3f)
                 {
                     KeyValuePair<int, bool>[] arms = octoArms.Where(x => x.Value == false).ToArray();
                     //choose random arm
@@ -245,14 +245,19 @@ public class OctopusController : MonoBehaviour
                         break;
                     }
 
-                    boringLeg = arms[Random.Range(0, arms.Length - 1)].Key;
 
-                    for (int l = 1; l < animator.layerCount; l++)
-                    {
-                        animator.SetLayerWeight(l, 0);
-                    }
-                    //set the weighting to max
-                    animator.SetLayerWeight(boringLeg, 1);
+
+                    boringLeg = arms[Random.Range(0, arms.Length-1)].Key;
+                    Debug.Log("chosen leg: " + boringLeg);
+                    animator.SetTrigger("Leg" + boringLeg);
+
+
+                    //for (int l = 1; l < animator.layerCount; l++)
+                    //{
+                    //    animator.SetLayerWeight(l, 0);
+                    //}
+                    ////set the weighting to max
+                    //animator.SetLayerWeight(boringLeg, 1);
 
                     finalLegTime = 0;
                 }
@@ -267,36 +272,18 @@ public class OctopusController : MonoBehaviour
                 transform.eulerAngles = rotation;
                 break;
             case State.End:
-                
-
-                int layersReady = animator.layerCount - 1;
-                time = 0;
-                for (int l = 1; l < animator.layerCount; l++)
-                {
-                    if (animator.GetLayerWeight(l) > 0.05f)
-                    {
-                        animator.SetLayerWeight(l, Mathf.Lerp(animator.GetLayerWeight(l), 0, Time.deltaTime));
-                    }
-                    else
-                    {
-                        animator.SetLayerWeight(l, 0);
-                        layersReady--;
-                    }
-
+ 
+                StopCoroutine(playGame);
+                animator.SetBool("Active", false);
+                if (gameSuccess){
+                    animator.SetTrigger("Celebrate");
+                } else {
+                    animator.SetTrigger("Done");
                 }
-                if (layersReady == 0)
-                {
-                    StopCoroutine(playGame);
-                    animator.SetBool("Active", false);
-                    if (gameSuccess){
-                        animator.SetTrigger("Celebrate");
-                    } else {
-                        animator.SetTrigger("Done");
-                    }
-                    ResetArms();
-                    state = State.Start;
-                    FindObjectOfType<PolarController>().state = PolarController.State.Return;
-                }
+                ResetArms();
+                state = State.Start;
+                FindObjectOfType<PolarController>().state = PolarController.State.Return;
+
 
 
                 break;

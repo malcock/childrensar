@@ -491,7 +491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 180
+  m_Text: 240
 --- !u!222 &127589800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1318,8 +1318,8 @@ MonoBehaviour:
   CharacterBehaviour: 0
   FlickBehaviour: 0
   OctoBehaviour: 0
-  gametimeA: 180
-  gametimeB: 180
+  gametimeA: 240
+  gametimeB: 240
 --- !u!1 &447541963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,7 +1651,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 180
+  m_Text: 240
 --- !u!222 &553716116
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3735,7 +3735,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 180
+  m_Text: 240
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -4638,7 +4638,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 180
+  m_Text: 240
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -6051,7 +6051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb4b64f567634001bd9e2ae36830840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePath: Audio\GeneratedSoundBanks
+  basePath: Audio/GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

@@ -84,10 +84,12 @@ public class MainCharacter : MonoBehaviour
         //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
 
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
-        AkSoundEngine.PostEvent(eventName, gameObject);
-
-        StartCoroutine(IdleSound(Random.Range(20, 30)));
+        if (state != State.Escape)
+        {
+            AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
+            AkSoundEngine.PostEvent(eventName, gameObject);
+        }
+        StartCoroutine(IdleSound(Random.Range(20, 80)));
     }
 
     IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
@@ -163,7 +165,6 @@ public class MainCharacter : MonoBehaviour
 
                         if (distanceToCenter > walkDistanceThreshold)
                         {
-                            Debug.Log(name + " is " + distanceToCenter + " away from center");
                             findCenter = true;
                         }
                     }
@@ -293,7 +294,7 @@ public class MainCharacter : MonoBehaviour
                             if (swimTime + swimTimeout < Time.time)
                             {
                                 Debug.Log("interval reset fish");
-                                if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
+                                if (GameControl.Instance.CharacterBehaviour != GameControl.CharacterMode.Stay)
                                 {
                                     fishEaten = 0;
                                     swimState = SwimState.Return;
@@ -430,16 +431,22 @@ public class MainCharacter : MonoBehaviour
         doll.ragdolled = true;
         state = State.Dragging;
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        AkSoundEngine.SetSwitch(eventName, "Tapped", gameObject);
-        AkSoundEngine.PostEvent(eventName, gameObject);
+        if (state != State.Escape)
+        {
+            AkSoundEngine.SetSwitch(eventName, "Tapped", gameObject);
+            AkSoundEngine.PostEvent(eventName, gameObject);
+        }
     }
     void EndDrag()
     {
         state = State.Dropped;
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
         string switchName = isGettingOutOfWater ? "Climb" : "Thrown";
-        AkSoundEngine.SetSwitch(eventName, switchName, gameObject);
-        AkSoundEngine.PostEvent(eventName, gameObject);
+        if(state!=State.Escape){
+			AkSoundEngine.SetSwitch(eventName, switchName, gameObject);
+			AkSoundEngine.PostEvent(eventName, gameObject);
+            
+        }
         isGettingOutOfWater = false;
     }
 
@@ -455,7 +462,7 @@ public class MainCharacter : MonoBehaviour
         MakeSplash(other, obj);
 
         //drop all fish to return fatness to normal
-        if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
+        if (GameControl.Instance.CharacterBehaviour != GameControl.CharacterMode.Stay)
         {
             Debug.Log("hit water reset fish");
             fishEaten = 0;

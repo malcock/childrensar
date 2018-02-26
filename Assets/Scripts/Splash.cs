@@ -11,8 +11,11 @@ public class Splash : MonoBehaviour {
 	void Start () {
         ps = GetComponent<ParticleSystem>();
         ps.Play();
-        AkSoundEngine.SetSwitch("WaterSplash", splashSize, gameObject);
-        AkSoundEngine.PostEvent("WaterSplash", gameObject);
+        if(splashSize!=""){
+			AkSoundEngine.SetSwitch("WaterSplash", splashSize, gameObject);
+			AkSoundEngine.PostEvent("WaterSplash", gameObject);
+            
+        }
 	}
 	
 	// Update is called once per frame
