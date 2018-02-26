@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 2c11abbdf0313e4479a2b479f20015e2
+timeCreated: 1510933791
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Octopus
+    100002: //RootNode
+    100004: OctopusLArm1
+    100006: OctopusLArm1 1
+    100008: OctopusLArm1 2
+    100010: OctopusLArm2
+    100012: OctopusLArm2 1
+    100014: OctopusLArm2 2
+    100016: OctopusLArm3
+    100018: OctopusLArm3 1
+    100020: OctopusLArm3 2
+    100022: OctopusLArm4
+    100024: OctopusLArm4 1
+    100026: OctopusLArm4 2
+    100028: OctopusLArm5
+    100030: OctopusLArm5 1
+    100032: OctopusLArm5 2
+    100034: OctopusLArm6
+    100036: OctopusLArm6 1
+    100038: OctopusLArm6 2
+    100040: OctopusLArm7
+    100042: OctopusLArm7 1
+    100044: OctopusLArm7 2
+    100046: OctopusLArm8
+    100048: OctopusLArm8 1
+    100050: OctopusLArm8 2
+    100052: OctopusPelvis
+    100054: OctopusPelvisBone001
+    100056: OctopusRArm1
+    100058: OctopusRArm1 1
+    100060: OctopusRArm1 2
+    100062: OctopusRArm2
+    100064: OctopusRArm2 1
+    100066: OctopusRArm2 2
+    100068: OctopusRArm3
+    100070: OctopusRArm3 1
+    100072: OctopusRArm3 2
+    100074: OctopusRArm4
+    100076: OctopusRArm4 1
+    100078: OctopusRArm4 2
+    100080: OctopusRArm5
+    100082: OctopusRArm5 1
+    100084: OctopusRArm5 2
+    100086: OctopusRArm6
+    100088: OctopusRArm6 1
+    100090: OctopusRArm6 2
+    100092: OctopusRArm7
+    100094: OctopusRArm7 1
+    100096: OctopusRArm7 2
+    100098: OctopusRArm8
+    100100: OctopusRArm8 1
+    100102: OctopusRArm8 2
+    400000: Octopus
+    400002: //RootNode
+    400004: OctopusLArm1
+    400006: OctopusLArm1 1
+    400008: OctopusLArm1 2
+    400010: OctopusLArm2
+    400012: OctopusLArm2 1
+    400014: OctopusLArm2 2
+    400016: OctopusLArm3
+    400018: OctopusLArm3 1
+    400020: OctopusLArm3 2
+    400022: OctopusLArm4
+    400024: OctopusLArm4 1
+    400026: OctopusLArm4 2
+    400028: OctopusLArm5
+    400030: OctopusLArm5 1
+    400032: OctopusLArm5 2
+    400034: OctopusLArm6
+    400036: OctopusLArm6 1
+    400038: OctopusLArm6 2
+    400040: OctopusLArm7
+    400042: OctopusLArm7 1
+    400044: OctopusLArm7 2
+    400046: OctopusLArm8
+    400048: OctopusLArm8 1
+    400050: OctopusLArm8 2
+    400052: OctopusPelvis
+    400054: OctopusPelvisBone001
+    400056: OctopusRArm1
+    400058: OctopusRArm1 1
+    400060: OctopusRArm1 2
+    400062: OctopusRArm2
+    400064: OctopusRArm2 1
+    400066: OctopusRArm2 2
+    400068: OctopusRArm3
+    400070: OctopusRArm3 1
+    400072: OctopusRArm3 2
+    400074: OctopusRArm4
+    400076: OctopusRArm4 1
+    400078: OctopusRArm4 2
+    400080: OctopusRArm5
+    400082: OctopusRArm5 1
+    400084: OctopusRArm5 2
+    400086: OctopusRArm6
+    400088: OctopusRArm6 1
+    400090: OctopusRArm6 2
+    400092: OctopusRArm7
+    400094: OctopusRArm7 1
+    400096: OctopusRArm7 2
+    400098: OctopusRArm8
+    400100: OctopusRArm8 1
+    400102: OctopusRArm8 2
+    4300000: Octopus
+    7400000: LIMBUP_06
+    9500000: //RootNode
+    13700000: Octopus
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: LIMBUP_06
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 991cb9c4914b9428fa0088e7730b830a,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
