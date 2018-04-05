@@ -25,10 +25,14 @@ public class MainCharacter : MonoBehaviour
     public int fishMax = 5;
     public int fishEaten = 0;
     public AnimationCurve massAnim;
+    public float walkDistanceThreshold = 0.1f;
+    float walkTimeout = 3;
 
     public Vector3 targetPosition = new Vector3();
 
     float swimTime;
+
+    Transform currentLand;
 
     Animator anim;
     DraggableObject draggableObject;
@@ -40,6 +44,7 @@ public class MainCharacter : MonoBehaviour
     Collider mainCollider;
     Bounds waterBounds;
 
+    float dropTimeout = 1;
     public float bellyAmount = 0;
 
     bool firstFrame = false;
@@ -78,11 +83,11 @@ public class MainCharacter : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
 
-        string eventName = (characterType==CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        AkSoundEngine.SetSwitch(eventName,"Idle",gameObject);
-        AkSoundEngine.PostEvent(eventName,gameObject);
+        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+        AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
+        AkSoundEngine.PostEvent(eventName, gameObject);
 
-        StartCoroutine(IdleSound(Random.Range(20,30)));
+        StartCoroutine(IdleSound(Random.Range(20, 30)));
     }
 
     IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
@@ -115,6 +120,7 @@ public class MainCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dropTimeout -= Time.deltaTime;
         //if the character has fallen through the world somehow, we need to reset it 
         if (transform.position.y < -50)
         {
@@ -145,12 +151,63 @@ public class MainCharacter : MonoBehaviour
         switch (state)
         {
             case State.Idle:
-                //rotate towards camera
-                Vector3 relativePosition = Camera.main.transform.position - transform.position;
-                Quaternion rotation = Quaternion.LookRotation(relativePosition);
-                rotation.x = 0;
-                rotation.z = 0;
-                transform.rotation = rotation;
+                bool findCenter = false;
+                walkTimeout -= Time.deltaTime;
+                if (walkTimeout > 0)
+                {
+                    if (currentLand != null)
+                    {
+                        Vector3 landPos = currentLand.position;
+                        landPos.y = transform.position.y;
+                        float distanceToCenter = Vector3.Distance(transform.position, landPos);
+
+                        if (distanceToCenter > walkDistanceThreshold)
+                        {
+                            Debug.Log(name + " is " + distanceToCenter + " away from center");
+                            findCenter = true;
+                        }
+                    }
+                }
+
+                if (findCenter)
+                {
+                    //walk to the centre of the object currently stood on
+                    Rigidbody landBody = currentLand.GetComponent<Rigidbody>();
+                    if (landBody != null) landBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                    Vector3 landPos = currentLand.position;
+                    landPos.y = transform.position.y;
+
+                    Vector3 direction = landPos - transform.position;
+
+                    Vector3 rot = Quaternion.LookRotation(direction, Vector3.up).eulerAngles;
+
+                    transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime * 3);
+                    direction.y = 1;
+                    direction = direction.normalized;
+                    direction *= 50;
+                    if(dropTimeout<0) mainCollider.attachedRigidbody.AddForce(direction);
+                    anim.SetFloat("speed", mainCollider.attachedRigidbody.velocity.magnitude);
+
+
+                }
+                else
+                {
+                    //rotate towards camera
+                    Vector3 relativePosition = Camera.main.transform.position - transform.position;
+                    Quaternion rotation = Quaternion.LookRotation(relativePosition);
+                    rotation.x = 0;
+                    rotation.z = 0;
+                    transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 3);
+                    anim.SetFloat("speed", 0);
+                    if(currentLand!=null){
+						Rigidbody landBody = currentLand.GetComponent<Rigidbody>();
+                        if (landBody != null) landBody.constraints = RigidbodyConstraints.None;
+                        
+                    }
+                }
+
+
+
 
                 //switch to swim mode?
                 if (doll.state == RagdollControl.RagdollState.animated)
@@ -165,6 +222,7 @@ public class MainCharacter : MonoBehaviour
                 break;
             case State.Dropped:
                 //switch to swim mode?
+                dropTimeout = 1;
                 if (doll.state == RagdollControl.RagdollState.animated)
                 {
                     if (BoundsContainedPercentage(mainCollider.bounds, waterBounds) > 0.5f)
@@ -198,7 +256,7 @@ public class MainCharacter : MonoBehaviour
                             targetPosition = new Vector3(Random.Range(waterBounds.min.x, waterBounds.max.x),
                                       Random.Range(waterBounds.min.y, waterBounds.max.y),
                                       Random.Range(waterBounds.min.z, waterBounds.max.z));
-                            targetPosition *= 0.9f;
+                            targetPosition *= 0.7f;
                             swimTime = Time.time;
                             swimState = SwimState.Interval;
                             break;
@@ -331,7 +389,7 @@ public class MainCharacter : MonoBehaviour
                     {
                         relDir.y += 3;
                         state = State.Dragging;
-                        draggableObject.Throw(relDir, 0.3f);
+                        draggableObject.Throw(relDir, 0.1f);
 
                     }
 
@@ -350,8 +408,8 @@ public class MainCharacter : MonoBehaviour
         }
 
         //handle the blendshape and mass using the fish eaten values
-        float mass = doll.totalMass + (((float)fishEaten / (float)fishMax) * (fishMax * 10));
-        mass = doll.totalMass + (fishEaten * 8);
+        float mass = doll.totalMass + (((float)fishEaten / (float)fishMax) * (fishMax * 3));
+        mass = doll.totalMass + (fishEaten * 2);
         mainCollider.attachedRigidbody.mass = Mathf.Lerp(mainCollider.attachedRigidbody.mass, mass, Time.deltaTime);
 
 
@@ -454,6 +512,8 @@ public class MainCharacter : MonoBehaviour
     {
         if (state != State.Dragging)
         {
+            walkTimeout = 5;
+            currentLand = collision.transform;
             doll.ragdolled = false;
             state = State.Idle;
             PlayOneShot("InteractPenguinDrop");
@@ -493,8 +553,7 @@ public class MainCharacter : MonoBehaviour
     {
         float t = timeout;
         float start = bellyAmount;
-        Debug.Log(start + ", " + stop);
-        Debug.Log(name + " weight " + bellyAmount);
+
         while (t > 0)
         {
             float p = 1 - (t / timeout);
@@ -502,11 +561,10 @@ public class MainCharacter : MonoBehaviour
             //Debug.Log(e);
             float val = start + (e * stop);
             bellyAmount = val;
-            Debug.Log(p + "/" + e + " - " + val + " : " + bellyAmount);
             t -= Time.deltaTime;
             yield return null;
         }
-        Debug.Log(name + " weight: " + skinnedMeshRenderer.GetBlendShapeWeight(0));
+
     }
 
     private float BoundsContainedPercentage(Bounds obj, Bounds region)

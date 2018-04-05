@@ -22,10 +22,19 @@ namespace AK
         static const AkUniqueID DUCKFLY = 3180804649U;
         static const AkUniqueID DUCKVOCAL = 3182212785U;
         static const AkUniqueID FROGVOCAL = 1123537534U;
+        static const AkUniqueID INTERACTFISHIMPACT = 774803507U;
         static const AkUniqueID INTERACTFISHPICKUP = 3981837689U;
         static const AkUniqueID INTERACTFISHPICKUPLOOP = 2920868259U;
+        static const AkUniqueID INTERACTFISHPICKUPLOOPSTOP = 1252589715U;
+        static const AkUniqueID INTERACTFISHTHROW = 353446631U;
         static const AkUniqueID INTERACTPENGUINDROP = 41979954U;
         static const AkUniqueID INTERACTPENGUINPICKUP = 3091785893U;
+        static const AkUniqueID INTERACTRINGIMPACT = 195906091U;
+        static const AkUniqueID INTERACTRINGPICKUP = 2280720113U;
+        static const AkUniqueID INTERACTRINGSUCCESSL1 = 3071778671U;
+        static const AkUniqueID INTERACTRINGSUCCESSL2 = 3071778668U;
+        static const AkUniqueID INTERACTRINGSUCCESSL3 = 3071778669U;
+        static const AkUniqueID INTERACTRINGTHROW = 4164133903U;
         static const AkUniqueID INTERACTWATERSPLASH = 566451541U;
         static const AkUniqueID OCTOPUSAPPEARDISAPPEAR = 1938830774U;
         static const AkUniqueID OCTOPUSVOCAL = 3164774671U;
@@ -127,6 +136,8 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID AMBIENT = 77978275U;
+                static const AkUniqueID OCTOPUS = 1693003300U;
             } // namespace SWITCH
         } // namespace POLARMUSICSWITCH
 
@@ -148,6 +159,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MUSICENVELOPE = 1842210006U;
+        static const AkUniqueID MUSICRAMPUP = 1553932209U;
         static const AkUniqueID PENGUINSIZE = 145924928U;
     } // namespace GAME_PARAMETERS
 
@@ -160,15 +173,25 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ALPINESFX = 1391309665U;
+        static const AkUniqueID AMBIENCE_ALPINE = 32419989U;
+        static const AkUniqueID AMBIENCE_POLAR = 275734032U;
+        static const AkUniqueID CHARACTERS_ALPINE = 510283193U;
+        static const AkUniqueID CHARACTERS_POLAR = 3506792212U;
+        static const AkUniqueID INTERACTIONSFX_ALPINE = 3543562118U;
+        static const AkUniqueID INTERACTIONSFX_POLAR = 1918403769U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_ALPINE = 791992452U;
+        static const AkUniqueID MUSIC_POLAR = 604548695U;
+        static const AkUniqueID POLARSFX = 3078312604U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID REVERB = 348963605U;
+        static const AkUniqueID REVERB_POLAR = 3081995956U;
     } // namespace AUX_BUSSES
 
 }// namespace AK

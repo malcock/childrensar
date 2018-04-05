@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(InteractableObject))]
 public class Ring : MonoBehaviour
 {
     public float spinTime = 1;
@@ -10,6 +11,7 @@ public class Ring : MonoBehaviour
     private bool success = false;
 
     public float fadeOutTime = 5;
+    InteractableObject interactableObj;
 
     // Use this for initialization
     void Start()
@@ -18,6 +20,10 @@ public class Ring : MonoBehaviour
             bone.onCollisionEnter.AddListener(CollisionEnter);
             bone.onTriggerEnter.AddListener(TriggerEnter);
         }
+        interactableObj = GetComponent<InteractableObject>();
+        interactableObj.OnDragStart.AddListener(DragStart);
+        interactableObj.OnDrag.AddListener(Drag);
+        interactableObj.OnDragEnd.AddListener(DragEnd);
     }
 
     // Update is called once per frame
@@ -25,6 +31,17 @@ public class Ring : MonoBehaviour
     {
         
     }
+
+    void DragStart(){
+        AkSoundEngine.PostEvent("InteractRingPickup", gameObject);
+    }
+    void Drag(){
+        
+    }
+    void DragEnd(){
+        AkSoundEngine.PostEvent("InteractRingThrow",gameObject);
+    }
+
     public void DestroyRing(){
         StartCoroutine(FadeAway());
     }
@@ -40,6 +57,7 @@ public class Ring : MonoBehaviour
     {
         if (!isActive) return;
         Debug.Log("ring collided: " + collision.gameObject.name);
+
         OctoBone hasBone = collision.gameObject.GetComponent<OctoBone>();
         if(hasBone!=null){
             Debug.Log("ring hit octo");
@@ -54,13 +72,16 @@ public class Ring : MonoBehaviour
             PlaceRing(position, parent);
 
             //send a signal to the octopus parent to say it's been caught
+            OctopusController octoController = hasBone.GetComponentInParent<OctopusController>();
             hasBone.GetComponentInParent<OctopusController>().boringLegState = OctopusController.BoringLegMode.End;
+            octoController.octoArms[octoController.boringLeg] = true;
 
             //play a sound?
-
+            AkSoundEngine.PostEvent("InteractRingSuccessL" + hasBone.soundLevel, gameObject);
             //particle effects?
 
         } else {
+            AkSoundEngine.PostEvent("InteractRingImpact", gameObject);
             DestroyRing();
         }
         isActive = false;

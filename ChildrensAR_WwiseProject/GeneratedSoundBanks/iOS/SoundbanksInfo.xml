@@ -15,7 +15,7 @@
 		</File>
 		<File Id="286460554" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPad_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPad_557711C9.wem</Path>
 		</File>
 		<File Id="286615707" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
@@ -23,11 +23,11 @@
 		</File>
 		<File Id="298211297" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPiano_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPiano_557711C9.wem</Path>
 		</File>
 		<File Id="316728790" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPad_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPad_557711C9.wem</Path>
 		</File>
 		<File Id="366980405" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
@@ -35,7 +35,7 @@
 		</File>
 		<File Id="373173106" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPlink_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPlink_557711C9.wem</Path>
 		</File>
 		<File Id="417381702" Language="SFX">
 			<ShortName>Ambience\Polar_ambient_main_loop_02.wav</ShortName>
@@ -43,37 +43,31 @@
 		</File>
 		<File Id="437612142" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPlinks_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPlinks_557711C9.wem</Path>
 		</File>
 		<File Id="444334270" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="464720112" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPad_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPad_557711C9.wem</Path>
 		</File>
 		<File Id="545719001" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="548845387" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="554695072" Language="SFX">
 			<ShortName>Polar_ambient_music_V2.wav</ShortName>
 			<Path>SFX/Polar_ambient_music_V2_F17FB28C.wem</Path>
 		</File>
-<<<<<<< HEAD
-		<File Id="722084878" Language="SFX">
-			<ShortName>Ambience\Forest_ambient_main_loop_01.wav</ShortName>
-			<Path>SFX/Ambience/Forest_ambient_main_loop_01_F17FB28C.wem</Path>
-=======
 		<File Id="662414403" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPiano_F17FB28C.wem</Path>
->>>>>>> master
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPiano_557711C9.wem</Path>
 		</File>
 		<File Id="759797766" Language="SFX">
 			<ShortName>Ambience\Forest_ambient_main_loop_extra_layer_02.wav</ShortName>
@@ -81,15 +75,15 @@
 		</File>
 		<File Id="834454837" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPiano_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPiano_557711C9.wem</Path>
 		</File>
 		<File Id="843148672" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="852610933" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="874980017" Language="SFX">
 			<ShortName>Ambience\Forest_ambient_main_loop_extra_layer_01.wav</ShortName>
@@ -97,11 +91,11 @@
 		</File>
 		<File Id="897899858" Language="SFX">
 			<ShortName>Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1.wav</ShortName>
-			<Path>SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem</Path>
+			<Path>SFX/Forest_Music_Stems_v1/03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem</Path>
 		</File>
 		<File Id="907428159" Language="SFX">
 			<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</ShortName>
-			<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPlink_F17FB28C.wem</Path>
+			<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPlink_557711C9.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -117,10 +111,19 @@
 			<Path>Polar.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1662606220" Name="CrabMovement" ObjectPath="\Events\Polar\CrabMovement" MaxAttenuation="100.000000"/>
+				<Event Id="774803507" Name="InteractFishImpact" ObjectPath="\Events\Default Work Unit\InteractFishImpact" MaxAttenuation="100.000000"/>
 				<Event Id="3981837689" Name="InteractFishPickup" ObjectPath="\Events\Default Work Unit\InteractFishPickup" MaxAttenuation="100.000000"/>
 				<Event Id="2920868259" Name="InteractFishPickupLoop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoop" MaxAttenuation="100.000000"/>
+				<Event Id="1252589715" Name="InteractFishPickupLoopStop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoopStop" MaxAttenuation="0.000000"/>
+				<Event Id="353446631" Name="InteractFishThrow" ObjectPath="\Events\Default Work Unit\InteractFishThrow" MaxAttenuation="100.000000"/>
 				<Event Id="41979954" Name="InteractPenguinDrop" ObjectPath="\Events\Polar\InteractPenguinDrop" MaxAttenuation="100.000000"/>
 				<Event Id="3091785893" Name="InteractPenguinPickup" ObjectPath="\Events\Polar\InteractPenguinPickup" MaxAttenuation="100.000000"/>
+				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
+				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
+				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
+				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
+				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
+				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="1938830774" Name="OctopusAppearDisappear" ObjectPath="\Events\Polar\OctopusAppearDisappear" MaxAttenuation="100.000000"/>
 				<Event Id="3164774671" Name="OctopusVocal" ObjectPath="\Events\Polar\OctopusVocal" MaxAttenuation="100.000000"/>
@@ -161,17 +164,25 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="32973410" Language="SFX">
+					<ShortName>sfx_fish_impact_04.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="43380557" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_04.wav</ShortName>
 					<Path>SFX/Ambience/Polar_ambient_BG_oneshot_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="71854061" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_5.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_5_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="75275531" Language="SFX">
 					<ShortName>Characters\Characters_Whale\sfx_whale_breach.wav</ShortName>
 					<Path>SFX/Characters/Characters_Whale/sfx_whale_breach_1C9C67B2.wem</Path>
+				</File>
+				<File Id="82929334" Language="SFX">
+					<ShortName>sfx_fish_throw_03.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="96214270" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05.wav</ShortName>
@@ -181,13 +192,14 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_1_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="107949657" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
+				<File Id="107941502" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_floor_02.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_floor_02_1C9C67B2.wem</Path>
 				</File>
-=======
->>>>>>> Stashed changes
+				<File Id="108536054" Language="SFX">
+					<ShortName>sfx_fish_throw_02.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="115170489" Language="SFX">
 					<ShortName>Characters\Characters_Penguin\sfx_penguin_footstep_sequence.wav</ShortName>
 					<Path>SFX/Characters/Characters_Penguin/sfx_penguin_footstep_sequence_1C9C67B2.wem</Path>
@@ -210,15 +222,15 @@
 				</File>
 				<File Id="161517213" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_eat_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_eat_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_eat_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="166262248" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_call_5.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_call_5_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_call_5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="174252406" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_call_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_call_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_call_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="178930447" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_01.wav</ShortName>
@@ -229,44 +241,45 @@
 					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_02.wav</ShortName>
 					<Path>SFX/Characters/Character_Seagull/sfx_seagull_vocal_02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="182665926" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_floor_01.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_floor_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="191463175" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="192502381" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_throw_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_throw_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_throw_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="198548363" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_6.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_6_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="217233969" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_throw_4.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_throw_4_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_throw_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="218795275" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_underwater_loop.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_fast_underwater_loop_F17FB28C.wem</Path>
 				</File>
+				<File Id="229340210" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_01.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="231294465" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_02.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_pickup_02_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="246916669" Language="SFX">
-					<ShortName>Characters\Characters_Penguin\sfx_penguin_vocal_01.wav</ShortName>
-					<Path>SFX/Characters/Characters_Penguin/sfx_penguin_vocal_01_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="254142499" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_1.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="270110655" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_call_3.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_call_3_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_call_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="280492690" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_03.wav</ShortName>
@@ -274,8 +287,8 @@
 				</File>
 				<File Id="286460554" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPad_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPad_557711C9.wem</Path>
+					<PrefetchSize>4231</PrefetchSize>
 				</File>
 				<File Id="286615707" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_03.wav</ShortName>
@@ -286,38 +299,47 @@
 					<ShortName>Characters\Character_Seagull\sfx_bird_poop_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Seagull/sfx_bird_poop_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="293381835" Language="SFX">
+					<ShortName>sfx_ring_impact_E.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_E_1C9C67B2.wem</Path>
+				</File>
 				<File Id="294338604" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="298211297" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPiano_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPiano_557711C9.wem</Path>
+					<PrefetchSize>3803</PrefetchSize>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="307823111" Language="SFX">
-					<ShortName>Characters\Characters_Penguin\sfx_penguin_vocal_04.wav</ShortName>
-					<Path>SFX/Characters/Characters_Penguin/sfx_penguin_vocal_04_1C9C67B2.wem</Path>
+				<File Id="308906311" Language="SFX">
+					<ShortName>sfx_fish_impact_02.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_02_1C9C67B2.wem</Path>
 				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="314412579" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="316728790" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPad_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPad_557711C9.wem</Path>
+					<PrefetchSize>4064</PrefetchSize>
 				</File>
 				<File Id="337655275" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_05.wav</ShortName>
 					<Path>SFX/Ambience/Polar_ambient_BG_oneshot_05_1C9C67B2.wem</Path>
 				</File>
+				<File Id="350087165" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_03.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="358077610" Language="SFX">
 					<ShortName>Characters\Character_Octopus\sfx_octopus_vocal_02.wav</ShortName>
 					<Path>SFX/Characters/Character_Octopus/sfx_octopus_vocal_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="362441150" Language="SFX">
+					<ShortName>sfx_ring_pickup_03.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="366980405" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_main_loop_extra_layer_02.wav</ShortName>
@@ -326,8 +348,8 @@
 				</File>
 				<File Id="373173106" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPlink_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPlink_557711C9.wem</Path>
+					<PrefetchSize>4133</PrefetchSize>
 				</File>
 				<File Id="374899264" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_05.wav</ShortName>
@@ -341,9 +363,21 @@
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_01.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_pickup_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="393463777" Language="SFX">
+					<ShortName>sfx_fish_impact_03.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="404223908" Language="SFX">
+					<ShortName>sfx_ring_throw_02.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="409497783" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_splash_02.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_splash_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="414544328" Language="SFX">
+					<ShortName>sfx_fish_bucket_appear.wav</ShortName>
+					<Path>SFX/sfx_fish_bucket_appear_1C9C67B2.wem</Path>
 				</File>
 				<File Id="415002928" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01.wav</ShortName>
@@ -354,10 +388,14 @@
 					<Path>SFX/Ambience/Polar_ambient_main_loop_02_1C9C67B2.wem</Path>
 					<PrefetchSize>17704</PrefetchSize>
 				</File>
+				<File Id="428850957" Language="SFX">
+					<ShortName>sfx_ring_throw_01.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="437612142" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPlinks_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic1_StemPlinks_557711C9.wem</Path>
+					<PrefetchSize>3809</PrefetchSize>
 				</File>
 				<File Id="439643296" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop.wav</ShortName>
@@ -367,26 +405,30 @@
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_05.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_pickup_05_1C9C67B2.wem</Path>
 				</File>
+				<File Id="450086935" Language="SFX">
+					<ShortName>sfx_ring_pickup_04.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="455973186" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_04.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="456030998" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_7.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_7_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_7_1C9C67B2.wem</Path>
 				</File>
 				<File Id="457245713" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_idle_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="464720112" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPad_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPad_557711C9.wem</Path>
+					<PrefetchSize>4237</PrefetchSize>
 				</File>
 				<File Id="492613240" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_idle_4.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="496957545" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_01.wav</ShortName>
@@ -404,13 +446,21 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="520897157" Language="SFX">
+					<ShortName>sfx_ring_success_level_1.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="530939695" Language="SFX">
+					<ShortName>sfx_ring_throw_03.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="542448978" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_underwater_loop.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_swim_slow_underwater_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="548974580" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_eat_5.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_eat_5_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_eat_5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="549624851" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_03.wav</ShortName>
@@ -418,7 +468,7 @@
 				</File>
 				<File Id="551336699" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="554695072" Language="SFX">
 					<ShortName>Polar_ambient_music_V2.wav</ShortName>
@@ -435,11 +485,11 @@
 				</File>
 				<File Id="563686037" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_climb_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_climb_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_climb_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="566892715" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_8.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_8_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_8_1C9C67B2.wem</Path>
 				</File>
 				<File Id="570090485" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_slow_loop.wav</ShortName>
@@ -461,19 +511,17 @@
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_drop_06.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_drop_06_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="626474259" Language="SFX">
-					<ShortName>Characters\Characters_Penguin\sfx_penguin_vocal_03.wav</ShortName>
-					<Path>SFX/Characters/Characters_Penguin/sfx_penguin_vocal_03_1C9C67B2.wem</Path>
-=======
 				<File Id="600841742" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_idle_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="623946642" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_9.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_9_1C9C67B2.wem</Path>
->>>>>>> Stashed changes
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_9_1C9C67B2.wem</Path>
+				</File>
+				<File Id="631819814" Language="SFX">
+					<ShortName>sfx_ring_impact_D.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_D_1C9C67B2.wem</Path>
 				</File>
 				<File Id="636586861" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_06.wav</ShortName>
@@ -489,16 +537,20 @@
 				</File>
 				<File Id="662414403" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPiano_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPiano_557711C9.wem</Path>
+					<PrefetchSize>4164</PrefetchSize>
 				</File>
 				<File Id="665894272" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="666609068" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_01.wav</ShortName>
 					<Path>SFX/Ambience/Polar_ambient_BG_oneshot_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="694200706" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_04.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="697236775" Language="SFX">
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_04.wav</ShortName>
@@ -526,11 +578,15 @@
 				</File>
 				<File Id="727342031" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_eat_3.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_eat_3_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_eat_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="728949963" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_seagulls_fly_04.wav</ShortName>
 					<Path>SFX/Characters/Character_Seagull/sfx_seagulls_fly_04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="731167062" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_water_01.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_water_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="732081659" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_seagull_vocal_03.wav</ShortName>
@@ -546,7 +602,7 @@
 				</File>
 				<File Id="735088202" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_call_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_call_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_call_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="745403754" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
@@ -554,7 +610,11 @@
 				</File>
 				<File Id="745467183" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_idle_3.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="748618340" Language="SFX">
+					<ShortName>sfx_ring_success_level_2.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="761073734" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04.wav</ShortName>
@@ -562,43 +622,44 @@
 				</File>
 				<File Id="771536258" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_eat_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_eat_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_eat_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="771606138" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_eat_4.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_eat_4_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_eat_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="777827311" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_soft_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="785298120" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_water_02.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_water_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="790166200" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_drop_04.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_drop_04_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="794621128" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
+				<File Id="798331421" Language="SFX">
+					<ShortName>sfx_ring_success_level_3.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_3_1C9C67B2.wem</Path>
 				</File>
-				<File Id="799059336" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="831179574" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_bird_poop_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Seagull/sfx_bird_poop_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="834454837" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic3_StemPiano_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic3_StemPiano_557711C9.wem</Path>
+					<PrefetchSize>4110</PrefetchSize>
 				</File>
 				<File Id="836911734" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_05.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_fish_pickup_05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="838219915" Language="SFX">
+					<ShortName>sfx_fish_impact_01.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="850472162" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_03.wav</ShortName>
@@ -612,13 +673,6 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_03.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_03_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="857533580" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_5_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="865598446" Language="SFX">
 					<ShortName>Characters\Characters_Whale\sfx_whale_waterspout_02.wav</ShortName>
 					<Path>SFX/Characters/Characters_Whale/sfx_whale_waterspout_02_1C9C67B2.wem</Path>
@@ -629,19 +683,12 @@
 				</File>
 				<File Id="872709766" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_throw_2.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_throw_2_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_throw_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="876608198" Language="SFX">
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Crab/sfx_crab_movement_01_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="878697382" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="886790241" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_04.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_fish_pickup_04_1C9C67B2.wem</Path>
@@ -650,9 +697,13 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="905204739" Language="SFX">
+					<ShortName>sfx_ring_pickup_02.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="906227756" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_climb_1.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_climb_1_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_climb_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="906400109" Language="SFX">
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_06.wav</ShortName>
@@ -660,20 +711,24 @@
 				</File>
 				<File Id="906759097" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_call_4.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_call_4_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_call_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="907428159" Language="SFX">
 					<ShortName>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</ShortName>
-					<Path>SFX\ArtfeltHospitalVR_PolarMusic2_StemPlink_F17FB28C.wem</Path>
-					<PrefetchSize>17816</PrefetchSize>
+					<Path>SFX/ArtfeltHospitalVR_PolarMusic2_StemPlink_557711C9.wem</Path>
+					<PrefetchSize>4166</PrefetchSize>
 				</File>
 				<File Id="918186337" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_throw_3.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_throw_3_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_throw_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="931281975" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_3.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_3_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="938240939" Language="SFX">
+					<ShortName>sfx_fish_throw_01.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="950960219" Language="SFX">
 					<ShortName>Characters\Character_Octopus\sfx_octopus_movement_disappear.wav</ShortName>
@@ -695,13 +750,6 @@
 					<ShortName>Characters\Characters_Whale\sfx_whale_waterspout_01.wav</ShortName>
 					<Path>SFX/Characters/Characters_Whale/sfx_whale_waterspout_01_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="981871126" Language="SFX">
-					<ShortName>Characters\Characters_Penguin\sfx_penguin_vocal_02.wav</ShortName>
-					<Path>SFX/Characters/Characters_Penguin/sfx_penguin_vocal_02_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="985165034" Language="SFX">
 					<ShortName>Characters\Character_Octopus\sfx_octopus_movement_appear.wav</ShortName>
 					<Path>SFX/Characters/Character_Octopus/sfx_octopus_movement_appear_1C9C67B2.wem</Path>
@@ -714,17 +762,29 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_footsteps_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_footsteps_02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="1044081569" Language="SFX">
+					<ShortName>sfx_ring_pickup_01.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1046665551" Language="SFX">
+					<ShortName>sfx_ring_impact_C.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_C_1C9C67B2.wem</Path>
+				</File>
 				<File Id="1051380449" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_splash_01.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_splash_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1056436036" Language="SFX">
 					<ShortName>Penguin SFX\sfx_penguin_vocal_tap_4.wav</ShortName>
-					<Path>SFX\Penguin SFX\sfx_penguin_vocal_tap_4_1C9C67B2.wem</Path>
+					<Path>SFX/Penguin SFX/sfx_penguin_vocal_tap_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1069764752" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_pickup_06.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_penguin_pickup_06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1070384383" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_02.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1072808373" Language="SFX">
 					<ShortName>Characters\Character_Seagull\sfx_seagulls_fly_03.wav</ShortName>
@@ -746,8 +806,17 @@
 				<Event Id="3180804649" Name="DuckFly" ObjectPath="\Events\Alpine\DuckFly" MaxAttenuation="100.000000"/>
 				<Event Id="3182212785" Name="DuckVocal" ObjectPath="\Events\Alpine\DuckVocal" MaxAttenuation="100.000000"/>
 				<Event Id="1123537534" Name="FrogVocal" ObjectPath="\Events\Alpine\FrogVocal" MaxAttenuation="100.000000"/>
+				<Event Id="774803507" Name="InteractFishImpact" ObjectPath="\Events\Default Work Unit\InteractFishImpact" MaxAttenuation="100.000000"/>
 				<Event Id="3981837689" Name="InteractFishPickup" ObjectPath="\Events\Default Work Unit\InteractFishPickup" MaxAttenuation="100.000000"/>
 				<Event Id="2920868259" Name="InteractFishPickupLoop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoop" MaxAttenuation="100.000000"/>
+				<Event Id="1252589715" Name="InteractFishPickupLoopStop" ObjectPath="\Events\Default Work Unit\InteractFishPickupLoopStop" MaxAttenuation="0.000000"/>
+				<Event Id="353446631" Name="InteractFishThrow" ObjectPath="\Events\Default Work Unit\InteractFishThrow" MaxAttenuation="100.000000"/>
+				<Event Id="195906091" Name="InteractRingImpact" ObjectPath="\Events\Default Work Unit\InteractRingImpact"/>
+				<Event Id="2280720113" Name="InteractRingPickup" ObjectPath="\Events\Default Work Unit\InteractRingPickup"/>
+				<Event Id="3071778671" Name="InteractRingSuccessL1" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL1"/>
+				<Event Id="3071778668" Name="InteractRingSuccessL2" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL2"/>
+				<Event Id="3071778669" Name="InteractRingSuccessL3" ObjectPath="\Events\Default Work Unit\InteractRingSuccessL3"/>
+				<Event Id="4164133903" Name="InteractRingThrow" ObjectPath="\Events\Default Work Unit\InteractRingThrow"/>
 				<Event Id="566451541" Name="InteractWaterSplash" ObjectPath="\Events\Default Work Unit\InteractWaterSplash" MaxAttenuation="100.000000"/>
 				<Event Id="3615308082" Name="OtterMovement" ObjectPath="\Events\Alpine\OtterMovement" MaxAttenuation="100.000000"/>
 				<Event Id="3510304056" Name="OtterVocal" ObjectPath="\Events\Alpine\OtterVocal" MaxAttenuation="100.000000"/>
@@ -774,6 +843,10 @@
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Salmon/sfx_salmon_scare_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="32973410" Language="SFX">
+					<ShortName>sfx_fish_impact_04.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="46598994" Language="SFX">
 					<ShortName>Characters\Character_Otter\sfx_otter_vocal_02.wav</ShortName>
 					<Path>SFX/Characters/Character_Otter/sfx_otter_vocal_02_1C9C67B2.wem</Path>
@@ -782,9 +855,13 @@
 					<ShortName>Characters\Character_Otter\sfx_otter_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Otter/sfx_otter_vocal_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="82929334" Language="SFX">
+					<ShortName>sfx_fish_throw_03.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="91289404" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_06.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_06_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_06_1C9C67B2.wem</Path>
 				</File>
 				<File Id="96214270" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_05.wav</ShortName>
@@ -794,16 +871,17 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_1.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_1_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="107949657" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_4.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_4_1C9C67B2.wem</Path>
+				<File Id="107941502" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_floor_02.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_floor_02_1C9C67B2.wem</Path>
 				</File>
-=======
->>>>>>> Stashed changes
+				<File Id="108536054" Language="SFX">
+					<ShortName>sfx_fish_throw_02.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="114189091" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_03.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_03_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="115382706" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_04.wav</ShortName>
@@ -811,11 +889,15 @@
 				</File>
 				<File Id="138337933" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_loop.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_loop_F17FB28C.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_loop_F17FB28C.wem</Path>
 				</File>
 				<File Id="151304054" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_02.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_fish_pickup_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="182665926" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_floor_01.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_floor_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="191463175" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_01.wav</ShortName>
@@ -824,6 +906,10 @@
 				<File Id="203815382" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_05.wav</ShortName>
 					<Path>SFX/Ambience/Forest_ambient_BG_oneshot_05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="229340210" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_01.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="250839453" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_03.wav</ShortName>
@@ -841,6 +927,10 @@
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_06.wav</ShortName>
 					<Path>SFX/Characters/Character_Salmon/sfx_salmon_scare_06_1C9C67B2.wem</Path>
 				</File>
+				<File Id="293381835" Language="SFX">
+					<ShortName>sfx_ring_impact_E.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_E_1C9C67B2.wem</Path>
+				</File>
 				<File Id="294338604" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_4.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_4_1C9C67B2.wem</Path>
@@ -848,6 +938,10 @@
 				<File Id="304089227" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_01.wav</ShortName>
 					<Path>SFX/Ambience/Forest_ambient_BG_oneshot_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="308906311" Language="SFX">
+					<ShortName>sfx_fish_impact_02.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="314412579" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2.wav</ShortName>
@@ -857,13 +951,29 @@
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_fly_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="350087165" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_03.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="362441150" Language="SFX">
+					<ShortName>sfx_ring_pickup_03.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="380445953" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="393463777" Language="SFX">
+					<ShortName>sfx_fish_impact_03.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="394475566" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_vocal_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="404223908" Language="SFX">
+					<ShortName>sfx_ring_throw_02.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="407173997" Language="SFX">
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_01.wav</ShortName>
@@ -872,6 +982,10 @@
 				<File Id="409497783" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_splash_02.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_splash_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="414544328" Language="SFX">
+					<ShortName>sfx_fish_bucket_appear.wav</ShortName>
+					<Path>SFX/sfx_fish_bucket_appear_1C9C67B2.wem</Path>
 				</File>
 				<File Id="415002928" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01.wav</ShortName>
@@ -885,10 +999,18 @@
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_03.wav</ShortName>
 					<Path>SFX/Characters/Character_Frog/sfx_frog_vocal_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="428850957" Language="SFX">
+					<ShortName>sfx_ring_throw_01.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="444334270" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
+				</File>
+				<File Id="450086935" Language="SFX">
+					<ShortName>sfx_ring_pickup_04.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="456718688" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_04.wav</ShortName>
@@ -910,6 +1032,10 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="520897157" Language="SFX">
+					<ShortName>sfx_ring_success_level_1.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_1_1C9C67B2.wem</Path>
+				</File>
 				<File Id="522450115" Language="SFX">
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_04.wav</ShortName>
 					<Path>SFX/Characters/Character_Frog/sfx_frog_vocal_04_1C9C67B2.wem</Path>
@@ -918,9 +1044,13 @@
 					<ShortName>Characters\Character_Bear\sfx_bear_splash_disappear.wav</ShortName>
 					<Path>SFX/Characters/Character_Bear/sfx_bear_splash_disappear_1C9C67B2.wem</Path>
 				</File>
+				<File Id="530939695" Language="SFX">
+					<ShortName>sfx_ring_throw_03.wav</ShortName>
+					<Path>SFX/sfx_ring_throw_03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="545719001" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="547278234" Language="SFX">
@@ -929,11 +1059,11 @@
 				</File>
 				<File Id="548270397" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_02.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_02_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="548845387" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="549624851" Language="SFX">
@@ -947,19 +1077,23 @@
 				</File>
 				<File Id="585601475" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_01.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_01_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="588215615" Language="SFX">
 					<ShortName>Forest_ambient_main_loop_02.wav</ShortName>
-					<Path>SFX\Forest_ambient_main_loop_02_F17FB28C.wem</Path>
+					<Path>SFX/Forest_ambient_main_loop_02_F17FB28C.wem</Path>
 				</File>
 				<File Id="590015713" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_02.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_fly_02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="631819814" Language="SFX">
+					<ShortName>sfx_ring_impact_D.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_D_1C9C67B2.wem</Path>
+				</File>
 				<File Id="644903426" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_04.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_04_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="648695295" Language="SFX">
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_02.wav</ShortName>
@@ -985,6 +1119,10 @@
 					<ShortName>Characters\Character_Otter\sfx_otter_movement_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Otter/sfx_otter_movement_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="694200706" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_04.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="697236775" Language="SFX">
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_04.wav</ShortName>
 					<Path>SFX/Characters/Character_Crab/sfx_crab_movement_04_1C9C67B2.wem</Path>
@@ -1005,17 +1143,17 @@
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_large_4_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< HEAD
-				<File Id="722084878" Language="SFX">
-					<ShortName>Ambience\Forest_ambient_main_loop_01.wav</ShortName>
-					<Path>SFX/Ambience/Forest_ambient_main_loop_01_F17FB28C.wem</Path>
-					<PrefetchSize>17704</PrefetchSize>
+				<File Id="731167062" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_water_01.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_water_01_1C9C67B2.wem</Path>
 				</File>
-=======
->>>>>>> master
 				<File Id="745403754" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_med_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="748618340" Language="SFX">
+					<ShortName>sfx_ring_success_level_2.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="757364306" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_vocal_01.wav</ShortName>
@@ -1036,19 +1174,16 @@
 				</File>
 				<File Id="779381852" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_05.wav</ShortName>
-					<Path>SFX\Forest_ambient_tree_rustle_oneshot_05_1C9C67B2.wem</Path>
+					<Path>SFX/Forest_ambient_tree_rustle_oneshot_05_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="794621128" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_2.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_2_1C9C67B2.wem</Path>
+				<File Id="785298120" Language="SFX">
+					<ShortName>sfx_bird_poop_splat_water_02.wav</ShortName>
+					<Path>SFX/sfx_bird_poop_splat_water_02_1C9C67B2.wem</Path>
 				</File>
-				<File Id="799059336" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_1.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_1_1C9C67B2.wem</Path>
+				<File Id="798331421" Language="SFX">
+					<ShortName>sfx_ring_success_level_3.wav</ShortName>
+					<Path>SFX/sfx_ring_success_level_3_1C9C67B2.wem</Path>
 				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="808604161" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_02.wav</ShortName>
 					<Path>SFX/Ambience/Forest_ambient_BG_oneshot_02_1C9C67B2.wem</Path>
@@ -1061,9 +1196,13 @@
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_05.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_fish_pickup_05_1C9C67B2.wem</Path>
 				</File>
+				<File Id="838219915" Language="SFX">
+					<ShortName>sfx_fish_impact_01.wav</ShortName>
+					<Path>SFX/sfx_fish_impact_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="843148672" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="843939028" Language="SFX">
@@ -1072,20 +1211,13 @@
 				</File>
 				<File Id="852610933" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="855065680" Language="SFX">
 					<ShortName>Characters\Character_Otter\sfx_otter_vocal_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Otter/sfx_otter_vocal_01_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="857533580" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_5.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_5_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="874539349" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_06.wav</ShortName>
 					<Path>SFX/Ambience/Forest_ambient_BG_oneshot_06_1C9C67B2.wem</Path>
@@ -1099,13 +1231,6 @@
 					<ShortName>Characters\Character_Crab\sfx_crab_movement_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Crab/sfx_crab_movement_01_1C9C67B2.wem</Path>
 				</File>
-<<<<<<< Updated upstream
-				<File Id="878697382" Language="SFX">
-					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_penguin_vocal_idle_3.wav</ShortName>
-					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_penguin_vocal_idle_3_1C9C67B2.wem</Path>
-				</File>
-=======
->>>>>>> Stashed changes
 				<File Id="886790241" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_04.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_fish_pickup_04_1C9C67B2.wem</Path>
@@ -1124,16 +1249,24 @@
 				</File>
 				<File Id="897899858" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1.wav</ShortName>
-					<Path>SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem</Path>
+					<Path>SFX/Forest_Music_Stems_v1/03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem</Path>
 					<PrefetchSize>17912</PrefetchSize>
 				</File>
 				<File Id="904789059" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3.wav</ShortName>
 					<Path>SFX/ArtfeltSCH_Audio1stPassPolar_171117/sfx_water_splash_small_3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="905204739" Language="SFX">
+					<ShortName>sfx_ring_pickup_02.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="924287429" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_vocal_01.wav</ShortName>
 					<Path>SFX/Characters/Character_Bear/sfx_bear_vocal_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="938240939" Language="SFX">
+					<ShortName>sfx_fish_throw_01.wav</ShortName>
+					<Path>SFX/sfx_fish_throw_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="981987302" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_splash_appear.wav</ShortName>
@@ -1147,6 +1280,14 @@
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_05.wav</ShortName>
 					<Path>SFX/Characters/Character_Ducks/sfx_ducks_fly_05_1C9C67B2.wem</Path>
 				</File>
+				<File Id="1044081569" Language="SFX">
+					<ShortName>sfx_ring_pickup_01.wav</ShortName>
+					<Path>SFX/sfx_ring_pickup_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1046665551" Language="SFX">
+					<ShortName>sfx_ring_impact_C.wav</ShortName>
+					<Path>SFX/sfx_ring_impact_C_1C9C67B2.wem</Path>
+				</File>
 				<File Id="1051380449" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_splash_01.wav</ShortName>
 					<Path>SFX/PhysicsInteraction/sfx_interaction_splash_01_1C9C67B2.wem</Path>
@@ -1154,6 +1295,10 @@
 				<File Id="1059222999" Language="SFX">
 					<ShortName>Characters\Character_Otter\sfx_otter_vocal_04.wav</ShortName>
 					<Path>SFX/Characters/Character_Otter/sfx_otter_vocal_04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1070384383" Language="SFX">
+					<ShortName>sfx_interaction_fish_pickupV2_02.wav</ShortName>
+					<Path>SFX/sfx_interaction_fish_pickupV2_02_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

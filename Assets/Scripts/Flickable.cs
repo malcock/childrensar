@@ -18,6 +18,7 @@ public class Flickable : MonoBehaviour
     private Vector3 startPosition, endPosition;
     private float startTime, endTime;
     bool allow = false;
+    int heldFrameCount = 0;
 
 
     // Use this for initialization
@@ -64,18 +65,30 @@ public class Flickable : MonoBehaviour
             else
             {
                 Vector3 dragPos = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2)).GetPoint(draggableObject.lockDistance);
-                draggableObject.DragTo(dragPos);
+
                 //interactableObject.isDragging = true;
-                if(Input.touchCount>0){
+                if (Input.touchCount > 0)
+                {
                     Touch t = Input.GetTouch(0);
-                    if(t.phase == TouchPhase.Began){
+                    if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final){
+						dragPos = Camera.main.ScreenPointToRay(t.position).GetPoint(draggableObject.lockDistance);
+
+                    }
+                    heldFrameCount++;
+                    if (heldFrameCount > 20) allow = true;
+                    if (t.phase == TouchPhase.Began)
+                    {
                         startPosition = t.position;
                         startTime = Time.time;
+
+
                     }
-                    if(t.phase == TouchPhase.Ended){
+                    if (t.phase == TouchPhase.Ended)
+                    {
                         endPosition = t.position;
                         endTime = Time.time;
-                        if(allow)
+                        heldFrameCount = 0;
+                        if (allow)
                             MakeThrow();
                         allow = true;
                     }
@@ -88,17 +101,26 @@ public class Flickable : MonoBehaviour
                     startPosition = Input.mousePosition;
                     startTime = Time.time;
                 }
+                if (Input.GetMouseButton(0))
+                {
+                    if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final)
+                        dragPos = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(draggableObject.lockDistance);
+
+                    heldFrameCount++;
+                    if (heldFrameCount > 20) allow = true;
+                }
                 if (Input.GetMouseButtonUp(0))
                 {
                     endPosition = Input.mousePosition;
                     endTime = Time.time;
-
-                    if(allow)
+                    heldFrameCount = 0;
+                    if (allow)
                         MakeThrow();
                     allow = true;
                 }
 #endif
 
+                draggableObject.DragTo(dragPos);
             }
 
 
@@ -106,7 +128,8 @@ public class Flickable : MonoBehaviour
         }
     }
 
-    void MakeThrow(){
+    void MakeThrow()
+    {
         Debug.Log(name + " start :" + startTime + " " + startPosition.ToString());
         Debug.Log(name + "end :" + endTime + " " + endPosition.ToString());
         //need to project 2 rays different distances away
@@ -126,7 +149,7 @@ public class Flickable : MonoBehaviour
         Debug.Log(name + "power:" + power + "force :" + forceVector.ToString());
         float throwTime = 0.25f;
 #if UNITY_IOS
-        throwTime = 0.4f;
+        throwTime = 0.5f;
 #endif
         if (draggableObject.isRagdoll)
         {

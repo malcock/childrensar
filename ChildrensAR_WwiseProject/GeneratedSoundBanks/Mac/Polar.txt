@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	41979954	InteractPenguinDrop			\Polar\InteractPenguinDrop	
+	195906091	InteractRingImpact			\Default Work Unit\InteractRingImpact	
 	353446631	InteractFishThrow			\Default Work Unit\InteractFishThrow	
 	513789297	SeagullVocal			\Polar\SeagullVocal	
 	566451541	InteractWaterSplash			\Default Work Unit\InteractWaterSplash	
@@ -11,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1540104444	WhaleSwim			\Polar\WhaleSwim	
 	1662606220	CrabMovement			\Polar\CrabMovement	
 	1938830774	OctopusAppearDisappear			\Polar\OctopusAppearDisappear	
+	2280720113	InteractRingPickup			\Default Work Unit\InteractRingPickup	
 	2920868259	InteractFishPickupLoop			\Default Work Unit\InteractFishPickupLoop	
 	2933929543	WhaleBreach			\Polar\WhaleBreach	
 	3060268180	PolarMusic			\Polar\PolarMusic	
@@ -23,6 +25,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3981837689	InteractFishPickup			\Default Work Unit\InteractFishPickup	
 	4055301235	PenguinSwim			\Polar\PenguinSwim	
 	4107323607	PolarAmbience			\Polar\PolarAmbience	
+	4164133903	InteractRingThrow			\Default Work Unit\InteractRingThrow	
 	4275580380	SeagullPoop			\Polar\SeagullPoop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
