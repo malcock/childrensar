@@ -1204,11 +1204,7 @@
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{558DCA44-0944-4710-90CD-78F2B30A6858}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-														</PropertyList>
-													</Modifier>
+													<Modifier Name="" ID="{558DCA44-0944-4710-90CD-78F2B30A6858}"/>
 												</ModifierInfo>
 											</ModifierList>
 											<RTPCList>
