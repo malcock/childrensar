@@ -18,6 +18,44 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<Folder Name="BuiltInParameters" ID="{E86BCA61-C767-4D2E-8384-8A349EAD4B95}" ShortID="849199572">
+					<ChildrenList>
+						<GameParameter Name="Distance" ID="{22154C79-A27F-42E4-ABDE-25F4BCD7627E}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="50"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ObjectToListenerAngle" ID="{7CA7FB87-27CA-4221-8F9D-5F18333DC230}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="4"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="180"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Elevation" ID="{8682C20F-FC2C-4176-9E2E-A6D1E00079A7}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="3"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="90"/>
+								<Property Name="Min" Type="Real64" Value="-90"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Obstruction" ID="{428D61E9-AFE7-4D9E-BCAD-EB2E70620CC8}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="5"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="Occlusion" ID="{12798DE8-90E7-464C-9C69-D4210842EA99}">
+							<PropertyList>
+								<Property Name="BindToBuiltInParam" Type="int16" Value="6"/>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
