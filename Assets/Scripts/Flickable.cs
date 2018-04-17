@@ -140,17 +140,24 @@ public class Flickable : MonoBehaviour
 
         float power = Vector2.Distance(startPosition, endPosition);
 
-        Vector3 forceVector = (endRay.GetPoint(power) - startRay.GetPoint(0f));
+        Vector3 endPos = endRay.GetPoint(power);
+
+        //endPos.y += 200;
 
         Debug.DrawLine(startPosition, startRay.GetPoint(0), Color.green, 5f);
         Debug.DrawLine(endPosition, endRay.GetPoint(power), Color.red, 5f);
         Debug.DrawLine(startPosition, endRay.GetPoint(power), Color.blue, 5f);
 
-        Debug.Log(name + "power:" + power + "force :" + forceVector.ToString());
+
         float throwTime = 0.25f;
+
 #if UNITY_IOS
         throwTime = 0.5f;
+        endPos.y += 100;
 #endif
+        Vector3 forceVector = (endPos - startRay.GetPoint(0f));
+        Debug.Log(name + "power:" + power + "force :" + forceVector.ToString());
+
         if (draggableObject.isRagdoll)
         {
             //draggableObject.DragController.GetComponent<Rigidbody>().AddForce(forceVector, ForceMode.Impulse);

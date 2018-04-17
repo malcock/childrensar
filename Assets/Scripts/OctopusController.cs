@@ -216,6 +216,13 @@ public class OctopusController : MonoBehaviour
         }
     }
 
+    IEnumerator HandleLeg(int leg, float timeout){
+        animator.SetTrigger("Leg" + leg);
+        yield return new WaitForSeconds(5f);
+
+        animator.SetTrigger("Leg" + leg);
+    }
+
     void FinalLegs()
     {
         switch (state)
@@ -224,17 +231,21 @@ public class OctopusController : MonoBehaviour
 
                 break;
             case State.Begin:
+                
+                foreach(Collider c in GetComponentsInChildren<Collider>()){
+                    c.enabled = true;
+                }
                 foreach (Ring r in GetComponentsInChildren<Ring>())
                 {
                     Destroy(r.gameObject);
                 }
                 break;
             case State.Active:
-                //every 3.33 seconds, choose a different leg to raise from those that are still available
+                //every 3.5 seconds, choose a different leg to raise from those that are still available
                 animator.SetBool("Active", true);
 
                 finalLegTime += Time.deltaTime;
-                if (finalLegTime > 3f)
+                if (finalLegTime > 10f)
                 {
                     KeyValuePair<int, bool>[] arms = octoArms.Where(x => x.Value == false).ToArray();
                     //choose random arm
@@ -247,9 +258,9 @@ public class OctopusController : MonoBehaviour
 
 
 
-                    boringLeg = arms[Random.Range(0, arms.Length-1)].Key;
+                    boringLeg = arms[Random.Range(0, arms.Length)].Key;
                     Debug.Log("chosen leg: " + boringLeg);
-                    animator.SetTrigger("Leg" + boringLeg);
+                    StartCoroutine(HandleLeg(boringLeg, 0.5f));
 
 
                     //for (int l = 1; l < animator.layerCount; l++)
@@ -282,6 +293,10 @@ public class OctopusController : MonoBehaviour
                 }
                 ResetArms();
                 state = State.Start;
+                foreach (Collider c in GetComponentsInChildren<Collider>())
+                {
+                    c.enabled = false;
+                }
                 FindObjectOfType<PolarController>().state = PolarController.State.Return;
 
 

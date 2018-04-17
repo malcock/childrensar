@@ -121,6 +121,7 @@ public class RagdollControl : MonoBehaviour
         public Vector3 storedPosition;
         public Quaternion storedRotation;
         public Quaternion startRotation;
+        public Vector3 startPosition;
     }
     //Additional vectores for storing the pose the ragdoll ended up in.
     Vector3 ragdolledHipPosition, ragdolledHeadPosition, ragdolledFeetPosition;
@@ -175,11 +176,14 @@ public class RagdollControl : MonoBehaviour
 
         totalMass = 0;
         //For each of the transforms, create a BodyPart instance and store the transform 
+
         foreach (Component c in components)
         {
             BodyPart bodyPart = new BodyPart();
             bodyPart.transform = c as Transform;
-            bodyPart.startRotation = bodyPart.transform.rotation;
+            bodyPart.startRotation = bodyPart.transform.localRotation;
+            bodyPart.startPosition = bodyPart.transform.localPosition;
+
             bodyParts.Add(bodyPart);
             if (c.GetComponent<Rigidbody>() && c.gameObject.layer == 8)
             {
@@ -211,6 +215,8 @@ public class RagdollControl : MonoBehaviour
     {
         if (collisionCount > 0) collisionCount--;
         if (triggerCount > 0) triggerCount--;
+
+
     }
 
     void OnCollision(Collision collision,GameObject obj){
@@ -356,6 +362,7 @@ public class RagdollControl : MonoBehaviour
             if (ragdollBlendAmount == 0)
             {
                 state = RagdollState.animated;
+
                 return;
             }
         }
@@ -365,7 +372,8 @@ public class RagdollControl : MonoBehaviour
     {
         foreach (BodyPart b in bodyParts)
         {
-            b.transform.rotation = b.startRotation;
+            if(b.transform.GetComponent<RagBone>())
+                b.transform.localPosition = b.startPosition;
 
         }
     }

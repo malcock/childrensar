@@ -6,9 +6,9 @@ using BuoyancyToolkit;
 public class FloatControl : MonoBehaviour
 {
     public AnimationCurve floatCurve, sinkCurve;
-    public float delay, changeTime;
+    public float delay, changeTime, force = 500;
+    [SerializeField]
     private bool _lockInPlace = true;
-
     public bool lockInPlace {
         get { return _lockInPlace; }
         set {
@@ -24,7 +24,7 @@ public class FloatControl : MonoBehaviour
             }
         }
     }
-    Vector3 startPosition;
+    public Vector3 startPosition;
     ConstantForce constantForce;
     Transform myTransform;
 
@@ -32,7 +32,7 @@ public class FloatControl : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-        startPosition = transform.position;
+        startPosition = transform.Find("Target").position;
         constantForce = GetComponent<ConstantForce>();
         myTransform = transform;
         buoy = GetComponent<BuoyancyForce>();
@@ -75,7 +75,7 @@ public class FloatControl : MonoBehaviour
         if(lockInPlace){
             Vector3 direction = startPosition - myTransform.position;
             direction.y = 0;
-            constantForce.force = direction * 50;
+            constantForce.force = direction * force;
 
         } else {
             //move away from the play area if the octopus/bears are in play

@@ -20,6 +20,17 @@ public class Bucket : MonoBehaviour {
 	}
 
     public void SpawnObject(){
+        Flickable[] flicks = FindObjectsOfType<Flickable>();
+
+        foreach(Flickable f in flicks){
+            Debug.Log(f.name + " is active " + f.isActive);
+
+            f.isActive = false;
+            InteractableObject i = f.GetComponent<InteractableObject>();
+            i.locked = false;
+            i.selected = false;
+            i.isDragging = false;
+        }
         Vector3 pos = transform.position;
         pos.y += 0.075f;
         GameObject obj = Instantiate(prefab,pos,Quaternion.identity) as GameObject;

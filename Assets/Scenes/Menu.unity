@@ -730,7 +730,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Burns Stencil
+          m_StringArgument: Attract - Polar 1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7367ed332b632472589185a3df3f98f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterBehaviour: 0
+  CharacterBehaviour: 1
   FlickBehaviour: 0
   OctoBehaviour: 0
   gametimeA: 240

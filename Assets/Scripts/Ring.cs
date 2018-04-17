@@ -60,25 +60,33 @@ public class Ring : MonoBehaviour
 
         OctoBone hasBone = collision.gameObject.GetComponent<OctoBone>();
         if(hasBone!=null){
-            Debug.Log("ring hit octo");
-            //the ring hit an octobone, attach it and do stuff
-            Transform parent = hasBone.transform;
-            Vector3 position = collision.contacts[0].point;
-            if (hasBone.TargetBone != null) {
-                parent = hasBone.TargetBone.transform;
-                position = hasBone.TargetBone.transform.position;
-            }
-            success = true;
-            PlaceRing(position, parent);
-
-            //send a signal to the octopus parent to say it's been caught
             OctopusController octoController = hasBone.GetComponentInParent<OctopusController>();
-            hasBone.GetComponentInParent<OctopusController>().boringLegState = OctopusController.BoringLegMode.End;
-            octoController.octoArms[octoController.boringLeg] = true;
+            if(hasBone.LimbNum==octoController.boringLeg){
+                Debug.Log("ring hit octo");
+                //the ring hit an octobone, attach it and do stuff
+                Transform parent = hasBone.transform;
+                Vector3 position = collision.contacts[0].point;
+                if (hasBone.TargetBone != null)
+                {
+                    parent = hasBone.TargetBone.transform;
+                    position = hasBone.TargetBone.transform.position;
+                }
+                success = true;
+                PlaceRing(position, parent);
 
-            //play a sound?
-            AkSoundEngine.PostEvent("InteractRingSuccessL" + hasBone.soundLevel, gameObject);
-            //particle effects?
+                //send a signal to the octopus parent to say it's been caught
+
+                hasBone.GetComponentInParent<OctopusController>().boringLegState = OctopusController.BoringLegMode.End;
+                octoController.octoArms[octoController.boringLeg] = true;
+
+                //play a sound?
+                AkSoundEngine.PostEvent("InteractRingSuccessL" + hasBone.soundLevel, gameObject);
+                //particle effects?
+            } else {
+                AkSoundEngine.PostEvent("InteractRingImpact", gameObject);
+                DestroyRing();
+            }
+
 
         } else {
             AkSoundEngine.PostEvent("InteractRingImpact", gameObject);

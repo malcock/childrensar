@@ -36,7 +36,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Burns Unit.unity
     guid: fd0d39dee549848749ae782de734d74d
   - enabled: 1
-    path: Assets/Scenes/Burns Stencil.unity
+    path: Assets/Scenes/Attract - Polar 1.unity
+    guid: 7ebdedf44b359d74ba6ea911c70dfaa5
+  - enabled: 1
+    path: Assets/Scenes/Ward 2 - Polar.unity
     guid: 1be5493d37cbf47fc9450a9c1d3eb176
   - enabled: 0
     path: Assets/Scenes/Burns.unity

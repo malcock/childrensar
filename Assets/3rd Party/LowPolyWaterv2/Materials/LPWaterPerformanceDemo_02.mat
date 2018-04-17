@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: LPWaterPerformanceDemo_02
   m_Shader: {fileID: 4800000, guid: 8165be4dd0b12774d80426d906df9c38, type: 3}
-  m_ShaderKeywords: _CULL_ON _EMISSION _SHADING_FLAT _WAVES_OFF _ZWRITE_ON
+  m_ShaderKeywords: _CULL_ON _EMISSION _SHADING_FLAT _WAVES_LOWQUALITY _ZWRITE_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -57,12 +57,12 @@ Material:
     - _FoamSpread: 1
     - _FresPower: 1.08
     - _HQFoam: 0
-    - _Height: 1.08
-    - _Height_: 0.03375
-    - _Length: 8
+    - _Height: 1.9
+    - _Height_: 0.059375
+    - _Length: 8.55
     - _LightAbs: 0
     - _NormalOffset: 0
-    - _Opacity: 0
+    - _Opacity: 0.19
     - _PointLights: 0
     - _RHeight: -0.19
     - _RHeight_: -0.0059375
@@ -84,7 +84,7 @@ Material:
     - _TexSize_: 2
     - _Time_: 0
     - _TransformScale_: 0.125
-    - _Waves: 0
+    - _Waves: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0, g: 0.7931032, b: 1, a: 1}

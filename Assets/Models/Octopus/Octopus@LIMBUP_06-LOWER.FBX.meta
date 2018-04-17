@@ -110,7 +110,7 @@ ModelImporter:
     400100: OctopusRArm8 1
     400102: OctopusRArm8 2
     4300000: Octopus
-    7400000: LIMBUP_06
+    7400000: LIMBUP_06-LOWER
     9500000: //RootNode
     13700000: Octopus
   materials:
@@ -138,7 +138,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: LIMBUP_06
+      name: LIMBUP_06-LOWER
       takeName: Take 001
       firstFrame: 50
       lastFrame: 100

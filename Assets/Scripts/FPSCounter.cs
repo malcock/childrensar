@@ -4,10 +4,28 @@ using System.Collections;
 public class FPSCounter : MonoBehaviour
 {
     float deltaTime = 0.0f;
+    public MainCharacter[] characters;
+    string charEaten = "";
+
+    void Start(){
+        characters = FindObjectsOfType<MainCharacter>();
+    }
 
     void Update()
     {
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
+        charEaten = "";
+        int fullCount = 0;
+        int eatenCount = 0;
+
+        for (int p = 0; p < characters.Length; p++){
+            if(characters[p].fishEaten==characters[p].fishMax){
+                fullCount++;
+            }
+            eatenCount += characters[p].fishEaten;
+        }
+        charEaten = "Full:" + fullCount + " Fish eaten: " + eatenCount;
+
     }
 
     void OnGUI()
@@ -22,7 +40,8 @@ public class FPSCounter : MonoBehaviour
         style.normal.textColor = new Color(0.0f, 0.0f, 0.5f, 1.0f);
         float msec = deltaTime * 1000.0f;
         float fps = 1.0f / deltaTime;
-        string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
+        string text = string.Format("{0:0.0} ms ({1:0.} fps) - ", msec, fps);
+        text += charEaten;
         GUI.Label(rect, text, style);
     }
 }

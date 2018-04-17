@@ -18,14 +18,14 @@ public class MainCharacter : MonoBehaviour
     public State state = State.Idle;
 
     public SwimState swimState = SwimState.Free;
-
+    public bool isReady = false;
     public Transform myFloat;
     public Transform EscapeLocation;
     public float swimTimeout = 4;
     public int fishMax = 5;
     public int fishEaten = 0;
     public AnimationCurve massAnim;
-    public float walkDistanceThreshold = 0.1f;
+    public float walkDistanceThreshold = 0.0f;
     float walkTimeout = 3;
 
     public Vector3 targetPosition = new Vector3();
@@ -96,19 +96,20 @@ public class MainCharacter : MonoBehaviour
     {
         Debug.Log(name + " blink: wait:" + waitTime + " count:" + blinkCount + " speed:" + blinkSpeed);
         yield return new WaitForSeconds(waitTime);
+        int blinkIndex = characterType == CharacterType.Penguin ? 2 : 0;
         for (int times = 0; times < blinkCount; times++)
         {
             float blinkAmount = 0;
             while (blinkAmount < 100)
             {
                 //Debug.Log(name + "blink:" + blinkAmount);
-                skinnedMeshRenderer.SetBlendShapeWeight(2, blinkAmount);
+                skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
                 blinkAmount += blinkSpeed;
                 yield return null;
             }
             while (blinkAmount > 0)
             {
-                skinnedMeshRenderer.SetBlendShapeWeight(2, blinkAmount);
+                skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
                 blinkAmount -= blinkSpeed;
                 yield return null;
             }
@@ -122,6 +123,8 @@ public class MainCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isReady)
+            return;
         dropTimeout -= Time.deltaTime;
         //if the character has fallen through the world somehow, we need to reset it 
         if (transform.position.y < -50)
@@ -160,21 +163,23 @@ public class MainCharacter : MonoBehaviour
                     if (currentLand != null)
                     {
                         Vector3 landPos = currentLand.position;
-                        landPos.y = transform.position.y;
+                        //landPos.y = transform.position.y;
                         float distanceToCenter = Vector3.Distance(transform.position, landPos);
 
                         if (distanceToCenter > walkDistanceThreshold)
                         {
                             findCenter = true;
+                            doll.ResetRagdoll();
                         }
                     }
                 }
 
                 if (findCenter)
                 {
+                    anim.SetFloat("speed", 1);
                     //walk to the centre of the object currently stood on
                     Rigidbody landBody = currentLand.GetComponent<Rigidbody>();
-                    if (landBody != null) landBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                    //if (landBody != null) landBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
                     Vector3 landPos = currentLand.position;
                     landPos.y = transform.position.y;
 
@@ -183,11 +188,13 @@ public class MainCharacter : MonoBehaviour
                     Vector3 rot = Quaternion.LookRotation(direction, Vector3.up).eulerAngles;
 
                     transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime * 3);
-                    direction.y = 1;
-                    direction = direction.normalized;
-                    direction *= 50;
-                    if(dropTimeout<0) mainCollider.attachedRigidbody.AddForce(direction);
-                    anim.SetFloat("speed", mainCollider.attachedRigidbody.velocity.magnitude);
+
+                    transform.position = Vector3.Lerp(transform.position, landPos, Time.deltaTime);
+                    //direction.y = 1;
+                    //direction = direction.normalized;
+                    //direction *= 50;
+                    //if(dropTimeout<0) mainCollider.attachedRigidbody.AddForce(direction);
+
 
 
                 }
@@ -294,7 +301,7 @@ public class MainCharacter : MonoBehaviour
                             if (swimTime + swimTimeout < Time.time)
                             {
                                 Debug.Log("interval reset fish");
-                                if (GameControl.Instance.CharacterBehaviour != GameControl.CharacterMode.Stay)
+                                if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
                                 {
                                     fishEaten = 0;
                                     swimState = SwimState.Return;
@@ -462,7 +469,7 @@ public class MainCharacter : MonoBehaviour
         MakeSplash(other, obj);
 
         //drop all fish to return fatness to normal
-        if (GameControl.Instance.CharacterBehaviour != GameControl.CharacterMode.Stay)
+        if (GameControl.Instance.CharacterBehaviour == GameControl.CharacterMode.Stay)
         {
             Debug.Log("hit water reset fish");
             fishEaten = 0;
@@ -521,8 +528,13 @@ public class MainCharacter : MonoBehaviour
         {
             walkTimeout = 5;
             currentLand = collision.transform;
+
             doll.ragdolled = false;
             state = State.Idle;
+            if (currentLand.name == "Bed_01" || currentLand.name=="FishBucket_01")
+            {
+                state = State.Escape;
+            }
             PlayOneShot("InteractPenguinDrop");
         }
 
@@ -551,7 +563,7 @@ public class MainCharacter : MonoBehaviour
         AkSoundEngine.PostEvent(eventName, gameObject);
 
         fishEaten++;
-        StartCoroutine(AnimateWeight(1f, fishEaten * 20));
+        StartCoroutine(AnimateWeight(1f, fishEaten * 9));
         if (fishEaten >= fishMax) state = State.Escape;
         //mainCollider.attachedRigidbody.mass = doll.totalMass + (fishEaten);
     }
