@@ -36,6 +36,9 @@
 						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 						<ObjectRef Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 					</ObjectList>
 				</MixingSession>
 			</ChildrenList>

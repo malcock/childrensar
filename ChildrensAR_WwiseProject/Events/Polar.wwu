@@ -154,7 +154,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Seagull_vocal" ID="{501DF781-882E-44C3-A78C-9A0B021CC3E4}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+									<ObjectRef Name="Seagull_vocal" ID="{40E38DE2-07AC-4951-87D4-8CBBAA4CCC5B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
