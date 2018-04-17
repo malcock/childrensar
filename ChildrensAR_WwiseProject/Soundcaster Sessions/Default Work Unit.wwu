@@ -6,20 +6,24 @@
 				<SoundcasterSession Name="PolarMix" ID="{0D9EA453-5176-4490-BB66-AD08A6AF1A18}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Ambience_Polar" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<ObjectRef Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="AlpineMusic_Container" ID="{4D79CAE8-B662-400D-A8BD-BE55E6F41019}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+							<ObjectRef Name="Ambience_Polar" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="AlpineMusic_Container" ID="{4D79CAE8-B662-400D-A8BD-BE55E6F41019}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Characters_Polar" ID="{44207DFA-721F-4D04-B825-855466714081}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-							<Position X="1" Y="0"/>
+							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="amb_polar_main" ID="{BB842F19-396E-4943-AACD-802565A50204}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-							<Position X="1" Y="1"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="PolarMusic" ID="{FDA64478-6928-4F21-8A6E-66AF0151F962}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
@@ -38,20 +42,32 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
-							<Position X="4" Y="0"/>
+							<ObjectRef Name="InteractRingSuccessL1" ID="{C84A5B3F-4634-4337-9C39-0864D458FC25}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 							<Position X="5" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="InteractRingSuccessL2" ID="{00594370-9115-479C-89D3-CC5D492CFDED}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 							<Position X="6" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="InteractRingSuccessL3" ID="{3AE86E2D-A65F-4530-A32B-849B4D677000}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="6" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
 							<Position X="7" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="InteractRingThrow_01" ID="{6BFA28BD-8F23-4A27-B65D-1A1ADB0AC83C}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="7" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -96,7 +112,7 @@
 						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
 						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
-						<CurrentSwitchRef Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
+						<CurrentSwitchRef Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
 						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
