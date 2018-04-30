@@ -112,6 +112,61 @@
 						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
 						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
+						<CurrentSwitchRef Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
+						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Swim Test" ID="{5E0A8B7D-580A-415C-8EB5-AA27C1896FED}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PenguinSwim" ID="{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PenguinSwimStop" ID="{3E753B2A-1BE2-4B44-BFC3-559B516BC4FF}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Elevation" ID="{8682C20F-FC2C-4176-9E2E-A6D1E00079A7}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ObjectToListenerAngle" ID="{7CA7FB87-27CA-4221-8F9D-5F18333DC230}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance" ID="{22154C79-A27F-42E4-ABDE-25F4BCD7627E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Occlusion" ID="{12798DE8-90E7-464C-9C69-D4210842EA99}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Obstruction" ID="{428D61E9-AFE7-4D9E-BCAD-EB2E70620CC8}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicRampUp" ID="{D2B03541-0513-4DA1-A83E-F66B1E0B2F2C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
+						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<CurrentSwitchRef Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
 						<CurrentSwitchRef Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
 						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 					</CurrentSwitchList>

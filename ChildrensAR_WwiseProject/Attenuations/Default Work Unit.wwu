@@ -90,6 +90,10 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" ShortID="782976558">
+					<PropertyList>
+						<Property Name="ConeInnerAngle" Type="int32" Value="0"/>
+						<Property Name="ConeOuterAngle" Type="int32" Value="360"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">

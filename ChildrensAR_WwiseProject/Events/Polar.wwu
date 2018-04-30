@@ -15,6 +15,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{E53DDF42-4F04-42C5-B974-000C360CD6E1}" ShortID="149274855">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Bubbles" ID="{0D3E410D-D661-4A04-B552-C1D841B205B8}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="PenguinSwim" ID="{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}">
@@ -168,7 +179,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Crab_movement" ID="{1F6C68D8-080C-4121-829B-9CE4BF29E969}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+									<ObjectRef Name="Crab_movement" ID="{1F6C68D8-080C-4121-829B-9CE4BF29E969}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -401,6 +412,77 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PenguinSwimStop" ID="{3E753B2A-1BE2-4B44-BFC3-559B516BC4FF}">
+					<ChildrenList>
+						<Action Name="" ID="{6B0FE8D1-E7EA-466E-BEA1-DF2301FAFF21}" ShortID="768105665">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Penguin_Swim" ID="{CD92626E-CA74-4CBE-8113-B28130AC0823}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CrabBubbles" ID="{32070A57-15F5-4341-BFE4-84019A8C8D48}">
+					<ChildrenList>
+						<Action Name="" ID="{C66D6FDB-2F3E-47C3-A739-3D2D2EF853FA}" ShortID="1038729065">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crab_Bubbles" ID="{D8070756-1886-4DB9-911A-5A36D3230033}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingAppear" ID="{5619AAEE-1BB5-4E15-BFD3-5EDD9ADA22C6}">
+					<ChildrenList>
+						<Action Name="" ID="{D667434A-399D-42B6-9EF4-484C2ED6EBBE}" ShortID="362986720">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rings_Appear" ID="{4839E585-3F9A-4E23-8984-F11767B14B7F}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OctopusTap" ID="{DFC3CCA9-5323-4CC6-8AF6-BC492C2EA1C9}">
+					<ChildrenList>
+						<Action Name="" ID="{7DEA4F19-09A4-45A1-AF2E-1A223BC38357}" ShortID="31795270">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Octopus_tap" ID="{92A5C3EC-B78A-4EC1-B3B1-E169D1EAFCE3}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingComplete" ID="{D950421B-EF1F-4BA2-A4A8-8FF7C532AD07}">
+					<ChildrenList>
+						<Action Name="" ID="{9F7D309E-2324-4949-AF42-1234BB50D4BB}" ShortID="498049145">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Complete_Disappear" ID="{876CC18F-0743-421A-9725-709C28F0B1BE}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

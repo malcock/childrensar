@@ -16,6 +16,11 @@
 							<ValueList>
 								<Value>-6</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{94F0A869-96FF-4781-A504-F41B0C98FDDF}"/>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -882,6 +887,13 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{997BDCC4-B353-440E-B751-8CECA317EC0C}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -907,6 +919,13 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E7D5E359-5F4F-4A34-960F-1EA8E756A69F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -918,6 +937,29 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="Octopus_appear_disappear" ID="{41AE6B72-29E7-4F07-98E5-3F23B86BD9C2}" ShortID="225962318">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{216FFAFD-D2A7-4043-BE86-BB2435D1FD30}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C0D456A5-3114-4F13-A29D-B832B9BCBECB}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B8534474-BCE2-4879-8191-FF70713346AC}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -928,6 +970,29 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="sfx_octopus_movement_appear" ID="{5EA17DFD-E06E-4FB4-83E4-A3D2B861DC52}" ShortID="16998526">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{105DA76C-B685-4F5F-B2C5-A27AB286458C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8D791810-02F7-4490-963E-29F9E85C9400}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E9FD27E2-3317-4EBA-BAB3-96F2AD81BE38}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -947,12 +1012,42 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_octopus_movement_disappear" ID="{E7DB78DB-283F-4DF3-80AA-784452D7FBF6}" ShortID="758128693">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F91EB3D5-3472-459F-8E81-50EF7E22FE16}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{91B3CCEE-2DC8-4AC3-AF54-E451136142BA}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9F275ACF-289E-4023-9380-8D39105EFFE5}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -961,6 +1056,9 @@
 													<AudioFile>Characters\Character_Octopus\sfx_octopus_movement_disappear.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{1A6472C3-5503-453E-8D28-BB030105F00F}"/>
+											</PositioningInfo>
 											<ActiveSourceList>
 												<ActiveSource Name="sfx_octopus_movement_disappear" ID="{E3AA8FD3-1FC5-469E-AFC7-D07B4FA966D1}" Platform="Linked"/>
 											</ActiveSourceList>
@@ -995,6 +1093,13 @@
 								</SwitchContainer>
 								<RandomSequenceContainer Name="Octopus_vocal" ID="{265B12C2-4E95-4D82-A8DC-58F2988686E2}" ShortID="1016572355">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D6F44188-16E2-425E-99D4-654AB7C36A29}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1015,6 +1120,13 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3D151EAD-884D-4B06-9F35-C4FCBA11A861}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1026,6 +1138,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="sfx_octopus_vocal_01" ID="{43D6B640-8C3E-4A39-83B6-2126BBE24974}" ShortID="673722039">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{73389737-B8EE-4FB9-BF6C-4ACAFA10D959}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1084,6 +1205,200 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Octopus_tap" ID="{92A5C3EC-B78A-4EC1-B3B1-E169D1EAFCE3}" ShortID="549603203">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{903A35C8-AC84-4669-842B-52C710DB1E8A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-450</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_octopus_tap_1" ID="{B49D492D-BA83-45F9-83EC-333281A18993}" ShortID="484176041">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{95DEC8FE-32B0-4A5F-A75B-D50E9C46C9F0}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_1" ID="{568D1290-C87E-4762-8D8C-67FC0AE3A3BF}" ShortID="799071076">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_1" ID="{568D1290-C87E-4762-8D8C-67FC0AE3A3BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_octopus_tap_2" ID="{FC8B2A85-E6DC-44E0-A010-2861DCCE99CE}" ShortID="635138832">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B66741EA-E665-466D-ABA1-2EFA8EE538EE}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_2" ID="{13CD692C-E70D-4EF3-8158-4A66C1329799}" ShortID="336834301">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_2" ID="{13CD692C-E70D-4EF3-8158-4A66C1329799}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_octopus_tap_3" ID="{4FF26392-D3C3-4CE9-8138-A7632DC5490E}" ShortID="787111370">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{09291A58-BB1E-4A8D-84BE-328881BF6498}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_3" ID="{706E73BE-B634-441B-8220-D71C887257D7}" ShortID="569554009">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_3" ID="{706E73BE-B634-441B-8220-D71C887257D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_octopus_tap_4" ID="{A150CA6B-56B8-427D-8C22-1B34A70B384B}" ShortID="926624983">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C0ED8A66-7EBF-4EC0-972C-E4ABE3F58D09}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_4" ID="{C894CE47-F697-45E7-9D56-FB4B54AE2779}" ShortID="815585197">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_4" ID="{C894CE47-F697-45E7-9D56-FB4B54AE2779}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_octopus_tap_5" ID="{1C1F24EE-BE16-4974-9583-640D3A7FF6D4}" ShortID="942803894">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A14DBF5E-53CC-4C71-AB79-19C501AC3131}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_5" ID="{2C4418AB-F7D3-48CD-9241-2FB0ABE1DF4D}" ShortID="781067115">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_5" ID="{2C4418AB-F7D3-48CD-9241-2FB0ABE1DF4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_octopus_tap_6" ID="{24E9A676-C518-443E-B6F5-6FB0D23AE5BD}" ShortID="56455827">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A9699870-6B97-49FC-BD43-2C1E998FAAC6}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_octopus_tap_6" ID="{2FA83C67-BEF2-4F54-9B0D-C2F6351DD5AE}" ShortID="176498510">
+													<Language>SFX</Language>
+													<AudioFile>sfx_octopus_tap_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_octopus_tap_6" ID="{2FA83C67-BEF2-4F54-9B0D-C2F6351DD5AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Seagull" ID="{A473825E-B016-4E9B-AF5A-D66B7AA4DA6C}" ShortID="252664706">
@@ -1107,6 +1422,13 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Seagull_poop" ID="{E7874D33-5072-47F3-B153-8ED053A265D4}" ShortID="90426439">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{75BD1156-DB56-466A-9F8F-A260D59A7B49}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1143,6 +1465,13 @@
 									<ChildrenList>
 										<Sound Name="sfx_bird_poop_01" ID="{D6759A6C-B112-4561-A8E6-EDC29939B670}" ShortID="64847176">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5E369058-7ABB-460C-95BC-A9E4B0F8DD8D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1170,6 +1499,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_bird_poop_02" ID="{561B7E3C-8D39-4677-966B-FABB68070EE9}" ShortID="663060219">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4788FFE3-DC23-44A4-A783-C6AC143F4EB8}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1189,6 +1527,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_bird_poop_03" ID="{B2853B7A-E06B-418C-BCF1-AA8B9FE24CF2}" ShortID="662213078">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5556EF27-2857-41B5-82A8-FB7A57CB8ED9}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1208,6 +1555,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_bird_poop_04" ID="{97D625E0-4D7C-4477-9E66-F0BBBDFFA100}" ShortID="625547740">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FC557849-3ABC-4B77-9F0B-6C46D7138A64}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1867,6 +2223,13 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B3407C5C-0B98-4052-B3C1-5BFEE8E78D32}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1878,6 +2241,22 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="Penguin_Swim" ID="{CD92626E-CA74-4CBE-8113-B28130AC0823}" ShortID="875878993">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{68520526-2D29-4D08-AA71-E54D336AFF6E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CBB348B0-A49C-40DD-AE64-BB062A31A4F4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1890,6 +2269,13 @@
 										<Sound Name="sfx_swim_fast_loop" ID="{EC293B90-3B06-4650-AA30-002630545ACF}" ShortID="561729178">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AECFD10F-8E88-49A3-9551-74EE8C51944F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1912,6 +2298,13 @@
 										<Sound Name="sfx_swim_fast_underwater_loop" ID="{8E5062BD-AB46-4799-A7B5-7CF8E81FC2C8}" ShortID="241940164">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{690B62F2-132A-4965-B810-BF43C62F5ADF}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1934,6 +2327,13 @@
 										<Sound Name="sfx_swim_slow_loop" ID="{20073A87-343C-454A-83EB-DBB9BB47DD70}" ShortID="84509492">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6F284F98-1B8C-4061-97A6-8B937435BDBD}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1956,6 +2356,13 @@
 										<Sound Name="sfx_swim_slow_underwater_loop" ID="{28B4E09A-8123-4368-8A17-BEB2018C2DE1}" ShortID="336241424">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{122F580A-8542-49F5-92AE-7E59ED272B14}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2023,6 +2430,13 @@
 								</SwitchContainer>
 								<SwitchContainer Name="PenguinQuacks" ID="{BDD8C8E7-BE3D-4B83-B55A-C04DDB897D97}" ShortID="677101229">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6F75B198-3C5C-4018-BD3F-770ECBE83AE4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>-100</Value>
@@ -2069,6 +2483,11 @@
 											<ValueList>
 												<Value>-6</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3AD36993-AA7B-4A60-B1E6-D10DD804C8FE}"/>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -2082,6 +2501,13 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}" ShortID="297596771">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C3F79483-1D7D-4161-87B9-95B26650119E}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 													<ModifierList>
 														<ModifierInfo>
@@ -2143,6 +2569,13 @@
 												<Sound Name="sfx_penguin_vocal_idle_1" ID="{33EDE0DC-0A55-4FB7-9675-4E964DC8865C}" ShortID="810731947">
 													<PropertyList>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{87841426-1107-46BF-A0E6-3C19346425F9}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>25</Value>
@@ -2284,6 +2717,13 @@
 												</Sound>
 												<Sound Name="sfx_penguin_vocal_idle_7" ID="{0FD70003-CFFC-4878-A834-1336CF9EDEA7}" ShortID="467352136">
 													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{77B0C270-4A51-4531-A642-58FE18C04B3C}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>25</Value>
@@ -2752,6 +3192,13 @@
 												</Sound>
 												<Sound Name="sfx_penguin_vocal_sing_7" ID="{E0F6B815-CE33-41F3-96B4-16FF6251316A}" ShortID="960385106">
 													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{CBBE4062-B85F-4A3C-AC2C-B438F1A2438C}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>5</Value>
@@ -2778,6 +3225,13 @@
 												</Sound>
 												<Sound Name="sfx_penguin_vocal_sing_8" ID="{C0E3AD34-4FFF-4BD7-A3B9-5ED52A2FE945}" ShortID="875458313">
 													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A15A9722-8279-4371-A81A-84D990EC148B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>5</Value>
@@ -2805,6 +3259,13 @@
 												<Sound Name="sfx_penguin_vocal_climb_14" ID="{8D3B5645-7DED-4DFD-ACF2-89EFA132FEB7}" ShortID="29666458">
 													<PropertyList>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0FE1B87A-8651-4F63-998D-093050E750FB}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>25</Value>
@@ -2837,9 +3298,23 @@
 												</Sound>
 												<RandomSequenceContainer Name="penguin_funnies" ID="{2C27C3BD-9E70-49DD-BE63-4C72C2C7BBC7}" ShortID="356101842">
 													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{84373224-6A83-4A53-9911-5EE280143275}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BC06506F-314B-4FB4-8F7E-BCC542BB237B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Weight" Type="Real64">
 															<ValueList>
 																<Value>35</Value>
@@ -3224,6 +3699,13 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{95E5D3CF-E9BA-4198-B878-1519F8F7716B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3528,199 +4010,15 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}" ShortID="569624980">
+										<RandomSequenceContainer Name="Penguin_Quack_Call" ID="{48EFD124-F003-4EE1-B3DD-2812DDCE078B}" ShortID="834481349">
 											<PropertyList>
-												<Property Name="Pitch" Type="int32">
+												<Property Name="InitialDelay" Type="Real64">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{F10AA34E-19FC-4954-9C44-EFC8FB5F558B}"/>
+															<Modifier Name="" ID="{A33C569B-1865-452B-8023-8D6994988C9C}"/>
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="sfx_penguin_vocal_eat_1" ID="{58660102-F8B2-4A20-AA5B-6B6EC27A1870}" ShortID="987389476">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{33DD0CF2-1CC4-4A4F-84B2-0C980F8E735B}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PositioningType" Type="int16" Value="1"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-6</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" ShortID="161517213">
-															<Language>SFX</Language>
-															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_1.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="sfx_penguin_vocal_eat_2" ID="{DDA1815E-95BD-4D5A-B8CD-9DBC33BCC036}" ShortID="918914411">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{D41456B1-62F8-4866-81B8-2A894E7F0695}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PositioningType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" ShortID="771536258">
-															<Language>SFX</Language>
-															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_2.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="sfx_penguin_vocal_eat_3" ID="{7923EE25-3912-467D-9A3D-14651ABFDBAC}" ShortID="238112040">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{1A4272A0-78EC-4247-953A-DAA821C805DC}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PositioningType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" ShortID="727342031">
-															<Language>SFX</Language>
-															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_3.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="sfx_penguin_vocal_eat_4" ID="{23F18E0C-EC19-49BD-8AA2-C4A6C202CEDF}" ShortID="111480552">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{3307FB7C-8EB9-42DC-A222-E45893094F17}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PositioningType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" ShortID="771606138">
-															<Language>SFX</Language>
-															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_4.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="sfx_penguin_vocal_eat_5" ID="{174973B5-B995-49DC-8B2A-34F661F855D7}" ShortID="321523999">
-													<PropertyList>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{6AC0D270-3C98-4EFC-8763-E17A1FFF8414}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="PositioningType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Attenuation">
-															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
-														</Reference>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" ShortID="548974580">
-															<Language>SFX</Language>
-															<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_5.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Penguin_Quack_Call" ID="{48EFD124-F003-4EE1-B3DD-2812DDCE078B}" ShortID="834481349">
-											<PropertyList>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -6155,6 +6453,13 @@
 											<PropertyList>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D85781C8-A1D5-4BF5-83BB-DF2A263F50CF}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -7193,6 +7498,447 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Penguin_Eats" ID="{3C9178C7-7645-48C1-B09B-262B54DC1ECE}" ShortID="118164163">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E55D805C-7973-431B-A338-8B113E45E406}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}" ShortID="569624980">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8AB15108-006A-414B-BF84-9E48FD5A0B3D}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F10AA34E-19FC-4954-9C44-EFC8FB5F558B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7B8170E4-0642-492E-8128-475021FFE24B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_penguin_vocal_eat_4" ID="{23F18E0C-EC19-49BD-8AA2-C4A6C202CEDF}" ShortID="111480552">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{29455BD2-AD21-4F4B-B174-996A12CE1516}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{3307FB7C-8EB9-42DC-A222-E45893094F17}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" ShortID="771606138">
+																	<Language>SFX</Language>
+																	<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_4.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{D1F50E7B-8E44-454A-B1B7-62B9635C3FC9}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_penguin_vocal_eat_4" ID="{B78295B0-2A71-4768-86E1-0AC9C05F437D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_penguin_vocal_eat_2" ID="{DDA1815E-95BD-4D5A-B8CD-9DBC33BCC036}" ShortID="918914411">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{CF5B46B0-6680-413D-8F03-0109B55FB609}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{D41456B1-62F8-4866-81B8-2A894E7F0695}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" ShortID="771536258">
+																	<Language>SFX</Language>
+																	<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{2A97FA7B-A6B9-45EE-B855-25232A4BACB8}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_penguin_vocal_eat_2" ID="{8675AE50-0A2C-4ED2-A071-59973527F359}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_penguin_vocal_eat_5" ID="{174973B5-B995-49DC-8B2A-34F661F855D7}" ShortID="321523999">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2E8E209B-A722-4D5F-95F2-9564E0C317B9}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{6AC0D270-3C98-4EFC-8763-E17A1FFF8414}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" ShortID="548974580">
+																	<Language>SFX</Language>
+																	<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_5.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{6B291A2E-59A0-43D4-90BC-EF17EEF02133}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_penguin_vocal_eat_5" ID="{347211C3-8322-4173-888A-9DF7A106125D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_penguin_vocal_eat_1" ID="{58660102-F8B2-4A20-AA5B-6B6EC27A1870}" ShortID="987389476">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{75EDFC2D-8C62-4043-86F7-115F398441BA}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{33DD0CF2-1CC4-4A4F-84B2-0C980F8E735B}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" ShortID="161517213">
+																	<Language>SFX</Language>
+																	<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{C52ECDCD-05AC-468B-BC36-C6E5B0AD6D48}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_penguin_vocal_eat_1" ID="{9A7D5F89-9C78-476A-9192-9765D45F6EE6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_penguin_vocal_eat_3" ID="{7923EE25-3912-467D-9A3D-14651ABFDBAC}" ShortID="238112040">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EAF395F1-EA7E-4998-87E5-AD57C10A2789}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{1A4272A0-78EC-4247-953A-DAA821C805DC}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" ShortID="727342031">
+																	<Language>SFX</Language>
+																	<AudioFile>Penguin SFX\sfx_penguin_vocal_eat_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{A104E9C0-302B-4021-A191-477C583046AD}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_penguin_vocal_eat_3" ID="{AE61AA0F-5722-46E4-BF61-183D49CB381F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{C0B7E7F6-166D-4559-9715-4CF64A44B7ED}"/>
+													</PositioningInfo>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Penguin_Sound_Eat" ID="{55ABA140-AE92-4CEC-B5AE-D4D556346C72}" ShortID="797450115">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{BB9C01FE-2238-4346-86CD-99A3D1C6A183}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Fish_Success_3" ID="{4351A30F-48AC-4145-B5FE-1F6E47BCCE8F}" ShortID="5401999">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{399AD1D2-E36B-4BB4-A9C5-90B8F9CB2309}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_3" ID="{7A45981D-EE89-4974-879A-CA8715FCA5F8}" ShortID="281612602">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{F96674CE-B933-418B-B61B-E6A292A98C4D}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_3" ID="{7A45981D-EE89-4974-879A-CA8715FCA5F8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Fish_Success_1" ID="{8916E4A1-6AB8-4EE1-B194-B3ED2EB449C1}" ShortID="498988975">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{1818DDA3-EA8A-45D8-A534-EB8F616A4C37}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_1" ID="{88D7CF3D-4C53-453A-91F7-6844C939CDEC}" ShortID="791561852">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{8C81178F-C3F1-4B9C-92F5-D898D35DEB3F}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_1" ID="{88D7CF3D-4C53-453A-91F7-6844C939CDEC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Fish_Success_2" ID="{DE8085D7-16EC-415E-B0EA-0FA8EA51A2AE}" ShortID="907881568">
+															<PropertyList>
+																<Property Name="InitialDelay" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{C018F1C6-55A2-430C-9EC2-72CA1B96553B}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_2" ID="{48761019-4E2F-417F-B08D-702F8B868078}" ShortID="686922773">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{700DB35B-5390-421B-848D-118D6062386E}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_2" ID="{48761019-4E2F-417F-B08D-702F8B868078}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Penguin_Sound_Eat" ID="{55ABA140-AE92-4CEC-B5AE-D4D556346C72}"/>
+												<ItemRef Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}"/>
+											</Playlist>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="PenguinQuack" ID="{71433C07-E1B8-4A36-84BC-C2AF745B8969}"/>
@@ -7205,9 +7951,6 @@
 												<ItemRef Name="Penguin_Vocal_Tapped" ID="{C5BF4425-1562-4530-B935-8A64F3595B98}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
 												<ItemRef Name="Penguin_Quack_Idle" ID="{404E9958-EF43-449C-8F4D-4A05EA846A92}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
@@ -7215,6 +7958,9 @@
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Penguin_Vocal_Climb" ID="{28C1FE8C-718A-4CE7-BA07-CA174E0AF065}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Penguin_Eats" ID="{3C9178C7-7645-48C1-B09B-262B54DC1ECE}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Penguin_vocal_distant" ID="{D75493F2-E5B6-4804-B138-40C863194A0C}"/>
@@ -7248,7 +7994,7 @@
 											<Grouping>
 												<SwitchRef Name="Eat" ID="{82E8C6D4-AF3C-46D1-9C2F-BAB81E9863D3}"/>
 												<ItemList>
-													<ItemRef Name="Penguin_Vocal_Eat" ID="{4634B33D-94C2-4446-9B49-E8B542B7F036}"/>
+													<ItemRef Name="Penguin_Eats" ID="{3C9178C7-7645-48C1-B09B-262B54DC1ECE}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -7261,6 +8007,22 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<Sound Name="sfx_penguin_footstep_sequence" ID="{B83F12E8-E739-45C5-848F-0E04C1DA8A77}" ShortID="482577150">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{64BDA039-41FC-42CE-A953-AE86F6B3823B}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{275564E0-2613-441E-8242-A7AFF9F746F9}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7281,6 +8043,13 @@
 								</Sound>
 								<RandomSequenceContainer Name="Penguin_Footsteps" ID="{8F96228B-3458-4304-9F47-4C6EFBA6EB5E}" ShortID="742523463">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{66EB102C-0421-45FB-8017-25ABC726E048}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -7295,6 +8064,13 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2028AE01-6A8C-42E4-9F22-A1A6E85C3509}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7306,6 +8082,22 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="sfx_penguin_footsteps_01" ID="{9232ED04-82E4-4482-A41D-C0F081E9A594}" ShortID="914181408">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BB84904F-ECE4-464D-AE04-38E43E103017}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1A7572C6-996F-401B-B3C4-4E1B4C222100}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7325,6 +8117,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_penguin_footsteps_02" ID="{0167DD09-3300-4D78-8E4C-F55E98583E44}" ShortID="106214798">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{654215AF-5165-40BE-A107-798CEE863952}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7422,6 +8223,22 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Interact_Penguin_Drop" ID="{3FA5C4F8-5AD8-4E8E-B574-D5AC12B55B25}" ShortID="157274239">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{44987DCB-4FD1-4149-A104-FD2FABF76B36}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{43882699-BA9E-4969-BC71-A851A14E1A93}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7548,6 +8365,22 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Interact_Penguin_Pickup" ID="{9B28536B-8D30-4A29-BEC3-54F6B60A2BF5}" ShortID="53634987">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2147E5A9-ABA0-441A-B4A8-03D70518B3DE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FE45E54C-08C8-4AD2-A3C7-D7DAD2419DB4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7674,6 +8507,15 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Penguin_Movement" ID="{2852B2C7-B5E7-44E9-8393-7CD9524752C7}" ShortID="896546652">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D6573CE9-5607-4B94-86B1-698D6DF8A4C0}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7684,6 +8526,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="sfx_penguin_movement_01" ID="{C68AE0B9-34ED-453C-9F80-2A742DEB0B27}" ShortID="276329144">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1555314A-D773-4B5E-A78B-B64A8BF45063}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7726,6 +8577,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Whale" ID="{B1B2FFF7-4481-45BB-AAB7-2ECAB64B9671}" ShortID="172064376">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1CC3D61D-D482-46FE-B3FE-708F28C696C4}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7738,6 +8598,13 @@
 								<Sound Name="sfx_whale_swimming" ID="{6484856B-9C47-4F39-B531-D216A2661893}" ShortID="111114603">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{89DB0C42-DC90-43F7-BEA5-1E71E0250D1C}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -7763,6 +8630,13 @@
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{34EA15F5-234B-414A-87B8-1610EDD12C14}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{13779230-D008-4FD9-9546-35CB029955F6}"/>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
@@ -7836,6 +8710,15 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<Sound Name="sfx_whale_breach" ID="{8F36175C-683B-4A34-A400-EFC5CDAA20E4}" ShortID="715588063">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{110B6961-A66F-4B14-8C15-D6CFE1670204}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7856,7 +8739,350 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="Character_Crab" ID="{BE174BF9-FC57-43B4-9B32-9CDE926B25B7}" ShortID="180650480">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Crab_movement" ID="{1F6C68D8-080C-4121-829B-9CE4BF29E969}" ShortID="914243427">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2DBA3A94-E085-444C-8441-0419B7A4EA43}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_crab_movement_01" ID="{73F2664E-C933-4344-B64C-23B97B3C0EF2}" ShortID="301378661">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_movement_01" ID="{62AF2E44-5BAC-475C-A9F0-683E70724B65}" ShortID="876608198">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Crab\sfx_crab_movement_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_movement_01" ID="{62AF2E44-5BAC-475C-A9F0-683E70724B65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_movement_02" ID="{0664A191-F06E-4FF4-936A-B01C103BD50D}" ShortID="597862817">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_movement_02" ID="{7A94BD52-7289-4944-B82C-5D7E4B5BE742}" ShortID="648695295">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Crab\sfx_crab_movement_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_movement_02" ID="{7A94BD52-7289-4944-B82C-5D7E4B5BE742}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_movement_03" ID="{B227393B-254A-4836-AD87-6FAA4B355420}" ShortID="632128412">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_movement_03" ID="{9002A4E2-A8FC-4DFB-B999-2CF5F603EE7E}" ShortID="715216878">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Crab\sfx_crab_movement_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_movement_03" ID="{9002A4E2-A8FC-4DFB-B999-2CF5F603EE7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_movement_04" ID="{E1F5FD33-BD16-4C3F-B36B-CBE3A3B77854}" ShortID="271309991">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_movement_04" ID="{75BA971C-1236-4151-93DF-C1F8E9ED5C00}" ShortID="697236775">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Crab\sfx_crab_movement_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_movement_04" ID="{75BA971C-1236-4151-93DF-C1F8E9ED5C00}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Crab_Bubbles" ID="{D8070756-1886-4DB9-911A-5A36D3230033}" ShortID="507853965">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_crab_bubble_1" ID="{7CEFBD84-CEC3-48F9-9796-F76AF81C56BF}" ShortID="590615106">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_1" ID="{64B50402-F57B-4EFC-A56D-C785BBCD6B22}" ShortID="55577007">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_1" ID="{64B50402-F57B-4EFC-A56D-C785BBCD6B22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_2" ID="{8845CE04-7A32-41DB-B902-2070330C47F2}" ShortID="569290822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_2" ID="{EE0A68BC-15B8-4A49-89FA-700CD635B72A}" ShortID="562617398">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_2" ID="{EE0A68BC-15B8-4A49-89FA-700CD635B72A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_3" ID="{BF9B5F54-9AE0-413B-A8FA-D15583C30D8D}" ShortID="284251745">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_3" ID="{03310C76-3995-4D28-9C6B-84106B143C29}" ShortID="580076825">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_3" ID="{03310C76-3995-4D28-9C6B-84106B143C29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_4" ID="{D4264D12-4969-47CF-8501-CE282B82F61E}" ShortID="346322508">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_4" ID="{481FFE2B-844B-47F4-B05F-4CB49EDE6DBD}" ShortID="155970623">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_4" ID="{481FFE2B-844B-47F4-B05F-4CB49EDE6DBD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_5" ID="{82807E78-E0C2-4455-807E-C5911F80F5D5}" ShortID="666795334">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_5" ID="{3F3EE769-72F0-4283-A895-37EE0D69B63B}" ShortID="899271572">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_5" ID="{3F3EE769-72F0-4283-A895-37EE0D69B63B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_6" ID="{CE080660-CB90-4CF0-863E-E7DB4A862C98}" ShortID="426350218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_6" ID="{A0C1D733-2F7A-49B7-A492-2E642CCF2210}" ShortID="432212694">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_6" ID="{A0C1D733-2F7A-49B7-A492-2E642CCF2210}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_7" ID="{6E6522CE-4C86-488A-AC08-840002DB4DF5}" ShortID="115095231">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_7" ID="{AB346B4F-6E06-462E-B19D-11FF88541FC3}" ShortID="492505572">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_7" ID="{AB346B4F-6E06-462E-B19D-11FF88541FC3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_8" ID="{70D901B8-BC2B-42F4-8349-13C339F5879F}" ShortID="76168707">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_8" ID="{B96335D4-2D8C-4278-8956-1424A82B3F8D}" ShortID="17719633">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_8" ID="{B96335D4-2D8C-4278-8956-1424A82B3F8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_9" ID="{71BA2C54-8B54-4CDB-95CE-67D91E510337}" ShortID="986596413">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_9" ID="{183181B9-07C6-4957-BD9D-2D784EC501A9}" ShortID="434965820">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_9" ID="{183181B9-07C6-4957-BD9D-2D784EC501A9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_10" ID="{32EA2DF5-BFDE-4C8E-A281-3D17C32260A3}" ShortID="33212462">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_10" ID="{869BC6F4-CE07-4B48-AF21-5A822D07467A}" ShortID="1003574062">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_10" ID="{869BC6F4-CE07-4B48-AF21-5A822D07467A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_crab_bubble_11" ID="{29DB2F0A-4514-4A4E-8B2B-AEB8525A9DC5}" ShortID="7984678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_crab_bubble_11" ID="{3197736B-B160-49B9-9ABB-F4B667117DEA}" ShortID="306572553">
+													<Language>SFX</Language>
+													<AudioFile>sfx_crab_bubble_11.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_crab_bubble_11" ID="{3197736B-B160-49B9-9ABB-F4B667117DEA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{EBB099D4-A8B9-4455-99F9-F8B6F1B77F75}"/>
+					</PositioningInfo>
 				</ActorMixer>
 				<ActorMixer Name="InteractionSFX_Polar" ID="{AB692BFD-E9D1-47D4-B481-6D697D563D50}" ShortID="616222730">
 					<PropertyList>
@@ -7871,6 +9097,13 @@
 							<ValueList>
 								<Value>-6</Value>
 							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0458855E-A0D4-49B4-B139-B870FA43296E}"/>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -7887,6 +9120,13 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" ShortID="24841718">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9D7616EF-2E0F-440C-AB52-01476F18D58B}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -7897,6 +9137,13 @@
 													<Property Name="Min" Type="Real64" Value="-150"/>
 												</PropertyList>
 											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4855711A-1B97-4B65-94CD-0F4E3ED90F59}"/>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
@@ -7911,6 +9158,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="sfx_ring_throw_01" ID="{00EF2699-B679-4AA2-BAE6-63D0500F7345}" ShortID="95686779">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7E2C3BF5-E6F2-46D1-8242-A4EFD3626918}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -7971,10 +9227,22 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Interact_Ring_Pickup" ID="{F32BC72D-5CE0-4189-9959-A098E935972D}" ShortID="139393478">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A8B1D5EB-8C2F-4F58-84D3-E26E4BA2E750}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{99369DCF-38D4-428D-98C7-A0AFFE4D070F}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -7987,6 +9255,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="sfx_ring_pickup_01" ID="{6E969BE9-DFF2-46D3-A4EA-D61B92662F11}" ShortID="153192415">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DC3D5552-E0F3-471D-B7B4-8353043CA3DE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -8070,6 +9347,11 @@
 									<ValueList>
 										<Value>-6</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BBFABCA9-328A-48EC-92F8-9562964DF2C4}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -8083,10 +9365,24 @@
 							<ChildrenList>
 								<Sound Name="sfx_ring_success_level_1" ID="{F44D0D8D-1E39-445B-8944-19D5500174B7}" ShortID="517267728">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DAD11397-2A0C-4BE5-9095-913B8E82301A}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
 											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2A61B283-AEAA-47D6-AF6E-DBF9D7B82C0D}"/>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -8131,10 +9427,24 @@
 							<ChildrenList>
 								<Sound Name="sfx_ring_success_level_2" ID="{8937D6A2-BEAA-4440-8C8D-5526FE0B7B77}" ShortID="543257820">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5C3A21E6-46E5-43D2-B31F-578EA2748E0C}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="UserAuxSendVolume0" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
 											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{97F4FDDF-1C52-46EF-9663-38CAF3DC336C}"/>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -8179,18 +9489,38 @@
 							<ChildrenList>
 								<Sound Name="sfx_ring_success_level_3" ID="{5C0AD21F-845F-4FF8-85D7-A2B79407E0EF}" ShortID="618221836">
 									<PropertyList>
-										<Property Name="UserAuxSendVolume0" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F62C3E32-DC12-4806-B2D2-D038FAD4A423}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4B069415-FBD2-48C8-B038-3FD48604291F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CA27D619-CD8E-421D-B1A0-B26ACCA2DEBF}"/>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 										</Reference>
 										<Reference Name="UserAuxSend0">
 											<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
@@ -8202,6 +9532,9 @@
 											<AudioFile>sfx_ring_success_level_3.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{2A51E798-78B1-461D-AB0F-717343E2CF53}"/>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="sfx_ring_success_level_3" ID="{B145EE46-5931-4773-AC00-8ABD046BC41C}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -8210,10 +9543,22 @@
 						</ActorMixer>
 						<RandomSequenceContainer Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" ShortID="110602872">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7781CD59-7EF8-4A4C-9728-0121FFEC2E44}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{577679EA-39EB-4BDD-A8FC-8B3B73100872}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -8226,6 +9571,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="sfx_ring_impact_C" ID="{6EED7B1E-3665-4F7D-A6CA-37BC717EB72B}" ShortID="348255226">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1C0AEB4D-17AE-4B19-B70B-7DB70C4BF721}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -8245,6 +9599,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="sfx_ring_impact_D" ID="{D95A8A7B-BDB4-472E-8313-936885620214}" ShortID="775547174">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4E7B5349-59DF-4B43-A6A1-823D2FF2BBAE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -8286,10 +9649,24 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Interact_Ring_Impact_Miss" ID="{AABC9447-E48F-4FEC-B33D-4AF446ACA194}" ShortID="1072075003">
 							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CD2B0A5D-8DCE-41D1-BFC3-DF6BDCB1E065}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-1200</Value>
 									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C4122D67-B7CF-44E8-8BCF-B0B4890ADFA1}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -8375,6 +9752,115 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Rings_Appear" ID="{4839E585-3F9A-4E23-8984-F11767B14B7F}" ShortID="96370605">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D7E1491-A7A6-4724-9121-F7C46C2F321F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rings_Appear" ID="{112DC98E-45DE-47B6-A3B2-3DB9AE24EF7F}" ShortID="542369457">
+									<Language>SFX</Language>
+									<AudioFile>Rings_Appear.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rings_Appear" ID="{112DC98E-45DE-47B6-A3B2-3DB9AE24EF7F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Interact_Ring_Complete_Disappear" ID="{876CC18F-0743-421A-9725-709C28F0B1BE}" ShortID="663123398">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EE13C3DC-EA79-4A5C-9FC3-A8E725BAA32D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_octopus_success_disappear" ID="{F47347A5-2D0B-4FA6-8E94-0F91227B19E3}" ShortID="652228585">
+									<Language>SFX</Language>
+									<AudioFile>sfx_octopus_success_disappear.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{4DABF1A2-5305-4E39-B3DD-E852E4996FBA}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_octopus_success_disappear" ID="{F47347A5-2D0B-4FA6-8E94-0F91227B19E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Interact_Ring_Complete" ID="{D1FCBEFC-0CBD-42C1-85E5-1845F8BC213F}" ShortID="239834822">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C0E3A54C-A0F9-4D6B-8481-C6BCB66DDE52}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_octopus_success" ID="{7699D046-16DC-4545-8B9D-4344C124C8E4}" ShortID="490970717">
+									<Language>SFX</Language>
+									<AudioFile>sfx_octopus_success.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{1325BB98-1F77-4923-88A6-E04971CEF144}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_octopus_success" ID="{7699D046-16DC-4545-8B9D-4344C124C8E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
