@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Alpine.wwu" DateLow="3430075384" DateHigh="30657740"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1557735082" DateHigh="30646271"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Polar.wwu" DateLow="2684265008" DateHigh="30656379"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="2829083142" DateHigh="30639472"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Alpine.wwu" DateLow="2526746767" DateHigh="30662773"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2526531193" DateHigh="30662773"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Actor-Mixer Hierarchy\Polar.wwu" DateLow="2526711673" DateHigh="30662773"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1082412171" DateHigh="30660192"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="675935485" DateHigh="30635023"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.Studio B.wsettings" DateLow="2259655645" DateHigh="30660167"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.Studio B.wsettings" DateLow="3506988509" DateHigh="30662774"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\ChildrensAR_WwiseProject.wproj" DateLow="41130009" DateHigh="30643708"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="675955538" DateHigh="30635023"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="2684290074" DateHigh="30656379"/>
@@ -14,12 +14,12 @@
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Effects\Default Work Unit.wwu" DateLow="675965566" DateHigh="30635023"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Effects\Factory Effects.wwu" DateLow="3938893029" DateHigh="30643738"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Events\Alpine.wwu" DateLow="1994688486" DateHigh="30647723"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Events\Default Work Unit.wwu" DateLow="2854547344" DateHigh="30657593"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Events\Polar.wwu" DateLow="290431040" DateHigh="30658748"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Events\Default Work Unit.wwu" DateLow="2526621434" DateHigh="30662773"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Events\Polar.wwu" DateLow="1082432225" DateHigh="30660192"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="2579807256" DateHigh="30648924"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Alpine.wwu" DateLow="2738647603" DateHigh="30658748"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3473754391" DateHigh="30640690"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Polar.wwu" DateLow="2233360683" DateHigh="30660167"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Interactive Music Hierarchy\Polar.wwu" DateLow="4232034776" DateHigh="30660172"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1899759947" DateHigh="30645133"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="290501228" DateHigh="30658748"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="2272091521" DateHigh="30647697"/>
@@ -27,7 +27,7 @@
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Queries\Default Work Unit.wwu" DateLow="676065830" DateHigh="30635023"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Queries\Factory Queries.wwu" DateLow="676065830" DateHigh="30635023"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3531697712" DateHigh="30640690"/>
-	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="290405974" DateHigh="30658748"/>
+	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="2526771833" DateHigh="30662773"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\States\Default Work Unit.wwu" DateLow="1950269176" DateHigh="30641677"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Switches\Default Work Unit.wwu" DateLow="2055002064" DateHigh="30645323"/>
 	<ValidationCacheItem File="D:\Users\Studio B\Documents\WORK\Artfelt_SCH_MasterBranch\ChildrensAR_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="676085886" DateHigh="30635023"/>

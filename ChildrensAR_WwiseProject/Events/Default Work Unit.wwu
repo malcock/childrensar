@@ -201,6 +201,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="TabletPickup" ID="{01CA5313-FD8D-4DAB-8480-DE76A28C0F5F}">
+					<ChildrenList>
+						<Action Name="" ID="{AC947CEE-2D80-499D-979B-D27AB5B63D9F}" ShortID="695978597">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_tablet_pickup" ID="{108B2268-507B-44B2-AA4E-1F8AE0173793}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -21,6 +21,10 @@ namespace AK
         static const AkUniqueID BIRDPOOPSPLATFLOOR = 2678875368U;
         static const AkUniqueID BIRDPOOPSPLATSCREEN = 4009218062U;
         static const AkUniqueID BIRDPOOPSPLATWATER = 3796593211U;
+<<<<<<< HEAD
+=======
+        static const AkUniqueID CRABBUBBLES = 1863277376U;
+>>>>>>> master
         static const AkUniqueID CRABMOVEMENT = 1662606220U;
         static const AkUniqueID DUCKFLY = 3180804649U;
         static const AkUniqueID DUCKVOCAL = 3182212785U;
@@ -33,6 +37,8 @@ namespace AK
         static const AkUniqueID INTERACTFISHTHROW = 353446631U;
         static const AkUniqueID INTERACTPENGUINDROP = 41979954U;
         static const AkUniqueID INTERACTPENGUINPICKUP = 3091785893U;
+        static const AkUniqueID INTERACTRINGAPPEAR = 1906190194U;
+        static const AkUniqueID INTERACTRINGCOMPLETE = 3527504504U;
         static const AkUniqueID INTERACTRINGIMPACT = 195906091U;
         static const AkUniqueID INTERACTRINGIMPACTMISS = 783174639U;
         static const AkUniqueID INTERACTRINGPICKUP = 2280720113U;
@@ -44,18 +50,21 @@ namespace AK
         static const AkUniqueID INTERACTRINGTHROW_01 = 1219306835U;
         static const AkUniqueID INTERACTWATERSPLASH = 566451541U;
         static const AkUniqueID OCTOPUSAPPEARDISAPPEAR = 1938830774U;
+        static const AkUniqueID OCTOPUSTAP = 2975421243U;
         static const AkUniqueID OCTOPUSVOCAL = 3164774671U;
         static const AkUniqueID OTTERMOVEMENT = 3615308082U;
         static const AkUniqueID OTTERVOCAL = 3510304056U;
         static const AkUniqueID PENGUINFOOTSTEPS = 1977719452U;
         static const AkUniqueID PENGUINQUACK = 3719585952U;
         static const AkUniqueID PENGUINSWIM = 4055301235U;
+        static const AkUniqueID PENGUINSWIMSTOP = 2297191363U;
         static const AkUniqueID POLARAMBIENCE = 4107323607U;
         static const AkUniqueID POLARMUSIC = 3060268180U;
         static const AkUniqueID SALMONSCARE = 3536762137U;
         static const AkUniqueID SEAGULLFLY = 1191252457U;
         static const AkUniqueID SEAGULLPOOP = 4275580380U;
         static const AkUniqueID SEAGULLVOCAL = 513789297U;
+        static const AkUniqueID TABLETPICKUP = 1460831253U;
         static const AkUniqueID WATERSPLASH = 777507535U;
         static const AkUniqueID WHALEBREACH = 2933929543U;
         static const AkUniqueID WHALESPRAY = 893632031U;
