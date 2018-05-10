@@ -168,8 +168,13 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DISTANCE = 1240670792U;
+        static const AkUniqueID ELEVATION = 2141048674U;
         static const AkUniqueID MUSICENVELOPE = 1842210006U;
         static const AkUniqueID MUSICRAMPUP = 1553932209U;
+        static const AkUniqueID OBJECTTOLISTENERANGLE = 2286826340U;
+        static const AkUniqueID OBSTRUCTION = 4251783213U;
+        static const AkUniqueID OCCLUSION = 183903552U;
         static const AkUniqueID PENGUINSIZE = 145924928U;
     } // namespace GAME_PARAMETERS
 

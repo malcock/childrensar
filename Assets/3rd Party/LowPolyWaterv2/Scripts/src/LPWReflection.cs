@@ -97,7 +97,7 @@ namespace LPWAsset {
             UpdateCameraModes(cam, refractionCamera);
 
             // Render reflection if needed
-            if ( (mode & WaterMode.Reflective) == WaterMode.Reflective) {
+            if ( (mode & WaterMode.Reflective) == WaterMode.Reflective && !IsSceneView2D()) {
                 // Reflect camera around reflection plane
                 float d = -Vector3.Dot(normal, pos) - p.clipPlaneOffset;
                 Vector4 reflectionPlane = new Vector4(normal.x, normal.y, normal.z, d);
@@ -126,7 +126,7 @@ namespace LPWAsset {
             }
 
             // Render refraction
-            if ((mode & WaterMode.Refractive) == WaterMode.Refractive) {
+            if ((mode & WaterMode.Refractive) == WaterMode.Refractive && !IsSceneView2D()) {
                 refractionCamera.worldToCameraMatrix = cam.worldToCameraMatrix;
 
                 // Setup oblique projection matrix so that near plane is our reflection
@@ -148,6 +148,16 @@ namespace LPWAsset {
             }
 
             recursiveGuard = false;
+        }
+
+        bool IsSceneView2D() {
+            #if UNITY_EDITOR
+            if (UnityEditor.SceneView.currentDrawingSceneView != null) {
+                if (UnityEditor.SceneView.currentDrawingSceneView.in2DMode)
+                    return true;
+            }
+            #endif
+            return false;
         }
 
 

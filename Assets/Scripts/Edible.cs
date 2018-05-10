@@ -9,7 +9,7 @@ using UnityEngine.Events;
 /// </summary>
 [RequireComponent(typeof(InteractableObject))]
 public class Edible : MonoBehaviour {
-
+    bool hasThrown = false;
     bool hasOwnCollider = false;
     InteractableObject interactableObj;
 	// Use this for initialization
@@ -38,8 +38,12 @@ public class Edible : MonoBehaviour {
     }
 
     void DragEnd(){
-        AkSoundEngine.PostEvent("InteractFishPickupLoopStop",gameObject);
-        AkSoundEngine.PostEvent("InteractFishThrow",gameObject);
+        if(!hasThrown){
+            AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
+            AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
+            hasThrown = true;
+        }
+
         StartCoroutine(timeout());
     }
 

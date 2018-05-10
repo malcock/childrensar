@@ -283,14 +283,19 @@ public class OctopusController : MonoBehaviour
                 transform.eulerAngles = rotation;
                 break;
             case State.End:
- 
+                
                 StopCoroutine(playGame);
+                AkSoundEngine.SetSwitch("OctopusAppearDisappear", "Disappear", gameObject);
+                AkSoundEngine.PostEvent("OctopusAppearDisappear", gameObject);
                 animator.SetBool("Active", false);
                 if (gameSuccess){
                     animator.SetTrigger("Celebrate");
+                    AkSoundEngine.PostEvent("InteractRingSuccessL3", gameObject);
                 } else {
                     animator.SetTrigger("Done");
                 }
+
+
                 ResetArms();
                 state = State.Start;
                 foreach (Collider c in GetComponentsInChildren<Collider>())

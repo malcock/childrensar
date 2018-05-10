@@ -129,15 +129,17 @@ public class PolarController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(Input.GetKeyUp(KeyCode.O)){
+        if(Input.GetKeyUp(KeyCode.K)){
+            Debug.Log("filling all penguins");
             for (int p = 0; p < penguins.Count; p++){
+
                 penguins[p].fishEaten = 5;
             }
         }
 //#if UNITY_IOS
         if (SystemInfo.batteryStatus != BatteryStatus.Discharging)
         {
-            Debug.Log("plugged in - load attract scene");
+            //Debug.Log("plugged in - load attract scene");
             //GameControl.Instance.LoadScene(AttractToLoad);
         }
 //#endif
@@ -174,7 +176,8 @@ public class PolarController : MonoBehaviour {
                         case MainCharacter.State.Idle:
                         case MainCharacter.State.Dropped:
                         case MainCharacter.State.Walking:
-                            penguins[p].state = MainCharacter.State.Escape;
+                            StartCoroutine(MakeEscape(penguins[p], 0.25f * p));
+                            //penguins[p].state = MainCharacter.State.Escape;
                             break;
                     }
 
@@ -215,5 +218,10 @@ public class PolarController : MonoBehaviour {
 
 	}
 
+    IEnumerator MakeEscape(MainCharacter p, float t){
+        yield return new WaitForSeconds(t);
+        p.state = MainCharacter.State.Escape;
 
+
+    }
 }

@@ -82,14 +82,24 @@ public class MainCharacter : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
-
-        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        if (state != State.Escape)
-        {
-            AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
-            AkSoundEngine.PostEvent(eventName, gameObject);
+        if(state==State.Idle){
+            string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+            if (state != State.Escape)
+            {
+                AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
+                AkSoundEngine.PostEvent(eventName, gameObject);
+            }
+            StartCoroutine(IdleSound(Random.Range(20, 80)));
+            if (characterType == CharacterType.Penguin)
+            {
+                int id = Random.Range(0, 2);
+                if(id==1){
+                    AkSoundEngine.PostEvent("PenguinFootsteps", gameObject);
+                }
+                anim.SetTrigger("Idle" + id);
+            }
         }
-        StartCoroutine(IdleSound(Random.Range(20, 80)));
+
     }
 
     IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
@@ -223,6 +233,8 @@ public class MainCharacter : MonoBehaviour
                     if (BoundsContainedPercentage(mainCollider.bounds, waterBounds) > 0.5f)
                     {
                         state = State.Swimming;
+                        //AkSoundEngine.PostEvent("PenguinSwim", gameObject);
+
                         //should stopping this state be controlled elsewhere though?
                     }
                 }
@@ -230,6 +242,7 @@ public class MainCharacter : MonoBehaviour
                 break;
             case State.Dropped:
                 //switch to swim mode?
+                AkSoundEngine.PostEvent("PenguinSwimStop", gameObject);
                 dropTimeout = 1;
                 if (doll.state == RagdollControl.RagdollState.animated)
                 {
@@ -404,6 +417,7 @@ public class MainCharacter : MonoBehaviour
                     if (BoundsContainedPercentage(mainCollider.bounds, waterBounds) > 0.5f)
                     {
                         state = State.Swimming;
+                        //AkSoundEngine.PostEvent("PenguinSwim", gameObject);
                         //should stopping this state be controlled elsewhere though?
                     }
                 }

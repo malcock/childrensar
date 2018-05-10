@@ -1,26 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
+	195906091	InteractRingImpact			\Default Work Unit\InteractRingImpact	
 	353446631	InteractFishThrow			\Default Work Unit\InteractFishThrow	
 	453755285	AlpineMusic			\Alpine\AlpineMusic	
 	566451541	InteractWaterSplash			\Default Work Unit\InteractWaterSplash	
 	774343659	BearAppearDisappear			\Alpine\BearAppearDisappear	
 	774803507	InteractFishImpact			\Default Work Unit\InteractFishImpact	
 	777507535	WaterSplash			\Polar\WaterSplash	
+	785926108	AlpineAmbience			\Alpine\AlpineAmbience	
 	851259619	BearSway			\Alpine\BearSway	
 	1123537534	FrogVocal			\Alpine\FrogVocal	
+	1237768798	FishBucketAppear			\Default Work Unit\FishBucketAppear	
 	1252589715	InteractFishPickupLoopStop			\Default Work Unit\InteractFishPickupLoopStop	
 	1343055514	BearVocal			\Alpine\BearVocal	
 	1662606220	CrabMovement			\Polar\CrabMovement	
+	2280720113	InteractRingPickup			\Default Work Unit\InteractRingPickup	
+	2678875368	BirdPoopSplatFloor			\Default Work Unit\BirdPoopSplatFloor	
 	2920868259	InteractFishPickupLoop			\Default Work Unit\InteractFishPickupLoop	
-	3071778668	InteractRingSuccessL2			\Default Work Unit\InteractRingSuccessL2	
-	3071778669	InteractRingSuccessL3			\Default Work Unit\InteractRingSuccessL3	
-	3071778671	InteractRingSuccessL1			\Default Work Unit\InteractRingSuccessL1	
 	3180804649	DuckFly			\Alpine\DuckFly	
 	3182212785	DuckVocal			\Alpine\DuckVocal	
-	3337376526	AmbientAlpine			\Alpine\AmbientAlpine	
 	3510304056	OtterVocal			\Alpine\OtterVocal	
 	3536762137	SalmonScare			\Alpine\SalmonScare	
 	3615308082	OtterMovement			\Alpine\OtterMovement	
+	3796593211	BirdPoopSplatWater			\Default Work Unit\BirdPoopSplatWater	
 	3981837689	InteractFishPickup			\Default Work Unit\InteractFishPickup	
+	4009218062	BirdPoopSplatScreen			\Default Work Unit\BirdPoopSplatScreen	
+	4164133903	InteractRingThrow			\Default Work Unit\InteractRingThrow	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	774343659	BearAppearDisappear			\Default Work Unit\BearAppearDisappear	
@@ -32,11 +36,15 @@ Switch	ID	Name	Switch Group			Notes
 	1108843758	SmallSoft	WaterSplash			
 	1846755610	Small	WaterSplash			
 	2849147824	Medium	WaterSplash			
+	3001469674	ObjectSubmerge	WaterSplash			
 	3212594608	SmallMed	WaterSplash			
 	4284352190	Large	WaterSplash			
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
+	565384278	AmbLFO_2			\Default Work Unit\AmbLFO_2	
+	646344881	AmbLFO_3			\Default Work Unit\AmbLFO_3	
 	655652669	ForestFrogLoop (Custom)				
+	820074034	AmbLFO_1			\Default Work Unit\AmbLFO_1	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	32419989	Ambience_Alpine			\Default Work Unit\Master Audio Bus\SFX\AlpineSFX\Ambience_Alpine	
@@ -93,28 +101,31 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	314412579	sfx_water_splash_large_2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Large\sfx_water_splash_large_2		185284
 	328682017	sfx_ducks_fly_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_fly_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_fly\sfx_ducks_fly_03		214280
 	350087165	sfx_interaction_fish_pickupV2_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_interaction_fish_pickupV2_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Pickup_V2\sfx_interaction_fish_pickupV2_03		129704
+	362441150	sfx_ring_pickup_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_pickup_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Pickup\sfx_ring_pickup_03		81364
 	380445953	sfx_water_splash_med_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Med\sfx_water_splash_med_03		204044
 	393463777	sfx_fish_impact_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_fish_impact_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Impact\sfx_fish_impact_03		135440
 	394475566	sfx_ducks_vocal_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_vocal_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_vocal\sfx_ducks_vocal_03		374284
+	404223908	sfx_ring_throw_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_throw_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Throw\sfx_ring_throw_02		145664
 	407173997	sfx_frog_vocal_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Frog\sfx_frog_vocal_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Frog\Frog_vocal\sfx_frog_vocal_01		259116
 	409497783	sfx_interaction_splash_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_splash_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_SmallMed\sfx_interaction_splash_02		260876
 	414544328	sfx_fish_bucket_appear	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_fish_bucket_appear_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\sfx_fish_bucket_appear		260544
 	415002928	sfx_water_splash_med_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Med\sfx_water_splash_med_01		196874
 	420584994	sfx_salmon_scare_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Salmon\sfx_salmon_scare_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_01		513568
 	426052603	sfx_frog_vocal_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Frog\sfx_frog_vocal_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Frog\Frog_vocal\sfx_frog_vocal_03		320720
-	444334270	04-HospitalAR_3_Melody-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\04-HospitalAR_3_Melody-Layer_v1		17912
+	428850957	sfx_ring_throw_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_throw_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Throw\sfx_ring_throw_01		95480
+	444334270	04-HospitalAR_3_Melody-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\04-HospitalAR_3_Melody-Layer_v1		17912
+	450086935	sfx_ring_pickup_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_pickup_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Pickup\sfx_ring_pickup_04		69044
 	456718688	sfx_salmon_scare_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Salmon\sfx_salmon_scare_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_04		429268
 	470709025	sfx_otter_movement_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Otter\sfx_otter_movement_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_movement\sfx_otter_movement_03		74620
 	485096752	sfx_otter_movement_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Otter\sfx_otter_movement_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_movement\sfx_otter_movement_02		76628
 	496957545	sfx_interaction_fish_pickup_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_fish_pickup_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Pickup_V1\sfx_interaction_fish_pickup_01		37984
 	516727642	sfx_water_splash_large_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Large\sfx_water_splash_large_3		158824
-	520897157	sfx_ring_success_level_1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_success_level_1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Success_Level1\sfx_ring_success_level_1		413944
 	522450115	sfx_frog_vocal_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Frog\sfx_frog_vocal_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Frog\Frog_vocal\sfx_frog_vocal_04		172956
 	523747903	sfx_bear_splash_disappear	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Bear\sfx_bear_splash_disappear_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Bear\Bear_appear_disappear\sfx_bear_splash_disappear		635464
-	545719001	06-HospitalAR_5_Full-Mix_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\06-HospitalAR_5_Full-Mix_v1\06-HospitalAR_5_Full-Mix_v1		17912
+	530939695	sfx_ring_throw_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_throw_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Throw\sfx_ring_throw_03		137440
 	547278234	sfx_salmon_scare_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Salmon\sfx_salmon_scare_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Salmon\Salmon_scare\sfx_salmon_scare_02		488908
 	548270397	Forest_ambient_tree_rustle_oneshot_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_ambient_tree_rustle_oneshot_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_rustle_oneshot\Forest_ambient_tree_rustle_oneshot_02		382268
-	548845387	01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1		17912
+	548845387	01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1		17912
 	549624851	sfx_interaction_fish_pickup_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_fish_pickup_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Pickup_V1\sfx_interaction_fish_pickup_03		33852
 	554695072	Polar_ambient_music_V2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Polar_ambient_music_V2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\PolarMusic\Polar_ambient_music_V2\Polar_ambient_music_V2		17784
 	585601475	Forest_ambient_tree_rustle_oneshot_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_ambient_tree_rustle_oneshot_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_rustle_oneshot\Forest_ambient_tree_rustle_oneshot_01		764860
@@ -136,21 +147,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	715659164	sfx_water_splash_large_4	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Large\sfx_water_splash_large_4		158824
 	731167062	sfx_bird_poop_splat_water_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_bird_poop_splat_water_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Bird_Poop\Bird_Poop_Splat_Water\sfx_bird_poop_splat_water_01		67908
 	745403754	sfx_water_splash_med_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Med\sfx_water_splash_med_02		173530
-	748618340	sfx_ring_success_level_2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_success_level_2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Success_Level2\sfx_ring_success_level_2		413944
 	757364306	sfx_ducks_vocal_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_vocal_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_vocal\sfx_ducks_vocal_01		197992
 	759797766	Forest_ambient_main_loop_extra_layer_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_main_loop_extra_layer_02_F17FB28C.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_02		17704
 	761073734	sfx_water_splash_soft_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_04		147766
 	777827311	sfx_water_splash_soft_03	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_soft_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Soft\sfx_water_splash_soft_03		107148
 	779381852	Forest_ambient_tree_rustle_oneshot_05	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_ambient_tree_rustle_oneshot_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_rustle_oneshot\Forest_ambient_tree_rustle_oneshot_05		478482
 	785298120	sfx_bird_poop_splat_water_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_bird_poop_splat_water_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Bird_Poop\Bird_Poop_Splat_Water\sfx_bird_poop_splat_water_02		88908
-	798331421	sfx_ring_success_level_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_success_level_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Success_Level3\sfx_ring_success_level_3		551904
 	808604161	Forest_ambient_BG_oneshot_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_BG_oneshot_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_oneshot\Forest_ambient_BG_oneshot_02		333784
 	832771562	sfx_frog_vocal_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Frog\sfx_frog_vocal_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Frog\Frog_vocal\sfx_frog_vocal_02		204912
 	836911734	sfx_interaction_fish_pickup_05	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_fish_pickup_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Pickup_V1\sfx_interaction_fish_pickup_05		26656
 	838219915	sfx_fish_impact_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_fish_impact_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Impact\sfx_fish_impact_01		172480
-	843148672	02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1		17912
 	843939028	sfx_bear_sway	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Bear\sfx_bear_sway_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Bear\sfx_bear_sway		868620
-	852610933	05-HospitalAR_4_Excitement-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\05-HospitalAR_4_Excitement-Layer_v1		17912
+	852610933	05-HospitalAR_4_Excitement-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\05-HospitalAR_4_Excitement-Layer_v1		17912
 	855065680	sfx_otter_vocal_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Otter\sfx_otter_vocal_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_vocal\sfx_otter_vocal_01		192456
 	874539349	Forest_ambient_BG_oneshot_06	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_BG_oneshot_06_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_oneshot\Forest_ambient_BG_oneshot_06		420108
 	874980017	Forest_ambient_main_loop_extra_layer_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_main_loop_extra_layer_01_F17FB28C.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_01		17704
@@ -159,26 +167,26 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	890328098	sfx_ducks_vocal_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_vocal_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_vocal\sfx_ducks_vocal_04		388144
 	892418062	sfx_ducks_fly_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_fly_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_fly\sfx_ducks_fly_04		199868
 	897410141	Forest_ambient_BG_oneshot_07	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_BG_oneshot_07_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\amb_alpine_oneshot\Forest_ambient_BG_oneshot_07		420112
-	897899858	03-HospitalAR_2_Additional-Base-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\03-HospitalAR_2_Additional-Base-Layer_v1		17912
+	897899858	03-HospitalAR_2_Additional-Base-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem		\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\03-HospitalAR_2_Additional-Base-Layer_v1		17912
 	904789059	sfx_water_splash_small_3	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_small_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_Small\sfx_water_splash_small_3		54566
+	905204739	sfx_ring_pickup_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_pickup_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Pickup\sfx_ring_pickup_02		87860
 	924287429	sfx_bear_vocal_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Bear\sfx_bear_vocal_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Bear\sfx_bear_vocal_01		1340084
 	938240939	sfx_fish_throw_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_fish_throw_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Throw\sfx_fish_throw_01		151576
 	981987302	sfx_bear_splash_appear	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Bear\sfx_bear_splash_appear_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Bear\Bear_appear_disappear\sfx_bear_splash_appear		587760
 	1003188688	InteractFishPickupLoop	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_fish_pickup_loop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\InteractFishPickupLoop		840904
 	1039634106	sfx_ducks_fly_05	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Ducks\sfx_ducks_fly_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Duck\Duck_fly\sfx_ducks_fly_05		197076
+	1044081569	sfx_ring_pickup_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_pickup_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Pickup\sfx_ring_pickup_01		70272
 	1046665551	sfx_ring_impact_C	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_ring_impact_C_1C9C67B2.wem		\Actor-Mixer Hierarchy\Polar\InteractionSFX_Polar\Interact_Ring_Impact\sfx_ring_impact_C		379456
 	1051380449	sfx_interaction_splash_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\PhysicsInteraction\sfx_interaction_splash_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_WaterSplash\Water_Splash_SmallMed\sfx_interaction_splash_01		261448
 	1059222999	sfx_otter_vocal_04	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Characters\Character_Otter\sfx_otter_vocal_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Alpine\Characters\Character_Otter\Otter_vocal\sfx_otter_vocal_04		385204
 	1070384383	sfx_interaction_fish_pickupV2_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\sfx_interaction_fish_pickupV2_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SharedInteractionGeneric\Interact_Fish\Interact_Fish_Pickup_V2\sfx_interaction_fish_pickupV2_02		169596
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	444334270	04-HospitalAR_3_Melody-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem	444334270.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\04-HospitalAR_3_Melody-Layer_v1	
-	545719001	06-HospitalAR_5_Full-Mix_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\06-HospitalAR_5_Full-Mix_v1_F17FB28C.wem	545719001.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\06-HospitalAR_5_Full-Mix_v1\06-HospitalAR_5_Full-Mix_v1	
-	548845387	01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem	548845387.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	
+	444334270	04-HospitalAR_3_Melody-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1_F17FB28C.wem	444334270.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\04-HospitalAR_3_Melody-Layer_v1	
+	548845387	01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1_F17FB28C.wem	548845387.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\01-HospitalAR_1a_Base-Layer(with-rainmaker)_v1	
 	554695072	Polar_ambient_music_V2	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Polar_ambient_music_V2_F17FB28C.wem	554695072.wem	\Interactive Music Hierarchy\Default Work Unit\PolarMusic\Polar_ambient_music_V2\Polar_ambient_music_V2	
 	759797766	Forest_ambient_main_loop_extra_layer_02	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_main_loop_extra_layer_02_F17FB28C.wem	759797766.wem	\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_02	
-	843148672	02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1_F17FB28C.wem	843148672.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\02-HospitalAR_1b_Base-Layer(no-rainmaker)_v1	
-	852610933	05-HospitalAR_4_Excitement-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem	852610933.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\05-HospitalAR_4_Excitement-Layer_v1	
+	852610933	05-HospitalAR_4_Excitement-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\05-HospitalAR_4_Excitement-Layer_v1_F17FB28C.wem	852610933.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\05-HospitalAR_4_Excitement-Layer_v1	
 	874980017	Forest_ambient_main_loop_extra_layer_01	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Ambience\Forest_ambient_main_loop_extra_layer_01_F17FB28C.wem	874980017.wem	\Actor-Mixer Hierarchy\Alpine\Ambience\amb_alpine\Forest_ambient_main_loop_extra_layer_01	
-	897899858	03-HospitalAR_2_Additional-Base-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem	897899858.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\05-HospitalAR_4_Excitement-Layer_v1\03-HospitalAR_2_Additional-Base-Layer_v1	
+	897899858	03-HospitalAR_2_Additional-Base-Layer_v1	Y:\Unity\ChildrensAR\ChildrensAR_WwiseProject\.cache\Mac\SFX\Forest_Music_Stems_v1\03-HospitalAR_2_Additional-Base-Layer_v1_F17FB28C.wem	897899858.wem	\Interactive Music Hierarchy\Alpine\AlpineMusic\AlpineMusic_Container\AlpineMusic_Stems\03-HospitalAR_2_Additional-Base-Layer_v1	
 

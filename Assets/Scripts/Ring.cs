@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class Ring : MonoBehaviour
 {
     public float spinTime = 1;
+    private bool hasThrown = false;
 
     public bool isActive = true;
     private bool success = false;
@@ -24,6 +25,7 @@ public class Ring : MonoBehaviour
         interactableObj.OnDragStart.AddListener(DragStart);
         interactableObj.OnDrag.AddListener(Drag);
         interactableObj.OnDragEnd.AddListener(DragEnd);
+
     }
 
     // Update is called once per frame
@@ -39,7 +41,11 @@ public class Ring : MonoBehaviour
         
     }
     void DragEnd(){
-        AkSoundEngine.PostEvent("InteractRingThrow",gameObject);
+        if(!hasThrown){
+            AkSoundEngine.PostEvent("InteractRingThrow", gameObject);
+            hasThrown = true;
+        }
+
     }
 
     public void DestroyRing(){

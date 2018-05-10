@@ -3,42 +3,42 @@
 	<Platform GUID="{36A20F43-2A2B-440A-B564-E9A2B0DBFE11}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="552006073" Timestamp="131654393996229245"/>
-				<File Name="Init" Hash="1469483335" Timestamp="131637179229070031"/>
-				<File Name="Polar" Hash="176815973" Timestamp="131637179228831284"/>
+				<File Name="Alpine" Hash="991855367" Timestamp="131684465231274536"/>
+				<File Name="Init" Hash="1661989345" Timestamp="131684465231360490"/>
+				<File Name="Polar" Hash="3778731840" Timestamp="131684465230363160"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3737948663" Timestamp="131654393996338640"/>
+				<File Name="" Hash="4024137768" Timestamp="131684465231410428"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="552006073" Timestamp="131654393937775940"/>
-				<File Name="Init" Hash="2608209501" Timestamp="131637178746882379"/>
-				<File Name="Polar" Hash="176815973" Timestamp="131637178746707908"/>
+				<File Name="Alpine" Hash="991855367" Timestamp="131684462888955054"/>
+				<File Name="Init" Hash="3432067651" Timestamp="131684462440978513"/>
+				<File Name="Polar" Hash="3778731840" Timestamp="131684462440804860"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="517511187" Timestamp="131654393937879909"/>
+				<File Name="" Hash="1974659956" Timestamp="131684462889059016"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="552006073" Timestamp="131654393966147556"/>
-				<File Name="Init" Hash="3146026189" Timestamp="131637178992102402"/>
-				<File Name="Polar" Hash="176815973" Timestamp="131637178991916533"/>
+				<File Name="Alpine" Hash="991855367" Timestamp="131684462895201045"/>
+				<File Name="Init" Hash="2534050983" Timestamp="131684462516180273"/>
+				<File Name="Polar" Hash="3778731840" Timestamp="131684462515958657"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="564151549" Timestamp="131654393966244530"/>
+				<File Name="" Hash="785158774" Timestamp="131684462895306764"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

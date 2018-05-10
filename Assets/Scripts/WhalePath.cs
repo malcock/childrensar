@@ -6,6 +6,7 @@ public class WhalePath : MonoBehaviour {
 
     public float timeout = 10;
     public float firstDelay = 120;
+    private int timesaround = 0;
 
     Animator animator;
     public bool OctoOut = false;
@@ -43,9 +44,14 @@ public class WhalePath : MonoBehaviour {
             animator.SetTrigger("NextAnim");
             Debug.Log("Whale trig");
             AkSoundEngine.PostEvent("WhaleSwim",gameObject);
+            timesaround++;
+            if(timesaround>1)
+                AkSoundEngine.PostEvent("WhaleBreach", gameObject);
+
         } else {
             Reset();
         }
+
 
 
     }

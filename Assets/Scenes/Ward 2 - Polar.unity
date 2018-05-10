@@ -3712,7 +3712,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 700557a9af4c0eb46a509eb7802c1221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.123428
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 700557a9af4c0eb46a509eb7802c1221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5613,6 +5613,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114206466647068866, guid: 8627503fc6d5a45d69e8fc90eb7ab9da,
+        type: 2}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 90e6c09fb9fc9b545ab81d6949e49e4f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8627503fc6d5a45d69e8fc90eb7ab9da, type: 2}
   m_IsPrefabParent: 0
@@ -7780,7 +7785,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 742884613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1954265, y: -0.8255363, z: 0.6132575}
+  m_LocalPosition: {x: 1.1954265, y: -0.87, z: 0.6132575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 822369764}
@@ -8951,7 +8956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 8696184}
-  soundFx: SeagullPoop
+  soundFx: CrabMovement
   timeOut: 1
 --- !u!114 &885747123
 MonoBehaviour:
@@ -15486,7 +15491,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 306901b823e26b341bf66ec213fec0e1, type: 2}
+  - {fileID: 2100000, guid: 1fc8202bdbc454355884c67d1a11d71f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19857,7 +19862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1946083871
 Transform:
   m_ObjectHideFlags: 0
@@ -23661,7 +23666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2081117940
 Transform:
   m_ObjectHideFlags: 0
