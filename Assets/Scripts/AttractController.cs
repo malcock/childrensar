@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AttractController : MonoBehaviour {
 
-    public enum AttractState { Polar, Aline }
+    public enum AttractState { Polar, Alpine }
 
     public AttractState attractMode = AttractState.Polar;
     public string LevelToLoad = "Burns Stencil";
@@ -14,6 +14,8 @@ public class AttractController : MonoBehaviour {
 	void Start () {
         if(attractMode == AttractState.Polar){
             AkSoundEngine.PostEvent("PolarAmbience", gameObject);
+        } else {
+            AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
         }
 
 	}

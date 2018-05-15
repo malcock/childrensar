@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d7bf3426c667d20449c582603390e2fe
-timeCreated: 1511875307
+guid: 6e018785bfbdc4feebce92b4070320b3
+timeCreated: 1526048285
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -30,8 +30,7 @@ ModelImporter:
     100044: Otter-RIGTail1
     100046: Otter-RIGTail2
     100048: Otter-RIGTail3
-    100050: Seal_01
-    100052: Otter_01
+    100050: Otter_01
     400000: //RootNode
     400002: Otter-RIGHead
     400004: Otter-RIGHeadBone001
@@ -57,17 +56,8 @@ ModelImporter:
     400044: Otter-RIGTail1
     400046: Otter-RIGTail2
     400048: Otter-RIGTail3
-    400050: Seal_01
-    400052: Otter_01
-    2300000: //RootNode
-    2300002: Seal_01
-    2300004: Otter_01
-    3300000: //RootNode
-    3300002: Seal_01
-    3300004: Otter_01
-    4300000: Seal_01
-    4300002: Otter_01
-    7400000: INFLATE_02
+    400050: Otter_01
+    4300000: Otter_01
     9500000: //RootNode
     13700000: Otter_01
   materials:
@@ -86,42 +76,14 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: INFLATE_02
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -137,7 +99,7 @@ ModelImporter:
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
-    weldVertices: 0
+    weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -164,7 +126,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

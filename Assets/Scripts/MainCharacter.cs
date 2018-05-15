@@ -59,7 +59,7 @@ public class MainCharacter : MonoBehaviour
         mainCollider = GetComponent<Collider>();
         waterBounds = GameObject.FindWithTag("Water").GetComponent<Collider>().bounds;
         skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
-
+        fishMax = GameControl.Instance.fishMax;
 
     }
 
@@ -104,7 +104,7 @@ public class MainCharacter : MonoBehaviour
 
     IEnumerator Blink(float waitTime, int blinkCount, float blinkSpeed)
     {
-        Debug.Log(name + " blink: wait:" + waitTime + " count:" + blinkCount + " speed:" + blinkSpeed);
+        
         yield return new WaitForSeconds(waitTime);
         int blinkIndex = characterType == CharacterType.Penguin ? 2 : 0;
         for (int times = 0; times < blinkCount; times++)
@@ -112,7 +112,7 @@ public class MainCharacter : MonoBehaviour
             float blinkAmount = 0;
             while (blinkAmount < 100)
             {
-                //Debug.Log(name + "blink:" + blinkAmount);
+                
                 skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
                 blinkAmount += blinkSpeed;
                 yield return null;
@@ -130,6 +130,16 @@ public class MainCharacter : MonoBehaviour
         StartCoroutine(Blink(Random.Range(5f, 10f), Random.Range(1, 3), Random.Range(2f, 10f)));
     }
 
+    IEnumerator StopDropThrough(){
+
+        doll.hips.GetComponent<Rigidbody>().isKinematic = true;
+        yield return null;
+        doll.hips.position = new Vector3(0, 10, 0);
+        yield return null;
+        doll.hips.GetComponent<Rigidbody>().isKinematic = false;
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -143,7 +153,8 @@ public class MainCharacter : MonoBehaviour
         }
         if (doll.hips.position.y < -50)
         {
-            doll.hips.position = new Vector3(0, 50, 0);
+            StartCoroutine(StopDropThrough());
+
         }
 
         //drop character on start
@@ -410,7 +421,7 @@ public class MainCharacter : MonoBehaviour
                     {
                         relDir.y += 3;
                         state = State.Dragging;
-                        draggableObject.Throw(relDir, 0.1f);
+                        draggableObject.Throw(relDir, 0.15f);
 
                     }
 
@@ -437,7 +448,8 @@ public class MainCharacter : MonoBehaviour
 
         float newWeight = fishEaten > 0 ? ((float)(fishEaten + 1) / (float)fishMax) * 100 : 0;
 
-        skinnedMeshRenderer.SetBlendShapeWeight(0, bellyAmount);
+        int bellyBlend = (characterType == CharacterType.Penguin) ? 0 : 2;
+        skinnedMeshRenderer.SetBlendShapeWeight(bellyBlend, bellyAmount);
 
 
     }
@@ -577,13 +589,14 @@ public class MainCharacter : MonoBehaviour
         AkSoundEngine.PostEvent(eventName, gameObject);
 
         fishEaten++;
-        StartCoroutine(AnimateWeight(1f, fishEaten * 9));
-        if (fishEaten >= fishMax) state = State.Escape;
+        StartCoroutine(AnimateWeight(1f, ((float)fishEaten/(float)fishMax) * 100));
+
         //mainCollider.attachedRigidbody.mass = doll.totalMass + (fishEaten);
     }
 
     IEnumerator AnimateWeight(float timeout, float stop)
     {
+        Debug.Log("Anim belly to " + stop);
         float t = timeout;
         float start = bellyAmount;
 
@@ -598,6 +611,12 @@ public class MainCharacter : MonoBehaviour
             yield return null;
         }
 
+            
+    }
+
+    IEnumerator EscapeAttempt(){
+        yield return new WaitForSeconds(0.5f);
+        state = State.Escape;
     }
 
     private float BoundsContainedPercentage(Bounds obj, Bounds region)

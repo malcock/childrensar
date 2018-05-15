@@ -277,10 +277,10 @@ public class OctopusController : MonoBehaviour
 
 
 
-                Vector3 rotation = transform.eulerAngles;
+                Vector3 rotation = transform.localEulerAngles;
                 float newY = 180 + Mathf.Sin(Time.time) * wobbleAmount;
                 rotation.y = Mathf.Lerp(rotation.y, newY, Time.deltaTime);
-                transform.eulerAngles = rotation;
+                transform.localEulerAngles = rotation;
                 break;
             case State.End:
                 

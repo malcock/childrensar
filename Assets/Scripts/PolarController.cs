@@ -118,11 +118,15 @@ public class PolarController : MonoBehaviour {
         if(showHoops){
             hoops.SetActive(true);
             bucket.SetActive(false);
-            hoops.GetComponent<Animator>().SetTrigger("Enter");
+            //hoops.GetComponent<Animator>().SetTrigger("Enter");
         } else {
             hoops.SetActive(false);
             bucket.SetActive(true);
-            bucket.GetComponent<Animator>().SetTrigger("Enter");
+            foreach (Animator a in bucket.GetComponentsInChildren<Animator>())
+            {
+                a.SetTrigger("Enter");
+            }
+            //bucket.GetComponent<Animator>().SetTrigger("Enter");
         }
     }
 

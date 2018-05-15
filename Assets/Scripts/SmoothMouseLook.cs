@@ -32,6 +32,7 @@ public class SmoothMouseLook : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR
         if (!Input.GetKey(KeyCode.A)) return;
         if (axes == RotationAxes.MouseXAndY)
         {
@@ -119,6 +120,7 @@ public class SmoothMouseLook : MonoBehaviour
             Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
             transform.localRotation = originalRotation * yQuaternion;
         }
+#endif
     }
 
     void Start()

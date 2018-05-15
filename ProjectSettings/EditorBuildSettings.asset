@@ -5,42 +5,36 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityARKitScene/UnityARKitScene.unity
-    guid: c159f2591a9b5c843b0a0442451f78f8
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityParticlePainter/UnityParticlePainter.unity
-    guid: 0327f0aa0142146c291df8203b848257
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityARBallz/UnityARBallz.unity
-    guid: 75972bcfc855b486593ec2ec68da0b81
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityARShadows/UnityARShadows.unity
-    guid: 14d17ec7304f440b48e6b953ba7a5895
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/UnityAROcclusion/UnityAROcclusion.unity
-    guid: 7f026c59fb9d6489ab924c6e0e119760
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/ARKitRemote/UnityARKitRemote.unity
-    guid: 3ed73c0c9d4b76a418a0541c0cefd3ac
-  - enabled: 0
-    path: Assets/UnityARKitPlugin/Examples/FocusSquare/FocusSquareScene.unity
-    guid: 3c9ef824a7b95400bade362484e9b6af
-  - enabled: 0
-    path: Assets/Scenes/_old/Burn Room.unity
-    guid: 202d48ed7ff5549caa56ca4ff67b0dfb
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: e16768b314fdd44a8b5f8ebb4687dd54
-  - enabled: 0
-    path: Assets/Scenes/Burns Unit.unity
-    guid: fd0d39dee549848749ae782de734d74d
   - enabled: 1
     path: Assets/Scenes/Attract - Polar 1.unity
     guid: 7ebdedf44b359d74ba6ea911c70dfaa5
   - enabled: 1
+    path: Assets/Scenes/Attract - Polar Pink.unity
+    guid: 79822cb3064274ba7aba104eb84754c2
+  - enabled: 1
+    path: Assets/Scenes/Attract - Ward 1 - Woodland.unity
+    guid: ad29bc7bad7f241229ac678f81956ef4
+  - enabled: 1
+    path: Assets/Scenes/Attract - Ward 2 - Woodland.unity
+    guid: d639d199ef90f442691ec5b9177e7d32
+  - enabled: 1
+    path: Assets/Scenes/Attract - Ward 3 - Woodland.unity
+    guid: 88556894e6328433a9eee6392125d1e5
+  - enabled: 1
+    path: Assets/Scenes/Ward 1 - Woodland.unity
+    guid: 56284599b969e4d49aeac4ab7004c2d4
+  - enabled: 1
+    path: Assets/Scenes/Pink Zone - Polar.unity
+    guid: 045c75f4ff106412c8c962ed495b31ed
+  - enabled: 1
     path: Assets/Scenes/Ward 2 - Polar.unity
     guid: 1be5493d37cbf47fc9450a9c1d3eb176
-  - enabled: 0
-    path: Assets/Scenes/Burns.unity
-    guid: 3778fd355893642989768cf248f309a0
+  - enabled: 1
+    path: Assets/Scenes/Ward 2 - Woodland.unity
+    guid: 1647cbf6f2bfd4f3ebf66cef1e138df9
+  - enabled: 1
+    path: Assets/Scenes/Ward 3 - Woodland.unity
+    guid: ac5c8a5b555b14b44a0876ce92045ce3

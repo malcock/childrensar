@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: d7bf3426c667d20449c582603390e2fe
+timeCreated: 1511875307
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Otter-RIGHead
+    100004: Otter-RIGHeadBone001
+    100006: Otter-RIGLArmForearm
+    100008: Otter-RIGLArmPalm
+    100010: Otter-RIGLArmUpperarm
+    100012: Otter-RIGLLeg2
+    100014: Otter-RIGLLegDigit11
+    100016: Otter-RIGLLegFoot
+    100018: Otter-RIGLLegThigh
+    100020: Otter-RIGNeck
+    100022: Otter-RIGPelvis
+    100024: Otter-RIGR2
+    100026: Otter-RIGRDigit11
+    100028: Otter-RIGRFoot
+    100030: Otter-RIGRForearm
+    100032: Otter-RIGRibcage
+    100034: Otter-RIGRPalm
+    100036: Otter-RIGRThigh
+    100038: Otter-RIGRUpperarm
+    100040: Otter-RIGSpine1
+    100042: Otter-RIGSpine2
+    100044: Otter-RIGTail1
+    100046: Otter-RIGTail2
+    100048: Otter-RIGTail3
+    100050: Seal_01
+    100052: Otter_01
+    400000: //RootNode
+    400002: Otter-RIGHead
+    400004: Otter-RIGHeadBone001
+    400006: Otter-RIGLArmForearm
+    400008: Otter-RIGLArmPalm
+    400010: Otter-RIGLArmUpperarm
+    400012: Otter-RIGLLeg2
+    400014: Otter-RIGLLegDigit11
+    400016: Otter-RIGLLegFoot
+    400018: Otter-RIGLLegThigh
+    400020: Otter-RIGNeck
+    400022: Otter-RIGPelvis
+    400024: Otter-RIGR2
+    400026: Otter-RIGRDigit11
+    400028: Otter-RIGRFoot
+    400030: Otter-RIGRForearm
+    400032: Otter-RIGRibcage
+    400034: Otter-RIGRPalm
+    400036: Otter-RIGRThigh
+    400038: Otter-RIGRUpperarm
+    400040: Otter-RIGSpine1
+    400042: Otter-RIGSpine2
+    400044: Otter-RIGTail1
+    400046: Otter-RIGTail2
+    400048: Otter-RIGTail3
+    400050: Seal_01
+    400052: Otter_01
+    2300000: //RootNode
+    2300002: Seal_01
+    2300004: Otter_01
+    3300000: //RootNode
+    3300002: Seal_01
+    3300004: Otter_01
+    4300000: Seal_01
+    4300002: Otter_01
+    7400000: INFLATE_02
+    9500000: //RootNode
+    13700000: Otter_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: INFLATE_02
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

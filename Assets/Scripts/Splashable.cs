@@ -21,6 +21,7 @@ public class Splashable : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!isActiveAndEnabled) return;
         if (other.tag == "Water")
         {
             string splashSize = "SmallSoft";
@@ -56,6 +57,7 @@ public class Splashable : MonoBehaviour {
     }
     private void OnTriggerExit(Collider other)
     {
+        if (!isActiveAndEnabled) return;
         if (other.tag == "Water")
         {
             GameObject splash = Instantiate(Resources.Load("Splash", typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;

@@ -14,11 +14,14 @@ public class WhalePath : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
+
+	}
+	private void OnEnable()
+	{
         Debug.Log("Whale start");
 
         StartCoroutine(Begin());
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		
@@ -33,8 +36,9 @@ public class WhalePath : MonoBehaviour {
     }
 
     IEnumerator Begin(){
+        Debug.Log("Whale started first wait " + firstDelay);
         yield return new WaitForSeconds(firstDelay);
-
+        Debug.Log("Whale first delay complete");
         Reset();
     }
 

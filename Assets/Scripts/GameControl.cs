@@ -21,6 +21,8 @@ public class GameControl : MonoBehaviour
 
     public float gametimeA = 240, gametimeB = 240;
 
+    public int fishMax = 3;
+
     public static GameControl Instance = null;
 
     private void Awake()
@@ -62,40 +64,5 @@ public class GameControl : MonoBehaviour
         Instance.OctoBehaviour = (GameControl.OctoMode)val;
     }
 
-    public void SetGameATime(string val)
-    {
-        if (val.Length > 0)
-        {
-            try
-            {
-                float v = float.Parse(val);
-                v = Mathf.Max(v, 30);
-                gametimeA = v;
-            }
-            catch (Exception e)
-            {
 
-            }
-
-        }
-
-    }
-
-    public void SetGameBTime(string val)
-    {
-        if (val.Length > 0)
-        {
-            try
-            {
-                float v = float.Parse(val);
-                v = Mathf.Max(v, 30);
-                gametimeB = v;
-            }
-            catch (Exception e)
-            {
-
-            }
-
-        }
-    }
 }

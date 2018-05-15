@@ -40,10 +40,11 @@ public class FloatControl : MonoBehaviour
 	}
 
     IEnumerator Float(){
+        
+        //Debug.Log(name + " float");
+        yield return new WaitForSeconds(delay);
         buoy.BuoyancyCollider.enabled = true;
         GetComponent<Rigidbody>().isKinematic = false;
-        Debug.Log(name + " float");
-        yield return new WaitForSeconds(delay);
         float timeout = changeTime;
         while(timeout>0){
             buoy.WeightFactor = 1.5f * floatCurve.Evaluate(1 - (timeout / changeTime));
@@ -55,7 +56,7 @@ public class FloatControl : MonoBehaviour
 
     IEnumerator Sink()
     {
-        Debug.Log(name + " sink");
+        //Debug.Log(name + " sink");
         yield return new WaitForSeconds(delay);
         float timeout = changeTime;
         while (timeout > 0)
@@ -72,6 +73,11 @@ public class FloatControl : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+        if(transform.position.y<-5){
+            Vector3 pos = transform.position;
+            pos.y = 5;
+            transform.position = pos;
+        }
         if(lockInPlace){
             Vector3 direction = startPosition - myTransform.position;
             direction.y = 0;

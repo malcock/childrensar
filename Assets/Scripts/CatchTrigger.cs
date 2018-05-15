@@ -8,6 +8,7 @@ public class CatchTrigger : MonoBehaviour
 	void Start()
 	{
         parent = GetComponentInParent<MainCharacter>();
+
 	}
 
 	// Update is called once per frame
