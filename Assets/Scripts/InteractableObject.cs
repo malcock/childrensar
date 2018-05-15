@@ -30,7 +30,7 @@ public class InteractableObject : MonoBehaviour
     void Awake()
     {
         Debug.Log(name + " initialised");
-        layerMask = LayerMask.GetMask("Default","Actor","Incedental","Ragdoll");
+        layerMask = LayerMask.GetMask("Default", "Actor", "Incedental", "Ragdoll");
     }
 
     // Use this for initialization
@@ -43,16 +43,18 @@ public class InteractableObject : MonoBehaviour
     void Update()
     {
         //if (locked && GameControl.Instance.FlickBehaviour==GameControl.FlickMode.Tap) return;
-//#if PLATFORM_IOS
+        //#if PLATFORM_IOS
         if (Input.touchCount > 0)
         {
             Debug.Log("tapped");
-            if(!selected){
+            if (!selected)
+            {
                 touchNumber = Input.touchCount - 1;
             }
             var touch = Input.GetTouch(touchNumber);
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Ended)
             {
+                Debug.Log("debug: touch began/end");
                 RaycastHit hit;
                 Ray screenPosition = Camera.main.ScreenPointToRay(touch.position);
 
@@ -64,9 +66,18 @@ public class InteractableObject : MonoBehaviour
                 };
 
 
-                if (Physics.Raycast(screenPosition, out hit,100,layerMask))
+                if (Physics.Raycast(screenPosition, out hit, 100, layerMask))
                 {
-                    if (hit.transform == transform)
+                    bool isHit = false;
+                    if (hit.transform == transform) isHit = true;
+                    if (hit.transform.GetComponentInParent<DraggableObject>() != null)
+                    {
+                        if (hit.transform.GetComponentInParent<DraggableObject>().transform == transform)
+                        {
+                            isHit = true;
+                        }
+                    }
+                    if (isHit)
                     {
                         //check for ended first
                         if (touch.phase == TouchPhase.Ended && selected)
@@ -112,11 +123,14 @@ public class InteractableObject : MonoBehaviour
                     isDragging = false;
                     touchNumber = -1;
                 }
-               
+
             }
-            if(touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary){
-                if(selected){
-                    if(!isDragging && Vector2.Distance(lastPos, touch.position)>5){
+            if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+            {
+                if (selected)
+                {
+                    if (!isDragging && Vector2.Distance(lastPos, touch.position) > 5)
+                    {
                         Debug.Log(name + " drag start");
                         isDragging = true;
                         if (OnDragStart != null)
@@ -133,7 +147,7 @@ public class InteractableObject : MonoBehaviour
             }
 
         }
-//#endif
+        //#endif
 #if UNITY_EDITOR
 
         //check if object mousedown/up ON the object. If down - select!, if up - register a tap!
@@ -141,13 +155,15 @@ public class InteractableObject : MonoBehaviour
         {
             RaycastHit hit;
             Ray screenPosition = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(screenPosition, out hit,100,layerMask))
+            if (Physics.Raycast(screenPosition, out hit, 100, layerMask))
             {
-                
+
                 bool isHit = false;
                 if (hit.transform == transform) isHit = true;
-                if(hit.transform.GetComponentInParent<DraggableObject>() !=null){
-                    if(hit.transform.GetComponentInParent<DraggableObject>().transform == transform){
+                if (hit.transform.GetComponentInParent<DraggableObject>() != null)
+                {
+                    if (hit.transform.GetComponentInParent<DraggableObject>().transform == transform)
+                    {
                         isHit = true;
                     }
                 }

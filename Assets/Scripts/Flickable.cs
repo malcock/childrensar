@@ -33,99 +33,74 @@ public class Flickable : MonoBehaviour
     {
         if (isActive)
         {
-            //interactableObject.lastPos = new Vector2(Screen.width / 2, Screen.height / 2);
-            if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Drag)
+
+            Vector3 dragPos = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2)).GetPoint(draggableObject.lockDistance);
+
+            //interactableObject.isDragging = true;
+            if (Input.touchCount > 0)
             {
-
-                lastPositions.Add(interactableObject.lastPos);
-                lastTime.Add(Time.time);
-                if (lastPositions.Count > flickTrackInterval)
+                Touch t = Input.GetTouch(0);
+                if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final)
                 {
-                    lastPositions.RemoveAt(0);
-                    lastTime.RemoveAt(0);
-                }
-
-                if (Input.GetMouseButton(0))
-                {
-                    startPosition = lastPositions[0];
-                    startTime = lastTime[0];
-                }
-
-
-                if (Input.GetMouseButtonUp(0))
-                {
-                    endPosition = lastPositions[lastPositions.Count - 1];
-                    endTime = lastTime[lastTime.Count - 1];
-
-                    MakeThrow();
-
+                    dragPos = Camera.main.ScreenPointToRay(t.position).GetPoint(draggableObject.lockDistance);
 
                 }
-            }
-            else
-            {
-                Vector3 dragPos = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2)).GetPoint(draggableObject.lockDistance);
-
-                //interactableObject.isDragging = true;
-                if (Input.touchCount > 0)
+                heldFrameCount++;
+                if (heldFrameCount > 20) allow = true;
+                if (t.phase == TouchPhase.Began)
                 {
-                    Touch t = Input.GetTouch(0);
-                    if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final){
-						dragPos = Camera.main.ScreenPointToRay(t.position).GetPoint(draggableObject.lockDistance);
-
-                    }
-                    heldFrameCount++;
-                    if (heldFrameCount > 20) allow = true;
-                    if (t.phase == TouchPhase.Began)
-                    {
-                        startPosition = t.position;
-                        startTime = Time.time;
-
-
-                    }
-                    if (t.phase == TouchPhase.Ended)
-                    {
-                        endPosition = t.position;
-                        endTime = Time.time;
-                        heldFrameCount = 0;
-                        if (allow)
-                            MakeThrow();
-                        allow = true;
-                    }
-
-                }
-
-#if UNITY_EDITOR
-                if (Input.GetMouseButtonDown(0))
-                {
-                    startPosition = Input.mousePosition;
+                    startPosition = t.position;
                     startTime = Time.time;
-                }
-                if (Input.GetMouseButton(0))
-                {
-                    if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final)
-                        dragPos = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(draggableObject.lockDistance);
+                    Debug.Log("TOUCH BEGAN");
 
-                    heldFrameCount++;
-                    if (heldFrameCount > 20) allow = true;
                 }
-                if (Input.GetMouseButtonUp(0))
+                if (t.phase == TouchPhase.Ended)
                 {
-                    endPosition = Input.mousePosition;
+                    endPosition = t.position;
                     endTime = Time.time;
                     heldFrameCount = 0;
-                    if (allow)
+                    if (allow){
                         MakeThrow();
+                        Debug.Log("THROW");
+                    }
+                        
                     allow = true;
+                    Debug.Log("TOUCH END");
                 }
-#endif
 
-                draggableObject.DragTo(dragPos);
             }
 
+#if UNITY_EDITOR
+            if (Input.GetMouseButtonDown(0))
+            {
+                startPosition = Input.mousePosition;
+                startTime = Time.time;
+            }
+            if (Input.GetMouseButton(0))
+            {
+                if (GameControl.Instance.FlickBehaviour == GameControl.FlickMode.Final)
+                    dragPos = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(draggableObject.lockDistance);
 
+                heldFrameCount++;
+                if (heldFrameCount > 20) allow = true;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                endPosition = Input.mousePosition;
+                endTime = Time.time;
+                heldFrameCount = 0;
+                if (allow)
+                    MakeThrow();
+                allow = true;
+            }
+#endif
 
+            draggableObject.DragTo(dragPos);
         }
+
+
+
+
     }
 
     void MakeThrow()
@@ -204,6 +179,7 @@ public class Flickable : MonoBehaviour
     {
         if (!isActive)
         {
+            Debug.Log("FISH ACTIVATED!");
             isActive = true;
             StartCoroutine(Activate());
         }
@@ -217,6 +193,7 @@ public class Flickable : MonoBehaviour
         interactableObject.locked = true;
         interactableObject.selected = true;
         interactableObject.isDragging = true;
+        Debug.Log("SERIOUSLY FISH ACTIVATED!");
 
     }
 }
