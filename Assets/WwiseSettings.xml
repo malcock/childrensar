@@ -8,6 +8,6 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2017.2.4.6590/Wwise.app</WwiseInstallationPathMac>
-  <WwiseInstallationPathWindows>null</WwiseInstallationPathWindows>
+  <WwiseInstallationPathWindows />
   <WwiseProjectPath>../../ChildrensAR/ChildrensAR_WwiseProject/ChildrensAR_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>
