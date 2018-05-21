@@ -606,7 +606,14 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Otter_vocal" ID="{F48153E4-0DC6-4518-8EF6-4D6805B4091C}" ShortID="1009286509">
+								<RandomSequenceContainer Name="Otter_vocal_old" ID="{F48153E4-0DC6-4518-8EF6-4D6805B4091C}" ShortID="1009286509">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -694,6 +701,679 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<SwitchContainer Name="OtterVoice" ID="{5CD3FA2B-5197-4D57-BF6F-3FF7ACA526E8}" ShortID="730317237">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Otter_Vocal_Climb" ID="{78069ABD-490A-470E-B0A1-F6741F907192}" ShortID="580576567">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_otter_vocal_climb_1" ID="{EE63F320-EE52-4E02-B013-BF8B3258069B}" ShortID="255118619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_climb_1" ID="{C741B9F9-4107-4BB6-B7F1-9B807A07BABB}" ShortID="654330516">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_climb_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_climb_1" ID="{C741B9F9-4107-4BB6-B7F1-9B807A07BABB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_climb_2" ID="{043F0D31-21E0-4409-B970-3A2630ADC14F}" ShortID="611246318">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_climb_2" ID="{AB175739-8C9B-4E44-BBA3-9DE9B8089EE2}" ShortID="700428483">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_climb_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_climb_2" ID="{AB175739-8C9B-4E44-BBA3-9DE9B8089EE2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_climb_3" ID="{B0486C8C-687E-4BBF-ABEF-020CF6C1FDBC}" ShortID="243221427">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_climb_3" ID="{BBFFB414-32D5-46C3-88DF-A531DCE14E14}" ShortID="134585886">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_climb_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_climb_3" ID="{BBFFB414-32D5-46C3-88DF-A531DCE14E14}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_climb_4" ID="{2F826A68-C16D-46DC-B51E-4FB0CA6704E8}" ShortID="658089144">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_climb_4" ID="{C28C0307-BC74-4A00-ABDE-280ED2D1CCD3}" ShortID="418944040">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_climb_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_climb_4" ID="{C28C0307-BC74-4A00-ABDE-280ED2D1CCD3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Otter_Vocal_idle" ID="{D3F25B7F-4E6A-4C2E-A763-62DF4523E83B}" ShortID="1066978957">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_otter_vocal_idle_1" ID="{B4DA166D-115C-428B-B15C-49BB57401609}" ShortID="142530604">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_idle_1" ID="{3F892276-79EA-41DB-956E-723970DF7B39}" ShortID="366028323">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_idle_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_idle_1" ID="{3F892276-79EA-41DB-956E-723970DF7B39}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_idle_2" ID="{62D3F008-3305-4E0C-A337-24325388C982}" ShortID="432970536">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_idle_2" ID="{562EF4AE-9009-4D99-963F-4E25BDA1812E}" ShortID="971941296">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_idle_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_idle_2" ID="{562EF4AE-9009-4D99-963F-4E25BDA1812E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_idle_3" ID="{43A32D4E-F53C-4F07-86A7-EC6E1ECA4F11}" ShortID="185160749">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_idle_3" ID="{E4424A92-8E8D-460C-94C6-D9396F91150D}" ShortID="67748048">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_idle_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_idle_3" ID="{E4424A92-8E8D-460C-94C6-D9396F91150D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_idle_4" ID="{DA8FAF03-DBD3-4CF9-8A2C-C3BBE9975880}" ShortID="626938066">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_idle_4" ID="{24A5ED33-8CEE-47F1-96E6-7B2679BE593F}" ShortID="924267088">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_idle_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_idle_4" ID="{24A5ED33-8CEE-47F1-96E6-7B2679BE593F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Otter_Vocal_Tapped" ID="{415BE351-E3D6-4529-9A33-A2526B97800E}" ShortID="909056778">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_otter_vocal_tap_1" ID="{D4FB2818-A331-4513-8E60-20F1530DB349}" ShortID="468351755">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_tap_1" ID="{18735F6E-F3BD-4AA1-BE93-6E56109B397D}" ShortID="119002547">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_tap_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_tap_1" ID="{18735F6E-F3BD-4AA1-BE93-6E56109B397D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_tap_2" ID="{30EBC49F-CDB3-43D8-9834-863647DB0765}" ShortID="643587984">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_tap_2" ID="{81223BE1-D157-48E3-BA11-C36ADD5EB610}" ShortID="41951975">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_tap_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_tap_2" ID="{81223BE1-D157-48E3-BA11-C36ADD5EB610}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_tap_3" ID="{56C8C365-5D43-461A-B3C4-0A8093D41DFB}" ShortID="1073214717">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_tap_3" ID="{CCE1EEFB-E20F-40DE-B1D2-EB61E1938297}" ShortID="424569356">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_tap_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_tap_3" ID="{CCE1EEFB-E20F-40DE-B1D2-EB61E1938297}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_tap_4" ID="{EF7FEE95-3727-4C98-8A12-9F01FC393313}" ShortID="862834718">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_tap_4" ID="{6B15130D-7170-4193-9CD9-70155613B558}" ShortID="454444444">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_tap_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_tap_4" ID="{6B15130D-7170-4193-9CD9-70155613B558}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_tap_5" ID="{69144054-8254-4314-A15A-79FD3EC1D0AE}" ShortID="120244258">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_tap_5" ID="{A7DDE709-8B5B-42CD-BE81-246476EB8824}" ShortID="912175508">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_tap_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_tap_5" ID="{A7DDE709-8B5B-42CD-BE81-246476EB8824}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Otter_Vocal_Thrown" ID="{88B1A928-3F2B-446B-A867-4B72ACF2C40B}" ShortID="464738609">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_otter_vocal_throw_1" ID="{854C2F5E-AE79-43F0-8CC7-6B4E7795C766}" ShortID="789642298">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_throw_1" ID="{8A755514-57DF-41FC-A3D1-B570BF61BADD}" ShortID="920104002">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_throw_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_throw_1" ID="{8A755514-57DF-41FC-A3D1-B570BF61BADD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_throw_2" ID="{75FDF381-2388-4A3C-9A58-6FFEDE05ADF7}" ShortID="495060550">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_throw_2" ID="{4B282A5C-815A-4D14-A75A-03EE7B02532D}" ShortID="341386475">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_throw_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_throw_2" ID="{4B282A5C-815A-4D14-A75A-03EE7B02532D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_throw_3" ID="{3940A588-9F42-46BB-A367-FF5BAC367F2C}" ShortID="421941316">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_throw_3" ID="{BAF5A0AF-3E14-4F3E-9EF0-28DC1B4C05E6}" ShortID="106585859">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_throw_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_throw_3" ID="{BAF5A0AF-3E14-4F3E-9EF0-28DC1B4C05E6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_otter_vocal_throw_4" ID="{B856C829-BB73-4F60-85EB-6E8A39BBB8FC}" ShortID="118780987">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_otter_vocal_throw_4" ID="{D5375F01-D9E4-41AC-BA09-2013405C490F}" ShortID="443188337">
+															<Language>SFX</Language>
+															<AudioFile>sfx_otter_vocal_throw_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_otter_vocal_throw_4" ID="{D5375F01-D9E4-41AC-BA09-2013405C490F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Otter_Eats" ID="{448F5458-2AB2-45A1-9007-1FF1921FF4B9}" ShortID="1006123857">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Penguin_Sound_Eat" ID="{9158558E-BC20-4FE0-9D2F-BA2CCE57D999}" ShortID="755770433">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Fish_Success_3" ID="{D1F277E2-C352-42B4-B191-ACF34B042B96}" ShortID="982328182">
+															<PropertyList>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_3" ID="{5C5D0CA4-D3C4-41C4-AEB7-2367AE5BD409}" ShortID="567906777">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{C29E8C41-82A9-4BEA-83DA-8BD94FDA0324}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_3" ID="{5C5D0CA4-D3C4-41C4-AEB7-2367AE5BD409}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Fish_Success_1" ID="{8DD57C97-4BFD-4EF8-84CF-450441A79E20}" ShortID="885604230">
+															<PropertyList>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_1" ID="{CF507529-F15D-4702-A5C5-4681BD1B649D}" ShortID="131629115">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{3FB15064-D61D-41D7-AAFC-1B116D83D66D}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_1" ID="{CF507529-F15D-4702-A5C5-4681BD1B649D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Fish_Success_2" ID="{97A2B5BD-9F1A-43F4-B105-192B7B4DCD34}" ShortID="632945094">
+															<PropertyList>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Character" ID="{98F7A9C1-BAEB-4FF0-A47F-9C3C239CCECD}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+																<Reference Name="UserAuxSend0">
+																	<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Fish_Success_2" ID="{F0A60251-3CEF-4A5F-9660-87E4673BD0CD}" ShortID="1038848509">
+																	<Language>SFX</Language>
+																	<AudioFile>Fish_Success_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<PositioningInfo>
+																<Position Name="" ID="{76D23616-00B5-4957-839D-710143E94DFB}"/>
+															</PositioningInfo>
+															<ActiveSourceList>
+																<ActiveSource Name="Fish_Success_2" ID="{F0A60251-3CEF-4A5F-9660-87E4673BD0CD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Otter_Eats" ID="{00853232-09BF-47FE-8B09-511ECC485F6D}" ShortID="907639187">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_otter_vocal_eat_1" ID="{B9D91959-33AF-492F-98CE-021179180904}" ShortID="951521708">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_otter_vocal_eat_1" ID="{AECEB360-66A1-416A-AC5C-817461598E68}" ShortID="322385416">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_otter_vocal_eat_1.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_otter_vocal_eat_1" ID="{AECEB360-66A1-416A-AC5C-817461598E68}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_otter_vocal_eat_2" ID="{36B0C7BB-3B52-4A96-BB70-C75FA02B49F3}" ShortID="167552836">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_otter_vocal_eat_2" ID="{77F3D74E-98A9-4957-87D3-D1EC0D1D2B2A}" ShortID="28259559">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_otter_vocal_eat_2.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_otter_vocal_eat_2" ID="{77F3D74E-98A9-4957-87D3-D1EC0D1D2B2A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_otter_vocal_eat_3" ID="{82F98F0B-B30F-409D-A898-D153C9135FCA}" ShortID="571328172">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_otter_vocal_eat_3" ID="{858123B3-5EB9-4A7B-8FED-89EFE6668133}" ShortID="736780992">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_otter_vocal_eat_3.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_otter_vocal_eat_3" ID="{858123B3-5EB9-4A7B-8FED-89EFE6668133}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_otter_vocal_eat_4" ID="{FBE5CA34-6CFB-4094-82CB-41DC31BC3512}" ShortID="615293720">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_otter_vocal_eat_4" ID="{2A118686-317E-45FD-AC37-D6ED9F73D83D}" ShortID="854843095">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_otter_vocal_eat_4.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_otter_vocal_eat_4" ID="{2A118686-317E-45FD-AC37-D6ED9F73D83D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Penguin_Sound_Eat" ID="{9158558E-BC20-4FE0-9D2F-BA2CCE57D999}"/>
+												<ItemRef Name="Otter_Eats" ID="{00853232-09BF-47FE-8B09-511ECC485F6D}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="OtterVoice" ID="{AE343D21-43D7-47D6-AADD-B31016FF5414}"/>
+										<DefaultSwitchRef Name="Idle" ID="{965B93C2-D107-4DC3-AA8F-AE249C4CC3A3}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Otter_Vocal_Thrown" ID="{88B1A928-3F2B-446B-A867-4B72ACF2C40B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Otter_Vocal_Tapped" ID="{415BE351-E3D6-4529-9A33-A2526B97800E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Otter_Eats" ID="{448F5458-2AB2-45A1-9007-1FF1921FF4B9}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Otter_Vocal_idle" ID="{D3F25B7F-4E6A-4C2E-A763-62DF4523E83B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Otter_Vocal_Climb" ID="{78069ABD-490A-470E-B0A1-F6741F907192}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Tapped" ID="{432E0651-4F66-4B65-B289-818CAF4CD8DA}"/>
+												<ItemList>
+													<ItemRef Name="Otter_Vocal_Tapped" ID="{415BE351-E3D6-4529-9A33-A2526B97800E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Climb" ID="{BF09C587-89F2-49F8-AE69-5A3CA84DECD8}"/>
+												<ItemList>
+													<ItemRef Name="Otter_Vocal_Climb" ID="{78069ABD-490A-470E-B0A1-F6741F907192}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Thrown" ID="{24E260B7-9D8C-4169-96A4-EAD64A43D498}"/>
+												<ItemList>
+													<ItemRef Name="Otter_Vocal_Thrown" ID="{88B1A928-3F2B-446B-A867-4B72ACF2C40B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle" ID="{965B93C2-D107-4DC3-AA8F-AE249C4CC3A3}"/>
+												<ItemList>
+													<ItemRef Name="Otter_Vocal_idle" ID="{D3F25B7F-4E6A-4C2E-A763-62DF4523E83B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Eat" ID="{E65D91C3-EACE-4C0B-8491-3D55831603F7}"/>
+												<ItemList>
+													<ItemRef Name="Otter_Eats" ID="{448F5458-2AB2-45A1-9007-1FF1921FF4B9}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Frog" ID="{B44CF1D7-721A-47CC-BC7E-E734BBF50871}" ShortID="629497596">
@@ -707,6 +1387,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Frog_vocal" ID="{62D1C5DA-9C99-4853-B8A7-F250DFC22099}" ShortID="787294895">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>

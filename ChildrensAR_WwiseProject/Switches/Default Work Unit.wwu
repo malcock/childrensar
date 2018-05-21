@@ -50,6 +50,15 @@
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
+				<SwitchGroup Name="OtterVoice" ID="{AE343D21-43D7-47D6-AADD-B31016FF5414}">
+					<ChildrenList>
+						<Switch Name="Idle" ID="{965B93C2-D107-4DC3-AA8F-AE249C4CC3A3}"/>
+						<Switch Name="Eat" ID="{E65D91C3-EACE-4C0B-8491-3D55831603F7}"/>
+						<Switch Name="Climb" ID="{BF09C587-89F2-49F8-AE69-5A3CA84DECD8}"/>
+						<Switch Name="Tapped" ID="{432E0651-4F66-4B65-B289-818CAF4CD8DA}"/>
+						<Switch Name="Thrown" ID="{24E260B7-9D8C-4169-96A4-EAD64A43D498}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

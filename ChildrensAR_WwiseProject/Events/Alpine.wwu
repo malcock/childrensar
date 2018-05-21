@@ -114,13 +114,13 @@
 				</Event>
 				<Event Name="OtterVocal" ID="{1ED3754E-2B40-4B27-B250-BA5A607AAC0A}">
 					<ChildrenList>
-						<Action Name="" ID="{C5E7E684-454E-48E0-8B8F-CC2D220F3A83}" ShortID="709312781">
+						<Action Name="" ID="{B3EBFDF0-00CB-4EA1-BC17-064CF38E76B7}" ShortID="69058797">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Otter_vocal" ID="{F48153E4-0DC6-4518-8EF6-4D6805B4091C}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+									<ObjectRef Name="OtterVoice" ID="{5CD3FA2B-5197-4D57-BF6F-3FF7ACA526E8}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
