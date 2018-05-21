@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C72D401E-19C2-4FBF-9285-045D286735A0}" SchemaVersion="85">
+	<InteractiveMusic>
+		<WorkUnit Name="Polar" ID="{C72D401E-19C2-4FBF-9285-045D286735A0}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="PolarMusic" ID="{69EC62EB-2B71-4AAF-B81C-7780CF63AF01}" ShortID="101034124">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{159013B1-1ABC-4FD0-A775-8B1C7A6198D1}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" ShortID="705447405">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0031F147-8701-4087-A432-2409CC51738F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" ShortID="405210894">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="186000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{431AC2E7-3939-4024-848C-696D46521CF2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-24"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" ShortID="776561418">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{691A85B3-FAE6-47C3-8357-61B2C92FFA01}" ShortID="513062756">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{11730B3F-4AEC-4A28-BE3E-3DF994F89F29}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>51</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{145D9FA0-669E-4C77-A11C-D605E7D6DDC3}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{85A6939A-7C76-49CF-9835-265FD77A9226}" ShortID="1005987816">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AAB348DB-14E5-45D1-B991-DFF39C8CF243}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-19.521</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{E86F9C90-43F9-456D-A1C4-58B96F135EA7}" ShortID="720757223" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{D9EAD09B-F811-462E-9042-C196DFF39F8C}" ShortID="316728790">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{11D399FF-882A-4C39-AF2A-86E7FA5FDC82}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{28E01E82-E1E4-4828-8B2D-B76F7A0AF2FE}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{7D2956FE-0986-45F2-AF0A-AA9A86C63B3A}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{D9EAD09B-F811-462E-9042-C196DFF39F8C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" ShortID="823304045">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B3909307-D20C-4B80-B7F6-99F452A9EAB9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{158CD2A0-2E3B-4148-B054-D15ACBEFA5BE}" ShortID="197978583">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1EFF8657-71AB-4621-A57B-6CE82907DA7B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-30</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{B7BC792C-3578-4422-A87E-7EA4DECD0C3A}" ShortID="1060160743" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{EF05AA98-5601-4DD8-9ECC-A1890F8DFB3C}" ShortID="437612142">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPlinks.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{648DAB6E-38A4-4606-8BB4-E67EA5E59A5B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F9A34183-70BF-47CD-85CA-ECCE76763741}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{9EAB35C2-5093-45C9-B419-7EDF74302B03}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{EF05AA98-5601-4DD8-9ECC-A1890F8DFB3C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" ShortID="603351106">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{CD01E885-00AB-4E10-A022-A9234F103FF9}" ShortID="204201110">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{679C40DF-44D0-4A69-A654-B9B36C0E67FF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>75</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E7768EA6-E1E6-4B7B-AEA4-8DE77E195BB9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{02A6C3AD-1041-4541-BB34-B9A89451FC85}" ShortID="85959610">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{03B58D26-B985-4817-A901-BCEA1A746F66}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{C436227C-FFFE-4DE4-9C7E-AFDF293BD0C8}" ShortID="517731547" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{2B2EFEA5-D55D-48E8-A81B-CDD9B6732FB1}" ShortID="298211297">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic1_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{3BC1E20F-3F0C-4A4C-A21B-7A176EFA2DA2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{840EAC44-E316-4F45-B983-3C6ED77FEEEC}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{E8826C7E-8E7B-428D-98F1-9E4E6BF119E4}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="186000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{2B2EFEA5-D55D-48E8-A81B-CDD9B6732FB1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{3D77550A-71C5-4FA3-B725-A320A45C80C2}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{883BC5FF-E9B6-4277-BD2D-E96AFF759A92}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="168000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}" ShortID="494058516">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="226000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{438196AE-AA55-4569-A66A-D76DD34A0306}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{94EB2983-2D1F-47B4-AB3B-00C1F9E43478}" ShortID="976537628">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{60A0A619-8D6A-45E2-BFBF-99EDC5515C05}" ShortID="1040553356">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FD53DEE8-5967-4180-A1B2-5610C29A875E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>51</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B2DE553A-043B-4843-B0E1-B8BA669347F9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{473B133A-40EE-4022-9D82-438E1183697C}" ShortID="578080880">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{082B05B2-5639-4C1F-8F39-040D6E677D0A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-19.521</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{9C3C638A-30B2-48F4-ADEC-3DF0B9B1708D}" ShortID="400690232" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{4CEF9FF2-0C49-4A64-9CFF-650FB1C863CF}" ShortID="464720112">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{737ED535-F2CC-4A8C-8328-52929670DF05}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EC46190D-A65D-445F-96BD-A0F6D11C8145}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{102579AC-3F12-46F6-8FDC-7A8F69BE7F85}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{4CEF9FF2-0C49-4A64-9CFF-650FB1C863CF}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{0B92F85A-A614-4AA0-8D0F-BA08587F1D11}" ShortID="445200551">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3B8C20CC-A4E2-4002-B936-D9D6328E285D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{63CE8364-0AB9-4051-AD1C-CA38B2D8077D}" ShortID="631632510">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{0708A857-7D35-4F61-9B01-83F09CEAAF1F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-30</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{9EE52F0A-1F59-44AA-826A-C6C92D066D3C}" ShortID="594936311" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{A9F07290-FBCF-4EFD-A231-96096A1830A9}" ShortID="907428159">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPlink.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{6E65BE2E-857C-433E-8E2D-EBD2533CEB78}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{DC608F45-D24E-4445-9377-50F41EBA636A}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{3F41B3E9-62C8-4FB9-826E-BEC1E5AA783C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{A9F07290-FBCF-4EFD-A231-96096A1830A9}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{1A5DD140-5C19-4E40-9815-8724408C6B76}" ShortID="86488579">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{322A246F-B33F-4923-AB62-A3CA45E16238}" ShortID="346626843">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{FAB172B5-0229-4022-9E6E-5FFCE20D5F4F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>75</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4EEFBD29-0333-4CE7-8F1C-F316672BF9E2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{90DFAAA0-C45C-49A8-BC81-CB0BB83650CB}" ShortID="66023491">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{93136020-1ED1-47D9-ADCD-CE010C563C0E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{04A90453-6E9C-402E-BF15-F174DC8528B1}" ShortID="204423235" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{9FA91776-96D8-40D4-B0DC-EA107512C620}" ShortID="662414403">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic2_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{42CA18C3-16D0-4299-A9B5-AB161A05A595}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{03AE2F45-FB69-4AE7-86F6-8F424B80AB63}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{C2827116-F9CF-4FFC-9093-70CB38DD3882}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="218000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{9FA91776-96D8-40D4-B0DC-EA107512C620}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{A357E42E-C447-4830-A356-56B7C22D38F8}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{8C1E6768-C423-46D0-9552-DBCCDDD75DD7}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="208000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" ShortID="429195503">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="214000"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3FEAE3F9-B84F-4D7D-B283-086D6D876037}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{819CDB1B-2753-4AFB-BFEA-34ECFED48A8E}" ShortID="900934638">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{C3E43041-9FFC-4D8F-9E16-3AE8197F4A31}" ShortID="195739563">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DC5B0107-80B9-411A-9E97-518264168B34}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>51</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{55855864-16DB-4C9A-9F6A-14ACC73DCB0B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{90124E89-73DB-455D-AE51-FFB85A000C3C}" ShortID="1022737204">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{58E24149-FE05-47F9-8C50-55B73AE6603B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-19.521</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{2645BCF1-FD9C-401B-BBA3-54C17C818D5E}" ShortID="592723197" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{D1B12610-B592-498C-8571-B5F60B59E922}" ShortID="286460554">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPad.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A389D5FA-B4C6-46C2-A091-0A122C7D21A2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{B37EC8EF-D8AA-4E03-A136-D940CE3795A9}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{E19DB173-53A8-499B-83A6-1BF65ED2FB69}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{D1B12610-B592-498C-8571-B5F60B59E922}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" ShortID="913582512">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D8BE6CAC-B90D-4515-8FA5-6A6E7305FB9E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{17ED4667-394F-4B99-ADCD-1E491DFDCD71}" ShortID="786409608">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{50BF9B4F-30D3-461D-AC9B-779C9B3AC520}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-30</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{30110168-C129-4FAB-ADCE-7377D0E1F57A}" ShortID="812909281" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{43CC5373-8BD2-4D97-9B44-2B931019339C}" ShortID="373173106">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPlink.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4200A5AD-2C1F-4649-AD34-9EC35EE6E219}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{240959D8-6921-4DA2-ACEF-1F670592AF09}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{7DAC36F2-F945-4132-83D2-ABA91ADE574D}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{43CC5373-8BD2-4D97-9B44-2B931019339C}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" ShortID="841042573">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{01A1CFFA-ACED-4C96-8417-C5FD28156CF3}" ShortID="984720015">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4BF0D47F-A8B2-476F-8553-1819729A35CF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>75</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{15FA4415-A63F-4C1F-9784-9FEF20EE4170}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{97C94BE5-7E1B-4260-B41E-2D93848DB5AC}" ShortID="980150802">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A63BD815-671A-4390-B751-7243930BD2E4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Meter (Custom)" ID="{E4086EC8-A271-4479-B7B7-34E8DD307DFA}" ShortID="166985185" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{97ACC8F9-8998-416A-8AF9-12E1906E5FFD}" ShortID="834454837">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic3_StemPiano.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{AE30F5D3-4AC1-43C1-8FBB-CD7057B20AA6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{819B6CAA-89F3-4A72-A24C-0A63F622BF06}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{FB3D8A46-260F-477E-84F3-3E3F1A4BE0FE}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="214000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{97ACC8F9-8998-416A-8AF9-12E1906E5FFD}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{D34C6063-744C-4840-B911-EAC880B2D526}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{3297F8FA-6382-4488-A7E0-194EC6BC4735}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="208000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="PolarMusic4" ID="{FEEF6877-94F6-4B1B-91F1-007DDE50A8BE}" ShortID="49982481">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="204472.436948667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic4_Stem1-Tune" ID="{F360E803-6C44-45E0-A828-68483B9CD38A}" ShortID="861350742">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CC8AC0CD-1ED1-4843-81CE-D6C42520D0A9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{8F90ED53-60D0-4D5C-8187-9EA9376F33D8}" ShortID="7146136">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{5D24131E-AB64-4AE2-861D-51663496CBE4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-30</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic4_Stem1-Tune" ID="{C8961BD3-951B-4952-9107-D0B0DE7DB3A6}" ShortID="38315996">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic4_Stem1-Tune.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{9364EFB0-49A5-4B63-8117-D8154454E0DB}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EFD93561-CC71-48A2-B217-236385D5F4FC}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic4_Stem1-Tune" ID="{9C95FFA4-B2C3-4F4F-9601-FEA011AB8C02}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="150000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic4_Stem1-Tune" ID="{C8961BD3-951B-4952-9107-D0B0DE7DB3A6}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic4_Stem2-SyntheticAcc" ID="{8788C6C8-1789-48A9-BF3C-942740201F7E}" ShortID="440689399">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{F5008F7B-DCBE-41BC-815B-BFF7D6881D63}" ShortID="575089303">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F8AFFF70-D521-4066-8246-2CAA2D5861BB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>75</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{69AE3571-FA29-474D-BF72-B23AC273ABB3}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{9D8DCBBF-6908-4B88-92AD-0FCE14D64EF7}" ShortID="699596925">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E3490410-6772-4482-8D0D-24CB44590AB3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic4_Stem2-SyntheticAcc" ID="{08D593A5-E160-4DA8-9307-B1EA7F3F2495}" ShortID="864558347">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic4_Stem2-SyntheticAcc.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{CF279F5F-68AC-4358-B04D-DF5920C9214A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{0A5E5C6E-5974-4943-AEFE-67BC05DDA69A}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic4_Stem2-SyntheticAcc" ID="{B1A48556-D3C1-4144-B05E-ECD52F4E8A63}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="160487.619047619"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic4_Stem2-SyntheticAcc" ID="{08D593A5-E160-4DA8-9307-B1EA7F3F2495}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic4_Stem3-SyntheticArp" ID="{A7FB85BF-8691-4F9E-8665-D3A56E49C672}" ShortID="430326282">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4B8B136C-29EF-45A8-B999-E5709BE61CC2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{BB75E19C-59C7-4FB0-8DBF-E6F563C6CC82}" ShortID="331346150">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9BC07210-5E62-4366-8948-E97A814A1D29}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-30</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic4_Stem3-SyntheticArp" ID="{6FB8A741-4249-4366-80F5-EAF6DB7A58C8}" ShortID="966935014">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic4_Stem3-SyntheticArp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{A29235C0-DD77-4D24-8F31-2B84D1B0F7CC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{EEE44BA5-9320-4982-8810-B07A4557CDA4}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic4_Stem3-SyntheticArp" ID="{75AA777C-58E8-485A-B26B-7E9C3D23788C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="135224.308390023"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic4_Stem3-SyntheticArp" ID="{6FB8A741-4249-4366-80F5-EAF6DB7A58C8}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="ArtfeltHospitalVR_PolarMusic4_Stem4-StringsAcc" ID="{544D915A-D692-4B8B-ABAD-23562EFD7C80}" ShortID="874834599">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{09F63429-887F-478E-A880-D8671ABD5C3A}" ShortID="353802701">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{4858F85F-98F5-4C26-9821-76A7B2DB2D1E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>51</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsZeroLantency" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{413D3277-FBDD-444A-A7E6-4769E2B1B678}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-24"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{87D6EAAC-310D-4D62-9161-B527AFAFE09D}" ShortID="840650211">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" WorkUnitID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{F92BF66A-EF81-4CB5-9774-C01515DC96D1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-19.521</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ArtfeltHospitalVR_PolarMusic4_Stem4-StringsAcc" ID="{D8B89956-E011-411B-A1E8-CDE20240F6EE}" ShortID="827601001">
+													<Language>SFX</Language>
+													<AudioFile>ArtfeltHospitalVR_PolarMusic4_Stem4-StringsAcc.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{5160394E-2FFF-4948-9DAA-CC57800DE8AE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{9BB5BB89-7CA5-41AF-AD21-E9F21CC2DCD1}">
+													<ClipList>
+														<MusicClip Name="ArtfeltHospitalVR_PolarMusic4_Stem4-StringsAcc" ID="{AD0318BC-E69F-48CD-A9C5-8BA307CEAEE0}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="170890.158730159"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="ArtfeltHospitalVR_PolarMusic4_Stem4-StringsAcc" ID="{D8B89956-E011-411B-A1E8-CDE20240F6EE}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{9F10724D-25AA-434B-BB01-47A8F8340C00}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="8000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{A48C5214-8EA0-43D0-8AF8-934AD083C22D}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="168000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{896D5055-1E9E-45F3-9875-A2DDCA149031}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{5500F4BB-B3B9-4D67-98CB-EB74C57AE8AB}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{997C5BE0-3F1E-4B3E-AAD5-27D2D575F313}" ShortID="74875393">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9C0C2E16-A0C4-4A2F-8596-BD4473969D2B}" ShortID="462370267">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>0.001</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{113B98C1-D9BE-4566-88BD-D7EABFABD66E}" ShortID="770667920">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>0.001</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic2" ID="{B2EAFBFB-7671-4DE3-B4D6-BEB6D57C9193}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{97CF6593-25F6-4F3A-9D66-C5FCD34A6373}" ShortID="474216560">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="2"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>0.001</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{2FBDEBB1-FCAA-4F07-874C-3C945CCA86EA}" ShortID="995484370">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<SegmentRef Name="PolarMusic4" ID="{FEEF6877-94F6-4B1B-91F1-007DDE50A8BE}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{2E04EEEB-170B-4C01-B56A-73B94E7D78FA}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{6E64F591-8776-42D1-AE5B-DA2C23CF33BF}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<EntryList>
+						<Entry>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>
