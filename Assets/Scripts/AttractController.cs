@@ -25,7 +25,7 @@ public class AttractController : MonoBehaviour {
     {
         
         if(SystemInfo.batteryStatus == BatteryStatus.Discharging){
-            //LoadLevel();
+            LoadLevel();
         }
 
         if (Input.GetKeyUp(KeyCode.Return))
@@ -36,6 +36,13 @@ public class AttractController : MonoBehaviour {
     }
 
     public void LoadLevel(){
+
+        StartCoroutine(playhandler());
+    }
+
+    public IEnumerator playhandler(){
+        AkSoundEngine.PostEvent("TabletPickup", gameObject);
+        yield return new WaitForSeconds(3);
         GameControl.Instance.LoadScene(LevelToLoad);
     }
 }

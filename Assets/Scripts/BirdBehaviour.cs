@@ -2,14 +2,19 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+
+[RequireComponent(typeof(InteractableObject))]
 public class BirdBehaviour : MonoBehaviour
 {
+
+    private InteractableObject interactableObj;
+
     public enum BirdType {Seagull, Duck}
     public BirdType type = BirdType.Seagull;
 	// Use this for initialization
 	void Start()
 	{
-
+        interactableObj.OnTap.AddListener(TapSpeak);
         //AkSoundEngine.PostEvent("SeagullFly", gameObject);
         StartCoroutine(Speak(Random.Range(30, 50)));
 	}
@@ -19,6 +24,11 @@ public class BirdBehaviour : MonoBehaviour
         string eventName = (type==BirdType.Seagull) ? "SeagullVocal" : "DuckVocal";
         AkSoundEngine.PostEvent(eventName, gameObject);
         StartCoroutine(Speak(Random.Range(30,50)));
+    }
+
+    public void TapSpeak(){
+        string eventName = (type == BirdType.Seagull) ? "SeagullVocal" : "DuckVocal";
+        AkSoundEngine.PostEvent(eventName, gameObject);
     }
 
 	// Update is called once per frame
