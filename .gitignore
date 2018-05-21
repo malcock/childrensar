@@ -43,7 +43,9 @@ Assets/Low Poly Animated Animals.meta
 Assets/Low Poly Animated Animals.meta~HEAD.meta
 Assets/Low Poly Animated Animals.meta~master.meta
 Assets/StreamingAssets/Audio/GeneratedSoundbanks
-Assets/Wwise/
+Assets/Wwise/*
+/Assets/Wwise/
+/Assets/WWise/*
 Assets/SCH-Scenes.meta
 
 Assets/3rd Party/LowPolyWaterv2/Materials/LPWaterPerformanceDemo_02\.mat
