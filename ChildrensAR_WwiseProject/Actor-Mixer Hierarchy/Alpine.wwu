@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" SchemaVersion="85">
 	<AudioObjects>
 		<WorkUnit Name="Alpine" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" PersistMode="Standalone">
 			<ChildrenList>
@@ -40,8 +40,14 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}" WorkUnitID="{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="BearAppearDisappear" ID="{A0BB48EF-BCF9-4616-81A1-5B0246A0FCAE}" WorkUnitID="{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -85,8 +91,6 @@
 										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
-										<GroupRef Name="BearAppearDisappear" ID="{A0BB48EF-BCF9-4616-81A1-5B0246A0FCAE}"/>
-										<DefaultSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}"/>

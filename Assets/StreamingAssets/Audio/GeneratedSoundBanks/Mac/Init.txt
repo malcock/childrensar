@@ -2,7 +2,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	610585235	OctopusMiniGame			\Default Work Unit\OctopusMiniGame	
 
 State	ID	Name	State Group			Notes
-	748895195	None	OctopusMiniGame			
+	0	None	OctopusMiniGame			
 	930712164	Off	OctopusMiniGame			
 	1651971902	On	OctopusMiniGame			
 
@@ -29,4 +29,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	247443601	Wwise Meter (Custom)	Wwise Meter			
 	687260991	Wwise Meter (Custom)	Wwise Meter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
 

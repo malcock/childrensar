@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B379223A-4666-49EE-8A9A-C1BDC26777B6}" SchemaVersion="80">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{B379223A-4666-49EE-8A9A-C1BDC26777B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="OctopusMiniGame" ID="{8FBBD8AA-693E-4FD8-801A-3414F9788320}">
+					<ChildrenList>
+						<State Name="None" ID="{9E4BF916-7AED-4568-96D6-E552745CB6D3}"/>
+						<State Name="On" ID="{78067D20-D2F6-4EA0-8BED-34E0DB64FF23}"/>
+						<State Name="Off" ID="{BE4C0AC2-47CC-48BF-B7C5-40EFC31B4355}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

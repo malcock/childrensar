@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" SchemaVersion="85">
 	<Effects>
 		<WorkUnit Name="Factory Effects" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" PersistMode="Standalone">
 			<ChildrenList>
@@ -1536,6 +1536,7 @@
 									<PropertyList>
 										<Property Name="DecayTime" Type="Real32" Value="2.8"/>
 										<Property Name="Density" Type="Real32" Value="100"/>
+										<Property Name="DryLevel" Type="Real32" Value="-96"/>
 										<Property Name="ERLevel" Type="Real32" Value="-12"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="210"/>

@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Alpine" ID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Characters" ID="{94560371-CE1C-46E6-B65B-55BB4192A958}" ShortID="644749533">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Character_Bear" ID="{1815722E-38FB-40A8-B066-CE9EE5ABCB0B}" ShortID="728843272">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Bear_appear_disappear" ID="{F27F8907-BFFD-417C-A168-A6ADE0EBF4D8}" ShortID="213455997">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}" ShortID="724154623">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" ShortID="981987302">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Bear\sfx_bear_splash_appear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}" ShortID="31611884">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" ShortID="523747903">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Bear\sfx_bear_splash_disappear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupRef Name="BearAppearDisappear" ID="{A0BB48EF-BCF9-4616-81A1-5B0246A0FCAE}"/>
+										<DefaultSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+												<ItemList>
+													<ItemRef Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Disappear" ID="{D86BEE63-801C-4433-AF1F-59383D9106E8}"/>
+												<ItemList>
+													<ItemRef Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="sfx_bear_sway" ID="{98B61EDB-9B21-4EA5-BF8E-6D26D5EA39E6}" ShortID="442496344">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_bear_sway" ID="{1BB833D1-C6CE-4BB1-B940-0B722A44DC56}" ShortID="843939028">
+											<Language>SFX</Language>
+											<AudioFile>Characters\Character_Bear\sfx_bear_sway.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_bear_sway" ID="{1BB833D1-C6CE-4BB1-B940-0B722A44DC56}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_bear_vocal_01" ID="{5C2E3B56-A348-4BD8-BEA4-C1597E72E0B4}" ShortID="661826791">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_bear_vocal_01" ID="{C7888D32-CA79-4BD3-925C-94DDBCEDFB9D}" ShortID="924287429">
+											<Language>SFX</Language>
+											<AudioFile>Characters\Character_Bear\sfx_bear_vocal_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_bear_vocal_01" ID="{C7888D32-CA79-4BD3-925C-94DDBCEDFB9D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Character_Salmon" ID="{6A612EDC-0E0A-4F68-9CED-E9AC2D739F45}" ShortID="91250958">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Salmon_scare" ID="{312CB2BA-7B58-4609-BEB3-066287B5B10F}" ShortID="575726354">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_salmon_scare_01" ID="{7F7D63F1-D91D-4512-AFBD-F9F28014BA37}" ShortID="437437451">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_01" ID="{DED248DB-C80F-4DBB-89B0-54D6EBCA72F8}" ShortID="420584994">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_01" ID="{DED248DB-C80F-4DBB-89B0-54D6EBCA72F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_salmon_scare_02" ID="{BD7A90A9-9D43-4B16-8449-B3DB83AE6225}" ShortID="191800605">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_02" ID="{F04352E2-ABFF-4A5E-9ED3-5D2DA3BD0516}" ShortID="547278234">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_02" ID="{F04352E2-ABFF-4A5E-9ED3-5D2DA3BD0516}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_salmon_scare_03" ID="{8C5D9B43-6B5D-40E6-8F7A-7774B83D79A7}" ShortID="138052925">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_03" ID="{6AC93BA6-DECB-46F2-97EC-A55912BF3D07}" ShortID="16739552">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_03" ID="{6AC93BA6-DECB-46F2-97EC-A55912BF3D07}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_salmon_scare_04" ID="{17E36FA1-8BD7-4BB1-95C6-C27434F41435}" ShortID="461922370">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_04" ID="{94F3051B-A942-441F-8C2C-A3F8ACDA8C78}" ShortID="456718688">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_04" ID="{94F3051B-A942-441F-8C2C-A3F8ACDA8C78}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_salmon_scare_05" ID="{01E9B8F4-0B5C-402D-8CC2-04675E8F1394}" ShortID="1009365325">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_05" ID="{81403417-0FB3-4707-90BA-77A5741A6E0F}" ShortID="673717789">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_05" ID="{81403417-0FB3-4707-90BA-77A5741A6E0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_salmon_scare_06" ID="{FF91421A-844E-4A01-8CA6-3BD6759DF8DE}" ShortID="654524004">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_salmon_scare_06" ID="{7141D05C-D575-446C-A137-D705DB89CD44}" ShortID="292655730">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Salmon\sfx_salmon_scare_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_salmon_scare_06" ID="{7141D05C-D575-446C-A137-D705DB89CD44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Character_Duck" ID="{11F70166-F8F0-4008-A5B8-672F511D5E43}" ShortID="1061437690">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Duck_vocal" ID="{2B04D055-992D-4E0A-A117-9D2A60BF2918}" ShortID="34885319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_ducks_vocal_01" ID="{9AB5BAEF-9BB4-4ABD-8B38-495A036BE739}" ShortID="1042224465">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_vocal_01" ID="{07618016-C984-4585-8FE9-EB3867DF043F}" ShortID="757364306">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_vocal_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_vocal_01" ID="{07618016-C984-4585-8FE9-EB3867DF043F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_vocal_02" ID="{252FC876-D4DB-4A73-AC89-927CBA0DE5AC}" ShortID="220958338">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_vocal_02" ID="{3E79CE24-C910-4CA1-9B20-AAEB227F05E6}" ShortID="651421043">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_vocal_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_vocal_02" ID="{3E79CE24-C910-4CA1-9B20-AAEB227F05E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_vocal_03" ID="{4D1B1092-5C75-4329-A9DC-69BBDAFE0A54}" ShortID="357508515">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_vocal_03" ID="{BE53C14D-B75F-4643-8D77-5D37DCBA4552}" ShortID="394475566">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_vocal_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_vocal_03" ID="{BE53C14D-B75F-4643-8D77-5D37DCBA4552}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_vocal_04" ID="{599AAD7A-6511-4A27-837B-B122C1D08623}" ShortID="103129561">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_vocal_04" ID="{34081CE3-63D5-4B30-96A5-74CCC20C2AF6}" ShortID="890328098">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_vocal_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_vocal_04" ID="{34081CE3-63D5-4B30-96A5-74CCC20C2AF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Duck_fly" ID="{C890E3CB-DC5E-4B89-B839-88200C34CF6F}" ShortID="72791162">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_ducks_fly_01" ID="{82056CAE-5767-4D38-A701-1AC426B5BC03}" ShortID="44035446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_01" ID="{6FFBB3DC-BF99-4D3C-8AE4-7392593245C4}" ShortID="705865624">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_01" ID="{6FFBB3DC-BF99-4D3C-8AE4-7392593245C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_fly_02" ID="{C950648D-C62A-41BE-A886-BB996517C508}" ShortID="538927774">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_02" ID="{6D394EE6-7DBD-496C-BCDF-B780C5CD8292}" ShortID="590015713">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_02" ID="{6D394EE6-7DBD-496C-BCDF-B780C5CD8292}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_fly_03" ID="{22B07941-AB02-42C9-858E-01B7753C6737}" ShortID="714188830">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_03" ID="{59417E6C-ACD5-4F0A-A724-B48BDE4B936D}" ShortID="328682017">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_03" ID="{59417E6C-ACD5-4F0A-A724-B48BDE4B936D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_fly_04" ID="{EC18BACC-9156-4E58-9DBD-7AF3115488C2}" ShortID="565499197">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_04" ID="{B94A624B-7518-48C6-AD9E-434386C3887D}" ShortID="892418062">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_04" ID="{B94A624B-7518-48C6-AD9E-434386C3887D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_fly_05" ID="{08938978-BA33-4C15-89DC-2BCC0375EBAA}" ShortID="752770823">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_05" ID="{1CDE877C-263F-4952-9CBA-59F985021867}" ShortID="1039634106">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_05" ID="{1CDE877C-263F-4952-9CBA-59F985021867}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_ducks_fly_06" ID="{BAFD7CB9-C916-4330-B70D-A744EA252B60}" ShortID="163605859">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_ducks_fly_06" ID="{CB91CF2C-AC4B-4A14-A626-5E9365A2B3DE}" ShortID="679352299">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Ducks\sfx_ducks_fly_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_ducks_fly_06" ID="{CB91CF2C-AC4B-4A14-A626-5E9365A2B3DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Character_Otter" ID="{A337932B-8E93-4F75-BE10-A2CEC738F212}" ShortID="974279850">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Otter_movement" ID="{58519A74-7DD4-42F5-B0AF-3C0760D24148}" ShortID="354247577">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_otter_movement_01" ID="{E85AF671-A143-4858-BBBD-269A1FF78F70}" ShortID="602564980">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_movement_01" ID="{29469F0A-1A30-4E4C-8696-40E8DD7A6CBC}" ShortID="693321380">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_movement_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_movement_01" ID="{29469F0A-1A30-4E4C-8696-40E8DD7A6CBC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_otter_movement_02" ID="{40F7392A-6B4F-424B-96C3-E4325673424C}" ShortID="442055732">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_movement_02" ID="{F6DFEB22-BE9F-4D58-9C1F-CEFF80B81140}" ShortID="485096752">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_movement_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_movement_02" ID="{F6DFEB22-BE9F-4D58-9C1F-CEFF80B81140}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_otter_movement_03" ID="{894A4C74-23F1-410C-B110-610FA97CA3E7}" ShortID="42636687">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_movement_03" ID="{BC271302-EF1F-478F-BDF2-3F444E977059}" ShortID="470709025">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_movement_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_movement_03" ID="{BC271302-EF1F-478F-BDF2-3F444E977059}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Otter_vocal" ID="{F48153E4-0DC6-4518-8EF6-4D6805B4091C}" ShortID="1009286509">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_otter_vocal_01" ID="{BC8C43CF-1857-4B8A-992C-079525ED5A94}" ShortID="298609522">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_vocal_01" ID="{3BE0B0BB-7B32-471A-8379-57A7AC41612B}" ShortID="855065680">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_vocal_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_vocal_01" ID="{3BE0B0BB-7B32-471A-8379-57A7AC41612B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_otter_vocal_02" ID="{00A9A592-8A2C-496C-819A-57D695D2323F}" ShortID="228494375">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_vocal_02" ID="{6D2CA3E9-1CF8-412B-B1AD-3F21D6FB13D6}" ShortID="46598994">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_vocal_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_vocal_02" ID="{6D2CA3E9-1CF8-412B-B1AD-3F21D6FB13D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_otter_vocal_03" ID="{33FD5242-4066-41A5-92BD-9E914AC8C6D5}" ShortID="519718499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_vocal_03" ID="{0BC7D7EF-C8F3-4F9C-B4C9-526E022659EA}" ShortID="62713228">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_vocal_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_vocal_03" ID="{0BC7D7EF-C8F3-4F9C-B4C9-526E022659EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_otter_vocal_04" ID="{A8F78AC0-0646-43F7-8401-6C0B91D932F9}" ShortID="929822291">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_otter_vocal_04" ID="{D2A8100D-A5E7-4049-B08A-5BFB90BD451F}" ShortID="1059222999">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Otter\sfx_otter_vocal_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_otter_vocal_04" ID="{D2A8100D-A5E7-4049-B08A-5BFB90BD451F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Character_Frog" ID="{B44CF1D7-721A-47CC-BC7E-E734BBF50871}" ShortID="629497596">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Frog_vocal" ID="{62D1C5DA-9C99-4853-B8A7-F250DFC22099}" ShortID="787294895">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_frog_vocal_01" ID="{B150A5D9-8F5D-4B8E-874F-A707E3257071}" ShortID="298830175">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_frog_vocal_01" ID="{E4142BF5-47DD-4D2D-87EE-0B6CD7BC69E0}" ShortID="407173997">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Frog\sfx_frog_vocal_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_frog_vocal_01" ID="{E4142BF5-47DD-4D2D-87EE-0B6CD7BC69E0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_frog_vocal_02" ID="{5A8C4AB3-CA19-4737-A59D-B9872CFA2AAC}" ShortID="816835762">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_frog_vocal_02" ID="{68BFFB5D-03F7-4A80-920E-ECC5656A91A5}" ShortID="832771562">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Frog\sfx_frog_vocal_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_frog_vocal_02" ID="{68BFFB5D-03F7-4A80-920E-ECC5656A91A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_frog_vocal_03" ID="{A3108CC7-F227-40B8-8BA2-40CD54C49954}" ShortID="378214467">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_frog_vocal_03" ID="{39F48492-0BB1-45D5-A465-FC54A19B4716}" ShortID="426052603">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Frog\sfx_frog_vocal_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_frog_vocal_03" ID="{39F48492-0BB1-45D5-A465-FC54A19B4716}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_frog_vocal_04" ID="{1EFD7881-AB66-40D4-9A3B-379290AF8B24}" ShortID="148784662">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_frog_vocal_04" ID="{599EF69E-6BD8-4036-AC48-996DB70B6848}" ShortID="522450115">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Frog\sfx_frog_vocal_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_frog_vocal_04" ID="{599EF69E-6BD8-4036-AC48-996DB70B6848}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_frog_vocal_05" ID="{B4C67285-9A2D-4CBB-95D3-9E53D4F50B7C}" ShortID="942688216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_frog_vocal_05" ID="{59D17C17-DE18-475D-B9FA-25078FFA25D1}" ShortID="674853272">
+													<Language>SFX</Language>
+													<AudioFile>Characters\Character_Frog\sfx_frog_vocal_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_frog_vocal_05" ID="{59D17C17-DE18-475D-B9FA-25078FFA25D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Ambience" ID="{37310332-7E35-4236-AE2C-764894DA4468}" ShortID="654935280">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="amb_alpine" ID="{060B7DF0-4B73-4991-BB4F-4A41A1D8394B}" ShortID="483885244">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="amb_alpine_oneshot" ID="{D9257CA4-00EB-4B57-82B4-9B9C026301BB}" ShortID="319834271">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F08F504D-A0EC-4F2E-AB71-E962AA31FCDD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Forest_ambient_BG_oneshot_01" ID="{DC9AB296-64C8-416D-AD31-8F55BD0CE845}" ShortID="422109415">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_01" ID="{6FF83134-22DB-4F89-B02C-3E2EC6B8DAE1}" ShortID="304089227">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_01" ID="{6FF83134-22DB-4F89-B02C-3E2EC6B8DAE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_04" ID="{56814710-D20F-4DC5-9B42-BA77B44AFE9A}" ShortID="77643772">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_04" ID="{7A440E0F-AB36-43BA-B5F4-5BCC0ECBF334}" ShortID="278915514">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_04" ID="{7A440E0F-AB36-43BA-B5F4-5BCC0ECBF334}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_02" ID="{226DF944-C92F-4B9C-986A-17907C1B6FAA}" ShortID="906395660">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_02" ID="{2A8E7968-3B9B-4AE6-A49A-487C5C4A4905}" ShortID="808604161">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_02" ID="{2A8E7968-3B9B-4AE6-A49A-487C5C4A4905}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_05" ID="{25732B9E-BD35-4108-B074-D9DE8022097E}" ShortID="387605352">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_05" ID="{9A5B3E8B-E2A2-45F5-A4E4-E21E850B2FD7}" ShortID="203815382">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_05" ID="{9A5B3E8B-E2A2-45F5-A4E4-E21E850B2FD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_06" ID="{3EC45AE6-ACDA-41DB-B8AE-DC45175C3234}" ShortID="55308955">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_06" ID="{9D7447FD-496F-40F1-B271-95191D957018}" ShortID="874539349">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_06" ID="{9D7447FD-496F-40F1-B271-95191D957018}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_03" ID="{ED07BA9B-9CEA-458A-BCFB-AD9FE8A8C4EB}" ShortID="792626235">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_03" ID="{02103524-923E-4538-9BE0-2D0E204D8D49}" ShortID="250839453">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_03" ID="{02103524-923E-4538-9BE0-2D0E204D8D49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_BG_oneshot_07" ID="{A6679532-D0B0-4DD1-B662-189BCD6FDC7F}" ShortID="904092600">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_BG_oneshot_07" ID="{845DBC05-E4C0-4352-873B-14CC6BAFD6D8}" ShortID="897410141">
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Forest_ambient_BG_oneshot_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_BG_oneshot_07" ID="{845DBC05-E4C0-4352-873B-14CC6BAFD6D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{7A6E455F-FDB4-4E07-BC62-01B7192D09B3}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="amb_polar_oneshot_Path" ID="{1DE15D09-A48E-466A-85D3-981C904BAAF1}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="77"/>
+														<Property Name="RandomY" Type="Real64" Value="66"/>
+														<Property Name="RandomZ" Type="Real64" Value="51"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1.26583</XPos>
+															<YPos>8.59873</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<Sound Name="Forest_ambient_main_loop_01" ID="{312516FC-AD58-4802-A8A8-F10946F9954D}" ShortID="664843109">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_main_loop_01" ID="{85007363-814A-4734-B147-AEDDFC62B798}" ShortID="722084878">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Forest_ambient_main_loop_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_main_loop_01" ID="{85007363-814A-4734-B147-AEDDFC62B798}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Forest_ambient_main_loop_extra_layer_01" ID="{ED2E3C40-F6A8-4755-B618-186F8B7206CD}" ShortID="828220831">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{558DCA44-0944-4710-90CD-78F2B30A6858}"/>
+												</ModifierInfo>
+											</ModifierList>
+											<RTPCList>
+												<RTPC Name="" ID="{67F9B6C9-2E04-47D7-A3A8-0D086A373C50}" ShortID="72309330">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom CreatedFrom="{050AFBB6-4C58-4860-8365-8DD5C148B66A}">
+																<ModulatorLfo Name="ForestFrogLoop (Custom)" ID="{6EEED07B-F806-4963-A834-902D8EAB79C3}" ShortID="655652669">
+																	<PropertyList>
+																		<Property Name="LfoFrequency" Type="Real64" Value="0.06">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{D66B615E-1362-4B4A-8D89-DB7E9E8E54E1}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="0.4"/>
+																							<Property Name="Min" Type="Real64" Value="-0.06"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{05BEBFDA-3801-4AF7-A81B-0D508796E405}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_main_loop_extra_layer_01" ID="{5DA61CEC-0C8B-44FD-B326-465CB6B10B63}" ShortID="874980017">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Forest_ambient_main_loop_extra_layer_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_main_loop_extra_layer_01" ID="{5DA61CEC-0C8B-44FD-B326-465CB6B10B63}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Forest_ambient_main_loop_extra_layer_02" ID="{CE51327A-D684-4C9D-AD69-104353B23D54}" ShortID="19357305">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_main_loop_extra_layer_02" ID="{ECBAB110-552D-4E04-A03C-54DCD9C7C41D}" ShortID="759797766">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Forest_ambient_main_loop_extra_layer_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_main_loop_extra_layer_02" ID="{ECBAB110-552D-4E04-A03C-54DCD9C7C41D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Forest_ambient_main_loop_02" ID="{3AA98BF7-B754-40BA-B133-2C430EF8ADFD}" ShortID="578043961">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_main_loop_02" ID="{4E152ECA-EB96-45F8-AEFD-D0F0A7FC7ECE}" ShortID="588215615">
+											<Language>SFX</Language>
+											<AudioFile>Forest_ambient_main_loop_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_main_loop_02" ID="{4E152ECA-EB96-45F8-AEFD-D0F0A7FC7ECE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Forest_ambient_tree_rustle_loop" ID="{786BCF8C-03A6-49F8-A34A-0960CD5D7B08}" ShortID="519901113">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_ambient_tree_rustle_loop" ID="{23B28C44-1E31-429F-AC1B-C742E3D117E7}" ShortID="138337933">
+											<Language>SFX</Language>
+											<AudioFile>Forest_ambient_tree_rustle_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_ambient_tree_rustle_loop" ID="{23B28C44-1E31-429F-AC1B-C742E3D117E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="amb_alpine_rustle_oneshot" ID="{E9D3EB23-9048-44DD-A2D6-6F79E21D2D52}" ShortID="929959026">
+									<PropertyList>
+										<Property Name="3DPositionSource" Type="int16" Value="0"/>
+										<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{34CE815D-AEE1-48E8-948A-5CECC3C2DE67}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_02" ID="{C49E4A88-DA43-46CA-9362-C4D38621171D}" ShortID="915906710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_02" ID="{7B8FE399-80CF-4559-93C2-78A8F5F0CC18}" ShortID="548270397">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_02" ID="{7B8FE399-80CF-4559-93C2-78A8F5F0CC18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_04" ID="{3EEFC436-E486-45E2-B09A-12BC6147E825}" ShortID="574675941">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_04" ID="{DF1F1CD0-3537-4CC9-BEC4-1139D4CDFDFA}" ShortID="644903426">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_04" ID="{DF1F1CD0-3537-4CC9-BEC4-1139D4CDFDFA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_05" ID="{2776F025-CA99-4E5F-B403-F3374036F3DD}" ShortID="270609087">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_05" ID="{FBE1974D-9834-4759-8605-FC93A0CB3BFD}" ShortID="779381852">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_05" ID="{FBE1974D-9834-4759-8605-FC93A0CB3BFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_06" ID="{7E258951-B90E-49A2-AA4A-26F431206A26}" ShortID="336510366">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_06" ID="{6C96998A-FCC5-4DA0-9FFF-5DD1D6DBB4D4}" ShortID="91289404">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_06" ID="{6C96998A-FCC5-4DA0-9FFF-5DD1D6DBB4D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_03" ID="{D23DA1B3-0570-4DA8-814A-243B17E471C5}" ShortID="940353249">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_03" ID="{0AE0CCEC-3903-4F4A-8047-F1BD94E43CEC}" ShortID="114189091">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_03" ID="{0AE0CCEC-3903-4F4A-8047-F1BD94E43CEC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Forest_ambient_tree_rustle_oneshot_01" ID="{6744ACC6-7107-415C-BEA2-5C8A89ADDD0D}" ShortID="600655870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Forest_ambient_tree_rustle_oneshot_01" ID="{13A81341-289C-4740-9AAF-000E27FBBC9D}" ShortID="585601475">
+													<Language>SFX</Language>
+													<AudioFile>Forest_ambient_tree_rustle_oneshot_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Forest_ambient_tree_rustle_oneshot_01" ID="{13A81341-289C-4740-9AAF-000E27FBBC9D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{369AF19D-D1F2-4D27-BA32-F906DE79A029}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="amb_polar_oneshot_Path" ID="{78A79178-A8EC-4F60-9538-A431EC47A00F}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="77"/>
+														<Property Name="RandomY" Type="Real64" Value="66"/>
+														<Property Name="RandomZ" Type="Real64" Value="51"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-1.26583</XPos>
+															<YPos>8.59873</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

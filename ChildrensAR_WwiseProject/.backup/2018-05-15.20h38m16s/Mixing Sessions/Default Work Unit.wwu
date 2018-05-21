@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{64124677-AA40-4926-88F7-09F4EA9CB84A}" SchemaVersion="80">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{64124677-AA40-4926-88F7-09F4EA9CB84A}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="MasterMixSession" ID="{067420B6-0E09-4D7A-8978-963BBFC8A974}">
+					<ObjectList>
+						<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						<ObjectRef Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{94EB2983-2D1F-47B4-AB3B-00C1F9E43478}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{1A5DD140-5C19-4E40-9815-8724408C6B76}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{0B92F85A-A614-4AA0-8D0F-BA08587F1D11}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{819CDB1B-2753-4AFB-BFEA-34ECFED48A8E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="PolarAmb" ID="{F8676DF7-3EBE-4CD8-A83E-C4E32CDF9EC3}">
+					<ObjectList>
+						<ObjectRef Name="amb_polar_oneshot" ID="{F4125095-1D4B-4736-98B1-3D529FC47BC8}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+						<ObjectRef Name="Polar_ambient_main_loop_02" ID="{C232859F-4C8C-4C12-B81F-F43247735D06}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+						<ObjectRef Name="Polar_ambient_main_loop_extra_layer_01" ID="{1CC3ECBE-B08C-467D-9BAC-22F9BEB19219}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+						<ObjectRef Name="Polar_ambient_main_loop_extra_layer_02" ID="{356CF6A3-DDE4-49A8-B7E5-3C1991296829}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+						<ObjectRef Name="Polar_ambient_main_loop_extra_layer_03" ID="{882D78BE-D83F-4D76-806B-3BE0F15C440B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPad" ID="{94EB2983-2D1F-47B4-AB3B-00C1F9E43478}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPiano" ID="{1A5DD140-5C19-4E40-9815-8724408C6B76}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic2_StemPlink" ID="{0B92F85A-A614-4AA0-8D0F-BA08587F1D11}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPad" ID="{819CDB1B-2753-4AFB-BFEA-34ECFED48A8E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPiano" ID="{1FE76C78-DEEB-49AA-81DA-DD116640C099}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic3_StemPlink" ID="{39373308-E35D-4E93-8248-67000CAE0D69}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPad" ID="{8452AE1C-09F9-4955-B947-E6ABFD2A4186}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPiano" ID="{13789CD6-34AD-4862-BA16-FC317C82A7D8}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+						<ObjectRef Name="ArtfeltHospitalVR_PolarMusic1_StemPlinks" ID="{25A39B8F-3D0E-409D-9F4A-0106A44F4FE7}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

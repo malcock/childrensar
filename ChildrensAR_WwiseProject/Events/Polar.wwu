@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" SchemaVersion="85">
 	<Events>
 		<WorkUnit Name="Polar" ID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}" PersistMode="Standalone">
 			<ChildrenList>

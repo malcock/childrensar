@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8D000091-7B00-4A73-95D7-95A45927158B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="InteractWaterSplash" ID="{3392656C-72A1-44D3-9BA9-9704459AB26D}">
+					<ChildrenList>
+						<Action Name="" ID="{971CFAB0-48F8-41A0-BEA4-B7BFBE2D0196}" ShortID="619829528">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_WaterSplash" ID="{ACDDE350-0C77-451B-8B18-E847AA3D6FFE}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishPickup" ID="{90C309DF-D9E6-4C1C-B8AE-57838CC9E99F}">
+					<ChildrenList>
+						<Action Name="" ID="{66678D24-CF49-45AF-B1BD-57BDBA3C5E24}" ShortID="33034277">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Fish_Pickup_V1" ID="{047DFE09-2954-4FE0-9124-136597CFE9F1}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{506A95D2-E94B-4A81-BF21-603C8FD221BE}" ShortID="127713321">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Fish_Pickup_V2" ID="{AA9B754E-A0FF-4A5A-9E55-5294A6935B27}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishPickupLoop" ID="{1B5CD573-4D15-4DF5-BB60-EA4800F0F7A8}">
+					<ChildrenList>
+						<Action Name="" ID="{66D3FBDE-A21F-44A0-94D7-DDE6BC96F456}" ShortID="492874778">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InteractFishPickupLoop" ID="{76637BF6-CA69-49A6-8DB3-4D49F0503065}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishThrow" ID="{D2B23725-2DE7-4FA4-A4EE-B6DC536581AD}">
+					<ChildrenList>
+						<Action Name="" ID="{F4B60060-E2DB-4FDB-9721-1A5AE5F9206D}" ShortID="119312932">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Fish_Throw" ID="{D378D572-7844-4C72-B677-D347D2FA0C66}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishImpact" ID="{C30E57FD-3A8D-4F4B-984C-7F4E3F482C13}">
+					<ChildrenList>
+						<Action Name="" ID="{441EB6EB-DD43-49BF-BFAF-0CED54C98970}" ShortID="819653334">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Fish_Impact" ID="{DAD6CC2C-F244-412B-940E-3B1388C41550}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractFishPickupLoopStop" ID="{53592488-5C17-40CC-B85F-0E1B3E2BDD84}">
+					<ChildrenList>
+						<Action Name="" ID="{65565403-E850-4D17-BC3E-049A3314E826}" ShortID="792880426">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InteractFishPickupLoop" ID="{76637BF6-CA69-49A6-8DB3-4D49F0503065}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdPoopSplatFloor" ID="{BE3131CC-B998-4520-8A37-D0E27BD781D1}">
+					<ChildrenList>
+						<Action Name="" ID="{312103EF-BE5F-4B32-963D-FD5DF0960D76}" ShortID="821309051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Floor" ID="{0093C19D-B80C-4D23-8437-ECA4F666C2DE}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdPoopSplatScreen" ID="{38DB9845-AE5F-4CE2-9DF9-950989B27293}">
+					<ChildrenList>
+						<Action Name="" ID="{19BE7E5A-17F1-4C69-8EF2-57861A3AF188}" ShortID="660614827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Screen" ID="{A501F90E-E54A-41B3-84B7-C6498AF41C15}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BirdPoopSplatWater" ID="{0DAA9F14-6C6B-4C3E-A3D7-58FFCBD6B1A5}">
+					<ChildrenList>
+						<Action Name="" ID="{E9ED9A96-76D6-42B6-8D8F-1F94A81571F7}" ShortID="1072418267">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Poop_Splat_Water" ID="{1C47B12F-AE8C-4063-BBBE-C0902CBC3BDF}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FishBucketAppear" ID="{01C42852-60A5-4DCF-8BDC-E5E50910638F}">
+					<ChildrenList>
+						<Action Name="" ID="{DDE3EA28-0944-49BB-ADF8-C577DEBCD982}" ShortID="556762176">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_fish_bucket_appear" ID="{9AB38CA2-C9A9-458A-A187-36287957A16F}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingPickup" ID="{28B845A3-BC4C-47F8-80D8-22248362FF2D}">
+					<ChildrenList>
+						<Action Name="" ID="{5D937EEB-9C2E-4CEA-83F3-74AD7B356641}" ShortID="674740680">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Pickup" ID="{F32BC72D-5CE0-4189-9959-A098E935972D}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingThrow" ID="{A2FBB36F-D1A1-4411-9E61-2340989AEC14}">
+					<ChildrenList>
+						<Action Name="" ID="{6F62F3C4-0FEF-417C-822E-4D403B14C0D9}" ShortID="753462670">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Throw" ID="{FA97D643-E5F8-4BF3-AC30-CE69AC697D47}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractRingImpact" ID="{01FD4CAC-0167-49E2-B27C-A4DE01059166}">
+					<ChildrenList>
+						<Action Name="" ID="{FCFB4342-E4E9-41FE-9C9E-F6B2162157D7}" ShortID="896704827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TabletPickup" ID="{01CA5313-FD8D-4DAB-8480-DE76A28C0F5F}">
+					<ChildrenList>
+						<Action Name="" ID="{AC947CEE-2D80-499D-979B-D27AB5B63D9F}" ShortID="695978597">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_tablet_pickup" ID="{108B2268-507B-44B2-AA4E-1F8AE0173793}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

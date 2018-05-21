@@ -21,10 +21,7 @@ namespace AK
         static const AkUniqueID BIRDPOOPSPLATFLOOR = 2678875368U;
         static const AkUniqueID BIRDPOOPSPLATSCREEN = 4009218062U;
         static const AkUniqueID BIRDPOOPSPLATWATER = 3796593211U;
-<<<<<<< HEAD
-=======
         static const AkUniqueID CRABBUBBLES = 1863277376U;
->>>>>>> master
         static const AkUniqueID CRABMOVEMENT = 1662606220U;
         static const AkUniqueID DUCKFLY = 3180804649U;
         static const AkUniqueID DUCKVOCAL = 3182212785U;
@@ -216,6 +213,12 @@ namespace AK
     {
         static const AkUniqueID REVERB_POLAR = 3081995956U;
     } // namespace AUX_BUSSES
+
+    namespace AUDIO_DEVICES
+    {
+        static const AkUniqueID NO_OUTPUT = 2317455096U;
+        static const AkUniqueID SYSTEM = 3859886410U;
+    } // namespace AUDIO_DEVICES
 
 }// namespace AK
 

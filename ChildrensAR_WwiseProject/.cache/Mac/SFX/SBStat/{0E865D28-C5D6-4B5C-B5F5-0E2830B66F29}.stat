@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BankMemory>
-<<<<<<< HEAD
-	<Timestamp>131684462890000000</Timestamp>
-	<DataSize>37324924</DataSize>
-	<FileSize>37338292</FileSize>
-	<DecodedSize>37324264</DecodedSize>
+	<Timestamp>1526414081</Timestamp>
+	<DataSize>37200268</DataSize>
+	<FileSize>37214443</FileSize>
+	<DecodedSize>37199652</DecodedSize>
 	<SFXPreFetchSize>35408</SFXPreFetchSize>
-	<SFXInMemorySize>37199424</SFXInMemorySize>
-=======
-	<Timestamp>131695767250000000</Timestamp>
-	<DataSize>39016796</DataSize>
-	<FileSize>39030963</FileSize>
-	<DecodedSize>39016066</DecodedSize>
-	<SFXPreFetchSize>35408</SFXPreFetchSize>
-	<SFXInMemorySize>38891226</SFXInMemorySize>
->>>>>>> master
-	<SFXMissingFiles>0</SFXMissingFiles>
+	<SFXInMemorySize>37074812</SFXInMemorySize>
+	<SFXMissingFiles>17</SFXMissingFiles>
 	<MusicPreFetchSize>89432</MusicPreFetchSize>
 	<MusicInMemorySize>0</MusicInMemorySize>
 	<MusicMissingFiles>0</MusicMissingFiles>
 	<VoicePreFetchSize>0</VoicePreFetchSize>
 	<VoiceInMemorySize>0</VoiceInMemorySize>
 	<VoiceMissingFiles>0</VoiceMissingFiles>
-	<MotionPreFetchSize>0</MotionPreFetchSize>
-	<MotionInMemorySize>0</MotionInMemorySize>
-	<MotionMissingFiles>0</MotionMissingFiles>
 	<ReplacedFiles>0</ReplacedFiles>
 </BankMemory>

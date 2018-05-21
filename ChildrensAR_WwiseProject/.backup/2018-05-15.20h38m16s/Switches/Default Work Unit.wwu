@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}" SchemaVersion="80">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="WaterSplash" ID="{A43F8AEC-A024-4F7C-A06B-80D65F17F6BD}">
+					<ChildrenList>
+						<Switch Name="SmallSoft" ID="{38F7843B-1A09-405C-B6D8-3267A63019B0}"/>
+						<Switch Name="Small" ID="{334419AF-1FDA-4180-B89A-651BD4D4793D}"/>
+						<Switch Name="Medium" ID="{6BB1E1C1-6479-4C26-84F0-3C47E2F3580A}"/>
+						<Switch Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+						<Switch Name="SmallMed" ID="{19ED6D0D-FC5A-409E-8DAC-05A9AD9ACD84}"/>
+						<Switch Name="ObjectSubmerge" ID="{FB7EBE4A-77B9-49F1-BE99-C4D0673F6980}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PenguinSwim" ID="{F4A8E61E-4377-4652-9BF7-AE39EE4422BA}">
+					<ChildrenList>
+						<Switch Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<Switch Name="FastUnderwater" ID="{B9FD853B-F737-4F51-9A76-333D67016701}"/>
+						<Switch Name="Slow" ID="{00FEF967-2399-48ED-9B22-6B9A1561F823}"/>
+						<Switch Name="SlowUnderwater" ID="{E9E05240-4703-4212-B207-46E56645923E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PenguinQuack" ID="{71433C07-E1B8-4A36-84BC-C2AF745B8969}">
+					<ChildrenList>
+						<Switch Name="Idle" ID="{22382C17-5325-4DFB-A166-48A952D0E58C}"/>
+						<Switch Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
+						<Switch Name="Climb" ID="{2867D66B-05F1-4A7D-87A5-E8EDBEFE850B}"/>
+						<Switch Name="Eat" ID="{82E8C6D4-AF3C-46D1-9C2F-BAB81E9863D3}"/>
+						<Switch Name="Tapped" ID="{2BD0D2BA-D82A-4C92-AB39-741586956162}"/>
+						<Switch Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="BearAppearDisappear" ID="{A0BB48EF-BCF9-4616-81A1-5B0246A0FCAE}">
+					<ChildrenList>
+						<Switch Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<Switch Name="Disappear" ID="{D86BEE63-801C-4433-AF1F-59383D9106E8}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="OctopusAppearDisappear" ID="{BB6CB84E-99F2-4923-9577-F42377F4421B}">
+					<ChildrenList>
+						<Switch Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
+						<Switch Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PolarMusicSwitch" ID="{11012CFA-9632-460A-8F3D-7847574FAF23}">
+					<ChildrenList>
+						<Switch Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
+						<Switch Name="Octopus" ID="{CDA24685-FDF6-46E0-A585-29CC4D8784F8}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="AlpineMusicSwitch" ID="{7C605F59-4251-4F2E-B2C3-E5936FCF4C0F}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

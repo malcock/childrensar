@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{497C7563-ED91-4F00-909A-078983F3DEA5}" SchemaVersion="80">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{497C7563-ED91-4F00-909A-078983F3DEA5}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="PolarMusic" ID="{4C7CB0C3-70E2-4D7F-84E2-73BCE4B3CF16}" ShortID="996478239">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Polar_ambient_music_V1" ID="{A9181429-7D6A-447D-8114-3A860ED86B68}" ShortID="922619920">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="172000"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Polar_ambient_music_V1" ID="{ADAB546D-0C96-4584-83E5-9698B1342B2E}" ShortID="242322078">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Polar_ambient_music_V1" ID="{F76A2030-5D2A-4DDD-A9B0-F3CB31D79293}" ShortID="432573883">
+											<Language>SFX</Language>
+											<AudioFile>Polar_ambient_music_V1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{965FA7AD-0284-479F-87EC-629AD2F88E73}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{B684101A-5168-40C1-A326-009FD4110DC9}">
+											<ClipList>
+												<MusicClip Name="Polar_ambient_music_V1" ID="{7B4FF290-B845-4FD7-B114-0D5836EACCCC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="172000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Polar_ambient_music_V1" ID="{F76A2030-5D2A-4DDD-A9B0-F3CB31D79293}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{A26E1B69-DDD4-455E-BCDE-1FBE64407E3A}"/>
+								<MusicCue Name="Exit Cue" ID="{7D2CF3A8-A9EC-4F8F-80B2-6444DF6326F9}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="172000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Polar_ambient_music_V2" ID="{760D763E-F254-4E91-B284-48EB6F00A64B}" ShortID="693198463">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="166020.816326531"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Polar_ambient_music_V2" ID="{8B15AF1D-F685-4B2B-BF51-ADE359ECF7A2}" ShortID="660777506">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsZeroLantency" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Polar_ambient_music_V2" ID="{0CDC9580-B3A0-487D-993F-114C638ADDC4}" ShortID="554695072">
+											<Language>SFX</Language>
+											<AudioFile>Polar_ambient_music_V2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{DA8AC929-3F00-4644-8DBF-A97D7E4ED37F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CE56E9B1-8FD0-4A9B-A71F-8D786981D4DB}">
+											<ClipList>
+												<MusicClip Name="Polar_ambient_music_V2" ID="{7E51CD73-99CC-470A-B2E2-43050BAA3C4A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="166020.816326531"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Polar_ambient_music_V2" ID="{0CDC9580-B3A0-487D-993F-114C638ADDC4}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{52F69FE1-ECF6-495E-9357-F3E9C01B4BD4}"/>
+								<MusicCue Name="Exit Cue" ID="{E65BDB8B-D812-4B25-907B-E39023B5A0CF}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="166020.816326531"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{6AE9A613-F8F7-4033-8261-DA0C30DB7515}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{D832CF2F-9468-4665-A6C6-D4CB49B0FFD2}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{331770E3-4A31-4BA9-B962-C45BAD544D0F}" ShortID="828526643">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+								<Property Name="PlayMode" Type="int16" Value="2"/>
+							</PropertyList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

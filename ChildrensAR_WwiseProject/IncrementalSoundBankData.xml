@@ -3,72 +3,42 @@
 	<Platform GUID="{36A20F43-2A2B-440A-B564-E9A2B0DBFE11}">
 		<Banks>
 			<Language ID="393239870">
-<<<<<<< HEAD
-				<File Name="Alpine" Hash="991855367" Timestamp="131684465231274536"/>
-				<File Name="Init" Hash="1661989345" Timestamp="131684465231360490"/>
-				<File Name="Polar" Hash="3778731840" Timestamp="131684465230363160"/>
-=======
-				<File Name="Alpine" Hash="924522253" Timestamp="131695767255525933"/>
-				<File Name="Init" Hash="1661989345" Timestamp="131695610869656510"/>
-				<File Name="Polar" Hash="998264704" Timestamp="131695767256202733"/>
->>>>>>> master
+				<File Name="Alpine" Hash="147472664" Timestamp="1526414273"/>
+				<File Name="Init" Hash="2737208852" Timestamp="1526414273"/>
+				<File Name="Polar" Hash="861070215" Timestamp="1526414273"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-<<<<<<< HEAD
-				<File Name="" Hash="4024137768" Timestamp="131684465231410428"/>
-=======
-				<File Name="" Hash="3119616590" Timestamp="131695767256328065"/>
->>>>>>> master
+				<File Name="" Hash="1985221421" Timestamp="1526414273"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
 		<Banks>
 			<Language ID="393239870">
-<<<<<<< HEAD
-				<File Name="Alpine" Hash="991855367" Timestamp="131684462888955054"/>
-				<File Name="Init" Hash="3432067651" Timestamp="131684462440978513"/>
-				<File Name="Polar" Hash="3778731840" Timestamp="131684462440804860"/>
-=======
-				<File Name="Alpine" Hash="924522253" Timestamp="131695767251886256"/>
-				<File Name="Init" Hash="3432067651" Timestamp="131695610639855588"/>
-				<File Name="Polar" Hash="998264704" Timestamp="131695767252563055"/>
->>>>>>> master
+				<File Name="Alpine" Hash="147472664" Timestamp="1526414058"/>
+				<File Name="Init" Hash="2410012206" Timestamp="1526414058"/>
+				<File Name="Polar" Hash="861070215" Timestamp="1526414058"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-<<<<<<< HEAD
-				<File Name="" Hash="1974659956" Timestamp="131684462889059016"/>
-=======
-				<File Name="" Hash="553126370" Timestamp="131695767252683375"/>
->>>>>>> master
+				<File Name="" Hash="2468235865" Timestamp="1526414058"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
 		<Banks>
 			<Language ID="393239870">
-<<<<<<< HEAD
-				<File Name="Alpine" Hash="991855367" Timestamp="131684462895201045"/>
-				<File Name="Init" Hash="2534050983" Timestamp="131684462516180273"/>
-				<File Name="Polar" Hash="3778731840" Timestamp="131684462515958657"/>
-=======
-				<File Name="Alpine" Hash="924522253" Timestamp="131695767253736175"/>
-				<File Name="Init" Hash="2534050983" Timestamp="131695610761087883"/>
-				<File Name="Polar" Hash="998264704" Timestamp="131695767254412975"/>
->>>>>>> master
+				<File Name="Alpine" Hash="147472664" Timestamp="1526414081"/>
+				<File Name="Init" Hash="453904582" Timestamp="1526414081"/>
+				<File Name="Polar" Hash="861070215" Timestamp="1526414081"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-<<<<<<< HEAD
-				<File Name="" Hash="785158774" Timestamp="131684462895306764"/>
-=======
-				<File Name="" Hash="3189728616" Timestamp="131695767254528280"/>
->>>>>>> master
+				<File Name="" Hash="3692027007" Timestamp="1526414081"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
