@@ -10,7 +10,7 @@ public class BirdBehaviour : MonoBehaviour
 	void Start()
 	{
 
-        AkSoundEngine.PostEvent("SeagullFly", gameObject);
+        //AkSoundEngine.PostEvent("SeagullFly", gameObject);
         StartCoroutine(Speak(Random.Range(30, 50)));
 	}
 

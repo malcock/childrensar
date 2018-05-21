@@ -70,8 +70,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}'
-    m_lastTimePart2: -1999258981
-    m_lastTimePsrt1: 1734509568
+    m_lastTimePart2: -1999257811
+    m_lastTimePsrt1: -1962194048
     ParentPhysicalPath: 
     PhysicalPath: Events/Alpine.wwu
     List:
@@ -725,10 +725,7 @@ MonoBehaviour:
       minDuration: 0
   ExpandedItems:
   - /ChildrensAR_WwiseProject
-  - /ChildrensAR_WwiseProject/SoundBanks
-  - /ChildrensAR_WwiseProject/SoundBanks/Default Work Unit
-  - /ChildrensAR_WwiseProject/States
-  - /ChildrensAR_WwiseProject/States/Default Work Unit
+  - /ChildrensAR_WwiseProject/Events
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -859,8 +856,8 @@ MonoBehaviour:
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{A3DB2BFC-ECAD-438B-AB05-BF96AA511EE3}'
-    m_lastTimePart2: -1999258981
-    m_lastTimePsrt1: 1734509568
+    m_lastTimePart2: -1999257811
+    m_lastTimePsrt1: -1962194048
     ParentPhysicalPath: 
     PhysicalPath: Switches/Default Work Unit.wwu
     List:
@@ -919,6 +916,39 @@ MonoBehaviour:
       values:
       - Appear
       - Disappear
+    - Guid: 213d34aed743d647aaddb31016ff5414
+      ID: -752785167
+      Name: OtterVoice
+      Path: Default Work Unit/OtterVoice
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OtterVoice
+        ObjectType: 11
+      ValueGuids:
+      - bytes: 87c509bff289f849ae695a3ca84decd8
+      - bytes: c3915de6ceea0b4c84913d55831603f7
+      - bytes: c2935b9607d1c34daa8fae249c4cc3a3
+      - bytes: 51062e43664f654bb289818caf4cd8da
+      - bytes: b760e2248c9d694196a4ead64a43d498
+      ValueIcons:
+      - ElementName: Climb
+        ObjectType: 10
+      - ElementName: Eat
+        ObjectType: 10
+      - ElementName: Idle
+        ObjectType: 10
+      - ElementName: Tapped
+        ObjectType: 10
+      - ElementName: Thrown
+        ObjectType: 10
+      valueIDs: 98c1716cc913932eff60b76f4b1da10b6f32b886
+      values:
+      - Climb
+      - Eat
+      - Idle
+      - Tapped
+      - Thrown
     - Guid: 073c4371b8e1364a84bcc2af745b8969
       ID: -575381344
       Name: PenguinQuack
