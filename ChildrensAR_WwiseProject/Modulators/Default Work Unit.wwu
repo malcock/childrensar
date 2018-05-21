@@ -97,6 +97,7 @@
 						</Property>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorEnvelope Name="Water_Splash_Large" ID="{C5FFEA88-8CFC-4BDC-9751-73A41D310A36}" ShortID="990189411"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

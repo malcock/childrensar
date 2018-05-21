@@ -166,7 +166,7 @@
 						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
 						<CurrentSwitchRef Name="Disappear" ID="{D86BEE63-801C-4433-AF1F-59383D9106E8}"/>
 						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
-						<CurrentSwitchRef Name="Climb" ID="{BF09C587-89F2-49F8-AE69-5A3CA84DECD8}"/>
+						<CurrentSwitchRef Name="Tapped" ID="{432E0651-4F66-4B65-B289-818CAF4CD8DA}"/>
 						<CurrentSwitchRef Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
 						<CurrentSwitchRef Name="Eat" ID="{82E8C6D4-AF3C-46D1-9C2F-BAB81E9863D3}"/>
 						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>

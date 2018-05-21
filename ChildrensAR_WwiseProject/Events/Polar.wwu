@@ -19,6 +19,11 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

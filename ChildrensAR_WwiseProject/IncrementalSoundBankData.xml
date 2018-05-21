@@ -8,47 +8,18 @@
 				<File Name="Polar" Hash="861070215" Timestamp="1526414273"/>
 			</Language>
 		</Banks>
-		<XMLInfo>
-			<Language ID="-1">
-				<File Name="" Hash="1985221421" Timestamp="1526414273"/>
-			</Language>
-		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
 		<Banks>
 			<Language ID="393239870">
-<<<<<<< HEAD
-				<File Name="Alpine" Hash="147472664" Timestamp="1526414058"/>
-				<File Name="Init" Hash="2410012206" Timestamp="1526414058"/>
-				<File Name="Polar" Hash="861070215" Timestamp="1526414058"/>
-=======
-				<File Name="Alpine" Hash="3801923211" Timestamp="131713886636258496"/>
-				<File Name="Init" Hash="3432067651" Timestamp="131695610639855588"/>
-				<File Name="Polar" Hash="998264704" Timestamp="131695767252563055"/>
->>>>>>> pitstop
+				<File Name="Alpine" Hash="353312912" Timestamp="1526922697"/>
+				<File Name="Init" Hash="2410012206" Timestamp="1526922700"/>
+				<File Name="Polar" Hash="1878526427" Timestamp="1526922700"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-<<<<<<< HEAD
-				<File Name="" Hash="2468235865" Timestamp="1526414058"/>
-=======
-				<File Name="" Hash="2966943697" Timestamp="131713886639030867"/>
->>>>>>> pitstop
-			</Language>
-		</XMLInfo>
-	</Platform>
-	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
-		<Banks>
-			<Language ID="393239870">
-				<File Name="Alpine" Hash="147472664" Timestamp="1526414081"/>
-				<File Name="Init" Hash="453904582" Timestamp="1526414081"/>
-				<File Name="Polar" Hash="861070215" Timestamp="1526414081"/>
-			</Language>
-		</Banks>
-		<XMLInfo>
-			<Language ID="-1">
-				<File Name="" Hash="3692027007" Timestamp="1526414081"/>
+				<File Name="" Hash="1363948768" Timestamp="1526922700"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
