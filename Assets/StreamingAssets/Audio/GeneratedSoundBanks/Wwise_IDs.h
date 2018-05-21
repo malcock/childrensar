@@ -116,6 +116,20 @@ namespace AK
             } // namespace SWITCH
         } // namespace OCTOPUSAPPEARDISAPPEAR
 
+        namespace OTTERVOICE
+        {
+            static const AkUniqueID GROUP = 3542182129U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CLIMB = 1819394456U;
+                static const AkUniqueID EAT = 781390793U;
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID TAPPED = 195108171U;
+                static const AkUniqueID THROWN = 2260218479U;
+            } // namespace SWITCH
+        } // namespace OTTERVOICE
+
         namespace PENGUINQUACK
         {
             static const AkUniqueID GROUP = 3719585952U;

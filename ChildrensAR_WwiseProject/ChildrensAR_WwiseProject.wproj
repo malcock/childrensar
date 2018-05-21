@@ -48,6 +48,22 @@ hmdUzwNfHmQ+ox5JEaXOIfsfdS1tF/Mu0beID05V+6c/3VdeOgQ==
 						<Value Platform="Mac">256</Value>
 					</ValueList>
 				</Property>
+<<<<<<< HEAD
+=======
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjUwNzAiIG1hc2s9IkxSVkY1MzExIiBlbmM9IjAiPjxsaWNl
+bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIzLDQs
+MTAiIGV4cGlyZXM9IjIwMTgtMDctMDEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFt
+ZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMyw0LDEwIiBleHBp
+cmVzPSIyMDE4LTA3LTAxIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVs
+IEEgTGljZW5zZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIzIiBleHBpcmVzPSIyMDE4
+LTA3LTAxIiAgLz48L3Byb2plY3Q+|fjkpt6RFeFoKwZlfg/fxpOyowNqrrABS+yp
+g9/D6ICBQvXQ6WMlUJ3rrw4HvPKzrI0Qwt9kA/+LxW5tb5eIUpShNf/1TdO13EvK
+A9JVKQcP9XANIvhI7/9xAaBr0MX6aM8gDh+/dWAKN8Ddc+bUAovp/VjTOhWkU4eQ
+8QgjsOMfkfSm2GxdozwfM4fnPJn86qOdpRsoAV7QeEnrNclN2WQbpBCKPZ7p4pBV
+7UNL8lbl6n65YwEUbkCcNRPL0qQM8WbpCw6COKx5uacRNWGw8XilYqzcwyX53AcW
+hmdUzwNfHmQ+ox5JEaXOIfsfdS1tF/Mu0beID05V+6c/3VdeOgQ==
+"/>
+>>>>>>> pitstop
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="Z:/Users/martinalcock/Unity/ChildrensAR/Assets/StreamingAssets/Audio/GeneratedSoundBanks"/>
