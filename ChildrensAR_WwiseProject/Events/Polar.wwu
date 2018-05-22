@@ -15,22 +15,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{E53DDF42-4F04-42C5-B974-000C360CD6E1}" ShortID="149274855">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.5"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Interact_Bubbles" ID="{0D3E410D-D661-4A04-B552-C1D841B205B8}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="PenguinSwim" ID="{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}">

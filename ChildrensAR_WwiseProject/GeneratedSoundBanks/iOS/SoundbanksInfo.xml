@@ -215,6 +215,10 @@
 					<ShortName>Ambience\Polar_ambient_BG_oneshot_04.wav</ShortName>
 					<Path>SFX\Ambience\Polar_ambient_BG_oneshot_04_1C9C67B2.wem</Path>
 				</File>
+				<File Id="55509548" Language="SFX">
+					<ShortName>sfx_water_object_splash_02.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="55577007" Language="SFX">
 					<ShortName>sfx_crab_bubble_1.wav</ShortName>
 					<Path>SFX\sfx_crab_bubble_1_1C9C67B2.wem</Path>
@@ -592,6 +596,10 @@
 					<Path>SFX\ArtfeltHospitalVR_PolarMusic1_StemPlinks_557711C9.wem</Path>
 					<PrefetchSize>3809</PrefetchSize>
 				</File>
+				<File Id="438994890" Language="SFX">
+					<ShortName>sfx_water_object_splash_04.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="439643296" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop.wav</ShortName>
 					<Path>SFX\ArtfeltSCH_Audio1stPassPolar_171117\sfx_swim_fast_loop_E7881CF9.wem</Path>
@@ -656,6 +664,10 @@
 				<File Id="496957545" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_01.wav</ShortName>
 					<Path>SFX\PhysicsInteraction\sfx_interaction_fish_pickup_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="497370259" Language="SFX">
+					<ShortName>sfx_water_object_splash_03.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="502894394" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_drop_02.wav</ShortName>
@@ -978,6 +990,10 @@
 				<File Id="785298120" Language="SFX">
 					<ShortName>sfx_bird_poop_splat_water_02.wav</ShortName>
 					<Path>SFX\sfx_bird_poop_splat_water_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="786860508" Language="SFX">
+					<ShortName>sfx_water_object_splash_01.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="790166200" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_penguin_drop_04.wav</ShortName>
@@ -1310,7 +1326,7 @@
 				</File>
 				<File Id="28259559" Language="SFX">
 					<ShortName>sfx_otter_vocal_eat_2.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_eat_2_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_eat_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="32973410" Language="SFX">
 					<ShortName>sfx_fish_impact_04.wav</ShortName>
@@ -1318,15 +1334,15 @@
 				</File>
 				<File Id="41951975" Language="SFX">
 					<ShortName>sfx_otter_vocal_tap_2.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_tap_2_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_tap_2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="55509548" Language="SFX">
+					<ShortName>sfx_water_object_splash_02.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="67748048" Language="SFX">
 					<ShortName>sfx_otter_vocal_idle_3.wav</ShortName>
-<<<<<<< HEAD
 					<Path>SFX\sfx_otter_vocal_idle_3_1C9C67B2.wem</Path>
-=======
-					<Path>SFX/sfx_otter_vocal_idle_3_1C9C67B2.wem</Path>
->>>>>>> origin/master
 				</File>
 				<File Id="82929334" Language="SFX">
 					<ShortName>sfx_fish_throw_03.wav</ShortName>
@@ -1350,7 +1366,7 @@
 				</File>
 				<File Id="106585859" Language="SFX">
 					<ShortName>sfx_otter_vocal_throw_3.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_throw_3_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_throw_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="107941502" Language="SFX">
 					<ShortName>sfx_bird_poop_splat_floor_02.wav</ShortName>
@@ -1374,15 +1390,15 @@
 				</File>
 				<File Id="119002547" Language="SFX">
 					<ShortName>sfx_otter_vocal_tap_1.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_tap_1_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_tap_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="131629115" Language="SFX">
 					<ShortName>Fish_Success_1.wav</ShortName>
-					<Path>SFX/Fish_Success_1_1C9C67B2.wem</Path>
+					<Path>SFX\Fish_Success_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="134585886" Language="SFX">
 					<ShortName>sfx_otter_vocal_climb_3.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_climb_3_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_climb_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="138337933" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_loop.wav</ShortName>
@@ -1466,7 +1482,7 @@
 				</File>
 				<File Id="322385416" Language="SFX">
 					<ShortName>sfx_otter_vocal_eat_1.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_eat_1_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_eat_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="328682017" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_03.wav</ShortName>
@@ -1474,7 +1490,7 @@
 				</File>
 				<File Id="341386475" Language="SFX">
 					<ShortName>sfx_otter_vocal_throw_2.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_throw_2_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_throw_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="349440548" Language="SFX">
 					<ShortName>sfx_general_bubble_5.wav</ShortName>
@@ -1494,7 +1510,7 @@
 				</File>
 				<File Id="366028323" Language="SFX">
 					<ShortName>sfx_otter_vocal_idle_1.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_idle_1_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_idle_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="380445953" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_03.wav</ShortName>
@@ -1530,7 +1546,7 @@
 				</File>
 				<File Id="418944040" Language="SFX">
 					<ShortName>sfx_otter_vocal_climb_4.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_climb_4_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_climb_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="420584994" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_01.wav</ShortName>
@@ -1538,7 +1554,7 @@
 				</File>
 				<File Id="424569356" Language="SFX">
 					<ShortName>sfx_otter_vocal_tap_3.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_tap_3_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_tap_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="426052603" Language="SFX">
 					<ShortName>Characters\Character_Frog\sfx_frog_vocal_03.wav</ShortName>
@@ -1548,9 +1564,13 @@
 					<ShortName>sfx_ring_throw_01.wav</ShortName>
 					<Path>SFX\sfx_ring_throw_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="438994890" Language="SFX">
+					<ShortName>sfx_water_object_splash_04.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="443188337" Language="SFX">
 					<ShortName>sfx_otter_vocal_throw_4.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_throw_4_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_throw_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="444334270" Language="SFX">
 					<ShortName>Forest_Music_Stems_v1\04-HospitalAR_3_Melody-Layer_v1.wav</ShortName>
@@ -1567,7 +1587,7 @@
 				</File>
 				<File Id="454444444" Language="SFX">
 					<ShortName>sfx_otter_vocal_tap_4.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_tap_4_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_tap_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="456718688" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_04.wav</ShortName>
@@ -1584,6 +1604,10 @@
 				<File Id="496957545" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_fish_pickup_01.wav</ShortName>
 					<Path>SFX\PhysicsInteraction\sfx_interaction_fish_pickup_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="497370259" Language="SFX">
+					<ShortName>sfx_water_object_splash_03.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="516727642" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_large_3.wav</ShortName>
@@ -1629,7 +1653,7 @@
 				</File>
 				<File Id="567906777" Language="SFX">
 					<ShortName>Fish_Success_3.wav</ShortName>
-					<Path>SFX/Fish_Success_3_1C9C67B2.wem</Path>
+					<Path>SFX\Fish_Success_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="585601475" Language="SFX">
 					<ShortName>Forest_ambient_tree_rustle_oneshot_01.wav</ShortName>
@@ -1665,7 +1689,7 @@
 				</File>
 				<File Id="654330516" Language="SFX">
 					<ShortName>sfx_otter_vocal_climb_1.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_climb_1_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_climb_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="673717789" Language="SFX">
 					<ShortName>Characters\Character_Salmon\sfx_salmon_scare_05.wav</ShortName>
@@ -1693,7 +1717,7 @@
 				</File>
 				<File Id="700428483" Language="SFX">
 					<ShortName>sfx_otter_vocal_climb_2.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_climb_2_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_climb_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="705865624" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_01.wav</ShortName>
@@ -1713,7 +1737,7 @@
 				</File>
 				<File Id="736780992" Language="SFX">
 					<ShortName>sfx_otter_vocal_eat_3.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_eat_3_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_eat_3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="745403754" Language="SFX">
 					<ShortName>ArtfeltSCH_Audio1stPassPolar_171117\sfx_water_splash_med_02.wav</ShortName>
@@ -1743,6 +1767,10 @@
 				<File Id="785298120" Language="SFX">
 					<ShortName>sfx_bird_poop_splat_water_02.wav</ShortName>
 					<Path>SFX\sfx_bird_poop_splat_water_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="786860508" Language="SFX">
+					<ShortName>sfx_water_object_splash_01.wav</ShortName>
+					<Path>SFX\sfx_water_object_splash_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="808604161" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_02.wav</ShortName>
@@ -1779,11 +1807,7 @@
 				</File>
 				<File Id="854843095" Language="SFX">
 					<ShortName>sfx_otter_vocal_eat_4.wav</ShortName>
-<<<<<<< HEAD
 					<Path>SFX\sfx_otter_vocal_eat_4_1C9C67B2.wem</Path>
-=======
-					<Path>SFX/sfx_otter_vocal_eat_4_1C9C67B2.wem</Path>
->>>>>>> origin/master
 				</File>
 				<File Id="874539349" Language="SFX">
 					<ShortName>Ambience\Forest_ambient_BG_oneshot_06.wav</ShortName>
@@ -1825,15 +1849,15 @@
 				</File>
 				<File Id="912175508" Language="SFX">
 					<ShortName>sfx_otter_vocal_tap_5.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_tap_5_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_tap_5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="920104002" Language="SFX">
 					<ShortName>sfx_otter_vocal_throw_1.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_throw_1_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_throw_1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="924267088" Language="SFX">
 					<ShortName>sfx_otter_vocal_idle_4.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_idle_4_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_idle_4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="924287429" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_vocal_01.wav</ShortName>
@@ -1845,7 +1869,7 @@
 				</File>
 				<File Id="971941296" Language="SFX">
 					<ShortName>sfx_otter_vocal_idle_2.wav</ShortName>
-					<Path>SFX/sfx_otter_vocal_idle_2_1C9C67B2.wem</Path>
+					<Path>SFX\sfx_otter_vocal_idle_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="981987302" Language="SFX">
 					<ShortName>Characters\Character_Bear\sfx_bear_splash_appear.wav</ShortName>
@@ -1857,7 +1881,7 @@
 				</File>
 				<File Id="1038848509" Language="SFX">
 					<ShortName>Fish_Success_2.wav</ShortName>
-					<Path>SFX/Fish_Success_2_1C9C67B2.wem</Path>
+					<Path>SFX\Fish_Success_2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1039634106" Language="SFX">
 					<ShortName>Characters\Character_Ducks\sfx_ducks_fly_05.wav</ShortName>
@@ -1873,11 +1897,7 @@
 				</File>
 				<File Id="1051380449" Language="SFX">
 					<ShortName>PhysicsInteraction\sfx_interaction_splash_01.wav</ShortName>
-<<<<<<< HEAD
 					<Path>SFX\PhysicsInteraction\sfx_interaction_splash_01_1C9C67B2.wem</Path>
-=======
-					<Path>SFX/PhysicsInteraction/sfx_interaction_splash_01_1C9C67B2.wem</Path>
->>>>>>> origin/master
 				</File>
 				<File Id="1070384383" Language="SFX">
 					<ShortName>sfx_interaction_fish_pickupV2_02.wav</ShortName>
