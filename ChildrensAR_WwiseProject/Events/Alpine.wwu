@@ -168,6 +168,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BearEat" ID="{1584A535-DCA6-48CD-863B-2E6246D30F8F}">
+					<ChildrenList>
+						<Action Name="" ID="{8234820C-7F6D-46CF-BA48-F1C3194A6500}" ShortID="78789846">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Eats" ID="{45400050-EB30-40DA-A336-4BDDC604070B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearKidEat" ID="{0F41744F-E07F-4C88-8425-45C3FF6A2DC9}">
+					<ChildrenList>
+						<Action Name="" ID="{E870F3EC-3E61-4D51-9EB2-BF21CC2D8031}" ShortID="203779519">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Kids_Eat" ID="{C72172D3-EB81-4CBD-A297-FC6CE9BC646D}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearIdle" ID="{B581253A-C58E-44D0-A27E-496E7C93A57F}">
+					<ChildrenList>
+						<Action Name="" ID="{1612F5A5-E848-4A8B-9E96-E3D66A24506F}" ShortID="273651529">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Vocals_Idle" ID="{A82FF388-D9EB-431D-A47A-58764FD69A45}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

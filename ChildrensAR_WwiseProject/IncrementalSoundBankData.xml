@@ -3,42 +3,42 @@
 	<Platform GUID="{36A20F43-2A2B-440A-B564-E9A2B0DBFE11}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="1931500872" Timestamp="1527004049"/>
-				<File Name="Init" Hash="2737208852" Timestamp="1527004049"/>
-				<File Name="Polar" Hash="2016898337" Timestamp="1527004049"/>
+				<File Name="Alpine" Hash="3757601760" Timestamp="1528124792"/>
+				<File Name="Init" Hash="185028184" Timestamp="1528124792"/>
+				<File Name="Polar" Hash="3847894306" Timestamp="1528124792"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="695747490" Timestamp="1527004049"/>
+				<File Name="" Hash="2341372183" Timestamp="1528124792"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{C5B918DE-B4A8-4BEC-BA56-0DF12718F5F7}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="1931500872" Timestamp="1527003992"/>
-				<File Name="Init" Hash="2410012206" Timestamp="1527003995"/>
-				<File Name="Polar" Hash="2016898337" Timestamp="1527003995"/>
+				<File Name="Alpine" Hash="3757601760" Timestamp="1528124730"/>
+				<File Name="Init" Hash="1643044362" Timestamp="1528124733"/>
+				<File Name="Polar" Hash="3847894306" Timestamp="1528124733"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="449707406" Timestamp="1527003995"/>
+				<File Name="" Hash="3051512187" Timestamp="1528124733"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{D1527DA6-5AEC-4EC6-B6AD-D6FF6C8375EA}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Alpine" Hash="1931500872" Timestamp="1527004040"/>
-				<File Name="Init" Hash="453904582" Timestamp="1527004040"/>
-				<File Name="Polar" Hash="2016898337" Timestamp="1527004040"/>
+				<File Name="Alpine" Hash="3757601760" Timestamp="1528124779"/>
+				<File Name="Init" Hash="4232372962" Timestamp="1528124779"/>
+				<File Name="Polar" Hash="3847894306" Timestamp="1528124779"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1326959240" Timestamp="1527004040"/>
+				<File Name="" Hash="2643997197" Timestamp="1528124779"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

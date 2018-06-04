@@ -24,6 +24,13 @@
 										<Bus Name="Characters_Alpine" ID="{5DA50D7B-48A1-4802-83C2-F2CA636F4059}"/>
 										<Bus Name="Ambience_Alpine" ID="{5F6C2FC9-DF08-4A2B-B440-991E4C5C732D}"/>
 										<Bus Name="InteractionSFX_Alpine" ID="{A56A045F-8102-44FD-A35F-24FA4F37C630}"/>
+										<AuxBus Name="Reverb_Polar_01" ID="{9798BF4D-5B72-46BF-8E2C-EF846F403179}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
 									</ChildrenList>
 								</Bus>
 								<Bus Name="PolarSFX" ID="{2C6FCE25-DC01-46B1-BE6C-4EA7A16F6511}">
