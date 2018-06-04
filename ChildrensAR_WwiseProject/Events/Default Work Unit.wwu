@@ -215,6 +215,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="InteractSalmonPickup" ID="{F5CC5724-CE0C-499C-831A-D755F5A85BE7}">
+					<ChildrenList>
+						<Action Name="" ID="{14608F56-EBC0-4B42-B929-A5168FB145AE}" ShortID="966171510">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Salmon_Pickup" ID="{467EBFF2-104A-46B3-A462-5C90903342CB}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InteractSalmonThrow" ID="{1BD4FE67-D498-4275-A429-4F4108682678}">
+					<ChildrenList>
+						<Action Name="" ID="{90013A14-EE62-4982-968D-6CF8D794C455}" ShortID="42256185">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interact_Salmon_Throw" ID="{60E3A800-AA10-43CD-86EA-87A4881BA21D}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AnimationSalmonFall" ID="{65521CEE-53A2-4C32-A854-3B92BE44BF23}">
+					<ChildrenList>
+						<Action Name="" ID="{30588D57-057B-4344-A096-00762E905D72}" ShortID="3858488">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Animation_Salmon_Fall" ID="{7A4E84C1-582B-4FA9-A3EF-8329104F8004}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AnimationSalmonFlap" ID="{21675D03-DEBD-4E46-AF79-8AEC5DF16958}">
+					<ChildrenList>
+						<Action Name="" ID="{43A16C57-784E-4721-9297-C3AFE5962CF7}" ShortID="536820272">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Animation_Salmon_Flap" ID="{7C686D39-DBDA-4809-8D2A-2C53EB274721}" WorkUnitID="{C658B9AE-493A-4693-B4FF-DD2E7A53A790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
