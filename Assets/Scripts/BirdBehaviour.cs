@@ -14,6 +14,7 @@ public class BirdBehaviour : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+        interactableObj = GetComponent<InteractableObject>();
         interactableObj.OnTap.AddListener(TapSpeak);
         //AkSoundEngine.PostEvent("SeagullFly", gameObject);
         StartCoroutine(Speak(Random.Range(30, 50)));

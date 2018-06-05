@@ -65,7 +65,7 @@ public class Edible : MonoBehaviour {
         Eater eater = collision.gameObject.GetComponent<Eater>();
         if(eater !=null){
             if (eater.OnFoodReceived != null) eater.OnFoodReceived.Invoke();
-            Destroy(gameObject,0.05f);
+            Destroy(gameObject,0.075f);
         }
     }
 

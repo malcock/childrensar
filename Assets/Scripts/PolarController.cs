@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PolarController : MonoBehaviour {
 
@@ -11,8 +12,11 @@ public class PolarController : MonoBehaviour {
     public float penguinTime = 240, octopusTime = 240, changeover = 5, fadeTime=3;
 
     public float timeout;
+    public CanvasGroup fadeGroup;
 
     float waterLevel;
+
+    bool putDown = false;
 
     public enum State {Begin, Penguins, Escape, FloatDrop, Octopus, Return }
     [SerializeField]
@@ -30,6 +34,11 @@ public class PolarController : MonoBehaviour {
                     StartCoroutine(Begin());
                     break;
                 case State.Penguins:
+                    Ring[] rings = FindObjectsOfType<Ring>();
+                    foreach (Ring r in rings)
+                    {
+                        r.DisappearRing();
+                    }
                     StartCoroutine(SwitchObjects(false));
                     for (int p = 0; p < penguins.Count; p++)
                     {
@@ -49,7 +58,7 @@ public class PolarController : MonoBehaviour {
                     timeout = changeover;
                     break;
                 case State.Return:
-
+                    
                     //if (octopus.state != OctopusController.State.End) octopus.StopGame();
                     whale.OctoOut = false;
                     timeout = changeover;
@@ -77,6 +86,8 @@ public class PolarController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        AkSoundEngine.PostEvent("PolarAmbience", gameObject);
+        StartCoroutine(FadeIn());
         state = State.Begin;
 
 
@@ -88,11 +99,25 @@ public class PolarController : MonoBehaviour {
         octopus.gameTime = octopusTime - 10;
         timeout = penguinTime;
 
-        AkSoundEngine.PostEvent("PolarAmbience",gameObject);
+        //AkSoundEngine.PostEvent("PolarAmbience",gameObject);
 	}
+
+    IEnumerator FadeIn(){
+        fadeGroup.alpha = 1;
+        float timing = 2;
+        //Vector3 origScale = transform.localScale;
+        while (timing > 0)
+        {
+            //transform.localScale = origScale * (timeout / fadeOutTime);
+            fadeGroup.alpha = (timing / 2);
+            timing -= Time.deltaTime;
+            yield return null;
+        }
+    }
 	
     IEnumerator Begin(){
         incidentals.SetActive(false);
+
 
         float timer = 10;
         while(timer>0){
@@ -140,13 +165,15 @@ public class PolarController : MonoBehaviour {
                 penguins[p].fishEaten = 5;
             }
         }
-//#if UNITY_IOS
-        if (SystemInfo.batteryStatus != BatteryStatus.Discharging)
+#if UNITY_IOS
+        if (SystemInfo.batteryStatus != BatteryStatus.Discharging && !putDown)
         {
-            //Debug.Log("plugged in - load attract scene");
-            //GameControl.Instance.LoadScene(AttractToLoad);
+            AkSoundEngine.StopAll();
+            Debug.Log("plugged in - load attract scene");
+            GameControl.Instance.LoadScene(AttractToLoad);
+            putDown = true;
         }
-//#endif
+#endif
         if(Input.GetKeyUp(KeyCode.Return)){
             Debug.Log("Manual Switch");
             GameControl.Instance.LoadScene(AttractToLoad);
@@ -163,7 +190,7 @@ public class PolarController : MonoBehaviour {
                         if (penguins[p].fishEaten >= penguins[p].fishMax) allFed++;
                     }
                     //Debug.Log("fed count:" + allFed);
-                    if (allFed >= penguins.Count) state = State.Escape;
+                    if (allFed >= GameControl.Instance.feedNumber) state = State.Escape;
                 }
                 break;
 

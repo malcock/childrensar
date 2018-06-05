@@ -84,13 +84,13 @@ public class MainCharacter : MonoBehaviour
         //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
         if(state==State.Idle){
             string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-            if (state != State.Escape)
+            if (swimState != SwimState.Escape)
             {
                 AkSoundEngine.SetSwitch(eventName, "Idle", gameObject);
                 AkSoundEngine.PostEvent(eventName, gameObject);
             }
             StartCoroutine(IdleSound(Random.Range(20, 80)));
-            if (characterType == CharacterType.Penguin)
+            if (characterType == CharacterType.Penguin && state != State.Escape)
             {
                 int id = Random.Range(0, 2);
                 if(id==1){
@@ -134,7 +134,7 @@ public class MainCharacter : MonoBehaviour
 
         doll.hips.GetComponent<Rigidbody>().isKinematic = true;
         yield return null;
-        doll.hips.position = new Vector3(0, 10, 0);
+        doll.hips.position = new Vector3(0, 5, 0);
         yield return null;
         doll.hips.GetComponent<Rigidbody>().isKinematic = false;
 
@@ -149,7 +149,7 @@ public class MainCharacter : MonoBehaviour
         //if the character has fallen through the world somehow, we need to reset it 
         if (transform.position.y < -50)
         {
-            transform.position = new Vector3(0, 50, 0);
+            transform.position = new Vector3(0, 5, 0);
         }
         if (doll.hips.position.y < -50)
         {
@@ -357,7 +357,7 @@ public class MainCharacter : MonoBehaviour
                     rot.x = 90;
 
                     transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rot), Time.deltaTime * 2);
-                    direction.y = 0;
+                    //direction.y = 0;
                     direction = direction.normalized;
                     direction *= 8;
                     mainCollider.attachedRigidbody.AddForce(direction);
@@ -464,7 +464,7 @@ public class MainCharacter : MonoBehaviour
         doll.ragdolled = true;
         state = State.Dragging;
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        if (state != State.Escape)
+        if (swimState != SwimState.Escape)
         {
             AkSoundEngine.SetSwitch(eventName, "Tapped", gameObject);
             AkSoundEngine.PostEvent(eventName, gameObject);
@@ -475,7 +475,7 @@ public class MainCharacter : MonoBehaviour
         state = State.Dropped;
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
         string switchName = isGettingOutOfWater ? "Climb" : "Thrown";
-        if(state!=State.Escape){
+        if(swimState != SwimState.Escape){
 			AkSoundEngine.SetSwitch(eventName, switchName, gameObject);
 			AkSoundEngine.PostEvent(eventName, gameObject);
             
@@ -541,8 +541,11 @@ public class MainCharacter : MonoBehaviour
                     splashSize = "SmallSoft";
                 }
             }
-            Splash splash = Instantiate(Resources.Load("Splash", typeof(Splash)), obj.transform.position, Quaternion.identity) as Splash;
-            splash.splashSize = splashSize;
+            //if(swimState!=SwimState.Escape){
+                Splash splash = Instantiate(Resources.Load("Splash", typeof(Splash)), obj.transform.position, Quaternion.identity) as Splash;
+                splash.splashSize = splashSize;
+            //}
+
         }
     }
 
@@ -575,18 +578,24 @@ public class MainCharacter : MonoBehaviour
     public void Speak()
     {
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        AkSoundEngine.SetSwitch(eventName, "Call", gameObject);
-        AkSoundEngine.PostEvent(eventName, gameObject);
+        if (swimState != SwimState.Escape)
+        {
+            AkSoundEngine.SetSwitch(eventName, "Call", gameObject);
+            AkSoundEngine.PostEvent(eventName, gameObject);
+
+        }
         anim.SetTrigger("Speak");
     }
 
     public void Catch()
     {
         anim.SetTrigger("Catch");
+        if(swimState != SwimState.Escape){
+            string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+            AkSoundEngine.SetSwitch(eventName, "Eat", gameObject);
+            AkSoundEngine.PostEvent(eventName, gameObject);
+        }
 
-        string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
-        AkSoundEngine.SetSwitch(eventName, "Eat", gameObject);
-        AkSoundEngine.PostEvent(eventName, gameObject);
 
         fishEaten++;
         StartCoroutine(AnimateWeight(1f, ((float)fishEaten/(float)fishMax) * 100));

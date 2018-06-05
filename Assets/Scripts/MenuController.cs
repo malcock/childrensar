@@ -5,7 +5,7 @@ using System;
 using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
-    public Slider gameATime, gameBTime, difficulty;
+    public Slider gameATime, gameBTime, fishPerCharacter,feedNumber;
 	// Use this for initialization
 	void Start()
 	{
@@ -14,8 +14,11 @@ public class MenuController : MonoBehaviour
         SetGameATime((int) gameATime.value);
         gameBTime.value = (PlayerPrefs.HasKey("GameBTime")) ? (int)PlayerPrefs.GetInt("GameBTime") : 240;
         SetGameBTime((int) gameBTime.value);
-        difficulty.value = (PlayerPrefs.HasKey("Difficulty")) ? (int) PlayerPrefs.GetInt("Difficulty") : 2;
-        SetDifficulty((int) difficulty.value);
+        fishPerCharacter.value = (PlayerPrefs.HasKey("FishPerCharacter")) ? (int) PlayerPrefs.GetInt("FishPerCharacter") : 2;
+        SetFishPerCharacter((int) fishPerCharacter.value);
+        feedNumber.value = (PlayerPrefs.HasKey("FeedNumber")) ? (int)PlayerPrefs.GetInt("FeedNumber") : 2;
+        SetFeedNumber((int) feedNumber.value);
+
 
 	}
 
@@ -46,7 +49,7 @@ public class MenuController : MonoBehaviour
         PlayerPrefs.SetInt("GameBTime", v);
     }
 
-    public void SetDifficulty(float val)
+    public void SetFishPerCharacter(float val)
     {
         int v = (int)val;
         switch(v){
@@ -60,7 +63,26 @@ public class MenuController : MonoBehaviour
                 GameControl.Instance.fishMax = 5;
                 break;
         }
-        PlayerPrefs.SetInt("Difficulty", v);
+        PlayerPrefs.SetInt("FishPerCharacter", v);
+
+    }
+
+    public void SetFeedNumber(float val)
+    {
+        int v = (int)val;
+        switch (v)
+        {
+            case 1:
+                GameControl.Instance.feedNumber = 2;
+                break;
+            case 2:
+                GameControl.Instance.feedNumber = 3;
+                break;
+            case 3:
+                GameControl.Instance.feedNumber = 5;
+                break;
+        }
+        PlayerPrefs.SetInt("FeedNumber", v);
 
     }
 }

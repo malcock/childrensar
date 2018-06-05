@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class AttractController : MonoBehaviour {
@@ -9,6 +10,10 @@ public class AttractController : MonoBehaviour {
 
     public AttractState attractMode = AttractState.Polar;
     public string LevelToLoad = "Burns Stencil";
+    bool isUp = false;
+
+    public CanvasGroup fadeGroup;
+    public float fadeOutTime = 2; 
 
 	// Use this for initialization
 	void Start () {
@@ -24,8 +29,9 @@ public class AttractController : MonoBehaviour {
     void Update()
     {
         
-        if(SystemInfo.batteryStatus == BatteryStatus.Discharging){
+        if(SystemInfo.batteryStatus == BatteryStatus.Discharging && !isUp){
             LoadLevel();
+            isUp = true;
         }
 
         if (Input.GetKeyUp(KeyCode.Return))
@@ -42,7 +48,17 @@ public class AttractController : MonoBehaviour {
 
     public IEnumerator playhandler(){
         AkSoundEngine.PostEvent("TabletPickup", gameObject);
-        yield return new WaitForSeconds(3);
+        float timeout = fadeOutTime;
+        //Vector3 origScale = transform.localScale;
+        while (timeout > 0)
+        {
+            //transform.localScale = origScale * (timeout / fadeOutTime);
+            fadeGroup.alpha = 1 - (timeout / fadeOutTime);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+        yield return new WaitForSeconds(1);
+        AkSoundEngine.StopAll();
         GameControl.Instance.LoadScene(LevelToLoad);
     }
 }

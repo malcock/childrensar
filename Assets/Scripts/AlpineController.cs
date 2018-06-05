@@ -12,8 +12,10 @@ public class AlpineController : MonoBehaviour
     public float otterTime = 240, bearTime = 240, changeover = 5, fadeTime = 3;
 
     public float timeout;
+    public CanvasGroup fadeGroup;
 
     float waterLevel;
+    bool putDown = false;
 
     public enum State { Begin, Otters, Escape, FloatDrop, Bears, Return }
     [SerializeField]
@@ -34,6 +36,11 @@ public class AlpineController : MonoBehaviour
                     StartCoroutine(Begin());
                     break;
                 case State.Otters:
+                    SalmonController[] rings = FindObjectsOfType<SalmonController>();
+                    foreach (SalmonController r in rings)
+                    {
+                        r.DisappearRing();
+                    }
                     StartCoroutine(SwitchObjects(false));
                     for (int p = 0; p < otters.Count; p++)
                     {
@@ -82,6 +89,9 @@ public class AlpineController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+        AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
+        StartCoroutine(FadeIn());
         state = State.Begin;
 
 
@@ -93,7 +103,21 @@ public class AlpineController : MonoBehaviour
         bears.gameTime = bearTime - 10;
         timeout = otterTime;
 
-        AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
+        //AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
+    }
+
+    IEnumerator FadeIn()
+    {
+        fadeGroup.alpha = 1;
+        float timing = 2;
+        //Vector3 origScale = transform.localScale;
+        while (timing > 0)
+        {
+            //transform.localScale = origScale * (timeout / fadeOutTime);
+            fadeGroup.alpha = (timing / 2);
+            timing -= Time.deltaTime;
+            yield return null;
+        }
     }
 
     IEnumerator Begin()
@@ -153,13 +177,15 @@ public class AlpineController : MonoBehaviour
                 otters[p].fishEaten = 5;
             }
         }
-        //#if UNITY_IOS
-        if (SystemInfo.batteryStatus != BatteryStatus.Discharging)
+#if UNITY_IOS
+        if (SystemInfo.batteryStatus != BatteryStatus.Discharging && !putDown)
         {
-            //Debug.Log("plugged in - load attract scene");
-            //GameControl.Instance.LoadScene(AttractToLoad);
+            AkSoundEngine.StopAll();
+            Debug.Log("plugged in - load attract scene");
+            GameControl.Instance.LoadScene(AttractToLoad);
+            putDown = true;
         }
-        //#endif
+#endif
         if (Input.GetKeyUp(KeyCode.Return))
         {
             Debug.Log("Manual Switch");
@@ -178,7 +204,7 @@ public class AlpineController : MonoBehaviour
                         if (otters[p].fishEaten >= otters[p].fishMax) allFed++;
                     }
                     //Debug.Log("fed count:" + allFed);
-                    if (allFed >= otters.Count) state = State.Escape;
+                    if (allFed >= GameControl.Instance.feedNumber) state = State.Escape;
                 }
                 break;
 

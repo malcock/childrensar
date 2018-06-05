@@ -13,6 +13,7 @@ public class BearController : MonoBehaviour {
 
     bool gameSuccess = false;
     public bool isFed = false;
+    public bool isReady = false;
 
     Vector3 orig;
 
@@ -26,7 +27,7 @@ public class BearController : MonoBehaviour {
 
     public float currentOffset = 1.05f;
     float offset = 0;
-
+    SkinnedMeshRenderer skin;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -38,6 +39,7 @@ public class BearController : MonoBehaviour {
 	void Start () {
         orig = transform.position;
         currentOffset = unfedOffset;
+        skin = GetComponentInChildren<SkinnedMeshRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -50,12 +52,19 @@ public class BearController : MonoBehaviour {
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 3);
         float t = 0;
         float tD = 0;
+       
         if (state != State.Start)
         {
             t = Time.time;
             tD = Time.deltaTime;
         }
-
+        if (childBears.Count>0){
+            List<BearController> fedChildren = childBears.Where(x => x.isFed).ToList();
+            if(fedChildren.Count==childBears.Count){
+                animator.SetTrigger("Ready");
+                isReady = true;
+            }
+        }
             
         if (isFed)
         {
@@ -89,6 +98,7 @@ public class BearController : MonoBehaviour {
                 {
                     b.animator.SetTrigger("Celebrate");
                     b.isFed = false;
+                    b.isReady = false;
                     b.currentOffset = b.unfedOffset;
                     b.state = State.End;
                     if (b.childBears.Count == 0)
@@ -101,6 +111,7 @@ public class BearController : MonoBehaviour {
                     }
                 }
                 isFed = false;
+                isReady = false;
                 state = State.End;
                 currentOffset = unfedOffset;
                 StartCoroutine(FinaliseState());
@@ -114,7 +125,10 @@ public class BearController : MonoBehaviour {
         state = State.Start;
         foreach(BearController b in childBears){
             b.state = State.Start;
+            b.skin.enabled = false;
         }
+        skin.enabled = false;
+
         FindObjectOfType<AlpineController>().state = AlpineController.State.Return;
     }
     public void BeginGame()
@@ -127,11 +141,15 @@ public class BearController : MonoBehaviour {
     IEnumerator PlayGame()
     {
         yield return new WaitForSeconds(1);
+
         foreach(BearController b in childBears)
         {
             b.BeginGame();
+            b.isReady = true;
+            b.skin.enabled = true;
         }
         state = State.Begin;
+        skin.enabled = true;
 
         animator.SetTrigger("Ready");
         Debug.Log(name + " play bears!");

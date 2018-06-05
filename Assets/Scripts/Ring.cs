@@ -11,7 +11,7 @@ public class Ring : MonoBehaviour
     public bool isActive = true;
     private bool success = false;
 
-    public float fadeOutTime = 5;
+    public float fadeOutTime = 1;
     InteractableObject interactableObj;
 
     // Use this for initialization
@@ -139,18 +139,21 @@ public class Ring : MonoBehaviour
     }
 
     IEnumerator FadeAway(){
+        //Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
+        //foreach (Rigidbody r in rbs)
+        //{
+        //    r.isKinematic = true;
+        //    r.useGravity = false;
+        //}
+        //Collider[] cls = GetComponentsInChildren<Collider>();
+        //foreach(Collider c in cls){
+        //    c.enabled = false;
+        //}
         float timeout = fadeOutTime;
-        List<Material> materials = new List<Material>();
-        Renderer[] renders = GetComponentsInChildren<Renderer>();
-        foreach(Renderer r in renders){
-            materials.AddRange(r.materials);
-        }
+        //Vector3 origScale = transform.localScale;
         while(timeout>0){
-            foreach(Material m in materials){
-                Color c = m.color;
-                c.a = timeout / fadeOutTime;
-                m.color = c;
-            }
+            //transform.localScale = origScale * (timeout / fadeOutTime);
+
             timeout -= Time.deltaTime;
             yield return null;
         }
@@ -158,4 +161,33 @@ public class Ring : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void DisappearRing(){
+        StartCoroutine(DisRing());
+    }
+
+
+    IEnumerator DisRing()
+    {
+        Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
+        foreach (Rigidbody r in rbs)
+        {
+            r.isKinematic = true;
+            r.useGravity = false;
+        }
+        Collider[] cls = GetComponentsInChildren<Collider>();
+        foreach(Collider c in cls){
+            c.enabled = false;
+        }
+        float timeout = 1;
+        Vector3 origScale = transform.localScale;
+        while (timeout > 0)
+        {
+            transform.localScale = origScale * (timeout / fadeOutTime);
+
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+
+        Destroy(gameObject);
+    }
 }

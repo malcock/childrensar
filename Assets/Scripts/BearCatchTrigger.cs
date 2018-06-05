@@ -19,12 +19,15 @@ public class BearCatchTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        if(other.gameObject.GetComponentInParent<Edible>()){
-            Debug.Log("edible");
-            parent.Catch();
-            Destroy(other.gameObject);
+        if(!parent.isFed && parent.isReady){
+            if (other.gameObject.GetComponentInParent<Edible>())
+            {
+                Debug.Log("edible");
+                parent.Catch();
+                Destroy(other.gameObject,0.1f);
+            }
         }
+
 
     }
 }

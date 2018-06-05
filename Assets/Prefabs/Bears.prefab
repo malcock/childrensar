@@ -3740,7 +3740,7 @@ MonoBehaviour:
   gameTime: 240
   isFed: 0
   bobOffset: 0
-  bobAmount: 0.13
+  bobAmount: 0.01
   unfedOffset: 1.05
   fedOffset: 0.5
   currentOffset: 1.05
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   bobOffset: 2
   bobAmount: 0.05
   unfedOffset: 1
-  fedOffset: 0.35
+  fedOffset: 0.15
   currentOffset: 1.05
 --- !u!114 &114641187030681356
 MonoBehaviour:
@@ -3830,7 +3830,7 @@ MonoBehaviour:
   bobOffset: 6
   bobAmount: 0.05
   unfedOffset: 1
-  fedOffset: 0.35
+  fedOffset: 0.15
   currentOffset: 1.05
 --- !u!114 &114706316761193286
 MonoBehaviour:
@@ -3911,7 +3911,7 @@ MonoBehaviour:
   bobOffset: 5
   bobAmount: 0.05
   unfedOffset: 1
-  fedOffset: 0.35
+  fedOffset: 0.15
   currentOffset: 1.05
 --- !u!114 &114857454004389572
 MonoBehaviour:
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   bobOffset: 0
   bobAmount: 0.05
   unfedOffset: 1
-  fedOffset: 0.35
+  fedOffset: 0.15
   currentOffset: 1.05
 --- !u!135 &135147315690795294
 SphereCollider:

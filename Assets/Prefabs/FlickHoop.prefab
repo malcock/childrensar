@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinTime: 1
   isActive: 1
-  fadeOutTime: 5
+  fadeOutTime: 10
 --- !u!114 &114363894698872158
 MonoBehaviour:
   m_ObjectHideFlags: 1

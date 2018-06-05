@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 54809972482676702}
   - component: {fileID: 136376537326878804}
   - component: {fileID: 114582873539530732}
-  - component: {fileID: 114411477025683282}
   m_Layer: 0
   m_Name: Salmon_01
   m_TagString: Untagged
@@ -149,6 +148,7 @@ GameObject:
   - component: {fileID: 114644299128004524}
   - component: {fileID: 114488158035959708}
   - component: {fileID: 114147314659676380}
+  - component: {fileID: 114100070507561470}
   m_Layer: 0
   m_Name: FlickSalmon
   m_TagString: Untagged
@@ -540,6 +540,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114100070507561470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823991079314822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6feb6b82a19544b2bb8074685127df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTime: 5
+  isActive: 1
 --- !u!114 &114147314659676380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -573,17 +586,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d35d229b694b6409b97c4ec6bbae9f88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114411477025683282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1043788880032736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6feb6b82a19544b2bb8074685127df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114488158035959708

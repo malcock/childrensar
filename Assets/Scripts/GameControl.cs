@@ -22,6 +22,7 @@ public class GameControl : MonoBehaviour
     public float gametimeA = 240, gametimeB = 240;
 
     public int fishMax = 3;
+    public int feedNumber = 3;
 
     public static GameControl Instance = null;
 

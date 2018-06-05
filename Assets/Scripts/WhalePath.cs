@@ -9,8 +9,21 @@ public class WhalePath : MonoBehaviour {
     private int timesaround = 0;
 
     Animator animator;
-    public bool OctoOut = false;
+    private bool _octoOut = false;
+    public bool OctoOut {
+        get { return _octoOut; }
+        set {
+            _octoOut = value;
 
+            if(_octoOut){
+                
+                transform.position = new Vector3(0, -10, 0);
+            } else {
+                
+                transform.localPosition = Vector3.zero;
+            }
+        }
+    }
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
@@ -24,7 +37,7 @@ public class WhalePath : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 
 
