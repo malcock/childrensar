@@ -17,6 +17,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Character_Bear" ID="{1815722E-38FB-40A8-B066-CE9EE5ABCB0B}" ShortID="728843272">
@@ -51,7 +54,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}" ShortID="724154623">
+										<BlendContainer Name="sfx_bear_appear" ID="{367A0372-0AF2-4B9D-9A5F-E385910BC3A9}" ShortID="1044844501">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -61,55 +64,312 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" ShortID="981987302">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Character_Bear\sfx_bear_splash_appear.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}" ShortID="724154623">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" ShortID="981987302">
+															<Language>SFX</Language>
+															<AudioFile>Characters\Character_Bear\sfx_bear_splash_appear.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_bear_kids_appear" ID="{98EECB4D-3D1F-4159-81D3-62B676D685EE}" ShortID="692495513">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>1.2</Value>
+															</ValueList>
+														</Property>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_bear_kids_appear" ID="{DED9738A-E4A2-4C33-BAAA-8326E6893603}" ShortID="229425191">
+															<Language>SFX</Language>
+															<AudioFile>sfx_bear_kids_appear.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_bear_kids_appear" ID="{DED9738A-E4A2-4C33-BAAA-8326E6893603}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Bear_Vocals" ID="{D2900BB2-DB9A-4892-A7D0-4108D98580C0}" ShortID="985089864">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_bear_vocal_01" ID="{86021594-1FFD-407D-8229-E2021DAD71E0}" ShortID="974964139">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_01" ID="{005F4BA9-9F9C-4C9D-90CD-6A202CD6D6AB}" ShortID="538002782">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_01.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="128929056"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_01" ID="{005F4BA9-9F9C-4C9D-90CD-6A202CD6D6AB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_02" ID="{CA5592BC-FCD6-4B5E-8CED-D9E3CFD27DAF}" ShortID="976987286">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_02" ID="{40235EC2-24E5-4A2A-81E5-AA77901DF670}" ShortID="948164944">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_02.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="608128778"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_02" ID="{40235EC2-24E5-4A2A-81E5-AA77901DF670}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_03" ID="{66C9C00C-B47B-4E4E-8C9D-3D940343950F}" ShortID="354845062">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_03" ID="{24AB090F-8694-4455-96A0-8CD414C85C44}" ShortID="989095545">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_03.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="765879296"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_03" ID="{24AB090F-8694-4455-96A0-8CD414C85C44}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_04" ID="{A5486E69-1C1A-4D1C-8621-213D8BCDDF00}" ShortID="886352006">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_04" ID="{6E11317F-7128-473C-B4C2-02BCA62D6911}" ShortID="866387428">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_04.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="184170218"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_04" ID="{6E11317F-7128-473C-B4C2-02BCA62D6911}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_05" ID="{84A05F7F-DA68-465B-8412-AD85372E5E0C}" ShortID="373850071">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_05" ID="{3F6DDC89-5716-418D-9C52-4E4E36012EB1}" ShortID="867473921">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_05.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="885802908"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_05" ID="{3F6DDC89-5716-418D-9C52-4E4E36012EB1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_06" ID="{FE89951B-A5DB-497F-849E-AD1015BB9319}" ShortID="349304442">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_06" ID="{ECC8AFBE-C8EC-44FC-BDDA-EF0744783114}" ShortID="743527611">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_06.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="695830508"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_06" ID="{ECC8AFBE-C8EC-44FC-BDDA-EF0744783114}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_bear_vocal_07" ID="{3F3CB856-63B8-436C-9692-3709F9498298}" ShortID="645397927">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_bear_vocal_07" ID="{2F51D314-4E2A-4AB3-80A4-74D21457D7B0}" ShortID="826861368">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_bear_vocal_07.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="489047282"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_bear_vocal_07" ID="{2F51D314-4E2A-4AB3-80A4-74D21457D7B0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_bear_splash_appear" ID="{1AFCC02A-5A93-4E05-9B7B-8F6E2A75A950}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}" ShortID="31611884">
+										</BlendContainer>
+										<BlendContainer Name="sfx_bear_disappear" ID="{279B3448-D884-453B-A434-9750CCE2A3F2}" ShortID="122195149">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" ShortID="523747903">
-													<Language>SFX</Language>
-													<AudioFile>Characters\Character_Bear\sfx_bear_splash_disappear.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}" ShortID="31611884">
+													<PropertyList>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" ShortID="523747903">
+															<Language>SFX</Language>
+															<AudioFile>Characters\Character_Bear\sfx_bear_splash_disappear.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_bear_splash_disappear" ID="{8DEB11F9-DB38-41EE-8674-FBB2842A3802}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</BlendContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
-												<ItemRef Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}"/>
+												<ItemRef Name="sfx_bear_disappear" ID="{279B3448-D884-453B-A434-9750CCE2A3F2}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
-												<ItemRef Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}"/>
+												<ItemRef Name="sfx_bear_appear" ID="{367A0372-0AF2-4B9D-9A5F-E385910BC3A9}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
 											<Grouping>
 												<SwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 												<ItemList>
-													<ItemRef Name="sfx_bear_splash_appear" ID="{F6A6FDF7-FB78-4E5D-8650-3AA948C00703}"/>
+													<ItemRef Name="sfx_bear_appear" ID="{367A0372-0AF2-4B9D-9A5F-E385910BC3A9}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Disappear" ID="{D86BEE63-801C-4433-AF1F-59383D9106E8}"/>
 												<ItemList>
-													<ItemRef Name="sfx_bear_splash_disappear" ID="{E2662491-3696-433A-BF68-903C77B84A5E}"/>
+													<ItemRef Name="sfx_bear_disappear" ID="{279B3448-D884-453B-A434-9750CCE2A3F2}"/>
 												</ItemList>
 											</Grouping>
 										</GroupingList>
@@ -165,6 +425,291 @@
 										<ActiveSource Name="sfx_bear_vocal_01" ID="{C7888D32-CA79-4BD3-925C-94DDBCEDFB9D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Bear_Kids_Eat" ID="{C72172D3-EB81-4CBD-A297-FC6CE9BC646D}" ShortID="961261653">
+									<PropertyList>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_bear_kids_eat_01" ID="{6E6EAA1F-A776-495A-B190-02A576CA890C}" ShortID="519259569">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_kids_eat_01" ID="{19BAD66A-7D5C-4234-A6B2-007AEB2AAD70}" ShortID="665143561">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_kids_eat_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_kids_eat_01" ID="{19BAD66A-7D5C-4234-A6B2-007AEB2AAD70}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_kids_eat_02" ID="{467CB238-F443-4CCA-AE17-CECF5A605558}" ShortID="298122503">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_kids_eat_02" ID="{707F5DFE-3156-4864-B0F3-F1F2DC53DC37}" ShortID="127117866">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_kids_eat_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_kids_eat_02" ID="{707F5DFE-3156-4864-B0F3-F1F2DC53DC37}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_kids_eat_03" ID="{AE7AB904-16DC-4069-89D7-A638C0D343A7}" ShortID="347246790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_kids_eat_03" ID="{CD28E4C4-83F9-4D58-9B9A-11C33BD19D1F}" ShortID="742509353">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_kids_eat_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_kids_eat_03" ID="{CD28E4C4-83F9-4D58-9B9A-11C33BD19D1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Bear_Vocals_Idle" ID="{A82FF388-D9EB-431D-A47A-58764FD69A45}" ShortID="871991753">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_bear_vocal_01" ID="{E254DB75-B5DB-4115-80D6-7FF0737204BE}" ShortID="271582590">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_01" ID="{B04CAB2E-995A-4E5D-9003-E91AA8DC582A}" ShortID="128929056">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_01" ID="{B04CAB2E-995A-4E5D-9003-E91AA8DC582A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_02" ID="{A1950E00-2D0D-4269-BCF3-3FEBBF865FC8}" ShortID="499630281">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_02" ID="{AFEA7B76-8411-4DC6-8AE2-AB007BCF5F02}" ShortID="608128778">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_02" ID="{AFEA7B76-8411-4DC6-8AE2-AB007BCF5F02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_03" ID="{C1A1B34F-2898-459C-BFFA-075A64E89FA3}" ShortID="577719340">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_03" ID="{D92AEBC4-AD65-4A4D-AE7F-5F70AFB2E6FC}" ShortID="765879296">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_03" ID="{D92AEBC4-AD65-4A4D-AE7F-5F70AFB2E6FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_04" ID="{7EFDBE20-EFD6-44ED-816F-CCB357D1D474}" ShortID="762700399">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_04" ID="{0FA0256A-ED30-4268-ACED-DC4E5544DB8A}" ShortID="184170218">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_04" ID="{0FA0256A-ED30-4268-ACED-DC4E5544DB8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_05" ID="{245DB821-BCC6-40F6-8F3D-4696C32196A5}" ShortID="473977490">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_05" ID="{A4B0ADEA-96C7-4CC7-932D-797AD08E1917}" ShortID="885802908">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_05" ID="{A4B0ADEA-96C7-4CC7-932D-797AD08E1917}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_06" ID="{ACF5F7C2-A703-4C6C-8696-BFF60799FED7}" ShortID="624869526">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_06" ID="{78873F3E-A9E3-4599-A36D-0EAB3294B2CE}" ShortID="695830508">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_06.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_06" ID="{78873F3E-A9E3-4599-A36D-0EAB3294B2CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_vocal_07" ID="{18D6AC1B-6CC4-45EE-BC17-DA8198FCF4ED}" ShortID="467231165">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_vocal_07" ID="{70E8CB8A-0DF2-49A4-B543-0110652E4333}" ShortID="489047282">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_vocal_07.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_vocal_07" ID="{70E8CB8A-0DF2-49A4-B543-0110652E4333}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Bear_Eats" ID="{45400050-EB30-40DA-A336-4BDDC604070B}" ShortID="772131991">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_bear_eats" ID="{AA209A64-562C-4DD0-9B08-00311197E8C0}" ShortID="650069281">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_eats" ID="{C0556D5A-DABE-43BC-980D-132C31CB6BCB}" ShortID="105070189">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_eats.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_eats" ID="{C0556D5A-DABE-43BC-980D-132C31CB6BCB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_bear_kids_disappear" ID="{905297F5-8723-456B-83AD-6F8B9EA8EAFB}" ShortID="760842240">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="GenericCreatureAttenuation" ID="{DBC5C2F3-58FE-41F9-BF31-E219991C94C8}" WorkUnitID="{011E07D2-B5B3-49F2-9FA8-609D9D6D4707}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}" WorkUnitID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_bear_kids_disappear" ID="{8218DF53-0807-4749-AC88-13BC0FB3F1D8}" ShortID="430068173">
+													<Language>SFX</Language>
+													<AudioFile>sfx_bear_kids_disappear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_bear_kids_disappear" ID="{8218DF53-0807-4749-AC88-13BC0FB3F1D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Salmon" ID="{6A612EDC-0E0A-4F68-9CED-E9AC2D739F45}" ShortID="91250958">

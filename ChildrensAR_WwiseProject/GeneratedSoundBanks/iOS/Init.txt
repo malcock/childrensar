@@ -23,6 +23,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2409855130	Reverb_Polar_01			\Default Work Unit\Master Audio Bus\SFX\AlpineSFX\Reverb_Polar_01	
 	3081995956	Reverb_Polar			\Default Work Unit\Master Audio Bus\SFX\Reverb_Polar	
 
 Effect plug-ins	ID	Name	Type				Notes
