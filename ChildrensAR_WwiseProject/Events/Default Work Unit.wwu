@@ -271,6 +271,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MasterVolume" ID="{85B8E138-B437-40FC-8FEA-F556D1A7A206}">
+					<ChildrenList>
+						<Action Name="" ID="{1A46FDD8-A19A-4263-80FA-F53435F8CE62}" ShortID="175000028">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MasterVolume" ID="{AE090F10-3119-4065-8700-9AA7CA743693}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

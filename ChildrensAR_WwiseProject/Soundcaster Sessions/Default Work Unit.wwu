@@ -133,6 +133,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{AE090F10-3119-4065-8700-9AA7CA743693}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Elevation" ID="{8682C20F-FC2C-4176-9E2E-A6D1E00079A7}"/>
 							<Value>50</Value>
 						</RTPCValue>
