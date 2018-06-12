@@ -2,9 +2,12 @@ State Group	ID	Name			Wwise Object Path	Notes
 	610585235	OctopusMiniGame			\Default Work Unit\OctopusMiniGame	
 
 State	ID	Name	State Group			Notes
-	0	None	OctopusMiniGame			
+	748895195	None	OctopusMiniGame			
 	930712164	Off	OctopusMiniGame			
 	1651971902	On	OctopusMiniGame			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	32419989	Ambience_Alpine			\Default Work Unit\Master Audio Bus\SFX\AlpineSFX\Ambience_Alpine	

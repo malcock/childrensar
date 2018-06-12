@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Alpine" ID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="AlpineAmbience" ID="{65AEF7C5-8B66-42C2-A2BA-C2A0A371DD7C}">
+					<ChildrenList>
+						<Action Name="" ID="{49611725-3C75-4D25-AED6-8349A53504C2}" ShortID="1018823701">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_alpine" ID="{060B7DF0-4B73-4991-BB4F-4A41A1D8394B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3DA85C4B-DD55-469C-B344-E6326CAE895C}" ShortID="347207652">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SalmonScare" ID="{C6F39AE0-828C-4EB2-9BC8-32E3C4CF010A}">
+					<ChildrenList>
+						<Action Name="" ID="{E2A5281F-1EAB-4940-9A63-451B49FBBCD0}" ShortID="325277754">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Salmon_scare" ID="{312CB2BA-7B58-4609-BEB3-066287B5B10F}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DuckFly" ID="{386EBCC4-1B62-44B3-A251-69A0E7A1915B}">
+					<ChildrenList>
+						<Action Name="" ID="{D81A285E-26BA-49BB-BF85-4943D0C7D317}" ShortID="851696428">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Duck_fly" ID="{C890E3CB-DC5E-4B89-B839-88200C34CF6F}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearVocal" ID="{EE55BE2C-629A-444C-BBD1-A94F3AC31216}">
+					<ChildrenList>
+						<Action Name="" ID="{77211D69-BCF2-49D9-BA8B-5F93388C1A73}" ShortID="16447240">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_bear_vocal_01" ID="{5C2E3B56-A348-4BD8-BEA4-C1597E72E0B4}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearAppearDisappear" ID="{6E1C071D-7837-4C26-B614-66ED38A94AF4}">
+					<ChildrenList>
+						<Action Name="" ID="{387D7DA7-7C93-4B92-BDFE-9AFDBA779B28}" ShortID="1045203037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_appear_disappear" ID="{F27F8907-BFFD-417C-A168-A6ADE0EBF4D8}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OtterMovement" ID="{7CB42F8F-0504-4204-90B6-796F47F9D741}">
+					<ChildrenList>
+						<Action Name="" ID="{75F9A93B-54EA-443B-A44A-F40780A1A223}" ShortID="552669276">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Otter_movement" ID="{58519A74-7DD4-42F5-B0AF-3C0760D24148}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FrogVocal" ID="{27B4572E-528F-4E56-9E56-1D809CB32938}">
+					<ChildrenList>
+						<Action Name="" ID="{C8DEA294-B745-49C0-9BAF-955B03BD4564}" ShortID="915795530">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Frog_vocal" ID="{62D1C5DA-9C99-4853-B8A7-F250DFC22099}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OtterVocal" ID="{1ED3754E-2B40-4B27-B250-BA5A607AAC0A}">
+					<ChildrenList>
+						<Action Name="" ID="{B3EBFDF0-00CB-4EA1-BC17-064CF38E76B7}" ShortID="69058797">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OtterVoice" ID="{5CD3FA2B-5197-4D57-BF6F-3FF7ACA526E8}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearSway" ID="{1D06A840-8610-4973-9149-8D7EFD1A73CF}">
+					<ChildrenList>
+						<Action Name="" ID="{DBDEEBE0-5ECF-4CC4-A20D-19A3207CADEE}" ShortID="71637174">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_bear_sway" ID="{98B61EDB-9B21-4EA5-BF8E-6D26D5EA39E6}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="DuckVocal" ID="{A27494BE-778A-4BA1-9BD8-25098102D6A1}">
+					<ChildrenList>
+						<Action Name="" ID="{C015175F-8DFA-48A0-A082-668D27A4C577}" ShortID="445471005">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Duck_vocal" ID="{2B04D055-992D-4E0A-A117-9D2A60BF2918}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AlpineMusic" ID="{BEE41E65-1B6B-426C-9F48-B40BB02DF0CC}">
+					<ChildrenList>
+						<Action Name="" ID="{9806A79C-70AA-4660-83DE-D0CF764946F8}" ShortID="995353482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlpineMusic" ID="{B1C9DDDC-8C97-4B9A-9978-8C9C38CF968B}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearEat" ID="{1584A535-DCA6-48CD-863B-2E6246D30F8F}">
+					<ChildrenList>
+						<Action Name="" ID="{8234820C-7F6D-46CF-BA48-F1C3194A6500}" ShortID="78789846">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Eats" ID="{45400050-EB30-40DA-A336-4BDDC604070B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearKidEat" ID="{0F41744F-E07F-4C88-8425-45C3FF6A2DC9}">
+					<ChildrenList>
+						<Action Name="" ID="{E870F3EC-3E61-4D51-9EB2-BF21CC2D8031}" ShortID="203779519">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Kids_Eat" ID="{C72172D3-EB81-4CBD-A297-FC6CE9BC646D}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BearIdle" ID="{B581253A-C58E-44D0-A27E-496E7C93A57F}">
+					<ChildrenList>
+						<Action Name="" ID="{1612F5A5-E848-4A8B-9E96-E3D66A24506F}" ShortID="273651529">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Vocals_Idle" ID="{A82FF388-D9EB-431D-A47A-58764FD69A45}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FA5F26D5-A882-45BC-AD80-DD81E2E063ED}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{FA5F26D5-A882-45BC-AD80-DD81E2E063ED}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="PolarMix" ID="{0D9EA453-5176-4490-BB66-AD08A6AF1A18}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PenguinQuack" ID="{C1430BC8-9B32-4CD2-A457-DF72EDCA23EE}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ambience_Polar" ID="{2B577DEA-296A-4532-96E5-B74C05F34425}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AlpineMusic_Container" ID="{4D79CAE8-B662-400D-A8BD-BE55E6F41019}" WorkUnitID="{2F313F0F-A54E-4558-AB69-23A59393805D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Characters_Polar" ID="{44207DFA-721F-4D04-B825-855466714081}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="amb_polar_main" ID="{BB842F19-396E-4943-AACD-802565A50204}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic" ID="{FDA64478-6928-4F21-8A6E-66AF0151F962}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="amb_alpine" ID="{060B7DF0-4B73-4991-BB4F-4A41A1D8394B}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarAmbience" ID="{3F383972-F6ED-46B9-B94C-BBB7C70CF18B}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AlpineAmbience" ID="{65AEF7C5-8B66-42C2-A2BA-C2A0A371DD7C}" WorkUnitID="{A4AC3F82-963B-428D-A77F-7EDACB26F5C2}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="InteractRingSuccessL1" ID="{C84A5B3F-4634-4337-9C39-0864D458FC25}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic1" ID="{4DF1C64C-3DBF-4987-A70E-F38DFBE5AB37}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="InteractRingSuccessL2" ID="{00594370-9115-479C-89D3-CC5D492CFDED}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic3" ID="{8B5F7E57-9767-45E4-AA5A-F570AAEAE3AB}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="6" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="InteractRingSuccessL3" ID="{3AE86E2D-A65F-4530-A32B-849B4D677000}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="6" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PolarMusic1" ID="{A66BF2C2-8122-47C0-A356-B015BFD8B03E}" WorkUnitID="{C72D401E-19C2-4FBF-9285-045D286735A0}"/>
+							<Position X="7" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="InteractRingThrow_01" ID="{6BFA28BD-8F23-4A27-B65D-1A1ADB0AC83C}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="7" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Elevation" ID="{8682C20F-FC2C-4176-9E2E-A6D1E00079A7}"/>
+							<Value>1.33315938726387E-315</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ObjectToListenerAngle" ID="{7CA7FB87-27CA-4221-8F9D-5F18333DC230}"/>
+							<Value>1.33315606714273E-315</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance" ID="{22154C79-A27F-42E4-ABDE-25F4BCD7627E}"/>
+							<Value>1.33317266774843E-315</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Occlusion" ID="{12798DE8-90E7-464C-9C69-D4210842EA99}"/>
+							<Value>1.33316270738501E-315</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Obstruction" ID="{428D61E9-AFE7-4D9E-BCAD-EB2E70620CC8}"/>
+							<Value>1.33317930799071E-315</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicRampUp" ID="{D2B03541-0513-4DA1-A83E-F66B1E0B2F2C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{9E4BF916-7AED-4568-96D6-E552745CB6D3}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
+						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
+						<CurrentSwitchRef Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
+						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Swim Test" ID="{5E0A8B7D-580A-415C-8EB5-AA27C1896FED}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PenguinSwim" ID="{AD5F3CD8-B3B6-449F-9269-5018F5A4C51B}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PenguinSwimStop" ID="{3E753B2A-1BE2-4B44-BFC3-559B516BC4FF}" WorkUnitID="{02EA163B-C358-4C04-95F0-8EA76EC3D932}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{AE090F10-3119-4065-8700-9AA7CA743693}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Elevation" ID="{8682C20F-FC2C-4176-9E2E-A6D1E00079A7}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ObjectToListenerAngle" ID="{7CA7FB87-27CA-4221-8F9D-5F18333DC230}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance" ID="{22154C79-A27F-42E4-ABDE-25F4BCD7627E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Occlusion" ID="{12798DE8-90E7-464C-9C69-D4210842EA99}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PenguinSize" ID="{B5F187D1-3C7E-4B1D-8ABC-C11929D560B9}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Obstruction" ID="{428D61E9-AFE7-4D9E-BCAD-EB2E70620CC8}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicRampUp" ID="{D2B03541-0513-4DA1-A83E-F66B1E0B2F2C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
+						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
+						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<CurrentSwitchRef Name="Climb" ID="{BF09C587-89F2-49F8-AE69-5A3CA84DECD8}"/>
+						<CurrentSwitchRef Name="Disappear" ID="{5E3D66AC-6FAD-4AB6-9A6D-064911F1B3A3}"/>
+						<CurrentSwitchRef Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
+						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

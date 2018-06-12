@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{46395F96-2F91-43B6-85B0-F0CD8B401AE7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{6DE0143D-B504-49F1-84E1-B3311FCFC465}" ShortID="313291583">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MasterVolume" ID="{AE090F10-3119-4065-8700-9AA7CA743693}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{94A3CB7A-7457-487F-9DD0-BDB437D7D39F}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{100AAC44-D51F-4ACE-957C-DC3F54A8C7D5}" WorkUnitID="{35C27D55-50A8-4F00-BA96-03D536CA639B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}">
+							<ChildrenList>
+								<AuxBus Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<Bus Name="AlpineSFX" ID="{0D37DB1B-CFC0-473D-9C4E-3EC80070ED64}">
+									<ChildrenList>
+										<Bus Name="Characters_Alpine" ID="{5DA50D7B-48A1-4802-83C2-F2CA636F4059}"/>
+										<Bus Name="Ambience_Alpine" ID="{5F6C2FC9-DF08-4A2B-B440-991E4C5C732D}"/>
+										<Bus Name="InteractionSFX_Alpine" ID="{A56A045F-8102-44FD-A35F-24FA4F37C630}"/>
+										<AuxBus Name="Reverb_Polar_01" ID="{9798BF4D-5B72-46BF-8E2C-EF846F403179}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="PolarSFX" ID="{2C6FCE25-DC01-46B1-BE6C-4EA7A16F6511}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{D337B2CA-F24E-4B6E-8281-2EF5A79F0757}" ShortID="247443601" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Bus Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}"/>
+										<Bus Name="Ambience_Polar" ID="{B50D20CC-CBF4-4397-A0E8-FA4D4A6106A1}"/>
+										<Bus Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}">
+							<ChildrenList>
+								<Bus Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{65D6F9C4-DD2E-423C-9E93-9FC4C99CFA43}" ShortID="687260991" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
+														<Property Name="MeterMode" Type="int32" Value="1"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="MusicEnvelope" ID="{091D31C6-83B1-4015-868A-73BEC53C095B}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+								<Bus Name="Music_Alpine" ID="{FAF9590B-CC3F-4493-9CAA-43833EF94B73}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{100AAC44-D51F-4ACE-957C-DC3F54A8C7D5}" WorkUnitID="{35C27D55-50A8-4F00-BA96-03D536CA639B}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

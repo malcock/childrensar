@@ -111,8 +111,9 @@
 						<CurrentSwitchRef Name="Ambient" ID="{82EF8C3F-5A2B-4EF9-9BCA-21B9E9466E50}"/>
 						<CurrentSwitchRef Name="Appear" ID="{FF3A1605-A858-4250-AE1E-F1191EDA0922}"/>
 						<CurrentSwitchRef Name="Fast" ID="{F3BF9CFB-C002-484D-A59E-719B0C1931EB}"/>
+						<CurrentSwitchRef Name="PlatformUp" ID="{648175E8-B9AE-4658-BE39-090CEB5C2E33}"/>
 						<CurrentSwitchRef Name="Appear" ID="{CB3C8A68-5C87-411A-8418-C51D77545D3E}"/>
-						<CurrentSwitchRef Name="Thrown" ID="{8D2308F9-542E-475E-AFD9-1E4893A0965D}"/>
+						<CurrentSwitchRef Name="Call" ID="{19F6560E-B962-4242-85CF-4148EFEA9AF9}"/>
 						<CurrentSwitchRef Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

@@ -31,20 +31,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="WhaleSpray" ID="{D2546268-EFFD-41B9-A9F2-31BFE0FD5E30}">
-					<ChildrenList>
-						<Action Name="" ID="{B2A9832C-3014-4D3F-9759-91CD72562368}" ShortID="290993550">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Whale_Spray" ID="{31388BFE-F885-4DF7-95AF-913D74203BD2}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="PolarMusic" ID="{FDA64478-6928-4F21-8A6E-66AF0151F962}">
 					<ChildrenList>
 						<Action Name="" ID="{F8913EA2-AC1E-4D69-9CC7-598DB96B085B}" ShortID="306375260">
@@ -118,20 +104,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="WhaleSwim" ID="{C7F925AA-E8E1-4E0D-9BA2-51C9BC043020}">
-					<ChildrenList>
-						<Action Name="" ID="{AF9E251C-764D-48BC-90BC-3579282D5AA3}" ShortID="1065484647">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_whale_swimming" ID="{6484856B-9C47-4F39-B531-D216A2661893}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="OctopusAppearDisappear" ID="{E64A8600-A1D1-4C18-BFDE-FAA7CF035825}">
 					<ChildrenList>
 						<Action Name="" ID="{90675A0E-7344-4818-9398-2F664E379270}" ShortID="281934678">
@@ -155,20 +127,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Seagull_vocal" ID="{40E38DE2-07AC-4951-87D4-8CBBAA4CCC5B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="CrabMovement" ID="{B8C5FF4E-B8D7-4FB8-8C44-E488D619D8F4}">
-					<ChildrenList>
-						<Action Name="" ID="{E87BF760-0410-432B-BBCE-341F66DA8BC0}" ShortID="1064625870">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Crab_movement" ID="{1F6C68D8-080C-4121-829B-9CE4BF29E969}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -203,20 +161,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Interact_Ring_Impact" ID="{5B415E30-6503-432D-A85D-07D5B1EF4B6B}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="WhaleBreach" ID="{30BA4A1D-436E-4C68-A7ED-95E67FD81748}">
-					<ChildrenList>
-						<Action Name="" ID="{0ED3F684-08F2-461A-A8ED-62BB2136CF1B}" ShortID="130032796">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_whale_breach" ID="{8F36175C-683B-4A34-A400-EFC5CDAA20E4}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -416,20 +360,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Penguin_Swim" ID="{CD92626E-CA74-4CBE-8113-B28130AC0823}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="CrabBubbles" ID="{32070A57-15F5-4341-BFE4-84019A8C8D48}">
-					<ChildrenList>
-						<Action Name="" ID="{C66D6FDB-2F3E-47C3-A739-3D2D2EF853FA}" ShortID="1038729065">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Crab_Bubbles" ID="{D8070756-1886-4DB9-911A-5A36D3230033}" WorkUnitID="{78701507-F0FE-4AB9-B1C2-78D2FB16015E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
