@@ -584,7 +584,11 @@ public class MainCharacter : MonoBehaviour
             AkSoundEngine.PostEvent(eventName, gameObject);
 
         }
-        anim.SetTrigger("Speak");
+        string triggerName = "Speak";
+        if(characterType==CharacterType.Otter){
+            if (Random.value >= 0.5f) triggerName = "Speak2";
+        }
+        anim.SetTrigger(triggerName);
     }
 
     public void Catch()

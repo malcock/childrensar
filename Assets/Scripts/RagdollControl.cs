@@ -43,6 +43,7 @@ public class RagdollControl : MonoBehaviour
                     anim.enabled = false; //disable animation
 
                     mainBody.isKinematic = false;
+
                     //mainBody.useGravity = false;
                     //mainCollider.enabled = false;
 
@@ -143,6 +144,7 @@ public class RagdollControl : MonoBehaviour
 
 
     private Rigidbody mainBody;
+
 
     //A helper function to set the isKinematc property of all RigidBodies in the children of the 
     //game object that this script is attached to

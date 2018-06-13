@@ -4670,6 +4670,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 0a08cdabf63a0eb45bb1378b4a4338dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a08cdabf63a0eb45bb1378b4a4338dd, type: 3}
   m_IsPrefabParent: 0
@@ -7391,7 +7395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0b2ae8003ba4cc5afd6d9779ebb492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttractToLoad: Attract - Polar 1
+  AttractToLoad: Attract - Polar 1 - demo
   penguinTime: 50
   octopusTime: 50
   changeover: 5
@@ -25168,6 +25172,62 @@ MonoBehaviour:
   TargetBone: {fileID: 0}
   LimbNum: 3
   soundLevel: 1
+--- !u!1 &1479823459 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1751570384352992, guid: 9786ef11ad7944db280ca2eaddb90f22,
+    type: 2}
+  m_PrefabInternal: {fileID: 1053558273}
+--- !u!114 &1479823462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479823459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bac4e102d42d4f87973e0c7ab58047e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 0
+  selected: 0
+  isDragging: 0
+  lastPos: {x: 0, y: 0}
+  OnTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1102614798}
+        m_MethodName: Speak
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnLongTap:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnDragStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnDrag:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnDragEnd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1491462916 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100022, guid: 700557a9af4c0eb46a509eb7802c1221, type: 3}

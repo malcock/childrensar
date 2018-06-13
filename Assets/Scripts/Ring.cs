@@ -35,7 +35,8 @@ public class Ring : MonoBehaviour
     }
 
     void DragStart(){
-        AkSoundEngine.PostEvent("InteractRingPickup", gameObject);
+        if(!hasThrown)
+            AkSoundEngine.PostEvent("InteractRingPickup", gameObject);
     }
     void Drag(){
         

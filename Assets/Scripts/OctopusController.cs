@@ -58,6 +58,10 @@ public class OctopusController : MonoBehaviour
         }
     }
 
+    public void Speak(){
+        AkSoundEngine.PostEvent("OctopusTap", gameObject);
+    }
+
     public void BeginGame()
     {
         if (playGame != null) StopCoroutine(playGame);

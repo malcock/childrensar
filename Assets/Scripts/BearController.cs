@@ -40,7 +40,23 @@ public class BearController : MonoBehaviour {
         orig = transform.position;
         currentOffset = unfedOffset;
         skin = GetComponentInChildren<SkinnedMeshRenderer>();
+        StartCoroutine(IdleSound(Random.Range(20, 80)));
 	}
+
+
+    IEnumerator IdleSound(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //can we cancel this depending on when the last event was called? In the last 5 seconds maybe?
+        if (state == State.Active)
+        {
+
+            AkSoundEngine.PostEvent("BearIdle", gameObject);
+            StartCoroutine(IdleSound(Random.Range(20, 80)));
+
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -90,7 +106,12 @@ public class BearController : MonoBehaviour {
         List<BearController> fedChildren = childBears.Where(x => x.isFed).ToList();
         if(fedChildren.Count==childBears.Count || childBears.Count==0){
             animator.SetTrigger("Catch");
-            AkSoundEngine.PostEvent("BearVocal", gameObject);
+            if(childBears.Count==0){
+                AkSoundEngine.PostEvent("BearKidEat", gameObject);
+            } else {
+                AkSoundEngine.PostEvent("BearEat", gameObject);
+            }
+
             isFed = true;
             if(childBears.Count>0){
                 animator.SetTrigger("Celebrate");

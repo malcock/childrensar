@@ -45,9 +45,10 @@ public class FloatControl : MonoBehaviour
         yield return new WaitForSeconds(delay);
         buoy.BuoyancyCollider.enabled = true;
         GetComponent<Rigidbody>().isKinematic = false;
+        float startWeight = buoy.WeightFactor;
         float timeout = changeTime;
         while(timeout>0){
-            buoy.WeightFactor = 1.5f * floatCurve.Evaluate(1 - (timeout / changeTime));
+            buoy.WeightFactor = Mathf.Lerp(startWeight,1.5f,floatCurve.Evaluate(1 - (timeout / changeTime)));
             timeout -= Time.deltaTime;
             yield return null;
 

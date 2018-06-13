@@ -30,7 +30,7 @@ public class AttractController : MonoBehaviour {
     {
         
         if(SystemInfo.batteryStatus == BatteryStatus.Discharging && !isUp){
-            LoadLevel();
+            //LoadLevel();
             isUp = true;
         }
 

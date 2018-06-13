@@ -11,6 +11,7 @@ using UnityEngine.Events;
 public class Edible : MonoBehaviour {
     bool hasThrown = false;
     bool hasOwnCollider = false;
+    public bool isSalmon = false;
     InteractableObject interactableObj;
 	// Use this for initialization
 	void Start () {
@@ -29,8 +30,12 @@ public class Edible : MonoBehaviour {
 	}
 	
     void DragStart(){
-        AkSoundEngine.PostEvent("InteractFishPickup",gameObject);
-        AkSoundEngine.PostEvent("InteractFishPickupLoop",gameObject);
+        if(!isSalmon && !hasThrown){
+            Debug.Log("HEY HEY HEY");
+            AkSoundEngine.PostEvent("InteractFishPickup", gameObject);
+            AkSoundEngine.PostEvent("InteractFishPickupLoop", gameObject);
+        }
+
     }
 
     void Drag(){
@@ -39,8 +44,11 @@ public class Edible : MonoBehaviour {
 
     void DragEnd(){
         if(!hasThrown){
-            AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
-            AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
+            if(!isSalmon){
+                AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
+                AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
+            }
+
             hasThrown = true;
         }
 

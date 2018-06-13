@@ -564,6 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a278b63f4a9e40339da5edfd02ffe6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSalmon: 1
 --- !u!114 &114326432977206662
 MonoBehaviour:
   m_ObjectHideFlags: 1

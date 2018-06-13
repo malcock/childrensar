@@ -15,6 +15,8 @@ public class SalmonController : MonoBehaviour {
         flick = GetComponentInParent<Flickable>();
         animator = GetComponentInChildren<Animator>();
 
+        AkSoundEngine.PostEvent("AnimationSalmonFall", gameObject);
+
         foreach (RagBone bone in GetComponentsInChildren<RagBone>())
         {
             
@@ -34,7 +36,8 @@ public class SalmonController : MonoBehaviour {
 
     void DragStart()
     {
-        //AkSoundEngine.PostEvent("InteractRingPickup", gameObject);
+        
+        AkSoundEngine.PostEvent("InteractSalmonPickup", gameObject);
     }
     void Drag()
     {
@@ -44,7 +47,7 @@ public class SalmonController : MonoBehaviour {
     {
         if (!hasThrown)
         {
-            //AkSoundEngine.PostEvent("InteractRingThrow", gameObject);
+            AkSoundEngine.PostEvent("InteractSamonThrow", gameObject);
             hasThrown = true;
         }
 
