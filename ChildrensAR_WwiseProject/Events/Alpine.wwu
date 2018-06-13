@@ -210,6 +210,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Bear_Small_Tap" ID="{42BB0081-BB20-498A-9DA6-09F9086BD582}">
+					<ChildrenList>
+						<Action Name="" ID="{8E803477-B814-43C4-A213-CF4D8F75CEB3}" ShortID="96973433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bear_Small_Tap" ID="{22DA6E40-403C-4441-946C-05081892ECDB}" WorkUnitID="{6AA60DF0-E1D9-47DB-AD1E-3AC2E0F7AD2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

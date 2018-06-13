@@ -11,6 +11,7 @@
 						<Switch Name="Large" ID="{3BAF75BB-A981-4728-92F8-7AB8080ED278}"/>
 						<Switch Name="SmallMed" ID="{19ED6D0D-FC5A-409E-8DAC-05A9AD9ACD84}"/>
 						<Switch Name="ObjectSubmerge" ID="{FB7EBE4A-77B9-49F1-BE99-C4D0673F6980}"/>
+						<Switch Name="OtterPenguin" ID="{EA38FC32-37DE-4B5A-9995-8F46A1B66D95}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="PenguinSwim" ID="{F4A8E61E-4377-4652-9BF7-AE39EE4422BA}">
@@ -57,6 +58,12 @@
 						<Switch Name="Climb" ID="{BF09C587-89F2-49F8-AE69-5A3CA84DECD8}"/>
 						<Switch Name="Tapped" ID="{432E0651-4F66-4B65-B289-818CAF4CD8DA}"/>
 						<Switch Name="Thrown" ID="{24E260B7-9D8C-4169-96A4-EAD64A43D498}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="PlatformUpDown" ID="{457A6AA1-F787-480E-9088-60FADF5668DE}">
+					<ChildrenList>
+						<Switch Name="PlatformUp" ID="{648175E8-B9AE-4658-BE39-090CEB5C2E33}"/>
+						<Switch Name="PlatformDown" ID="{09939F7D-CCFF-4A1F-AFD7-70A489383845}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}" SchemaVersion="85">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{B8D5B7AA-DF8A-4740-B636-ADEE9850B3C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="ForestFrogLoop" ID="{050AFBB6-4C58-4860-8365-8DD5C148B66A}" ShortID="471058738">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="3.34"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="PolarMusicLFO" ID="{49F0B26D-4618-4BDD-9B0C-8ACE90786EC9}" ShortID="940369406">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.05">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D1744F22-404C-4609-8E3A-FEC7B535715B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.02"/>
+											<Property Name="Min" Type="Real64" Value="-0.03"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="PolarMusicLFO_2" ID="{D07F1B62-B521-4DE3-8CA4-61719B5469BA}" ShortID="346558255">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.02">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D9FF57D5-EA01-4E74-9D3C-8FA5279E6600}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.01"/>
+											<Property Name="Min" Type="Real64" Value="-0.01"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="AmbLFO_1" ID="{FEF86077-0F14-485C-B2FC-D1A237945AC1}" ShortID="820074034">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.01">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B96BC512-ABBC-4833-908C-D230DE60EE2A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.005"/>
+											<Property Name="Min" Type="Real64" Value="-0.005"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="0"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="AmbLFO_2" ID="{8C06D358-A60C-44F5-AF40-867D5D8AABE1}" ShortID="565384278">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.015">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{322B5838-1ADC-4A91-A09C-7A3576ADD90E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.002"/>
+											<Property Name="Min" Type="Real64" Value="-0.005"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="ModulatorScope" Type="int32" Value="0"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="AmbLFO_3" ID="{BBDCE503-12AA-4AB2-A9E4-800E1783C4B7}" ShortID="646344881">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.04">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D748CA62-895F-441E-92EE-85EBE8693C86}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.005"/>
+											<Property Name="Min" Type="Real64" Value="-0.005"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorEnvelope Name="Water_Splash_Large" ID="{C5FFEA88-8CFC-4BDC-9751-73A41D310A36}" ShortID="990189411"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>
