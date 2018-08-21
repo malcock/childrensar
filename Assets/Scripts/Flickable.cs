@@ -34,7 +34,7 @@ public class Flickable : MonoBehaviour
         if (isActive)
         {
 
-            Vector3 dragPos = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2)).GetPoint(draggableObject.lockDistance);
+            Vector3 dragPos = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, (Screen.height / 2) - 20)).GetPoint(draggableObject.lockDistance);
 
             //interactableObject.isDragging = true;
             if (Input.touchCount > 0)
@@ -108,6 +108,10 @@ public class Flickable : MonoBehaviour
         Debug.Log(name + " start :" + startTime + " " + startPosition.ToString());
         Debug.Log(name + "end :" + endTime + " " + endPosition.ToString());
         //need to project 2 rays different distances away
+        float dist = Vector2.Distance(startPosition, endPosition);
+        Debug.Log("throw distance: " + dist);
+        Vector3 forceVector = Vector3.zero;
+
         Ray startRay = Camera.main.ScreenPointToRay(startPosition);
         Ray endRay = Camera.main.ScreenPointToRay(endPosition);
 
@@ -129,8 +133,19 @@ public class Flickable : MonoBehaviour
 #if UNITY_IOS
         throwTime = 0.5f;
         endPos.y += 100;
+        if (dist < 50)
+        {
+            forceVector = Camera.main.ScreenPointToRay(endPosition).GetPoint(4);
+            forceVector.y += 0.25f;
+        }
 #endif
-        Vector3 forceVector = (endPos - startRay.GetPoint(0f));
+        forceVector = (endPos - startRay.GetPoint(0f));
+        if (dist < 20)
+        {
+            forceVector = Camera.main.ScreenPointToRay(endPosition).GetPoint(4);
+            forceVector.y += 0.25f;
+            //throwTime = 0.2f;
+        }
         Debug.Log(name + "power:" + power + "force :" + forceVector.ToString());
 
         if (draggableObject.isRagdoll)

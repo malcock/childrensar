@@ -68,6 +68,7 @@ public class BearController : MonoBehaviour {
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * 3);
         float t = 0;
         float tD = 0;
+
        
         if (state != State.Start)
         {
@@ -78,8 +79,12 @@ public class BearController : MonoBehaviour {
             List<BearController> fedChildren = childBears.Where(x => x.isFed).ToList();
             if(fedChildren.Count==childBears.Count){
                 animator.SetTrigger("Ready");
+                animator.SetBool("IsFed", true);
                 isReady = true;
             }
+
+        } else {
+            animator.SetBool("IsFed", isFed);
         }
             
         if (isFed)
@@ -211,4 +216,24 @@ public class BearController : MonoBehaviour {
         StopAllCoroutines();
         state = State.End;
     }
+
+    public void Speak()
+    {
+        SalmonController[] salmons = FindObjectsOfType<SalmonController>();
+        foreach(SalmonController s in salmons){
+            InteractableObject ob = s.GetComponent<InteractableObject>();
+            if (ob.locked) return;
+        }
+
+        Debug.Log(name + "Speak!");
+        animator.SetTrigger("Speak");
+        if (childBears.Count > 0)
+        {
+            AkSoundEngine.PostEvent("BearIdle", gameObject);
+        } else {
+            AkSoundEngine.PostEvent("Bear_Small_Tap", gameObject);
+        }
+
+    }
+
 }

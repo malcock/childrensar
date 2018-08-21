@@ -144,6 +144,7 @@ public class RagdollControl : MonoBehaviour
 
 
     private Rigidbody mainBody;
+    private Collider mainCollider;
 
 
     //A helper function to set the isKinematc property of all RigidBodies in the children of the 
@@ -166,6 +167,7 @@ public class RagdollControl : MonoBehaviour
     {
         //remember the mainBody for later
         mainBody = mainTransform.GetComponent<Rigidbody>();
+        mainCollider = mainTransform.GetComponent<Collider>();
 
         //Set all RigidBodies to kinematic so that they can be controlled with Mecanim
         //and there will be no glitches when transitioning to a ragdoll
@@ -299,7 +301,9 @@ public class RagdollControl : MonoBehaviour
             r.GetComponent<Collider>().enabled = value;
         }
     }
-
+    public void SetParentPosition(){
+        transform.position = ragdolledHipPosition;
+    }
     void LateUpdate()
     {
         //Clear the get up animation controls so that we don't end up repeating the animations indefinitely
@@ -314,8 +318,9 @@ public class RagdollControl : MonoBehaviour
                 //If we are waiting for Mecanim to start playing the get up animations, update the root of the mecanim
                 //character to the best match with the ragdoll
                 Vector3 animatedToRagdolled = ragdolledHipPosition - hips.position;
+
                 Vector3 newRootPosition = transform.position + animatedToRagdolled;
-                newRootPosition.y += 0.05f;
+                newRootPosition.y -= 0.1f;
 
                 //Now cast a ray from the computed position downwards and find the highest hit that does not belong to the character 
                 RaycastHit[] hits = Physics.RaycastAll(new Ray(newRootPosition, Vector3.down));
@@ -327,6 +332,7 @@ public class RagdollControl : MonoBehaviour
                         newRootPosition.y = Mathf.Max(newRootPosition.y, hit.point.y);
                     }
                 }
+
                 transform.position = newRootPosition;
 
                 //Get body orientation in ground plane for both the ragdolled pose and the animated get up pose
@@ -340,7 +346,8 @@ public class RagdollControl : MonoBehaviour
                 //Try to match the rotations. Note that we can only rotate around Y axis, as the animated characted must stay upright,
                 //hence setting the y components of the vectors to zero. 
                 transform.rotation *= Quaternion.FromToRotation(animatedDirection.normalized, ragdolledDirection.normalized);
-            }
+            } 
+            //transform.position = newRootPosition;
             //compute the ragdoll blend amount in the range 0...1
             float ragdollBlendAmount = 1.0f - (Time.time - ragdollingEndTime - mecanimToGetUpTransitionTime) / ragdollToMecanimBlendTime;
             ragdollBlendAmount = Mathf.Clamp01(ragdollBlendAmount);
@@ -367,6 +374,8 @@ public class RagdollControl : MonoBehaviour
 
                 return;
             }
+        } else if (state ==RagdollState.animated){
+
         }
     }
 

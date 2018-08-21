@@ -36,6 +36,8 @@ public class AlpineController : MonoBehaviour
                     StartCoroutine(Begin());
                     break;
                 case State.Otters:
+                    
+
                     SalmonController[] rings = FindObjectsOfType<SalmonController>();
                     foreach (SalmonController r in rings)
                     {
@@ -51,16 +53,18 @@ public class AlpineController : MonoBehaviour
                     timeout = otterTime;
                     break;
                 case State.Escape:
-
+                    
 
                     whale.OctoOut = true;
                     timeout = changeover;
                     break;
                 case State.FloatDrop:
                     timeout = changeover;
+
+
                     break;
                 case State.Return:
-
+                    
                     //if (octopus.state != OctopusController.State.End) octopus.StopGame();
                     whale.OctoOut = false;
                     timeout = changeover;
@@ -114,6 +118,7 @@ public class AlpineController : MonoBehaviour
         while (timing > 0)
         {
             //transform.localScale = origScale * (timeout / fadeOutTime);
+            AkSoundEngine.SetRTPCValue("MasterVolume", (1 - fadeGroup.alpha) * 100);
             fadeGroup.alpha = (timing / 2);
             timing -= Time.deltaTime;
             yield return null;
@@ -164,6 +169,24 @@ public class AlpineController : MonoBehaviour
         }
     }
 
+    IEnumerator UnloadLevel()
+    {
+        float timing = 1;
+        while (timing > 0)
+        {
+            AkSoundEngine.SetRTPCValue("MasterVolume", timing * 100);
+            timing -= Time.deltaTime;
+            yield return null;
+        }
+
+        AkSoundEngine.StopAll();
+        Debug.Log("plugged in - load attract scene");
+        GameControl.Instance.LoadScene(AttractToLoad);
+
+
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -180,16 +203,14 @@ public class AlpineController : MonoBehaviour
 #if UNITY_IOS
         if (SystemInfo.batteryStatus != BatteryStatus.Discharging && !putDown)
         {
-            AkSoundEngine.StopAll();
-            Debug.Log("plugged in - load attract scene");
-            GameControl.Instance.LoadScene(AttractToLoad);
             putDown = true;
+            StartCoroutine(UnloadLevel());
         }
 #endif
         if (Input.GetKeyUp(KeyCode.Return))
         {
             Debug.Log("Manual Switch");
-            GameControl.Instance.LoadScene(AttractToLoad);
+            StartCoroutine(UnloadLevel());
         }
         switch (state)
         {
@@ -235,6 +256,7 @@ public class AlpineController : MonoBehaviour
                 {
                     floats[f].lockInPlace = false;
                 }
+
                 break;
             case State.Bears:
 
@@ -245,11 +267,13 @@ public class AlpineController : MonoBehaviour
                 {
                     otters[p].fishEaten = 0;
                     otters[p].bellyAmount = 0;
+                    otters[p].isFull = false;
                     otters[p].state = MainCharacter.State.Swimming;
                     otters[p].swimState = MainCharacter.SwimState.Return;
 
                     floats[p].lockInPlace = true;
                 }
+
                 break;
         }
 

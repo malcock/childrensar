@@ -28,11 +28,13 @@ public class MainCharacter : MonoBehaviour
     public float walkDistanceThreshold = 0.0f;
     float walkTimeout = 3;
 
+    public bool isFull = false;
+
     public Vector3 targetPosition = new Vector3();
 
     float swimTime;
 
-    Transform currentLand;
+    public Transform currentLand;
 
     Animator anim;
     DraggableObject draggableObject;
@@ -98,6 +100,15 @@ public class MainCharacter : MonoBehaviour
                 }
                 anim.SetTrigger("Idle" + id);
             }
+            if(characterType == CharacterType.Otter && state != State.Escape)
+            {
+                int id = Random.Range(0, 3);
+                for (int i = 0; i < anim.layerCount;i++){
+                    anim.SetLayerWeight(i, 0);
+                }
+                anim.SetLayerWeight(id + 1, 0.5f);
+                anim.SetTrigger("Idle" + id);
+            }
         }
 
     }
@@ -113,13 +124,13 @@ public class MainCharacter : MonoBehaviour
             while (blinkAmount < 100)
             {
                 
-                skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
+                //skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
                 blinkAmount += blinkSpeed;
                 yield return null;
             }
             while (blinkAmount > 0)
             {
-                skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
+                //skinnedMeshRenderer.SetBlendShapeWeight(blinkIndex, blinkAmount);
                 blinkAmount -= blinkSpeed;
                 yield return null;
             }
@@ -138,6 +149,14 @@ public class MainCharacter : MonoBehaviour
         yield return null;
         doll.hips.GetComponent<Rigidbody>().isKinematic = false;
 
+    }
+
+    IEnumerator Waitforjump(){
+        yield return new WaitForSeconds(1f);
+        if (state != State.Swimming)
+            state = State.Escape;
+        swimState = SwimState.Escape;
+        isFull = false;
     }
 
     // Update is called once per frame
@@ -167,9 +186,12 @@ public class MainCharacter : MonoBehaviour
         {
             if (fishEaten >= fishMax)
             {
-                if (state != State.Swimming)
-                    state = State.Escape;
-                swimState = SwimState.Escape;
+                if(!isFull){
+                    StartCoroutine(Waitforjump());
+                    isFull = true;
+                }
+               
+
             }
         }
 
@@ -253,7 +275,8 @@ public class MainCharacter : MonoBehaviour
                 break;
             case State.Dropped:
                 //switch to swim mode?
-                AkSoundEngine.PostEvent("PenguinSwimStop", gameObject);
+                if(characterType==CharacterType.Penguin)
+                    AkSoundEngine.PostEvent("PenguinSwimStop", gameObject);
                 dropTimeout = 1;
                 if (doll.state == RagdollControl.RagdollState.animated)
                 {
@@ -449,9 +472,9 @@ public class MainCharacter : MonoBehaviour
         float newWeight = fishEaten > 0 ? ((float)(fishEaten + 1) / (float)fishMax) * 100 : 0;
 
         int bellyBlend = (characterType == CharacterType.Penguin) ? 0 : 2;
+
         skinnedMeshRenderer.SetBlendShapeWeight(bellyBlend, bellyAmount);
-
-
+    
     }
 
     private void LateUpdate()
@@ -464,6 +487,7 @@ public class MainCharacter : MonoBehaviour
         doll.ragdolled = true;
         state = State.Dragging;
         string eventName = (characterType == CharacterType.Penguin) ? "PenguinQuack" : "OtterVocal";
+
         if (swimState != SwimState.Escape)
         {
             AkSoundEngine.SetSwitch(eventName, "Tapped", gameObject);
@@ -485,6 +509,7 @@ public class MainCharacter : MonoBehaviour
 
     void HitWater(Collider other, GameObject obj)
     {
+        
         //don't try to do a splash if already swimming
         if (state == State.Dragging) return;
         //set correct swimstate depending on what's happening?
@@ -556,15 +581,25 @@ public class MainCharacter : MonoBehaviour
         if (state != State.Dragging)
         {
             walkTimeout = 5;
-            currentLand = collision.transform;
+            if(collision.transform.name.ToLower().Contains("floor")){
+                currentLand = null;
+            } else {
+                currentLand = collision.transform;
+            }
+
 
             doll.ragdolled = false;
+            doll.SetParentPosition();
             state = State.Idle;
-            if (currentLand.name == "Bed_01" || currentLand.name=="FishBucket_01")
-            {
-                state = State.Escape;
+            if(currentLand!=null){
+                if (currentLand.name == "Bed_01" || currentLand.name == "FishBucket_01")
+                {
+                    state = State.Escape;
+                }
             }
-            PlayOneShot("InteractPenguinDrop");
+
+            if(characterType==CharacterType.Penguin)
+                PlayOneShot("InteractPenguinDrop");
         }
 
     }

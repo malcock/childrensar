@@ -17,6 +17,7 @@ public class AttractController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        AkSoundEngine.SetRTPCValue("MasterVolume", 100);
         if(attractMode == AttractState.Polar){
             AkSoundEngine.PostEvent("PolarAmbience", gameObject);
         } else {
@@ -30,7 +31,7 @@ public class AttractController : MonoBehaviour {
     {
         
         if(SystemInfo.batteryStatus == BatteryStatus.Discharging && !isUp){
-            //LoadLevel();
+            LoadLevel();
             isUp = true;
         }
 
@@ -53,11 +54,18 @@ public class AttractController : MonoBehaviour {
         while (timeout > 0)
         {
             //transform.localScale = origScale * (timeout / fadeOutTime);
+
             fadeGroup.alpha = 1 - (timeout / fadeOutTime);
             timeout -= Time.deltaTime;
             yield return null;
         }
         yield return new WaitForSeconds(1);
+        float audioFade = 1;
+        while(audioFade>0){
+            AkSoundEngine.SetRTPCValue("MasterVolume", audioFade * 100);
+            audioFade -= Time.deltaTime;
+            yield return null;
+        }
         AkSoundEngine.StopAll();
         GameControl.Instance.LoadScene(LevelToLoad);
     }

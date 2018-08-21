@@ -13,6 +13,7 @@ public class Edible : MonoBehaviour {
     bool hasOwnCollider = false;
     public bool isSalmon = false;
     InteractableObject interactableObj;
+    bool hasPickedUp = false;
 	// Use this for initialization
 	void Start () {
         if(GetComponent<SimpleRagdoll>()!=null){
@@ -27,13 +28,26 @@ public class Edible : MonoBehaviour {
         interactableObj.OnDragStart.AddListener(DragStart);
         interactableObj.OnDrag.AddListener(Drag);
         interactableObj.OnDragEnd.AddListener(DragEnd);
+
+        if (isSalmon) StartCoroutine(FishSlap());
 	}
+
+    IEnumerator FishSlap(){
+
+        while(!hasPickedUp){
+            AkSoundEngine.PostEvent("AnimationSalmonFlap", gameObject);
+            yield return new WaitForSeconds(1.5f);
+        }
+    }
 	
     void DragStart(){
         if(!isSalmon && !hasThrown){
             Debug.Log("HEY HEY HEY");
             AkSoundEngine.PostEvent("InteractFishPickup", gameObject);
             AkSoundEngine.PostEvent("InteractFishPickupLoop", gameObject);
+        }
+        if(isSalmon && !hasThrown){
+            hasPickedUp = true;
         }
 
     }

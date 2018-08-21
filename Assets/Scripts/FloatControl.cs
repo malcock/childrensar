@@ -15,9 +15,11 @@ public class FloatControl : MonoBehaviour
             if (_lockInPlace == value) return;
             _lockInPlace = value;
             if(_lockInPlace){
+                
                 StartCoroutine(Float());
 
             } else {
+                
                 StartCoroutine(Sink());
                 //buoy.BuoyancyCollider.enabled = false;
 
@@ -43,6 +45,8 @@ public class FloatControl : MonoBehaviour
         
         //Debug.Log(name + " float");
         yield return new WaitForSeconds(delay);
+        AkSoundEngine.SetSwitch("PlatformUpDown", "PlatformUp", gameObject);
+        AkSoundEngine.PostEvent("PlatformUpDown", gameObject);
         buoy.BuoyancyCollider.enabled = true;
         GetComponent<Rigidbody>().isKinematic = false;
         float startWeight = buoy.WeightFactor;
@@ -59,6 +63,8 @@ public class FloatControl : MonoBehaviour
     {
         //Debug.Log(name + " sink");
         yield return new WaitForSeconds(delay);
+        AkSoundEngine.SetSwitch("PlatformUpDown", "PlatformUp", gameObject);
+        AkSoundEngine.PostEvent("PlatformUpDown", gameObject);
         float timeout = changeTime;
         while (timeout > 0)
         {
