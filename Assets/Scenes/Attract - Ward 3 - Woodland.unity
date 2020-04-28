@@ -611,6 +611,9 @@ MonoBehaviour:
   gametimeB: 240
   fishMax: 3
   feedNumber: 3
+  tapFlickDist: 4
+  tapFlickHeight: 0.25
+  tapFlickTime: 0.25
 --- !u!1 &551139645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1611,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1526063990}
-        m_MethodName: LoadLevel
+        m_MethodName: FadeScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1650,7 +1653,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.11
+  m_Radius: 0.16
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1959627449
 GameObject:

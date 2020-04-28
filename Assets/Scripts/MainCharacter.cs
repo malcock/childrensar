@@ -472,7 +472,7 @@ public class MainCharacter : MonoBehaviour
         float newWeight = fishEaten > 0 ? ((float)(fishEaten + 1) / (float)fishMax) * 100 : 0;
 
         int bellyBlend = (characterType == CharacterType.Penguin) ? 0 : 2;
-
+        bellyAmount = Mathf.Clamp(bellyAmount, 0, 100);
         skinnedMeshRenderer.SetBlendShapeWeight(bellyBlend, bellyAmount);
     
     }
@@ -641,6 +641,8 @@ public class MainCharacter : MonoBehaviour
 
         //mainCollider.attachedRigidbody.mass = doll.totalMass + (fishEaten);
     }
+
+
 
     IEnumerator AnimateWeight(float timeout, float stop)
     {

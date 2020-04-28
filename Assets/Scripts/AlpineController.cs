@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class AlpineController : MonoBehaviour
 {
@@ -16,10 +18,11 @@ public class AlpineController : MonoBehaviour
 
     float waterLevel;
     bool putDown = false;
+    bool hasStarted = false;
 
-    public enum State { Begin, Otters, Escape, FloatDrop, Bears, Return }
+    public enum State { Attract, Begin, Otters, Escape, FloatDrop, Bears, Return }
     [SerializeField]
-    private State _state = State.Begin;
+    private State _state = State.Attract;
     public State state
     {
         get { return _state; }
@@ -28,11 +31,25 @@ public class AlpineController : MonoBehaviour
             _state = value;
             switch (_state)
             {
+                case State.Attract:
+                    incidentals.SetActive(false);
+                    VideoPlayer videoPlayer = FindObjectOfType<VideoPlayer>();
+                    string url = "file://" + Application.streamingAssetsPath + "/" + "attract-screen.mp4";
+
+#if !UNITY_EDITOR
+                        url = Application.streamingAssetsPath + "/" + "attract-screen.mp4";
+#endif
+
+                    //We want to play from url
+                    videoPlayer.source = VideoSource.Url;
+                    videoPlayer.url = url;
+                    break;
                 case State.Begin:
 
                     Vector3 pos = water.position;
                     waterLevel = pos.y;
                     pos.y = -1.68f;
+                    StartCoroutine(FadeIn());
                     StartCoroutine(Begin());
                     break;
                 case State.Otters:
@@ -93,10 +110,12 @@ public class AlpineController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+        fadeGroup.interactable = true;
+        fadeGroup.blocksRaycasts = true;
+
         AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
-        StartCoroutine(FadeIn());
-        state = State.Begin;
+        StartCoroutine(LevelStart());
+        state = State.Attract;
 
 
         otterTime = GameControl.Instance.gametimeA;
@@ -110,15 +129,35 @@ public class AlpineController : MonoBehaviour
         //AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
     }
 
+    IEnumerator LevelStart()
+    {
+        fadeGroup.alpha = 1;
+        float timing = 2;
+        float t = timing;
+        //Vector3 origScale = transform.localScale;
+        while (t > 0)
+        {
+            AkSoundEngine.SetRTPCValue("MasterVolume", (1 - t / timing) * 100);
+            //transform.localScale = origScale * (timeout / fadeOutTime);
+            //fadeGroup.alpha = (timing / 2);
+            t -= Time.deltaTime;
+            yield return null;
+        }
+
+    }
+
     IEnumerator FadeIn()
     {
+        AkSoundEngine.PostEvent("TabletPickup", gameObject);
+        fadeGroup.interactable = false;
+        fadeGroup.blocksRaycasts = false;
         fadeGroup.alpha = 1;
         float timing = 2;
         //Vector3 origScale = transform.localScale;
         while (timing > 0)
         {
+            //AkSoundEngine.SetRTPCValue("MasterVolume", (1 - fadeGroup.alpha) * 100);
             //transform.localScale = origScale * (timeout / fadeOutTime);
-            AkSoundEngine.SetRTPCValue("MasterVolume", (1 - fadeGroup.alpha) * 100);
             fadeGroup.alpha = (timing / 2);
             timing -= Time.deltaTime;
             yield return null;
@@ -127,7 +166,7 @@ public class AlpineController : MonoBehaviour
 
     IEnumerator Begin()
     {
-        incidentals.SetActive(false);
+
 
         float timer = 10;
         while (timer > 0)
@@ -186,10 +225,93 @@ public class AlpineController : MonoBehaviour
 
     }
 
+    bool isBlack = false;
+    public float fadeOutTime = 2;
+    IEnumerator blackFade;
+    float timmy = 0;
+
+    public void FadeScreen()
+    {
+        if (blackFade != null) StopCoroutine(blackFade);
+        if (isBlack)
+        {
+            blackFade = fadeFromBlack();
+        }
+        else
+        {
+            blackFade = fadeToBlack();
+        }
+        StartCoroutine(blackFade);
+    }
+
+    IEnumerator fadeFromBlack()
+    {
+        Debug.Log("fade from black");
+        isBlack = false;
+        timmy = fadeOutTime;
+        float audioFade = 0;
+
+        VideoPlayer videoPlayer = FindObjectOfType<VideoPlayer>();
+        RawImage img = videoPlayer.GetComponent<RawImage>();
+
+        videoPlayer.Play();
+
+        while (timmy > 0)
+        {
+            img.color = Color.Lerp(Color.black, Color.white, 1-(timmy / fadeOutTime));
+            //fadeGroup.alpha = (timeout / fadeOutTime);
+            audioFade = 1 - (timmy / fadeOutTime);
+            AkSoundEngine.SetRTPCValue("MasterVolume", audioFade * 100);
+            timmy -= Time.deltaTime;
+            yield return null;
+        }
+        timmy = 0;
+    }
+
+    IEnumerator fadeToBlack()
+    {
+        Debug.Log("fade to black");
+        isBlack = true;
+        //fadeImage.color = Color.black;
+
+        VideoPlayer videoPlayer = FindObjectOfType<VideoPlayer>();
+        RawImage img = videoPlayer.GetComponent<RawImage>();
+
+
+        timmy = fadeOutTime;
+        float audioFade = 1;
+        while (timmy > 0)
+        {
+            img.color = Color.Lerp(Color.white, Color.black, 1-(timmy / fadeOutTime));
+            //fadeGroup.alpha = 1 - (timeout / fadeOutTime);
+            audioFade = (timmy / fadeOutTime);
+            AkSoundEngine.SetRTPCValue("MasterVolume", audioFade * 100);
+            timmy -= Time.deltaTime;
+            yield return null;
+        }
+        timmy = 0;
+        videoPlayer.Stop();
+    }
 
     // Update is called once per frame
     void Update()
     {
+        //if (state == State.Attract)
+        //{
+        //    if (Input.GetMouseButtonUp(0))
+        //    {
+
+        //        FadeScreen();
+        //    }
+        //    if (Input.touchCount > 0)
+        //    {
+        //        Touch t = Input.GetTouch(0);
+        //        if (t.phase == TouchPhase.Ended && timmy<0.01f)
+        //        {
+        //            FadeScreen();
+        //        }
+        //    }
+        //}
 
         if (Input.GetKeyUp(KeyCode.K))
         {
@@ -201,10 +323,16 @@ public class AlpineController : MonoBehaviour
             }
         }
 #if UNITY_IOS
-        if (SystemInfo.batteryStatus != BatteryStatus.Discharging && !putDown)
+        if (SystemInfo.batteryStatus != BatteryStatus.Discharging && !putDown && hasStarted)
         {
             putDown = true;
             StartCoroutine(UnloadLevel());
+
+        }
+        if (SystemInfo.batteryStatus == BatteryStatus.Discharging && !hasStarted)
+        {
+            hasStarted = true;
+            state = State.Begin;
         }
 #endif
         if (Input.GetKeyUp(KeyCode.Return))
@@ -276,17 +404,17 @@ public class AlpineController : MonoBehaviour
 
                 break;
         }
-
-        timeout -= Time.deltaTime;
+        if(state!=State.Attract)
+            timeout -= Time.deltaTime;
 
         if (timeout < 0)
         {
-            state = ((int)state + 1 < Enum.GetNames(typeof(PolarController.State)).Length) ? state + 1 : (State)1;
+            state = ((int)state + 1 < Enum.GetNames(typeof(PolarController.State)).Length) ? state + 1 : (State)2;
 
 
         }
 
-        if (Input.GetKeyUp(KeyCode.T)) state = ((int)state + 1 < Enum.GetNames(typeof(PolarController.State)).Length) ? state + 1 : 0;
+        if (Input.GetKeyUp(KeyCode.T)) state = ((int)state + 1 < Enum.GetNames(typeof(PolarController.State)).Length) ? state + 1 :(State)2;
 
     }
 
@@ -296,5 +424,9 @@ public class AlpineController : MonoBehaviour
         p.state = MainCharacter.State.Escape;
 
 
+    }
+
+    public void LoadMenu(){
+        GameControl.Instance.LoadScene("Menu");
     }
 }

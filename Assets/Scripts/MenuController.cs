@@ -6,13 +6,20 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     public Slider gameATime, gameBTime, fishPerCharacter,feedNumber;
+    public GameObject passwordPanel;
+    public InputField passwordField;
+    public Text feedback;
 	// Use this for initialization
 	void Start()
 	{
-
-        gameATime.value = (PlayerPrefs.HasKey("GameATime")) ? (int) PlayerPrefs.GetInt("GameATime") : 240;
+        if(PlayerPrefs.HasKey("PasswordConfirmed")){
+            passwordPanel.SetActive(false);
+        } else {
+            passwordPanel.SetActive(true);
+        }
+        gameATime.value = (PlayerPrefs.HasKey("GameATime")) ? (int) PlayerPrefs.GetInt("GameATime") : 3;
         SetGameATime((int) gameATime.value);
-        gameBTime.value = (PlayerPrefs.HasKey("GameBTime")) ? (int)PlayerPrefs.GetInt("GameBTime") : 240;
+        gameBTime.value = (PlayerPrefs.HasKey("GameBTime")) ? (int)PlayerPrefs.GetInt("GameBTime") : 3;
         SetGameBTime((int) gameBTime.value);
         fishPerCharacter.value = (PlayerPrefs.HasKey("FishPerCharacter")) ? (int) PlayerPrefs.GetInt("FishPerCharacter") : 2;
         SetFishPerCharacter((int) fishPerCharacter.value);
@@ -36,16 +43,28 @@ public class MenuController : MonoBehaviour
     public void SetGameATime(float val)
     {
         int v = (int)val;
-        GameControl.Instance.gametimeA = v;
+        GameControl.Instance.gametimeA = v*60;
         PlayerPrefs.SetInt("GameATime", v);
 
 
     }
 
+    public void CheckPassword(){
+        if (passwordField.text == "Artf3lt*")
+        {
+            PlayerPrefs.SetString("PasswordConfirmed", "Artf3lt*");
+            passwordPanel.SetActive(false);
+        } else {
+            feedback.text = "Sorry, wrong password";
+        }
+    }
+
+
+
     public void SetGameBTime(float val)
     {
         int v = (int)val;
-        GameControl.Instance.gametimeB = v;
+        GameControl.Instance.gametimeB = v*60;
         PlayerPrefs.SetInt("GameBTime", v);
     }
 

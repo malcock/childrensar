@@ -35,6 +35,9 @@ public class UnityARCameraManager : MonoBehaviour
 		if (m_camera == null) {
 			m_camera = Camera.main;
 		}
+        UnityARSessionRunOption options = new UnityARSessionRunOption();
+        options = UnityARSessionRunOption.ARSessionRunOptionRemoveExistingAnchors | UnityARSessionRunOption.ARSessionRunOptionResetTracking;
+        m_session.RunWithConfigAndOptions(config, options);
 #else
         //put some defaults so that it doesnt complain
         UnityARCamera scamera = new UnityARCamera();

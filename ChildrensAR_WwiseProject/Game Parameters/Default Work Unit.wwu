@@ -61,6 +61,8 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{7792F37B-FE0A-4489-B380-B93736F883E9}"/>
+				<GameParameter Name="SFXVolume" ID="{64BC513C-5C1D-4DB7-A1CB-A2C609E621D1}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

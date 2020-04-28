@@ -6,6 +6,11 @@ State	ID	Name	State Group			Notes
 	930712164	Off	OctopusMiniGame			
 	1651971902	On	OctopusMiniGame			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	988953028	SFXVolume			\Default Work Unit\SFXVolume	
+	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	32419989	Ambience_Alpine			\Default Work Unit\Master Audio Bus\SFX\AlpineSFX\Ambience_Alpine	
 	275734032	Ambience_Polar			\Default Work Unit\Master Audio Bus\SFX\PolarSFX\Ambience_Polar	
@@ -23,6 +28,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2409855130	Reverb_Polar_01			\Default Work Unit\Master Audio Bus\SFX\AlpineSFX\Reverb_Polar_01	
 	3081995956	Reverb_Polar			\Default Work Unit\Master Audio Bus\SFX\Reverb_Polar	
 
 Effect plug-ins	ID	Name	Type				Notes

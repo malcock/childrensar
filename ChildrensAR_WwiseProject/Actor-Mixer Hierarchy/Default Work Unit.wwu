@@ -45,10 +45,10 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>1</Value>
+										<Value>7</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -61,6 +61,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -81,6 +86,12 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Water_Splash_Small" ID="{A79F9A2F-252D-461D-8B3D-41296D81AC75}" ShortID="1051086946">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -179,6 +190,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Water_Splash_Soft" ID="{877B680C-E3B6-41C0-A2D1-49D318F0F654}" ShortID="916930391">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -323,6 +340,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Water_Splash_SmallMed" ID="{CAC86193-E6F3-48C7-A88F-0A134F60A9B1}" ShortID="649510845">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -331,6 +354,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -384,10 +412,16 @@
 								<RandomSequenceContainer Name="Water_Splash_Object_Submerge" ID="{3BBC8280-D072-4785-B329-09BC31DFE4BD}" ShortID="850064303">
 									<Comment>NEEDS CODE</Comment>
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -487,21 +521,16 @@
 								</RandomSequenceContainer>
 								<BlendContainer Name="Water_Splash_Large_Sequence" ID="{638F5415-7461-43A7-902A-8101FAC24540}" ShortID="225066829">
 									<PropertyList>
-										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>2</Value>
 											</ValueList>
 										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -524,6 +553,11 @@
 											<PropertyList>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -1005,15 +1039,10 @@
 								</BlendContainer>
 								<BlendContainer Name="Water_Splash_Med_Sequence" ID="{3BB4ECDE-65F2-4B90-8E61-AD69AB4E5297}" ShortID="189290594">
 									<PropertyList>
-										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>2</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
@@ -1522,6 +1551,14 @@
 									</ChildrenList>
 								</BlendContainer>
 								<RandomSequenceContainer Name="Water_Splash_Med_OtterPenguin" ID="{5B2D14AD-A74F-4BD9-97E3-6E6BE95B070B}" ShortID="986288539">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1674,6 +1711,11 @@
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1854,7 +1896,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2013,7 +2055,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2230,6 +2272,11 @@
 										<Value>-6</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2390,6 +2437,11 @@
 											<Modifier Name="" ID="{E35BB9A0-EEDD-40CB-A4BD-4FCB41BC7F5B}"/>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -3044,7 +3096,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3214,6 +3266,24 @@
 							</ChildrenList>
 						</ActorMixer>
 						<SwitchContainer Name="PlatformUpDown" ID="{19E3E235-8904-4C41-9A22-49F60A2458F9}" ShortID="836890483">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -3399,6 +3469,9 @@
 					<PropertyList>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{1CC3D61D-D482-46FE-B3FE-708F28C696C4}"/>

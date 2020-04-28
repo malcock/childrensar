@@ -19,10 +19,14 @@ public class GameControl : MonoBehaviour
 
     public OctoMode OctoBehaviour = OctoMode.Final;
 
-    public float gametimeA = 240, gametimeB = 240;
+    public int gametimeA = 240, gametimeB = 240;
 
     public int fishMax = 3;
     public int feedNumber = 3;
+
+    public float tapFlickDist = 4;
+    public float tapFlickHeight = 0.25f;
+    public float tapFlickTime = 0.25f;
 
     public static GameControl Instance = null;
 

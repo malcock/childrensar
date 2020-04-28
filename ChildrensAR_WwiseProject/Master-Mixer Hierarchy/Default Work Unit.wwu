@@ -41,6 +41,36 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{24CF4A42-407C-4B67-BD9A-C41417EC7650}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{7E716286-F060-4059-8824-C87BA151A411}" ShortID="125138928">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFXVolume" ID="{64BC513C-5C1D-4DB7-A1CB-A2C609E621D1}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{4BAAE1DB-7AD3-4512-BDA4-E9CB49ABC62B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="Reverb_Polar" ID="{504F02B1-74E4-4DE7-8111-01BD03C8DDD4}">
 									<ReferenceList>
@@ -53,7 +83,15 @@
 									<ChildrenList>
 										<Bus Name="Characters_Alpine" ID="{5DA50D7B-48A1-4802-83C2-F2CA636F4059}"/>
 										<Bus Name="Ambience_Alpine" ID="{5F6C2FC9-DF08-4A2B-B440-991E4C5C732D}"/>
-										<Bus Name="InteractionSFX_Alpine" ID="{A56A045F-8102-44FD-A35F-24FA4F37C630}"/>
+										<Bus Name="InteractionSFX_Alpine" ID="{A56A045F-8102-44FD-A35F-24FA4F37C630}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
 										<AuxBus Name="Reverb_Polar_01" ID="{9798BF4D-5B72-46BF-8E2C-EF846F403179}">
 											<ReferenceList>
 												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
@@ -72,14 +110,60 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Bus Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}"/>
+										<Bus Name="Characters_Polar" ID="{90711366-84A9-4286-B9A0-DB0BEADEE800}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
 										<Bus Name="Ambience_Polar" ID="{B50D20CC-CBF4-4397-A0E8-FA4D4A6106A1}"/>
-										<Bus Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}"/>
+										<Bus Name="InteractionSFX_Polar" ID="{9CC8042A-D407-43B4-9F16-BD6F70886062}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+										</Bus>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Music" ID="{3C516186-3747-4C87-BDC0-634AF2959A33}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{8441FF0C-BCB2-42BE-BA23-093AC9F43E32}" ShortID="426180820">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MusicVolume" ID="{7792F37B-FE0A-4489-B380-B93736F883E9}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F5B45A46-1A19-4B58-9CDE-7F1054CD8E95}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Music_Polar" ID="{6A56699A-A4AA-4A0F-86FB-44F42C46BCB4}">
 									<ReferenceList>
@@ -98,7 +182,15 @@
 										</Reference>
 									</ReferenceList>
 								</Bus>
-								<Bus Name="Music_Alpine" ID="{FAF9590B-CC3F-4493-9CAA-43833EF94B73}"/>
+								<Bus Name="Music_Alpine" ID="{FAF9590B-CC3F-4493-9CAA-43833EF94B73}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

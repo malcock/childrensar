@@ -8,21 +8,27 @@ using UnityEngine.Events;
 /// Applied to an object that will be eaten by a creature - could it be a fish? or can I make it work for a ring toss too?
 /// </summary>
 [RequireComponent(typeof(InteractableObject))]
-public class Edible : MonoBehaviour {
+public class Edible : MonoBehaviour
+{
+    Material mat;
     bool hasThrown = false;
     bool hasOwnCollider = false;
     public bool isSalmon = false;
     InteractableObject interactableObj;
     bool hasPickedUp = false;
-	// Use this for initialization
-	void Start () {
-        if(GetComponent<SimpleRagdoll>()!=null){
-            foreach(RagBone bone in GetComponentsInChildren<RagBone>()){
+    // Use this for initialization
+    void Start()
+    {
+        if (GetComponent<SimpleRagdoll>() != null)
+        {
+            foreach (RagBone bone in GetComponentsInChildren<RagBone>())
+            {
                 bone.onCollisionEnter.AddListener(EatMe);
                 bone.onTriggerEnter.AddListener(InWater);
             }
 
         }
+        mat = GetComponentInChildren<MeshRenderer>().material;
         interactableObj = GetComponent<InteractableObject>();
 
         interactableObj.OnDragStart.AddListener(DragStart);
@@ -30,69 +36,116 @@ public class Edible : MonoBehaviour {
         interactableObj.OnDragEnd.AddListener(DragEnd);
 
         if (isSalmon) StartCoroutine(FishSlap());
-	}
+    }
 
-    IEnumerator FishSlap(){
+    IEnumerator FishSlap()
+    {
 
-        while(!hasPickedUp){
+        while (!hasPickedUp)
+        {
             AkSoundEngine.PostEvent("AnimationSalmonFlap", gameObject);
             yield return new WaitForSeconds(1.5f);
         }
     }
-	
-    void DragStart(){
-        if(!isSalmon && !hasThrown){
+
+    void DragStart()
+    {
+        if (!isSalmon && !hasPickedUp)
+        {
             Debug.Log("HEY HEY HEY");
             AkSoundEngine.PostEvent("InteractFishPickup", gameObject);
             AkSoundEngine.PostEvent("InteractFishPickupLoop", gameObject);
-        }
-        if(isSalmon && !hasThrown){
             hasPickedUp = true;
         }
+        if (isSalmon && !hasThrown)
+        {
+            hasPickedUp = true;
+        }
+        InteractableObject[] iObjs = FindObjectsOfType<InteractableObject>();
+        foreach (InteractableObject i in iObjs)
+        {
+            i.enabled = false;
+        }
+        this.enabled = true;
+    }
+
+    void Drag()
+    {
 
     }
 
-    void Drag(){
-        
-    }
+    void DragEnd()
+    {
+        if (!hasThrown)
+        {
+            if (!isSalmon)
+            {
+                //AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
+                //AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
 
-    void DragEnd(){
-        if(!hasThrown){
-            if(!isSalmon){
-                AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
-                AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
             }
 
             hasThrown = true;
         }
-
+        InteractableObject[] iObjs = FindObjectsOfType<InteractableObject>();
+        foreach (InteractableObject i in iObjs)
+        {
+            i.enabled = true;
+        }
         StartCoroutine(timeout());
     }
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Update is called once per frame
+    void Update()
+    {
 
-    void InWater(Collider other, GameObject obj){
+    }
+
+    void InWater(Collider other, GameObject obj)
+    {
+        InteractableObject[] iObjs = FindObjectsOfType<InteractableObject>();
+        foreach (InteractableObject i in iObjs)
+        {
+            i.enabled = true;
+        }
         if (other.tag == "Water")
         {
-            Destroy(gameObject);
+            StartCoroutine(timeout());
 
         }
     }
 
-    void EatMe(Collision collision, GameObject other){
+    void EatMe(Collision collision, GameObject other)
+    {
         Debug.Log(name + " eat?");
         Eater eater = collision.gameObject.GetComponent<Eater>();
-        if(eater !=null){
+        if (eater != null)
+        {
             if (eater.OnFoodReceived != null) eater.OnFoodReceived.Invoke();
-            Destroy(gameObject,0.075f);
+            Destroy(gameObject, 0.075f);
         }
     }
 
-    IEnumerator timeout(){
-        yield return new WaitForSeconds(10);
+    IEnumerator timeout()
+    {
+        InteractableObject[] iObjs = FindObjectsOfType<InteractableObject>();
+        foreach (InteractableObject i in iObjs)
+        {
+            i.enabled = true;
+        }
+        float fadeOutTime = 2;
+        float timed = fadeOutTime;
+        yield return new WaitForSeconds(2);
+        while (timed > 0)
+        {
+            mat.SetFloat("_Cutoff", 1 - (timed / fadeOutTime));
+
+            timed -= Time.deltaTime;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(5);
         Destroy(gameObject);
     }
 }
+

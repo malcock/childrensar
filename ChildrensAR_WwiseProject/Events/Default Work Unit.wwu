@@ -370,6 +370,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="SFXVolume" ID="{6153B7E7-50BA-49D3-B867-0DE6F73818AB}">
+					<ChildrenList>
+						<Action Name="" ID="{F1575646-2ADF-4E7F-860B-F30B3A6FA2C6}" ShortID="51615200">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFXVolume" ID="{64BC513C-5C1D-4DB7-A1CB-A2C609E621D1}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicVolume" ID="{B47F0A60-4A06-4CC1-BF65-3FDC397FD9BE}">
+					<ChildrenList>
+						<Action Name="" ID="{E8373E5B-26F4-4286-A6CF-59F3709D736E}" ShortID="314110557">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicVolume" ID="{7792F37B-FE0A-4489-B380-B93736F883E9}" WorkUnitID="{3ABAA341-BAED-4239-80BB-CE7EDC286608}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

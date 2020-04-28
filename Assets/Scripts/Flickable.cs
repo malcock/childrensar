@@ -105,6 +105,10 @@ public class Flickable : MonoBehaviour
 
     void MakeThrow()
     {
+        if(name.Contains("Fish")){
+            AkSoundEngine.PostEvent("InteractFishThrow", gameObject);
+            AkSoundEngine.PostEvent("InteractFishPickupLoopStop", gameObject);
+        }
         Debug.Log(name + " start :" + startTime + " " + startPosition.ToString());
         Debug.Log(name + "end :" + endTime + " " + endPosition.ToString());
         //need to project 2 rays different distances away
@@ -133,14 +137,14 @@ public class Flickable : MonoBehaviour
 #if UNITY_IOS
         throwTime = 0.5f;
         endPos.y += 100;
-        if (dist < 50)
+        if (dist < 60)
         {
             forceVector = Camera.main.ScreenPointToRay(endPosition).GetPoint(4);
             forceVector.y += 0.25f;
         }
 #endif
         forceVector = (endPos - startRay.GetPoint(0f));
-        if (dist < 20)
+        if (dist < 30)
         {
             forceVector = Camera.main.ScreenPointToRay(endPosition).GetPoint(4);
             forceVector.y += 0.25f;
@@ -210,5 +214,21 @@ public class Flickable : MonoBehaviour
         interactableObject.isDragging = true;
         Debug.Log("SERIOUSLY FISH ACTIVATED!");
 
+    }
+
+    void OnGUI()
+    {
+        int w = Screen.width, h = Screen.height;
+
+        GUIStyle style = new GUIStyle();
+
+        Rect rect = new Rect(0, 0, w, h * 2 / 100);
+        style.alignment = TextAnchor.UpperLeft;
+        style.fontSize = h * 2 / 100;
+        style.normal.textColor = new Color(0.0f, 0.0f, 0.5f, 1.0f);
+
+        //string text = string.Format("{0:0.0} ms ({1:0.} fps) - ", msec, fps);
+        string text = string.Format("start: {0} end: {1} dist: {2}", startPosition.ToString(), endPosition.ToString(),Vector2.Distance(startPosition, endPosition).ToString());
+        //GUI.Label(rect, text, style);
     }
 }

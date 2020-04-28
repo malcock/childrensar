@@ -994,7 +994,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1006,7 +1006,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1018,7 +1018,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &95056678945915518
 Animator:
   serializedVersion: 3
@@ -1169,6 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba67b9fa94db499aaa090fdbf17414b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHiding: 0
   myFloe: {fileID: 0}
 --- !u!135 &135025792840897052
 SphereCollider:

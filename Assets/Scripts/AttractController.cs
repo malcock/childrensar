@@ -11,8 +11,12 @@ public class AttractController : MonoBehaviour {
     public AttractState attractMode = AttractState.Polar;
     public string LevelToLoad = "Burns Stencil";
     bool isUp = false;
+    bool isBlack = false;
+
+    IEnumerator blackFade;
 
     public CanvasGroup fadeGroup;
+    Image fadeImage;
     public float fadeOutTime = 2; 
 
 	// Use this for initialization
@@ -24,6 +28,8 @@ public class AttractController : MonoBehaviour {
             AkSoundEngine.PostEvent("AlpineAmbience", gameObject);
         }
 
+        fadeImage = fadeGroup.GetComponentInChildren<Image>();
+        LoadLevel();
 	}
 
     // Update is called once per frame
@@ -47,8 +53,47 @@ public class AttractController : MonoBehaviour {
         StartCoroutine(playhandler());
     }
 
+    public void FadeScreen(){
+        if (blackFade != null) StopCoroutine(blackFade);
+        if(isBlack){
+            blackFade = fadeFromBlack();
+        } else {
+            blackFade = fadeToBlack();
+        }
+        StartCoroutine(blackFade);
+    }
+
+    IEnumerator fadeFromBlack(){
+        isBlack = false;
+        float timeout = fadeOutTime;
+        float audioFade = 0;
+        while (timeout > 0)
+        {
+            fadeGroup.alpha = (timeout / fadeOutTime);
+            audioFade = 1-(timeout / fadeOutTime);
+            AkSoundEngine.SetRTPCValue("MasterVolume", audioFade * 100);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    IEnumerator fadeToBlack(){
+        isBlack = true;
+        fadeImage.color = Color.black;
+        float timeout = fadeOutTime;
+        float audioFade = 1;
+        while(timeout>0){
+            fadeGroup.alpha = 1 - (timeout / fadeOutTime);
+            audioFade =  (timeout / fadeOutTime);
+            AkSoundEngine.SetRTPCValue("MasterVolume", audioFade * 100);
+            timeout -= Time.deltaTime;
+            yield return null;
+        }
+    }
+
     public IEnumerator playhandler(){
-        AkSoundEngine.PostEvent("TabletPickup", gameObject);
+        fadeImage.color = Color.white;
+        //AkSoundEngine.PostEvent("TabletPickup", gameObject);
         float timeout = fadeOutTime;
         //Vector3 origScale = transform.localScale;
         while (timeout > 0)

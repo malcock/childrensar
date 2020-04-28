@@ -23,6 +23,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Character_Bear" ID="{1815722E-38FB-40A8-B066-CE9EE5ABCB0B}" ShortID="728843272">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -35,6 +42,11 @@
 								<SwitchContainer Name="Bear_appear_disappear" ID="{F27F8907-BFFD-417C-A168-A6ADE0EBF4D8}" ShortID="213455997">
 									<PropertyList>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -503,6 +515,11 @@
 								<RandomSequenceContainer Name="Bear_Vocals_Idle" ID="{A82FF388-D9EB-431D-A47A-58764FD69A45}" ShortID="871991753">
 									<PropertyList>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -649,6 +666,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="Bear_Eats" ID="{45400050-EB30-40DA-A336-4BDDC604070B}" ShortID="772131991">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -1165,6 +1189,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Otter" ID="{A337932B-8E93-4F75-BE10-A2CEC738F212}" ShortID="974279850">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -2146,6 +2177,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{37310332-7E35-4236-AE2C-764894DA4468}" ShortID="654935280">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{60B8EE63-E7A7-4504-9C19-2DBD26A1D460}"/>
@@ -2526,6 +2564,11 @@
 								<Sound Name="Forest_ambient_main_loop_02" ID="{3AA98BF7-B754-40BA-B133-2C430EF8ADFD}" ShortID="578043961">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
